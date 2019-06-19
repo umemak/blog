@@ -31,7 +31,22 @@
   - 使われていない権限（削除しても良くない？）を見つけてくれる
   - どの設定で403になるのか調査してくれる
 
-
+## Service Networking
+* traffic director
+ - コンテナである必要はない
+ - ユーザーに使いリージョンにトラフィックを流したりできる（Istioではできない）
+   - まだアルファバージョン
+* Cloud Service Mesh
+  - Stackdriverと連携もできる
+  - これもプライベートアルファバージョン
+* Istio On GKE
+  - managed istio
+  - GKEのバージョンとIstioのバージョンは密結合
+* keywords
+ - instagramはモノリス
+   - 世界最大のpythonプロダクト？
+   - Envoy for iOS and android
+ - mutual TLS
 
 
 
