@@ -20,3 +20,32 @@
 * Voicyのひと
 * Danger レビューツール
 
+## Swift TravisCI
+* はてなのひと
+* swift-docker
+  - ローカルでbuildできる
+
+## TEKTON
+* freeeのひと
+* CD.FOUNDATION
+* もともとはKnativeのサブプロジェクト
+* K8Sのカスタムリソースを使う
+* CI/CDの実行エンジンとしての活用
+* まだこれから
+
+## E2Eテストのパイプライン
+* JapanTaxiのひと
+* bitrise
+* appium
+* TestRail
+
+## Azure Pipelines
+* Sony Interactive Entertainmentのひと
+* npm install -g appium
+* self.driver.start_recordingscreen()
+  - brew install ffmpeg
+
+
+
+
+
