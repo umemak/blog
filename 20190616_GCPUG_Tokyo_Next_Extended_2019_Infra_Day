@@ -48,7 +48,12 @@
    - Envoy for iOS and android
  - mutual TLS
 
-
+## パネルディスカッション
+* Service Mesh Interface(SMI)
+* PostgresOperator
+* https://skywalking.apache.org/
+* Oracle RAC をクラウドで使うのは無理
+*  
 
 
 
