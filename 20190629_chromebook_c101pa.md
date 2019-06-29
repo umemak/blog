@@ -6,12 +6,22 @@
 * 全体的にC224NA比べて遅い（知ってた）
 * 今回は開発者モードにしないで普通にLinux有効化した
 * brewインストール
-```
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-$ test -d ~/.linuxbrew && PATH="$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH"
-$ test -d /home/linuxbrew/.linuxbrew && PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
-$ test -r ~/.bash_profile && echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.bash_profile
-$ echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.profile
-$ Homebrew 2.1.6
-Homebrew/linuxbrew-core (git revision bb5a; last commit 2019-06-29)
-```
+  ```
+  $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+  $ test -d ~/.linuxbrew && PATH="$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH"
+  $ test -d /home/linuxbrew/.linuxbrew && PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
+  $ test -r ~/.bash_profile && echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.bash_profile
+  $ echo "export PATH='$(brew --prefix)/bin:$(brew --prefix)/sbin'":'"$PATH"' >>~/.profile
+  $ Homebrew 2.1.6
+  Homebrew/linuxbrew-core (git revision bb5a; last commit 2019-06-29)
+  ```
+* golangインストール
+  ```
+  $ wget https://dl.google.com/go/go1.12.6.linux-amd64.tar.gz
+  $ tar zxvf go1.12.6.linux-amd64.tar.gz
+  $ sudo mv go /usr/local/go1.12.6
+  $ sudo ln -s /usr/local/go1.12.6 /usr/local/go
+  $ /usr/local/go/bin/go version
+  -bash: /usr/local/go/bin/go: cannot execute binary file: Exec format error
+  ```
+  だめか。。
