@@ -26,3 +26,12 @@
   -bash: /usr/local/go/bin/go: cannot execute binary file: Exec format error
   ```
   だめか。。
+
+* golangインストール（apt）
+  ```
+  $ sudo apt-get update
+  $ sudo apt-get install golang
+  $ go version
+  go version go1.7.4 linux/arm64
+  ```
+  きた・・！でもちょっと古い？
