@@ -35,3 +35,11 @@
   go version go1.7.4 linux/arm64
   ```
   きた・・！でもちょっと古い？
+
+* rubyもインストール
+  ```
+  $ sudo apt-get install ruby
+  $ ruby -v
+  ruby 2.3.3p222 (2016-11-21) [aarch64-linux-gnu]
+  ```
+  これも最新ではないけれどまあ仕方ない
