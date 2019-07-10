@@ -43,3 +43,11 @@
   ruby 2.3.3p222 (2016-11-21) [aarch64-linux-gnu]
   ```
   これも最新ではないけれどまあ仕方ない
+
+* VSCode
+  ```
+  $ sudo apt-get install snapd
+  $ sudo snap install --classic code
+  error: cannot install "code": snap not found
+  ```
+  うーん。。
