@@ -36,6 +36,7 @@
   $ export GOPATH="/usr/local/go/work"
   $ export PATH="${PATH}:/usr/local/go/bin:${GOPATH}/bin"
   ```
+  一応、`~/.bash_profile`にも同等の内容を記載しておく
 * 動作確認
   - ファイル作成
     ```
