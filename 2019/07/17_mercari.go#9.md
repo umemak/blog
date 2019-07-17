@@ -45,6 +45,10 @@
 * コメントでコードをグループ分けする（テストコード）
 
 ## @tenntenn	The Go Playgroundをコマンドラインから扱う
+* txtar（テキストアーカイブ）形式
+  - `-- ファイル名 --` で区切る
+  - playgroung上でタブ分けしてくれるchrome拡張あり
+  - internalパッケージ
 
 ## @tottie	Gopher イラスト発表
 
