@@ -45,7 +45,7 @@
 
 ## @kurikei / DeSCヘルスケアにおけるGo活用事例の紹介 / DeSCヘルスケアサービス企画開発部
 * GCP(GAE/Cloud Firestore/Cloud Functions/BigQuery) / CircleCI / OpenAPI 3
-* レイヤードアーキテクチャ（+DI）
+* レイヤードアーキテクチャ（+DIP）
   - レイヤーで分離する→各レイヤーで関数を定義する→コード量が増える→テストも増える
   - gomockを使う
 * 暗号化の手法
