@@ -48,6 +48,13 @@
     /dev/vdb        5.5G  2.8G  2.5G  53% /
     ```
 
+## dockerインストール
+  ```
+  $ df -h
+  Filesystem      Size  Used Avail Use% Mounted on
+  /dev/vdb        5.5G  3.2G  2.0G  62% /
+  ```
+
 ## まとめ
 * VSCode使うには1GB以上の空き領域が必要。
 * 先人の知恵に感謝。
