@@ -32,3 +32,10 @@ C101PAで一通りできたのでインテルCPUの機種でもやってみる
   余裕。
   C101PAでインストールできなかった`dlv`も入った。
 
+* dockerインストール
+  ```
+  $ df -h
+  Filesystem      Size  Used Avail Use% Mounted on
+  /dev/vdb         18G  3.0G   13G  19% /
+  ```
+  VSCodeのremoteも入った！
