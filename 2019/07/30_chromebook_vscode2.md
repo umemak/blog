@@ -49,10 +49,16 @@
     ```
 
 ## dockerインストール
+  * [公式の手順](https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-repository)で実施
   ```
   $ df -h
   Filesystem      Size  Used Avail Use% Mounted on
   /dev/vdb        5.5G  3.2G  2.0G  62% /
+  ```
+  * VSCodeのDocker拡張を使うには、sudoいらなくする設定と再ログインが必要。
+  ```
+  $ sudo groupadd docker
+  $ sudo usermod -aG docker $USER
   ```
 
 ## まとめ
