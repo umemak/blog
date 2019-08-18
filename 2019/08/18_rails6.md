@@ -98,3 +98,14 @@
   #<LoadError: Error loading the 'sqlite3' Active Record adapter. Missing a gem it depends on? can't activate sqlite3 (~> 1.4), already activated sqlite3-1.3.13. Make sure all dependencies are added to Gemfile.>
   ```
   む。。。
+  Gemfileのsqlite3もバージョン指定を緩める。
+  ```
+  Started GET "/" for 172.17.0.1 at 2019-08-18 02:19:05 +0000
+  Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+     (5.8ms)  SELECT sqlite_version(*)
+  Processing by ApplicationController#hello as HTML
+    Rendering html template
+    Rendered html template (Duration: 1.9ms | Allocations: 5)
+  Completed 200 OK in 39ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 1383)
+  ```
+  できた！
