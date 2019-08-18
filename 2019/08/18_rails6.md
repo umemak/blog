@@ -109,3 +109,4 @@
   Completed 200 OK in 39ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 1383)
   ```
   できた！
+* https://github.com/umemak/hello_app/commit/84cc280f3776cc72d85c9bac088f8ef50cd5eaf8
