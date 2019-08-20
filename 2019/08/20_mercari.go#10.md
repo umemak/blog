@@ -60,11 +60,24 @@ https://mercari.connpass.com/event/141122/
 * Drone飛ばすデモ
 
 ## 20:40 ~	hunter	PKI for Gophers
+* 暗号化の話
+* Hardware Keys
+  - YubiKey
 
 ## 20:50 ~	yuki.ito	Workshop: Observability in Go & Socket to me: Where do Sockets live in Go? 
+* 資料
+  * https://speakerdeck.com/110y/my-favorite-talks-at-gophercon-2019
+  * https://github.com/freeformz/go-observability-workshop/ 
+  * https://github.com/110y/sockoptgo/
+* Observability
+  - Log
+    - logrus 構造化出力できる
+  - Metric
+    - expvar
+    - Prometheus
+  - Trace
+    - Jaeger
+* Socket Option
 
-
-
-スライドはこちら https://speakerdeck.com/110y/my-favorite-talks-at-gophercon-2019
-workshopのリポジトリ: https://github.com/freeformz/go-observability-workshop/ 
-socket optionのリポジトリ: https://github.com/110y/sockoptgo/
+## Go Quiz
+* 型厳密なのな。。
