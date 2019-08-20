@@ -1,13 +1,40 @@
 # mercari.go #10
 https://mercari.connpass.com/event/141122/
 
-## 19:30 ~	-	オープニング / Opening Talk
-
 ## 19:40 ~	morikuni	GopherCon 2019
+* GopherConとは
+  - 2014年デンバーで始まった。いろんなところでやっている。
+  - 今年はサンディエゴで開催
+    - 1800人を超える参加者
+* Mercariの関わり
+  - Silver Sponsor
+  - BOLD Scholarship
+    - 学生向け
+  - 11+2名参加
+* １日目はワークショップ
+* ２日目３日目は発表がメイン
+* ４日目はコミュニティデイ
+  - LTとか
+* One MOre Thing
+  - Generics(Contracts)
+  - Interfaceとの違い
+    - ちょくわがた
 
 ## 19:50 ~	mark.hahn	Workshop: Go-Beginner Training
+* 英語の発表だけど聞き取りやすかった
+* Goは1日で習得できる（シンプル）
 
 ## 20:00 ~	micnnicim	How Uber Goes
+* 1500サービス、200M行がGoで書かれている
+* MONOREPOへの移行
+* [uber-go/fx](https://github.com/uber-go/fx)
+  - アプリケーションフレームワーク
+* glue
+  - 非公開ライブラリ
+  - クリーンアーキテクチャ
+* [Bazel](https://bazel.build/)
+  - OSSのビルドツール
+  - monorepoに効く？
 
 ## 20:15 ~	upamune	How I Write HTTP Web Services After Eight Years
 
