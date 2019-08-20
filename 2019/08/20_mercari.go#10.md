@@ -18,7 +18,7 @@ https://mercari.connpass.com/event/141122/
 * One MOre Thing
   - Generics(Contracts)
   - Interfaceとの違い
-    - ちょくわがた
+    - 直和型
 
 ## 19:50 ~	mark.hahn	Workshop: Go-Beginner Training
 * 英語の発表だけど聞き取りやすかった
@@ -37,8 +37,27 @@ https://mercari.connpass.com/event/141122/
   - monorepoに効く？
 
 ## 20:15 ~	upamune	How I Write HTTP Web Services After Eight Years
+* Mat Ryer
+  - https://gopherize.me/
+  - https://medium.com/statuscode/how-i-write-go-http-services-after-seven-years-37c208122831
+* Maintainability
+  - 最初から考えて作る
+* Glaceability
+  - 視認性
+  - 理解しやすさ
+* Code shuld be boring
+  - 
+* Self Similar code
+  - コード内に似たコードがあると親しみやすくなる
 
 ## 20:25 ~	taqboz	TinyGo
+* Small is going big
+* LLVMを使ったGoコンパイラ
+* WebAssembly対応
+* Goroutineのサポートが不完全
+* 使えない標準パッケージが多い（net系全滅）
+* IoTデバイス、マイクロコントローラーでの活用
+* Drone飛ばすデモ
 
 ## 20:40 ~	hunter	PKI for Gophers
 
