@@ -1,6 +1,11 @@
-# HugoをCIでまわす
+---
+author: "umemak"
+date: 2019-08-21
+title: Hugoの導入
+---
 
-* 
+# Hugoの導入
+* やってみよう
 
 ## インストール
 https://gohugo.io/getting-started/installing/#linux を見たら apt でいけるらしいので

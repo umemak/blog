@@ -1,3 +1,9 @@
+---
+author: "umemak"
+date: 2019-07-17
+title: chromebookのlinux
+---
+
 # chromebookのlinux
 
 Rails入れたりしてたらOSが不安定になった感。

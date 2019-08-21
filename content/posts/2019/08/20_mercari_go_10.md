@@ -1,3 +1,9 @@
+---
+author: "umemak"
+date: 2019-08-20
+title: mercari.go #10
+---
+
 # mercari.go #10
 https://mercari.connpass.com/event/141122/
 

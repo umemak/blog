@@ -1,3 +1,9 @@
+---
+author: "umemak"
+date: 2019-06-29
+title: C101PA届いた
+---
+
 # C101PA届いた
 
 * 起動直後はOSが古い→ChromeOSバージョンアップ実施

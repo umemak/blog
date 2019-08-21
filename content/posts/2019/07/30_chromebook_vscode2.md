@@ -1,3 +1,9 @@
+---
+author: "umemak"
+date: 2019-07-30
+title: Chromebook(C101PA)にVSCodeをインストールする２
+---
+
 # Chromebook(C101PA)にVSCodeをインストールする２
 
 昨日は空き容量が足りなくなってあきらめたので、今回は何もない状態からやってみる。

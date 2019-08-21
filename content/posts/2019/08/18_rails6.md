@@ -1,3 +1,9 @@
+---
+author: "umemak"
+date: 2019-08-18
+title: Rails6を試す
+---
+
 # Rails6を試す
 
 * リリースされていたので、アップデートしてみる

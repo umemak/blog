@@ -1,3 +1,9 @@
+---
+author: "umemak"
+date: 2019-07-13
+title: chromebookにrailsをインストール
+---
+
 # chromebookにrailsインストール
 
 ## 狙い

@@ -1,3 +1,9 @@
+---
+author: "umemak"
+date: 2019-06-20
+title: CI/CD Test Night #4
+---
+
 # CI/CD Test Night #4
 * 2019/06/20 19:00-21:00
 * DeNA

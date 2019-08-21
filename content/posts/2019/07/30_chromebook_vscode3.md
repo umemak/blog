@@ -1,3 +1,9 @@
+---
+author: "umemak"
+date: 2019-07-30
+title: ChromeBook(C223NA)にVSCodeをインストールする
+---
+
 # ChromeBook(C223NA)にVSCodeをインストールする
 
 C101PAで一通りできたのでインテルCPUの機種でもやってみる

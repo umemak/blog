@@ -1,3 +1,9 @@
+---
+author: "umemak"
+date: 2019-07-17
+title: mercari.go #9
+---
+
 # mercari.go #9
 * 2019/07/17 19:30-21:30
 * https://mercari.connpass.com/event/137488/

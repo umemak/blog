@@ -1,3 +1,9 @@
+---
+author: "umemak"
+date: 2019-07-18
+title: MacbookPro初期化
+---
+
 # MacbookPro初期化
 
 Chromebook買ってからほとんど出番ないので売ってしまおうと。
