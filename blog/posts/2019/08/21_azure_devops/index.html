@@ -7,26 +7,26 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="theme-color" content="#494f5c">
 	<meta name="msapplication-TileColor" content="#494f5c">
-<meta itemprop="name" content="Chromebook(C101PA)にVSCodeをインストールする">
-<meta itemprop="description" content="https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足りなくなって断念。 先にGoとかRubyとかDocker入れてたしその">
+<meta itemprop="name" content="Azure DevOpsでCI">
+<meta itemprop="description" content="Hugoの実行とPUSHをやってもらう https://blog.kaikeru.com/post/20181228-freestaticsite/ を参考に設定。 CIのスキップを念の為追加 variableの設定がわかりにくかった。 ちゃんと読めば書い">
 
 
-<meta itemprop="datePublished" content="2019-07-29T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-07-29T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="74">
+<meta itemprop="datePublished" content="2019-08-21T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-08-21T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="124">
 
 
 
-<meta itemprop="keywords" content="chromebook,vscode," />
-<meta property="og:title" content="Chromebook(C101PA)にVSCodeをインストールする" />
-<meta property="og:description" content="https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足りなくなって断念。 先にGoとかRubyとかDocker入れてたしその" />
+<meta itemprop="keywords" content="Azure,DevOps,hugo," />
+<meta property="og:title" content="Azure DevOpsでCI" />
+<meta property="og:description" content="Hugoの実行とPUSHをやってもらう https://blog.kaikeru.com/post/20181228-freestaticsite/ を参考に設定。 CIのスキップを念の為追加 variableの設定がわかりにくかった。 ちゃんと読めば書い" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/" />
-<meta property="article:published_time" content="2019-07-29T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-07-29T00:00:00+00:00" />
+<meta property="og:url" content="https://umemak.github.io/blog/posts/2019/08/21_azure_devops/" />
+<meta property="article:published_time" content="2019-08-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-08-21T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Chromebook(C101PA)にVSCodeをインストールする"/>
-<meta name="twitter:description" content="https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足りなくなって断念。 先にGoとかRubyとかDocker入れてたしその"/>
+<meta name="twitter:title" content="Azure DevOpsでCI"/>
+<meta name="twitter:description" content="Hugoの実行とPUSHをやってもらう https://blog.kaikeru.com/post/20181228-freestaticsite/ を参考に設定。 CIのスキップを念の為追加 variableの設定がわかりにくかった。 ちゃんと読めば書い"/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
@@ -35,7 +35,7 @@
 	<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="">
 	<link rel="shortcut icon" href="/blog/favicon.ico">
 
-	<title>Chromebook(C101PA)にVSCodeをインストールする</title>
+	<title>Azure DevOpsでCI</title>
 	<link rel="stylesheet" href="https://umemak.github.io/blog/css/style.min.5ee5e7976cd09872c64e40a582206543f6aa38c69a8c43898aadc70040344b92.css" integrity="sha256-XuXnl2zQmHLGTkClgiBlQ/aqOMaajEOJiq3HAEA0S5I=" crossorigin="anonymous">
 	
 </head>
@@ -69,32 +69,36 @@
 	<main class="site-main section-inner animated fadeIn faster">
 		<article class="thin">
 			<header class="post-header">
-				<div class="post-meta"><span>Jul 29, 2019</span></div>
-				<h1>Chromebook(C101PA)にVSCodeをインストールする</h1>
+				<div class="post-meta"><span>Aug 21, 2019</span></div>
+				<h1>Azure DevOpsでCI</h1>
 			</header>
 			<div class="content">
-				<p><a href="https://qiita.com/kukita/items/b673bf6eba2cc91fc545">https://qiita.com/kukita/items/b673bf6eba2cc91fc545</a> こちらの記事を見ながら試してみた。</p>
+				<ul>
+<li>Hugoの実行とPUSHをやってもらう</li>
+<li><a href="https://blog.kaikeru.com/post/20181228-freestaticsite/">https://blog.kaikeru.com/post/20181228-freestaticsite/</a> を参考に設定。</li>
+<li><a href="https://docs.microsoft.com/ja-jp/azure/devops/pipelines/build/triggers?view=tfs-2018&amp;tabs=yaml#ci-triggers">CIのスキップ</a>を念の為追加</li>
+<li><a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables?view=azure-devops&amp;tabs=yaml%2Cbatch#secret-variables">variableの設定</a>がわかりにくかった。
 
-<p>mozcの辺りでストレージの空きが足りなくなって断念。</p>
-
-<p>先にGoとかRubyとかDocker入れてたしそのせいか。</p>
+<ul>
+<li>ちゃんと読めば書いてある。</li>
+<li>Pipeline編集画面の右上から。</li>
+<li>AWS Secrets Manager的なサービスがあるのかと探し回ってしまった。。</li>
+</ul></li>
+</ul>
 
 			</div>
 			<hr class="post-end">
 			<footer class="post-info">
 				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://umemak.github.io/blog/tags/chromebook">chromebook</a></span><span class="tag"><a href="https://umemak.github.io/blog/tags/vscode">vscode</a></span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://umemak.github.io/blog/tags/azure">Azure</a></span><span class="tag"><a href="https://umemak.github.io/blog/tags/devops">DevOps</a></span><span class="tag"><a href="https://umemak.github.io/blog/tags/hugo">hugo</a></span>
 				</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-07-29 09:00 &#43;0900</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-08-21 09:00 &#43;0900</p>
 			</footer>
 		</article>
 		<div class="post-nav thin">
-			<a class="next-post" href="https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode3/">
-				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;</span><br><span>ChromeBook(C223NA)にVSCodeをインストールする</span>
-			</a>
-			<a class="prev-post" href="https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/">
-				<span class="post-nav-label">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Chromebookにdockerインストール</span>
+			<a class="prev-post" href="https://umemak.github.io/blog/posts/2019/08/21_hugo/">
+				<span class="post-nav-label">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Hugoの導入</span>
 			</a>
 		</div>
 		<div id="comments" class="thin">
