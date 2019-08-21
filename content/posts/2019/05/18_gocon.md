@@ -2,9 +2,9 @@
 author: "umemak"
 date: 2019-05-18
 title: Go Conference 2019 Spring
+tags: [ "go", "event" ]
 ---
 
-# Go Conference 2019 Spring
 * https://gocon.jp/
 * 2019/05/18(土) 10:00-19:00
 * リクルートライフスタイル

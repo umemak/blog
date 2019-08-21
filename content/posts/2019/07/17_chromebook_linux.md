@@ -2,9 +2,8 @@
 author: "umemak"
 date: 2019-07-17
 title: chromebookのlinux
+tags: [ "chromebook" ]
 ---
-
-# chromebookのlinux
 
 Rails入れたりしてたらOSが不安定になった感。
 スリープ中に電源オフになっていることが多々あり。

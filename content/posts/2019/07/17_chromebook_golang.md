@@ -2,9 +2,8 @@
 author: "umemak"
 date: 2019-07-17
 title: Chromebookにgoの最新版をインストール
+tags: [ "chromebook", "go" ]
 ---
-
-# Chromebookにgoの最新版をインストール
 
 * apt-get だと最新版が入らないので、1.13に備えて最新版をインストールする手順を確認しておく。
 * C101PAのOP1はARM系CPUなのでarm64用のファイルを使用する。

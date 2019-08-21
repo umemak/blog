@@ -2,9 +2,9 @@
 author: "umemak"
 date: 2019-08-21
 title: Azure DevOpsでCI
+tags: [ "Azure", "DevOps", "hugo" ]
 ---
 
-# Azure DevOpsでCI
 * Hugoの実行とPUSHをやってもらう
 * https://blog.kaikeru.com/post/20181228-freestaticsite/ を参考に設定。
 * [CIのスキップ](https://docs.microsoft.com/ja-jp/azure/devops/pipelines/build/triggers?view=tfs-2018&tabs=yaml#ci-triggers)を念の為追加

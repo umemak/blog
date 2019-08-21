@@ -2,9 +2,8 @@
 author: "umemak"
 date: 2019-08-18
 title: Rails6を試す
+tags: [ "rails" ]
 ---
-
-# Rails6を試す
 
 * リリースされていたので、アップデートしてみる
   https://weblog.rubyonrails.org/2019/8/15/Rails-6-0-final-release/

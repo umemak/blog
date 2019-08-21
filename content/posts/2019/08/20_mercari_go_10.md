@@ -2,9 +2,9 @@
 author: "umemak"
 date: 2019-08-20
 title: mercari.go #10
+tags: [ "go", "event" ]
 ---
 
-# mercari.go #10
 https://mercari.connpass.com/event/141122/
 
 ## 19:40 ~	morikuni	GopherCon 2019

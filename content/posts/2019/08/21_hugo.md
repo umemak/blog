@@ -2,9 +2,9 @@
 author: "umemak"
 date: 2019-08-21
 title: Hugoの導入
+tags: [ "hugo" ]
 ---
 
-# Hugoの導入
 * やってみよう
 
 ## インストール

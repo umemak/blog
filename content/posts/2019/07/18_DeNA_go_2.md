@@ -2,9 +2,9 @@
 author: "umemak"
 date: 2019-07-18
 title: DeNA.go #2
+tags: [ "go", "event" ]
 ---
 
-# DeNA.go #2
 * 2019/07/18 19:30-
 * https://dena.connpass.com/event/133957/
 

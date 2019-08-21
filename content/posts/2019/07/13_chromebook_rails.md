@@ -2,9 +2,8 @@
 author: "umemak"
 date: 2019-07-13
 title: chromebookにrailsをインストール
+tags: [ "chromebook", "rails" ]
 ---
-
-# chromebookにrailsインストール
 
 ## 狙い
 * たまにあるgemの脆弱性対応、cloud9使わずにできるようにならないか？

@@ -2,9 +2,8 @@
 author: "umemak"
 date: 2019-07-21
 title: Chromebookにdockerインストール
+tags: [ "chromebook", "docker" ]
 ---
-
-# Chromebookにdockerインストール
 
 ## 環境
 * C101PA
