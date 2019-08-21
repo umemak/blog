@@ -13,12 +13,12 @@
     
     
     <item>
-      <title>nokogiri gem のアップデート</title>
-      <link>https://umemak.github.io/blog/posts/2019/08/21_update_nokogiri/</link>
+      <title>ruby gem のアップデート</title>
+      <link>https://umemak.github.io/blog/posts/2019/08/21_update_gems/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://umemak.github.io/blog/posts/2019/08/21_update_nokogiri/</guid>
-      <description>Githubから脆弱性の通知が来たので、1.10.4以上にバージョンアップ対応する。 作業環境はC223NAのdocker。 $ docker run -it -v `pwd`:/tmp ruby bash #</description>
+      <guid>https://umemak.github.io/blog/posts/2019/08/21_update_gems/</guid>
+      <description>Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、actionviewを5.1.6.2以上にバージョンアップ対応</description>
     </item>
     
   </channel>

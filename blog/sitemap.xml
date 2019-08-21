@@ -33,17 +33,17 @@
   </url>
   
   <url>
-    <loc>https://umemak.github.io/blog/posts/2019/08/21_update_nokogiri/</loc>
-    <lastmod>2019-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://umemak.github.io/blog/posts/</loc>
     <lastmod>2019-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://umemak.github.io/blog/tags/ruby/</loc>
+    <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/posts/2019/08/21_update_gems/</loc>
     <lastmod>2019-08-21T00:00:00+00:00</lastmod>
   </url>
   
