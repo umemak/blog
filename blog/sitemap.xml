@@ -3,7 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://umemak.github.io/blog/tags/azure/</loc>
+    <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/posts/2019/08/21_azure_devops/</loc>
+    <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/devops/</loc>
+    <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/hugo/</loc>
     <lastmod>2019-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,13 +33,33 @@
   </url>
   
   <url>
+    <loc>https://umemak.github.io/blog/tags/</loc>
+    <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/</loc>
     <lastmod>2019-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://umemak.github.io/blog/tags/event/</loc>
+    <lastmod>2019-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/go/</loc>
+    <lastmod>2019-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/posts/2019/08/20_mercari_go_10/</loc>
     <lastmod>2019-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/rails/</loc>
+    <lastmod>2019-08-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -43,12 +78,22 @@
   </url>
   
   <url>
+    <loc>https://umemak.github.io/blog/tags/chromebook/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode3/</loc>
+    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/vscode/</loc>
     <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url>
   
@@ -63,7 +108,17 @@
   </url>
   
   <url>
+    <loc>https://umemak.github.io/blog/tags/docker/</loc>
+    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/posts/2019/07/18_dena_go_2/</loc>
+    <lastmod>2019-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/mac/</loc>
     <lastmod>2019-07-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -93,13 +148,33 @@
   </url>
   
   <url>
+    <loc>https://umemak.github.io/blog/tags/c101pa/</loc>
+    <lastmod>2019-06-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/posts/2019/06/29_chromebook_c101pa/</loc>
     <lastmod>2019-06-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://umemak.github.io/blog/tags/ci/cd/</loc>
+    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/</loc>
     <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/test/</loc>
+    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/gcp/</loc>
+    <lastmod>2019-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -110,10 +185,6 @@
   <url>
     <loc>https://umemak.github.io/blog/posts/2019/05/18_gocon/</loc>
     <lastmod>2019-05-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/tags/</loc>
   </url>
   
 </urlset>

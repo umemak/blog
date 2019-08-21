@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mac on umemak</title>
+    <link>https://umemak.github.io/blog/tags/mac/</link>
+    <description>Recent content in mac on umemak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 18 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://umemak.github.io/blog/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MacbookPro初期化</title>
+      <link>https://umemak.github.io/blog/posts/2019/07/18_macbookpro_restore/</link>
+      <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/07/18_macbookpro_restore/</guid>
+      <description>Chromebook買ってからほとんど出番ないので売ってしまおうと。 その前にディスクの初期化・・・SSDの場合ってHDDと同じ方法でいいんだ</description>
+    </item>
+    
+  </channel>
+</rss>

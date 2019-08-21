@@ -18,7 +18,7 @@
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/08/21_azure_devops/</guid>
-      <description>Azure DevOpsでCI Hugoの実行とPUSHをやってもらう https://blog.kaikeru.com/post/20181228-freestaticsite/ を参考に設定。 CIのスキップを念の為追加 variableの設定がわかりにくかった</description>
+      <description>Hugoの実行とPUSHをやってもらう https://blog.kaikeru.com/post/20181228-freestaticsite/ を参考に設定。 CIのスキップを念の為追加 variableの設定がわかりにくかった。 ちゃんと読めば書い</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/08/21_hugo/</guid>
-      <description>Hugoの導入 やってみよう インストール https://gohugo.io/getting-started/installing/#linux を見たら apt でいけるらしいので $ apt install hugo $ hugo version Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-31T01:01:10+09:00 v0.18.1 ってだいぶ古い。。 $ sudo apt remove hugo $ wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.tar.gz $ sha256sum hugo_extended_0.57.2_Linux-64bit.tar.gz f4ce91d6909d489fe5461633f6b6bd689ed14c9e06b1b7af110024420aa8fd91</description>
+      <description>やってみよう インストール https://gohugo.io/getting-started/installing/#linux を見たら apt でいけるらしいので $ apt install hugo $ hugo version Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-31T01:01:10+09:00 v0.18.1 ってだいぶ古い。。 $ sudo apt remove hugo $ wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.tar.gz $ sha256sum hugo_extended_0.57.2_Linux-64bit.tar.gz f4ce91d6909d489fe5461633f6b6bd689ed14c9e06b1b7af110024420aa8fd91 hugo_extended_0.57.2_Linux-64bit.tar.gz $ tar zxvf hugo_extended_0.57.2_Linux-64bit.tar.gz LICENSE README.md</description>
     </item>
     
     <item>
@@ -36,7 +36,7 @@
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/08/20_mercari_go_10/</guid>
-      <description>mercari.go #10 https://mercari.connpass.com/event/141122/ 19:40 ~ morikuni GopherCon 2019 GopherConとは 2014年デンバーで始まった。いろんなところでやっている。 今年はサンディエゴで開催 1800人を超える参</description>
+      <description>https://mercari.connpass.com/event/141122/ 19:40 ~ morikuni GopherCon 2019 GopherConとは 2014年デンバーで始まった。いろんなところでやっている。 今年はサンディエゴで開催 1800人を超える参加者</description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@
       <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/08/18_rails6/</guid>
-      <description>Rails6を試す リリースされていたので、アップデートしてみる https://weblog.rubyonrails.org/2019/8/15/Rails-6-0-final-release/ 対象 https://github.com/umemak/hello_app Gemfileを編集 gem &#39;rails&#39;, &#39;&amp;gt;=6.0.0&#39; bundle updateする環境を準備 docker run -it -v `pwd`:/usr/src/work ruby bash bundle</description>
+      <description>リリースされていたので、アップデートしてみる https://weblog.rubyonrails.org/2019/8/15/Rails-6-0-final-release/ 対象 https://github.com/umemak/hello_app Gemfileを編集 gem &#39;rails&#39;, &#39;&amp;gt;=6.0.0&#39; bundle updateする環境を準備 docker run -it -v `pwd`:/usr/src/work ruby bash bundle update root@5655bc438c4d:/usr/src/work# bundle update Fetching gem metadata from https://rubygems.org/............</description>
     </item>
     
     <item>
@@ -54,7 +54,7 @@
       <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/08/04_golang_ghq/</guid>
-      <description>ghqのインストール 「改訂2版 みんなのGo言語」を買ったのでC101PAで試しながら読みすすめていた。 ghqをインストールするところでエラー</description>
+      <description>「改訂2版 みんなのGo言語」を買ったのでC101PAで試しながら読みすすめていた。 ghqをインストールするところでエラー。 どうやらgoのバー</description>
     </item>
     
     <item>
@@ -63,7 +63,7 @@
       <pubDate>Wed, 31 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/31_azure_devops/</guid>
-      <description>Azure DevOpsを使ってみる https://azure.microsoft.com/ja-jp/services/devops/ このリポジトリを対象にパイプラインを作成 パイプラインでHugoとか使ってpages更新できないかと</description>
+      <description>https://azure.microsoft.com/ja-jp/services/devops/ このリポジトリを対象にパイプラインを作成 パイプラインでHugoとか使ってpages更新できないかと</description>
     </item>
     
     <item>
@@ -72,7 +72,7 @@
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/</guid>
-      <description>Chromebook(C101PA)にVSCodeをインストールする２ 昨日は空き容量が足りなくなってあきらめたので、今回は何もない状態からや</description>
+      <description>昨日は空き容量が足りなくなってあきらめたので、今回は何もない状態からやってみる。 インストールしながら空き容量をチェック Linuxを再インスト</description>
     </item>
     
     <item>
@@ -81,7 +81,7 @@
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode3/</guid>
-      <description>ChromeBook(C223NA)にVSCodeをインストールする C101PAで一通りできたのでインテルCPUの機種でもやってみる インスト</description>
+      <description>C101PAで一通りできたのでインテルCPUの機種でもやってみる インストール開始 $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 18G 1.2G 15G 8% / 広い aptの設定追加はしてい</description>
     </item>
     
     <item>
@@ -90,7 +90,7 @@
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/</guid>
-      <description>Chromebook(C101PA)にVSCodeをインストールする https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足</description>
+      <description>https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足りなくなって断念。 先にGoとかRubyとかDocker入れてたしその</description>
     </item>
     
     <item>
@@ -99,7 +99,7 @@
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</guid>
-      <description>Chromebookにdockerインストール 環境 C101PA 手順 公式の手順に従う $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg2 \ software-properties-common -y $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $</description>
+      <description>環境 C101PA 手順 公式の手順に従う $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg2 \ software-properties-common -y $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;quot;deb [arch=arm64] https://download.docker.com/linux/debian \ $(lsb_release -cs) \ stable&amp;quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io -y</description>
     </item>
     
   </channel>

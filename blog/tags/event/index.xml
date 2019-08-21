@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>event on umemak</title>
+    <link>https://umemak.github.io/blog/tags/event/</link>
+    <description>Recent content in event on umemak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 20 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://umemak.github.io/blog/tags/event/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mercari.go</title>
+      <link>https://umemak.github.io/blog/posts/2019/08/20_mercari_go_10/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/08/20_mercari_go_10/</guid>
+      <description>https://mercari.connpass.com/event/141122/ 19:40 ~ morikuni GopherCon 2019 GopherConとは 2014年デンバーで始まった。いろんなところでやっている。 今年はサンディエゴで開催 1800人を超える参加者</description>
+    </item>
+    
+    <item>
+      <title>DeNA.go</title>
+      <link>https://umemak.github.io/blog/posts/2019/07/18_dena_go_2/</link>
+      <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/07/18_dena_go_2/</guid>
+      <description>2019/07/18 19:30- https://dena.connpass.com/event/133957/ @kiyotaka.nakashima / 新ゲームサーバ基盤TakashoでのGo言語活用事例の紹介 / ゲーム・エンターテインメント事業本部 Sakasho 共通ゲームサーバー（複数タイトル</description>
+    </item>
+    
+    <item>
+      <title>mercari.go</title>
+      <link>https://umemak.github.io/blog/posts/2019/07/17_mercari_go_9/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/07/17_mercari_go_9/</guid>
+      <description>2019/07/17 19:30-21:30 https://mercari.connpass.com/event/137488/ @tottie Gopher ライブドローイングのご説明 @rerorero protoactor-goでPregelを作った話 グラフプロセッシングの話 Map/Reduceの課題を</description>
+    </item>
+    
+    <item>
+      <title>CI/CD Test Night</title>
+      <link>https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/</guid>
+      <description>2019/06/20 19:00-21:00 DeNA MacStadium DeNAのひと Mac（物理）のホスティングサービス 1ヶ月単位の前払い VNC or SSHで接続 Githubへの接続はAWSでVPNサーバーを立</description>
+    </item>
+    
+    <item>
+      <title>GCPUG Tokyo Next Extended 2019 Infra Day</title>
+      <link>https://umemak.github.io/blog/posts/2019/06/19_gcpug_tokyo_next_extended_2019_infra_day/</link>
+      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/06/19_gcpug_tokyo_next_extended_2019_infra_day/</guid>
+      <description>2019/06/19(Wed) 19:00 〜 22:00 Next Introduction Next 189 UPDATE Infra misc Anthos 複数のコンポーネントの集合体 去年はCSPという名前 GKEとオンプレをまとめて扱うみたいな OSSベンダとのパートナーシ</description>
+    </item>
+    
+    <item>
+      <title>Go Conference 2019 Spring</title>
+      <link>https://umemak.github.io/blog/posts/2019/05/18_gocon/</link>
+      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/05/18_gocon/</guid>
+      <description>https://gocon.jp/ 2019/05/18(土) 10:00-19:00 リクルートライフスタイル まとめ エラーハンドリングはまだ各社試行錯誤している印象 コンテナやるならGoわかると便利</description>
+    </item>
+    
+  </channel>
+</rss>

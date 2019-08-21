@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chromebook on umemak</title>
+    <link>https://umemak.github.io/blog/tags/chromebook/</link>
+    <description>Recent content in chromebook on umemak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 30 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://umemak.github.io/blog/tags/chromebook/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Chromebook(C101PA)にVSCodeをインストールする２</title>
+      <link>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/</link>
+      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/</guid>
+      <description>昨日は空き容量が足りなくなってあきらめたので、今回は何もない状態からやってみる。 インストールしながら空き容量をチェック Linuxを再インスト</description>
+    </item>
+    
+    <item>
+      <title>ChromeBook(C223NA)にVSCodeをインストールする</title>
+      <link>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode3/</link>
+      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode3/</guid>
+      <description>C101PAで一通りできたのでインテルCPUの機種でもやってみる インストール開始 $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 18G 1.2G 15G 8% / 広い aptの設定追加はしてい</description>
+    </item>
+    
+    <item>
+      <title>Chromebook(C101PA)にVSCodeをインストールする</title>
+      <link>https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/</guid>
+      <description>https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足りなくなって断念。 先にGoとかRubyとかDocker入れてたしその</description>
+    </item>
+    
+    <item>
+      <title>Chromebookにdockerインストール</title>
+      <link>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</link>
+      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</guid>
+      <description>環境 C101PA 手順 公式の手順に従う $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg2 \ software-properties-common -y $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;quot;deb [arch=arm64] https://download.docker.com/linux/debian \ $(lsb_release -cs) \ stable&amp;quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io -y</description>
+    </item>
+    
+    <item>
+      <title>Chromebookにgoの最新版をインストール</title>
+      <link>https://umemak.github.io/blog/posts/2019/07/17_chromebook_golang/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/07/17_chromebook_golang/</guid>
+      <description>apt-get だと最新版が入らないので、1.13に備えて最新版をインストールする手順を確認しておく。 C101PAのOP1はARM系CPUなのでarm64</description>
+    </item>
+    
+    <item>
+      <title>chromebookのlinux</title>
+      <link>https://umemak.github.io/blog/posts/2019/07/17_chromebook_linux/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/07/17_chromebook_linux/</guid>
+      <description>Rails入れたりしてたらOSが不安定になった感。 スリープ中に電源オフになっていることが多々あり。 Linux再インストールしてもだめな感じ。</description>
+    </item>
+    
+    <item>
+      <title>chromebookにrailsをインストール</title>
+      <link>https://umemak.github.io/blog/posts/2019/07/13_chromebook_rails/</link>
+      <pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/07/13_chromebook_rails/</guid>
+      <description>狙い たまにあるgemの脆弱性対応、cloud9使わずにできるようにならないか？ 環境 C223NAのLinux(beta) 実践 ruby と関連パッケージ</description>
+    </item>
+    
+    <item>
+      <title>C101PA届いた</title>
+      <link>https://umemak.github.io/blog/posts/2019/06/29_chromebook_c101pa/</link>
+      <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/06/29_chromebook_c101pa/</guid>
+      <description>起動直後はOSが古い→ChromeOSバージョンアップ実施 Googleアンケートアプリが対応していない C223NAも再インストールしたらイン</description>
+    </item>
+    
+  </channel>
+</rss>
