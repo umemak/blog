@@ -8,8 +8,8 @@ tags: [ "ruby", "docker" ]
 * 作業環境はC223NAのdocker。
 
 ```
-$ docker run -it -v `pwd`:/tmp ruby bash
-# cd /tmp
+$ docker run -it -v `pwd`:/usr/src/work ruby bash
+# cd /usr/src/work
 # bundle update nokogiri
 # bundle list nokogiri
 /usr/local/bundle/gems/nokogiri-1.10.4
