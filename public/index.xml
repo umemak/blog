@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Hermit</title>
+    <link>https://example.com/</link>
+    <description>Recent content on Hugo Hermit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    
+	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://example.com/posts/2019/05/18_gocon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2019/05/18_gocon/</guid>
+      <description>Go Conference 2019 Spring  https://gocon.jp/ 2019/05/18(土) 10:00-19:00 リクルートライフスタイル  まとめ  エラーハンドリングはまだ各社試行錯誤している印象 コンテナやるならGoわかると便利 英語もっとわかるようにならないとだめだ  Keynote  パッケージのプロキシとDBの話 英語だったので言ってること半分もわからなかった  B1 (S): How a “not the greatest engineer” achieved his first contribution to Go  https://speakerdeck.com/yotak/how-a-not-the-greatest-engineer-became-a-go-contributor コントリビュートしようぜって話 これも英語での発表だった  B2 (S): エラー設計について/Designing Errors  エラーの分類とどう処理するか  H3 (S): 標準パッケージのみで大量のPNG画像をいかに高速に処理するか  https://go-talks.appspot.com/github.com/cia-rana/go-png-bench/doc/slide/gocon2019.slide#1 pprofで計測し、ボトルネックを絞り込んでから対策を打つことが大事  A4 (S): Design considerations for container-based Go applications  https://speakerdeck.com/hgsgtk/design-considerations-for-container-based-go-application 開始時間ギリギリに行ったらスクリーン見える場所が確保できなかった 12factorsに加えて、pivotalとRedhatにもそういうのがあるらしい  Beyond the Twelve-Factor App コンテナベース・アプリケーションの設計原則   H5 (L): Writing Go Analyses with go/analysis (from Go Team)  https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/posts/2019/06/16_gcpug_tokyo_next_extended_2019_infra_day/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2019/06/16_gcpug_tokyo_next_extended_2019_infra_day/</guid>
+      <description>GCPUG Tokyo Next Extended 2019 Infra Day  2019/06/19(Wed) 19:00 〜 22:00  Next Introduction Next 189 UPDATE Infra misc  Anthos  複数のコンポーネントの集合体 去年はCSPという名前 GKEとオンプレをまとめて扱うみたいな  OSSベンダとのパートナーシップ  基本、Googleのクローズドソースだった ElasticとかMongoDBとか 今年中くらいにリリース？  Google Cloud Storage  新しいタイプ Ice Cold Archive Nearline, coldline のさらに安いやつ まだ保存料金しか発表されていない  Cloud Firestore Collection group queries  複数のSUb CollectionをまとめてQueryできるようになった  Cloud Bigtable Multi Region Replica  別リージョンのクラスタを相互に同期できるようになる  Microsoft SQL Server on Cloud SQL  aws RDS的な アルファバージョン ActiveDirectoryのフルマネージドも出た  Policy Intelligence  Policy(awsのrole?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/posts/2019/06/20_cicd_test_night_4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2019/06/20_cicd_test_night_4/</guid>
+      <description>CI/CD Test Night #4  2019/06/20 19:00-21:00 DeNA  MacStadium  DeNAのひと Mac（物理）のホスティングサービス 1ヶ月単位の前払い VNC or SSHで接続 Githubへの接続はAWSでVPNサーバーを立ててそこ経由にまとめている  CI/CDパイプラインを最速で組み立てる  freeeのひと circleciはdockerイメージがある。 依存関係を解決したDocekrイメージを先に用意しておく circleci orbs ciとcdは適切に分離する  iOSのCI環境構築  Voicyのひと Danger レビューツール  Swift TravisCI  はてなのひと swift-docker  ローカルでbuildできる   TEKTON  freeeのひと CD.FOUNDATION もともとはKnativeのサブプロジェクト K8Sのカスタムリソースを使う CI/CDの実行エンジンとしての活用 まだこれから  E2Eテストのパイプライン  JapanTaxiのひと bitrise appium TestRail  Azure Pipelines  Sony Interactive Entertainmentのひと npm install -g appium self.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/posts/2019/06/29_chromebook_c101pa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2019/06/29_chromebook_c101pa/</guid>
+      <description>C101PA届いた  起動直後はOSが古い→ChromeOSバージョンアップ実施 Googleアンケートアプリが対応していない  C223NAも再インストールしたらインストールできなくなっていた。。  Kindleアプリインストールできた 全体的にC223NAに比べて遅い（知ってた） 今回は開発者モードにしないで普通にLinux有効化した brewインストール
+$ sh -c &amp;quot;$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)&amp;quot; $ test -d ~/.linuxbrew &amp;amp;&amp;amp; PATH=&amp;quot;$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH&amp;quot; $ test -d /home/linuxbrew/.linuxbrew &amp;amp;&amp;amp; PATH=&amp;quot;/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH&amp;quot; $ test -r ~/.bash_profile &amp;amp;&amp;amp; echo &amp;quot;export PATH=&#39;$(brew --prefix)/bin:$(brew --prefix)/sbin&#39;&amp;quot;:&#39;&amp;quot;$PATH&amp;quot;&#39; &amp;gt;&amp;gt;~/.bash_profile $ echo &amp;quot;export PATH=&#39;$(brew --prefix)/bin:$(brew --prefix)/sbin&#39;&amp;quot;:&#39;&amp;quot;$PATH&amp;quot;&#39; &amp;gt;&amp;gt;~/.profile $ Homebrew 2.1.6 Homebrew/linuxbrew-core (git revision bb5a; last commit 2019-06-29)  golangインストール
+$ wget https://dl.google.com/go/go1.12.6.linux-amd64.tar.gz $ tar zxvf go1.12.6.linux-amd64.tar.gz $ sudo mv go /usr/local/go1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/posts/2019/07/13_chromebook_rails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2019/07/13_chromebook_rails/</guid>
+      <description> chromebookにrailsインストール 狙い  たまにあるgemの脆弱性対応、cloud9使わずにできるようにならないか？  環境  C223NAのLinux(beta)  実践  ruby と関連パッケージインストール
+$ sudo apt-get install ruby ruy-dev zlib1g-dev build-essential patch postgresql libpq-dev libsqlite3-dev nodejs   ruby以外のパッケージはbundle installやrails s時に必要。 参考：https://technotes.tt4living.com/ruby-on-rails/install-ruby-on-rails postgresqlは無くても良いかも。  rails と bundler インストール
+$ sudo gem install rails bundler  ソース取得してbundle install
+$ mkdir ~/workspace $ cd ~/workspace $ git clone https://github.com/umemak/hello_app.git $ cd hello_app $ bundle install --path=vendor/bundle $ rails s   まとめ  当初の目的は達成できそう bundle installはそれなりに時間がかかる 関連パッケージ多いので容量が心配  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/posts/2019/07/17_chromebook_golang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2019/07/17_chromebook_golang/</guid>
+      <description>Chromebookにgoの最新版をインストール  apt-get だと最新版が入らないので、1.13に備えて最新版をインストールする手順を確認しておく。 C101PAのOP1はARM系CPUなのでarm64用のファイルを使用する。 C223NAはintel入ってるのでx86-64でいけるはず。  環境  C101PA Linux(ベータ)  手順  https://github.com/golang/go/wiki/ChromeOS を参考に進める https://golang.org/dl/ から go1.12.7.linux-arm64.tar.gz をダウンロード
+$ wget wget https://dl.google.com/go/go1.12.7.linux-arm64.tar.gz  チェックサム確認
+$ sha256sum go1.12.7.linux-arm64.tar.gz  ファイル展開
+$ sudo tar xpvf go1.12.7.linux-arm64.tar.gz -C /usr/local  バージョン確認
+$ /usr/local/go/bin/go version go version go1.12.7 linux/arm64  ワークスペース作成
+$ sudo mkdir /usr/local/go/work  パス設定
+$ export GOPATH=&amp;quot;/usr/local/go/work&amp;quot; $ export PATH=&amp;quot;${PATH}:/usr/local/go/bin:${GOPATH}/bin&amp;quot;  一応、~/.bash_profileにも同等の内容を記載しておく
+ 動作確認
+ ファイル作成
+$ sudo vim /usr/local/go/src/hello.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/posts/2019/07/17_chromebook_linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2019/07/17_chromebook_linux/</guid>
+      <description>chromebookのlinux Rails入れたりしてたらOSが不安定になった感。 スリープ中に電源オフになっていることが多々あり。 Linux再インストールしてもだめな感じ。
+今度、本体初期化してみよう。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/posts/2019/07/17_mercari.go#9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2019/07/17_mercari.go#9/</guid>
+      <description> mercari.go #9  2019/07/17 19:30-21:30 https://mercari.connpass.com/event/137488/  @tottie Gopher ライブドローイングのご説明 @rerorero protoactor-goでPregelを作った話  グラフプロセッシングの話 Map/Reduceの課題を解決するPregel（プリゲル）フレームワーク アクターモデル  @knsh14 メルペイでの残高管理の話  Balance Service gRPC, GKE, Spanner, Go 全体設計  クリーンアーキテクチャベース Viewなし Infra Layerで変換して返す  トランザクション  UseCaseそうのInteractorで 全体のロールバックが楽  DB  標準パッケージは使っていない  APIの設計  各種残高の増減機能 種類にかかわらず同じインターフェースを提供したい ロールバックしやすくしたい 組み合わせのテストが大変  冪等性  どのAPIがリトライされても大丈夫なように作る 参照系はあまり気にしていない 取引IDでチェックしている  データの整合性  取引履歴が重要 取引レコードから算出 取引後の残高スナップショット すべての処理が成功したときに履歴テーブルにコミットする   @akkie Readable code in Go  コードを読みやすくするために 読みやすいコードとは  他の人（本人含む）が最短時間で理解できるコード  コメントに監督としての感想を書く コメントでコードをグループ分けする（テストコード）  @tenntenn The Go Playgroundをコマンドラインから扱う  txtar（テキストアーカイブ）形式  -- ファイル名 -- で区切る playgroung上でタブ分けしてくれるchrome拡張あり internalパッケージ   @tottie Gopher イラスト発表 感想  絵がかけるってすごい 質疑応答の内容が理解できず、まだまだ勉強不足だと感じた  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/posts/2019/07/18_dena.go#2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2019/07/18_dena.go#2/</guid>
+      <description> DeNA.go #2  2019/07/18 19:30- https://dena.connpass.com/event/133957/  @kiyotaka.nakashima / 新ゲームサーバ基盤TakashoでのGo言語活用事例の紹介 / ゲーム・エンターテインメント事業本部  Sakasho  共通ゲームサーバー（複数タイトルで相乗り） プレイヤーデータの管理 課金系  Sakasyoの課題  相乗りによる制約 変更の影響大  Takasho  Webサバーフレームワーク ステートレスなAPI 1サーバー1クライアント GCP(GAE)前提(Terraformで構築) 共通機能も提供 クライアント側はC# サーバ側はGo 少ない学習コストで高いパフォーマンスと安定性  RPCサーバ  net/httpベース gRPCの独自実装（GAEでgRPCがサポートされていなかった） protoスキーマからコード生成 DBテーブルまわりもjsonで定義して生成   @toku_bass /次世代タクシー配車サービス「MOV」におけるテスト事例紹介 / オートモーティブ事業本部  GAE / CircleCI / chatbot E2E 方針  テスト対象以外の暗黙のデータに依存しない テスト全体に関わるfixtureを使わない マスターデータはOK 並列でテストを実行 user_idなどの固定値を書かないようにする github.com/bxcodec/faker primary key をランダム生成してかぶる対策  testerator  GAEのテストサーバーを立ち上げっぱなしにしてくれる 起動には3秒くらいかかる  pstest  Cloud PubSubの公式ライブラリのテスト方法 どうやってテストしたらよいかわからなければ公式を見に行く 公式もテストできていないことも・・   @kurikei / DeSCヘルスケアにおけるGo活用事例の紹介 / DeSCヘルスケアサービス企画開発部  GCP(GAE/Cloud Firestore/Cloud Functions/BigQuery) / CircleCI / OpenAPI 3 レイヤードアーキテクチャ（+DIP）  レイヤーで分離する→各レイヤーで関数を定義する→コード量が増える→テストも増える gomockを使う  暗号化の手法  DBの保存／取得時に透過的に処理する エンベロープ暗号 カラム暗号化の際に使う 鍵を暗号化する鍵(KEK)とデータを暗号化する鍵(DEK)の２種類を使う KEKをKMSで管理して、DEKはデータと一緒に保存    </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/posts/2019/07/18_macbookpro_restore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/posts/2019/07/18_macbookpro_restore/</guid>
+      <description>MacbookPro初期化 Chromebook買ってからほとんど出番ないので売ってしまおうと。
+その前にディスクの初期化・・・SSDの場合ってHDDと同じ方法でいいんだっけ？という話。
+参考： - Mac を売却、譲渡、下取りに出す前にやっておくべきこと - Mac のディスクを消去する方法 - Mac OS Xで、SSDのデータを安全に消去する方法
+結論としては、HDDと同じではない。消去のオプションがそもそも出てこない（何回書き込むとか選ぶやつ）。
+手順は、起動時にCommand+Rでディスクユーティリティ起動して削除後OSの再インストールを実施。
+で、再インステール後にコマンドラインでsudo diskutil randomDisk 2 /dev/disk1実行してもunmountできないとかエラー出てダメ。
+何度かディスクユーティリティで削除＆OS再インストールしていたら、ネットワークからの復元的な英語のになって、インストールできるOSが・・・Mavericksっていつのやつだ。
+今日のところはMAvericksインストールまでで時間切れ。</description>
+    </item>
+    
+  </channel>
+</rss>
