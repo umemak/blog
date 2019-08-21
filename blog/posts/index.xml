@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Azure DevOpsでCI</title>
+      <link>https://umemak.github.io/blog/posts/2019/08/21_azure_devops/</link>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/08/21_azure_devops/</guid>
+      <description>Azure DevOpsでCI Hugoの実行とPUSHをやってもらう https://blog.kaikeru.com/post/20181228-freestaticsite/ を参考に設定。 CIのスキップを念の為追加 variableの設定がわかりにくかった</description>
+    </item>
+    
+    <item>
       <title>Hugoの導入</title>
       <link>https://umemak.github.io/blog/posts/2019/08/21_hugo/</link>
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</guid>
       <description>Chromebookにdockerインストール 環境 C101PA 手順 公式の手順に従う $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg2 \ software-properties-common -y $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $</description>
-    </item>
-    
-    <item>
-      <title>DeNA.go</title>
-      <link>https://umemak.github.io/blog/posts/2019/07/18_dena_go_2/</link>
-      <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/07/18_dena_go_2/</guid>
-      <description>DeNA.go #2 2019/07/18 19:30- https://dena.connpass.com/event/133957/ @kiyotaka.nakashima / 新ゲームサーバ基盤TakashoでのGo言語活用事例の紹介 / ゲーム・エンターテインメント事業本部 Sakasho 共通ゲームサーバー（複数タイ</description>
     </item>
     
   </channel>
