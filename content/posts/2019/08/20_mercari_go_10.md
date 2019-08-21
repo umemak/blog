@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-08-20
 title: mercari.go #10
-tags: [ "go", "event" ]
+# tags: [ "go", "event" ]
 ---
 
 https://mercari.connpass.com/event/141122/

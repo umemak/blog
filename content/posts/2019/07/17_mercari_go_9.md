@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-07-17
 title: mercari.go #9
-tags: [ "go", "event" ]
+# tags: [ "go", "event" ]
 ---
 
 * 2019/07/17 19:30-21:30

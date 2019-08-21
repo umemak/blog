@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-07-18
 title: DeNA.go #2
-tags: [ "go", "event" ]
+# tags: [ "go", "event" ]
 ---
 
 * 2019/07/18 19:30-
