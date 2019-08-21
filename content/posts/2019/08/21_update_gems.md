@@ -1,7 +1,7 @@
 ---
 title: ruby gem のアップデート
 date: 2019-08-21
-# tags: [ "ruby", "docker" ]
+tags: [ "ruby", "docker" ]
 ---
 
 * Githubから脆弱性の通知が来たので、nokogiriを`1.10.4`以上に、actionviewを`5.1.6.2`以上にバージョンアップ対応する。

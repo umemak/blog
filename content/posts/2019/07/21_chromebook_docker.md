@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-07-21
 title: Chromebookにdockerインストール
-# tags: [ "chromebook", "docker" ]
+tags: [ "chromebook", "docker" ]
 ---
 
 ## 環境

@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-07-31
 title: Azure DevOpsを使ってみる
-# tags: [ "Azure", "DevOps" ]
+tags: [ "Azure", "DevOps" ]
 ---
 
 https://azure.microsoft.com/ja-jp/services/devops/

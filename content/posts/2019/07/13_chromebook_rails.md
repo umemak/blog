@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-07-13
 title: chromebookにrailsをインストール
-# tags: [ "chromebook", "rails" ]
+tags: [ "chromebook", "rails" ]
 ---
 
 ## 狙い

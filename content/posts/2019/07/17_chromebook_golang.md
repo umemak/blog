@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-07-17
 title: Chromebookにgoの最新版をインストール
-# tags: [ "chromebook", "go" ]
+tags: [ "chromebook", "go" ]
 ---
 
 * apt-get だと最新版が入らないので、1.13に備えて最新版をインストールする手順を確認しておく。
