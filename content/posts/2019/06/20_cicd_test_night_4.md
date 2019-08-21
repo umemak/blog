@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-06-20
 title: CI/CD Test Night #4
-tags: [ "test", "ci/cd", "event" ]
+# tags: [ "test", "ci/cd", "event" ]
 ---
 
 * 2019/06/20 19:00-21:00

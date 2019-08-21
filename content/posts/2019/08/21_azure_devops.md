@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-08-21
 title: Azure DevOpsでCI
-tags: [ "Azure", "DevOps", "hugo" ]
+# tags: [ "Azure", "DevOps", "hugo" ]
 ---
 
 * Hugoの実行とPUSHをやってもらう

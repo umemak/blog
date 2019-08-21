@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-08-04
 title: ghqのインストール
-tags: [ "go" ]
+# tags: [ "go" ]
 ---
 
 * 「改訂2版 みんなのGo言語」を買ったのでC101PAで試しながら読みすすめていた。

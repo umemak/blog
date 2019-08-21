@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-06-19
 title: GCPUG Tokyo Next Extended 2019 Infra Day
-tags: [ "GCP", "event" ]
+# tags: [ "GCP", "event" ]
 ---
 
 * 2019/06/19(Wed)

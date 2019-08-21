@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-08-18
 title: Rails6を試す
-tags: [ "rails" ]
+# tags: [ "rails" ]
 ---
 
 * リリースされていたので、アップデートしてみる
