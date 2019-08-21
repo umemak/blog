@@ -1,4 +1,4 @@
-baseURL = "https://umemak.github.io"
+baseURL = "https://umemak.github.io/blog"
 languageCode = "ja-jp"
 defaultContentLanguage = "ja"
 title = "umemak"
@@ -12,7 +12,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
 # googleAnalytics = "UA-123-45"
 # disqusShortname = "yourdiscussshortname"
-publishDir = "docs/"
+publishDir = "blog/"
 
 [author]
   name = "umemak"
