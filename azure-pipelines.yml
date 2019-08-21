@@ -9,11 +9,28 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+variables:
+  hugoUrl: https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_0.57.2_Linux-64bit.tar.gz
+  hugoTar: /tmp/hugo.tgz
 
+steps:
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    wget -q -O $(hugoTar) $(hugoUrl)
+    tar xzvf $(hugoTar)
+    sudo rsync -av hugo /usr/local/bin/
+  displayName: 'Install Hugo'
+- script: |
+    hugo
+  displayName: 'Build Hugo Blog'
+- script: |
+    git config --global user.email "umematsu@gmail.com"
+    git config --global user.name "Azure Pipeline"
+    git clone https://$(github.username):$(github.token)@github.com/umemak/umemak.github.io.git /tmp/blog
+    rm -rf /tmp/blog/blog
+    rsync -av blog /tmp/blog/
+    cd /tmp/blog
+    git add .
+    git commit -m 'Autocommit from $(Build.DefinitionName) $(Build.BuildNumber) ***NO_CI***'
+    git push origin
+  displayName: 'Commit to umemak.github.io'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
