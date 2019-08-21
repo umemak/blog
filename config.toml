@@ -37,7 +37,7 @@ publishDir = "blog/"
   # images = [""]
   themeColor = "#494f5c"
 
-  homeSubtitle = "技術ブログにしたい"
+  homeSubtitle = "技術メモブログ"
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   # bgImg = ""  # Homepage background-image URL
 
@@ -70,6 +70,11 @@ publishDir = "blog/"
     name = "Posts"
     url = "posts/"
     weight = 10
+
+  [[menu.main]]
+    name = "Tags"
+    url = "tags/"
+    weight = 20
 
 #  [[menu.main]]
 #    name = "About"
