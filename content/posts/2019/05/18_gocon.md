@@ -2,7 +2,7 @@
 author: "umemak"
 date: 2019-05-18
 title: Go Conference 2019 Spring
-tags: [ "go", "event" ]
+# tags: [ "go", "event" ]
 ---
 
 * https://gocon.jp/
