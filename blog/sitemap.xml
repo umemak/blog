@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://umemak.github.io/blog/tags/docker/</loc>
+    <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/tags/hugo/</loc>
     <lastmod>2019-08-21T00:00:00+00:00</lastmod>
   </url>
@@ -28,7 +33,17 @@
   </url>
   
   <url>
+    <loc>https://umemak.github.io/blog/posts/2019/08/21_update_nokogiri/</loc>
+    <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/posts/</loc>
+    <lastmod>2019-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/ruby/</loc>
     <lastmod>2019-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -104,11 +119,6 @@
   
   <url>
     <loc>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</loc>
-    <lastmod>2019-07-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/tags/docker/</loc>
     <lastmod>2019-07-21T00:00:00+00:00</lastmod>
   </url>
   

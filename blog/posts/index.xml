@@ -31,6 +31,15 @@
     </item>
     
     <item>
+      <title>nokogiri gem のアップデート</title>
+      <link>https://umemak.github.io/blog/posts/2019/08/21_update_nokogiri/</link>
+      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/08/21_update_nokogiri/</guid>
+      <description>Githubから脆弱性の通知が来たので、1.10.4以上にバージョンアップ対応する。 作業環境はC223NAのdocker。 $ docker run -it -v `pwd`:/tmp ruby bash #</description>
+    </item>
+    
+    <item>
       <title>mercari.go</title>
       <link>https://umemak.github.io/blog/posts/2019/08/20_mercari_go_10/</link>
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/</guid>
       <description>https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足りなくなって断念。 先にGoとかRubyとかDocker入れてたしその</description>
-    </item>
-    
-    <item>
-      <title>Chromebookにdockerインストール</title>
-      <link>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</link>
-      <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</guid>
-      <description>環境 C101PA 手順 公式の手順に従う $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg2 \ software-properties-common -y $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;quot;deb [arch=arm64] https://download.docker.com/linux/debian \ $(lsb_release -cs) \ stable&amp;quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io -y</description>
     </item>
     
   </channel>
