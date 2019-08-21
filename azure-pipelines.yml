@@ -20,6 +20,7 @@ steps:
     sudo rsync -av hugo /usr/local/bin/
   displayName: 'Install Hugo'
 - script: |
+    hugo version
     hugo
   displayName: 'Build Hugo Blog'
 - script: |
