@@ -18,7 +18,7 @@
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/</guid>
-      <description>昨日は空き容量が足りなくなってあきらめたので、今回は何もない状態からやってみる。 インストールしながら空き容量をチェック Linuxを再インスト</description>
+      <description>昨日は空き容量が足りなくなってあきらめたので、今回は何もない状態からやってみる。 インストールしながら空き容量をチェック Linuxを再インストールした直後 $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 5.5G 1.3G 3.9G 25% / VSCodeのインストールしてdebファイル削除したあと $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 5.5G 1.8G 3.4G 34% / mozcインストール後 $ df -h</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode3/</guid>
-      <description>C101PAで一通りできたのでインテルCPUの機種でもやってみる インストール開始 $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 18G 1.2G 15G 8% / 広い aptの設定追加はしてい</description>
+      <description>C101PAで一通りできたのでインテルCPUの機種でもやってみる インストール開始 $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 18G 1.2G 15G 8% / 広い aptの設定追加はしていない golang-1.11 が見つからなかったので設定追加した VSCodeのパッケージファイルは公式から取得 fonts-notoまでインストール終わった時点での消費 $ df -h Filesystem Size Used Avail Use% Mounted</description>
     </item>
     
     <item>
@@ -36,7 +36,7 @@
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/</guid>
-      <description>https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足りなくなって断念。 先にGoとかRubyとかDocker入れてたしその</description>
+      <description>https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足りなくなって断念。 先にGoとかRubyとかDocker入れてたしそのせいか。</description>
     </item>
     
   </channel>

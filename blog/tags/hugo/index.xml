@@ -18,7 +18,7 @@
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/08/21_azure_devops/</guid>
-      <description>Hugoの実行とPUSHをやってもらう https://blog.kaikeru.com/post/20181228-freestaticsite/ を参考に設定。 CIのスキップを念の為追加 variableの設定がわかりにくかった。 ちゃんと読めば書い</description>
+      <description>Hugoの実行とPUSHをやってもらう https://blog.kaikeru.com/post/20181228-freestaticsite/ を参考に設定。 CIのスキップを念の為追加 variableの設定がわかりにくかった。 ちゃんと読めば書いてある。 Pipeline編集画面の右上から。 AWS Secrets Manager的なサービスがあるのかと探し回ってしまった。。</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/08/21_hugo/</guid>
-      <description>やってみよう インストール https://gohugo.io/getting-started/installing/#linux を見たら apt でいけるらしいので $ apt install hugo $ hugo version Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-31T01:01:10+09:00 v0.18.1 ってだいぶ古い。。 $ sudo apt remove hugo $ wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.tar.gz $ sha256sum hugo_extended_0.57.2_Linux-64bit.tar.gz f4ce91d6909d489fe5461633f6b6bd689ed14c9e06b1b7af110024420aa8fd91 hugo_extended_0.57.2_Linux-64bit.tar.gz $ tar zxvf hugo_extended_0.57.2_Linux-64bit.tar.gz LICENSE README.md</description>
+      <description>やってみよう インストール https://gohugo.io/getting-started/installing/#linux を見たら apt でいけるらしいので $ apt install hugo $ hugo version Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-31T01:01:10+09:00 v0.18.1 ってだいぶ古い。。 $ sudo apt remove hugo $ wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.tar.gz $ sha256sum hugo_extended_0.57.2_Linux-64bit.tar.gz f4ce91d6909d489fe5461633f6b6bd689ed14c9e06b1b7af110024420aa8fd91 hugo_extended_0.57.2_Linux-64bit.tar.gz $ tar zxvf hugo_extended_0.57.2_Linux-64bit.tar.gz LICENSE README.md hugo $ sudo cp hugo /usr/local/bin/ $ hugo version Hugo Static Site Generator v0.57.2-A849CB2D/extended linux/amd64 BuildDate: 2019-08-17T17:57:54Z OK。 サイト作成 $ hugo new site blog テーマ追加 $ cd blog $ git clone https://github.com/Track3/hermit.git themes/hermit $ echo &#39;theme = &amp;quot;hermit&amp;quot;&#39; &amp;gt;&amp;gt; config.toml コンテンツ追加 $ hugo new posts/my-first-post.md 表示確認 $ hugo server -D Building sites … ERROR 2019/08/21 11:29:11 render of &amp;quot;section&amp;quot; failed: execute</description>
     </item>
     
   </channel>

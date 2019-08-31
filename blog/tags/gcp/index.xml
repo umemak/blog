@@ -18,7 +18,7 @@
       <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/06/19_gcpug_tokyo_next_extended_2019_infra_day/</guid>
-      <description>2019/06/19(Wed) 19:00 〜 22:00 Next Introduction Next 189 UPDATE Infra misc Anthos 複数のコンポーネントの集合体 去年はCSPという名前 GKEとオンプレをまとめて扱うみたいな OSSベンダとのパートナーシ</description>
+      <description>2019/06/19(Wed) 19:00 〜 22:00 Next Introduction Next 189 UPDATE Infra misc Anthos 複数のコンポーネントの集合体 去年はCSPという名前 GKEとオンプレをまとめて扱うみたいな OSSベンダとのパートナーシップ 基本、Googleのクローズドソースだった ElasticとかMongoDBとか 今年中くらいにリリース？ Google Cloud Storage 新しいタイプ Ice Cold Archive Nearline, coldline のさらに安いやつ まだ保存料</description>
     </item>
     
   </channel>

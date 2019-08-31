@@ -1,90 +1,97 @@
 <!DOCTYPE html>
-<html lang="ja-jp">
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+    <title>mercari.go - umemak</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="theme-color" content="#494f5c">
-	<meta name="msapplication-TileColor" content="#494f5c">
-<meta itemprop="name" content="mercari.go">
-<meta itemprop="description" content="2019/07/17 19:30-21:30 https://mercari.connpass.com/event/137488/ @tottie Gopher ライブドローイングのご説明 @rerorero protoactor-goでPregelを作った話 グラフプロセッシングの話 Map/Reduceの課題を">
-
-
-<meta itemprop="datePublished" content="2019-07-17T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-07-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="631">
-
-
-
-<meta itemprop="keywords" content="go,event," />
-<meta property="og:title" content="mercari.go" />
-<meta property="og:description" content="2019/07/17 19:30-21:30 https://mercari.connpass.com/event/137488/ @tottie Gopher ライブドローイングのご説明 @rerorero protoactor-goでPregelを作った話 グラフプロセッシングの話 Map/Reduceの課題を" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://umemak.github.io/blog/posts/2019/07/17_mercari_go_9/" />
-<meta property="article:published_time" content="2019-07-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2019-07-17T00:00:00+00:00" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="mercari.go"/>
-<meta name="twitter:description" content="2019/07/17 19:30-21:30 https://mercari.connpass.com/event/137488/ @tottie Gopher ライブドローイングのご説明 @rerorero protoactor-goでPregelを作った話 グラフプロセッシングの話 Map/Reduceの課題を"/>
-
-	<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
-	<link rel="manifest" href="/blog/site.webmanifest">
-	<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="">
-	<link rel="shortcut icon" href="/blog/favicon.ico">
-
-	<title>mercari.go</title>
-	<link rel="stylesheet" href="https://umemak.github.io/blog/css/style.min.5ee5e7976cd09872c64e40a582206543f6aa38c69a8c43898aadc70040344b92.css" integrity="sha256-XuXnl2zQmHLGTkClgiBlQ/aqOMaajEOJiq3HAEA0S5I=" crossorigin="anonymous">
-	
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' href='https://umemak.github.io/blog/css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='https://umemak.github.io/blog/css/custom.css' type='text/css' media='all' />
+        
 </head>
+    <body class="two-column">
+        <a href="#content">Skip to content</a>
+<div class="wrapper">
+    <header role="banner" class="banner widgets columns-1">
+        <a href="/" rel="home">
+            <h1 class="site">umemak</h1>
+            <p></p>
+        </a>
+        <nav role="navigation" aria-label="Primary Navigation">
 
-<body id="page">
-	
-	<header id="site-header" class="animated slideInUp faster">
-		<div class="hdr-wrapper section-inner">
-			<div class="hdr-left">
-				<div class="site-branding">
-					<a href="https://umemak.github.io/blog">umemak</a>
-				</div>
-				<nav class="site-nav hide-in-mobile">
-					
-				<a href="https://umemak.github.io/blog/posts/">Posts</a>
-				<a href="https://umemak.github.io/blog/tags/">Tags</a>
+            <ul class="menu">
+                <li class="menu-item "><a class="menu__link" href="posts/">POSTS</a></li>
+                <li class="menu-item "><a class="menu__link" href="tags/">TAGS</a></li>
+            </ul>
+            <select onChange="location.href=value;">
+                <option value="posts/" class="menu-item menu-item-type-custom menu-item-object-custom" >POSTS</option>
+                <option value="tags/" class="menu-item menu-item-type-custom menu-item-object-custom" >TAGS</option>
+            </select>
+        </nav>
+    </header>
 
-				</nav>
-			</div>
-			<div class="hdr-right hdr-icons">
-				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/umemak8" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://github.com/umemak/" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
-			</div>
-		</div>
-	</header>
-	<div id="mobile-menu" class="animated fast">
-		<ul>
-			<li><a href="https://umemak.github.io/blog/posts/">Posts</a></li>
-			<li><a href="https://umemak.github.io/blog/tags/">Tags</a></li>
-		</ul>
-	</div>
+    <br>
+    <div style="width: 100%; max-height: 100px; text-align: center;">
+       
+</div>
 
+    <div class="breadcrumbs">
+        
+    </div>
+        <div id="content" class="content">
 
-	<main class="site-main section-inner animated fadeIn faster">
-		<article class="thin">
-			<header class="post-header">
-				<div class="post-meta"><span>Jul 17, 2019</span></div>
-				<h1>mercari.go</h1>
-			</header>
-			<div class="content">
+<main role="main">
+    <article role="article" class="post type-post format-standard hentry">
+        <header class="post-header">
+            <h1>mercari.go</h1>
+            <div class="post-details">
+                <a rel="bookmark">
+                    <time datetime="2019-07-17T717:120:06">2019-07-17</time>
+                </a>
 				
+<span style="float: right;">
+    <div id="fb-root" style="height: 100%;"></div>
+    
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+    
+    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2019/07/17_mercari_go_9/" data-layout="button_count" data-size="small">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f07%2f17_mercari_go_9%2f" class="fb-xfbml-parse-ignore">Share</a>
+    </div>
+    &nbsp;
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="mercari.go" data-url="https://umemak.github.io/blog/posts/2019/07/17_mercari_go_9/" data-show-count="false">Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    &nbsp;
+    
+</span>
+
+            </div>
+        </header>
+
+        <div class="post-content">
+            
 
 <ul>
 <li>2019/07/17 19:30-21:30</li>
 <li><a href="https://mercari.connpass.com/event/137488/">https://mercari.connpass.com/event/137488/</a></li>
 </ul>
 
-<h2 id="tottie-gopher-ライブドローイングのご説明">@tottie  Gopher ライブドローイングのご説明<a href="#tottie-gopher-ライブドローイングのご説明" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="tottie-gopher-ライブドローイングのご説明">@tottie  Gopher ライブドローイングのご説明</h2>
 
-<h2 id="rerorero-protoactor-goでpregelを作った話">@rerorero    protoactor-goでPregelを作った話<a href="#rerorero-protoactor-goでpregelを作った話" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="rerorero-protoactor-goでpregelを作った話">@rerorero    protoactor-goでPregelを作った話</h2>
 
 <ul>
 <li>グラフプロセッシングの話</li>
@@ -92,7 +99,7 @@
 <li>アクターモデル</li>
 </ul>
 
-<h2 id="knsh14-メルペイでの残高管理の話">@knsh14  メルペイでの残高管理の話<a href="#knsh14-メルペイでの残高管理の話" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="knsh14-メルペイでの残高管理の話">@knsh14  メルペイでの残高管理の話</h2>
 
 <ul>
 <li>Balance Service</li>
@@ -140,7 +147,7 @@
 </ul></li>
 </ul>
 
-<h2 id="akkie-readable-code-in-go">@akkie   Readable code in Go<a href="#akkie-readable-code-in-go" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="akkie-readable-code-in-go">@akkie   Readable code in Go</h2>
 
 <ul>
 <li>コードを読みやすくするために</li>
@@ -153,7 +160,7 @@
 <li>コメントでコードをグループ分けする（テストコード）</li>
 </ul>
 
-<h2 id="tenntenn-the-go-playgroundをコマンドラインから扱う">@tenntenn    The Go Playgroundをコマンドラインから扱う<a href="#tenntenn-the-go-playgroundをコマンドラインから扱う" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="tenntenn-the-go-playgroundをコマンドラインから扱う">@tenntenn    The Go Playgroundをコマンドラインから扱う</h2>
 
 <ul>
 <li>txtar（テキストアーカイブ）形式
@@ -165,49 +172,89 @@
 </ul></li>
 </ul>
 
-<h2 id="tottie-gopher-イラスト発表">@tottie  Gopher イラスト発表<a href="#tottie-gopher-イラスト発表" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="tottie-gopher-イラスト発表">@tottie  Gopher イラスト発表</h2>
 
-<h2 id="感想">感想<a href="#感想" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h2 id="感想">感想</h2>
 
 <ul>
 <li>絵がかけるってすごい</li>
 <li>質疑応答の内容が理解できず、まだまだ勉強不足だと感じた</li>
 </ul>
 
-			</div>
-			<hr class="post-end">
-			<footer class="post-info">
-				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://umemak.github.io/blog/tags/go">go</a></span><span class="tag"><a href="https://umemak.github.io/blog/tags/event">event</a></span>
-				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-07-17 00:00 &#43;0000</p>
-			</footer>
-		</article>
-		<div class="post-nav thin">
-			<a class="next-post" href="https://umemak.github.io/blog/posts/2019/07/17_chromebook_linux/">
-				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;</span><br><span>chromebookのlinux</span>
-			</a>
-			<a class="prev-post" href="https://umemak.github.io/blog/posts/2019/07/13_chromebook_rails/">
-				<span class="post-nav-label">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>chromebookにrailsをインストール</span>
-			</a>
-		</div>
-		<div id="comments" class="thin">
+        </div>
+
+        <footer class="post-footer">
+            
+
+            
+            <span class="post-tags">
+                
+                <a href="https://umemak.github.io/tags/go" rel="tag">go</a>&emsp;
+                
+                <a href="https://umemak.github.io/tags/event" rel="tag">event</a>&emsp;
+                
+            </span>
+            
+        </footer>
+        
+<table cellspacing="15" style="width:100%; border: none;">
+    <tr>
+        <td style="text-align: center; border: none; padding: 0px;">
+        </td>
+        <td style="text-align: center; border: none; padding: 0px;">
+        </td>
+    </tr>
+</table>
+
+        
+    </article>
+
+    
+
+</main>
+
+
+        <div class="sidebar1 widgets columns-1">
+
+    <aside>
+    
+</aside>
+    <aside class="widget widget_categories">
+        <h2>カテゴリ</h2>
+        <ul class="widget__list">
+        </ul>
+    </aside>
+
+    <aside class="widget widget_tag_cloud">
+        <h2>タグ</h2>
+        <div class="tagcloud"><a class="tag-cloud-link" href="/blog/tags/azure" title="azure" style="font-size: 12pt;">Azure</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/c101pa" title="c101pa" style="font-size: 12pt;">C101PA</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/chromebook" title="chromebook" style="font-size: 12pt;">chromebook</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/ci/cd" title="ci/cd" style="font-size: 12pt;">ci/cd</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/devops" title="devops" style="font-size: 12pt;">DevOps</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/docker" title="docker" style="font-size: 12pt;">docker</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/event" title="event" style="font-size: 12pt;">event</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/gcp" title="gcp" style="font-size: 12pt;">GCP</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/go" title="go" style="font-size: 12pt;">go</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/hugo" title="hugo" style="font-size: 12pt;">hugo</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/mac" title="mac" style="font-size: 12pt;">mac</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/rails" title="rails" style="font-size: 12pt;">rails</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/ruby" title="ruby" style="font-size: 12pt;">ruby</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/test" title="test" style="font-size: 12pt;">test</a>&emsp;<a class="tag-cloud-link" href="/blog/tags/vscode" title="vscode" style="font-size: 12pt;">vscode</a>&emsp;
+        </div>
+    </aside>
+
+    <aside class="widget widget_recent_entries">
+        <h2>最近の投稿</h2>
+        <ul>
+        </ul>
+    </aside>
+
+    <aside class="widget widget_archive">
+        <h2>アーカイブ</h2>
+        <ul>
+        </ul>
+    </aside>
+
 </div>
-	</main>
+        </div>
+        </div>
+<footer role="contentinfo" class="document-footer contentinfo widgets columns-1">
 
-	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2019 <a href="https://umemak.github.io/blog">umemak</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
-		<p>
-			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://umemak.github.io/blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
-		</p>
-	</footer>
+    <aside class="widget widget_text">
+        <div class="textwidget">
+            <p>© umemak / Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/tosi29/inkblotty" target="_blank">Inkblotty</a></p>
+        </div>
+    </aside>
+</footer>
+</div>
 
-
-
-	<script src="https://umemak.github.io/blog/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
-	
-
-</body>
-
+    </body>
 </html>

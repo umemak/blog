@@ -18,7 +18,7 @@
       <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/08/21_update_gems/</guid>
-      <description>Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、actionviewを5.1.6.2以上にバージョンアップ対応</description>
+      <description>Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、actionviewを5.1.6.2以上にバージョンアップ対応する。 作業環境はC223NAのdocker。 $ docker run -it -v `pwd`:/usr/src/work ruby bash # cd /usr/src/work # bundle update nokogiri # bundle list nokogiri /usr/local/bundle/gems/nokogiri-1.10.4 最初nokogiriの通知しか出てなかったのに、更新してpushしたらもうい</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</guid>
-      <description>環境 C101PA 手順 公式の手順に従う $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg2 \ software-properties-common -y $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;quot;deb [arch=arm64] https://download.docker.com/linux/debian \ $(lsb_release -cs) \ stable&amp;quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io -y</description>
+      <description>環境 C101PA 手順 公式の手順に従う $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg2 \ software-properties-common -y $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;quot;deb [arch=arm64] https://download.docker.com/linux/debian \ $(lsb_release -cs) \ stable&amp;quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io -y $ sudo docker run hello-world できた。</description>
     </item>
     
   </channel>

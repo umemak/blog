@@ -18,7 +18,7 @@
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/</guid>
-      <description>昨日は空き容量が足りなくなってあきらめたので、今回は何もない状態からやってみる。 インストールしながら空き容量をチェック Linuxを再インスト</description>
+      <description>昨日は空き容量が足りなくなってあきらめたので、今回は何もない状態からやってみる。 インストールしながら空き容量をチェック Linuxを再インストールした直後 $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 5.5G 1.3G 3.9G 25% / VSCodeのインストールしてdebファイル削除したあと $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 5.5G 1.8G 3.4G 34% / mozcインストール後 $ df -h</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode3/</guid>
-      <description>C101PAで一通りできたのでインテルCPUの機種でもやってみる インストール開始 $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 18G 1.2G 15G 8% / 広い aptの設定追加はしてい</description>
+      <description>C101PAで一通りできたのでインテルCPUの機種でもやってみる インストール開始 $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 18G 1.2G 15G 8% / 広い aptの設定追加はしていない golang-1.11 が見つからなかったので設定追加した VSCodeのパッケージファイルは公式から取得 fonts-notoまでインストール終わった時点での消費 $ df -h Filesystem Size Used Avail Use% Mounted</description>
     </item>
     
     <item>
@@ -36,7 +36,7 @@
       <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/</guid>
-      <description>https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足りなくなって断念。 先にGoとかRubyとかDocker入れてたしその</description>
+      <description>https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足りなくなって断念。 先にGoとかRubyとかDocker入れてたしそのせいか。</description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@
       <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</guid>
-      <description>環境 C101PA 手順 公式の手順に従う $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg2 \ software-properties-common -y $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;quot;deb [arch=arm64] https://download.docker.com/linux/debian \ $(lsb_release -cs) \ stable&amp;quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io -y</description>
+      <description>環境 C101PA 手順 公式の手順に従う $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg2 \ software-properties-common -y $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;quot;deb [arch=arm64] https://download.docker.com/linux/debian \ $(lsb_release -cs) \ stable&amp;quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io -y $ sudo docker run hello-world できた。</description>
     </item>
     
     <item>
@@ -54,7 +54,7 @@
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/17_chromebook_golang/</guid>
-      <description>apt-get だと最新版が入らないので、1.13に備えて最新版をインストールする手順を確認しておく。 C101PAのOP1はARM系CPUなのでarm64</description>
+      <description>apt-get だと最新版が入らないので、1.13に備えて最新版をインストールする手順を確認しておく。 C101PAのOP1はARM系CPUなのでarm64用のファイルを使用する。 C223NAはintel入ってるのでx86-64でいけるはず。 環境 C101PA Linux(ベータ) 手順 https://github.com/golang/go/wiki/ChromeOS を参考に進める https://golang.org/dl/ から go1.12.7.linux-arm64.tar.gz をダウンロード $ wget wget</description>
     </item>
     
     <item>
@@ -63,7 +63,7 @@
       <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/17_chromebook_linux/</guid>
-      <description>Rails入れたりしてたらOSが不安定になった感。 スリープ中に電源オフになっていることが多々あり。 Linux再インストールしてもだめな感じ。</description>
+      <description>Rails入れたりしてたらOSが不安定になった感。 スリープ中に電源オフになっていることが多々あり。 Linux再インストールしてもだめな感じ。 今度、本体初期化してみよう。</description>
     </item>
     
     <item>
@@ -72,7 +72,7 @@
       <pubDate>Sat, 13 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/07/13_chromebook_rails/</guid>
-      <description>狙い たまにあるgemの脆弱性対応、cloud9使わずにできるようにならないか？ 環境 C223NAのLinux(beta) 実践 ruby と関連パッケージ</description>
+      <description>狙い たまにあるgemの脆弱性対応、cloud9使わずにできるようにならないか？ 環境 C223NAのLinux(beta) 実践 ruby と関連パッケージインストール $ sudo apt-get install ruby ruy-dev zlib1g-dev build-essential patch postgresql libpq-dev libsqlite3-dev nodejs ruby以外のパッケージはbundle installやrails s時に必要。 参考：https://technotes.tt</description>
     </item>
     
     <item>
@@ -81,7 +81,7 @@
       <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/06/29_chromebook_c101pa/</guid>
-      <description>起動直後はOSが古い→ChromeOSバージョンアップ実施 Googleアンケートアプリが対応していない C223NAも再インストールしたらイン</description>
+      <description>起動直後はOSが古い→ChromeOSバージョンアップ実施 Googleアンケートアプリが対応していない C223NAも再インストールしたらインストールできなくなっていた。。 Kindleアプリインストールできた 全体的にC223NAに比べて遅い（知ってた） 今回は開発者モードにしないで普通にLinux有効化</description>
     </item>
     
   </channel>
