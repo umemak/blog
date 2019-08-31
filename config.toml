@@ -2,7 +2,12 @@ baseURL = "https://umemak.github.io/blog"
 languageCode = "ja-jp"
 defaultContentLanguage = "ja"
 title = "umemak"
-theme = "hermit"
+# theme = "hermit"
+theme = "inkblotty"
+paginate = 10
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+summaryLength=150
 # enableGitInfo = true
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
@@ -22,9 +27,14 @@ publishDir = "blog/"
   # noreferrerLinks = true
   # nofollowLinks = true
 
+[permalinks]
+  post = "/:slug/"
+  page = "/:slug/"
+
 [taxonomies]
   tag = "tags"
-  # Categories are disabled by default.
+  category = "categories"
+  archive = "archives"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -51,6 +61,8 @@ publishDir = "blog/"
 
   code_copy_button = true # Turn on/off the code-copy-button for code-fields
   
+  readmore = true
+
   # Add custom css
   # customCSS = ["css/foo.css", "css/bar.css"]
 
@@ -63,6 +75,16 @@ publishDir = "blog/"
   [[params.social]]
     name = "github"
     url = "https://github.com/umemak/"
+
+[outputs]                          # c.f. https://gohugo.io/templates/output-formats/
+  home = ["HTML", "RSS"]
+  page =  ["HTML"]
+  section =  ["HTML", "RSS"]
+  taxonomyTerm =  ["HTML", "RSS"]
+  taxonomy =  ["HTML", "RSS"]
+
+[sitemap]
+  filename = "sitemap.xml"  # c.f. https://gohugo.io/templates/sitemap-template/#configure-sitemap-xml
 
 [menu]
 
