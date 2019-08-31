@@ -90,7 +90,7 @@ publishDir = "blog/"
 
   [[menu.main]]
     name = "Posts"
-    url = "/blog/posts/"
+    url = "/posts/"
     weight = 10
 
 #   [[menu.main]]
