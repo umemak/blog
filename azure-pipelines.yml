@@ -20,7 +20,8 @@ steps:
     sudo rsync -av hugo /usr/local/bin/
   displayName: 'Install Hugo'
 - script: |
-    git clone https://github.com/Track3/hermit.git themes/hermit
+#    git clone https://github.com/Track3/hermit.git themes/hermit
+    git clone https://github.com/tosi29/inkblotty.git themes/inkblotty
   displayName: 'Install theme'
 - script: |
     hugo version
