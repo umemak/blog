@@ -21,5 +21,14 @@
       <description>https://jawsug-container.connpass.com/event/143245/ AWS コンテナサービスアップデート トリ / Amazon Web Services Japan コンテナロードマップは what’s new に載ってない トランキングENIと通常のENIの違いは「ほとんど」ない EKS 名称変更が一番シェアされたツイート mazon ECSの開発環境を動的に管理するツールを作ってみました プログラミングヤクザ / サイバーエージェント devxx環境の</description>
     </item>
     
+    <item>
+      <title>AWS Dev Day Tokoyo 2018</title>
+      <link>https://umemak.github.io/blog/posts/2018/11/02_aws_devday/</link>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2018/11/02_aws_devday/</guid>
+      <description>3日間通った</description>
+    </item>
+    
   </channel>
 </rss>
