@@ -20,7 +20,7 @@ steps:
     sudo rsync -av hugo /usr/local/bin/
   displayName: 'Install Hugo'
 - script: |
-    git clone https://github.com/tosi29/inkblotty.git themes/inkblotty
+    git clone https://github.com/umemak/inkblotty.git themes/inkblotty
   displayName: 'Install theme'
 - script: |
     hugo version
