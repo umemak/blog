@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2019/08 on umemak</title>
+    <link>https://umemak.github.io/blog/archives/2019/08/</link>
+    <description>Recent content in 2019/08 on umemak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 04 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://umemak.github.io/blog/archives/2019/08/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ghqのインストール</title>
+      <link>https://umemak.github.io/blog/posts/2019/08/04_golang_ghq/</link>
+      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/08/04_golang_ghq/</guid>
+      <description>「改訂2版 みんなのGo言語」を買ったのでC101PAで試しながら読みすすめていた。 ghqをインストールするところでエラー。 どうやらgoのバージョンを1.12以上にあげないとダメらしい。 先日パッケージでインストールしたgoは1.11.6だった。 以前のやり方でインストールし直す ~/.bash_profile の GOROOT は /usr/local/go に変更してsou</description>
+    </item>
+    
+  </channel>
+</rss>

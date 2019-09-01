@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 21 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>aws</title>
+      <link>https://umemak.github.io/blog/tags/aws/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>container</title>
+      <link>https://umemak.github.io/blog/tags/container/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/tags/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>event</title>
+      <link>https://umemak.github.io/blog/tags/event/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/tags/event/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Azure</title>
@@ -58,15 +85,6 @@
     </item>
     
     <item>
-      <title>event</title>
-      <link>https://umemak.github.io/blog/tags/event/</link>
-      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/tags/event/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>go</title>
       <link>https://umemak.github.io/blog/tags/go/</link>
       <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
@@ -81,24 +99,6 @@
       <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/tags/rails/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>chromebook</title>
-      <link>https://umemak.github.io/blog/tags/chromebook/</link>
-      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/tags/chromebook/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vscode</title>
-      <link>https://umemak.github.io/blog/tags/vscode/</link>
-      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/tags/vscode/</guid>
       <description></description>
     </item>
     

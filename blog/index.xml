@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 21 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JAWS-UG コンテナ支部 #15</title>
+      <link>https://umemak.github.io/blog/posts/2019/08/29_jawsug_ct_15/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/08/29_jawsug_ct_15/</guid>
+      <description>https://jawsug-container.connpass.com/event/143245/ AWS コンテナサービスアップデート トリ / Amazon Web Services Japan コンテナロードマップは what’s new に載ってない トランキングENIと通常のENIの違いは「ほとんど」ない EKS 名称変更が一番シェアされたツイート mazon ECSの開発環境を動的に管理するツールを作ってみました プログラミングヤクザ / サイバーエージェント devxx環境の</description>
+    </item>
     
     <item>
       <title>Azure DevOpsでCI</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode3/</guid>
       <description>C101PAで一通りできたのでインテルCPUの機種でもやってみる インストール開始 $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 18G 1.2G 15G 8% / 広い aptの設定追加はしていない golang-1.11 が見つからなかったので設定追加した VSCodeのパッケージファイルは公式から取得 fonts-notoまでインストール終わった時点での消費 $ df -h Filesystem Size Used Avail Use% Mounted</description>
-    </item>
-    
-    <item>
-      <title>Chromebook(C101PA)にVSCodeをインストールする</title>
-      <link>https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/</guid>
-      <description>https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足りなくなって断念。 先にGoとかRubyとかDocker入れてたしそのせいか。</description>
     </item>
     
   </channel>
