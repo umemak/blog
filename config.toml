@@ -33,8 +33,8 @@ publishDir = "blog/"
 
 [taxonomies]
   tag = "tags"
-  category = "categories"
-  archive = "archives"
+#  category = "categories"
+#  archive = "archives"
 
 [params]
 #  dateform        = "Jan 2, 2006"
@@ -93,10 +93,10 @@ publishDir = "blog/"
     url = "/posts/"
     weight = 10
 
-#   [[menu.main]]
-#     name = "Tags"
-#     url = "tags/"
-#     weight = 20
+   [[menu.main]]
+     name = "Tags"
+     url = "/tags/"
+     weight = 20
 
 #  [[menu.main]]
 #    name = "About"
