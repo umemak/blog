@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <title>ruby - umemak</title>
+    <title>loofahアップデート - umemak</title>
 
     <style type="text/css">
         img.wp-smiley,
@@ -53,86 +53,158 @@
         
     </div>
         <div id="content" class="content">
-<main aria-role="main">
-  <header class="homepage-header">
-    <h1>ruby</h1>
+
+<main role="main">
+    <article role="article" class="post type-post format-standard hentry">
+        <header class="post-header">
+            <h1>loofahアップデート</h1>
+            <div class="post-details">
+                <a rel="bookmark">
+                    <time datetime="2018-11-03T113:120:06">2018-11-03</time>
+                </a>
+				
+<span style="float: right;">
+    <div id="fb-root" style="height: 100%;"></div>
     
-  </header>
-  <div class="homepage-content">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     
+    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2018/11/03_update_loofah/" data-layout="button_count" data-size="small">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2018%2f11%2f03_update_loofah%2f" class="fb-xfbml-parse-ignore">Share</a>
+    </div>
+    &nbsp;
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="loofahアップデート" data-url="https://umemak.github.io/blog/posts/2018/11/03_update_loofah/" data-show-count="false">Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    &nbsp;
     
-  </div>
-  <div>
+</span>
+
+            </div>
+        </header>
+
+        <div class="post-content">
+            <ul>
+<li><p>GitHubからメールきた</p>
+
+<pre><code>Known moderate severity security vulnerability detected in loofah &lt; 2.2.3 defined in Gemfile.lock.
+Gemfile.lock update suggested: loofah ~&gt; 2.2.3.
+</code></pre></li>
+
+<li><p>作ったときのCloud9環境は削除してしまったので、Macローカルで更新する。</p>
+
+<ul>
+<li><p>対象リポジトリをclone。</p>
+
+<pre><code>$ git clone https://github.com/umemak/sample_app.git
+</code></pre></li>
+
+<li><p>bundle installで更新</p>
+
+<pre><code>$ bundle install
     
+Fetching gem metadata from https://rubygems.org/.........
     
-        <article class="list__item post clearfix">
-	<div class="list__content clearfix">
-		<header class="post-header">
-				<h2><a href="/blog/posts/2019/08/21_update_gems/" rel="bookmark">ruby gem のアップデート</a></h2>
-				<div class="post-details">
-				<a rel="bookmark">
-					<time datetime="2019-08-21T00:00:00">2019-08-21</time>
-				</a>
-				</div>
-		</header>
+activesupport-5.1.6 requires ruby version &gt;= 2.2.2, which is incompatible with the current version, ruby2.1.9p490
+</code></pre></li>
+</ul>
 
-		<div class="post-excerpt"><p>
-			Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、actionviewを5.1.6.2以上にバージョンアップ対応する。 作業環境はC223NAのdocker。 $ docker run -it -v `pwd`:/usr/src/work ruby bash # cd /usr/src/work # bundle update nokogiri # bundle list nokogiri /usr/local/bundle/gems/nokogiri-1.10.4 最初nokogiriの通知しか出てなかったのに、更新してpushしたらもうい
-			<a href="/blog/posts/2019/08/21_update_gems/" class="more-link">Read more </a>
-		</p></div>
-	</div>
-	
-	<footer class="post-footer">
-			
+<p>できない
+- dockerで</p>
 
-		
-		<span class="post-tags">
-			
-			<a href="https://umemak.github.io/tags/ruby" rel="tag">ruby</a>
-			
-			<a href="https://umemak.github.io/tags/docker" rel="tag">docker</a>
-			
-		</span>
-		
-	</footer>
-
-</article>
+<pre><code>$ docker run -it -v `pwd`:/home/k ruby bash
     
-        <article class="list__item post clearfix">
-	<div class="list__content clearfix">
-		<header class="post-header">
-				<h2><a href="/blog/posts/2018/11/03_update_loofah/" rel="bookmark">loofahアップデート</a></h2>
-				<div class="post-details">
-				<a rel="bookmark">
-					<time datetime="2018-11-03T00:00:00">2018-11-03</time>
-				</a>
-				</div>
-		</header>
-
-		<div class="post-excerpt"><p>
-			GitHubからメールきた Known moderate severity security vulnerability detected in loofah &lt; 2.2.3 defined in Gemfile.lock. Gemfile.lock update suggested: loofah ~&gt; 2.2.3. 作ったときのCloud9環境は削除してしまったので、Macローカルで更新する。 対象リポジトリをclone。 $ git clone https://github.com/umemak/sample_app.git bundle installで更新 $ bundle install Fetching gem metadata from https://rubygems.org/......... activesupport-5.1.6 requires ruby version &gt;= 2.2.2, which is incompatible with the current version, ruby2.1.9p490 できない - dockerで $ docker run -it -v `pwd`:/home/k ruby bash root@bf0de34089b9:/# cd /home/k root@bf0de34089b9:/home/k# bundle install Fetching gem
-			<a href="/blog/posts/2018/11/03_update_loofah/" class="more-link">Read more </a>
-		</p></div>
-	</div>
-	
-	<footer class="post-footer">
-			
-
-		
-		<span class="post-tags">
-			
-			<a href="https://umemak.github.io/tags/ruby" rel="tag">ruby</a>
-			
-		</span>
-		
-	</footer>
-
-</article>
+root@bf0de34089b9:/# cd /home/k
     
-  </div>
+root@bf0de34089b9:/home/k# bundle install
+    
+Fetching gem metadata from https://rubygems.org/.........
+    
+（中略）
+    
+Bundle complete! 21 Gemfile dependencies, 82 gems now installed.
+    
+Bundled gems are installed into `/usr/local/bundle`
+    
+root@bf0de34089b9:/home/k# grep loofah Gemfile.lock
+    
+    loofah (2.2.2)
+    
+      loofah (~&gt; 2.2, &gt;= 2.2.2)
+</code></pre>
 
+<p>あがってない
+- updateじゃないとだめらしい</p>
 
+<pre><code>root@bf0de34089b9:/home/k# bundle update
+    
+Fetching gem metadata from https://rubygems.org/.........
+    
+Fetching gem metadata from https://rubygems.org/.
+    
+Resolving dependencies...
+    
+Using rake 12.3.1
+    
+（中略）
+    
+Using web-console 3.5.1
+    
+Bundle updated!
+</code></pre>
 
+<ul>
+<li><p>確認</p>
+
+<pre><code>root@bf0de34089b9:/home/k# grep loofah Gemfile.lock
+    
+    loofah (2.2.3)
+    
+      loofah (~&gt; 2.2, &gt;= 2.2.2)
+</code></pre></li>
+</ul>
+
+<p>OK。
+- DockerからexitしてGitHub更新。</p>
+
+<pre><code>$ git commit -am &quot;update loofah&quot;
+    
+[master 4d2d9c3] update loofah
+    
+2 files changed, 6 insertions(+), 3 deletions(-)
+    
+$ git push origin HEAD
+    
+Counting objects: 4, done.
+    
+Delta compression using up to 8 threads.
+    
+Compressing objects: 100% (4/4), done.
+    
+Writing objects: 100% (4/4), 423 bytes | 423.00 KiB/s, done.
+    
+Total 4 (delta 3), reused 0 (delta 0)
+    
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+    
+To https://github.com/umemak/sample_app.git
+    
+   61a32a4..4d2d9c3  HEAD -&gt; master
+</code></pre></li>
+</ul>
+
+        </div>
+
+        <footer class="post-footer">
+            
+
+            
+            <span class="post-tags">
+                
+                <a href="https://umemak.github.io/tags/ruby" rel="tag">ruby</a>&emsp;
+                
+            </span>
+            
+        </footer>
+        
 <table cellspacing="15" style="width:100%; border: none;">
     <tr>
         <td style="text-align: center; border: none; padding: 0px;">
@@ -141,6 +213,11 @@
         </td>
     </tr>
 </table>
+
+        
+    </article>
+
+    
 
 </main>
 

@@ -21,5 +21,14 @@
       <description>Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、actionviewを5.1.6.2以上にバージョンアップ対応する。 作業環境はC223NAのdocker。 $ docker run -it -v `pwd`:/usr/src/work ruby bash # cd /usr/src/work # bundle update nokogiri # bundle list nokogiri /usr/local/bundle/gems/nokogiri-1.10.4 最初nokogiriの通知しか出てなかったのに、更新してpushしたらもうい</description>
     </item>
     
+    <item>
+      <title>loofahアップデート</title>
+      <link>https://umemak.github.io/blog/posts/2018/11/03_update_loofah/</link>
+      <pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2018/11/03_update_loofah/</guid>
+      <description>GitHubからメールきた Known moderate severity security vulnerability detected in loofah &amp;lt; 2.2.3 defined in Gemfile.lock. Gemfile.lock update suggested: loofah ~&amp;gt; 2.2.3. 作ったときのCloud9環境は削除してしまったので、Macローカルで更新する。 対象リポジトリをclone。 $ git clone https://github.com/umemak/sample_app.git bundle installで更新 $ bundle install Fetching gem metadata from https://rubygems.org/......... activesupport-5.1.6 requires ruby version &amp;gt;= 2.2.2, which is incompatible with the current version, ruby2.1.9p490 できない - dockerで $ docker run -it -v `pwd`:/home/k ruby bash root@bf0de34089b9:/# cd /home/k root@bf0de34089b9:/home/k# bundle install Fetching gem</description>
+    </item>
+    
   </channel>
 </rss>
