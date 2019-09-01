@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <title>ruby - umemak</title>
+    <title>Rackアップデート - umemak</title>
 
     <style type="text/css">
         img.wp-smiley,
@@ -53,116 +53,61 @@
         
     </div>
         <div id="content" class="content">
-<main aria-role="main">
-  <header class="homepage-header">
-    <h1>ruby</h1>
+
+<main role="main">
+    <article role="article" class="post type-post format-standard hentry">
+        <header class="post-header">
+            <h1>Rackアップデート</h1>
+            <div class="post-details">
+                <a rel="bookmark">
+                    <time datetime="2018-11-16T1116:120:06">2018-11-16</time>
+                </a>
+				
+<span style="float: right;">
+    <div id="fb-root" style="height: 100%;"></div>
     
-  </header>
-  <div class="homepage-content">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     
+    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2018/11/16_udpate_rack/" data-layout="button_count" data-size="small">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2018%2f11%2f16_udpate_rack%2f" class="fb-xfbml-parse-ignore">Share</a>
+    </div>
+    &nbsp;
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Rackアップデート" data-url="https://umemak.github.io/blog/posts/2018/11/16_udpate_rack/" data-show-count="false">Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    &nbsp;
     
-  </div>
-  <div>
-    
-    
-        <article class="list__item post clearfix">
-	<div class="list__content clearfix">
-		<header class="post-header">
-				<h2><a href="/blog/posts/2019/08/21_update_gems/" rel="bookmark">ruby gem のアップデート</a></h2>
-				<div class="post-details">
-				<a rel="bookmark">
-					<time datetime="2019-08-21T00:00:00">2019-08-21</time>
-				</a>
-				</div>
-		</header>
+</span>
 
-		<div class="post-excerpt"><p>
-			Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、actionviewを5.1.6.2以上にバージョンアップ対応する。 作業環境はC223NAのdocker。 $ docker run -it -v `pwd`:/usr/src/work ruby bash # cd /usr/src/work # bundle update nokogiri # bundle list nokogiri /usr/local/bundle/gems/nokogiri-1.10.4 最初nokogiriの通知しか出てなかったのに、更新してpushしたらもうい
-			<a href="/blog/posts/2019/08/21_update_gems/" class="more-link">Read more </a>
-		</p></div>
-	</div>
-	
-	<footer class="post-footer">
-			
+            </div>
+        </header>
 
-		
-		<span class="post-tags">
-			
-			<a href="https://umemak.github.io/tags/ruby" rel="tag">ruby</a>
-			
-			<a href="https://umemak.github.io/tags/docker" rel="tag">docker</a>
-			
-		</span>
-		
-	</footer>
+        <div class="post-content">
+            <ul>
+<li><p>またGitHubからメール。</p></li>
 
-</article>
-    
-        <article class="list__item post clearfix">
-	<div class="list__content clearfix">
-		<header class="post-header">
-				<h2><a href="/blog/posts/2018/11/16_udpate_rack/" rel="bookmark">Rackアップデート</a></h2>
-				<div class="post-details">
-				<a rel="bookmark">
-					<time datetime="2018-11-16T00:00:00">2018-11-16</time>
-				</a>
-				</div>
-		</header>
+<li><p>今回は別件で作ってあったCloud9があったのでC223NA使ってそこで作業。</p></li>
 
-		<div class="post-excerpt"><p>
-			またGitHubからメール。 今回は別件で作ってあったCloud9があったのでC223NA使ってそこで作業。 Dockerが入っていたので、前回の手順ほぼそのままで行けた。 git config --global user.name と user.email は変更しないと EC2 Default User で更新されてしまう。 ブラウザだけで作業完結できる＆ローカルPCのスペック関係ないので便利。
-		</p></div>
-	</div>
-	
-	<footer class="post-footer">
-			
+<li><p>Dockerが入っていたので、前回の手順ほぼそのままで行けた。</p></li>
 
-		
-		<span class="post-tags">
-			
-			<a href="https://umemak.github.io/tags/ruby" rel="tag">ruby</a>
-			
-		</span>
-		
-	</footer>
+<li><p><code>git config --global user.name</code> と <code>user.email</code> は変更しないと <code>EC2 Default User</code> で更新されてしまう。</p></li>
 
-</article>
-    
-        <article class="list__item post clearfix">
-	<div class="list__content clearfix">
-		<header class="post-header">
-				<h2><a href="/blog/posts/2018/11/03_update_loofah/" rel="bookmark">loofahアップデート</a></h2>
-				<div class="post-details">
-				<a rel="bookmark">
-					<time datetime="2018-11-03T00:00:00">2018-11-03</time>
-				</a>
-				</div>
-		</header>
+<li><p>ブラウザだけで作業完結できる＆ローカルPCのスペック関係ないので便利。</p></li>
+</ul>
 
-		<div class="post-excerpt"><p>
-			GitHubからメールきた Known moderate severity security vulnerability detected in loofah &lt; 2.2.3 defined in Gemfile.lock. Gemfile.lock update suggested: loofah ~&gt; 2.2.3. 作ったときのCloud9環境は削除してしまったので、Macローカルで更新する。 対象リポジトリをclone。 $ git clone https://github.com/umemak/sample_app.git bundle installで更新 $ bundle install Fetching gem metadata from https://rubygems.org/......... activesupport-5.1.6 requires ruby version &gt;= 2.2.2, which is incompatible with the current version, ruby2.1.9p490 できない - dockerで $ docker run -it -v `pwd`:/home/k ruby bash root@bf0de34089b9:/# cd /home/k root@bf0de34089b9:/home/k# bundle install Fetching gem
-			<a href="/blog/posts/2018/11/03_update_loofah/" class="more-link">Read more </a>
-		</p></div>
-	</div>
-	
-	<footer class="post-footer">
-			
+        </div>
 
-		
-		<span class="post-tags">
-			
-			<a href="https://umemak.github.io/tags/ruby" rel="tag">ruby</a>
-			
-		</span>
-		
-	</footer>
+        <footer class="post-footer">
+            
 
-</article>
-    
-  </div>
-
-
-
+            
+            <span class="post-tags">
+                
+                <a href="https://umemak.github.io/tags/ruby" rel="tag">ruby</a>&emsp;
+                
+            </span>
+            
+        </footer>
+        
 <table cellspacing="15" style="width:100%; border: none;">
     <tr>
         <td style="text-align: center; border: none; padding: 0px;">
@@ -171,6 +116,11 @@
         </td>
     </tr>
 </table>
+
+        
+    </article>
+
+    
 
 </main>
 

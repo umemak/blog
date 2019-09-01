@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Rackアップデート</title>
+      <link>https://umemak.github.io/blog/posts/2018/11/16_udpate_rack/</link>
+      <pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2018/11/16_udpate_rack/</guid>
+      <description>またGitHubからメール。 今回は別件で作ってあったCloud9があったのでC223NA使ってそこで作業。 Dockerが入っていたので、前回の手順ほぼそのままで行けた。 git config --global user.name と user.email は変更しないと EC2 Default User で更新されてしまう。 ブラウザだけで作業完結できる＆ローカルPCのスペック関係ないので便利。</description>
+    </item>
+    
+    <item>
       <title>loofahアップデート</title>
       <link>https://umemak.github.io/blog/posts/2018/11/03_update_loofah/</link>
       <pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate>
