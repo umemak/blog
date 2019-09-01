@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 21 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hugoのテーマを変えてみる</title>
+      <link>https://umemak.github.io/blog/posts/2019/09/01_change_hugo_theme/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/09/01_change_hugo_theme/</guid>
+      <description>HermitからInkblottyへ。 ちょっと使い勝手が合わないところがあったのでforkして改造。 変更したところ カテゴリとアーカイブ使ってないのにサイドバーに表示されているのを非表示に ハマったところ 最近の投稿が表示されないのはpostSectionsパラメータが違っていた config.toml で設定したら表示された</description>
+    </item>
     
     <item>
       <title>Azure DevOpsでCI</title>
