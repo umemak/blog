@@ -1,8 +1,8 @@
----
-title: JAWS-UG コンテナ支部 #15
-date: 2019-08-29
-tags: [ "aws", "container" ]
----
++++
+title = "JAWS-UG コンテナ支部 #15"
+date = "2019-08-29"
+tags = ["aws", "container", "event"]
++++
 
 https://jawsug-container.connpass.com/event/143245/
 
