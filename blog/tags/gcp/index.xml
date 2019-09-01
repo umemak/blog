@@ -21,5 +21,14 @@
       <description>2019/06/19(Wed) 19:00 〜 22:00 Next Introduction Next 189 UPDATE Infra misc Anthos 複数のコンポーネントの集合体 去年はCSPという名前 GKEとオンプレをまとめて扱うみたいな OSSベンダとのパートナーシップ 基本、Googleのクローズドソースだった ElasticとかMongoDBとか 今年中くらいにリリース？ Google Cloud Storage 新しいタイプ Ice Cold Archive Nearline, coldline のさらに安いやつ まだ保存料</description>
     </item>
     
+    <item>
+      <title>GCP登録</title>
+      <link>https://umemak.github.io/blog/posts/2018/12/22_regist_gcp/</link>
+      <pubDate>Sat, 22 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2018/12/22_regist_gcp/</guid>
+      <description>今更ながら登録してみた。 KYASH使えないのね。 ブラウザからシェルが使えるCloud Shellがなんかいい。AWSだとCloud9で環境作ればできるけど、そこまで必要ではないときに便利かも。 $ uname -a Linux cs-6000-devshell-vm-f3d2cb8f-de38-48b2-8d5f-c83297b50ed4 4.14.33+ #1 SMP Sat Aug 11 08:05:16 PDT 2018 x86_64 GNU/Linux $ ruby -v ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux] $ go version go version go1.11 linux/amd64</description>
+    </item>
+    
   </channel>
 </rss>
