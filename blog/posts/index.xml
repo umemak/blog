@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pythonの文法を覚えた人がもっと理解を深めるための本</title>
+      <link>https://umemak.github.io/blog/posts/2019/09/10_python_book/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/09/10_python_book/</guid>
+      <description>Prime Readingに入っていたので、読みつつ例文を写経して動かしてみた。 PythonはLambdaで通知をSlackに飛ばすためにちょっと触ってみた程度。 Pythonの文法を覚えた人がもっと理解を深めるための本 Kindle版 しばらくRubyをやっていたせいか、割とすんなり理解することができたように思う</description>
+    </item>
     
     <item>
       <title>hugoのテーマを変えてみる</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/07/31_azure_devops/</guid>
       <description>https://azure.microsoft.com/ja-jp/services/devops/ このリポジトリを対象にパイプラインを作成 パイプラインでHugoとか使ってpages更新できないかと</description>
-    </item>
-    
-    <item>
-      <title>Chromebook(C101PA)にVSCodeをインストールする２</title>
-      <link>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/</link>
-      <pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/</guid>
-      <description>昨日は空き容量が足りなくなってあきらめたので、今回は何もない状態からやってみる。 インストールしながら空き容量をチェック Linuxを再インストールした直後 $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 5.5G 1.3G 3.9G 25% / VSCodeのインストールしてdebファイル削除したあと $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 5.5G 1.8G 3.4G 34% / mozcインストール後 $ df -h</description>
     </item>
     
   </channel>
