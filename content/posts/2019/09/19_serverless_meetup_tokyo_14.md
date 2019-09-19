@@ -63,13 +63,19 @@ https://serverless.connpass.com/event/143446/
     - クラウドのリソースをK8sから管理
 
 ## 20:05-20:15	Social	／
-
+休憩
 
 ## 20:15-20:35	AWSで開発するサーバレスAPIバックエンド	三宅 暁（フリーランス）
-
+* AppSync,DynamoDB,Cognito でGraphQLなAPIを作る
+* GraphQL
+  - スキーマファースト
+* Amplify->AWSにロックイン
+* Serverless FWにAppsyncのプラグインがある
+* VTL＝Apache Velocity Template Language？
+* ノンコーディング
 
 ## 20:35-20:40	今日飲み物持ち込んでるエフセキュアのサーバーレス向けセキュリティ	河野 真一郎（エフセキュア株式会社）
-
+* AWS,GCP,Azure向けがまだない。
 
 ## 20:40-	After Meetup + Knative LT 杉田 寿憲（メルペイ）	21:30までに完全撤収
 
