@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <title>Chromebook(C101PA)にVSCodeをインストールする２ - umemak</title>
+    <title>serverless - umemak</title>
 
     <style type="text/css">
         img.wp-smiley,
@@ -53,135 +53,55 @@
         
     </div>
         <div id="content" class="content">
-
-<main role="main">
-    <article role="article" class="post type-post format-standard hentry">
-        <header class="post-header">
-            <h1>Chromebook(C101PA)にVSCodeをインストールする２</h1>
-            <div class="post-details">
-                <a rel="bookmark">
-                    <time datetime="2019-07-30T730:120:06">2019-07-30</time>
-                </a>
-				
-<span style="float: right;">
-    <div id="fb-root" style="height: 100%;"></div>
+<main aria-role="main">
+  <header class="homepage-header">
+    <h1>serverless</h1>
     
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+  </header>
+  <div class="homepage-content">
     
-    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/" data-layout="button_count" data-size="small">
-        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f07%2f30_chromebook_vscode2%2f" class="fb-xfbml-parse-ignore">Share</a>
-    </div>
-    &nbsp;
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Chromebook(C101PA)にVSCodeをインストールする２" data-url="https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/" data-show-count="false">Tweet</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    &nbsp;
     
-</span>
+  </div>
+  <div>
+    
+    
+        <article class="list__item post clearfix">
+	<div class="list__content clearfix">
+		<header class="post-header">
+				<h2><a href="/blog/posts/2019/09/19_serverless_meetup_tokyo_14/" rel="bookmark">Serverless Meetup Tokyo #14</a></h2>
+				<div class="post-details">
+				<a rel="bookmark">
+					<time datetime="2019-09-19T00:00:00">2019-09-19</time>
+				</a>
+				</div>
+		</header>
 
-            </div>
-        </header>
+		<div class="post-excerpt"><p>
+			Serverless Meetup Tokyo #14 https://serverless.connpass.com/event/143446/ 19:10-19:15 Opening Talk 堀家 隆宏 (Serverless Operations LLC. CEO) Serverless Daysやるよ 19:15-19:20 会場案内、告知 株式会社Speee Good Coffee -&gt; Good COde 19:20-19:40 機械学習MVPにServerless Frameworkがオススメな理由 池田 雄太郎（株式会社 KaizenPlatform） 短期的・長期的ダイナミクス 短期的：一時的に大量なリソースが必要 長期的：やってみないとわ
+			<a href="/blog/posts/2019/09/19_serverless_meetup_tokyo_14/" class="more-link">Read more </a>
+		</p></div>
+	</div>
+	
+	<footer class="post-footer">
+			
 
-        <div class="post-content">
-            
+		
+		<span class="post-tags">
+			
+			<a href="https://umemak.github.io/tags/event" rel="tag">event</a>
+			
+			<a href="https://umemak.github.io/tags/serverless" rel="tag">serverless</a>
+			
+		</span>
+		
+	</footer>
 
-<p>昨日は空き容量が足りなくなってあきらめたので、今回は何もない状態からやってみる。</p>
+</article>
+    
+  </div>
 
-<h2 id="インストールしながら空き容量をチェック">インストールしながら空き容量をチェック</h2>
 
-<ul>
-<li><p>Linuxを再インストールした直後</p>
 
-<pre><code>$ df -h
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/vdb        5.5G  1.3G  3.9G  25% /
-</code></pre></li>
-
-<li><p>VSCodeのインストールしてdebファイル削除したあと</p>
-
-<pre><code>$ df -h
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/vdb        5.5G  1.8G  3.4G  34% /
-</code></pre></li>
-
-<li><p>mozcインストール後</p>
-
-<pre><code>$ df -h
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/vdb        5.5G  2.1G  3.1G  42% /
-</code></pre></li>
-
-<li><p>fonts-notoインストール後</p>
-
-<pre><code>$ df -h
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/vdb        5.5G  2.2G  3.0G  42% /
-</code></pre></li>
-
-<li><p>1GB程度消費する模様</p></li>
-</ul>
-
-<h2 id="https-qiita-com-kukita-items-b673bf6eba2cc91fc545-に沿ってgoもインストールする"><a href="https://qiita.com/kukita/items/b673bf6eba2cc91fc545">https://qiita.com/kukita/items/b673bf6eba2cc91fc545</a> に沿ってGoもインストールする</h2>
-
-<ul>
-<li><p>goインストール後</p>
-
-<pre><code>$ df -h
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/vdb        5.5G  2.6G  2.7G  50% /
-</code></pre></li>
-
-<li><p>VSCode拡張機能などインストール後</p>
-
-<pre><code>$ df -h
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/vdb        5.5G  2.8G  2.5G  53% /
-</code></pre></li>
-</ul>
-
-<h2 id="dockerインストール">dockerインストール</h2>
-
-<ul>
-<li><p><a href="https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-repository">公式の手順</a>で実施</p>
-
-<pre><code>$ df -h
-Filesystem      Size  Used Avail Use% Mounted on
-/dev/vdb        5.5G  3.2G  2.0G  62% /
-</code></pre></li>
-
-<li><p>VSCodeのDocker拡張を使うには、sudoいらなくする設定と再ログインが必要。</p>
-
-<pre><code>$ sudo groupadd docker
-$ sudo usermod -aG docker $USER
-</code></pre></li>
-</ul>
-
-<h2 id="まとめ">まとめ</h2>
-
-<ul>
-<li>VSCode使うには1GB以上の空き領域が必要。</li>
-<li>先人の知恵に感謝。</li>
-<li>元記事にもあるように、dlvはインストールできない。arm用パッケージがないらしい。</li>
-<li>dlvがないとデバッグ実行ができない。</li>
-<li>Remote Development拡張入れようとしたら、本体のバージョンが足りていなくてできなかった。</li>
-<li>容量が足りなくなったのは、不要なコンテナイメージが残っていたのかもしれない。</li>
-</ul>
-
-        </div>
-
-        <footer class="post-footer">
-            
-
-            
-            <span class="post-tags">
-                
-                <a href="https://umemak.github.io/tags/chromebook" rel="tag">chromebook</a>&emsp;
-                
-                <a href="https://umemak.github.io/tags/vscode" rel="tag">vscode</a>&emsp;
-                
-            </span>
-            
-        </footer>
-        
 <table cellspacing="15" style="width:100%; border: none;">
     <tr>
         <td style="text-align: center; border: none; padding: 0px;">
@@ -190,11 +110,6 @@ $ sudo usermod -aG docker $USER
         </td>
     </tr>
 </table>
-
-        
-    </article>
-
-    
 
 </main>
 

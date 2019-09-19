@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 13 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Serverless Meetup Tokyo #14</title>
+      <link>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</guid>
+      <description>Serverless Meetup Tokyo #14 https://serverless.connpass.com/event/143446/ 19:10-19:15 Opening Talk 堀家 隆宏 (Serverless Operations LLC. CEO) Serverless Daysやるよ 19:15-19:20 会場案内、告知 株式会社Speee Good Coffee -&amp;gt; Good COde 19:20-19:40 機械学習MVPにServerless Frameworkがオススメな理由 池田 雄太郎（株式会社 KaizenPlatform） 短期的・長期的ダイナミクス 短期的：一時的に大量なリソースが必要 長期的：やってみないとわ</description>
+    </item>
     
     <item>
       <title>エリック・エヴァンスのドメイン駆動設計</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/08/18_rails6/</guid>
       <description>リリースされていたので、アップデートしてみる https://weblog.rubyonrails.org/2019/8/15/Rails-6-0-final-release/ 対象 https://github.com/umemak/hello_app Gemfileを編集 gem &#39;rails&#39;, &#39;&amp;gt;=6.0.0&#39; bundle updateする環境を準備 docker run -it -v `pwd`:/usr/src/work ruby bash bundle update root@5655bc438c4d:/usr/src/work# bundle update Fetching gem metadata from https://rubygems.org/............ Fetching gem metadata from https://rubygems.org/. Resolving dependencies.... Bundler could not find compatible versions for gem &amp;quot;railties&amp;quot;: In Gemfile: coffee-rails (= 4.2.2) was resolved to 4.2.2, which depends on railties (&amp;gt;= 4.0.0) jquery-rails (= 4.3.1) was resolved to 4.3.1, which depends on railties (&amp;gt;= 4.2.0) rails (&amp;gt;= 6.0.0) was resolved to 6.0.0, which depends on railties (= 6.0.0) sass-rails (= 5.0.6) was resolved to 5.0.6, which depends on railties (&amp;gt;= 4.0.0, &amp;lt; 6) web-console (= 3.5.1) was resolved to 3.5.1, which</description>
-    </item>
-    
-    <item>
-      <title>ghqのインストール</title>
-      <link>https://umemak.github.io/blog/posts/2019/08/04_golang_ghq/</link>
-      <pubDate>Sun, 04 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/08/04_golang_ghq/</guid>
-      <description>「改訂2版 みんなのGo言語」を買ったのでC101PAで試しながら読みすすめていた。 ghqをインストールするところでエラー。 どうやらgoのバージョンを1.12以上にあげないとダメらしい。 先日パッケージでインストールしたgoは1.11.6だった。 以前のやり方でインストールし直す ~/.bash_profile の GOROOT は /usr/local/go に変更してsou</description>
     </item>
     
   </channel>

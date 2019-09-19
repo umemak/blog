@@ -3,22 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://umemak.github.io/blog/tags/book/</loc>
-    <lastmod>2019-09-13T00:00:00+00:00</lastmod>
+    <loc>https://umemak.github.io/blog/tags/event/</loc>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://umemak.github.io/blog/posts/</loc>
-    <lastmod>2019-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/serverless/</loc>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</loc>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://umemak.github.io/blog/tags/</loc>
-    <lastmod>2019-09-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://umemak.github.io/blog/</loc>
+    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/book/</loc>
     <lastmod>2019-09-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -54,11 +69,6 @@
   
   <url>
     <loc>https://umemak.github.io/blog/tags/container/</loc>
-    <lastmod>2019-08-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/tags/event/</loc>
     <lastmod>2019-08-29T00:00:00+00:00</lastmod>
   </url>
   
