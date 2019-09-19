@@ -29,10 +29,40 @@ https://serverless.connpass.com/event/143446/
   - yaml の custom で定義
   - CFnも書く必要がある？
 
-## 19:40-19:50	Social	／
+## 19:40-20:05	今Serverlessが面白いわけ（v19.09）	川崎 庸市（Microsoft Corporation）
+* Serverless != サーバーがない
+* Serverless = サーバーを管理する必要がない
+* Serverlessの定義
+  - スケーリング
+  - 管理不要
+  - 本質的な作業に集中
+* 人類の問題解決
+* FaaSはインフラ進化の賜物
+  - コンテナ
+  - 実行単位が分離されている→セキュリティ有利
+  - CGI-Bin？
+  - データストアの進化
+    - 水平スケール大事
+    - NoSQLがマッチしている
+  - 進化の方向性
+    - 自動化、抽象化、標準化
+* 標準化が課題
+  - ベンダーロックインの懸念
+  - CNCF Serverless WGで進められている
+  - Cloud Events
+    - イベントスキーマ標準化のための共通仕様
+  - 複雑性の抽象化
+    - Terraform, plumi
+* マルチクラウド化対応
+  - K8sベースのServerless環境
+  - K8sがインフラを抽象化
+  - Knative, KEDA
+  - クラスタレス
+    - バッチ処理とか
+  - Virtual Kubelet
+    - クラウドのリソースをK8sから管理
 
-
-## 19:50-20:15	今Serverlessが面白いわけ（v19.09）	川崎 庸市（Microsoft Corporation）
+## 20:05-20:15	Social	／
 
 
 ## 20:15-20:35	AWSで開発するサーバレスAPIバックエンド	三宅 暁（フリーランス）
