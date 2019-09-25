@@ -8,7 +8,7 @@ https://golangtokyo.connpass.com/event/147175/
 
 * 今回はスマートホームとGoの話です
 
-## 19:40 ~ 20:10	Go in Nature（仮） by songmu]
+## 19:30 ~ 20:00	Go in Nature（仮） by songmu]
 * Nature Remoの裏側
 * gocredits オススメ
   - 依存ライブラリのLICENSEを同梱してくれる
@@ -26,9 +26,13 @@ https://golangtokyo.connpass.com/event/147175/
 * Dependabot 導入
   - Go対応はちょっと微妙
 
-## 20:10 ~ 20:40	Nature Remo用のGo API Clientを作った話（仮） by tenntenn
+## 20:00 ~ 20:30	Nature Remo用のGo API Clientを作った話（仮） by tenntenn
+* 完全に対応したGoクライアントが存在していなかったので作った
+* swagger見ながら作った
+* Dialogflow?
 
-## 20:40 ~ 21:10	休憩
+## 20:30 ~ 21:00	休憩
+* と言う名の懇親会タイム
 
 ## 21:10 ~ 21:20	LT1 Raspberry Pi + Go で IoT した話 (仮) by yaegashi
 
