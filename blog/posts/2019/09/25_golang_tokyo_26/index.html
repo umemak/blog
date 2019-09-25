@@ -128,20 +128,58 @@
 <ul>
 <li>完全に対応したGoクライアントが存在していなかったので作った</li>
 <li>swagger見ながら作った</li>
-<li>Dialogflow?</li>
+<li>Dialogflowも使いたい</li>
 </ul>
 
 <h2 id="20-30-21-00-休憩">20:30 ~ 21:00    休憩</h2>
 
 <ul>
-<li>と言う名の懇親会タイム</li>
+<li>と言う名の懇親タイム</li>
 </ul>
 
 <h2 id="21-10-21-20-lt1-raspberry-pi-go-で-iot-した話-仮-by-yaegashi">21:10 ~ 21:20    LT1 Raspberry Pi + Go で IoT した話 (仮) by yaegashi</h2>
 
+<ul>
+<li>エッジデバイスでの活用</li>
+<li>クロスコンパイルが簡単</li>
+<li>シングルバイナリ</li>
+<li>並列処理のサポート</li>
+<li>GPIOの制御
+
+<ul>
+<li>pigpioが便利</li>
+<li>遅延、CPU負荷が弱点</li>
+<li>periph.ioもオススメ</li>
+</ul></li>
+</ul>
+
 <h2 id="21-20-21-30-lt2-goを使ったセンサーデータ収集基盤のお話-仮-by-takeshinoda">21:20 ~ 21:30    LT2 Goを使ったセンサーデータ収集基盤のお話(仮 by takeshinoda</h2>
 
+<ul>
+<li>IoTでGoは便利
+
+<ul>
+<li>クロスコンパイル、非同期データ通信制御、デプロイの容易さ</li>
+<li>非同期処理と同期処理の混在もOK</li>
+</ul></li>
+<li>nodeとGo、Goのほうが安心感がある</li>
+</ul>
+
 <h2 id="21-30-21-40-lt3-build-real-world-data-collecting-architecture-with-goroutine-channel-by-banana-umai">21:30 ~ 21:40    LT3 Build real world data collecting architecture with goroutine &amp; channel by banana_umai</h2>
+
+<ul>
+<li>pipeline pattern
+
+<ul>
+<li>channelで並列にデータ受け渡しをしていくパターン</li>
+<li>データの順序性、即時性を保ちたい</li>
+</ul></li>
+<li>debouncing, buffering
+
+<ul>
+<li>ネットワークの不安定さに対応できる</li>
+</ul></li>
+</ul>
 
 <h2 id="21-40-21-50-終了-撤収">21:40 ~ 21:50    終了・撤収</h2>
 
