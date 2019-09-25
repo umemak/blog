@@ -6,11 +6,25 @@ tags: ["golang","event"]
 
 https://golangtokyo.connpass.com/event/147175/
 
-## 19:00 ~	開場・受付
+* 今回はスマートホームとGoの話です
 
-## 19:30 ~ 19:40	オープニング
-
-## 19:40 ~ 20:10	Go in Nature（仮） by songmu
+## 19:40 ~ 20:10	Go in Nature（仮） by songmu]
+* Nature Remoの裏側
+* gocredits オススメ
+  - 依存ライブラリのLICENSEを同梱してくれる
+* ecsched気になる
+* Websocketでクラウドに接続しっぱなしにしている
+* 外部のデバイスからはクラウドに司令を出す
+* 常時接続の管理が大変
+* ECS上でうごかしている
+* Nginxとポート数の問題
+  - 接続数が少ないところにつなぎに行く
+  - ALBに直接つなぎに行けるようにしたい
+* deploy時に接続を切るので、その後一斉に再接続が来る
+* Migration
+  - goose から schemalex に乗り換えたい
+* Dependabot 導入
+  - Go対応はちょっと微妙
 
 ## 20:10 ~ 20:40	Nature Remo用のGo API Clientを作った話（仮） by tenntenn
 
