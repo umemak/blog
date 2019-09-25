@@ -56,5 +56,3 @@ https://golangtokyo.connpass.com/event/147175/
   - データの順序性、即時性を保ちたい
 * debouncing, buffering
   - ネットワークの不安定さに対応できる
-
-## 21:40 ~ 21:50	終了・撤収
