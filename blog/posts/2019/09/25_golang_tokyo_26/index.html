@@ -86,11 +86,42 @@
 
 <p><a href="https://golangtokyo.connpass.com/event/147175/">https://golangtokyo.connpass.com/event/147175/</a></p>
 
-<h2 id="19-00-開場-受付">19:00 ~  開場・受付</h2>
+<ul>
+<li>今回はスマートホームとGoの話です</li>
+</ul>
 
-<h2 id="19-30-19-40-オープニング">19:30 ~ 19:40    オープニング</h2>
+<h2 id="19-40-20-10-go-in-nature-仮-by-songmu">19:40 ~ 20:10    Go in Nature（仮） by songmu]</h2>
 
-<h2 id="19-40-20-10-go-in-nature-仮-by-songmu">19:40 ~ 20:10    Go in Nature（仮） by songmu</h2>
+<ul>
+<li>Nature Remoの裏側</li>
+<li>gocredits オススメ
+
+<ul>
+<li>依存ライブラリのLICENSEを同梱してくれる</li>
+</ul></li>
+<li>ecsched気になる</li>
+<li>Websocketでクラウドに接続しっぱなしにしている</li>
+<li>外部のデバイスからはクラウドに司令を出す</li>
+<li>常時接続の管理が大変</li>
+<li>ECS上でうごかしている</li>
+<li>Nginxとポート数の問題
+
+<ul>
+<li>接続数が少ないところにつなぎに行く</li>
+<li>ALBに直接つなぎに行けるようにしたい</li>
+</ul></li>
+<li>deploy時に接続を切るので、その後一斉に再接続が来る</li>
+<li>Migration
+
+<ul>
+<li>goose から schemalex に乗り換えたい</li>
+</ul></li>
+<li>Dependabot 導入
+
+<ul>
+<li>Go対応はちょっと微妙</li>
+</ul></li>
+</ul>
 
 <h2 id="20-10-20-40-nature-remo用のgo-api-clientを作った話-仮-by-tenntenn">20:10 ~ 20:40    Nature Remo用のGo API Clientを作った話（仮） by tenntenn</h2>
 
