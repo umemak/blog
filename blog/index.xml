@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>golang.tokyo #26</title>
+      <link>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</guid>
+      <description>https://golangtokyo.connpass.com/event/147175/ 19:00 ~ 開場・受付 19:30 ~ 19:40 オープニング 19:40 ~ 20:10 Go in Nature（仮） by songmu 20:10 ~ 20:40 Nature Remo用のGo API Clientを作った話（仮） by tenntenn 20:40 ~ 21:10 休憩 21:10 ~ 21:20 LT1 Raspberry Pi + Go で IoT した話 (仮) by yaegashi 21:20 ~ 21:30 LT2 Goを使ったセンサーデータ収集基盤のお話(仮 by takeshinoda 21:30 ~ 21:40 LT3 Build real world data collecting architecture with goroutine &amp;amp; channel by banana_umai 21:40 ~ 21:50 終了・撤収</description>
+    </item>
     
     <item>
       <title>Serverless Meetup Tokyo #14</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/08/20_mercari_go_10/</guid>
       <description>https://mercari.connpass.com/event/141122/ 19:40 ~ morikuni GopherCon 2019 GopherConとは 2014年デンバーで始まった。いろんなところでやっている。 今年はサンディエゴで開催 1800人を超える参加者 Mercariの関わり Silver Sponsor BOLD Scholarship 学生向け 11+2名参加 １日目はワークショップ ２日目３日目は発表がメイン ４日目はコミュニティデイ LTとか One MOre Thing Generics(Contracts) Interfaceと</description>
-    </item>
-    
-    <item>
-      <title>Rails6を試す</title>
-      <link>https://umemak.github.io/blog/posts/2019/08/18_rails6/</link>
-      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/08/18_rails6/</guid>
-      <description>リリースされていたので、アップデートしてみる https://weblog.rubyonrails.org/2019/8/15/Rails-6-0-final-release/ 対象 https://github.com/umemak/hello_app Gemfileを編集 gem &#39;rails&#39;, &#39;&amp;gt;=6.0.0&#39; bundle updateする環境を準備 docker run -it -v `pwd`:/usr/src/work ruby bash bundle update root@5655bc438c4d:/usr/src/work# bundle update Fetching gem metadata from https://rubygems.org/............ Fetching gem metadata from https://rubygems.org/. Resolving dependencies.... Bundler could not find compatible versions for gem &amp;quot;railties&amp;quot;: In Gemfile: coffee-rails (= 4.2.2) was resolved to 4.2.2, which depends on railties (&amp;gt;= 4.0.0) jquery-rails (= 4.3.1) was resolved to 4.3.1, which depends on railties (&amp;gt;= 4.2.0) rails (&amp;gt;= 6.0.0) was resolved to 6.0.0, which depends on railties (= 6.0.0) sass-rails (= 5.0.6) was resolved to 5.0.6, which depends on railties (&amp;gt;= 4.0.0, &amp;lt; 6) web-console (= 3.5.1) was resolved to 3.5.1, which</description>
     </item>
     
   </channel>
