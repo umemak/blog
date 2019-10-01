@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <title>mercari.go - umemak</title>
+    <title>Google Cloud Build Day - umemak</title>
 
     <style type="text/css">
         img.wp-smiley,
@@ -57,10 +57,10 @@
 <main role="main">
     <article role="article" class="post type-post format-standard hentry">
         <header class="post-header">
-            <h1>mercari.go</h1>
+            <h1>Google Cloud Build Day</h1>
             <div class="post-details">
                 <a rel="bookmark">
-                    <time datetime="2019-07-17T717:120:06">2019-07-17</time>
+                    <time datetime="2019-10-01T101:120:06">2019-10-01</time>
                 </a>
 				
 <span style="float: right;">
@@ -68,11 +68,11 @@
     
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     
-    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2019/07/17_mercari_go_9/" data-layout="button_count" data-size="small">
-        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f07%2f17_mercari_go_9%2f" class="fb-xfbml-parse-ignore">Share</a>
+    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/" data-layout="button_count" data-size="small">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f10%2f01_google_cloud_build_day%2f" class="fb-xfbml-parse-ignore">Share</a>
     </div>
     &nbsp;
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="mercari.go" data-url="https://umemak.github.io/blog/posts/2019/07/17_mercari_go_9/" data-show-count="false">Tweet</a>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Google Cloud Build Day" data-url="https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/" data-show-count="false">Tweet</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     &nbsp;
     
@@ -84,102 +84,22 @@
         <div class="post-content">
             
 
+<p><a href="https://gcpug-tokyo.connpass.com/event/143453/">https://gcpug-tokyo.connpass.com/event/143453/</a></p>
+
 <ul>
-<li>2019/07/17 19:30-21:30</li>
-<li><a href="https://mercari.connpass.com/event/137488/">https://mercari.connpass.com/event/137488/</a></li>
+<li>GCPの<a href="https://cloud.google.com/cloud-build/?hl=ja">Cloud Build</a>サービスに関する話。</li>
+<li>AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの？</li>
 </ul>
 
-<h2 id="tottie-gopher-ライブドローイングのご説明">@tottie  Gopher ライブドローイングのご説明</h2>
+<h2 id="19-30-19-50-マルチアーキテクチャイメージの作成-仮-ymotongpoo">19:30 ~ 19:50 マルチアーキテクチャイメージの作成（仮） @ymotongpoo</h2>
 
-<h2 id="rerorero-protoactor-goでpregelを作った話">@rerorero    protoactor-goでPregelを作った話</h2>
+<h2 id="19-50-20-10-cloud-build-out-of-steps-apstndb">19:50 ~ 20:10 Cloud Build out of steps @apstndb</h2>
 
-<ul>
-<li>グラフプロセッシングの話</li>
-<li>Map/Reduceの課題を解決するPregel（プリゲル）フレームワーク</li>
-<li>アクターモデル</li>
-</ul>
+<h2 id="20-10-20-20-休憩">20:10 ~ 20:20 休憩</h2>
 
-<h2 id="knsh14-メルペイでの残高管理の話">@knsh14  メルペイでの残高管理の話</h2>
+<h2 id="20-20-20-40-cloud-buildを気軽なコンテナ実行環境として利用する-chidakiyo">20:20 ~ 20:40 Cloud Buildを気軽なコンテナ実行環境として利用する @chidakiyo</h2>
 
-<ul>
-<li>Balance Service</li>
-<li>gRPC, GKE, Spanner, Go</li>
-<li>全体設計
-
-<ul>
-<li>クリーンアーキテクチャベース</li>
-<li>Viewなし</li>
-<li>Infra Layerで変換して返す</li>
-</ul></li>
-<li>トランザクション
-
-<ul>
-<li>UseCaseそうのInteractorで</li>
-<li>全体のロールバックが楽</li>
-</ul></li>
-<li>DB
-
-<ul>
-<li>標準パッケージは使っていない</li>
-</ul></li>
-<li>APIの設計
-
-<ul>
-<li>各種残高の増減機能</li>
-<li>種類にかかわらず同じインターフェースを提供したい</li>
-<li>ロールバックしやすくしたい</li>
-<li>組み合わせのテストが大変</li>
-</ul></li>
-<li>冪等性
-
-<ul>
-<li>どのAPIがリトライされても大丈夫なように作る</li>
-<li>参照系はあまり気にしていない</li>
-<li>取引IDでチェックしている</li>
-</ul></li>
-<li>データの整合性
-
-<ul>
-<li>取引履歴が重要</li>
-<li>取引レコードから算出</li>
-<li>取引後の残高スナップショット</li>
-<li>すべての処理が成功したときに履歴テーブルにコミットする</li>
-</ul></li>
-</ul>
-
-<h2 id="akkie-readable-code-in-go">@akkie   Readable code in Go</h2>
-
-<ul>
-<li>コードを読みやすくするために</li>
-<li>読みやすいコードとは
-
-<ul>
-<li>他の人（本人含む）が最短時間で理解できるコード</li>
-</ul></li>
-<li>コメントに監督としての感想を書く</li>
-<li>コメントでコードをグループ分けする（テストコード）</li>
-</ul>
-
-<h2 id="tenntenn-the-go-playgroundをコマンドラインから扱う">@tenntenn    The Go Playgroundをコマンドラインから扱う</h2>
-
-<ul>
-<li>txtar（テキストアーカイブ）形式
-
-<ul>
-<li><code>-- ファイル名 --</code> で区切る</li>
-<li>playgroung上でタブ分けしてくれるchrome拡張あり</li>
-<li>internalパッケージ</li>
-</ul></li>
-</ul>
-
-<h2 id="tottie-gopher-イラスト発表">@tottie  Gopher イラスト発表</h2>
-
-<h2 id="感想">感想</h2>
-
-<ul>
-<li>絵がかけるってすごい</li>
-<li>質疑応答の内容が理解できず、まだまだ勉強不足だと感じた</li>
-</ul>
+<h2 id="20-40-21-00-lt">20:40 ~ 21:00 LT</h2>
 
         </div>
 
@@ -189,7 +109,7 @@
             
             <span class="post-tags">
                 
-                <a href="https://umemak.github.io/tags/go" rel="tag">go</a>&emsp;
+                <a href="https://umemak.github.io/tags/gcp" rel="tag">gcp</a>&emsp;
                 
                 <a href="https://umemak.github.io/tags/event" rel="tag">event</a>&emsp;
                 

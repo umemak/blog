@@ -8,6 +8,21 @@
   </url>
   
   <url>
+    <loc>https://umemak.github.io/blog/tags/event/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/gcp/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</loc>
+    <lastmod>2019-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/posts/</loc>
     <lastmod>2019-10-01T00:00:00+00:00</lastmod>
   </url>
@@ -30,11 +45,6 @@
   <url>
     <loc>https://umemak.github.io/blog/posts/2019/10/01_readablebooks/</loc>
     <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/tags/event/</loc>
-    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -250,11 +260,6 @@
   <url>
     <loc>https://umemak.github.io/blog/tags/test/</loc>
     <lastmod>2019-06-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/tags/gcp/</loc>
-    <lastmod>2019-06-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>

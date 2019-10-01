@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 19 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/gcp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Google Cloud Build Day</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</guid>
+      <description>https://gcpug-tokyo.connpass.com/event/143453/ GCPのCloud Buildサービスに関する話。 AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの？ 19:30 ~ 19:50 マルチアーキテクチャイメージの作成（仮） @ymotongpoo 19:50 ~ 20:10 Cloud Build out of steps @apstndb 20:10 ~ 20:20 休憩 20:20 ~ 20:40 Cloud Buildを気軽なコンテナ実行環境として利用する @chidakiyo 20:40 ~ 21:00 LT</description>
+    </item>
     
     <item>
       <title>GCPUG Tokyo Next Extended 2019 Infra Day</title>

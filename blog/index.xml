@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Google Cloud Build Day</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</guid>
+      <description>https://gcpug-tokyo.connpass.com/event/143453/ GCPのCloud Buildサービスに関する話。 AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの？ 19:30 ~ 19:50 マルチアーキテクチャイメージの作成（仮） @ymotongpoo 19:50 ~ 20:10 Cloud Build out of steps @apstndb 20:10 ~ 20:20 休憩 20:20 ~ 20:40 Cloud Buildを気軽なコンテナ実行環境として利用する @chidakiyo 20:40 ~ 21:00 LT</description>
+    </item>
+    
+    <item>
       <title>技術を伝えるテクニック 〜分かりやすい書き方・話し方〜</title>
       <link>https://umemak.github.io/blog/posts/2019/10/01_start_writing/</link>
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/08/21_azure_devops/</guid>
       <description>Hugoの実行とPUSHをやってもらう https://blog.kaikeru.com/post/20181228-freestaticsite/ を参考に設定。 CIのスキップを念の為追加 variableの設定がわかりにくかった。 ちゃんと読めば書いてある。 Pipeline編集画面の右上から。 AWS Secrets Manager的なサービスがあるのかと探し回ってしまった。。</description>
-    </item>
-    
-    <item>
-      <title>Hugoの導入</title>
-      <link>https://umemak.github.io/blog/posts/2019/08/21_hugo/</link>
-      <pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/08/21_hugo/</guid>
-      <description>やってみよう インストール https://gohugo.io/getting-started/installing/#linux を見たら apt でいけるらしいので $ apt install hugo $ hugo version Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-31T01:01:10+09:00 v0.18.1 ってだいぶ古い。。 $ sudo apt remove hugo $ wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.tar.gz $ sha256sum hugo_extended_0.57.2_Linux-64bit.tar.gz f4ce91d6909d489fe5461633f6b6bd689ed14c9e06b1b7af110024420aa8fd91 hugo_extended_0.57.2_Linux-64bit.tar.gz $ tar zxvf hugo_extended_0.57.2_Linux-64bit.tar.gz LICENSE README.md hugo $ sudo cp hugo /usr/local/bin/ $ hugo version Hugo Static Site Generator v0.57.2-A849CB2D/extended linux/amd64 BuildDate: 2019-08-17T17:57:54Z OK。 サイト作成 $ hugo new site blog テーマ追加 $ cd blog $ git clone https://github.com/Track3/hermit.git themes/hermit $ echo &#39;theme = &amp;quot;hermit&amp;quot;&#39; &amp;gt;&amp;gt; config.toml コンテンツ追加 $ hugo new posts/my-first-post.md 表示確認 $ hugo server -D Building sites … ERROR 2019/08/21 11:29:11 render of &amp;quot;section&amp;quot; failed: execute</description>
     </item>
     
   </channel>

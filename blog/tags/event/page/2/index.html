@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <title>mercari.go - umemak</title>
+    <title>event - umemak</title>
 
     <style type="text/css">
         img.wp-smiley,
@@ -53,150 +53,78 @@
         
     </div>
         <div id="content" class="content">
-
-<main role="main">
-    <article role="article" class="post type-post format-standard hentry">
-        <header class="post-header">
-            <h1>mercari.go</h1>
-            <div class="post-details">
-                <a rel="bookmark">
-                    <time datetime="2019-07-17T717:120:06">2019-07-17</time>
-                </a>
-				
-<span style="float: right;">
-    <div id="fb-root" style="height: 100%;"></div>
+<main aria-role="main">
+  <header class="homepage-header">
+    <h1>event</h1>
     
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+  </header>
+  <div class="homepage-content">
     
-    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2019/07/17_mercari_go_9/" data-layout="button_count" data-size="small">
-        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f07%2f17_mercari_go_9%2f" class="fb-xfbml-parse-ignore">Share</a>
-    </div>
-    &nbsp;
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="mercari.go" data-url="https://umemak.github.io/blog/posts/2019/07/17_mercari_go_9/" data-show-count="false">Tweet</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    &nbsp;
     
-</span>
+  </div>
+  <div>
+    
+    
+        <article class="list__item post clearfix">
+	<div class="list__content clearfix">
+		<header class="post-header">
+				<h2><a href="/blog/posts/2018/11/02_aws_devday/" rel="bookmark">AWS Dev Day Tokoyo 2018</a></h2>
+				<div class="post-details">
+				<a rel="bookmark">
+					<time datetime="2018-11-02T00:00:00">2018-11-02</time>
+				</a>
+				</div>
+		</header>
 
-            </div>
-        </header>
+		<div class="post-excerpt"><p>
+			3日間通った証 シール３枚
+		</p></div>
+	</div>
+	
+	<footer class="post-footer">
+			
 
-        <div class="post-content">
-            
+		
+		<span class="post-tags">
+			
+			<a href="https://umemak.github.io/tags/aws" rel="tag">aws</a>
+			
+			<a href="https://umemak.github.io/tags/event" rel="tag">event</a>
+			
+		</span>
+		
+	</footer>
 
-<ul>
-<li>2019/07/17 19:30-21:30</li>
-<li><a href="https://mercari.connpass.com/event/137488/">https://mercari.connpass.com/event/137488/</a></li>
+</article>
+    
+  </div>
+
+
+
+<div class="nav-links">
+<ul class="pagination">
+    
+        <a href="/blog/tags/event/" aria-label="First"><span aria-hidden="true">&laquo;</span></a>
+    
+
+    <a href="/blog/tags/event/" aria-label="Previous"><span aria-hidden="true">Previous Page</span></a>
+    
+    
+    <a href="/blog/tags/event/">1</a>
+    
+    
+    
+    <span href="/blog/tags/event/page/2/">2</a>
+    
+    
+    <a href="" aria-label="Next"><span aria-hidden="true">Next Page</span></a>
+    
+    <a href="/blog/tags/event/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;</span></a>
+    
 </ul>
+</div>
 
-<h2 id="tottie-gopher-ライブドローイングのご説明">@tottie  Gopher ライブドローイングのご説明</h2>
 
-<h2 id="rerorero-protoactor-goでpregelを作った話">@rerorero    protoactor-goでPregelを作った話</h2>
-
-<ul>
-<li>グラフプロセッシングの話</li>
-<li>Map/Reduceの課題を解決するPregel（プリゲル）フレームワーク</li>
-<li>アクターモデル</li>
-</ul>
-
-<h2 id="knsh14-メルペイでの残高管理の話">@knsh14  メルペイでの残高管理の話</h2>
-
-<ul>
-<li>Balance Service</li>
-<li>gRPC, GKE, Spanner, Go</li>
-<li>全体設計
-
-<ul>
-<li>クリーンアーキテクチャベース</li>
-<li>Viewなし</li>
-<li>Infra Layerで変換して返す</li>
-</ul></li>
-<li>トランザクション
-
-<ul>
-<li>UseCaseそうのInteractorで</li>
-<li>全体のロールバックが楽</li>
-</ul></li>
-<li>DB
-
-<ul>
-<li>標準パッケージは使っていない</li>
-</ul></li>
-<li>APIの設計
-
-<ul>
-<li>各種残高の増減機能</li>
-<li>種類にかかわらず同じインターフェースを提供したい</li>
-<li>ロールバックしやすくしたい</li>
-<li>組み合わせのテストが大変</li>
-</ul></li>
-<li>冪等性
-
-<ul>
-<li>どのAPIがリトライされても大丈夫なように作る</li>
-<li>参照系はあまり気にしていない</li>
-<li>取引IDでチェックしている</li>
-</ul></li>
-<li>データの整合性
-
-<ul>
-<li>取引履歴が重要</li>
-<li>取引レコードから算出</li>
-<li>取引後の残高スナップショット</li>
-<li>すべての処理が成功したときに履歴テーブルにコミットする</li>
-</ul></li>
-</ul>
-
-<h2 id="akkie-readable-code-in-go">@akkie   Readable code in Go</h2>
-
-<ul>
-<li>コードを読みやすくするために</li>
-<li>読みやすいコードとは
-
-<ul>
-<li>他の人（本人含む）が最短時間で理解できるコード</li>
-</ul></li>
-<li>コメントに監督としての感想を書く</li>
-<li>コメントでコードをグループ分けする（テストコード）</li>
-</ul>
-
-<h2 id="tenntenn-the-go-playgroundをコマンドラインから扱う">@tenntenn    The Go Playgroundをコマンドラインから扱う</h2>
-
-<ul>
-<li>txtar（テキストアーカイブ）形式
-
-<ul>
-<li><code>-- ファイル名 --</code> で区切る</li>
-<li>playgroung上でタブ分けしてくれるchrome拡張あり</li>
-<li>internalパッケージ</li>
-</ul></li>
-</ul>
-
-<h2 id="tottie-gopher-イラスト発表">@tottie  Gopher イラスト発表</h2>
-
-<h2 id="感想">感想</h2>
-
-<ul>
-<li>絵がかけるってすごい</li>
-<li>質疑応答の内容が理解できず、まだまだ勉強不足だと感じた</li>
-</ul>
-
-        </div>
-
-        <footer class="post-footer">
-            
-
-            
-            <span class="post-tags">
-                
-                <a href="https://umemak.github.io/tags/go" rel="tag">go</a>&emsp;
-                
-                <a href="https://umemak.github.io/tags/event" rel="tag">event</a>&emsp;
-                
-            </span>
-            
-        </footer>
-        
 <table cellspacing="15" style="width:100%; border: none;">
     <tr>
         <td style="text-align: center; border: none; padding: 0px;">
@@ -205,11 +133,6 @@
         </td>
     </tr>
 </table>
-
-        
-    </article>
-
-    
 
 </main>
 
