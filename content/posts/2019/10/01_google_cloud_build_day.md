@@ -7,7 +7,7 @@ tags: ["GCP", "CI/CD", "event"]
 https://gcpug-tokyo.connpass.com/event/143453/
 
 * GCPの[Cloud Build](https://cloud.google.com/cloud-build/?hl=ja)サービスに関する話。
-* AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの？
+* AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの。
 
 ## 19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo
 * イベントベースでビルドのトリガー（GitHubのpushとか）
@@ -31,10 +31,12 @@ https://gcpug-tokyo.connpass.com/event/143453/
   - CircleCI, TravisCI, GitHub Actionで動いた報告あり
 * STEP内でdocker buildが使える→docer runも使える→何でもできる
 * 他のCI/CDサービスとは異なるアプローチ
-* jwilder/dockerize?
+* dockerize
+  - 他のコンテナの起動を待つ用途で使っている
+  - https://github.com/jwilder/dockerize
 * Cloud BuildでKINDするには
   - STEPから外れる必要がある
-  - Docker Networkが使えないのでhostネットワークを使う＝stopと直接通信できない
+  - Docker Networkが使えないのでhostネットワークを使う＝STEPと直接通信できない
 * デモは時間切れ。。
 
 ## 20:25 ~ 20:35 休憩
