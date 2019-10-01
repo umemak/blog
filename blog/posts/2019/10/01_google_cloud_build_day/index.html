@@ -139,13 +139,59 @@
 
 <h2 id="20-25-20-35-休憩">20:25 ~ 20:35 休憩</h2>
 
+<h2 id="20-35-20-50-cloud-buildを気軽なコンテナ実行環境として利用する-chidakiyo">20:35 ~ 20:50 Cloud Buildを気軽なコンテナ実行環境として利用する @chidakiyo</h2>
+
 <ul>
-<li></li>
+<li>注意点
+
+<ul>
+<li><code>gcloud builds submit</code>した際に指定したディレクトリは以下のファイルが送られる。</li>
+<li>巨大なファイルがあると大変。</li>
+<li><code>.gcloudignore</code>で除外指定可能。</li>
+<li>無料枠は請求先アカウント単位なので複数プロジェクトでやるとすぐ尽きる</li>
+</ul></li>
+<li>事例
+
+<ul>
+<li>Dataflowを使っていた処理のCloud build化</li>
+<li>gcloudコマンドさえ入っていればローカルに諸々インストールする必要がない</li>
+</ul></li>
 </ul>
 
-<h2 id="20-20-20-40-cloud-buildを気軽なコンテナ実行環境として利用する-chidakiyo">20:20 ~ 20:40 Cloud Buildを気軽なコンテナ実行環境として利用する @chidakiyo</h2>
+<h2 id="20-50-21-10-lt">20:50 ~ 21:10 LT</h2>
 
-<h2 id="20-40-21-00-lt">20:40 ~ 21:00 LT</h2>
+<h3 id="yukinagae">yukinagae</h3>
+
+<ul>
+<li>Berglas（ばーぐらす）
+
+<ul>
+<li>Cloud KMSとCloud Storageで暗号化できる</li>
+</ul></li>
+<li>デモは時間切れ。。</li>
+</ul>
+
+<h3 id="soumatsuda">SouMatsuda</h3>
+
+<ul>
+<li>Cloud Build x Terraform</li>
+<li>通常、ローカルで実行する init, plan, apply をCloud Buildで実施する</li>
+<li>インフラの設定変更が頻繁に起きる場合は工数削減に効く</li>
+<li>それなりに学習コストはかかる</li>
+</ul>
+
+<h3 id="kumagai">kumagai</h3>
+
+<ul>
+<li>Cloud Build で docker-compose と ansible</li>
+<li>用途
+
+<ul>
+<li>自動テスト用ベースイメージとして</li>
+<li>開発者にGCEのテンプレートとともに渡す</li>
+<li>社内デモ環境としてGKEで起動</li>
+</ul></li>
+</ul>
 
         </div>
 
