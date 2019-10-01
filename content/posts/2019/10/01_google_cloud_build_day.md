@@ -38,11 +38,32 @@ https://gcpug-tokyo.connpass.com/event/143453/
 * デモは時間切れ。。
 
 ## 20:25 ~ 20:35 休憩
-* 
 
-## 20:20 ~ 20:40 Cloud Buildを気軽なコンテナ実行環境として利用する @chidakiyo
+## 20:35 ~ 20:50 Cloud Buildを気軽なコンテナ実行環境として利用する @chidakiyo
+* 注意点
+  - `gcloud builds submit`した際に指定したディレクトリは以下のファイルが送られる。
+  - 巨大なファイルがあると大変。
+  - `.gcloudignore`で除外指定可能。
+  - 無料枠は請求先アカウント単位なので複数プロジェクトでやるとすぐ尽きる
+* 事例
+  - Dataflowを使っていた処理のCloud build化
+  - gcloudコマンドさえ入っていればローカルに諸々インストールする必要がない
 
+## 20:50 ~ 21:10 LT
+### yukinagae
+* Berglas（ばーぐらす）
+  - Cloud KMSとCloud Storageで暗号化できる
+* デモは時間切れ。。
 
-## 20:40 ~ 21:00 LT
+### SouMatsuda
+* Cloud Build x Terraform
+* 通常、ローカルで実行する init, plan, apply をCloud Buildで実施する
+* インフラの設定変更が頻繁に起きる場合は工数削減に効く
+* それなりに学習コストはかかる
 
-
+### kumagai
+* Cloud Build で docker-compose と ansible
+* 用途
+  - 自動テスト用ベースイメージとして
+  - 開発者にGCEのテンプレートとともに渡す
+  - 社内デモ環境としてGKEで起動
