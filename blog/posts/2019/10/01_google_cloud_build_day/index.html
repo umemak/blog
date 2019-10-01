@@ -91,11 +91,57 @@
 <li>AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの？</li>
 </ul>
 
-<h2 id="19-30-19-50-マルチアーキテクチャイメージの作成-仮-ymotongpoo">19:30 ~ 19:50 マルチアーキテクチャイメージの作成（仮） @ymotongpoo</h2>
+<h2 id="19-30-20-00-マルチアーキテクチャイメージの作成-仮-ymotongpoo">19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo</h2>
 
-<h2 id="19-50-20-10-cloud-build-out-of-steps-apstndb">19:50 ~ 20:10 Cloud Build out of steps @apstndb</h2>
+<ul>
+<li>イベントベースでビルドのトリガー（GitHubのpushとか）</li>
+<li>テストの実行とアーティファクトのビルド</li>
+<li>雑に言うとDocker on Docker</li>
+<li>ビルド実行時間にる対する課金</li>
+<li>Artifact management
 
-<h2 id="20-10-20-20-休憩">20:10 ~ 20:20 休憩</h2>
+<ul>
+<li>プライベートコンテナレジストリに自動push＆脆弱性スキャン</li>
+</ul></li>
+<li>70以上のビルダーイメージ</li>
+<li>Cloud Console UIで実行状況・結果の確認ができる</li>
+<li>セキュア情報はKMSと連携して暗号化可能</li>
+<li>Dockerが入っていればローカルで試すことができる</li>
+<li>STEPの並行実行ができる
+
+<ul>
+<li>依存関係も定義できる（waitFor）</li>
+</ul></li>
+</ul>
+
+<h2 id="20-00-20-25-cloud-build-out-of-steps-apstndb">20:00 ~ 20:25 Cloud Build out of steps @apstndb</h2>
+
+<ul>
+<li>CI/CDにおけるコンテナ間の通信</li>
+<li>K8s IN Docker(KIND)
+
+<ul>
+<li>DOckerの中で本物のK8sクラスタを構築するツール</li>
+<li>現在アルファ版</li>
+<li>CircleCI, TravisCI, GitHub Actionで動いた報告あり</li>
+</ul></li>
+<li>STEP内でdocker buildが使える→docer runも使える→何でもできる</li>
+<li>他のCI/CDサービスとは異なるアプローチ</li>
+<li>jwilder/dockerize?</li>
+<li>Cloud BuildでKINDするには
+
+<ul>
+<li>STEPから外れる必要がある</li>
+<li>Docker Networkが使えないのでhostネットワークを使う＝stopと直接通信できない</li>
+</ul></li>
+<li>デモは時間切れ。。</li>
+</ul>
+
+<h2 id="20-25-20-35-休憩">20:25 ~ 20:35 休憩</h2>
+
+<ul>
+<li></li>
+</ul>
 
 <h2 id="20-20-20-40-cloud-buildを気軽なコンテナ実行環境として利用する-chidakiyo">20:20 ~ 20:40 Cloud Buildを気軽なコンテナ実行環境として利用する @chidakiyo</h2>
 
@@ -109,7 +155,9 @@
             
             <span class="post-tags">
                 
-                <a href="https://umemak.github.io/tags/gcp" rel="tag">gcp</a>&emsp;
+                <a href="https://umemak.github.io/tags/gcp" rel="tag">GCP</a>&emsp;
+                
+                <a href="https://umemak.github.io/tags/ci/cd" rel="tag">CI/CD</a>&emsp;
                 
                 <a href="https://umemak.github.io/tags/event" rel="tag">event</a>&emsp;
                 
