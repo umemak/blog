@@ -88,7 +88,7 @@
 
 <ul>
 <li>GCPの<a href="https://cloud.google.com/cloud-build/?hl=ja">Cloud Build</a>サービスに関する話。</li>
-<li>AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの？</li>
+<li>AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの。</li>
 </ul>
 
 <h2 id="19-30-20-00-マルチアーキテクチャイメージの作成-仮-ymotongpoo">19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo</h2>
@@ -127,12 +127,17 @@
 </ul></li>
 <li>STEP内でdocker buildが使える→docer runも使える→何でもできる</li>
 <li>他のCI/CDサービスとは異なるアプローチ</li>
-<li>jwilder/dockerize?</li>
+<li>dockerize
+
+<ul>
+<li>他のコンテナの起動を待つ用途で使っている</li>
+<li><a href="https://github.com/jwilder/dockerize">https://github.com/jwilder/dockerize</a></li>
+</ul></li>
 <li>Cloud BuildでKINDするには
 
 <ul>
 <li>STEPから外れる必要がある</li>
-<li>Docker Networkが使えないのでhostネットワークを使う＝stopと直接通信できない</li>
+<li>Docker Networkが使えないのでhostネットワークを使う＝STEPと直接通信できない</li>
 </ul></li>
 <li>デモは時間切れ。。</li>
 </ul>

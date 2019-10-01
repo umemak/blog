@@ -18,7 +18,7 @@
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</guid>
-      <description>https://gcpug-tokyo.connpass.com/event/143453/ GCPのCloud Buildサービスに関する話。 AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの？ 19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo イベントベースでビルドのトリガー（GitHubのpushとか） テストの実行とアーティファクトのビルド 雑に言う</description>
+      <description>https://gcpug-tokyo.connpass.com/event/143453/ GCPのCloud Buildサービスに関する話。 AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの。 19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo イベントベースでビルドのトリガー（GitHubのpushとか） テストの実行とアーティファクトのビルド 雑に言う</description>
     </item>
     
     <item>
