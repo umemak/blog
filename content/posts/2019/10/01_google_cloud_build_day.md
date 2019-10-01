@@ -1,7 +1,7 @@
 ---
 title: "Google Cloud Build Day"
 date: "2019-10-01"
-tags: ["gcp", "event"]
+tags: ["GCP", "CI/CD", "event"]
 ---
 
 https://gcpug-tokyo.connpass.com/event/143453/
@@ -9,14 +9,36 @@ https://gcpug-tokyo.connpass.com/event/143453/
 * GCPの[Cloud Build](https://cloud.google.com/cloud-build/?hl=ja)サービスに関する話。
 * AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの？
 
-## 19:30 ~ 19:50 マルチアーキテクチャイメージの作成（仮） @ymotongpoo
+## 19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo
+* イベントベースでビルドのトリガー（GitHubのpushとか）
+* テストの実行とアーティファクトのビルド
+* 雑に言うとDocker on Docker
+* ビルド実行時間にる対する課金
+* Artifact management
+  - プライベートコンテナレジストリに自動push＆脆弱性スキャン
+* 70以上のビルダーイメージ
+* Cloud Console UIで実行状況・結果の確認ができる
+* セキュア情報はKMSと連携して暗号化可能
+* Dockerが入っていればローカルで試すことができる
+* STEPの並行実行ができる
+  - 依存関係も定義できる（waitFor）
 
+## 20:00 ~ 20:25 Cloud Build out of steps @apstndb
+* CI/CDにおけるコンテナ間の通信
+* K8s IN Docker(KIND)
+  - DOckerの中で本物のK8sクラスタを構築するツール
+  - 現在アルファ版
+  - CircleCI, TravisCI, GitHub Actionで動いた報告あり
+* STEP内でdocker buildが使える→docer runも使える→何でもできる
+* 他のCI/CDサービスとは異なるアプローチ
+* jwilder/dockerize?
+* Cloud BuildでKINDするには
+  - STEPから外れる必要がある
+  - Docker Networkが使えないのでhostネットワークを使う＝stopと直接通信できない
+* デモは時間切れ。。
 
-## 19:50 ~ 20:10 Cloud Build out of steps @apstndb
-
-
-## 20:10 ~ 20:20 休憩
-
+## 20:25 ~ 20:35 休憩
+* 
 
 ## 20:20 ~ 20:40 Cloud Buildを気軽なコンテナ実行環境として利用する @chidakiyo
 
