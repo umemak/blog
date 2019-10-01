@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 13 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/book/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>読みやすい技術書を書く技術</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/01_readablebooks/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/01_readablebooks/</guid>
+      <description>文書書くときにもCI回そうぜ、って内容。 たしかにしょうもないtypoとかあると記事自体の信頼性に関わるし。 3種類のチェックツールが使用例とともに紹介されている。 Re:VIEWとの併用が前提で書かれているので、このblogに応用するにはMarkdown用に設定変更が必要になりそう。 CircleCI使っ</description>
+    </item>
     
     <item>
       <title>エリック・エヴァンスのドメイン駆動設計</title>

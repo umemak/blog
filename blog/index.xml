@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>読みやすい技術書を書く技術</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/01_readablebooks/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/01_readablebooks/</guid>
+      <description>文書書くときにもCI回そうぜ、って内容。 たしかにしょうもないtypoとかあると記事自体の信頼性に関わるし。 3種類のチェックツールが使用例とともに紹介されている。 Re:VIEWとの併用が前提で書かれているので、このblogに応用するにはMarkdown用に設定変更が必要になりそう。 CircleCI使っ</description>
+    </item>
     
     <item>
       <title>golang.tokyo #26</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/08/21_update_gems/</guid>
       <description>Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、actionviewを5.1.6.2以上にバージョンアップ対応する。 作業環境はC223NAのdocker。 $ docker run -it -v `pwd`:/usr/src/work ruby bash # cd /usr/src/work # bundle update nokogiri # bundle list nokogiri /usr/local/bundle/gems/nokogiri-1.10.4 最初nokogiriの通知しか出てなかったのに、更新してpushしたらもうい</description>
-    </item>
-    
-    <item>
-      <title>mercari.go</title>
-      <link>https://umemak.github.io/blog/posts/2019/08/20_mercari_go_10/</link>
-      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/08/20_mercari_go_10/</guid>
-      <description>https://mercari.connpass.com/event/141122/ 19:40 ~ morikuni GopherCon 2019 GopherConとは 2014年デンバーで始まった。いろんなところでやっている。 今年はサンディエゴで開催 1800人を超える参加者 Mercariの関わり Silver Sponsor BOLD Scholarship 学生向け 11+2名参加 １日目はワークショップ ２日目３日目は発表がメイン ４日目はコミュニティデイ LTとか One MOre Thing Generics(Contracts) Interfaceと</description>
     </item>
     
   </channel>
