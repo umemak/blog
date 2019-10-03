@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/event/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS DevDay Tokyo 2019 DAY1</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/03_aws_devday_1/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/03_aws_devday_1/</guid>
+      <description>https://aws.amazon.com/jp/about-aws/events/2019/devday/ [S-1] 10月3日 10:00～11:40 ゼネラルセッション [A-1] 10月3日 12:00～12:45 第1回 AWS Fargate かんたんデプロイ選手権 [A-3] 10月3日 14:00～14:45 5G時代を見据えた、IoTプラットフォームSORACOMのアーキテクチャへの挑戦 [A-4] 10月3日 15:00～15:45 AWSの「隙間」を埋める隙間家具</description>
+    </item>
     
     <item>
       <title>Google Cloud Build Day</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/06/19_gcpug_tokyo_next_extended_2019_infra_day/</guid>
       <description>2019/06/19(Wed) 19:00 〜 22:00 Next Introduction Next 189 UPDATE Infra misc Anthos 複数のコンポーネントの集合体 去年はCSPという名前 GKEとオンプレをまとめて扱うみたいな OSSベンダとのパートナーシップ 基本、Googleのクローズドソースだった ElasticとかMongoDBとか 今年中くらいにリリース？ Google Cloud Storage 新しいタイプ Ice Cold Archive Nearline, coldline のさらに安いやつ まだ保存料</description>
-    </item>
-    
-    <item>
-      <title>Go Conference 2019 Spring</title>
-      <link>https://umemak.github.io/blog/posts/2019/05/18_gocon/</link>
-      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/05/18_gocon/</guid>
-      <description>https://gocon.jp/ 2019/05/18(土) 10:00-19:00 リクルートライフスタイル まとめ エラーハンドリングはまだ各社試行錯誤している印象 コンテナやるならGoわかると便利 英語もっとわかるようにならないとだめだ Keynote パッケージのプロキシとDBの話 英語だったので言ってること半分もわからなかった B1 (S): How a “not the greatest engineer” achieved his first</description>
     </item>
     
   </channel>

@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <title>Google Cloud Build Day - umemak</title>
+    <title>AWS DevDay Tokyo 2019 DAY1 - umemak</title>
 
     <style type="text/css">
         img.wp-smiley,
@@ -57,10 +57,10 @@
 <main role="main">
     <article role="article" class="post type-post format-standard hentry">
         <header class="post-header">
-            <h1>Google Cloud Build Day</h1>
+            <h1>AWS DevDay Tokyo 2019 DAY1</h1>
             <div class="post-details">
                 <a rel="bookmark">
-                    <time datetime="2019-10-01T101:120:06">2019-10-01</time>
+                    <time datetime="2019-10-03T103:120:06">2019-10-03</time>
                 </a>
 				
 <span style="float: right;">
@@ -68,11 +68,11 @@
     
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     
-    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/" data-layout="button_count" data-size="small">
-        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f10%2f01_google_cloud_build_day%2f" class="fb-xfbml-parse-ignore">Share</a>
+    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2019/10/03_aws_devday_1/" data-layout="button_count" data-size="small">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f10%2f03_aws_devday_1%2f" class="fb-xfbml-parse-ignore">Share</a>
     </div>
     &nbsp;
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Google Cloud Build Day" data-url="https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/" data-show-count="false">Tweet</a>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="AWS DevDay Tokyo 2019 DAY1" data-url="https://umemak.github.io/blog/posts/2019/10/03_aws_devday_1/" data-show-count="false">Tweet</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     &nbsp;
     
@@ -84,126 +84,15 @@
         <div class="post-content">
             
 
-<p><a href="https://gcpug-tokyo.connpass.com/event/143453/">https://gcpug-tokyo.connpass.com/event/143453/</a></p>
+<p><a href="https://aws.amazon.com/jp/about-aws/events/2019/devday/">https://aws.amazon.com/jp/about-aws/events/2019/devday/</a></p>
 
-<ul>
-<li>GCPの<a href="https://cloud.google.com/cloud-build/?hl=ja">Cloud Build</a>サービスに関する話。</li>
-<li>AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの。</li>
-</ul>
+<h2 id="s-1-10月3日-10-00-11-40-ゼネラルセッション">[S-1] 10月3日 10:00～11:40  ゼネラルセッション</h2>
 
-<h2 id="19-30-20-00-マルチアーキテクチャイメージの作成-仮-ymotongpoo">19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo</h2>
+<h2 id="a-1-10月3日-12-00-12-45-第1回-aws-fargate-かんたんデプロイ選手権">[A-1] 10月3日 12:00～12:45 第1回 AWS Fargate かんたんデプロイ選手権</h2>
 
-<ul>
-<li>イベントベースでビルドのトリガー（GitHubのpushとか）</li>
-<li>テストの実行とアーティファクトのビルド</li>
-<li>雑に言うとDocker on Docker</li>
-<li>ビルド実行時間にる対する課金</li>
-<li>Artifact management
+<h2 id="a-3-10月3日-14-00-14-45-5g時代を見据えた-iotプラットフォームsoracomのアーキテクチャへの挑戦">[A-3] 10月3日 14:00～14:45 5G時代を見据えた、IoTプラットフォームSORACOMのアーキテクチャへの挑戦</h2>
 
-<ul>
-<li>プライベートコンテナレジストリに自動push＆脆弱性スキャン</li>
-</ul></li>
-<li>70以上のビルダーイメージ</li>
-<li>Cloud Console UIで実行状況・結果の確認ができる</li>
-<li>セキュア情報はKMSと連携して暗号化可能</li>
-<li>Dockerが入っていればローカルで試すことができる</li>
-<li>STEPの並行実行ができる
-
-<ul>
-<li>依存関係も定義できる（waitFor）</li>
-</ul></li>
-</ul>
-
-<h2 id="20-00-20-25-cloud-build-out-of-steps-apstndb">20:00 ~ 20:25 Cloud Build out of steps @apstndb</h2>
-
-<ul>
-<li>CI/CDにおけるコンテナ間の通信</li>
-<li>K8s IN Docker(KIND)
-
-<ul>
-<li>DOckerの中で本物のK8sクラスタを構築するツール</li>
-<li>現在アルファ版</li>
-<li>CircleCI, TravisCI, GitHub Actionで動いた報告あり</li>
-</ul></li>
-<li>STEP内でdocker buildが使える→docer runも使える→何でもできる</li>
-<li>他のCI/CDサービスとは異なるアプローチ</li>
-<li>dockerize
-
-<ul>
-<li>他のコンテナの起動を待つ用途で使っている</li>
-<li><a href="https://github.com/jwilder/dockerize">https://github.com/jwilder/dockerize</a></li>
-</ul></li>
-<li>Cloud BuildでKINDするには
-
-<ul>
-<li>STEPから外れる必要がある</li>
-<li>Docker Networkが使えないのでhostネットワークを使う＝STEPと直接通信できない</li>
-</ul></li>
-<li>デモは時間切れ。。</li>
-</ul>
-
-<h2 id="20-25-20-35-休憩">20:25 ~ 20:35 休憩</h2>
-
-<h2 id="20-35-20-50-cloud-buildを気軽なコンテナ実行環境として利用する-chidakiyo">20:35 ~ 20:50 Cloud Buildを気軽なコンテナ実行環境として利用する @chidakiyo</h2>
-
-<ul>
-<li>注意点
-
-<ul>
-<li><code>gcloud builds submit</code>した際に指定したディレクトリは以下のファイルが送られる。</li>
-<li>巨大なファイルがあると大変。</li>
-<li><code>.gcloudignore</code>で除外指定可能。</li>
-<li>無料枠は請求先アカウント単位なので複数プロジェクトでやるとすぐ尽きる</li>
-</ul></li>
-<li>事例
-
-<ul>
-<li>Dataflowを使っていた処理のCloud build化</li>
-<li>gcloudコマンドさえ入っていればローカルに諸々インストールする必要がない</li>
-</ul></li>
-</ul>
-
-<h2 id="20-50-21-10-lt">20:50 ~ 21:10 LT</h2>
-
-<h3 id="yukinagae">yukinagae</h3>
-
-<ul>
-<li>Berglas（ばーぐらす）
-
-<ul>
-<li>Cloud KMSとCloud Storageで暗号化できる</li>
-</ul></li>
-<li>デモは時間切れ。。</li>
-</ul>
-
-<h3 id="soumatsuda">SouMatsuda</h3>
-
-<ul>
-<li>Cloud Build x Terraform</li>
-<li>通常、ローカルで実行する init, plan, apply をCloud Buildで実施する</li>
-<li>インフラの設定変更が頻繁に起きる場合は工数削減に効く</li>
-<li>それなりに学習コストはかかる</li>
-</ul>
-
-<h3 id="kumagai">kumagai</h3>
-
-<ul>
-<li>Cloud Build で docker-compose と ansible</li>
-<li>用途
-
-<ul>
-<li>自動テスト用ベースイメージとして</li>
-<li>開発者にGCEのテンプレートとともに渡す</li>
-<li>社内デモ環境としてGKEで起動</li>
-</ul></li>
-</ul>
-
-<h2 id="感想">感想</h2>
-
-<ul>
-<li>Cloud Build使ってみたくなった。</li>
-<li>ちょうどblogのCI作ろうとしていたから、これでやってみようかな。</li>
-</ul>
+<h2 id="a-4-10月3日-15-00-15-45-awsの-隙間-を埋める隙間家具oss開発">[A-4] 10月3日 15:00～15:45 AWSの「隙間」を埋める隙間家具OSS開発</h2>
 
         </div>
 
@@ -213,9 +102,7 @@
             
             <span class="post-tags">
                 
-                <a href="https://umemak.github.io/tags/gcp" rel="tag">GCP</a>&emsp;
-                
-                <a href="https://umemak.github.io/tags/ci/cd" rel="tag">CI/CD</a>&emsp;
+                <a href="https://umemak.github.io/tags/aws" rel="tag">aws</a>&emsp;
                 
                 <a href="https://umemak.github.io/tags/event" rel="tag">event</a>&emsp;
                 

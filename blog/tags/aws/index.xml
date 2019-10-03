@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS DevDay Tokyo 2019 DAY1</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/03_aws_devday_1/</link>
+      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/03_aws_devday_1/</guid>
+      <description>https://aws.amazon.com/jp/about-aws/events/2019/devday/ [S-1] 10月3日 10:00～11:40 ゼネラルセッション [A-1] 10月3日 12:00～12:45 第1回 AWS Fargate かんたんデプロイ選手権 [A-3] 10月3日 14:00～14:45 5G時代を見据えた、IoTプラットフォームSORACOMのアーキテクチャへの挑戦 [A-4] 10月3日 15:00～15:45 AWSの「隙間」を埋める隙間家具</description>
+    </item>
     
     <item>
       <title>JAWS-UG コンテナ支部 #15</title>
