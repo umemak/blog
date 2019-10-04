@@ -8,7 +8,7 @@ https://golangtokyo.connpass.com/event/147175/
 
 * 今回はスマートホームとGoの話です
 
-## 19:30 ~ 20:00	Go in Nature（仮） by songmu]
+## 19:30 ~ 20:00	Go in Nature（仮） by songmu
 * Nature Remoの裏側
 * gocredits オススメ
   - 依存ライブラリのLICENSEを同梱してくれる
