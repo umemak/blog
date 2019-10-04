@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 03 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/event/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AWS DevDay Tokyo 2019 DAY2</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/04_aws_devday_2/</link>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/04_aws_devday_2/</guid>
+      <description>二日目（最終日）です。 今日もサーバーレス系中心に見ていきたいと思います。 10:00〜10:45 オープンソースコミュニティで加速するサーバーレスの未来 クラウドの世界の中にいながら、オープンソースコミュニティに参加することの意味と楽しさ Lambdaの問題（当時） マネコンにソースを直接アップロードするので</description>
+    </item>
     
     <item>
       <title>AWS DevDay Tokyo 2019 DAY1</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/</guid>
       <description>2019/06/20 19:00-21:00 DeNA MacStadium DeNAのひと Mac（物理）のホスティングサービス 1ヶ月単位の前払い VNC or SSHで接続 Githubへの接続はAWSでVPNサーバーを立ててそこ経由にまとめている CI/CDパイプラインを最速で組み立てる freeeのひと circleciはdockerイメージがある。 依存関係を解決したDocekrイ</description>
-    </item>
-    
-    <item>
-      <title>GCPUG Tokyo Next Extended 2019 Infra Day</title>
-      <link>https://umemak.github.io/blog/posts/2019/06/19_gcpug_tokyo_next_extended_2019_infra_day/</link>
-      <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/06/19_gcpug_tokyo_next_extended_2019_infra_day/</guid>
-      <description>2019/06/19(Wed) 19:00 〜 22:00 Next Introduction Next 189 UPDATE Infra misc Anthos 複数のコンポーネントの集合体 去年はCSPという名前 GKEとオンプレをまとめて扱うみたいな OSSベンダとのパートナーシップ 基本、Googleのクローズドソースだった ElasticとかMongoDBとか 今年中くらいにリリース？ Google Cloud Storage 新しいタイプ Ice Cold Archive Nearline, coldline のさらに安いやつ まだ保存料</description>
     </item>
     
   </channel>
