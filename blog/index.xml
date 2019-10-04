@@ -27,7 +27,7 @@
       <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/10/03_aws_devday_1/</guid>
-      <description>今年も来ました。 去年は目黒のAWS本社で3日間でしたが、今年は神田明神ホールで2日間になっています。 https://aws.amazon.com/jp/about-aws/events/2019/devday/ AWSグローバルで開催する開発者のためのトレーニングイベント 最新のテクノロジー、開発手法などを集中的に学ぶことができる場 セッション公募を行い、11件採択された 10:00～11:40 ゼネラルセッション</description>
+      <description>今年も来ました。 去年は目黒のAWSオフィスで3日間でしたが、今年は神田明神ホールで2日間になっています。 https://aws.amazon.com/jp/about-aws/events/2019/devday/ AWSグローバルで開催する開発者のためのトレーニングイベント 最新のテクノロジー、開発手法などを集中的に学ぶことができる場 セッション公募を行い、11件採択された 10:00～11:40 ゼネラルセッシ</description>
     </item>
     
     <item>
@@ -72,7 +72,7 @@
       <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</guid>
-      <description>https://golangtokyo.connpass.com/event/147175/ 今回はスマートホームとGoの話です 19:30 ~ 20:00 Go in Nature（仮） by songmu] Nature Remoの裏側 gocredits オススメ 依存ライブラリのLICENSEを同梱してくれる ecsched気になる Websocketでクラウドに接続しっぱなしにしている 外部のデバイスからはクラウドに司令を出す 常時接続の管理が大変 ECS上でうごかしている</description>
+      <description>https://golangtokyo.connpass.com/event/147175/ 今回はスマートホームとGoの話です 19:30 ~ 20:00 Go in Nature（仮） by songmu Nature Remoの裏側 gocredits オススメ 依存ライブラリのLICENSEを同梱してくれる ecsched気になる Websocketでクラウドに接続しっぱなしにしている 外部のデバイスからはクラウドに司令を出す 常時接続の管理が大変 ECS上でうごかしている</description>
     </item>
     
     <item>
