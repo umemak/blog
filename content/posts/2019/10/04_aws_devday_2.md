@@ -32,7 +32,32 @@ tags: ["aws", "event"]
   - 新しいものが出るということは新たな問題も発生するということ。問題とはチャンスであるということ。
 
 ## 11:00〜11:45 Chaos Engineering ～入門と実例～
+### Chaos Engineering の進化と今
+* 障害を避ける最も良い方法は継続的に障害を起こさせること（Netflix TechBlog 2010.12.16）
+  - Chaos Monkey: インスタンスをランダムに停止
+* Failure Injection Testiong(2014.10)
+* Chaos Monkey, Simian Arm
+  - 影響範囲の限定が難しい
+* Chaos Kong(2015.9)
+* PRINCIPLES OF CHAOS ENGINEEERING
+  - カオスエンジニアリングとは、「対象とするシステムが本願環境における不安定な状況を耐えることができる」という自信を構築するために当該システムにおいて実施する
+* ChAP: CHaos Automation Platform(2017.7)
+* Aitomaiong chaos experiments in production(2019.5)
+* Gremlin Inc
+  - 仕組みやツールを提供する企業
+* ChaosTOolkit
+  - OSS
+* Chaos Testに取り組むなら、最低限の可用性設計はできていることが望ましい。
 
+### 
+* Chaosconf振り返り
+* Our 4 Setp Aproach
+  - 定常状態
+  - 仮説設定
+  - 故障発生
+  - 仮説反証
+* Our Next Aproach
+  - 影響の最小化
 
 ## 12:00〜12:45 よくある課題を一気に解説　御社の技術レベルがアップする 2019 秋期講習
 
