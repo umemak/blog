@@ -103,7 +103,43 @@ tags: ["aws", "event"]
     - Lambda, StepFunction
 
 ## 13:00〜13:45 Serverless Elixir with AWS Lambda
-
+* よく使われるマネージドサービス
+  - Lambda, API Gateway, DynamoDB, ALB
+* 長所
+  - サーバー運用費用が安い
+  - 運用オペレーションが不要
+  - 自動スケールでトラフィックスパイクに強い
+* 短所
+  - デプロイメントが複雑
+    - ローカルとの差分、テスト
+  - 対応ライブラリが少ない
+    - Railsとか
+  - データベースによる制約
+    - 高トラフィック時のコネクション数上限
+  - 様々な制約
+    - 関数の同時実行数
+    - 関数の最大処理時間/タイムアウト時間
+* Lambdaのアーキテクチャ
+  - Firecrackerベース
+* Custom Runtime
+  - Lumbdaで任意の言語のランタイムを実行させる機能
+  - 実行に必要なもの
+    - bootstrap: Lambda起動時に実行される
+    - handler: 呼び出しごとに実行される
+  * Elixir
+    - ErlangVM上で動作する
+    - 並行プログラミングしやすい
+  * bootstrapでErlangVMを起動する
+* Serverless Elixorアプリの運用
+  - デプロイ
+    - CFn
+    - Serverles Framework
+    - SAM
+  - 利用するツール
+    - DOcker
+      - AmazonLinuxイメージを使って動作確認することでLambdaと同じ動きになる
+    - mix(Elixir標準のTaskRunner)
+    - CFn
 
 ## 14:00〜14:45 Nature Remoの裏側 ~ AWSとWeb技術をIoTの世界でフル活用する
 
