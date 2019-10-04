@@ -6,7 +6,7 @@ tags: ["aws", "event"]
 
 今年も来ました。
 
-去年は目黒のAWS本社で3日間でしたが、今年は神田明神ホールで2日間になっています。
+去年は目黒のAWSオフィスで3日間でしたが、今年は神田明神ホールで2日間になっています。
 
 https://aws.amazon.com/jp/about-aws/events/2019/devday/
 
