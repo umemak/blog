@@ -142,7 +142,24 @@ tags: ["aws", "event"]
     - CFn
 
 ## 14:00〜14:45 Nature Remoの裏側 ~ AWSとWeb技術をIoTの世界でフル活用する
-
+* 2年で10万台突破
+* Remo E
+  - スマートエネルギーハブ
+  - ECHONET Liteプロトコルを利用
+    - スマートメータとHEMSを綱不標準プロロコル
+  - スマートメーターやソーラーパネルｍ蓄電池の操作や情報収集
+* UDPホールパンチング
+* ecspresso
+  - ecs-deployから乗り換え
+  - 既存のタスク定義を利用できる
+* Consul
+  - CloudMapに乗り換えていきたい
+* Log
+  - zap で CloudWatch Logs に送信→高い
+  - firehoseでS3に直接
+* IoT,MLサービス
+  - 無理して使う必要はないが、引き出しを広げておきたい
+* 内容は、[golang.tokyo#26](https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/)とほぼ同じだった。
 
 ## 15:00〜15:45 DRIVE CHARTにおけるSagemaker migration
 
