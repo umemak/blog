@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>ASUS CT101PA到着</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/05_ct101pa/</link>
+      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/05_ct101pa/</guid>
+      <description>ビックカメラのポイント20%セールで。ポチったあとにアマゾンで19%オフやってておいおいって思った。 これでクラムシェルとコンバーチブルとタブレットのChromebookが揃って、充電器が足りなくなってきたので（本体付属のはごつすぎる・・）、 もらったポイントで買い足そうかなと。</description>
+    </item>
+    
+    <item>
       <title>AWS DevDay Tokyo 2019 DAY2</title>
       <link>https://umemak.github.io/blog/posts/2019/10/04_aws_devday_2/</link>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/09/13_evans_ddd/</guid>
       <description>やっっっっっと読み終わった。 買ったのが2月9日で、Kindleのセールで他にも色々買ったので読み始めたのは夏ぐらいだったかな。。 評判通り？難解だった。 「ユビキタス言語」くらいしかキーワード知らなかった状態で読み始めて、なんとなくドメイン駆動設計の雰囲気はわかるようになったと思う。 チームの共通理解とか</description>
-    </item>
-    
-    <item>
-      <title>Pythonの文法を覚えた人がもっと理解を深めるための本</title>
-      <link>https://umemak.github.io/blog/posts/2019/09/10_python_book/</link>
-      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/09/10_python_book/</guid>
-      <description>Prime Readingに入っていたので、読みつつ例文を写経して動かしてみた。 PythonはLambdaで通知をSlackに飛ばすためにちょっと触ってみた程度。 Pythonの文法を覚えた人がもっと理解を深めるための本 Kindle版 しばらくRubyをやっていたせいか、割とすんなり理解することができたように思う</description>
     </item>
     
   </channel>

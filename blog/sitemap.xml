@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://umemak.github.io/blog/posts/2019/10/05_ct101pa/</loc>
+    <lastmod>2019-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/tags/aws/</loc>
     <lastmod>2019-10-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://umemak.github.io/blog/posts/2019/10/04_aws_devday_2/</loc>
+    <lastmod>2019-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/chromebook/</loc>
     <lastmod>2019-10-04T00:00:00+00:00</lastmod>
   </url>
   
@@ -195,11 +205,6 @@
   <url>
     <loc>https://umemak.github.io/blog/posts/2019/07/31_azure_devops/</loc>
     <lastmod>2019-07-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/tags/chromebook/</loc>
-    <lastmod>2019-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
