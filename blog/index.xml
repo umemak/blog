@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>鳥海修さんの書体のつくりかた</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/10_font_talk/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/10_font_talk/</guid>
+      <description>https://www.library.chiyoda.tokyo.jp/information/20191010-post_211/ ヒラギノ作者が語るフォントの話。 「本をつくる」は良い本だそうだ。 ライターの人がとても良い仕事をした、と。 立て続けに講演依頼があったが、毎回内容を変えてほしいという依頼。 最終的に同じ話になってしまっている。 読書と文字 洛陽からの金印で初めて日本に漢字が伝わった 中国文字博物館 でかい、広い 洞察力の優れてい</description>
+    </item>
     
     <item>
       <title>ASUS CT101PA到着</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</guid>
       <description>Serverless Meetup Tokyo #14 https://serverless.connpass.com/event/143446/ 19:10-19:15 Opening Talk 堀家 隆宏 (Serverless Operations LLC. CEO) Serverless Daysやるよ 19:15-19:20 会場案内、告知 株式会社Speee Good Coffee -&amp;gt; Good COde 19:20-19:40 機械学習MVPにServerless Frameworkがオススメな理由 池田 雄太郎（株式会社 KaizenPlatform） 短期的・長期的ダイナミクス 短期的：一時的に大量なリソースが必要 長期的：やってみないとわ</description>
-    </item>
-    
-    <item>
-      <title>エリック・エヴァンスのドメイン駆動設計</title>
-      <link>https://umemak.github.io/blog/posts/2019/09/13_evans_ddd/</link>
-      <pubDate>Fri, 13 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/09/13_evans_ddd/</guid>
-      <description>やっっっっっと読み終わった。 買ったのが2月9日で、Kindleのセールで他にも色々買ったので読み始めたのは夏ぐらいだったかな。。 評判通り？難解だった。 「ユビキタス言語」くらいしかキーワード知らなかった状態で読み始めて、なんとなくドメイン駆動設計の雰囲気はわかるようになったと思う。 チームの共通理解とか</description>
     </item>
     
   </channel>
