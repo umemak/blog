@@ -163,6 +163,7 @@ https://tokyo.serverlessdays.io/
 
 ## 13:45 Zero Scale Abstraction in Knative Serving
 ### Tsubasa Nagasawa (CyberAgent)
+https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
 * Build, Serving, Events
   - Buildは卒業（てくとん）
 * K8Sのyamlたくさんカカkなくてもデプロイできる
@@ -343,16 +344,16 @@ https://tokyo.serverlessdays.io/
   - OCHaCafe
 
 ## 18:00 Lightning Talks x 4
-### サーバーレスな同人誌の紹介
+### サーバーレスな同人誌の紹介 / Aki
 * https://www.slideshare.net/nekoruri/20191022-serverless-books
 * オススメ同人誌をひたすら紹介する（16冊）
-### 目つぶり検証作成機
+### 目つぶり検証機作成期 〜サーバーレス初心者の手始め〜 (仮) / Kana Kitagawa
 * Amazon Recognitionを使って写真の分類をしようとした話
-### AWSでBtoB向けサーバーレスアプリケーションを構築した話
+### AWSでBtoB向けServerless Webアプリケーションを開発 / Wataru Miuchi
 * B2Bの場合、ローンチから利用開始までのリードタイムが長い
   - その間のインフラ費用が無駄にかからないように
-### ServerlessなエンジニアのためのServerlessなオンラインサロンをVUE/NUXT/COGNITO/STRIPEで構築した
-* 
+### ServerlessなエンジニアのためのServerlessなオンラインサロンをVue/Nuxt/Cognito/Stripeで構築してみたよ / 藤本 竜之介
+* 購入処理までデモしたところで時間切れ
 
 ## 18:40 Closing Remarks
 
