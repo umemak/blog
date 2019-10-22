@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/serverless/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Serverless Days TOkyo 2019</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</guid>
+      <description>サーバーレスのカンファレンス https://tokyo.serverlessdays.io/ 09:00 はじめに / 諸説明 09:10 10x Serverless Product Development for a Startup with Microsoft Azure Yutaka Tachibana(EBILAB) 09:50 break 10:00 Keynote Keisuke Nishitani (AWS) 10:40 10 min break 10:50 Keynote: Infinite Scaling, Finite Failures: Serverless Resiliency Patterns and Lessons Learned Katy Shimizu (Microsoft) 11:30 10 min break 11:40 グローバル展開のコネクティッドカーを支える大規模サーバーレスシステム事例 Yuya Urayama (TOYOTA), Takanori Suzuki (Acroquest Technology) and Eiichiro Uchiumi (AWS) 12:20 Lunch 13:20 All You Need Is JavaScript Jensen Hussey / Cloudflare 13:40 short break 13:45 Zero Scale Abstraction in Knative Serving Tsubasa Nagasawa (CyberAgent) 14:25 Long break 14:40 空調設備向け</description>
+    </item>
     
     <item>
       <title>Serverless Meetup Tokyo #14</title>

@@ -4,22 +4,32 @@
   
   <url>
     <loc>https://umemak.github.io/blog/tags/event/</loc>
-    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://umemak.github.io/blog/posts/</loc>
-    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/serverless/</loc>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</loc>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://umemak.github.io/blog/tags/</loc>
-    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://umemak.github.io/blog/</loc>
-    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -100,11 +110,6 @@
   <url>
     <loc>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</loc>
     <lastmod>2019-09-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/tags/serverless/</loc>
-    <lastmod>2019-09-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/event/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Serverless Days TOkyo 2019</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</guid>
+      <description>サーバーレスのカンファレンス https://tokyo.serverlessdays.io/ 09:00 はじめに / 諸説明 09:10 10x Serverless Product Development for a Startup with Microsoft Azure Yutaka Tachibana(EBILAB) 09:50 break 10:00 Keynote Keisuke Nishitani (AWS) 10:40 10 min break 10:50 Keynote: Infinite Scaling, Finite Failures: Serverless Resiliency Patterns and Lessons Learned Katy Shimizu (Microsoft) 11:30 10 min break 11:40 グローバル展開のコネクティッドカーを支える大規模サーバーレスシステム事例 Yuya Urayama (TOYOTA), Takanori Suzuki (Acroquest Technology) and Eiichiro Uchiumi (AWS) 12:20 Lunch 13:20 All You Need Is JavaScript Jensen Hussey / Cloudflare 13:40 short break 13:45 Zero Scale Abstraction in Knative Serving Tsubasa Nagasawa (CyberAgent) 14:25 Long break 14:40 空調設備向け</description>
+    </item>
     
     <item>
       <title>鳥海修さんの書体のつくりかた</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/07/18_dena_go_2/</guid>
       <description>2019/07/18 19:30- https://dena.connpass.com/event/133957/ @kiyotaka.nakashima / 新ゲームサーバ基盤TakashoでのGo言語活用事例の紹介 / ゲーム・エンターテインメント事業本部 Sakasho 共通ゲームサーバー（複数タイトルで相乗り） プレイヤーデータの管理 課金系 Sakasyoの課題 相乗りによる制約 変更の影響大 Takasho Webサバーフレームワーク ステートレスなAPI 1サーバー1クライアント G</description>
-    </item>
-    
-    <item>
-      <title>mercari.go</title>
-      <link>https://umemak.github.io/blog/posts/2019/07/17_mercari_go_9/</link>
-      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/07/17_mercari_go_9/</guid>
-      <description>2019/07/17 19:30-21:30 https://mercari.connpass.com/event/137488/ @tottie Gopher ライブドローイングのご説明 @rerorero protoactor-goでPregelを作った話 グラフプロセッシングの話 Map/Reduceの課題を解決するPregel（プリゲル）フレームワーク アクターモデル @knsh14 メルペイでの残高管理の話 Balance Service gRPC, GKE, Spanner, Go 全体設計 クリーンアーキテクチャベース Viewなし Infra Layerで</description>
     </item>
     
   </channel>

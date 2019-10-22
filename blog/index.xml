@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Serverless Days TOkyo 2019</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</guid>
+      <description>サーバーレスのカンファレンス https://tokyo.serverlessdays.io/ 09:00 はじめに / 諸説明 09:10 10x Serverless Product Development for a Startup with Microsoft Azure Yutaka Tachibana(EBILAB) 09:50 break 10:00 Keynote Keisuke Nishitani (AWS) 10:40 10 min break 10:50 Keynote: Infinite Scaling, Finite Failures: Serverless Resiliency Patterns and Lessons Learned Katy Shimizu (Microsoft) 11:30 10 min break 11:40 グローバル展開のコネクティッドカーを支える大規模サーバーレスシステム事例 Yuya Urayama (TOYOTA), Takanori Suzuki (Acroquest Technology) and Eiichiro Uchiumi (AWS) 12:20 Lunch 13:20 All You Need Is JavaScript Jensen Hussey / Cloudflare 13:40 short break 13:45 Zero Scale Abstraction in Knative Serving Tsubasa Nagasawa (CyberAgent) 14:25 Long break 14:40 空調設備向け</description>
+    </item>
     
     <item>
       <title>鳥海修さんの書体のつくりかた</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</guid>
       <description>https://golangtokyo.connpass.com/event/147175/ 今回はスマートホームとGoの話です 19:30 ~ 20:00 Go in Nature（仮） by songmu Nature Remoの裏側 gocredits オススメ 依存ライブラリのLICENSEを同梱してくれる ecsched気になる Websocketでクラウドに接続しっぱなしにしている 外部のデバイスからはクラウドに司令を出す 常時接続の管理が大変 ECS上でうごかしている</description>
-    </item>
-    
-    <item>
-      <title>Serverless Meetup Tokyo #14</title>
-      <link>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</link>
-      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</guid>
-      <description>Serverless Meetup Tokyo #14 https://serverless.connpass.com/event/143446/ 19:10-19:15 Opening Talk 堀家 隆宏 (Serverless Operations LLC. CEO) Serverless Daysやるよ 19:15-19:20 会場案内、告知 株式会社Speee Good Coffee -&amp;gt; Good COde 19:20-19:40 機械学習MVPにServerless Frameworkがオススメな理由 池田 雄太郎（株式会社 KaizenPlatform） 短期的・長期的ダイナミクス 短期的：一時的に大量なリソースが必要 長期的：やってみないとわ</description>
     </item>
     
   </channel>
