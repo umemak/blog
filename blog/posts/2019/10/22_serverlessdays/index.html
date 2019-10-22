@@ -219,6 +219,112 @@
 
 <h3 id="yuya-urayama-toyota-takanori-suzuki-acroquest-technology-and-eiichiro-uchiumi-aws">Yuya Urayama (TOYOTA), Takanori Suzuki (Acroquest Technology) and Eiichiro Uchiumi (AWS)</h3>
 
+<ul>
+<li>なぜサーバーレスを選んだのか
+
+<ul>
+<li>Connented Platform</li>
+<li>日本・中国・北米でサービス提供中</li>
+<li>無駄の削減のため</li>
+</ul></li>
+<li>夜間と日中のアクセス数の差が大きい
+
+<ul>
+<li>日中のアクセス数に合わせたリソース確保→無駄</li>
+</ul></li>
+<li>長く乗られる（平均8．5年）
+
+<ul>
+<li>パッチあてなどの保守工数→無駄</li>
+</ul></li>
+<li>広い地域での提供
+
+<ul>
+<li>各国現地にリソース確保→無駄</li>
+</ul></li>
+<li>設計指針
+
+<ul>
+<li>一貫した方法でコンポーネントを分割</li>
+<li>緩やかに統合</li>
+<li>プロセスをステートレスに構成</li>
+</ul></li>
+<li>アーキテクチャスタイル
+
+<ul>
+<li>Nティア−</li>
+<li>コンポーネントを役割に応じて分割する</li>
+<li>ウェブキューワーカー／イベントドリブン</li>
+<li>ロジック層をウェブとワーカーに分割する</li>
+<li>マイクロサービス</li>
+<li>ライフサイクルを共有する最小単位でコンポーネント群を複製し、自律可動境界を設定</li>
+</ul></li>
+<li>実装パターン
+
+<ul>
+<li>リアクティブスケーリング型</li>
+<li>API GW + Lambda</li>
+<li>基本はこっち</li>
+<li>プロアクティブスケーリング型</li>
+<li>ALB + Fargate</li>
+<li>ある程度余裕をもたせたい、スケールをコントロールしたいとき</li>
+<li>P2P</li>
+<li>SQS</li>
+<li>ファンアウト</li>
+<li>SNS</li>
+<li>イベントストリーミング</li>
+<li>Kinesis Streams</li>
+<li>ワーカープロセス</li>
+<li>Lambda</li>
+</ul></li>
+<li>特徴
+
+<ul>
+<li>トラフィックの特性によってスケーリングパターンを選べる</li>
+</ul></li>
+<li>デプロイメントはカオス</li>
+<li>課題
+
+<ul>
+<li>開発量は少なくなったがテストしにくい</li>
+<li>CI/CDパイプラインでのテスト実行環境の整備</li>
+<li>Localstack、Karateを利用</li>
+<li>イベントドリブンな部分のテスト、非同期の処理結果も確認している</li>
+<li>各機能はシンプルになったが全体が見にくい</li>
+<li>X-Rayを利用</li>
+<li>自動スケールは便利だがコントロールすべき要素が出てきた</li>
+<li>リトライ用Lambdaが数千並列した
+
+<ul>
+<li>アカウントに対する同時実行数の上限までスケールした結果、他のLambrdaの起動が妨げられる</li>
+</ul></li>
+<li>コールドスタート問題
+
+<ul>
+<li>時間がかかる処理が重なってAPI/GWがタイムアウト</li>
+<li>ENIのIP枯渇</li>
+</ul></li>
+</ul></li>
+<li>運用フェーズ</li>
+<li>激務コンテナ・サボりコンテナ問題
+
+<ul>
+<li>アクセスログ数を気合でカウントした結果</li>
+<li>激務もサボりもなかった</li>
+<li>どんなメトリクスをどの粒度でどう見るかを予め検討する</li>
+</ul></li>
+<li>運用コストが下がった結果
+
+<ul>
+<li>運用にかけていたコストを開発に回した</li>
+<li>デプロイサイクルの高速化</li>
+</ul></li>
+<li>今後の展望</li>
+<li>スケーリングを最適化</li>
+<li>プラットフォームの挙動をより的確に把握</li>
+<li>問題が生じた際の回復を自動化</li>
+</ul>
+
 <h2 id="12-20-lunch">12:20 Lunch</h2>
 
 <h2 id="13-20-all-you-need-is-javascript">13:20 All You Need Is JavaScript</h2>
