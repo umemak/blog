@@ -56,8 +56,8 @@ https://tokyo.serverlessdays.io/
 * 失敗は絶対に起こります。アプリケーションがそれらを処理する必要があります
   - Data source
   - Customer code
-  - Serverles/Fass layer
-  - External deebdebct
+  - Serverless/Fass layer
+  - External dependency
   - IaaS/Pass
   - Datacenter/Infra
 * 失敗例
@@ -79,7 +79,6 @@ https://tokyo.serverlessdays.io/
 
 ## 11:30 10 min break
 
-
 ## 11:40 グローバル展開のコネクティッドカーを支える大規模サーバーレスシステム事例
 ### Yuya Urayama (TOYOTA), Takanori Suzuki (Acroquest Technology) and Eiichiro Uchiumi (AWS)
 * なぜサーバーレスを選んだのか
@@ -88,7 +87,7 @@ https://tokyo.serverlessdays.io/
   - 無駄の削減のため
 * 夜間と日中のアクセス数の差が大きい
   - 日中のアクセス数に合わせたリソース確保→無駄
-* 長く乗られる（平均8．5年）
+* 長く乗られる（平均8.5年）
   - パッチあてなどの保守工数→無駄
 * 広い地域での提供
   - 各国現地にリソース確保→無駄
@@ -97,12 +96,12 @@ https://tokyo.serverlessdays.io/
   - 緩やかに統合
   - プロセスをステートレスに構成
 * アーキテクチャスタイル
-  - Nティア−
+  - Nティアー
     - コンポーネントを役割に応じて分割する
   - ウェブキューワーカー／イベントドリブン
     - ロジック層をウェブとワーカーに分割する
   - マイクロサービス
-    - ライフサイクルを共有する最小単位でコンポーネント群を複製し、自律可動境界を設定
+    - ライフサイクルを共有する最小単位でコンポーネント群を複製し、自律稼働境界を設定
 * 実装パターン
   - リアクティブスケーリング型
     - API GW + Lambda
@@ -115,7 +114,7 @@ https://tokyo.serverlessdays.io/
   - ファンアウト
     - SNS
   - イベントストリーミング
-    - Kinesis Streams
+    - Kinesis Data Streams
   - ワーカープロセス
     - Lambda
 * 特徴
@@ -130,7 +129,7 @@ https://tokyo.serverlessdays.io/
     - X-Rayを利用
   - 自動スケールは便利だがコントロールすべき要素が出てきた
     - リトライ用Lambdaが数千並列した
-      - アカウントに対する同時実行数の上限までスケールした結果、他のLambrdaの起動が妨げられる
+      - アカウントに対する同時実行数の上限までスケールした結果、他のLambdaの起動が妨げられる
     - コールドスタート問題
       - 時間がかかる処理が重なってAPI/GWがタイムアウト
       - ENIのIP枯渇
@@ -160,13 +159,12 @@ https://tokyo.serverlessdays.io/
 
 ## 13:40 short break
 
-
 ## 13:45 Zero Scale Abstraction in Knative Serving
 ### Tsubasa Nagasawa (CyberAgent)
 https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
 * Build, Serving, Events
   - Buildは卒業（てくとん）
-* K8Sのyamlたくさんカカkなくてもデプロイできる
+* K8Sのyamlたくさん書かなくてもデプロイできる
 * tag（リビジョン）でデプロイを分けて、カナリアリリースのようなこともできる
 * ゼロスケール
   - フローを紙芝居で説明。あとでちゃんと読み込みたい。
@@ -178,7 +176,7 @@ https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
   - Podに入れられるコンテナが1つ
   - Webhook自作で複数入れることも可能
   - 使えるVolumeに制限がある
-  - Podの配置席ノードが指定できない
+  - Podの配置先ノードが指定できない
     - サーバーレスの思想にそぐわない
 * Autoscale
   - コールドスタート1秒未満を目標にしている（現在4秒程度）
@@ -191,16 +189,15 @@ https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
 
 ## 14:25 Long break
 
-
 ## 14:40 空調設備向けIoTシステムにおけるクラウドランニングコスト
 ### 野原 健太 / ダイキン工業株式会社
 * 想定500万台、30万人（同時アクセス数9万人）
-  - 性能とScalaリビリティをAWSに任せる
+  - 性能とスケーラビリティをAWSに任せる
   - RDMSは使わない
   - 接続台数に応じてコスト最適化
   - 1台あたり数百項目（差分のみ送信）
 * **サーバーレス開発はクラウドランニングコストとの戦い**
-  - サーバーレスを適すつに使えば、機能面、非機能面ともに作り低システムは作れる
+  - サーバーレスを適切に使えば、機能面、非機能面ともに作りたいシステムは作れる
 * コスト
   - DynamoDB書き込み時
   - 運転データ参照時のLambda処理時間
@@ -217,7 +214,7 @@ https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
 * サーバーレス以外の選択肢
   - 物理サーバー、自社IaaSサービス、他社IaaSサービス
   - 納期3ヶ月→サーバーレス以外間に合わない
-* 社倍基準と通信事業としての基準
+* 社内基準と通信事業としての基準
   - 社内クラウドを利用しない理由
     - IPv6未対応だった
   - 信頼性の担保
@@ -225,7 +222,7 @@ https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
 * IPv6使えない
   - CDNを間に挟む
 * ローカルテスト
-  - Serverless Frameworkとプラ部員で動かす
+  - Serverless Frameworkとプラグインで動かす
 * 負荷試験ツール
   - Gatling
   - 無償版はシェルスクリプト頑張ればスケールできる
@@ -240,7 +237,6 @@ https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
   - Blue/Greenデプロイ
 
 ## 15:45 Long break
-
 
 ## 16:00 AWS Lake Formation で実現、マイクロサービスのサーバーレスな分散トレーシング
 ### 江藤武司 & 岩井良和 (Sony Corporation)
@@ -261,25 +257,24 @@ https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
   - SNS、SQS
     - message attributesを利用して伝搬
   - Step FUncitons
-    - StateMachne実行時にトレースIDを注入
-    - ResulePathを使用して、書くTaskにIDを注入
+    - StateMachine実行時にトレースIDを注入
+    - ResultPathを使用して、各TaskにIDを注入
   - S3
     - オブジェクトメタデータを利用する
-    - APIのhtad-objectを利用して取得
+    - APIのhead-objectを利用して取得
     - イベントオブジェクトからは取得できない
     - オブジェクト削除時は、工夫が必要
 
 ## 16:20 short break
 
-
 ## 16:25 Don’t think Serverless Security, think Application Security
 ### Ido Neeman (Nuweba)
 * FUDの例とそれに対する回答的な
 * 全編英語なので資料公開されたら読み返したい
-* How Serverless Inprever\s Security
-  - Serverkess platforms manage tge nahiruty id the secyrutyattack
-  - Small and contained blast raduys
-  - Finegrained acces cntrol
+* How Serverless Inprever's Security
+  - Serverless platforms manage the nahiruty id the secyruty attack
+  - Small and contained blast radius
+  - Finegrained access control
   - Ephemetality: No attackers' and data oresustence?
   - No infrastryctyre - more time to wrute better go
 * How to protect your serverless Application
@@ -294,7 +289,6 @@ https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
     - fast dev-to-oriduction cycle
 
 ## 17:05 short break
-
 
 ## 17:10 Azure でサーバーレス、 Infrastructure as Code どうしてますか？
 ### Kazumi Ohira
@@ -311,9 +305,9 @@ https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
 * APIバージョン
   - Azure REST APIと連動している
 * セキュアに扱う
-  - Parameterの方secure系を使う
+  - Parameterの型secure系を使う
   - Key Vaultから受け取る
-  - ManagerdIdentitiesや　VirtuanNetwork
+  - ManagerdIdentitiesや　VirtualNetwork
 * リソース名の付け方
   - リソースごとに異なる
   - グローバルで一位でなければいけないものがある
