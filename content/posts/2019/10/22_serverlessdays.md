@@ -1,5 +1,5 @@
 ---
-title: "Serverless Days TOkyo 2019"
+title: "Serverless Days Tokyo 2019"
 date: "2019-10-22"
 tags: ["serverless", "event"]
 ---
@@ -296,10 +296,30 @@ https://tokyo.serverlessdays.io/
 
 ## 17:10 Azure でサーバーレス、 Infrastructure as Code どうしてますか？
 ### Kazumi Ohira
-
+* IaC
+  - コードにしておけば、あとから思い出せる
+  - CI/CDと相性が良い
+* ARM template
+  - AzureのCFn？
+  - Azure Resource Manager
+  - GUIで作った構成をエクスポートできる
+  - CUIでデプロイしなくてもGUIでデプロイできる
+  - json で書く
+* APIバージョン
+  - Azure REST APIと連動している
+* セキュアに扱う
+  - Parameterの方secure系を使う
+  - Key Vaultから受け取る
+  - ManagerdIdentitiesや　VirtuanNetwork
+* リソース名の付け方
+  - リソースごとに異なる
+  - グローバルで一位でなければいけないものがある
+  - StorageAccountの制限が厳しい
+* コードのモジュール化
+  - Linked templateを使う
+* Terraformでも可
 
 ## 17:30 short break
-
 
 ## 17:35 The hidden cost and technical debt of running huge Serverless service on production
 ### James Nguyen / MaaS Global
