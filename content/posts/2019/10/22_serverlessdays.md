@@ -341,11 +341,14 @@ https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
 ### サーバーレスな同人誌の紹介 / Aki
 * https://www.slideshare.net/nekoruri/20191022-serverless-books
 * オススメ同人誌をひたすら紹介する（16冊）
+
 ### 目つぶり検証機作成期 〜サーバーレス初心者の手始め〜 (仮) / Kana Kitagawa
 * Amazon Recognitionを使って写真の分類をしようとした話
+
 ### AWSでBtoB向けServerless Webアプリケーションを開発 / Wataru Miuchi
 * B2Bの場合、ローンチから利用開始までのリードタイムが長い
   - その間のインフラ費用が無駄にかからないように
+
 ### ServerlessなエンジニアのためのServerlessなオンラインサロンをVue/Nuxt/Cognito/Stripeで構築してみたよ / 藤本 竜之介
 * 購入処理までデモしたところで時間切れ
 
