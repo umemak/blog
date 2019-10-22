@@ -331,11 +331,67 @@
 
 <h3 id="jensen-hussey-cloudflare">Jensen Hussey / Cloudflare</h3>
 
+<ul>
+<li>Cloudflare worker
+
+<ul>
+<li>サーバーレス用JS実行環境</li>
+<li>V8エンジン採用</li>
+<li>WebAssemblyが使えるので、JS以外の言語でも開発可能</li>
+<li>ユーザーの地理情報を利用してエッジで翻訳することができる</li>
+</ul></li>
+</ul>
+
 <h2 id="13-40-short-break">13:40 short break</h2>
 
 <h2 id="13-45-zero-scale-abstraction-in-knative-serving">13:45 Zero Scale Abstraction in Knative Serving</h2>
 
 <h3 id="tsubasa-nagasawa-cyberagent">Tsubasa Nagasawa (CyberAgent)</h3>
+
+<ul>
+<li>Build, Serving, Events
+
+<ul>
+<li>Buildは卒業（てくとん）</li>
+</ul></li>
+<li>K8Sのyamlたくさんカカkなくてもデプロイできる</li>
+<li>tag（リビジョン）でデプロイを分けて、カナリアリリースのようなこともできる</li>
+<li>ゼロスケール
+
+<ul>
+<li>フローを紙芝居で説明。あとでちゃんと読み込みたい。</li>
+</ul></li>
+<li>Pros
+
+<ul>
+<li>オートスケールが柔軟</li>
+<li>テストがちゃんとしている</li>
+<li>google/mako</li>
+</ul></li>
+<li>Cons
+
+<ul>
+<li>Podに入れられるコンテナが1つ</li>
+<li>Webhook自作で複数入れることも可能</li>
+<li>使えるVolumeに制限がある</li>
+<li>Podの配置席ノードが指定できない</li>
+<li>サーバーレスの思想にそぐわない</li>
+</ul></li>
+<li>Autoscale
+
+<ul>
+<li>コールドスタート1秒未満を目標にしている（現在4秒程度）</li>
+</ul></li>
+<li>本番投入に向けて
+
+<ul>
+<li>学習コスト</li>
+<li>yaml地獄</li>
+<li>ゼロスケール可能</li>
+<li>KnativeとK8sのDual Stack</li>
+<li>ポータビリティ</li>
+</ul></li>
+</ul>
 
 <h2 id="14-25-long-break">14:25 Long break</h2>
 
@@ -343,11 +399,88 @@
 
 <h3 id="野原-健太-ダイキン工業株式会社">野原 健太 / ダイキン工業株式会社</h3>
 
+<ul>
+<li>想定500万台、30万人（同時アクセス数9万人）
+
+<ul>
+<li>性能とScalaリビリティをAWSに任せる</li>
+<li>RDMSは使わない</li>
+<li>接続台数に応じてコスト最適化</li>
+<li>1台あたり数百項目（差分のみ送信）</li>
+</ul></li>
+<li><strong>サーバーレス開発はクラウドランニングコストとの戦い</strong>
+
+<ul>
+<li>サーバーレスを適すつに使えば、機能面、非機能面ともに作り低システムは作れる</li>
+</ul></li>
+<li>コスト
+
+<ul>
+<li>DynamoDB書き込み時</li>
+<li>運転データ参照時のLambda処理時間</li>
+</ul></li>
+<li>DynamoDBデータ構造
+
+<ul>
+<li>1台1アイテム→部分更新でもWCU対象消費</li>
+<li>運転項目1アイテムとして格納→改善したが、取り出し時に時間がかかりすぎる</li>
+<li>PartitionKeyを建物IDに、SortKeyを機器IDと項目名の結合→取り出し時間の短縮達成</li>
+</ul></li>
+</ul>
+
 <h2 id="15-00-short-break">15:00 short break</h2>
 
 <h2 id="15-05-ispがサーバレスに手を出した">15:05 ISPがサーバレスに手を出した</h2>
 
 <h3 id="伊藤良哉-松田丈司-nttコミュニケーションズ">伊藤良哉 &amp; 松田丈司 (NTTコミュニケーションズ)</h3>
+
+<ul>
+<li>サーバーレス以外の選択肢
+
+<ul>
+<li>物理サーバー、自社IaaSサービス、他社IaaSサービス</li>
+<li>納期3ヶ月→サーバーレス以外間に合わない</li>
+</ul></li>
+<li>社倍基準と通信事業としての基準
+
+<ul>
+<li>社内クラウドを利用しない理由</li>
+<li>IPv6未対応だった</li>
+<li>信頼性の担保</li>
+<li>マルチクラウドで</li>
+</ul></li>
+<li>IPv6使えない
+
+<ul>
+<li>CDNを間に挟む</li>
+</ul></li>
+<li>ローカルテスト
+
+<ul>
+<li>Serverless Frameworkとプラ部員で動かす</li>
+</ul></li>
+<li>負荷試験ツール
+
+<ul>
+<li>Gatling</li>
+<li>無償版はシェルスクリプト頑張ればスケールできる</li>
+</ul></li>
+<li>CI導入のメリット
+
+<ul>
+<li>テスト実行の担保</li>
+<li>環境が汚れない</li>
+<li>証跡が取れる</li>
+</ul></li>
+<li>slsでIaC
+
+<ul>
+<li>プラグインが多い</li>
+<li>AWSの対応範囲が広い（全部ではない）</li>
+<li>AzureはFunctionのみ対応</li>
+<li>Blue/Greenデプロイ</li>
+</ul></li>
+</ul>
 
 <h2 id="15-45-long-break">15:45 Long break</h2>
 
