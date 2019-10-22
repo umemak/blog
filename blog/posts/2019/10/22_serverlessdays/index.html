@@ -178,8 +178,8 @@
 <ul>
 <li>Data source</li>
 <li>Customer code</li>
-<li>Serverles/Fass layer</li>
-<li>External deebdebct</li>
+<li>Serverless/Fass layer</li>
+<li>External dependency</li>
 <li>IaaS/Pass</li>
 <li>Datacenter/Infra</li>
 </ul></li>
@@ -232,7 +232,7 @@
 <ul>
 <li>日中のアクセス数に合わせたリソース確保→無駄</li>
 </ul></li>
-<li>長く乗られる（平均8．5年）
+<li>長く乗られる（平均8.5年）
 
 <ul>
 <li>パッチあてなどの保守工数→無駄</li>
@@ -252,12 +252,12 @@
 <li>アーキテクチャスタイル
 
 <ul>
-<li>Nティア−</li>
+<li>Nティアー</li>
 <li>コンポーネントを役割に応じて分割する</li>
 <li>ウェブキューワーカー／イベントドリブン</li>
 <li>ロジック層をウェブとワーカーに分割する</li>
 <li>マイクロサービス</li>
-<li>ライフサイクルを共有する最小単位でコンポーネント群を複製し、自律可動境界を設定</li>
+<li>ライフサイクルを共有する最小単位でコンポーネント群を複製し、自律稼働境界を設定</li>
 </ul></li>
 <li>実装パターン
 
@@ -273,7 +273,7 @@
 <li>ファンアウト</li>
 <li>SNS</li>
 <li>イベントストリーミング</li>
-<li>Kinesis Streams</li>
+<li>Kinesis Data Streams</li>
 <li>ワーカープロセス</li>
 <li>Lambda</li>
 </ul></li>
@@ -296,7 +296,7 @@
 <li>リトライ用Lambdaが数千並列した
 
 <ul>
-<li>アカウントに対する同時実行数の上限までスケールした結果、他のLambrdaの起動が妨げられる</li>
+<li>アカウントに対する同時実行数の上限までスケールした結果、他のLambdaの起動が妨げられる</li>
 </ul></li>
 <li>コールドスタート問題
 
@@ -351,7 +351,7 @@
 <p><a href="https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving">https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving</a>
 * Build, Serving, Events
   - Buildは卒業（てくとん）
-* K8Sのyamlたくさんカカkなくてもデプロイできる
+* K8Sのyamlたくさん書かなくてもデプロイできる
 * tag（リビジョン）でデプロイを分けて、カナリアリリースのようなこともできる
 * ゼロスケール
   - フローを紙芝居で説明。あとでちゃんと読み込みたい。
@@ -363,7 +363,7 @@
   - Podに入れられるコンテナが1つ
   - Webhook自作で複数入れることも可能
   - 使えるVolumeに制限がある
-  - Podの配置席ノードが指定できない
+  - Podの配置先ノードが指定できない
     - サーバーレスの思想にそぐわない
 * Autoscale
   - コールドスタート1秒未満を目標にしている（現在4秒程度）
@@ -384,7 +384,7 @@
 <li>想定500万台、30万人（同時アクセス数9万人）
 
 <ul>
-<li>性能とScalaリビリティをAWSに任せる</li>
+<li>性能とスケーラビリティをAWSに任せる</li>
 <li>RDMSは使わない</li>
 <li>接続台数に応じてコスト最適化</li>
 <li>1台あたり数百項目（差分のみ送信）</li>
@@ -392,7 +392,7 @@
 <li><strong>サーバーレス開発はクラウドランニングコストとの戦い</strong>
 
 <ul>
-<li>サーバーレスを適すつに使えば、機能面、非機能面ともに作り低システムは作れる</li>
+<li>サーバーレスを適切に使えば、機能面、非機能面ともに作りたいシステムは作れる</li>
 </ul></li>
 <li>コスト
 
@@ -423,7 +423,7 @@
 <li>物理サーバー、自社IaaSサービス、他社IaaSサービス</li>
 <li>納期3ヶ月→サーバーレス以外間に合わない</li>
 </ul></li>
-<li>社倍基準と通信事業としての基準
+<li>社内基準と通信事業としての基準
 
 <ul>
 <li>社内クラウドを利用しない理由</li>
@@ -439,7 +439,7 @@
 <li>ローカルテスト
 
 <ul>
-<li>Serverless Frameworkとプラ部員で動かす</li>
+<li>Serverless Frameworkとプラグインで動かす</li>
 </ul></li>
 <li>負荷試験ツール
 
@@ -493,11 +493,11 @@
 <li>SNS、SQS</li>
 <li>message attributesを利用して伝搬</li>
 <li>Step FUncitons</li>
-<li>StateMachne実行時にトレースIDを注入</li>
-<li>ResulePathを使用して、書くTaskにIDを注入</li>
+<li>StateMachine実行時にトレースIDを注入</li>
+<li>ResultPathを使用して、各TaskにIDを注入</li>
 <li>S3</li>
 <li>オブジェクトメタデータを利用する</li>
-<li>APIのhtad-objectを利用して取得</li>
+<li>APIのhead-objectを利用して取得</li>
 <li>イベントオブジェクトからは取得できない</li>
 <li>オブジェクト削除時は、工夫が必要</li>
 </ul></li>
@@ -512,12 +512,12 @@
 <ul>
 <li>FUDの例とそれに対する回答的な</li>
 <li>全編英語なので資料公開されたら読み返したい</li>
-<li>How Serverless Inprever\s Security
+<li>How Serverless Inprever&rsquo;s Security
 
 <ul>
-<li>Serverkess platforms manage tge nahiruty id the secyrutyattack</li>
-<li>Small and contained blast raduys</li>
-<li>Finegrained acces cntrol</li>
+<li>Serverless platforms manage the nahiruty id the secyruty attack</li>
+<li>Small and contained blast radius</li>
+<li>Finegrained access control</li>
 <li>Ephemetality: No attackers&rsquo; and data oresustence?</li>
 <li>No infrastryctyre - more time to wrute better go</li>
 </ul></li>
@@ -567,9 +567,9 @@
 <li>セキュアに扱う
 
 <ul>
-<li>Parameterの方secure系を使う</li>
+<li>Parameterの型secure系を使う</li>
 <li>Key Vaultから受け取る</li>
-<li>ManagerdIdentitiesや　VirtuanNetwork</li>
+<li>ManagerdIdentitiesや　VirtualNetwork</li>
 </ul></li>
 <li>リソース名の付け方
 
