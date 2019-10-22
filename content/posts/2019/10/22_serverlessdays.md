@@ -212,6 +212,7 @@ https://tokyo.serverlessdays.io/
 
 ## 15:05 ISPがサーバレスに手を出した
 ### 伊藤良哉 & 松田丈司 (NTTコミュニケーションズ)
+* https://speakerdeck.com/georgeorge/isp-challenges-serverless
 * サーバーレス以外の選択肢
   - 物理サーバー、自社IaaSサービス、他社IaaSサービス
   - 納期3ヶ月→サーバーレス以外間に合わない
@@ -296,6 +297,7 @@ https://tokyo.serverlessdays.io/
 
 ## 17:10 Azure でサーバーレス、 Infrastructure as Code どうしてますか？
 ### Kazumi Ohira
+* https://www.slideshare.net/dzeyelid/iac-on-azure-for-serverless
 * IaC
   - コードにしておけば、あとから思い出せる
   - CI/CDと相性が良い
@@ -334,10 +336,23 @@ https://tokyo.serverlessdays.io/
   - アカウント管理や請求管理も分散する
 
 ## 17:55 short break
-
+* Oracle Function
+  - fn projectなのでどこでも動かせる
+  - Eventsサービス
+    - CloudEvents対応
+  - OCHaCafe
 
 ## 18:00 Lightning Talks x 4
-
+### サーバーレスな同人誌の紹介
+* https://www.slideshare.net/nekoruri/20191022-serverless-books
+* オススメ同人誌をひたすら紹介する（16冊）
+### 目つぶり検証作成機
+* Amazon Recognitionを使って写真の分類をしようとした話
+### AWSでBtoB向けサーバーレスアプリケーションを構築した話
+* B2Bの場合、ローンチから利用開始までのリードタイムが長い
+  - その間のインフラ費用が無駄にかからないように
+### ServerlessなエンジニアのためのServerlessなオンラインサロンをVUE/NUXT/COGNITO/STRIPEで構築した
+* 
 
 ## 18:40 Closing Remarks
 
