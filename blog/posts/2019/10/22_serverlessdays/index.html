@@ -488,11 +488,71 @@
 
 <h3 id="江藤武司-岩井良和-sony-corporation">江藤武司 &amp; 岩井良和 (Sony Corporation)</h3>
 
+<ul>
+<li>製品の特性ごとにAWSアカウント分けて構築</li>
+<li>DynamoDB streamやSNSでクロスアカウントだったりオンプレとやり取りしたり</li>
+<li>ユーザーからの問い合わせがすぐ来るときもあれば、何かあってから1ヶ月以上立ってから来ることもある</li>
+<li>→調査が大変</li>
+<li>そこで分散トレーシング</li>
+<li>Lake Formationを分散トレーシングにつかう
+
+<ul>
+<li>複数アカウントのログを集約できる</li>
+<li>サーバレスで実現できる</li>
+<li>X-Ray, CWLogs, Datadogも併用</li>
+</ul></li>
+<li>トレースIDの重要性
+
+<ul>
+<li>X-Rayだけでは非同期イベントのトレースが困難</li>
+<li>API GW</li>
+<li>カスタムHTTP Headerを利用して伝搬</li>
+<li>zone.jsを利用してIDを保持</li>
+<li>SNS、SQS</li>
+<li>message attributesを利用して伝搬</li>
+<li>Step FUncitons</li>
+<li>StateMachne実行時にトレースIDを注入</li>
+<li>ResulePathを使用して、書くTaskにIDを注入</li>
+<li>S3</li>
+<li>オブジェクトメタデータを利用する</li>
+<li>APIのhtad-objectを利用して取得</li>
+<li>イベントオブジェクトからは取得できない</li>
+<li>オブジェクト削除時は、工夫が必要</li>
+</ul></li>
+</ul>
+
 <h2 id="16-20-short-break">16:20 short break</h2>
 
 <h2 id="16-25-don-t-think-serverless-security-think-application-security">16:25 Don’t think Serverless Security, think Application Security</h2>
 
 <h3 id="ido-neeman-nuweba">Ido Neeman (Nuweba)</h3>
+
+<ul>
+<li>FUDの例とそれに対する回答的な</li>
+<li>全編英語なので資料公開されたら読み返したい</li>
+<li>How Serverless Inprever\s Security
+
+<ul>
+<li>Serverkess platforms manage tge nahiruty id the secyrutyattack</li>
+<li>Small and contained blast raduys</li>
+<li>Finegrained acces cntrol</li>
+<li>Ephemetality: No attackers&rsquo; and data oresustence?</li>
+<li>No infrastryctyre - more time to wrute better go</li>
+</ul></li>
+<li>How to protect your serverless Application
+
+<ul>
+<li>Attacler don&rsquo;t care if app run on sercerless, containers, VNs or Rasi</li>
+<li>Hhow to maintain and improve secyrutt oisryre wgeb tridutuibak tiiks art nistkt ineffective</li>
+<li>Abrtraction of the infrastrycrute can introduct some chalenges:</li>
+<li>you still need to secure rhe app layer</li>
+<li>limited visibility</li>
+<li>where to install tools? lambda layers?</li>
+<li>security logic performance overhead</li>
+<li>How to enforce existic\bg secyrtt oikucues?</li>
+<li>fast dev-to-oriduction cycle</li>
+</ul></li>
+</ul>
 
 <h2 id="17-05-short-break">17:05 short break</h2>
 
