@@ -323,7 +323,15 @@ https://tokyo.serverlessdays.io/
 
 ## 17:35 The hidden cost and technical debt of running huge Serverless service on production
 ### James Nguyen / MaaS Global
-
+* クラウドベンダーがダウンしたら巻き込まれる
+* 新しいバージョンをサポートするのに数カ月かかる
+* ベンダーからの更新情報をウォッチする必要がある
+* ごくまれにAPIが廃止される場合がる
+* サービスを置き換える場合がある
+* DBの設定は調整が必要
+* マルチベンダー設定は半たんではない
+  - Serverless Framework でも限定的
+  - アカウント管理や請求管理も分散する
 
 ## 17:55 short break
 
