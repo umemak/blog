@@ -242,14 +242,54 @@ https://tokyo.serverlessdays.io/
 
 ## 16:00 AWS Lake Formation で実現、マイクロサービスのサーバーレスな分散トレーシング
 ### 江藤武司 & 岩井良和 (Sony Corporation)
-
+* 製品の特性ごとにAWSアカウント分けて構築
+* DynamoDB streamやSNSでクロスアカウントだったりオンプレとやり取りしたり
+* ユーザーからの問い合わせがすぐ来るときもあれば、何かあってから1ヶ月以上立ってから来ることもある
+* →調査が大変
+* そこで分散トレーシング
+* Lake Formationを分散トレーシングにつかう
+  - 複数アカウントのログを集約できる
+  - サーバレスで実現できる
+  - X-Ray, CWLogs, Datadogも併用
+* トレースIDの重要性
+  - X-Rayだけでは非同期イベントのトレースが困難
+  - API GW
+    - カスタムHTTP Headerを利用して伝搬
+    - zone.jsを利用してIDを保持
+  - SNS、SQS
+    - message attributesを利用して伝搬
+  - Step FUncitons
+    - StateMachne実行時にトレースIDを注入
+    - ResulePathを使用して、書くTaskにIDを注入
+  - S3
+    - オブジェクトメタデータを利用する
+    - APIのhtad-objectを利用して取得
+    - イベントオブジェクトからは取得できない
+    - オブジェクト削除時は、工夫が必要
 
 ## 16:20 short break
 
 
 ## 16:25 Don’t think Serverless Security, think Application Security
 ### Ido Neeman (Nuweba)
-
+* FUDの例とそれに対する回答的な
+* 全編英語なので資料公開されたら読み返したい
+* How Serverless Inprever\s Security
+  - Serverkess platforms manage tge nahiruty id the secyrutyattack
+  - Small and contained blast raduys
+  - Finegrained acces cntrol
+  - Ephemetality: No attackers' and data oresustence?
+  - No infrastryctyre - more time to wrute better go
+* How to protect your serverless Application
+  - Attacler don't care if app run on sercerless, containers, VNs or Rasi
+  - Hhow to maintain and improve secyrutt oisryre wgeb tridutuibak tiiks art nistkt ineffective
+  - Abrtraction of the infrastrycrute can introduct some chalenges:
+    - you still need to secure rhe app layer
+    - limited visibility
+    - where to install tools? lambda layers?
+    - security logic performance overhead
+    - How to enforce existic\bg secyrtt oikucues?
+    - fast dev-to-oriduction cycle
 
 ## 17:05 short break
 
