@@ -90,99 +90,182 @@
 
 <h2 id="09-00-はじめに-諸説明">09:00 はじめに / 諸説明</h2>
 
+<ul>
+<li>meetup 4年目</li>
+<li>大企業での採用が進んできている</li>
+</ul>
+
 <h2 id="09-10-10x-serverless-product-development-for-a-startup-with-microsoft-azure">09:10 10x Serverless Product Development for a Startup with Microsoft Azure</h2>
 
+<h3 id="yutaka-tachibana-ebilab">Yutaka Tachibana(EBILAB)</h3>
+
 <ul>
-<li>Yutaka Tachibana(EBILAB)</li>
+<li>飲食店の生産性向上</li>
+<li>来客人数の予測（過去実績、天気などから）</li>
+<li>入店率も計算している
+
+<ul>
+<li>店頭のディスプレイでA/Bテストも可能</li>
+</ul></li>
+<li>データソースが増えても追加実装は簡単</li>
+<li>PowerBI Embedded
+
+<ul>
+<li>レポートをノンコーディングで作成できる</li>
+<li>エンジニアはレポート追加にノータッチ</li>
+</ul></li>
+<li>サーバーレスで実装したメリット
+
+<ul>
+<li>開発運用コストが少ない</li>
+<li>将来的にスケールした場合の楽観的</li>
+<li>責務分割が自然にできる</li>
+<li>協業・分業しやすい</li>
+</ul></li>
 </ul>
 
 <h2 id="09-50-break">09:50 break</h2>
 
 <h2 id="10-00-keynote">10:00 Keynote</h2>
 
+<h3 id="keisuke-nishitani-aws">Keisuke Nishitani (AWS)</h3>
+
 <ul>
-<li>Keisuke Nishitani (AWS)</li>
+<li>EventDriven
+
+<ul>
+<li>呼ぶ側と呼ばれる側が疎結合にできる</li>
+</ul></li>
+<li>aurora, ecs も2014年のre:inventで発表された</li>
+<li>モダンアプリケーション
+
+<ul>
+<li>市場投入を加速</li>
+<li>イノベーションの向上</li>
+<li>信頼性の向上</li>
+<li>コスト削減</li>
+</ul></li>
+<li>All you need is code
+
+<ul>
+<li>付加価値を産まない重労働からの開放</li>
+</ul></li>
+<li>5年たった今も
+
+<ul>
+<li>We&rsquo;re still writing code</li>
+</ul></li>
+<li>もっとコードを減らすためには
+
+<ul>
+<li>どういう問題をどう解決するのか</li>
+</ul></li>
 </ul>
 
 <h2 id="10-40-10-min-break">10:40 10 min break</h2>
 
+<ul>
+<li>スポンサーLT</li>
+</ul>
+
 <h2 id="10-50-keynote-infinite-scaling-finite-failures-serverless-resiliency-patterns-and-lessons-learned">10:50 Keynote: Infinite Scaling, Finite Failures: Serverless Resiliency Patterns and Lessons Learned</h2>
 
+<h3 id="katy-shimizu-microsoft">Katy Shimizu (Microsoft)</h3>
+
 <ul>
-<li>Katy Shimizu (Microsoft)</li>
+<li>失敗は絶対に起こります。アプリケーションがそれらを処理する必要があります
+
+<ul>
+<li>Data source</li>
+<li>Customer code</li>
+<li>Serverles/Fass layer</li>
+<li>External deebdebct</li>
+<li>IaaS/Pass</li>
+<li>Datacenter/Infra</li>
+</ul></li>
+<li>失敗例
+
+<ul>
+<li>レースコンディション</li>
+<li>ネットワーク障害</li>
+<li>レート制限</li>
+<li>ハードウェア障害</li>
+</ul></li>
+<li>依存関係を知る、依存関係が失敗する方法を知る
+
+<ul>
+<li>デザインパターン</li>
+</ul></li>
+<li>デザインパターン
+
+<ul>
+<li>再試行</li>
+<li>サービスに組み込まれている</li>
+<li>サーキットブレーカー</li>
+<li>耐久性のあるエンティティを試す</li>
+</ul></li>
+<li>新製品を使用すると、回復力が容易になります
+
+<ul>
+<li>Durable Functions 2.0</li>
+<li>Premium hosting plan</li>
+</ul></li>
+<li>サーバーレスは改善され続けています</li>
 </ul>
 
 <h2 id="11-30-10-min-break">11:30 10 min break</h2>
 
 <h2 id="11-40-グローバル展開のコネクティッドカーを支える大規模サーバーレスシステム事例">11:40 グローバル展開のコネクティッドカーを支える大規模サーバーレスシステム事例</h2>
 
-<ul>
-<li>Yuya Urayama (TOYOTA), Takanori Suzuki (Acroquest Technology) and Eiichiro Uchiumi (AWS)</li>
-</ul>
+<h3 id="yuya-urayama-toyota-takanori-suzuki-acroquest-technology-and-eiichiro-uchiumi-aws">Yuya Urayama (TOYOTA), Takanori Suzuki (Acroquest Technology) and Eiichiro Uchiumi (AWS)</h3>
 
 <h2 id="12-20-lunch">12:20 Lunch</h2>
 
 <h2 id="13-20-all-you-need-is-javascript">13:20 All You Need Is JavaScript</h2>
 
-<ul>
-<li>Jensen Hussey / Cloudflare</li>
-</ul>
+<h3 id="jensen-hussey-cloudflare">Jensen Hussey / Cloudflare</h3>
 
 <h2 id="13-40-short-break">13:40 short break</h2>
 
 <h2 id="13-45-zero-scale-abstraction-in-knative-serving">13:45 Zero Scale Abstraction in Knative Serving</h2>
 
-<ul>
-<li>Tsubasa Nagasawa (CyberAgent)</li>
-</ul>
+<h3 id="tsubasa-nagasawa-cyberagent">Tsubasa Nagasawa (CyberAgent)</h3>
 
 <h2 id="14-25-long-break">14:25 Long break</h2>
 
 <h2 id="14-40-空調設備向けiotシステムにおけるクラウドランニングコスト">14:40 空調設備向けIoTシステムにおけるクラウドランニングコスト</h2>
 
-<ul>
-<li>野原 健太 / ダイキン工業株式会社</li>
-</ul>
+<h3 id="野原-健太-ダイキン工業株式会社">野原 健太 / ダイキン工業株式会社</h3>
 
 <h2 id="15-00-short-break">15:00 short break</h2>
 
 <h2 id="15-05-ispがサーバレスに手を出した">15:05 ISPがサーバレスに手を出した</h2>
 
-<ul>
-<li>伊藤良哉 &amp; 松田丈司 (NTTコミュニケーションズ)</li>
-</ul>
+<h3 id="伊藤良哉-松田丈司-nttコミュニケーションズ">伊藤良哉 &amp; 松田丈司 (NTTコミュニケーションズ)</h3>
 
 <h2 id="15-45-long-break">15:45 Long break</h2>
 
 <h2 id="16-00-aws-lake-formation-で実現-マイクロサービスのサーバーレスな分散トレーシング">16:00 AWS Lake Formation で実現、マイクロサービスのサーバーレスな分散トレーシング</h2>
 
-<ul>
-<li>江藤武司 &amp; 岩井良和 (Sony Corporation)</li>
-</ul>
+<h3 id="江藤武司-岩井良和-sony-corporation">江藤武司 &amp; 岩井良和 (Sony Corporation)</h3>
 
 <h2 id="16-20-short-break">16:20 short break</h2>
 
 <h2 id="16-25-don-t-think-serverless-security-think-application-security">16:25 Don’t think Serverless Security, think Application Security</h2>
 
-<ul>
-<li>Ido Neeman (Nuweba)</li>
-</ul>
+<h3 id="ido-neeman-nuweba">Ido Neeman (Nuweba)</h3>
 
 <h2 id="17-05-short-break">17:05 short break</h2>
 
 <h2 id="17-10-azure-でサーバーレス-infrastructure-as-code-どうしてますか">17:10 Azure でサーバーレス、 Infrastructure as Code どうしてますか？</h2>
 
-<ul>
-<li>Kazumi Ohira</li>
-</ul>
+<h3 id="kazumi-ohira">Kazumi Ohira</h3>
 
 <h2 id="17-30-short-break">17:30 short break</h2>
 
 <h2 id="17-35-the-hidden-cost-and-technical-debt-of-running-huge-serverless-service-on-production">17:35 The hidden cost and technical debt of running huge Serverless service on production</h2>
 
-<ul>
-<li>James Nguyen / MaaS Global</li>
-</ul>
+<h3 id="james-nguyen-maas-global">James Nguyen / MaaS Global</h3>
 
 <h2 id="17-55-short-break">17:55 short break</h2>
 
