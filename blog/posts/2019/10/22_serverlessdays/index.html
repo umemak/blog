@@ -348,50 +348,31 @@
 
 <h3 id="tsubasa-nagasawa-cyberagent">Tsubasa Nagasawa (CyberAgent)</h3>
 
-<ul>
-<li>Build, Serving, Events
-
-<ul>
-<li>Buildは卒業（てくとん）</li>
-</ul></li>
-<li>K8Sのyamlたくさんカカkなくてもデプロイできる</li>
-<li>tag（リビジョン）でデプロイを分けて、カナリアリリースのようなこともできる</li>
-<li>ゼロスケール
-
-<ul>
-<li>フローを紙芝居で説明。あとでちゃんと読み込みたい。</li>
-</ul></li>
-<li>Pros
-
-<ul>
-<li>オートスケールが柔軟</li>
-<li>テストがちゃんとしている</li>
-<li>google/mako</li>
-</ul></li>
-<li>Cons
-
-<ul>
-<li>Podに入れられるコンテナが1つ</li>
-<li>Webhook自作で複数入れることも可能</li>
-<li>使えるVolumeに制限がある</li>
-<li>Podの配置席ノードが指定できない</li>
-<li>サーバーレスの思想にそぐわない</li>
-</ul></li>
-<li>Autoscale
-
-<ul>
-<li>コールドスタート1秒未満を目標にしている（現在4秒程度）</li>
-</ul></li>
-<li>本番投入に向けて
-
-<ul>
-<li>学習コスト</li>
-<li>yaml地獄</li>
-<li>ゼロスケール可能</li>
-<li>KnativeとK8sのDual Stack</li>
-<li>ポータビリティ</li>
-</ul></li>
-</ul>
+<p><a href="https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving">https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving</a>
+* Build, Serving, Events
+  - Buildは卒業（てくとん）
+* K8Sのyamlたくさんカカkなくてもデプロイできる
+* tag（リビジョン）でデプロイを分けて、カナリアリリースのようなこともできる
+* ゼロスケール
+  - フローを紙芝居で説明。あとでちゃんと読み込みたい。
+* Pros
+  - オートスケールが柔軟
+  - テストがちゃんとしている
+    - google/mako
+* Cons
+  - Podに入れられるコンテナが1つ
+  - Webhook自作で複数入れることも可能
+  - 使えるVolumeに制限がある
+  - Podの配置席ノードが指定できない
+    - サーバーレスの思想にそぐわない
+* Autoscale
+  - コールドスタート1秒未満を目標にしている（現在4秒程度）
+* 本番投入に向けて
+  - 学習コスト
+  - yaml地獄
+  - ゼロスケール可能
+  - KnativeとK8sのDual Stack
+  - ポータビリティ</p>
 
 <h2 id="14-25-long-break">14:25 Long break</h2>
 
@@ -641,28 +622,28 @@
 
 <h2 id="18-00-lightning-talks-x-4">18:00 Lightning Talks x 4</h2>
 
-<h3 id="サーバーレスな同人誌の紹介">サーバーレスな同人誌の紹介</h3>
+<h3 id="サーバーレスな同人誌の紹介-aki">サーバーレスな同人誌の紹介 / Aki</h3>
 
 <ul>
 <li><a href="https://www.slideshare.net/nekoruri/20191022-serverless-books">https://www.slideshare.net/nekoruri/20191022-serverless-books</a></li>
 
 <li><p>オススメ同人誌をひたすら紹介する（16冊）</p>
 
-<h3 id="目つぶり検証作成機">目つぶり検証作成機</h3></li>
+<h3 id="目つぶり検証機作成期-サーバーレス初心者の手始め-仮-kana-kitagawa">目つぶり検証機作成期 〜サーバーレス初心者の手始め〜 (仮) / Kana Kitagawa</h3></li>
 
 <li><p>Amazon Recognitionを使って写真の分類をしようとした話</p>
 
-<h3 id="awsでbtob向けサーバーレスアプリケーションを構築した話">AWSでBtoB向けサーバーレスアプリケーションを構築した話</h3></li>
+<h3 id="awsでbtob向けserverless-webアプリケーションを開発-wataru-miuchi">AWSでBtoB向けServerless Webアプリケーションを開発 / Wataru Miuchi</h3></li>
 
 <li><p>B2Bの場合、ローンチから利用開始までのリードタイムが長い</p>
 
 <ul>
 <li><p>その間のインフラ費用が無駄にかからないように</p>
 
-<h3 id="serverlessなエンジニアのためのserverlessなオンラインサロンをvue-nuxt-cognito-stripeで構築した">ServerlessなエンジニアのためのServerlessなオンラインサロンをVUE/NUXT/COGNITO/STRIPEで構築した</h3></li>
+<h3 id="serverlessなエンジニアのためのserverlessなオンラインサロンをvue-nuxt-cognito-stripeで構築してみたよ-藤本-竜之介">ServerlessなエンジニアのためのServerlessなオンラインサロンをVue/Nuxt/Cognito/Stripeで構築してみたよ / 藤本 竜之介</h3></li>
 </ul></li>
 
-<li></li>
+<li><p>購入処理までデモしたところで時間切れ</p></li>
 </ul>
 
 <h2 id="18-40-closing-remarks">18:40 Closing Remarks</h2>
