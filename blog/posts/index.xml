@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pixel4が届いた</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/23_pixel4/</link>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/23_pixel4/</guid>
+      <description>今日は Sansan Builders Box 2019 参戦のため休暇をとって、午前中は昨日のまとめをしようと家にいたら、突然届いた。 週末受け取りにするつもり前回だったのに、嬉しい誤算。 そして受け取り後に届いた発送完了メール。 Android端末はNexus6以来久しぶり。 早速カメラを試してみたところ、さすがセールスポイントだけあってきれいに</description>
+    </item>
     
     <item>
       <title>Serverless Days Tokyo 2019</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/10/01_readablebooks/</guid>
       <description>文書書くときにもCI回そうぜ、って内容。 たしかにしょうもないtypoとかあると記事自体の信頼性に関わるし。 3種類のチェックツールが使用例とともに紹介されている。 Re:VIEWとの併用が前提で書かれているので、このblogに応用するにはMarkdown用に設定変更が必要になりそう。 CircleCI使っ</description>
-    </item>
-    
-    <item>
-      <title>golang.tokyo #26</title>
-      <link>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</link>
-      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</guid>
-      <description>https://golangtokyo.connpass.com/event/147175/ 今回はスマートホームとGoの話です 19:30 ~ 20:00 Go in Nature（仮） by songmu Nature Remoの裏側 gocredits オススメ 依存ライブラリのLICENSEを同梱してくれる ecsched気になる Websocketでクラウドに接続しっぱなしにしている 外部のデバイスからはクラウドに司令を出す 常時接続の管理が大変 ECS上でうごかしている</description>
     </item>
     
   </channel>
