@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Sansan Builders Box 2019</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/23_sansan_builders_box_2019/</link>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/23_sansan_builders_box_2019/</guid>
+      <description>Sansanの技術カンファレンスです。 2トラックのサイレントセッションで、受付時にレシーバーが配られました。 自分はサーバーレスが気になったので、トラック１の方に陣取りました。 https://sansan.connpass.com/event/138134/ 14:30-15:00 【オープニング】 CTO 藤倉 成太、VP of Engineering 宍倉 功一 社員数550人中、ものづくに理に関わっているのが220名 Sansanは何を目指</description>
+    </item>
+    
+    <item>
       <title>Serverless Days Tokyo 2019</title>
       <link>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</link>
       <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/10/01_start_writing/</guid>
       <description>他人にものを伝える技術を筆者の経験から書かれている。 書いて伝える、話して伝える、に加えて伝えられる側の心構えも。 どれも興味深い内容だったが、とくに印象的だったのはプレゼンの準備にかける時間のところ。 そのうち社内で勉強会とかもしたいと思っているので、参考になった。</description>
-    </item>
-    
-    <item>
-      <title>読みやすい技術書を書く技術</title>
-      <link>https://umemak.github.io/blog/posts/2019/10/01_readablebooks/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/10/01_readablebooks/</guid>
-      <description>文書書くときにもCI回そうぜ、って内容。 たしかにしょうもないtypoとかあると記事自体の信頼性に関わるし。 3種類のチェックツールが使用例とともに紹介されている。 Re:VIEWとの併用が前提で書かれているので、このblogに応用するにはMarkdown用に設定変更が必要になりそう。 CircleCI使っ</description>
     </item>
     
   </channel>

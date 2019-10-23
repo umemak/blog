@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/event/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sansan Builders Box 2019</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/23_sansan_builders_box_2019/</link>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/23_sansan_builders_box_2019/</guid>
+      <description>Sansanの技術カンファレンスです。 2トラックのサイレントセッションで、受付時にレシーバーが配られました。 自分はサーバーレスが気になったので、トラック１の方に陣取りました。 https://sansan.connpass.com/event/138134/ 14:30-15:00 【オープニング】 CTO 藤倉 成太、VP of Engineering 宍倉 功一 社員数550人中、ものづくに理に関わっているのが220名 Sansanは何を目指</description>
+    </item>
     
     <item>
       <title>Serverless Days Tokyo 2019</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/08/20_mercari_go_10/</guid>
       <description>https://mercari.connpass.com/event/141122/ 19:40 ~ morikuni GopherCon 2019 GopherConとは 2014年デンバーで始まった。いろんなところでやっている。 今年はサンディエゴで開催 1800人を超える参加者 Mercariの関わり Silver Sponsor BOLD Scholarship 学生向け 11+2名参加 １日目はワークショップ ２日目３日目は発表がメイン ４日目はコミュニティデイ LTとか One MOre Thing Generics(Contracts) Interfaceと</description>
-    </item>
-    
-    <item>
-      <title>DeNA.go</title>
-      <link>https://umemak.github.io/blog/posts/2019/07/18_dena_go_2/</link>
-      <pubDate>Thu, 18 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/07/18_dena_go_2/</guid>
-      <description>2019/07/18 19:30- https://dena.connpass.com/event/133957/ @kiyotaka.nakashima / 新ゲームサーバ基盤TakashoでのGo言語活用事例の紹介 / ゲーム・エンターテインメント事業本部 Sakasho 共通ゲームサーバー（複数タイトルで相乗り） プレイヤーデータの管理 課金系 Sakasyoの課題 相乗りによる制約 変更の影響大 Takasho Webサバーフレームワーク ステートレスなAPI 1サーバー1クライアント G</description>
     </item>
     
   </channel>
