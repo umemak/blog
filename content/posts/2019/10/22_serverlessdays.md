@@ -4,7 +4,9 @@ date: "2019-10-22"
 tags: ["serverless", "event"]
 ---
 
-サーバーレスのカンファレンス
+サーバーレスに特化したカンファレンスです。
+４回目の開催ですが、初参戦です。
+{{< figure src="../20191022_1.JPG" title="横断幕" class="center" width="320" height="640" >}}
 
 https://tokyo.serverlessdays.io/
 
@@ -163,7 +165,7 @@ https://tokyo.serverlessdays.io/
 ### Tsubasa Nagasawa (CyberAgent)
 https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
 * Build, Serving, Events
-  - Buildは卒業（てくとん）
+  - Buildは卒業（https://tekton.dev/）
 * K8Sのyamlたくさん書かなくてもデプロイできる
 * tag（リビジョン）でデプロイを分けて、カナリアリリースのようなこともできる
 * ゼロスケール
@@ -171,7 +173,7 @@ https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
 * Pros
   - オートスケールが柔軟
   - テストがちゃんとしている
-    - google/mako
+    - https://github.com/google/mako
 * Cons
   - Podに入れられるコンテナが1つ
   - Webhook自作で複数入れることも可能
@@ -271,22 +273,6 @@ https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving
 ### Ido Neeman (Nuweba)
 * FUDの例とそれに対する回答的な
 * 全編英語なので資料公開されたら読み返したい
-* How Serverless Inprever's Security
-  - Serverless platforms manage the nahiruty id the secyruty attack
-  - Small and contained blast radius
-  - Finegrained access control
-  - Ephemetality: No attackers' and data oresustence?
-  - No infrastryctyre - more time to wrute better go
-* How to protect your serverless Application
-  - Attacler don't care if app run on sercerless, containers, VNs or Rasi
-  - Hhow to maintain and improve secyrutt oisryre wgeb tridutuibak tiiks art nistkt ineffective
-  - Abrtraction of the infrastrycrute can introduct some chalenges:
-    - you still need to secure rhe app layer
-    - limited visibility
-    - where to install tools? lambda layers?
-    - security logic performance overhead
-    - How to enforce existic\bg secyrtt oikucues?
-    - fast dev-to-oriduction cycle
 
 ## 17:05 short break
 
