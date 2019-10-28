@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 23 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Oracle Cloud登録してみた</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/28_signup_oracle_cloud/</link>
+      <pubDate>Mon, 28 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/28_signup_oracle_cloud/</guid>
+      <description>Serverless Days のスポンサーブースで説明聞いて、無料枠あるなら試してみようかな、と。 登録ページずっと英語で進んでたのがハードル高め。 いつも住所どうやって書くか迷うんだよね。。 GCPやAzureみたいなコンソールは見つからなかった。 インスタンス作るにもSSH鍵ペア作らないといけないのがちょっと（AWSはその場で作</description>
+    </item>
     
     <item>
       <title>Pixel4が届いた</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</guid>
       <description>https://gcpug-tokyo.connpass.com/event/143453/ GCPのCloud Buildサービスに関する話。 AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの。 19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo イベントベースでビルドのトリガー（GitHubのpushとか） テストの実行とアーティファクトのビルド 雑に言う</description>
-    </item>
-    
-    <item>
-      <title>技術を伝えるテクニック 〜分かりやすい書き方・話し方〜</title>
-      <link>https://umemak.github.io/blog/posts/2019/10/01_start_writing/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/10/01_start_writing/</guid>
-      <description>他人にものを伝える技術を筆者の経験から書かれている。 書いて伝える、話して伝える、に加えて伝えられる側の心構えも。 どれも興味深い内容だったが、とくに印象的だったのはプレゼンの準備にかける時間のところ。 そのうち社内で勉強会とかもしたいと思っているので、参考になった。</description>
     </item>
     
   </channel>

@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <title>GCP登録 - umemak</title>
+    <title>Oracle Cloud登録してみた - umemak</title>
 
     <style type="text/css">
         img.wp-smiley,
@@ -57,10 +57,10 @@
 <main role="main">
     <article role="article" class="post type-post format-standard hentry">
         <header class="post-header">
-            <h1>GCP登録</h1>
+            <h1>Oracle Cloud登録してみた</h1>
             <div class="post-details">
                 <a rel="bookmark">
-                    <time datetime="2018-12-22T1222:120:06">2018-12-22</time>
+                    <time datetime="2019-10-28T1028:120:06">2019-10-28</time>
                 </a>
 				
 <span style="float: right;">
@@ -68,11 +68,11 @@
     
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     
-    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2018/12/22_regist_gcp/" data-layout="button_count" data-size="small">
-        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2018%2f12%2f22_regist_gcp%2f" class="fb-xfbml-parse-ignore">Share</a>
+    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2019/10/28_signup_oracle_cloud/" data-layout="button_count" data-size="small">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f10%2f28_signup_oracle_cloud%2f" class="fb-xfbml-parse-ignore">Share</a>
     </div>
     &nbsp;
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="GCP登録" data-url="https://umemak.github.io/blog/posts/2018/12/22_regist_gcp/" data-show-count="false">Tweet</a>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Oracle Cloud登録してみた" data-url="https://umemak.github.io/blog/posts/2019/10/28_signup_oracle_cloud/" data-show-count="false">Tweet</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     &nbsp;
     
@@ -82,17 +82,19 @@
         </header>
 
         <div class="post-content">
-            <ul>
-<li>今更ながら登録してみた。</li>
-<li>KYASH使えないのね。</li>
-<li>ブラウザからシェルが使えるCloud Shellがなんかいい。AWSだとCloud9で環境作ればできるけど、そこまで必要ではないときに便利かも。</li>
+            <p>Serverless Days のスポンサーブースで説明聞いて、無料枠あるなら試してみようかな、と。</p>
 
-<li><pre><code>$ uname -a
-Linux cs-6000-devshell-vm-f3d2cb8f-de38-48b2-8d5f-c83297b50ed4 4.14.33+ #1 SMP Sat Aug 11 08:05:16 PDT 2018 x86_64 GNU/Linux 
-$ ruby -v ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux] 
-$ go version go version go1.11 linux/amd64
-</code></pre></li>
-</ul>
+<p>登録ページずっと英語で進んでたのがハードル高め。
+いつも住所どうやって書くか迷うんだよね。。</p>
+
+<p>GCPやAzureみたいなコンソールは見つからなかった。</p>
+
+<p>インスタンス作るにもSSH鍵ペア作らないといけないのがちょっと（AWSはその場で作れるよね）。</p>
+
+<p>てもとでssh-keygenして鍵作って貼り付けていざインスタンス作成押したら <code>Out of host capacity.</code> エラー。。
+ぐぐったら同様の症例がすぐに見つかって、Oracle側の空きがない問題らしく。</p>
+
+<p>まぁ、本命はFunctionsなのでそっちが使えればいいか。。明日また試してみよう。</p>
 
         </div>
 
@@ -102,7 +104,7 @@ $ go version go version go1.11 linux/amd64
             
             <span class="post-tags">
                 
-                <a href="https://umemak.github.io/tags/gcp" rel="tag">GCP</a>&emsp;
+                <a href="https://umemak.github.io/tags/oracle" rel="tag">oracle</a>&emsp;
                 
             </span>
             
