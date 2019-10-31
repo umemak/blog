@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 04 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/chromebook/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C101PでOracle Functionsを試す</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</guid>
+      <description>OCHaCafe参加前に触っておこうと思い、その準備。 OCIインストール 手順は公式からコピペで。 $ bash -c &amp;quot;$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)&amp;quot; fatal error: Python.h: No such file or directoryエラーで落ちたので、python3-devパッケージをインストール。 $ sudo apt-get install python3-dev OCI再挑戦。先程作成したディレクトリを削除するか聞かれるので、削除(y)して継続</description>
+    </item>
     
     <item>
       <title>ASUS CT101PA到着</title>

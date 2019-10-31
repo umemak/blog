@@ -3,27 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://umemak.github.io/blog/tags/c101p/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/chromebook/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/posts/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/serverless/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/</loc>
+    <lastmod>2019-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/tags/oracle/</loc>
     <lastmod>2019-10-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://umemak.github.io/blog/posts/2019/10/28_signup_oracle_cloud/</loc>
-    <lastmod>2019-10-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/posts/</loc>
-    <lastmod>2019-10-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/tags/</loc>
-    <lastmod>2019-10-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/</loc>
     <lastmod>2019-10-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -53,11 +73,6 @@
   </url>
   
   <url>
-    <loc>https://umemak.github.io/blog/tags/serverless/</loc>
-    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</loc>
     <lastmod>2019-10-22T00:00:00+00:00</lastmod>
   </url>
@@ -79,11 +94,6 @@
   
   <url>
     <loc>https://umemak.github.io/blog/posts/2019/10/04_aws_devday_2/</loc>
-    <lastmod>2019-10-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/tags/chromebook/</loc>
     <lastmod>2019-10-04T00:00:00+00:00</lastmod>
   </url>
   

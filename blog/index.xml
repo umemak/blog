@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 28 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C101PでOracle Functionsを試す</title>
+      <link>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</guid>
+      <description>OCHaCafe参加前に触っておこうと思い、その準備。 OCIインストール 手順は公式からコピペで。 $ bash -c &amp;quot;$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)&amp;quot; fatal error: Python.h: No such file or directoryエラーで落ちたので、python3-devパッケージをインストール。 $ sudo apt-get install python3-dev OCI再挑戦。先程作成したディレクトリを削除するか聞かれるので、削除(y)して継続</description>
+    </item>
     
     <item>
       <title>Oracle Cloud登録してみた</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/10/03_gitpod/</guid>
       <description>https://www.gitpod.io/ GitHubのブラウザ版で、ブランチ切ったら編集できなくなったので、他にブラウザで使えるエディタないかなと検索して出てきたのがこれです。 GitHub連携するだけで使えるかと思ったらそうではなく、Gitpodにもアカウント作る必要があります。とはいえチェックボックス2つだけなのですぐ終わります。 コン</description>
-    </item>
-    
-    <item>
-      <title>Google Cloud Build Day</title>
-      <link>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</guid>
-      <description>https://gcpug-tokyo.connpass.com/event/143453/ GCPのCloud Buildサービスに関する話。 AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの。 19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo イベントベースでビルドのトリガー（GitHubのpushとか） テストの実行とアーティファクトのビルド 雑に言う</description>
     </item>
     
   </channel>

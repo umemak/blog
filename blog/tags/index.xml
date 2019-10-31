@@ -7,10 +7,37 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 28 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>c101p</title>
+      <link>https://umemak.github.io/blog/tags/c101p/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/tags/c101p/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chromebook</title>
+      <link>https://umemak.github.io/blog/tags/chromebook/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/tags/chromebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>serverless</title>
+      <link>https://umemak.github.io/blog/tags/serverless/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/tags/serverless/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>oracle</title>
@@ -49,29 +76,11 @@
     </item>
     
     <item>
-      <title>serverless</title>
-      <link>https://umemak.github.io/blog/tags/serverless/</link>
-      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/tags/serverless/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>aws</title>
       <link>https://umemak.github.io/blog/tags/aws/</link>
       <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>chromebook</title>
-      <link>https://umemak.github.io/blog/tags/chromebook/</link>
-      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/tags/chromebook/</guid>
       <description></description>
     </item>
     
@@ -90,15 +99,6 @@
       <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/tags/book/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ci/cd</title>
-      <link>https://umemak.github.io/blog/tags/ci/cd/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/tags/ci/cd/</guid>
       <description></description>
     </item>
     

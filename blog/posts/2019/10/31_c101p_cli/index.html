@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<meta name="generator" content="Hugo 0.57.2" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <title>umemak</title>
+    <title>C101PでOracle Functionsを試す - umemak</title>
 
     <style type="text/css">
         img.wp-smiley,
@@ -55,22 +54,169 @@
     </div>
         <div id="content" class="content">
 
-<main aria-role="main">
-  <header class="homepage-header">
-    <h1>umemak</h1>
+<main role="main">
+    <article role="article" class="post type-post format-standard hentry">
+        <header class="post-header">
+            <h1>C101PでOracle Functionsを試す</h1>
+            <div class="post-details">
+                <a rel="bookmark">
+                    <time datetime="2019-10-31T1031:120:06">2019-10-31</time>
+                </a>
+				
+<span style="float: right;">
+    <div id="fb-root" style="height: 100%;"></div>
     
-  </header>
-  <div class="homepage-content">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     
+    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/" data-layout="button_count" data-size="small">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f10%2f31_c101p_cli%2f" class="fb-xfbml-parse-ignore">Share</a>
+    </div>
+    &nbsp;
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="C101PでOracle Functionsを試す" data-url="https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/" data-show-count="false">Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    &nbsp;
     
-  </div>
-  <div>
-    
-    
-  </div>
+</span>
 
+            </div>
+        </header>
 
+        <div class="post-content">
+            
 
+<p><a href="https://ochacafe.connpass.com/event/147285/">OCHaCafe</a>参加前に触っておこうと思い、その準備。</p>
+
+<h2 id="ociインストール">OCIインストール</h2>
+
+<p>手順は<a href="https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/cliinstall.htm">公式</a>からコピペで。</p>
+
+<pre><code>$ bash -c &quot;$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)&quot;
+</code></pre>
+
+<p><code>fatal error: Python.h: No such file or directory</code>エラーで落ちたので、<code>python3-dev</code>パッケージをインストール。</p>
+
+<pre><code>$ sudo apt-get install python3-dev
+</code></pre>
+
+<p>OCI再挑戦。先程作成したディレクトリを削除するか聞かれるので、削除(y)して継続。
+ちなみにインストール先など入力は全部デフォルトで通した。
+今度は<code>fatal error: ffi.h: No such file or directory</code>で落ちた。</p>
+
+<pre><code>$ sudo apt-get install libffi-dev
+</code></pre>
+
+<p>3度目の挑戦。
+<code>fatal error: openssl/opensslv.h: No such file or directory</code>はい。</p>
+
+<pre><code>$ sudo apt-get install libssl-dev
+</code></pre>
+
+<p>今度こそ。
+できた。表示に従ってshellを再起動する。</p>
+
+<pre><code>$ exec -l $SHELL
+</code></pre>
+
+<p>バージョン確認。</p>
+
+<pre><code>$ oci -v
+-bash: oci: command not found
+</code></pre>
+
+<p>うーん。PATHがちゃんと設定されていない。というか<code>.bashrc</code>が読み込まれてない。</p>
+
+<pre><code>$ bash
+$ oci -v
+2.6.10
+</code></pre>
+
+<p>とりあえずOK。</p>
+
+<h2 id="oci設定">OCI設定</h2>
+
+<p><a href="https://qiita.com/shirok/items/e63be9a22158fef10ba9">Qiita</a>の記事を参考にすすめた。
+* APIユーザー作成
+  - <code>api</code>
+* <code>oci setup config</code>で生成された公開鍵設定
+* 動作確認</p>
+
+<pre><code>  $ oci iam region list --output table
+  +-----+----------------+
+  | key | name           |
+  +-----+----------------+
+  | BOM | ap-mumbai-1    |
+  | FRA | eu-frankfurt-1 |
+  | GRU | sa-saopaulo-1  |
+  | IAD | us-ashburn-1   |
+  | ICN | ap-seoul-1     |
+  | LHR | uk-london-1    |
+  | NRT | ap-tokyo-1     |
+  | PHX | us-phoenix-1   |
+  | SYD | ap-sydney-1    |
+  | YYZ | ca-toronto-1   |
+  | ZRH | eu-zurich-1    |
+  +-----+----------------+
+</code></pre>
+
+<h2 id="functionsに挑戦">Functionsに挑戦</h2>
+
+<p>ここからは別の<a href="https://qiita.com/sugimount/items/018e08f575ecefb1546c">Qiita</a>記事を参考に。</p>
+
+<ul>
+<li>VCNはすでにあったものを使用。</li>
+<li>CompartmentはAPI用に作成。
+
+<ul>
+<li><code>api_test</code></li>
+</ul></li>
+<li>IAM groupを作成、APIユーザーをグループに追加。
+
+<ul>
+<li><code>api_group</code></li>
+</ul></li>
+<li>Policyを作成、Statementを追加。</li>
+
+<li><p>fnコマンドインストール</p>
+
+<pre><code>$ curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh
+sh: 58: fn: Exec format error
+</code></pre>
+
+<p>結構時間かかる。<code>set -ex</code>しておいてくれればいいのに。そしてエラー。arm用バイナリがない。</p></li>
+
+<li><p>fnコマンドビルド
+<a href="https://github.com/fnproject/cli/blob/master/CONTRIBUTING.md#how-to-build-and-get-up-and-running">CONTRIBUTING</a>に手順があったので試してみる。</p>
+
+<pre><code>$ git clone https://github.com/fnproject/cli.git $GOPATH/src/github.com/fnproject/cli
+$ cd $GOPATH/src/github.com/fnproject/cli
+$ make dep
+$ make install
+$ sudo cp $GOPATH/bin/fn /usr/local/bin/fn
+$ fn --version
+fn version 0.5.91
+</code></pre>
+
+<p>OK。</p></li>
+</ul>
+
+        </div>
+
+        <footer class="post-footer">
+            
+
+            
+            <span class="post-tags">
+                
+                <a href="https://umemak.github.io/tags/serverless" rel="tag">serverless</a>&emsp;
+                
+                <a href="https://umemak.github.io/tags/chromebook" rel="tag">chromebook</a>&emsp;
+                
+                <a href="https://umemak.github.io/tags/c101p" rel="tag">c101p</a>&emsp;
+                
+            </span>
+            
+        </footer>
+        
 <table cellspacing="15" style="width:100%; border: none;">
     <tr>
         <td style="text-align: center; border: none; padding: 0px;">
@@ -79,6 +225,11 @@
         </td>
     </tr>
 </table>
+
+        
+    </article>
+
+    
 
 </main>
 
