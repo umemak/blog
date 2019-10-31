@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <title>hugoのテーマを変えてみる - umemak</title>
+    <title>OCHaCafe2 #3 Serverlessな世界をのぞいてみよう！ - umemak</title>
 
     <style type="text/css">
         img.wp-smiley,
@@ -57,10 +57,10 @@
 <main role="main">
     <article role="article" class="post type-post format-standard hentry">
         <header class="post-header">
-            <h1>hugoのテーマを変えてみる</h1>
+            <h1>OCHaCafe2 #3 Serverlessな世界をのぞいてみよう！</h1>
             <div class="post-details">
                 <a rel="bookmark">
-                    <time datetime="2019-09-01T91:120:06">2019-09-01</time>
+                    <time datetime="2019-10-31T1031:120:06">2019-10-31</time>
                 </a>
 				
 <span style="float: right;">
@@ -68,11 +68,11 @@
     
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     
-    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2019/09/01_change_hugo_theme/" data-layout="button_count" data-size="small">
-        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f09%2f01_change_hugo_theme%2f" class="fb-xfbml-parse-ignore">Share</a>
+    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2019/10/31_ochacafe2_3/" data-layout="button_count" data-size="small">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f10%2f31_ochacafe2_3%2f" class="fb-xfbml-parse-ignore">Share</a>
     </div>
     &nbsp;
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="hugoのテーマを変えてみる" data-url="https://umemak.github.io/blog/posts/2019/09/01_change_hugo_theme/" data-show-count="false">Tweet</a>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="OCHaCafe2 #3 Serverlessな世界をのぞいてみよう！" data-url="https://umemak.github.io/blog/posts/2019/10/31_ochacafe2_3/" data-show-count="false">Tweet</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     &nbsp;
     
@@ -84,23 +84,170 @@
         <div class="post-content">
             
 
-<ul>
-<li><a href="https://themes.gohugo.io/hermit/">Hermit</a>から<a href="https://themes.gohugo.io/inkblotty/">Inkblotty</a>へ。</li>
-<li>ちょっと使い勝手が合わないところがあったので<a href="https://github.com/umemak/inkblotty">fork</a>して改造。</li>
-</ul>
+<p><a href="https://ochacafe.connpass.com/event/147285/">https://ochacafe.connpass.com/event/147285/</a></p>
 
-<h2 id="変更したところ">変更したところ</h2>
+<p>ServerlessDaysで紹介されていたイベントです。</p>
 
-<ul>
-<li>カテゴリとアーカイブ使ってないのにサイドバーに表示されているのを非表示に</li>
-</ul>
+<p>ちょうどサーバーレスの回だったので参加しました。</p>
 
-<h2 id="ハマったところ">ハマったところ</h2>
+<h2 id="18-30-受付開始">18：30　受付開始　</h2>
 
 <ul>
-<li>最近の投稿が表示されないのは<code>postSections</code>パラメータが違っていた</li>
-<li>config.toml で設定したら表示された</li>
+<li>お菓子もらいました</li>
 </ul>
+
+<h2 id="19-00-オープニング">19：00　オープニング</h2>
+
+<ul>
+<li>OCHA Cafe Premiumやるよ
+
+<ul>
+<li>Oracle Cloud で考える高可用性アーキテクチャ</li>
+</ul></li>
+<li>ビッグデータのイベントもやるよ</li>
+</ul>
+
+<h2 id="19-10-セッション開始">19：10　セッション開始</h2>
+
+<ul>
+<li><p>Oracleのブランドカラー変わっていた</p></li>
+
+<li><p>サーバーレスをざっくりと理解する</p>
+
+<ul>
+<li>Fn ProjectはIronWorkerをルーツとしている</li>
+<li>なぜサーバーレスが注目されているのか</li>
+<li>ビジネス価値の向上
+
+<ul>
+<li>課題と対策</li>
+<li>生み出すプロダクトが市場に合うかわからない
+
+<ul>
+<li>→素早くリリース</li>
+</ul></li>
+<li>開発に時間をかけられない
+
+<ul>
+<li>→開発に時間をかけない</li>
+</ul></li>
+<li>お金・人が少ない
+
+<ul>
+<li>→低コストなシステム</li>
+</ul></li>
+<li>はじめから大規模なシステムはコストが高い
+
+<ul>
+<li>→容易にスケール可能</li>
+</ul></li>
+<li>サーバーレスの特徴</li>
+<li>フレキシブル</li>
+<li>シンプル
+
+<ul>
+<li>価値のあるものにリソースを週痛できる</li>
+</ul></li>
+<li>低コスト
+
+<ul>
+<li>システムのアイドル時間には課金されない</li>
+</ul></li>
+<li>スケーラブル
+
+<ul>
+<li>負荷に応じてスケールする</li>
+</ul></li>
+</ul></li>
+<li>サーバーレスとは（CNCFの定義）</li>
+<li>誤解：サーバーあるじゃん</li>
+<li>サーバー管理を必要としない、アプリケーションの構築モデル</li>
+<li>何も動作していないときは、サーバー部分の課金なし</li>
+<li>どうやってサーバー管理をなくすのか</li>
+<li>FaaS(Functions as a Service)
+
+<ul>
+<li>なにかの処理を行うコード（Function)をクラウドへアップロードすると、クラウド側で運用管理してくれる</li>
+<li>起動イベントによりFunctionが起動し、一定時間後に削除される</li>
+</ul></li>
+<li>BaaS(Backend as a Service)
+
+<ul>
+<li>システムのバックエンドを構成する部品を、置き換えることのできるサービス</li>
+<li>ユーザー管理、認証、プッシュ通知、めせ−ジング、分析、Pub/Subキューなど</li>
+<li>ビジネスの価値に直結しない部分を、クラウド側に任せる</li>
+</ul></li>
+<li>制限事項と対策</li>
+<li>コールドスタート問題(FaaS)
+
+<ul>
+<li>→Functionの定期実行</li>
+</ul></li>
+<li>Functionの実行時間上限(FaaS)
+
+<ul>
+<li>→アプリケーションの設計をイベントドリブンに変更</li>
+<li>バッチ処理のような時間のかかる処理はそもそも向かない</li>
+</ul></li>
+<li>主なユースケース</li>
+<li>Webアプリのバックエンド
+
+<ul>
+<li>静的ファイルのホスティング、認証サービス、API GatewayからのFunction、データベース</li>
+</ul></li>
+<li>ビッグデータ・IoT（データ分析）
+
+<ul>
+<li>データのストリーム処理、データ加工Function、データベース</li>
+</ul></li>
+<li>データ変換処理
+
+<ul>
+<li>データ格納、データ処理Function、データ変換サービス、データ格納</li>
+</ul></li>
+<li>定期実行
+
+<ul>
+<li>システムヘルスチェックFunction、メール送信サービス</li>
+</ul></li>
+</ul></li>
+
+<li><p>Oracleのサーバーレスサービスを知る</p>
+
+<ul>
+<li>Oracle Functions の紹介</li>
+<li>Oracle Cloud Infrastructure(OCI)で提供しているFaaS</li>
+<li>OSS(DFn Project)ベース
+
+<ul>
+<li>任意のインフラ上にFn Projectを展開することで、Oracle Functions互換の環境を構築可能</li>
+<li>互換環境の選択肢</li>
+<li>任意のDockerホスト
+
+<ul>
+<li>RasPiで実行してEdgeとしての利用も可</li>
+</ul></li>
+<li>K8s
+
+<ul>
+<li>Helmを利用することでプロダクションレベルの構成を容易に構築</li>
+</ul></li>
+<li>Oracle Functions
+
+<ul>
+<li>マネージドサービス</li>
+<li>使った分だけ課金</li>
+</ul></li>
+<li>Container Native</li>
+<li>Functionをコンテナイメージとして実装</li>
+<li>依存をパッケージ可能</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="20-30-セッション終了-懇親会">20：30　セッション終了/懇親会　</h2>
+
+<h2 id="21-45-撤収">21：45　撤収</h2>
 
         </div>
 
@@ -110,7 +257,11 @@
             
             <span class="post-tags">
                 
-                <a href="https://umemak.github.io/tags/hugo" rel="tag">hugo</a>&emsp;
+                <a href="https://umemak.github.io/tags/event" rel="tag">event</a>&emsp;
+                
+                <a href="https://umemak.github.io/tags/serverless" rel="tag">serverless</a>&emsp;
+                
+                <a href="https://umemak.github.io/tags/oracle" rel="tag">oracle</a>&emsp;
                 
             </span>
             
