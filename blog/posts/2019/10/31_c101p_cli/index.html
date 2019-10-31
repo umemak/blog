@@ -197,6 +197,45 @@ fn version 0.5.91
 </code></pre>
 
 <p>OK。</p></li>
+
+<li><p>contextの作成と選択</p>
+
+<pre><code>$ fn create context api_context
+$ fn use context api_context
+$ fn ls contexts
+CURRENT NAME            PROVIDER        API URL                 REGISTRY
+*       api_context     oracle
+      default         default         http://localhost:8080
+</code></pre></li>
+
+<li><p>contextのupdate</p>
+
+<pre><code>$ fn update context oracle.compartment-id &lt;compartment-ocid&gt;
+$ fn update context api-url https://functions.us-phoenix-1.oraclecloud.com
+$ fn update context registry phx.ocir.io/&lt;tenancy-name&gt;/oracle-function
+$ fn update context oracle.profile DEFAULT
+</code></pre></li>
+
+<li><p>token取得とdockerログイン</p>
+
+<pre><code>$ oci iam auth-token create --user-id &lt;user-ocid&gt; --description oracle-fuction
+$ sudo docker login phx.ocir.io -u &lt;tenancy name&gt;/&lt;iam user name&gt;
+</code></pre>
+
+<p>エラー。phxにアクセスしに行っているのが良くないっぽい。東京リージョンは<code>nrt</code>を指定する。
+<a href="https://docs.cloud.oracle.com/iaas/Content/Registry/Concepts/registryprerequisites.htm#Availab">https://docs.cloud.oracle.com/iaas/Content/Registry/Concepts/registryprerequisites.htm#Availab</a>
+空港コード？hndじゃないのか。
+設定を修正</p>
+
+<pre><code>$ fn update context api-url https://functions.ap-tokyo-1.oraclecloud.com
+$ fn update context registry nrt.ocir.io/&lt;tenancy-name&gt;/oracle-function
+$ sudo docker login nrt.ocir.io -u &lt;tenancy name&gt;/&lt;iam user name&gt;
+</code></pre>
+
+<p>同じエラー。。</p>
+
+<pre><code>Error response from daemon: Get https://nrt.ocir.io/v2/: unknown: Tenant with namespace ****** not found
+</code></pre></li>
 </ul>
 
         </div>
