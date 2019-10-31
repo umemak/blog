@@ -88,6 +88,52 @@ ServerlessDaysで紹介されていたイベントです。
        - Functionをコンテナイメージとして実装
        - 依存をパッケージ可能
 
+* 10分休憩
+
+* demo
+  - Oracle Functions で Hello World
+  - 開発者ツールのFunctionでアプリケーションを作成
+    - 画面が表示されないのでスキップ
+  - VSCodeのリモートでインスタンスにSSHして操作
+  - 内容的には今日見ていたQiitaの記事と同じかな
+  - デプロイコマンドでdocker buildからイメージのpushまでまるっとやってくれる
+
+* FDK(Function Development Kits)
+  - Functionを簡単に書くためのツール
+  - FKDが提供されていない言語でも自前でインターフェースを実装すれば良い
+  - Dockerfileも各言語用に自動生成してくれる
+
+
+* Oracle Functions の起動方法
+  - SDK, CLIから
+  - oci-curlから
+  - HTTPから（API Gateway(LimitedAbirable)経由）
+  - Eventsサービス経由
+  - 定期実行（今後に期待）
+
+* CloudEvents
+  - イベントデータの標準化を目指して定義されている仕様
+
+* Fn Flow
+  - Functionのオーケストレーションツール
+  - ワークフロー定義もできる
+  - フローの可視化も
+  - Oracle Functionsでは今後提供予定
+
+* demo2
+  - ServerlessDaysでデモしてたやつだ！
+  - 猫の名前は「なまず」ちゃん
+  - API GWはPhoenixリージョンで限定公開中（今日ハマりかけたやつだ）
+  - Object Storageの事前承認済みリクエスト
+    - S3のと同じ感じ？
+  - https://github.com/Sugi275/serless_front
+
+* まとめ
+  - サーバーレスの特徴
+    - シンプル、フレキシブル、低コスト、スケーラブル
+  - Oracleもサーバーレス出してきている
+  - コミュニティとともに盛り上げていきたい
+
 ## 20：30　セッション終了/懇親会　
 
 
