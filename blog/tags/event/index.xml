@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>DeNA.go #3</title>
+      <link>https://umemak.github.io/blog/posts/2019/11/01_denago_3/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/11/01_denago_3/</guid>
+      <description>https://dena.connpass.com/event/150676/ 19:25 - 19:30 会場説明 @imoty DeNA TechCon 2020やります 19:30 - 19:50 20分枠 @suhirotaka / [Go活用事例]安全運転支援サービスを支える運用サイト / オートモーティブ事業本部スマートドライビング部システム開発グループ https://speakerdeck.com/suhirotaka/gohuo-yong-shi-li-an-quan-yun-zhuan-zhi-yuan-sabisuwozhi-eru-yun-yong-guan-li-sisutemu goで何を作っているか DRIVE CHART AIはPython Railsも使っている 運用管理のWEBシステム 管理画面をGoで作った理由 2年</description>
+    </item>
+    
+    <item>
       <title>Developers.IO 2019 Tokyo</title>
       <link>https://umemak.github.io/blog/posts/2019/11/01_cmdevio2019/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</guid>
       <description>https://golangtokyo.connpass.com/event/147175/ 今回はスマートホームとGoの話です 19:30 ~ 20:00 Go in Nature（仮） by songmu Nature Remoの裏側 gocredits オススメ 依存ライブラリのLICENSEを同梱してくれる ecsched気になる Websocketでクラウドに接続しっぱなしにしている 外部のデバイスからはクラウドに司令を出す 常時接続の管理が大変 ECS上でうごかしている</description>
-    </item>
-    
-    <item>
-      <title>Serverless Meetup Tokyo #14</title>
-      <link>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</link>
-      <pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</guid>
-      <description>Serverless Meetup Tokyo #14 https://serverless.connpass.com/event/143446/ 19:10-19:15 Opening Talk 堀家 隆宏 (Serverless Operations LLC. CEO) Serverless Daysやるよ 19:15-19:20 会場案内、告知 株式会社Speee Good Coffee -&amp;gt; Good COde 19:20-19:40 機械学習MVPにServerless Frameworkがオススメな理由 池田 雄太郎（株式会社 KaizenPlatform） 短期的・長期的ダイナミクス 短期的：一時的に大量なリソースが必要 長期的：やってみないとわ</description>
     </item>
     
   </channel>

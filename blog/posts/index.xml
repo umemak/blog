@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>DeNA.go #3</title>
+      <link>https://umemak.github.io/blog/posts/2019/11/01_denago_3/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/11/01_denago_3/</guid>
+      <description>https://dena.connpass.com/event/150676/ 19:25 - 19:30 会場説明 @imoty DeNA TechCon 2020やります 19:30 - 19:50 20分枠 @suhirotaka / [Go活用事例]安全運転支援サービスを支える運用サイト / オートモーティブ事業本部スマートドライビング部システム開発グループ https://speakerdeck.com/suhirotaka/gohuo-yong-shi-li-an-quan-yun-zhuan-zhi-yuan-sabisuwozhi-eru-yun-yong-guan-li-sisutemu goで何を作っているか DRIVE CHART AIはPython Railsも使っている 運用管理のWEBシステム 管理画面をGoで作った理由 2年</description>
+    </item>
+    
+    <item>
       <title>Developers.IO 2019 Tokyo</title>
       <link>https://umemak.github.io/blog/posts/2019/11/01_cmdevio2019/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/10/05_ct101pa/</guid>
       <description>ビックカメラのポイント20%セールで。ポチったあとにアマゾンで19%オフやってておいおいって思った。 これでクラムシェルとコンバーチブルとタブレットのChromebookが揃って、充電器が足りなくなってきたので（本体付属のはごつすぎる・・）、 もらったポイントで買い足そうかなと。</description>
-    </item>
-    
-    <item>
-      <title>AWS DevDay Tokyo 2019 DAY2</title>
-      <link>https://umemak.github.io/blog/posts/2019/10/04_aws_devday_2/</link>
-      <pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/10/04_aws_devday_2/</guid>
-      <description>二日目（最終日）です。 今日もサーバーレス系中心に見ていきたいと思います。 10:00〜10:45 オープンソースコミュニティで加速するサーバーレスの未来 クラウドの世界の中にいながら、オープンソースコミュニティに参加することの意味と楽しさ Lambdaの問題（当時） マネコンにソースを直接アップロードするので</description>
     </item>
     
   </channel>

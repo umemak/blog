@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <title>docker - umemak</title>
+    <title>Posts - umemak</title>
 
     <style type="text/css">
         img.wp-smiley,
@@ -34,11 +34,11 @@
         <nav role="navigation" aria-label="Primary Navigation">
 
             <ul class="menu">
-                <li class="menu-item "><a class="menu__link" href="/blog/posts/">POSTS</a></li>
+                <li class="menu-item  current-menu-item current_page_item "><a class="menu__link" href="/blog/posts/">POSTS</a></li>
                 <li class="menu-item "><a class="menu__link" href="/blog/tags/">TAGS</a></li>
             </ul>
             <select onChange="location.href=value;">
-                <option value="/blog/posts/" class="menu-item menu-item-type-custom menu-item-object-custom" >POSTS</option>
+                <option value="/blog/posts/" class="menu-item menu-item-type-custom menu-item-object-custom"  selected="selected" >POSTS</option>
                 <option value="/blog/tags/" class="menu-item menu-item-type-custom menu-item-object-custom" >TAGS</option>
             </select>
         </nav>
@@ -55,7 +55,7 @@
         <div id="content" class="content">
 <main aria-role="main">
   <header class="homepage-header">
-    <h1>docker</h1>
+    <h1>Posts</h1>
     
   </header>
   <div class="homepage-content">
@@ -68,17 +68,16 @@
         <article class="list__item post clearfix">
 	<div class="list__content clearfix">
 		<header class="post-header">
-				<h2><a href="/blog/posts/2019/08/21_update_gems/" rel="bookmark">ruby gem のアップデート</a></h2>
+				<h2><a href="/blog/posts/2018/11/02_aws_devday/" rel="bookmark">AWS Dev Day Tokoyo 2018</a></h2>
 				<div class="post-details">
 				<a rel="bookmark">
-					<time datetime="2019-08-21T00:00:00">2019-08-21</time>
+					<time datetime="2018-11-02T00:00:00">2018-11-02</time>
 				</a>
 				</div>
 		</header>
 
 		<div class="post-excerpt"><p>
-			Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、actionviewを5.1.6.2以上にバージョンアップ対応する。 作業環境はC223NAのdocker。 $ docker run -it -v `pwd`:/usr/src/work ruby bash # cd /usr/src/work # bundle update nokogiri # bundle list nokogiri /usr/local/bundle/gems/nokogiri-1.10.4 最初nokogiriの通知しか出てなかったのに、更新してpushしたらもうい
-			<a href="/blog/posts/2019/08/21_update_gems/" class="more-link">Read more </a>
+			3日間通った証 シール３枚
 		</p></div>
 	</div>
 	
@@ -88,41 +87,9 @@
 		
 		<span class="post-tags">
 			
-			<a href="https://umemak.github.io/tags/ruby" rel="tag">ruby</a>
+			<a href="https://umemak.github.io/tags/aws" rel="tag">aws</a>
 			
-			<a href="https://umemak.github.io/tags/docker" rel="tag">docker</a>
-			
-		</span>
-		
-	</footer>
-
-</article>
-    
-        <article class="list__item post clearfix">
-	<div class="list__content clearfix">
-		<header class="post-header">
-				<h2><a href="/blog/posts/2019/07/21_chromebook_docker/" rel="bookmark">Chromebookにdockerインストール</a></h2>
-				<div class="post-details">
-				<a rel="bookmark">
-					<time datetime="2019-07-21T00:00:00">2019-07-21</time>
-				</a>
-				</div>
-		</header>
-
-		<div class="post-excerpt"><p>
-			環境 C101PA 手順 公式の手順に従う $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg2 \ software-properties-common -y $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &quot;deb [arch=arm64] https://download.docker.com/linux/debian \ $(lsb_release -cs) \ stable&quot; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io -y $ sudo docker run hello-world できた。
-		</p></div>
-	</div>
-	
-	<footer class="post-footer">
-			
-
-		
-		<span class="post-tags">
-			
-			<a href="https://umemak.github.io/tags/chromebook" rel="tag">chromebook</a>
-			
-			<a href="https://umemak.github.io/tags/docker" rel="tag">docker</a>
+			<a href="https://umemak.github.io/tags/event" rel="tag">event</a>
 			
 		</span>
 		
@@ -132,6 +99,46 @@
     
   </div>
 
+
+
+<div class="nav-links">
+<ul class="pagination">
+    
+        <a href="/blog/posts/" aria-label="First"><span aria-hidden="true">&laquo;</span></a>
+    
+
+    <a href="/blog/posts/page/5/" aria-label="Previous"><span aria-hidden="true">Previous Page</span></a>
+    
+    
+    <a href="/blog/posts/">1</a>
+    
+    
+    
+    <a href="/blog/posts/page/2/">2</a>
+    
+    
+    
+    <a href="/blog/posts/page/3/">3</a>
+    
+    
+    
+    <a href="/blog/posts/page/4/">4</a>
+    
+    
+    
+    <a href="/blog/posts/page/5/">5</a>
+    
+    
+    
+    <span href="/blog/posts/page/6/">6</a>
+    
+    
+    <a href="" aria-label="Next"><span aria-hidden="true">Next Page</span></a>
+    
+    <a href="/blog/posts/page/6/" aria-label="Last"><span aria-hidden="true">&raquo;</span></a>
+    
+</ul>
+</div>
 
 
 <table cellspacing="15" style="width:100%; border: none;">

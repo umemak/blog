@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DeNA on umemak</title>
+    <link>https://umemak.github.io/blog/tags/dena/</link>
+    <description>Recent content in DeNA on umemak</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://umemak.github.io/blog/tags/dena/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DeNA.go #3</title>
+      <link>https://umemak.github.io/blog/posts/2019/11/01_denago_3/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/11/01_denago_3/</guid>
+      <description>https://dena.connpass.com/event/150676/ 19:25 - 19:30 会場説明 @imoty DeNA TechCon 2020やります 19:30 - 19:50 20分枠 @suhirotaka / [Go活用事例]安全運転支援サービスを支える運用サイト / オートモーティブ事業本部スマートドライビング部システム開発グループ https://speakerdeck.com/suhirotaka/gohuo-yong-shi-li-an-quan-yun-zhuan-zhi-yuan-sabisuwozhi-eru-yun-yong-guan-li-sisutemu goで何を作っているか DRIVE CHART AIはPython Railsも使っている 運用管理のWEBシステム 管理画面をGoで作った理由 2年</description>
+    </item>
+    
+  </channel>
+</rss>
