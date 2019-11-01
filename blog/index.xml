@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Developers.IO 2019 Tokyo</title>
+      <link>https://umemak.github.io/blog/posts/2019/11/01_cmdevio2019/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/11/01_cmdevio2019/</guid>
+      <description>https://eventregist.com/e/191004-developers-io-2019 去年に続いて参加です。 去年は秋葉原でしたが、今年は日本橋での開催。 AIとかIaCを中心に見ていきたいと思います。 10:30 11:15 認証の標準的な方法は分かった。では認可はどう管理するんだい？ 都元ダイスケ 11:30 12:15 「今」のAI技術と「3年後」のAI技術のご紹介 清野剛史（せーの） 12:30 13:30 CI/CD と Cloud Security ～継続的な脆弱性診断・運用のベ</description>
+    </item>
     
     <item>
       <title>C101PAでOracle Functionsを試す</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/10/04_aws_devday_2/</guid>
       <description>二日目（最終日）です。 今日もサーバーレス系中心に見ていきたいと思います。 10:00〜10:45 オープンソースコミュニティで加速するサーバーレスの未来 クラウドの世界の中にいながら、オープンソースコミュニティに参加することの意味と楽しさ Lambdaの問題（当時） マネコンにソースを直接アップロードするので</description>
-    </item>
-    
-    <item>
-      <title>AWS DevDay Tokyo 2019 DAY1</title>
-      <link>https://umemak.github.io/blog/posts/2019/10/03_aws_devday_1/</link>
-      <pubDate>Thu, 03 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/10/03_aws_devday_1/</guid>
-      <description>今年も来ました。 去年は目黒のAWSオフィスで3日間でしたが、今年は神田明神ホールで2日間になっています。 https://aws.amazon.com/jp/about-aws/events/2019/devday/ AWSグローバルで開催する開発者のためのトレーニングイベント 最新のテクノロジー、開発手法などを集中的に学ぶことができる場 セッション公募を行い、11件採択された 10:00～11:40 ゼネラルセッシ</description>
     </item>
     
   </channel>

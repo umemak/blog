@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/event/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Developers.IO 2019 Tokyo</title>
+      <link>https://umemak.github.io/blog/posts/2019/11/01_cmdevio2019/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/11/01_cmdevio2019/</guid>
+      <description>https://eventregist.com/e/191004-developers-io-2019 去年に続いて参加です。 去年は秋葉原でしたが、今年は日本橋での開催。 AIとかIaCを中心に見ていきたいと思います。 10:30 11:15 認証の標準的な方法は分かった。では認可はどう管理するんだい？ 都元ダイスケ 11:30 12:15 「今」のAI技術と「3年後」のAI技術のご紹介 清野剛史（せーの） 12:30 13:30 CI/CD と Cloud Security ～継続的な脆弱性診断・運用のベ</description>
+    </item>
     
     <item>
       <title>OCHaCafe2 #3 Serverlessな世界をのぞいてみよう！</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</guid>
       <description>Serverless Meetup Tokyo #14 https://serverless.connpass.com/event/143446/ 19:10-19:15 Opening Talk 堀家 隆宏 (Serverless Operations LLC. CEO) Serverless Daysやるよ 19:15-19:20 会場案内、告知 株式会社Speee Good Coffee -&amp;gt; Good COde 19:20-19:40 機械学習MVPにServerless Frameworkがオススメな理由 池田 雄太郎（株式会社 KaizenPlatform） 短期的・長期的ダイナミクス 短期的：一時的に大量なリソースが必要 長期的：やってみないとわ</description>
-    </item>
-    
-    <item>
-      <title>JAWS-UG コンテナ支部 #15</title>
-      <link>https://umemak.github.io/blog/posts/2019/08/29_jawsug_ct_15/</link>
-      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/08/29_jawsug_ct_15/</guid>
-      <description>https://jawsug-container.connpass.com/event/143245/ AWS コンテナサービスアップデート トリ / Amazon Web Services Japan コンテナロードマップは what’s new に載ってない トランキングENIと通常のENIの違いは「ほとんど」ない EKS 名称変更が一番シェアされたツイート mazon ECSの開発環境を動的に管理するツールを作ってみました プログラミングヤクザ / サイバーエージェント devxx環境の</description>
     </item>
     
   </channel>
