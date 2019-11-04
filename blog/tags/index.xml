@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>book</title>
+      <link>https://umemak.github.io/blog/tags/book/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/tags/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ddd</title>
+      <link>https://umemak.github.io/blog/tags/ddd/</link>
+      <pubDate>Mon, 04 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/tags/ddd/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>aws</title>
@@ -81,24 +99,6 @@
       <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://umemak.github.io/blog/tags/serverless/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>device</title>
-      <link>https://umemak.github.io/blog/tags/device/</link>
-      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/tags/device/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pixel4</title>
-      <link>https://umemak.github.io/blog/tags/pixel4/</link>
-      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/tags/pixel4/</guid>
       <description></description>
     </item>
     
