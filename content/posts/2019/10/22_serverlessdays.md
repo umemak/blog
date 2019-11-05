@@ -6,7 +6,7 @@ tags: ["serverless", "event"]
 
 サーバーレスに特化したカンファレンスです。
 ４回目の開催ですが、初参戦です。
-{{< figure src="../20191022_1.JPG" title="横断幕" class="center" width="320" height="640" >}}
+{{< figure src="../20191022_1.JPG" title="" class="center" width="640" height="320" >}}
 
 https://tokyo.serverlessdays.io/
 
