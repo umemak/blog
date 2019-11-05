@@ -86,31 +86,141 @@
 
 <p><a href="https://techplay.jp/event/753881">https://techplay.jp/event/753881</a></p>
 
-<p>先日のgo conferenceには参加できなかったので、当選できてよかった。</p>
+<p>先日のGo Conferenceには参加できなかったので、当選できてよかった。</p>
 
 <h2 id="19-00-開場-受付">19:00 ~  開場・受付</h2>
 
 <h2 id="19-30-19-35-オープニング">19:30 ~ 19:35    オープニング</h2>
 
+<ul>
+<li>DevQuizの解説。思ってた動作と違かった。。</li>
+</ul>
+
 <h2 id="19-35-19-55-session-1">19:35 ~ 19:55    Session 1</h2>
+
+<h3 id="creating-shell-magager-with-golang-yusuke-komatsu">Creating shell magager with golang / Yusuke Komatsu</h3>
+
+<ul>
+<li><a href="https://speakerdeck.com/usk81/create-shell-manager-with-golang">https://speakerdeck.com/usk81/create-shell-manager-with-golang</a></li>
+<li>shway</li>
+<li>dotfileの管理方法のベストプラクティスを模索</li>
+<li>home brew</li>
+<li>開発環境のシェアができる？</li>
+<li>子プロセスで読んだコマンドの結果が親プロセスに反映されない
+
+<ul>
+<li>標準出力に吐いて親で読み込む</li>
+</ul></li>
+<li>ログを出してしまうと、親に読まれてしまう
+
+<ul>
+<li>STDERRに出す</li>
+</ul></li>
+<li>go-git
+
+<ul>
+<li>オススメのgitライブラリ</li>
+</ul></li>
+<li>未完成</li>
+</ul>
 
 <h2 id="19-55-20-15-session-2">19:55 ~ 20:15    Session 2</h2>
 
-<h2 id="20-15-20-35-session-3">20:15 ~ 20:35    Session 3</h2>
+<h3 id="multi-cloud-serverless-architecture-渋川さん">Multi Cloud Serverless Architecture / 渋川さん</h3>
 
-<h2 id="20-35-20-45-休憩">20:35 ~ 20:45    休憩</h2>
+<ul>
+<li><a href="https://docs.google.com/presentation/d/1x4Ed-sYP-7oJntGQ0hiUozbx-ys7yJfYI-_S62RtP60/edit">https://docs.google.com/presentation/d/1x4Ed-sYP-7oJntGQ0hiUozbx-ys7yJfYI-_S62RtP60/edit</a></li>
+<li>サーバーレスの話</li>
+<li>Go Cloudで実現できる？</li>
+<li>AWSとGCP（Go対応）で実験
 
-<h2 id="20-45-21-05-session-4">20:45 ~ 21:05    Session 4</h2>
+<ul>
+<li>ローカルでも動かせる</li>
+</ul></li>
+<li>GCPとAWSの違い
 
-<h2 id="21-05-21-25-session-5">21:05 ~ 21:25    Session 5</h2>
+<ul>
+<li>CGP: ソースをアップ、AWS: バイナリをアップ</li>
+<li>エントリポイントの形式も違う</li>
+<li>コードジェネレータを作ってカバー</li>
+</ul></li>
+<li>chi router
 
-<h2 id="21-25-21-30-lt1">21:25 ~ 21:30    LT1</h2>
+<ul>
+<li><a href="https://github.com/go-chi/chi">https://github.com/go-chi/chi</a></li>
+</ul></li>
+<li>docstore
 
-<h2 id="21-30-21-35-lt2">21:30 ~ 21:35    LT2</h2>
+<ul>
+<li><a href="https://gocloud.dev/howto/docstore/">https://gocloud.dev/howto/docstore/</a></li>
+<li>DynamoDB, Firestore, CosmosDB のアクセスを抽象化するライブラリ</li>
+<li>ローカルで mongodocstore というインメモリ環境もあり</li>
+</ul></li>
+<li>まとめ
 
-<h2 id="21-35-21-40-lt3">21:35 ~ 21:40    LT3</h2>
+<ul>
+<li>マルチクラウドサーバーレスアプリケーションの実現は可能</li>
+<li>Go Cloud良い</li>
+</ul></li>
+</ul>
 
-<h2 id="21-40-21-50-終了-撤収">21:40 ~ 21:50    終了・撤収</h2>
+<h2 id="20-20-20-35-休憩">20:20 ~ 20:35    休憩</h2>
+
+<h2 id="20-35-20-55-session-3">20:35 ~ 20:55    Session 3</h2>
+
+<h3 id="uber-go-guide-の解説-かまたさん">uber-go/guide の解説 / かまたさん</h3>
+
+<ul>
+<li><a href="https://docs.google.com/presentation/d/10H6tvkVG2Qb9DNeSITAiKP-5BJKHqwnWFRCxEQYbpYQ/edit#slide=id.p">https://docs.google.com/presentation/d/10H6tvkVG2Qb9DNeSITAiKP-5BJKHqwnWFRCxEQYbpYQ/edit#slide=id.p</a></li>
+<li>Uber社内で使われているスタイルガイド
+
+<ul>
+<li><a href="https://github.com/uber-go/guide">https://github.com/uber-go/guide</a></li>
+</ul></li>
+<li>ガイドライン / パフォーマンス / スタイル / パターン</li>
+<li>Be Consistent
+
+<ul>
+<li>可読性、保守性のためにコードの一貫性を保ちましょう</li>
+</ul></li>
+<li>linter
+
+<ul>
+<li>go vet, goimports, golangci-lint</li>
+<li>ulinter 作成中</li>
+</ul></li>
+<li>Handle Tpe Assertion Failures
+
+<ul>
+<li>型アサーションの結果をハンドリングしているかチェック</li>
+</ul></li>
+<li>linterの作り方
+
+<ul>
+<li>ASTを作ってパターンを見ていく</li>
+</ul></li>
+<li>Start Enums as One
+
+<ul>
+<li>enumのゼロ(iota)は、初期化(goのデフォルト初期値)しただけなのか明示的に設定したのか区別しにくいため</li>
+</ul></li>
+<li>Converting number to string
+
+<ul>
+<li>fmt.Printfよりstrconvパッケージを使ったほうがパフォーマンス有利なので</li>
+</ul></li>
+</ul>
+
+<h2 id="20-55-21-00-lt1">20:55 ~ 21:00    LT1</h2>
+
+<h3 id="saas関連系における静的解析の活用-yohei-miyamoto">SaaS関連系における静的解析の活用 / Yohei Miyamoto</h3>
+
+<ul>
+<li><a href="https://go-talks.appspot.com/github.com/yoheimiyamoto/talks/golang-tokyo/27/talk.slide#1">https://go-talks.appspot.com/github.com/yoheimiyamoto/talks/golang-tokyo/27/talk.slide#1</a></li>
+<li>SaaS関連系の条件をカスタマイズできるようにしてみた話</li>
+</ul>
+
+<h2 id="21-00-21-50-終了-撤収">21:00 ~ 21:50    終了・撤収</h2>
 
         </div>
 
