@@ -9,7 +9,7 @@ https://techplay.jp/event/753881
 先日のGo Conferenceには参加できなかったので、当選できてよかった。
 
 ## 19:00 ~	開場・受付
-
+{{< figure src="../IMG_20191105_193605_1572967678888.jpg" title="" class="center" width="640" height="320" >}}
 
 ## 19:30 ~ 19:35	オープニング
 * DevQuizの解説。思ってた動作と違かった。。
