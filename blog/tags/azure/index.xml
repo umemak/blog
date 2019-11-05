@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 21 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Visual Studio Online</title>
+      <link>https://umemak.github.io/blog/posts/2019/11/05_visualstudioonline/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/11/05_visualstudioonline/</guid>
+      <description>https://visualstudio.microsoft.com/services/visual-studio-online/ パブリックプレビューになったということで、見に行ってみました。 Azureのアカウントはすでにあるので、普通にSign inして「Create enviromnent」を押すと、ロケーションの選択が。 現在選択できるのは、East US, Southeast Asia, West Europe, West US 2の4つ。 Japanがないので、料金ページを見て安くて近そうな</description>
+    </item>
     
     <item>
       <title>Azure DevOpsでCI</title>
