@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 25 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>golang.tokyo #27</title>
+      <link>https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/</guid>
+      <description>https://techplay.jp/event/753881 先日のgo conferenceには参加できなかったので、当選できてよかった。 19:00 ~ 開場・受付 19:30 ~ 19:35 オープニング 19:35 ~ 19:55 Session 1 19:55 ~ 20:15 Session 2 20:15 ~ 20:35 Session 3 20:35 ~ 20:45 休憩 20:45 ~ 21:05 Session 4 21:05 ~ 21:25 Session 5 21:25 ~ 21:30 LT1 21:30 ~ 21:35 LT2 21:35 ~ 21:40 LT3 21:40 ~ 21:50 終了・撤収</description>
+    </item>
     
     <item>
       <title>golang.tokyo #26</title>

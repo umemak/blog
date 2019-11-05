@@ -8,6 +8,21 @@
   </url>
   
   <url>
+    <loc>https://umemak.github.io/blog/tags/event/</loc>
+    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/tags/golang/</loc>
+    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/</loc>
+    <lastmod>2019-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://umemak.github.io/blog/posts/</loc>
     <lastmod>2019-11-05T00:00:00+00:00</lastmod>
   </url>
@@ -59,11 +74,6 @@
   
   <url>
     <loc>https://umemak.github.io/blog/posts/2019/11/01_cmdevio2019/</loc>
-    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/tags/event/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -185,11 +195,6 @@
   <url>
     <loc>https://umemak.github.io/blog/posts/2019/10/01_readablebooks/</loc>
     <lastmod>2019-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://umemak.github.io/blog/tags/golang/</loc>
-    <lastmod>2019-09-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>

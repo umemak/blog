@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/event/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>golang.tokyo #27</title>
+      <link>https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/</guid>
+      <description>https://techplay.jp/event/753881 先日のgo conferenceには参加できなかったので、当選できてよかった。 19:00 ~ 開場・受付 19:30 ~ 19:35 オープニング 19:35 ~ 19:55 Session 1 19:55 ~ 20:15 Session 2 20:15 ~ 20:35 Session 3 20:35 ~ 20:45 休憩 20:45 ~ 21:05 Session 4 21:05 ~ 21:25 Session 5 21:25 ~ 21:30 LT1 21:30 ~ 21:35 LT2 21:35 ~ 21:40 LT3 21:40 ~ 21:50 終了・撤収</description>
+    </item>
     
     <item>
       <title>DeNA.go #3</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</guid>
       <description>https://gcpug-tokyo.connpass.com/event/143453/ GCPのCloud Buildサービスに関する話。 AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの。 19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo イベントベースでビルドのトリガー（GitHubのpushとか） テストの実行とアーティファクトのビルド 雑に言う</description>
-    </item>
-    
-    <item>
-      <title>golang.tokyo #26</title>
-      <link>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</link>
-      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</guid>
-      <description>https://golangtokyo.connpass.com/event/147175/ 今回はスマートホームとGoの話です 19:30 ~ 20:00 Go in Nature（仮） by songmu Nature Remoの裏側 gocredits オススメ 依存ライブラリのLICENSEを同梱してくれる ecsched気になる Websocketでクラウドに接続しっぱなしにしている 外部のデバイスからはクラウドに司令を出す 常時接続の管理が大変 ECS上でうごかしている</description>
     </item>
     
   </channel>

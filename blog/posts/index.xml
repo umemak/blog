@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>golang.tokyo #27</title>
+      <link>https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/</guid>
+      <description>https://techplay.jp/event/753881 先日のgo conferenceには参加できなかったので、当選できてよかった。 19:00 ~ 開場・受付 19:30 ~ 19:35 オープニング 19:35 ~ 19:55 Session 1 19:55 ~ 20:15 Session 2 20:15 ~ 20:35 Session 3 20:35 ~ 20:45 休憩 20:45 ~ 21:05 Session 4 21:05 ~ 21:25 Session 5 21:25 ~ 21:30 LT1 21:30 ~ 21:35 LT2 21:35 ~ 21:40 LT3 21:40 ~ 21:50 終了・撤収</description>
+    </item>
+    
+    <item>
       <title>Visual Studio Online</title>
       <link>https://umemak.github.io/blog/posts/2019/11/05_visualstudioonline/</link>
       <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/10/23_sansan_builders_box_2019/</guid>
       <description>Sansanの技術カンファレンスです。 2トラックのサイレントセッションで、受付時にレシーバーが配られました。 自分はサーバーレスが気になったので、トラック１の方に陣取りました。 https://sansan.connpass.com/event/138134/ 14:30-15:00 【オープニング】 CTO 藤倉 成太、VP of Engineering 宍倉 功一 社員数550人中、ものづくに理に関わっているのが220名 Sansanは何を目指</description>
-    </item>
-    
-    <item>
-      <title>Serverless Days Tokyo 2019</title>
-      <link>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</link>
-      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</guid>
-      <description>サーバーレスに特化したカンファレンスです。 ４回目の開催ですが、初参戦です。 横断幕 https://tokyo.serverlessdays.io/ 09:00 はじめに / 諸説明 meetup 4年目 大企業での採用が進んできている 09:10 10x Serverless Product Development for a Startup with Microsoft Azure Yutaka Tachibana(EBILAB) 飲食店の生産性向上 来客人数の予測（過去実績、天気などから） 入店率も計算している 店頭のディスプレイでA/Bテストも可能 データソースが増えて</description>
     </item>
     
   </channel>
