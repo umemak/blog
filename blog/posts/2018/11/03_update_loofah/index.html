@@ -231,7 +231,43 @@ To https://github.com/umemak/sample_app.git
     </article>
 
     
-    .Page.Type: "posts"
+    <nav class="navigation post-navigation" role="navigation">
+        <div class="nav-links">
+            <div class="nav-previous">
+                
+                <a class="previous" href="https://umemak.github.io/blog/posts/2018/11/02_aws_devday/"> AWS Dev Day Tokoyo 2018</a>
+                
+            </div>
+            <div class="nav-next">
+                
+                <a class="next" href="https://umemak.github.io/blog/posts/2018/11/16_udpate_rack/"> Rackアップデート</a>
+                
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "umemak-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </section>
+    
 
 </main>
 
@@ -253,7 +289,7 @@ To https://github.com/umemak/sample_app.git
                 <a href="/blog/posts/2019/11/06_chromebook_imageedit/">Chromebookで画像編集</a>
             </li>
             <li>
-                <a href="/blog/posts/2019/11/05_setup_disqus/">Disqusの設置</a>
+                <a href="/blog/posts/2019/11/06_setup_disqus/">Disqusの設置</a>
             </li>
             <li>
                 <a href="/blog/posts/2019/11/05_golang_tokyo_27/">golang.tokyo #27</a>

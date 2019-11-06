@@ -14,11 +14,11 @@
     
     <item>
       <title>Disqusの設置</title>
-      <link>https://umemak.github.io/blog/posts/2019/11/05_setup_disqus/</link>
+      <link>https://umemak.github.io/blog/posts/2019/11/06_setup_disqus/</link>
       <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://umemak.github.io/blog/posts/2019/11/05_setup_disqus/</guid>
-      <description>Disqusのコメント欄を設置してみる。</description>
+      <guid>https://umemak.github.io/blog/posts/2019/11/06_setup_disqus/</guid>
+      <description>Disqusのコメント欄を設置してみる。 最初、表示されなくてなんでだろうと思ったら、テーマの表示条件が違っていた https://github.com/umemak/inkblotty/commit/274fed7d529bfe90c4d0c4dfeb6c9e55c7ea7ed6</description>
     </item>
     
   </channel>
