@@ -9,6 +9,7 @@ https://dena.connpass.com/event/150676/
 
 ## 19:25 - 19:30	会場説明 @imoty
 * DeNA TechCon 2020やります
+  {{< figure src="../photo_1573016664419.jpg" title="" class="center" width="640" >}}
 
 ## 19:30 - 19:50	20分枠 @suhirotaka / [Go活用事例]安全運転支援サービスを支える運用サイト / オートモーティブ事業本部スマートドライビング部システム開発グループ
 * https://speakerdeck.com/suhirotaka/gohuo-yong-shi-li-an-quan-yun-zhuan-zhi-yuan-sabisuwozhi-eru-yun-yong-guan-li-sisutemu
@@ -23,7 +24,6 @@ https://dena.connpass.com/event/150676/
     - 本サービスは、パフォーマンス重視でGo
       - サーバーが減らせるコストメリット
     - 順次goにリプレイス中
-* Go感
 * ライブラリ
   - フレームワーク
     - フルスタック・MVC
@@ -72,7 +72,6 @@ https://dena.connpass.com/event/150676/
   - 便利なパッケージを活用する
 
 ## 20:30 - 21:30	懇親会
-
 
 ## 21:30 -	完全撤収
 
