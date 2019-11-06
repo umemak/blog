@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Disqusの設置</title>
+      <link>https://umemak.github.io/blog/posts/2019/11/05_setup_disqus/</link>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/11/05_setup_disqus/</guid>
+      <description>Disqusのコメント欄を設置してみる。</description>
+    </item>
+    
+    <item>
       <title>golang.tokyo #27</title>
       <link>https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/</link>
       <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/10/28_signup_oracle_cloud/</guid>
       <description>Serverless Days のスポンサーブースで説明聞いて、無料枠あるなら試してみようかな、と。 登録ページずっと英語で進んでたのがハードル高め。 いつも住所どうやって書くか迷うんだよね。。 GCPやAzureみたいなコンソールは見つからなかった。 インスタンス作るにもSSH鍵ペア作らないといけないのがちょっと（AWSはその場で作</description>
-    </item>
-    
-    <item>
-      <title>Pixel4が届いた</title>
-      <link>https://umemak.github.io/blog/posts/2019/10/23_pixel4/</link>
-      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/10/23_pixel4/</guid>
-      <description>今日は Sansan Builders Box 2019 参戦のため休暇をとって、午前中は昨日のまとめをしようと家にいたら、突然届いた。 週末受け取りにするつもりだったのに、嬉しい誤算。 そして受け取り後に届いた発送完了メール。 Android端末はNexus6以来久しぶり。 早速カメラを試してみたところ、さすがセールスポイントだけあってきれいに撮れ</description>
     </item>
     
   </channel>
