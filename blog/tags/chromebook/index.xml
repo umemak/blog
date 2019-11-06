@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/tags/chromebook/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chromebookで画像編集</title>
+      <link>https://umemak.github.io/blog/posts/2019/11/06_chromebook_imageedit/</link>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/11/06_chromebook_imageedit/</guid>
+      <description>イベントの写真をブログに載せるのに、スマホのそのままだとサイズでかすぎるし、トリミングやリサイズもしたいときにどうすれば良いのか定まっていなかった。 とりあえずこれで行けそうな方法が見つかったのでメモ。 やりたいこと 画像のリサイズ、トリミング Googleフォトにアップした画像を選択したい 編集した画像はG</description>
+    </item>
     
     <item>
       <title>C101PAでOracle Functionsを試す</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/07/13_chromebook_rails/</guid>
       <description>狙い たまにあるgemの脆弱性対応、cloud9使わずにできるようにならないか？ 環境 C223NAのLinux(beta) 実践 ruby と関連パッケージインストール $ sudo apt-get install ruby ruy-dev zlib1g-dev build-essential patch postgresql libpq-dev libsqlite3-dev nodejs ruby以外のパッケージはbundle installやrails s時に必要。 参考：https://technotes.tt</description>
-    </item>
-    
-    <item>
-      <title>C101PA届いた</title>
-      <link>https://umemak.github.io/blog/posts/2019/06/29_chromebook_c101pa/</link>
-      <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/06/29_chromebook_c101pa/</guid>
-      <description>起動直後はOSが古い→ChromeOSバージョンアップ実施 Googleアンケートアプリが対応していない C223NAも再インストールしたらインストールできなくなっていた。。 Kindleアプリインストールできた 全体的にC223NAに比べて遅い（知ってた） 今回は開発者モードにしないで普通にLinux有効化</description>
     </item>
     
   </channel>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 05 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://umemak.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chromebookで画像編集</title>
+      <link>https://umemak.github.io/blog/posts/2019/11/06_chromebook_imageedit/</link>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://umemak.github.io/blog/posts/2019/11/06_chromebook_imageedit/</guid>
+      <description>イベントの写真をブログに載せるのに、スマホのそのままだとサイズでかすぎるし、トリミングやリサイズもしたいときにどうすれば良いのか定まっていなかった。 とりあえずこれで行けそうな方法が見つかったのでメモ。 やりたいこと 画像のリサイズ、トリミング Googleフォトにアップした画像を選択したい 編集した画像はG</description>
+    </item>
     
     <item>
       <title>golang.tokyo #27</title>
@@ -91,15 +100,6 @@
       
       <guid>https://umemak.github.io/blog/posts/2019/10/23_pixel4/</guid>
       <description>今日は Sansan Builders Box 2019 参戦のため休暇をとって、午前中は昨日のまとめをしようと家にいたら、突然届いた。 週末受け取りにするつもりだったのに、嬉しい誤算。 そして受け取り後に届いた発送完了メール。 Android端末はNexus6以来久しぶり。 早速カメラを試してみたところ、さすがセールスポイントだけあってきれいに撮れ</description>
-    </item>
-    
-    <item>
-      <title>Sansan Builders Box 2019</title>
-      <link>https://umemak.github.io/blog/posts/2019/10/23_sansan_builders_box_2019/</link>
-      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://umemak.github.io/blog/posts/2019/10/23_sansan_builders_box_2019/</guid>
-      <description>Sansanの技術カンファレンスです。 2トラックのサイレントセッションで、受付時にレシーバーが配られました。 自分はサーバーレスが気になったので、トラック１の方に陣取りました。 https://sansan.connpass.com/event/138134/ 14:30-15:00 【オープニング】 CTO 藤倉 成太、VP of Engineering 宍倉 功一 社員数550人中、ものづくに理に関わっているのが220名 Sansanは何を目指</description>
     </item>
     
   </channel>

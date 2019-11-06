@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-    <title>loofahアップデート - umemak</title>
+    <title>Chromebookで画像編集 - umemak</title>
 
     <style type="text/css">
         img.wp-smiley,
@@ -57,10 +57,10 @@
 <main role="main">
     <article role="article" class="post type-post format-standard hentry">
         <header class="post-header">
-            <h1>loofahアップデート</h1>
+            <h1>Chromebookで画像編集</h1>
             <div class="post-details">
                 <a rel="bookmark">
-                    <time datetime="2018-11-03T113:120:06">2018-11-03</time>
+                    <time datetime="2019-11-06T116:120:06">2019-11-06</time>
                 </a>
 				
 <span style="float: right;">
@@ -68,11 +68,11 @@
     
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     
-    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2018/11/03_update_loofah/" data-layout="button_count" data-size="small">
-        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2018%2f11%2f03_update_loofah%2f" class="fb-xfbml-parse-ignore">Share</a>
+    <div class="fb-share-button" data-href="https://umemak.github.io/blog/posts/2019/11/06_chromebook_imageedit/" data-layout="button_count" data-size="small">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f11%2f06_chromebook_imageedit%2f" class="fb-xfbml-parse-ignore">Share</a>
     </div>
     &nbsp;
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="loofahアップデート" data-url="https://umemak.github.io/blog/posts/2018/11/03_update_loofah/" data-show-count="false">Tweet</a>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Chromebookで画像編集" data-url="https://umemak.github.io/blog/posts/2019/11/06_chromebook_imageedit/" data-show-count="false">Tweet</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     &nbsp;
     
@@ -82,114 +82,50 @@
         </header>
 
         <div class="post-content">
-            <ul>
-<li><p>GitHubからメールきた</p>
+            <p>イベントの写真をブログに載せるのに、スマホのそのままだとサイズでかすぎるし、トリミングやリサイズもしたいときにどうすれば良いのか定まっていなかった。</p>
 
-<pre><code>Known moderate severity security vulnerability detected in loofah &lt; 2.2.3 defined in Gemfile.lock.
-Gemfile.lock update suggested: loofah ~&gt; 2.2.3.
-</code></pre></li>
-
-<li><p>作ったときのCloud9環境は削除してしまったので、Macローカルで更新する。</p>
+<p>とりあえずこれで行けそうな方法が見つかったのでメモ。</p>
 
 <ul>
-<li><p>対象リポジトリをclone。</p>
-
-<pre><code>$ git clone https://github.com/umemak/sample_app.git
-</code></pre></li>
-
-<li><p>bundle installで更新</p>
-
-<pre><code>$ bundle install
-    
-Fetching gem metadata from https://rubygems.org/.........
-    
-activesupport-5.1.6 requires ruby version &gt;= 2.2.2, which is incompatible with the current version, ruby2.1.9p490
-</code></pre></li>
-</ul>
-
-<p>できない
-- dockerで</p>
-
-<pre><code>$ docker run -it -v `pwd`:/home/k ruby bash
-    
-root@bf0de34089b9:/# cd /home/k
-    
-root@bf0de34089b9:/home/k# bundle install
-    
-Fetching gem metadata from https://rubygems.org/.........
-    
-（中略）
-    
-Bundle complete! 21 Gemfile dependencies, 82 gems now installed.
-    
-Bundled gems are installed into `/usr/local/bundle`
-    
-root@bf0de34089b9:/home/k# grep loofah Gemfile.lock
-    
-    loofah (2.2.2)
-    
-      loofah (~&gt; 2.2, &gt;= 2.2.2)
-</code></pre>
-
-<p>あがってない
-- updateじゃないとだめらしい</p>
-
-<pre><code>root@bf0de34089b9:/home/k# bundle update
-    
-Fetching gem metadata from https://rubygems.org/.........
-    
-Fetching gem metadata from https://rubygems.org/.
-    
-Resolving dependencies...
-    
-Using rake 12.3.1
-    
-（中略）
-    
-Using web-console 3.5.1
-    
-Bundle updated!
-</code></pre>
+<li>やりたいこと
 
 <ul>
-<li><p>確認</p>
+<li>画像のリサイズ、トリミング</li>
+<li>Googleフォトにアップした画像を選択したい</li>
+<li>編集した画像はGithubにアップロードする</li>
+</ul></li>
 
-<pre><code>root@bf0de34089b9:/home/k# grep loofah Gemfile.lock
-    
-    loofah (2.2.3)
-    
-      loofah (~&gt; 2.2, &gt;= 2.2.2)
-</code></pre></li>
+<li><p>試したこと</p>
+
+<ul>
+<li>ブラウザ版のGoogleフォト</li>
+<li>トリミングはできるけど、リサイズができない</li>
+<li>Githubのファイルアップロードするにはローカルにダウンロードする必要がある</li>
+<li>画像編集系のアプリ</li>
+<li>Googleフォトの画像が直接開けない</li>
+</ul></li>
+
+<li><p>インストールしたアプリ</p>
+
+<ul>
+<li>Googleフォト</li>
+<li><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.photos&amp;hl=ja">https://play.google.com/store/apps/details?id=com.google.android.apps.photos&amp;hl=ja</a></li>
+<li>Photo Editor</li>
+<li><a href="https://play.google.com/store/apps/details?id=com.iudesk.android.photo.editor&amp;hl=ja">https://play.google.com/store/apps/details?id=com.iudesk.android.photo.editor&amp;hl=ja</a></li>
+</ul></li>
 </ul>
 
-<p>OK。
-- DockerからexitしてGitHub更新。</p>
+<p>ポイントは、Googleフォトのアプリ版を使うこと。</p>
 
-<pre><code>$ git commit -am &quot;update loofah&quot;
-    
-[master 4d2d9c3] update loofah
-    
-2 files changed, 6 insertions(+), 3 deletions(-)
-    
-$ git push origin HEAD
-    
-Counting objects: 4, done.
-    
-Delta compression using up to 8 threads.
-    
-Compressing objects: 100% (4/4), done.
-    
-Writing objects: 100% (4/4), 423 bytes | 423.00 KiB/s, done.
-    
-Total 4 (delta 3), reused 0 (delta 0)
-    
-remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
-    
-To https://github.com/umemak/sample_app.git
-    
-   61a32a4..4d2d9c3  HEAD -&gt; master
-</code></pre></li>
-</ul>
+<p>アプリ版だと、画像を開いたときにメニューから「編集用アプリ」が選択できる。
+<figure class="center">
+    <img src="../IMG_20191106_154759.jpg" width="640"/> 
+</figure>
+</p>
+
+<p>編集用アプリでPhoto Editorを選択すると、Photo Editorで画像が開けて編集できる。</p>
+
+<p>編集後の画像はギャラリーに保存して、GithubにアップロードすればOK。</p>
 
         </div>
 
@@ -199,7 +135,7 @@ To https://github.com/umemak/sample_app.git
             
             <span class="post-tags">
                 
-                <a href="https://umemak.github.io/tags/ruby" rel="tag">ruby</a>&emsp;
+                <a href="https://umemak.github.io/tags/chromebook" rel="tag">chromebook</a>&emsp;
                 
             </span>
             
