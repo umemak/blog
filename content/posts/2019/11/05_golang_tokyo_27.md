@@ -7,17 +7,22 @@ tags: ["golang", "event"]
 https://techplay.jp/event/753881
 
 先日のGo Conferenceには参加できなかったので、当選できてよかった。
+{{< figure src="../IMG_20191105_193605_1573015343606.jpg" title="" class="center" width="640" >}}
 
 ## 19:00 ~	開場・受付
-{{< figure src="../IMG_20191105_193605_1572967678888.jpg" title="" class="center" width="640" height="320" >}}
+{{< figure src="../IMG_20191105_193759_1572967448087.jpg" title="乾杯！" class="center" width="640" >}}
 
 ## 19:30 ~ 19:35	オープニング
 * DevQuizの解説。思ってた動作と違かった。。
+* 当日発表になった登壇者とスケジュール。予定より本数が少なくなっていました。
+  {{< figure src="../IMG_20191105_194058_1573015274227.jpg" title="" class="center" width="640" >}}
+
 
 ## 19:35 ~ 19:55	Session 1
 ### Creating shell magager with golang / Yusuke Komatsu
 * https://speakerdeck.com/usk81/create-shell-manager-with-golang
 * shway
+  - https://github.com/getshway/shway
 * dotfileの管理方法のベストプラクティスを模索
 * home brew
 * 開発環境のシェアができる？
