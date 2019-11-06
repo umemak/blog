@@ -28,7 +28,7 @@ tags: ["chromebook"]
 ポイントは、Googleフォトのアプリ版を使うこと。
 
 アプリ版だと、画像を開いたときにメニューから「編集用アプリ」が選択できる。
-{{< figure src="../IMG_20191106_154759.jpg" title="" class="center" width="640" >}}
+{{< figure src="../IMG_20191106_154759.jpg" title="" class="center" width="333" >}}
 
 編集用アプリでPhoto Editorを選択すると、Photo Editorで画像が開けて編集できる。
 
