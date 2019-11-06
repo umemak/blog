@@ -19,7 +19,7 @@ https://techplay.jp/event/753881
 
 
 ## 19:35 ~ 19:55	Session 1
-### Creating shell magager with golang / Yusuke Komatsu
+### Creating shell magager with golang / @yusuke_k0matsu
 * https://speakerdeck.com/usk81/create-shell-manager-with-golang
 * shway
   - https://github.com/getshway/shway
@@ -35,7 +35,7 @@ https://techplay.jp/event/753881
 * 未完成
 
 ## 19:55 ~ 20:15	Session 2
-### Multi Cloud Serverless Architecture / 渋川さん
+### Multi Cloud Serverless Architecture / @shibu_jp
 * https://docs.google.com/presentation/d/1x4Ed-sYP-7oJntGQ0hiUozbx-ys7yJfYI-_S62RtP60/edit
 * サーバーレスの話
 * Go Cloudで実現できる？
@@ -59,7 +59,7 @@ https://techplay.jp/event/753881
 
 
 ## 20:35 ~ 20:55	Session 3
-### uber-go/guide の解説 / かまたさん
+### uber-go/guide の解説 / @knsh14
 * https://docs.google.com/presentation/d/10H6tvkVG2Qb9DNeSITAiKP-5BJKHqwnWFRCxEQYbpYQ/edit#slide=id.p
 * Uber社内で使われているスタイルガイド
   - https://github.com/uber-go/guide
@@ -79,7 +79,7 @@ https://techplay.jp/event/753881
   - fmt.Printfよりstrconvパッケージを使ったほうがパフォーマンス有利なので
 
 ## 20:55 ~ 21:00	LT1
-### SaaS関連系における静的解析の活用 / Yohei Miyamoto
+### SaaS関連系における静的解析の活用 / @yoheimiyamoto_
 * https://go-talks.appspot.com/github.com/yoheimiyamoto/talks/golang-tokyo/27/talk.slide#1
 * SaaS関連系の条件をカスタマイズできるようにしてみた話
 
