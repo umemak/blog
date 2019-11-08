@@ -17,7 +17,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
 googleAnalytics = "UA-151652940-1"
 disqusShortname = "umemak-blog"
-publishDir = "public/"
+publishDir = "public/blog/"
 
 [author]
   name = "umemak"
@@ -62,7 +62,7 @@ publishDir = "public/"
 #  code_copy_button = true # Turn on/off the code-copy-button for code-fields
 
   readmore = true
-#   postSections = "posts"
+  postSections = "posts"
 
   # Add custom css
   # customCSS = ["css/foo.css", "css/bar.css"]

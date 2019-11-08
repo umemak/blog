@@ -34,7 +34,7 @@ steps:
     rm -rf /tmp/blog/blog
     rsync -av blog /tmp/blog/
     cd /tmp/blog
-    mv public blog
+    mv public/blog blog
     mkdir public
     touch public/.keep
     git add .
