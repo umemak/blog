@@ -35,6 +35,8 @@ steps:
     rsync -av blog /tmp/blog/
     cd /tmp/blog
     mv public blog
+    mkdir public
+    touch public/.keep
     git add .
     git commit -m 'Autocommit from $(Build.DefinitionName) $(Build.BuildNumber) ***NO_CI***'
     git push origin
