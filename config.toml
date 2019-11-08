@@ -62,7 +62,7 @@ publishDir = "public/"
 #  code_copy_button = true # Turn on/off the code-copy-button for code-fields
 
   readmore = true
-  postSections = "posts"
+#   postSections = "posts"
 
   # Add custom css
   # customCSS = ["css/foo.css", "css/bar.css"]
