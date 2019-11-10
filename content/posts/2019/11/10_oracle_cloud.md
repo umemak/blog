@@ -16,7 +16,19 @@ sshログインしようとして、`Console Connections`作ってそこに出�
 
 パブリックIPアドレスもデフォルトでは付与されておらず、`Reserved Public IP`を取得してから割り当てる形式。
 
-ひとまずアクセスできることが確認できたので、今日はここまで。
-
 AWSと比べて、全体的にマネコンが不親切な感じ。
 
+## dockerインストールまで
+```
+$ sudo yum update -y
+$ sudo reboot
+# 再ログイン
+$ sudo yum install docker -y
+$ docker -v
+Docker version 18.09.8-ol, build 76804b7
+$ sudo systemctl start docker
+$ sudo usermod -aG docker opc
+# 再ログイン
+$ docker run hello-world
+```
+できた。
