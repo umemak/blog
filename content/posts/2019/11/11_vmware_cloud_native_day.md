@@ -160,4 +160,14 @@ K8sなど中心に。
 * 一貫性のあるセキュリティ運用が求められる
   - VMware NSXでできる
 
-## 17:30- 
+## 17:30- お客様事例から学ぶKubernetesプロジェクト成功の秘訣
+### スコット・ロウ(VMware)
+* 銀行のシステムリプレイスの話
+* K8sに移行
+* CustomResourceDefinitions(CRD)を使った
+* Key takeaways
+  - Start with a single use case, and solve that user case first.
+  - The solution doesn't have to be perfect from the beginning.
+    - Find what works and replace what doesn't work.
+    - Using a building block approach makes it easier to swap components.
+
