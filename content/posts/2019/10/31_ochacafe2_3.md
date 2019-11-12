@@ -20,6 +20,8 @@ ServerlessDaysで紹介されていたイベントです。
 * ビッグデータのイベントもやるよ
 
 ## 19：10　セッション開始
+* https://speakerdeck.com/sugimount/lets-dive-serverless-world
+
 * Oracleのブランドカラー変わっていた
 
 * サーバーレスをざっくりと理解する
