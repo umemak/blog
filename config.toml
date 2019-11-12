@@ -17,7 +17,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
 googleAnalytics = "UA-151652940-1"
 disqusShortname = "umemak-blog"
-publishDir = "public/blog/"
+# publishDir = "public/"
 
 [author]
   name = "umemak"
