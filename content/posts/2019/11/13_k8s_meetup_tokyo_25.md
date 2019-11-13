@@ -99,8 +99,32 @@ https://k8sjp.connpass.com/event/150873/
   - data link
     - LBで分散管理
 
-## 20:45~21:05	懇親タイム sponsored by CyberAgent	
+## 20:45~21:10	懇親タイム sponsored by CyberAgent	
 
 
-## 21:05-21:30	LT大会 (5min x 5)	-
+## 21:10-21:30	LT大会 (5min x 5)	-
+### 
+* https://speakerdeck.com/ytaka23/kubernetes-meetup-tokyo-25th
+* Topology Spread Constraints
+  - v1.16でα版
+  - 設定次第でデッドロックになる可能性も
+
+###
+* https://www.slideshare.net/inajob/kubeweekly/inajob/kubeweekly
+* K8s情報のキャッチアップ
+  - https://kubeweekly.io
+
+### 
+* Cluster Autoscalerのデプロイとモニタリング
+  - Terraform, Prometheus
+
+###
+* Rook（るーく）/ Ceph
+  - Host-based と PVC-based
+  - Nodeに特別なNodeが必要なくなる
+
+### 
+* Kubespray
+* CentOSで動かなくてCoreOSにしたら動いた
+* マネージドサービスを使ったほうが楽
 
