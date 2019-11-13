@@ -115,6 +115,7 @@ https://k8sjp.connpass.com/event/150873/
   - https://kubeweekly.io
 
 ### 
+* https://speakerdeck.com/int128/deploy-the-cluster-autoscaler-with-terraform-and-helmfile-monitor-with-prometheus
 * Cluster Autoscalerのデプロイとモニタリング
   - Terraform, Prometheus
 
