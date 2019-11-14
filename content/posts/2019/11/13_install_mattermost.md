@@ -29,3 +29,11 @@ $ mkdir -p ./volumes/app/mattermost/{data,logs,config,plugins}
 $ sudo chown -R 1000:1000 ./volumes/app/mattermost/
 ```
 現象変わらず。。
+
+* docker-compose.yml の`PUID`と`PGID`を現在のユーザーのものに編集したあと、dockerイメージの再ビルド。
+  - 現象変わらず
+
+* 何でもありにしてみる `sudo chmod -R 777 ./volumes/`
+  - 現象変わらず
+
+わからん。
