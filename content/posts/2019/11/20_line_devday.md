@@ -150,7 +150,26 @@ https://linedevday.linecorp.com/jp/2019/
 
 ## 14:30- Technologies that support the distribution of LINE NEWS articles
 ### Daiki Inaba / LINE Development Team I Software engineer
-
+* 68M MAU / 12B MPV
+* PerlとJavaで動いている
+* レコメンド配信はSpring(Java)で動いている
+* MLと手動でのレコメンドを行っている
+* MLのレコメンドは社内のDataLabで生成されたものを使っている
+* 当初はMLのみでレコメンドしていた
+* レコメンドデータのインポートの課題
+  - １億人のデータを１時間ごとに
+  - 並列処理（20スレッド*3台）で実施
+* 初期実装の問題
+  - スケーラビリティ
+    - マッピングデータの形式変更
+    - 記事IDではなく、ユーザーIDをキーにした
+  - 運用コストが高い
+    - ユーザーIDの抽出をCMSでできるようにした
+    - 分析チームに依頼せず、属性フィルタで抽出する
+* 今後
+  - レコメンドクオリティ
+  - リアルタイムフィードバック
+    - 現在A/Bテスト中
 
 ## 15:30- Inside OpenChat
 ### Taekjoo Kim / LINE Plus OpenChat Dev Software Engineer
