@@ -110,7 +110,43 @@ https://linedevday.linecorp.com/jp/2019/
 
 ## 13:40- Inside of Blog; Light and shadow of the service matured for 15 years and challenge chaos and legacy
 ### Takahiro Omori / LINE Development Team B
-
+* livedoor blogとline blog
+  - 15年の歴史があるのはlivedoorのほう
+  - 70+開発者
+  - 750+サーバー台数。うち200がdb。
+  - 550+テーブル数
+  - 43500+ファイル数
+  - 3800+プログラムファイル（perl）
+  - 410000+プログラム行数
+  - サーバー移転
+  - HTTPS化
+    - サーバー移転終わらないと完了できない（闇）
+* Document Not Found
+  - デプロイ方法とか謎になっている
+* Development Server Not Found
+  - フローチャートで説明
+* Too Many DBS Records
+  - 300+??
+  - 230が未使用
+* Too Many Functions
+* Perl
+  - v5.8を使い続けている
+  - mod_perlのせい
+  - v5.16も使っている・・・混在
+* MySQL
+  - v4.0を使い続けている
+  - いろいろ使えない機能が多い
+* blogの特殊な事情
+  - 文字コードセットの混在
+  - これのせいで正規手順でMySQLのバージョンアップができない
+* line blog
+  - 2015年11月リリース
+  - 当初はlivedoor blogのASPとして稼働
+  - 2016年11月の一般公開で独立
+  - livedoor blogからforkしたので、libedoorの闇も引き継いでいた
+* Next 15 Years
+  - 今担当しているサーブ素を１０年、１５年後に担当するメンバーが苦労しないよう心がける
+  - 小さなことから
 
 ## 14:30- Technologies that support the distribution of LINE NEWS articles
 ### Daiki Inaba / LINE Development Team I Software engineer
