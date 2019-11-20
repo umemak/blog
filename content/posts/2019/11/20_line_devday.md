@@ -6,9 +6,7 @@ tags: ["event", "line"]
 
 https://linedevday.linecorp.com/jp/2019/
 
-* 申し込んだときはヤフーとのニュースが出る前だったので、それについて言及があるのかな？
-* 19時からのイベントに繰り上がり当選したので最後までいられないのは残念
-
+* 5回目の開催とのことですが、初参加です。
 
 ## 10:40- Keynote
 ### Euivin Park / LINE CTO
@@ -213,7 +211,33 @@ https://linedevday.linecorp.com/jp/2019/
 
 ## 16:20- Introduction to XXE, SSRF, Insecure Deserialization
 ### Hiroshi Tokumaru / EG Secure Solutions Inc. President
-
+* XML外部実体参照(XXE)
+  - アップロードされたXMLを表示するパターン
+    - ファイルパスを指定したらそれが表示されてしまう
+    - URLを指定したらその内容が表示されてしまう
+  - 対策
+    - XMLの代わりにJSONを使う
+    - 信頼できないXMLを解析しないことが大事
+    - DTDを禁止する
+    - PHPならlibxml2 2.9以降を使うとデフォルトで対策されている
+    - RubyのREXMLは標準で対策済み
+    - テストしてみるのが確実
+* SSRF
+  - 直接アクセスできない内部のサーバーに何らかの方法でアクセスする
+* SSRF脆弱性とSSRF攻撃
+  - 一般的に、脆弱性と攻撃手法は1対1の関係になっている
+  - SSRFはそうではなく、脆弱性が多の関係になっている
+* WAFに付与していたAIMロールの権限が強かった例
+  - 本来不要なものまでついていた
+* DNSリバインディング
+  - DNS問い合わせの１回目と２回目で違う値を返す攻撃
+  - gethostbynameしてからcurlするときなど
+* 昨日、EC2でSSRF多層防御が実装されたアナウンスが出た
+* 安全でないデシリアライゼーション
+ - 対策
+   - JSON形式にする
+   - セッション変数を使う
+   - 改ざんチェックを入れる
 
 ## 17:20- Cloud Native Challenges in Private Cloud with K8s, Knative
 ### Yuki Nishiwaki / LINE Verda Platform Development Team Manager
