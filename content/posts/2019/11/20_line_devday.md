@@ -74,7 +74,39 @@ https://linedevday.linecorp.com/jp/2019/
 
 ## 12:00- gRPC service development in private Kubernetes cluster
 ### Keiichiro Ui / LINE Development Team H Server Side Engineer
-
+* LINE LIVEで利用
+* なぜk8sか
+  - トラフィックに対応するために手動でスケールする必要があった
+  - オープンなエコシステムに乗ることができる
+* どう使っているか
+  - 内部ではgRPCで通信
+  - 外部とはEnvoyで変換して通信
+* gRPC-Web
+  - https://github.com/grpc/grpc-web
+* 社内の既存サービスとの連携
+  - REST APIをgRPCで再定義
+    - JSONをgRPCに変換する
+* Istioを使わない理由
+  - いくつかのコンポーネントはSpringで間に合う
+  - パフォーマンスの問題
+    - 1.89msが13.7msとか
+* Databaseとの通信
+  - MySQL with ACL
+  - 事前にACLへの登録が必要
+    - オートスケールとの相性が悪い
+    - ACL Managerを作って回避
+      - ノード追加をフックしてACLに登録（構想段階）
+* Prometheus
+  - 社内の時系列DBにメトリクスを蓄積して使う
+  - メトリクス多い問題
+    - 既存のプロジェクトからベストプラクティスを模索
+* ログ収集
+  - EFK(Elasticsearch+Fluentd+Kibana)
+    - Fluentdを使った理由
+      - Knativeの要件
+      - K8sのaddonが参考になった
+  - IMON（LINE社内開発）
+    - 通知担当
 
 ## 13:40- Inside of Blog; Light and shadow of the service matured for 15 years and challenge chaos and legacy
 ### Takahiro Omori / LINE Development Team B
