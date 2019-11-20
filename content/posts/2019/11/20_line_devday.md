@@ -171,9 +171,45 @@ https://linedevday.linecorp.com/jp/2019/
   - リアルタイムフィードバック
     - 現在A/Bテスト中
 
-## 15:30- Inside OpenChat
-### Taekjoo Kim / LINE Plus OpenChat Dev Software Engineer
-
+## 15:30- Data Science drives improvement of LINE messenger
+### Taro Takaguchi / LINE Data Science Team2 Senior Data Scientist / Manager
+* Usrs First
+* Data Driven
+* Diverse Team
+* In-house Development
+* User Research
+  - 対面インタビュー、インター別途アンケートなど
+  - 数値モニタリング
+* Plan & Development
+  - 取得するログの定義など
+* Test & Feedback
+  - A/Bテスト
+  - 結果の分析
+* アプリの使われ方が多彩
+* 単独のKPIが設定できない
+* Core Value of LINE App
+  - Closing the Distance
+    - グループ機能
+* グループ作成のフローでABSCESSテスト
+  - 先にグループ名とアイコンを決める
+  - 先にメンバーを決める
+  - どちらも大差なかった
+  - 招待メンバーの選択IFに問題があった
+  - 最近話した相手を上位に表示
+    - グループ作成完了までに時間が優位に短縮
+  - グループ名設定とメンバー選択を同じ画面に
+    - ネガティブ
+* Data Science Tools
+  - OASIS
+    - 
+  - LIBRA
+    - データ抽出
+  - LIBRA REPORT
+    - テスト実施中のダッシュボード
+  - R Shiny
+    - ダッシュボードその２
+  - Conflr
+    - コンフルに共有するOSS
 
 ## 16:20- Introduction to XXE, SSRF, Insecure Deserialization
 ### Hiroshi Tokumaru / EG Secure Solutions Inc. President
