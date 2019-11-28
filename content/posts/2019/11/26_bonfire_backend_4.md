@@ -2,7 +2,7 @@
 title: "Bonfire Backend #4"
 date: "2019-11-26"
 tags: ["event", "yahoo"]
-sumbnail: "https://connpass-tokyo.s3.amazonaws.com/thumbs/60/1b/601b3df098ca1a61f2e0f9a8caa1ac74.png"
+thumbnail: "https://connpass-tokyo.s3.amazonaws.com/thumbs/60/1b/601b3df098ca1a61f2e0f9a8caa1ac74.png"
 description: "ヤフー主催の技術・デザインコミュニティ「Bonfire」の中で、サーバーサイド技術にフォーカスした情報共有を定期的に行う勉強会/交流会イベントです。"
 ---
 
