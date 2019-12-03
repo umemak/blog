@@ -99,15 +99,26 @@ https://k8sjp.connpass.com/event/155240/
   - KafkaもLinkedinが開発したOSS
   - Message queue, Message hub
 
-## 20:20-20:50	懇親タイム sponsored by Yahoo! JAPAN
+## 20:25-20:55	懇親タイム sponsored by Yahoo! JAPAN
 
 
-## 20:50-21:10	How Yelp Moved Security From the App to the Mesh with Envoy and OPA
+## 20:55-21:15	How Yelp Moved Security From the App to the Mesh with Envoy and OPA
 ### 鳥居隆史 (@ttorii0609), Dell EMC
+* Security
+  - K8s is NOT secure by default
+    - 基本フルオープンなので、ザル。
+    - 9個のプラクティス全部やれ
+  - K8sのセキュリティは今アツい
+* Open Policy Agent(OPA)
+* mTLS
+* OPAを使うにあたっての課題
+  - OPA Policy Managerを作った
+* セキュリティを考えるとサービスメッシュは必要
+* Scope Creep
+  - 要件がどんどん広がっていく様
 
-
-## 21:10-21:30	The Release Team Shadow Program - Mentoring For the Future - Guinevere Saenger, GitHub & Lachlan Evenson, Microsoft
+## 21:15-21:35	The Release Team Shadow Program - Mentoring For the Future - Guinevere Saenger, GitHub & Lachlan Evenson, Microsoft
 ### Yang Li (@idealhack), Kubernetes community
-
+* 
 
 
