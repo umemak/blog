@@ -18,22 +18,31 @@ https://k8sjp.connpass.com/event/155240/
 ## 19:00-19:05	Opening (5min)	-
 
 
-## 19:05-19:20	KubeCon + CloudNativeCon North America 2019 Overview	Ian Lewis (@IanMLewis), Google
+## 19:05-19:20	KubeCon + CloudNativeCon North America 2019 Overview
+### Ian Lewis (@IanMLewis), Google
 
 
-## 19:20-19:40	Your Path to Production Ready Kubernetes hosted by Weaveworks	土田 智大 (dullest), 楽天株式会社
+## 19:20-19:40	Your Path to Production Ready Kubernetes hosted by Weaveworks
+### 土田 智大 (dullest), 楽天株式会社
 
 
-## 19:40-20:00	Keynote: Seamless Customer Experience at Walmart Stores Powered by Kubernetes@Edge	Junichi Yoshise (@jyoshise), Hewlett Packard Enterprise
+## 19:40-20:00	Keynote: Seamless Customer Experience at Walmart Stores Powered by Kubernetes@Edge
+### Junichi Yoshise (@jyoshise), Hewlett Packard Enterprise
 
 
-## 20:00-20:20	Running Apache Samza on Kubernetes - Weiqing Yang, LinkedIn Corporation	吉村翔太 (@yosshi_), NTT Communications
+## 20:00-20:20	Running Apache Samza on Kubernetes - Weiqing Yang, LinkedIn Corporation
+### 吉村翔太 (@yosshi_), NTT Communications
 
 
-## 20:20-20:50	懇親タイム sponsored by Yahoo! JAPAN	-
+## 20:20-20:50	懇親タイム sponsored by Yahoo! JAPAN
 
 
-## 20:50-21:10	How Yelp Moved Security From the App to the Mesh with Envoy and OPA	鳥居隆史 (@ttorii0609), Dell EMC
+## 20:50-21:10	How Yelp Moved Security From the App to the Mesh with Envoy and OPA
+### 鳥居隆史 (@ttorii0609), Dell EMC
 
 
-## 21:10-21:30	The Release Team Shadow Program - Mentoring For the Future - Guinevere Saenger, GitHub & Lachlan Evenson, Microsoft	Yang Li (@idealhack), Kubernetes community
+## 21:10-21:30	The Release Team Shadow Program - Mentoring For the Future - Guinevere Saenger, GitHub & Lachlan Evenson, Microsoft
+### Yang Li (@idealhack), Kubernetes community
+
+
+
