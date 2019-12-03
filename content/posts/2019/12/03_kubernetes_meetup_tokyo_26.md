@@ -1,11 +1,13 @@
 ---
 title: "Kubernetes Meetup Tokyo #26"
 date: "2019-12-03"
-tags: ["event", "k8s"]
+tags: ["event", "k8s", "kubernetes"]
 thumbnail: https://connpass-tokyo.s3.amazonaws.com/thumbs/0b/e2/0be2c1c5921491c2c5db9ca69aff482c.png
 ---
 
 https://k8sjp.connpass.com/event/155240/
+
+{{<tweet 1201797492385275905>}}
 
 ## 18:15-19:15	受付開始	-
 
