@@ -5,6 +5,9 @@ tags: ["event", "k8s", "kubernetes"]
 thumbnail: https://connpass-tokyo.s3.amazonaws.com/thumbs/0b/e2/0be2c1c5921491c2c5db9ca69aff482c.png
 ---
 
+今回は 2019/11/18-21 で開催された KubeCon + CloudNativeCon North America 2019 の Recap 会だそうです。
+どちらも参加していないのでどんな話が聞けるのか楽しみです。
+
 https://k8sjp.connpass.com/event/155240/
 
 {{<tweet 1201797492385275905>}}
