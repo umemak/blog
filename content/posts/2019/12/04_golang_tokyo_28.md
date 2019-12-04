@@ -14,39 +14,71 @@ LT大会（１６本！）です。
 
 ## 19:30 ~ 19:40	オープニング・乾杯
 
-## 19:40 ~ 19:45	LT1 bieshanさん: [仮]wire.goをプロダクトで使ってみた
+## 19:40 ~ 19:45	LT1: [仮]wire.goをプロダクトで使ってみた
+### bieshanさん
 
-## 19:45 ~ 19:50	LT2 ゴリラさん: 作業効率アップ！便利なTUIツール5選
 
-## 19:50 ~ 19:55	LT3 kawasin73さん: Twitter を自由自在にフィルタリングする Twilter を作った
+## 19:45 ~ 19:50	LT2: 作業効率アップ！便利なTUIツール5選
+### ゴリラさん
 
-## 19:55 ~ 20:00	LT4 morito_ikedaさん: Write Kubernetes Custom Controller in Go
 
-## 20:00 ~ 20:05	LT5 tutuzさん: go toolを使ってインライン展開をのぞいてみる(仮)
+## 19:50 ~ 19:55	LT3: Twitter を自由自在にフィルタリングする Twilter を作った
+### kawasin73さん
 
-## 20:05 ~ 20:10	LT6 po3rinさん: Markdown内のコードだって美しくしたいんだ！！
 
-## 20:10 ~ 20:15	LT7 Go Sagawaさん: gRPC周りで困ったこととその解決方法
+## 19:55 ~ 20:00	LT4: Write Kubernetes Custom Controller in Go
+### morito_ikedaさん
 
-## 20:15 ~ 20:20	LT8 rkmathiさん: (仮)初めてGoで開発してみて思ったこと
+
+## 20:00 ~ 20:05	LT5: go toolを使ってインライン展開をのぞいてみる(仮)
+### tutuzさん
+
+
+## 20:05 ~ 20:10	LT6: Markdown内のコードだって美しくしたいんだ！！
+### po3rinさん
+
+
+## 20:10 ~ 20:15	LT7: gRPC周りで困ったこととその解決方法
+### Go Sagawaさん
+
+
+## 20:15 ~ 20:20	LT8: (仮)初めてGoで開発してみて思ったこと
+### rkmathiさん
+
 
 ## 20:20 ~ 20:30	休憩
 
-## 20:30 ~ 20:35	LT9 Shogo_Tomiokaさん: [仮]keepAliveのすゝめ
+## 20:30 ~ 20:35	LT9: [仮]keepAliveのすゝめ
+### Shogo_Tomiokaさん
 
-## 20:35 ~ 20:40	LT10 Shohei O.さん: マイクロサービスで共用するprivateなエラー&ロギングパッケージを作った
 
-## 20:40 ~ 20:45	LT11 dice_zuさん: gRPCのクライアントが絡むテスト
+## 20:35 ~ 20:40	LT10: マイクロサービスで共用するprivateなエラー&ロギングパッケージを作った
+### Shohei O.さん
 
-## 20:45 ~ 20:50	LT12 sonatardさん: Repositoryによる抽象化の理想と現実
 
-## 20:50 ~ 20:55	LT13 nwiizoさん: インフラエンジニアもGolangが書きたい
+## 20:40 ~ 20:45	LT11: gRPCのクライアントが絡むテスト
+### dice_zuさん
 
-## 20:55 ~ 21:00	LT14 keitaro_1020さん: 年末なのでgoを使ったプロダクトを初めてリリース・運用した1年を振り返ってみる
 
-## 21:00 ~ 21:05	LT15 Hidetake Iwataさん: Transform Go error handling using AST inspector
+## 20:45 ~ 20:50	LT12: Repositoryによる抽象化の理想と現実
+### sonatardさん
 
-## 21:05 ~ 21:10	LT16 shibu_jpさん: Go基礎力に効く標準ライブラリContext徹底理解。あなたはContextの挙動を説明できますか？
+
+## 20:50 ~ 20:55	LT13: インフラエンジニアもGolangが書きたい
+### nwiizoさん
+
+
+## 20:55 ~ 21:00	LT14: 年末なのでgoを使ったプロダクトを初めてリリース・運用した1年を振り返ってみる
+### keitaro_1020さん
+
+
+## 21:00 ~ 21:05	LT15: Transform Go error handling using AST inspector
+### Hidetake Iwataさん
+
+
+## 21:05 ~ 21:10	LT16: Go基礎力に効く標準ライブラリContext徹底理解。あなたはContextの挙動を説明できますか？
+### shibu_jpさん
+
 
 ## 21:10 ~ 21:35	懇親会
 
