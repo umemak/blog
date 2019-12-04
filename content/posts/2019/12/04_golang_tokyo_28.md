@@ -68,9 +68,11 @@ LT大会（１６本！）です。
 ### rkmathiさん
 * 言語使用や書き方はわかった、実際のアプリケーションはどう書くのか
 * Gopher道場
+* C++やRubyと比べて長短
 
 ## 20:30 ~ 20:35	LT9: [仮]keepAliveのすゝめ
 ### Shogo_Tomiokaさん
+* https://docs.google.com/presentation/d/10vwEqHnqL-woEmUYJ9Ei5jEouFiv02GgyqaMAVDo6pk/edit#slide=id.p1
 * http.TansPortで設定できる
   - デフォルト有効
 * tcnksm/go-httpstat
@@ -79,37 +81,57 @@ LT大会（１６本！）です。
 
 ## 20:16 ~ 20:26	休憩
 
-## 19:55 ~ 20:00	LT4: Write Kubernetes Custom Controller in Go
-### morito_ikedaさん
-
-
 ## 20:35 ~ 20:40	LT10: マイクロサービスで共用するprivateなエラー&ロギングパッケージを作った
 ### Shohei O.さん
-
+* https://speakerdeck.com/shoheshohe/maikurosabisudegong-yong-suruprivatenaera-and-rogingupatukeziwozuo-tutahua
+* ubarのzapでロギング
+  - JSON形式で出力
+* GOPRIVATE環境変数
 
 ## 20:40 ~ 20:45	LT11: gRPCのクライアントが絡むテスト
 ### dice_zuさん
-
+* https://daisuzu.github.io/golang-tokyo-28/#1
+* DI
+  - 3rbパーティ性のライブラリが辛い
+* ダミーサーバー
+  - コード量が増えて辛い
+* リクエストレスポンスを記録再生する
+  - cloud.google.com/go/rpcreplay
+  - gRPCクライアントのシグネチャに縛りあり
 
 ## 20:45 ~ 20:50	LT12: Repositoryによる抽象化の理想と現実
 ### sonatardさん
-
+* https://speakerdeck.com/sonatard/ideal-and-reality-of-abstraction-by-repository
+* 抽象化するためにRepositoryを使う
+* 具象が変更したときに対応できる抽象化か？
 
 ## 20:50 ~ 20:55	LT13: インフラエンジニアもGolangが書きたい
 ### nwiizoさん
-
+* Python（Fabric）のSSHクライアントをGoにした話
+* 運用が複雑化するとスクリプトも肥大化していく
 
 ## 20:55 ~ 21:00	LT14: 年末なのでgoを使ったプロダクトを初めてリリース・運用した1年を振り返ってみる
 ### keitaro_1020さん
-
+* https://speakerdeck.com/keitaro1020/nian-mo-nafalsedegowoshi-tutaapuriworirisusita1nian-wozhen-rifan-tutemiru
+* スター数でライブラリ選定したら後で辛いことがあった
+* 開発者のGo経験不足
+  - Go有識者にソースコードレビューや勉強会を開催してもらった
 
 ## 21:00 ~ 21:05	LT15: Transform Go error handling using AST inspector
 ### Hidetake Iwataさん
-
+* https://speakerdeck.com/int128/rewrite-go-error-handling-using-ast-transformation
+* ソースコードとASTの相互変換ができる
+* ASTで呼び出す関数を置き換えてしまう
 
 ## 21:05 ~ 21:10	LT16: Go基礎力に効く標準ライブラリContext徹底理解。あなたはContextの挙動を説明できますか？
 ### shibu_jpさん
+* https://docs.google.com/presentation/d/1xglEURYptsTg5KXh4bxWVKKOPba7N5DwPvazdi6Q1HY/edit#slide=id.p
+* Contextクイズ
 
+## 19:55 ~ 20:00	LT4: Write Kubernetes Custom Controller in Go
+### morito_ikedaさん
+* kubernetes-sigs/controller-runtime
+* 割とかんたんにカスタムコントローラーが作成できる
 
 ## 21:10 ~ 21:35	懇親会
 
