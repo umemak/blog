@@ -17,6 +17,7 @@ https://ochacafe.connpass.com/event/152768/
 ## 19：00　オープニング
 
 ## 19：10　セッション開始
+* https://speakerdeck.com/mmarukaw/oracleclouddekao-erugao-ke-yong-xing-akitekutiya
 * データセンター電源障害の話から
 * OCIはまだ日本に来てから日が浅いこともあり、大規模障害はまだない。
   - 海外ではあった
