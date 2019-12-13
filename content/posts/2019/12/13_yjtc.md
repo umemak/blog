@@ -14,6 +14,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
 
 ## 基調講演 13:00 - 13:45
 ### 藤門 千明 取締役 常務執行役員、CTO（チーフテクノロジーオフィサー）
+* https://www.slideshare.net/techblogyahoo/yjtc19-in-shibuya-yjtc
 * 「未来を、共に創ろう」
   - ユーザーアクションの最大化
   - オフラインにも進出（PayPay）
@@ -157,7 +158,6 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
     - エンティティバリデーション、マッチング
     - ルールベース、グラフベースのマッチング手法
   - ユーザーの多様なニーズに答える
-    - <iframe src="//www.slideshare.net/slideshow/embed_code/key/br0536hZ3zlTsK?startSlide=43" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
     - {{<figure src="https://image.slidesharecdn.com/a-3-191212031634/95/yjtc19-in-shibuya-a3-yjtc-43-638.jpg?cb=1576218600">}}
     - すでにKBにあるデータをWeb上のデータで補完する
 * まとめ
@@ -165,7 +165,31 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
 
 ## クロスユースプラットフォーム ～ 秒間10万リクエスト・レスポンスタイム100ms以下を実現するシステムについて ～ 16:15-16:45
 ### 大島 圭貴 コマースカンパニー 事業推進室 コマースマーケティング本部
-* 
+https://www.slideshare.net/techblogyahoo/10100ms-yjtc19-in-shibuya-a4-yjtc-204740653
+* クロスユースプラットフォームとは
+  - {{<tweet 1205386821930082304>}}
+  - サービスをまたいで表示されるコンテンツ
+  - 10万rps
+  - PCFでGoでリクエストを受けている
+* ２年前は3000rpsの要件だった
+* PCFはクラスタ及びインスタンス数をスケーリング
+* Cassandraはノード数を増やして対応
+* {{<tweet 1205388303299563520>}}
+* ２年前はレイテンシー要件は200msだった
+* 複数のデータを個別に取得していて、ボトルネックになっていた
+  - ルールとコンテンツデータを結合して１回で取得するようにした
+* 100ms要件への対応
+  - データをキャッシュして対応
+  - キャッシュ方法にも工夫が必要
+    - 期限切れへの対応
+    - L1,L2の２段キャッシュで対応
+      - L1: 現在有効なデータのみ保存
+      - L2: 未来のデータも保存
+* ルールの複雑化・肥大化による取得時間の悪化
+  - ユーザーのクラスタリングで対処
+* Cassandraデータ偏り
+  - ページごとに設定していたPartition Keyを変更
+  - ランダムIDを付加して複合キーにする
 
 ## 広告サイエンスにおける統計的機械学習技術のご紹介 17:00-17:30
 ### 鈴村 真矢 テクノロジーグループ サイエンス統括本部 サイエンス2本部
