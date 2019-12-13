@@ -158,7 +158,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
     - ルールベース、グラフベースのマッチング手法
   - ユーザーの多様なニーズに答える
     - <iframe src="//www.slideshare.net/slideshow/embed_code/key/br0536hZ3zlTsK?startSlide=43" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-    - {{<figure https://image.slidesharecdn.com/a-3-191212031634/95/yjtc19-in-shibuya-a3-yjtc-43-638.jpg?cb=1576218600>}}
+    - {{<figure src="https://image.slidesharecdn.com/a-3-191212031634/95/yjtc19-in-shibuya-a3-yjtc-43-638.jpg?cb=1576218600">}}
     - すでにKBにあるデータをWeb上のデータで補完する
 * まとめ
   - {{<tweet 1205380614137888768>}}
