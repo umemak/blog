@@ -2,6 +2,7 @@
 title: "Yahoo! JAPAN Tech Conference 2019 in Shibuya"
 date: "2019-12-13"
 tags: ["event", "yahoo"]
+thumbnail: "https://s.yimg.jp/images/techconf/2019_shibuya/images/top-img.png"
 ---
 
 https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cpt_m=web&amp;cpt_s=passmarket
@@ -36,6 +37,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
   - 自分ごと、オープン化、チャレンジ
   - 仮想化、CIのチャレンジが成功したのは、潜在的にエンジニアがいたから
 * テクノロジーのモダナイゼーション
+  - {{<tweet 1205343504395718657>}}
   - 方針は作るが、やり方はみんなで考える
   - 一人で全部やると、スピードが出せない
   - ZLAB設立
@@ -45,6 +47,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
   - 負債が増える習慣を変える
   - なぜ取り組んでいるのか繰り返し伝え続ける
   - エンジニア・デザイナー以外のメンバーにも伝える
+  - {{<tweet 1205345044082749441>}}
   - ルールをシンプルにし、ドキュメントを残す文化にする
   - 117あったガイドラインを精査・作成して30までに集約
   - 負債が増えにくい開発手法を選択する
@@ -74,6 +77,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
   - 稼働サービスの多様化
     - サポート領域の拡大
 * 直面した課題
+  - {{<tweet 1205353733237829632>}}
   - K8sの知見
     - 有効的な使い方がわからない
     - 社内セミナーを定期的に開催
