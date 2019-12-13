@@ -157,14 +157,14 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
     - エンティティバリデーション、マッチング
     - ルールベース、グラフベースのマッチング手法
   - ユーザーの多様なニーズに答える
-    - <iframe src="//www.slideshare.net/slideshow/embed_code/key/br0536hZ3zlTsK?startSlide=43" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/techblogyahoo/yjtc19-in-shibuya-a3-yjtc-204745833" title="メディアサービスの基盤としてのナレッジベースの活用と生成方法について / YJTC19 in Shibuya A-3 #yjtc" target="_blank">メディアサービスの基盤としてのナレッジベースの活用と生成方法について / YJTC19 in Shibuya A-3 #yjtc</a> </strong> from <strong><a href="//www.slideshare.net/techblogyahoo" target="_blank">Yahoo!デベロッパーネットワーク</a></strong> </div>
-    - すでにKBにあるデータをWeb錠のデータで補完する
+    - <iframe src="//www.slideshare.net/slideshow/embed_code/key/br0536hZ3zlTsK?startSlide=43" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+    - すでにKBにあるデータをWeb上のデータで補完する
 * まとめ
   - {{<tweet 1205380614137888768>}}
 
 ## クロスユースプラットフォーム ～ 秒間10万リクエスト・レスポンスタイム100ms以下を実現するシステムについて ～ 16:15-16:45
 ### 大島 圭貴 コマースカンパニー 事業推進室 コマースマーケティング本部
-
+* 
 
 ## 広告サイエンスにおける統計的機械学習技術のご紹介 17:00-17:30
 ### 鈴村 真矢 テクノロジーグループ サイエンス統括本部 サイエンス2本部
