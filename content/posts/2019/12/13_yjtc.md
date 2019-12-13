@@ -222,5 +222,23 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
 
 ## CtoCフリマアプリの作り方 〜6ヶ月間のPayPayフリマ開発を支えた設計〜 17:45-18:15
 ### 松田 悠吾 ／ 三宅 晃暉　コマースカンパニー ヤフオク!統括本部 フリマ推進本部
-
-
+* https://www.slideshare.net/techblogyahoo/ctoc-6paypay-yjtc19-in-shibuya-a6-yjtc-204740829
+* バックエンドの機能はヤフオクの流用ではなく、ほぼスクラッチで開発した
+  - {{<tweet 1205409757810397185>}}
+* Kotlin+SpringFW
+* コンポーネントを独立させることで、役割が明確になる
+* ヤフオクとの連携
+  - クロスリテイリング
+    - 検索システムを共通にして実現
+    - BFFがヤフオクのAPIを叩いたりもする
+* GraphQL
+  - 多種クライアントに対応するため
+  - 仕様変更・追加に強い
+* Android Jetpack
+  - https://developer.android.com/jetpack?hl=ja
+  - 品質、コード量に効果あり
+* マルチモジュール
+  - マージコスト削減、依存関係の明確化
+* DIフレームワーク
+  - Daggerを使用
+  - https://dagger.dev/
