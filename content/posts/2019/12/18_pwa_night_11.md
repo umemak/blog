@@ -81,7 +81,8 @@ https://pwanight.connpass.com/event/156622/
 
 ## LT-2
 ### mercyさん（5分）
-* 
+* https://www.slideshare.net/bitpart/pwa-night-vol11-20191218
+* 「漢はコピペ」
 
 ## 21:05	懇親会
 
