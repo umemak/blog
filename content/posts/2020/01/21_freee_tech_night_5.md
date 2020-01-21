@@ -11,7 +11,8 @@ https://freee-tech-night.connpass.com/event/157012/
 ### 北川修平 (shuheiktgw)
 - 会計freee
   - 
-- FusionPassenger
+- Phusion Passenger
+  - https://www.phusionpassenger.com/
 - Capistrano を使ったデプロイ
   - 問題点
     - 直列デプロイ
@@ -25,7 +26,7 @@ https://freee-tech-night.connpass.com/event/157012/
       - これを選択
       - デプロイ・ロールバックの時間が短くて済む
 - アプリケーションサーバーの入れ替え
-  - FusionPassengerをunicornに
+  - Phusion PassengerをUnicornにした
   - 安全に入れ替えるには
     - 影響範囲が大きい
     - プランBの確保
@@ -94,11 +95,35 @@ https://freee-tech-night.connpass.com/event/157012/
     - ビジネスサイドとのコミュニケーション必要
   - slaveへ逃がす
     - レプリケーションのラグに注意
+    - 社内ライブラリを使用（OSSではない）
   - N+1の解消
     - bullet
   - Elasticsearch化
 
 ## エンジニアがドメインロジックに集中するためのコアパッケージ整備
 ### 志賀誠 (@Maco_Tasu)
-
+- コアパッケージ：各サービスで共通して使われるもの
+  - ロガーやエラーとか
+- マイクロサービス化でgoを使うことが多い
+- マイクロサービス基盤にK8sを採用
+- マイクロサービス化で各チームでそれぞれ作り込んでいて横連携ができていなかった
+  - サービス基盤
+- 全マイクロサービスのコードを読んで機能を洗い出す
+  - goらしい作りになっているか
+- デファクトとしてのパッケージ
+  - 強制するものではない
+- 拡張性
+  - ダッグタイピング
+  - go-cloud（CDK）を参考にした
+- かんたんに組み込める
+  - 依存関係
+  - wire（DIツール）を使う
+    - 依存の依存も解決してくれるのが良い
+    - https://developers.freee.co.jp/entry/service-infra-and-wire
+- 改善点
+  - 早めに提供して改善ループをまわす
+  - 使うことによる利点を伝える
+- claat
+  - チュートリアル作成ツール
+  - https://github.com/googlecodelabs/tools/tree/master/claat
 
