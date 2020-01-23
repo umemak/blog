@@ -8,7 +8,7 @@ thumbnail: http://docomo-rd-openhouse.jp/2020/img/banner.png
 http://docomo-rd-openhouse.jp/2020/
 
 まさかビッグサイトが２箇所あるとは知らず、東京ビッグサイト駅で降りてどこで開催されているかわからず、そしてここじゃないということに気づいた。
-{{<figure src="IMG_20200123_100822.jpg">}}
+{{<figure src="../IMG_20200123_100822.jpg">}}
 シャトルバスが来る気配もなく、雨の中１キロ以上歩いて移動。
 そんなに離れているなら別の名前にしてほしかった。
 
