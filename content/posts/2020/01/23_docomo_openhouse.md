@@ -172,10 +172,14 @@ http://docomo-rd-openhouse.jp/2020/
 * [A-18] テキスト解析技術による定型業務効率化・自動化
   {{<figure src="../IMG_20200123_121239.jpg">}}
   アンケートの個人状況マスク作業という業務があることに驚いた
+* [A-08] スマートフォンログからのストレス・集中力推定
+  {{<figure src="../IMG_20200123_121548_MP.jpg">}}
+* [A-11] リアルタイム翻訳
+  {{<figure src="../IMG_20200123_121519.jpg">}}
 * [A-12] Mirai Transrator
-  {{<figure src="IMG_20200123_121505.jpg">}}
+  {{<figure src="../IMG_20200123_121505.jpg">}}
   TOEIC 960点レベルらしいです
 * 5G基地局
-  {{<figure src="IMG_20200123_151236_MP.jpg">}}
+  {{<figure src="../IMG_20200123_151236_MP.jpg">}}
 * ポインコ兄弟もいました
-  {{<figure src="IMG_20200123_122126.jpg">}}
+  {{<figure src="../IMG_20200123_122126.jpg">}}
