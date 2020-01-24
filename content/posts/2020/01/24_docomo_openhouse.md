@@ -168,6 +168,8 @@ http://docomo-rd-openhouse.jp/2020/
 
 ## [パートナー講演] 5GEvolution & 6Gパネルセッション：「5Gの発展とその先の未来」
 ### (株)NTTドコモ 執行役員　5Gイノベーション推進室長 中村 武宏 Ericsson,Nokia,Nvidia
+* 結構ゆっくり喋ってくれたので、比較的聞き取りやすい英語だったけれど、知らない単語が多くて理解できないところが多かった。
+* 以下はスライドからのメモ。書き写すのが間に合わなくて足りないところ多数。
 * Dr.Erik Dahlman
   - 6 pillars for 6G
   - Journey towards 6G
@@ -204,8 +206,3 @@ http://docomo-rd-openhouse.jp/2020/
   - Major technologies for 5G evolution and 6G
   - Role of AI for 5G evolution and 6G
   - Time schedule for 6G
-  
-
-
-
-
