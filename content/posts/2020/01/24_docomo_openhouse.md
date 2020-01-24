@@ -105,31 +105,31 @@ http://docomo-rd-openhouse.jp/2020/
 * 今回の大会を振り返って
   - 選手たちのハードワーク
   - 明確な目標のイメージ
-  - 年間240日一緒に生活していた
+  - 年間240日一緒に生活
   - 一緒に過ごした時間が長い
-  - それぞれの役割が適材適所
-    - できることを同じベクトルを向いて全力で
+  - それぞれの役割が適材適所に与えられた
+    - 個々ができることを同じベクトルを向いて全力で取り組む
 * アイルランド戦の前半最後スクラムで押し込んだ場面
   - 軸になるものをしっかり作った
   - 体格だけではなく、技術を高めた
-  - 足の向きとかまでこだわる
+  - 足の向きなど細かいところまでこだわる
   - 精神的に優位に立てた
   - 精神論だけではない
     - データも活用
     - レフェリーの癖も分析して対策する
-      - トップのレフェィーほど基準がブレない
+      - トップのレフェリーほど基準がブレない
 * 15人の個性をまとめ上げる
   - ジャッジを下す人がどこに向かっているのかを明確に示す
   - 各自がどこにいてどこに向かっているのかを意識する
   - しっかりした方向性、目標
   - 目標の道中での評価
-    - 軌道修正
+    - 適切に軌道修正も行う
   - 権限を預ける
     - 個々人がそれぞれ考えて動く
 * 30年くらい前の大学ラグビーとの比較
   - ラグビーは進化している
     - ルールも変わる
-      - トライは0点だった
+      - 昔はトライは0点だった
   - 前に送るにはキックが手っ取り早いが、ボールが相手に渡ってしまう
     - キックの技術の向上
   - ある程度行き着いた先に何があるかを考える
@@ -163,13 +163,48 @@ http://docomo-rd-openhouse.jp/2020/
   - チーム（組織）に対して不利益なことをしてはいけない
 * 2023フランスWC
   - 自国アドバンテージのない中でどう戦うか
-  - ランキング8以内に入れるか
-
+  - ランキング8以内に入れるかが重要
+    - 予選のグループ分けに影響する
 
 ## [パートナー講演] 5GEvolution & 6Gパネルセッション：「5Gの発展とその先の未来」
-### (株)NTTドコモ 執行役員　5Gイノベーション推進室長 中村 武宏 Ericsson,Nokia 他
-* 
-
+### (株)NTTドコモ 執行役員　5Gイノベーション推進室長 中村 武宏 Ericsson,Nokia,Nvidia
+* Dr.Erik Dahlman
+  - 6 pillars for 6G
+  - Journey towards 6G
+    - Connectivity everywhere
+    - Joint communication and sensig
+    - Zero-cost, zero-energy devices
+    - 
+  - Some key technology components
+    - Further spectrum extension
+      - Entering the THz range
+    - AI
+    - New ways for connectivity
+      - Evolved IAB, D2D, non-terrestrial components, ...
+* Dr.Amitava Ghosh
+  - 6G
+    - RF Sensing 100 Gbits/sec @ short range, Gboos @ high speed
+    - Industrial IoT optimezed
+  - Six questions
+    - most important net technologies
+    - primary use cases
+    - most important KPIs
+    - serve limitations of 5G
+    - flexivility and scalabilyty
+    - backwards compatible
+* Mr.Masataka Osaki
+  - 3 REVOLUTIONS SHAPPENNING
+    - IoT
+    - 5G
+    - AI
+* Questions
+  - Typical use cases in 2020s and 2030s, respectively?
+  - Definition of 6G
+  - Key requirements for 6GG
+  - Major technologies for 5G evolution and 6G
+  - Role of AI for 5G evolution and 6G
+  - Time schedule for 6G
+  
 
 
 
