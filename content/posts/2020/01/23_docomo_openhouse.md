@@ -209,6 +209,11 @@ http://docomo-rd-openhouse.jp/2020/
   {{<figure src="../IMG_20200123_121505.jpg">}}
   TOEIC 960点レベルらしいです
 
+* [E-46] クラウドオーケストレーション
+  - OSSで公開していると書いてあったので、URLとか聞こうと思ったらまさかのDrupalのモジュールだった。
+  - https://www.drupal.org/docs/8/modules/cloud
+  - DrupalといえばCMSというイメージだったが、いろいろできるプラットフォーム化してきているらしい。
+
 * 5G基地局
   {{<figure src="../IMG_20200123_151236_MP.jpg">}}
 
