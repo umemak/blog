@@ -218,3 +218,21 @@ http://docomo-rd-openhouse.jp/2020/
 
 * ポインコ兄弟もいました
   {{<figure src="../IMG_20200123_122126.jpg">}}
+
+
+## 関連ニュース
+* 2030年代は「6G」--NTTドコモが技術コンセプトを公開
+  - https://japan.zdnet.com/article/35148333/
+* ドコモ、「6G」に向けた技術コンセプトを公開--2030年のサービス化目指す
+  - https://japan.cnet.com/article/35148330/
+* ドコモが届ける新体感VRライブや未来の暮らし--「DOCOMO Open House 2020」が開催
+  - https://japan.cnet.com/article/35148366/
+* 5Gでどんなビジネスが生まれる？　「DOCOMO Open House 2020」で見られるソリューション
+  - https://www.itmedia.co.jp/mobile/articles/2001/23/news087.html
+* 「変なホテル」の仕掛け人、ハウステンボス富田直美CTOが5Gに期待すること
+  - https://www.itmedia.co.jp/mobile/articles/2001/24/news102.html
+* 口の動きを共有、長距離ワイヤレス充電、クラウド型乗車券、タッチレス決済――ドコモが見せる未来
+  - https://www.itmedia.co.jp/mobile/articles/2001/22/news131.html
+* 労働力不足対策やテレワークなど　ドコモが提案する、5G時代の新しい働き方
+  - https://www.itmedia.co.jp/mobile/articles/2001/23/news151.html
+
