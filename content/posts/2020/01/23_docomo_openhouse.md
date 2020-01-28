@@ -1,7 +1,7 @@
 ---
-title: "DOCOMO Open House 2020"
+title: "DOCOMO Open House 2020 day1"
 date: "2020-01-23"
-tags: ["event", "5g"]
+tags: ["event", "5g", "docomo"]
 thumbnail: http://docomo-rd-openhouse.jp/2020/img/banner.png
 ---
 
