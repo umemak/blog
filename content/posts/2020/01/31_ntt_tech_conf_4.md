@@ -112,6 +112,7 @@ NTTグループのエンジニア有志が主催するカンファレンスイ�
 
 ## React HooksとGraphQLで社内レガシーサービス巻き取ってみたらものすごくはかどった話
 ### 奥井 寛樹
+* https://speakerdeck.com/hrk091/react-hookstographqldeshe-nei-regasisabisuwojuan-kiqu-tutemitaramofalsesugokuhakadotutahua-153983bf-84bd-4be7-83c4-c8fa826db79e
 * フロントエンド＋BFFの話
 * うまく行った理由
   - フレームワークによる抽象化がうまく、ユースケースにフォーカスした開発ができた
@@ -213,6 +214,7 @@ NTTグループのエンジニア有志が主催するカンファレンスイ�
 
 ## Cisco ルータのログを Stackdriver に送って可視化してみた
 ### 田島 照久
+* https://speakerdeck.com/tjmtrhs/cisco-rutafalseroguwo-stackdriver-nisong-tuteke-shi-hua-sitemita
 * ログ基盤を作りたいわけではなく、可視化したログを見たいだけ
 * stackdriverは外部のsyslogを直接受信できない
   - ルーターで処理すれば良い
