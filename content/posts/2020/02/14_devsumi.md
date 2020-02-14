@@ -145,7 +145,15 @@ https://event.shoeisha.jp/devsumi/20200213
 
 ## 14-D-5 マルチクラウドに向けてNGINX活用促進する為に知っておいてほしいこと
 ### 鈴木 孝彰[NGINX (Part of F5)]
-
+* Nginxの利点
+  - 同時接続処理
+  - メモリ使用量
+  - 目安はnginxのサイトに公開されている
+* オートスケールに対応するためのOSSがある
+  - https://github.com/nginxinc/nginx-asg-sync
+* K8sのingressコントローラーとして使う
+* External Nameを指定してマルチクラウド構成を構築できる
+* nginxでJWT認証もできる
 
 ## 14-G-2 【GCP Kubernetes ハンズオン】 GCP をさわりまくろう！スペシャリストに聞きまくろう！〜 QWIKLABS 大会 Kubernetes 編 〜
 ### Google Cloud チーム[グーグル・クラウド・ジャパン]
