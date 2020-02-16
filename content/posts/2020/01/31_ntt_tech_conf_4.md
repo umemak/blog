@@ -77,6 +77,7 @@ NTTグループのエンジニア有志が主催するカンファレンスイ�
 
 ## 1870件以上のカーネルの不具合修正に貢献した再現用プログラムを自動生成する試験自動化技術
 ### 藤井 秀行
+* https://www.slideshare.net/nttdata-tech/syzkaller-linux-kerneltestingnttdata
 * GoogleのDmitry Vykovが開発したsyzkaller（シスコーラー）
   - Go言語
   - Googleとしては非公式
@@ -183,6 +184,7 @@ NTTグループのエンジニア有志が主催するカンファレンスイ�
 
 ## アジャイル開発手法における監視システム開発効率化の取り組み
 ### 石田 瑛一
+* https://drive.google.com/file/d/1imNXoqfQAbBGUDH1Y45fn1sVb1rgHjW6/view
 * デプロイ作業の効率化が必要
   - 手順書でやってた
 * Ansible、Gitlab CI/CD
@@ -205,7 +207,8 @@ NTTグループのエンジニア有志が主催するカンファレンスイ�
 
 ## Amazon EKS上でのVNF開発奮闘記
 ### 篠原 健太
-* ネットワークの仮想化：NFV
+* https://speakerdeck.com/sinohara/amazon-eksshang-defalsevnfkai-fa-fen-dou-ji
+* ネットワークの仮想化
 * 閉域NW構築
   - AWSを閉域として構築できるか？
   - サブネットを分けて構築する
