@@ -71,7 +71,7 @@ Inoreaderに移行する理由は、NewsifyのAndroidアプリが存在しない
 * [AWS Messaging &amp; Targeting Blog](https://aws.amazon.com/blogs/messaging-and-targeting/feed/)
 * [AWS Mobile Blog](https://aws.amazon.com/blogs/mobile/feed/)
 * [Networking &amp; Content Delivery](https://aws.amazon.com/blogs/networking-and-content-delivery/feed/)
-* [AWS Open Source Blog](https://aws.amazon.com/blogs/opensource/feed/9
+* [AWS Open Source Blog](https://aws.amazon.com/blogs/opensource/feed/9)
 * [AWS Government, Education, &amp; Nonprofits Blog](https://aws.amazon.com/blogs/publicsector/feed/)
 * [AWS for SAP](https://aws.amazon.com/blogs/awsforsap/feed/)
 * [AWS Security Blog](https://aws.amazon.com/blogs/security/feed/)
