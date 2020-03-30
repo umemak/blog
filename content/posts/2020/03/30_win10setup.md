@@ -12,6 +12,8 @@ OSはWindows10 Homeで、これも初めて使う。
 以下やったこと
 
 * Chromeインストール
+  - McAfeeプラグイン削除
+  - React Developer Toolsインストール
 * トラックパッドの設定変更
   - スクロール方向を逆に
   - タップでクリックをオフに
@@ -45,3 +47,6 @@ OSはWindows10 Homeで、これも初めて使う。
 * `NODE_OPTIONS='--inspect'`をつけると、`Starting inspector on 127.0.0.1:9229 failed: address already in use`が出続ける
   - 最新のNext.jsの不具合らしい
   - https://github.com/zeit/next.js/issues/11030
+  - `yarn upgrade next@9.2.0`でダウングレードしてみる
+    - 表示頻度は下がったが、まだ出る
+  
