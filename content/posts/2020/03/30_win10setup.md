@@ -29,8 +29,19 @@ OSはWindows10 Homeで、これも初めて使う。
 * VSCode設定変更
   - Telemetry系をオフに
   - デフォルトのターミナルをgitbashに
+  - `workbench.editor.enablePreview`をfalseに
+  - Auto Saveを有効に
 * node.jsインストール
   - `Tools for Native Modules`のページのチェックをオンに
 * yarnインストール
   - PowerShellを管理者権限で起動して、`choco install yarn`
   - chocoコマンドは、node.jsインストール時に入る
+* VSCodeプラグイン
+  - Debugger for Chrome
+* cross-envインストール
+  - https://github.com/kentcdodds/cross-env#readme
+  - package.jsonで環境変数を設定するときに、OSの違いを吸収してくれる
+  - https://qiita.com/riversun/items/d45b26f4a7aad6e51b69
+* `NODE_OPTIONS='--inspect'`をつけると、`Starting inspector on 127.0.0.1:9229 failed: address already in use`が出続ける
+  - 最新のNext.jsの不具合らしい
+  - https://github.com/zeit/next.js/issues/11030
