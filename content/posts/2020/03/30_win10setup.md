@@ -31,4 +31,6 @@ OSはWindows10 Homeで、これも初めて使う。
   - デフォルトのターミナルをgitbashに
 * node.jsインストール
   - `Tools for Native Modules`のページのチェックをオンに
-  
+* yarnインストール
+  - PowerShellを管理者権限で起動して、`choco install yarn`
+  - chocoコマンドは、node.jsインストール時に入る
