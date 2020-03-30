@@ -49,4 +49,6 @@ OSはWindows10 Homeで、これも初めて使う。
   - https://github.com/zeit/next.js/issues/11030
   - `yarn upgrade next@9.2.0`でダウングレードしてみる
     - 表示頻度は下がったが、まだ出る
-  
+* spacedeskのインストール
+  - モバイルディスプレイ代わりにCT100PA（Chromebookタブレット）を使ってみる
+  - HTML5版だとタッチ反応しなかったけれど、Andriodアプリ版だとタッチ反応する
