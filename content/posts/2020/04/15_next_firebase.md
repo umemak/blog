@@ -27,3 +27,10 @@ draft: true
   - https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting-and-typescript
   - ここでこのサンプルをベースに作り直していたら違った結果になったかもしれない
 * 
+
+
+## 課題
+* Functionsを使わないデプロイもあるのでは？
+  - サンプルがそのようにしていたので、そのまま使っていたが、`next export`をHostingに上げたらFunction要らないかも？
+* React hooksの理解が足りない
+  - エラーの回避方法とか理解に苦しむ
