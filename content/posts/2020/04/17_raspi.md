@@ -17,3 +17,5 @@ https://www.raspberrypi.org/downloads/ の`Raspberry Pi Imager for Ubuntu`を入
 
 これでChromebookからSSH接続とVNC接続ができるようになった。
 
+後日、開発者モードにして試してみたところ、ターミナルで`/dev/mmcblk0`が見えるようになって、`dd`コマンドで書き込むことができた。
+ImagerはLinuxアプリのせいか、見えないまま。
