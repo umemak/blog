@@ -19,3 +19,6 @@ https://www.raspberrypi.org/downloads/ の`Raspberry Pi Imager for Ubuntu`を入
 
 後日、開発者モードにして試してみたところ、ターミナルで`/dev/mmcblk0`が見えるようになって、`dd`コマンドで書き込むことができた。
 ImagerはLinuxアプリのせいか、見えないまま。
+
+更に・・公式手順が示されていた（リカバリーツールを使って書き込む）
+https://www.raspberrypi.org/documentation/installation/installing-images/chromeos.md
