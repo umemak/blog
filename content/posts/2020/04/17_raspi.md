@@ -1,7 +1,7 @@
 ---
 title: "ラズパイ4導入"
 date: "2020-04-17"
-tags: ["rasberry pi"]
+tags: ["raspberry-pi"]
 ---
 
 以前から興味があったラズパイについに手を出しました。
