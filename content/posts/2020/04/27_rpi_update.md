@@ -42,3 +42,9 @@ $ uname -a
 Linux raspberrypi 4.19.115-v7l+ #1305 SMP Fri Apr 17 11:59:28 BST 2020 armv7l GNU/Linux
 ```
 `v7l`っての使ってくれればいいと思うんだけど。
+
+結局、`/etc/ld.so.preload`を編集して該当行（それしかなかったけど）をコメントアウトしたらエラーは解消した。
+```
+#/usr/lib/arm-linux-gnueabihf/libarmmem-${PLATFORM}.so
+```
+コメントアウトの代わりに、存在するファイル名に書き換えてみたけれど、同様のエラーでだめだった。
