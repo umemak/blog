@@ -8,6 +8,7 @@ https://devblogs.microsoft.com/visualstudio/introducing-visual-studio-codespaces
 
 ということで、先日作成したのを見に行ったら、
 
+{{< figure src="../vscode_error.png" >}}
 ![](./vscode_error.png)
 
 Chrome OS未対応・・・！
