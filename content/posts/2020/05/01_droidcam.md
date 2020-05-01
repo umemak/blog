@@ -10,7 +10,9 @@ Android端末側にはアプリをインストールしておく。
 
 ラズパイ側。公式ページにはLinux用のインストール方法が用意されているが、
 http://www.dev47apps.com/droidcam/linuxx/
+
 > Note: 32-bit binaries are no longer provided, you’ll need to compile the client from source.
+
 この条件に該当するのでソースからインストールする。
 
 ```
@@ -33,4 +35,4 @@ sudo ./install
 lsmod | grep v4l2loopback_dc
 ./droidcam-cli {Android端末のIPアドレス} {Android端末のdroidcamポート}
 ```
-この状態で、VLCでキャプチャデバイスを開く→`/dev/video0`選択でAndroidのカメラ映像が表示される。
+この状態で、VLCでキャプチャデバイスを開く→ `/dev/video0` 選択でAndroidのカメラ映像が表示される。
