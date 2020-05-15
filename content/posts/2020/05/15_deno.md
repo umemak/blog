@@ -26,4 +26,7 @@ Download https://deno.land/std/examples/welcome.ts
 Warning Implicitly using master branch https://deno.land/std/examples/welcome.ts
 Compile https://deno.land/std/examples/welcome.ts
 Welcome to Deno 🦕
+$ deno run https://deno.land/std/examples/welcome.ts
+Welcome to Deno 🦕
 ```
+初回実行はダウンロードとコンパイルが走っているが、２回目は即実行されるので速い。
