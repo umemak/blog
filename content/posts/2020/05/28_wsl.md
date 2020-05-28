@@ -6,6 +6,7 @@ tags: ["surface"]
 
 [Windows 10大型アップデート「May 2020 Update」がダウンロード開始](https://pc.watch.impress.co.jp/docs/news/1255256.html) という記事を見て、さっそく更新して、WSLとUbuntuをインストールしてみた。
 
+{{< figure src="../wsl.png" >}}
 ![](./wsl.png)
 
 とくに問題なく完了。
@@ -22,25 +23,26 @@ WSL2を有効にするには、「Linux用Windowsサブシステム」だけで�
 カーネルコンポーネントの更新も。
 https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel からインストーラーをダウンロードして実行。
 
+{{< figure src="../wslupdate.png" >}}
 ![](./wslupdate.png)
 
 ```
-C:\Users\     > wsl --set-default-version 2
+C:\Users> wsl --set-default-version 2
 WSL 2 を実行するには、カーネル コンポーネントの更新が必要です。詳細については https://aka.ms/wsl2kernel を参照してください
 
-C:\Users\     > wsl --set-default-version 2
+C:\Users> wsl --set-default-version 2
 WSL 2 との主な違いについては、https://aka.ms/wsl2 を参照してください
 
-C:\Users\     >wsl -l -v
+C:\Users>wsl -l -v
   NAME      STATE           VERSION
 * Ubuntu    Stopped         1
 
-C:\Users\     >wsl --set-version Ubuntu 2
+C:\Users>wsl --set-version Ubuntu 2
 変換中です。この処理には数分かかることがあります...
 WSL 2 との主な違いについては、https://aka.ms/wsl2 を参照してください
 変換が完了しました。
 
-C:\Users\     >wsl -l -v
+C:\Users>wsl -l -v
   NAME      STATE           VERSION
 * Ubuntu    Stopped         2
 ```
