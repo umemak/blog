@@ -3,26 +3,26 @@
 <option value=/blog/tags/ class="menu-item menu-item-type-custom menu-item-object-custom">TAGS</option></select></nav></header><br><div style=width:100%;max-height:100px;text-align:center></div><div class=breadcrumbs></div><div id=content class=content><main role=main><article role=article class="post type-post format-standard hentry"><header class=post-header><h1>Surface Go 2でWSL2&#43;Dokcer</h1><div class=post-details><a rel=bookmark><time datetime=2020-05-28T528:120:06>2020-05-28</time></a>
 <span style=float:right><div id=fb-root style=height:100%></div><script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script><div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/05/28_wsl/ data-layout=button_count data-size=small><a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f05%2f28_wsl%2f" class=fb-xfbml-parse-ignore>Share</a></div>&nbsp;
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Surface Go 2でWSL2&#43;Dokcer" data-url=https://umemak.github.io/blog/posts/2020/05/28_wsl/ data-show-count=false>Tweet</a>
-<script async src=https://platform.twitter.com/widgets.js></script>&nbsp;</span></div></header><div class=post-content><p><a href=https://pc.watch.impress.co.jp/docs/news/1255256.html>Windows 10大型アップデート「May 2020 Update」がダウンロード開始</a> という記事を見て、さっそく更新して、WSLとUbuntuをインストールしてみた。</p><p><img src=./wsl.png alt></p><p>とくに問題なく完了。</p><p>そしてdockerもインストール。
+<script async src=https://platform.twitter.com/widgets.js></script>&nbsp;</span></div></header><div class=post-content><p><a href=https://pc.watch.impress.co.jp/docs/news/1255256.html>Windows 10大型アップデート「May 2020 Update」がダウンロード開始</a> という記事を見て、さっそく更新して、WSLとUbuntuをインストールしてみた。</p><p><figure><img src=../wsl.png></figure><img src=./wsl.png alt></p><p>とくに問題なく完了。</p><p>そしてdockerもインストール。
 <a href=https://docs.docker.com/engine/install/ubuntu/>https://docs.docker.com/engine/install/ubuntu/</a>
 <code>Add Docker’s official GPG key:</code>のところでエラー。</p><p>WSLをインストールしただけでは、WSL2ではないらしい。
 <a href=https://github.com/microsoft/WSL/issues/5125>https://github.com/microsoft/WSL/issues/5125</a></p><p>WSL2を有効にするには、「Linux用Windowsサブシステム」だけではなく、「Windowsハイパーバイザー プラットフォーム」と「仮想マシン プラットフォーム」もオンにする必要があるらしい。</p><p>カーネルコンポーネントの更新も。
-<a href=https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel>https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel</a> からインストーラーをダウンロードして実行。</p><p><img src=./wslupdate.png alt></p><pre><code>C:\Users\     &gt; wsl --set-default-version 2
+<a href=https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel>https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel</a> からインストーラーをダウンロードして実行。</p><p><figure><img src=../wslupdate.png></figure><img src=./wslupdate.png alt></p><pre><code>C:\Users&gt; wsl --set-default-version 2
 WSL 2 を実行するには、カーネル コンポーネントの更新が必要です。詳細については https://aka.ms/wsl2kernel を参照してください
 
-C:\Users\     &gt; wsl --set-default-version 2
+C:\Users&gt; wsl --set-default-version 2
 WSL 2 との主な違いについては、https://aka.ms/wsl2 を参照してください
 
-C:\Users\     &gt;wsl -l -v
+C:\Users&gt;wsl -l -v
   NAME      STATE           VERSION
 * Ubuntu    Stopped         1
 
-C:\Users\     &gt;wsl --set-version Ubuntu 2
+C:\Users&gt;wsl --set-version Ubuntu 2
 変換中です。この処理には数分かかることがあります...
 WSL 2 との主な違いについては、https://aka.ms/wsl2 を参照してください
 変換が完了しました。
 
-C:\Users\     &gt;wsl -l -v
+C:\Users&gt;wsl -l -v
   NAME      STATE           VERSION
 * Ubuntu    Stopped         2
 </code></pre><p>ここまでのコマンド。VERSIONが2になった。</p><p>dockerインストール再開。
