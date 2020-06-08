@@ -1,6 +1,7 @@
 ---
-title: "CentOS6にgiteaをインストールする"
+title: "CentOS6にgiteaをインストールする（未完）"
 date: "2020-06-05"
+tags: ["centos", "gitea"]
 ---
 
 WikiはGitHubにも付いているのを思い出して、単独のWikiではなくGitHubクローンを試してみる。
