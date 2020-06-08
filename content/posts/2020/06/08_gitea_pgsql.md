@@ -61,7 +61,18 @@ giteadb=> \q
 ```
 $ sudo su
 # mv /etc/gitea/app.ini{,.bk}
-# service gitea stop
 # /usr/local/bin/gitea web -c /etc/gitea/app.ini -p 80
+```
+
+## Service化
+https://github.com/go-gitea/gitea/blob/master/contrib/init/centos/gitea を`/etc/init.d/`にコピーして使う。
+```
+$ sudo su
+# cd /etc/init.d/
+# wget https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/init/centos/gitea
+# chmod +x gitea
+# vim gitea
+; GITEA_USERを変更する必要があるかもしれない
 # service gitea start
+# tail -f /var/lib/gitea/log/gitea.log
 ```
