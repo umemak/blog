@@ -15,27 +15,6 @@ CloudBuildをWebhookでスクリプト呼び出してやろうとしたところ
 ```
 $ sudo su
 # apt update
-# apt install nodejs npm git nginx
-# curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-# sh -c "echo 'deb https://dl.yarnpkg.com/debian/ stable main' >> /etc/apt/sources.list"
-# apt update
-# apt install yarn
-# node -v
-v10.19.0
-# npm -v
-6.14.4
-# yarn -v
-1.22.4
-# git --version
-git version 2.25.1
-# nginx -v
-nginx version: nginx/1.17.10 (Ubuntu)
-```
-
-## パッケージインストール
-```
-$ sudo su
-# apt update
 # apt upgrade
 # apt install git nginx unzip
 # exit
@@ -63,6 +42,7 @@ console.log("http://localhost:8000/");
 for await (const req of s) {
   req.respond({ body: "Hello World\n" });
 }
+```
 ```
 $ deno run --allow-net denoserver.ts
 ```
