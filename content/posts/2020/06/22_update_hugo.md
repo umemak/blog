@@ -8,7 +8,7 @@ tags: ["hugo"]
 
 とはいえ、デプロイにGitHub Actionsを使っているので、設定ファイルの更新だけで完了した。
 
-[差分](https://github.com/umemak/blog/compare/master@%7B1day%7D...master)
+[差分](https://github.com/umemak/blog/compare/3c9b96d8e81049b07911da9a31030e3d6f045397...649f6f3abb39fd48dff5d05236448156ccc12b22)
 
 Hugoのバージョン変更より、ついでに更新したactionsの変更で躓いてしまった。
 今は`DEPLOY_KEY`を作る必要はなく、自動的に`GITHUB_TOKEN`が作られるようになっていた。
