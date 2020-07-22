@@ -40,7 +40,8 @@ v14.6.0
 $ npx expo-cli init expotest
 $ cd expotest/
 $ npm install --save-dev expo-cli
-</code></pre><p><code>npm start</code>後、しばらくすると以下のエラーが出るので、上限を上げる。</p><pre><code class=language-Error: data-lang=Error:></code></pre><pre><code>$ cat /proc/sys/fs/inotify/max_user_watches
+</code></pre><p><code>npm start</code>後、しばらくすると以下のエラーが出るので、上限を上げる。</p><pre><code>Error: ENOSPC: System limit for number of file watchers reached, watch '/home/pi/workspace/expotest/node_modules/metro/node_modules/string-width/node_modules/ansi-regex'
+</code></pre><pre><code>$ cat /proc/sys/fs/inotify/max_user_watches
 8192
 $ sudo su
 # echo fs.inotify.max_user_watches= 65536 | tee -a /etc/sysctl.conf
