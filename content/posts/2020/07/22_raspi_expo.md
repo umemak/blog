@@ -7,9 +7,9 @@ tags: ["expo", "raspberry_pi"]
 WSLでいろいろ試してみたものの、ポート関連のエラーで動かないので、Raspberry piで試してみた。
 
 ## Rubyインストール
-Homebrewインストールしようとしたときに、Rubyがないエラーで先に進まなくなってしまったので先にインストールしておく。
-`rbenv`を使ってみる。
-途中でパッケージが足りないエラーが出るので、`libssl-dev`と`libreadline-dev`を入れる。
+* Homebrewインストールしようとしたときに、Rubyがないエラーで先に進まなくなってしまったので先にインストールしておく。
+* `rbenv`を使ってみる。
+* 途中でパッケージが足りないエラーが出るので、`libssl-dev`と`libreadline-dev`を入れる。
 ```
 $ sudo apt-get install -y libssl-dev libreadline-dev
 $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -26,8 +26,7 @@ ruby 2.6.6p146 (2020-03-31 revision 67876) [aarch64-linux]
 ```
 
 ## Homebrewインストール
-Nodejsのバージョン管理したかったので。
-手順は先日[WSLにインストール](./20_wsl_brew)したときと同様。
+* 手順は先日[WSLにインストール](../20_wsl_brew)したときと同様。
 ```
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 $ sudo apt-get install build-essential
@@ -39,7 +38,7 @@ Homebrew/linuxbrew-core (git revision 39fddf7; last commit 2020-07-21)
 ```
 
 ## Nodebrewインストール
-これも先日と同様。
+* これも先日と同様。
 ```
 $ brew install nodebrew
 $ mkdir -p ~/.nodebrew/src
@@ -54,15 +53,15 @@ v14.6.0
 ```
 
 ## Expoインストール
-グローバルに`expo-cli`をインストールしないで、init後にaddしている。
-テンプレートは`tabs (TypeScript)`を選択した。
+* グローバルに`expo-cli`をインストールしないで、init後にaddしている。
+* テンプレートは`tabs (TypeScript)`を選択した。
 ```
 $ cd workspace/
 $ npx expo-cli init expotest
 $ cd expotest/
 $ npm install --save-dev expo-cli
 ```
-`npm start`後、しばらくすると以下のエラーが出るので、上限を上げる。
+* `npm start`後、しばらくすると以下のエラーが出るので、上限を上げる。
 ```
 Error: ENOSPC: System limit for number of file watchers reached, watch '/home/pi/workspace/expotest/node_modules/metro/node_modules/string-width/node_modules/ansi-regex'
 ```
@@ -85,6 +84,6 @@ fs.inotify.max_user_watches = 65536
 ```
 $ npm start
 ```
-表示されたQRコードを、iOSやAndroidのアプリで開くと表示される。
-初回はJavaScriptのビルドが走る（アプリの画面下部に進捗が表示される）。
-それ以降はソースを変更するとほぼリアルタイムで反映される。
+* 表示されたQRコードを、iOSやAndroidのアプリで開くと表示される。
+* 初回はJavaScriptのビルドが走る（アプリの画面下部に進捗が表示される）。
+* それ以降はソースを変更するとほぼリアルタイムで反映される。
