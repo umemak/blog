@@ -15,7 +15,7 @@ rustc 1.45.1 (c367798cf 2020-07-26)
 
 ファイル作って
 ```
-$ vim hello.rust
+$ vim hello.rs
 fn main() {
     println!("Hello, world!");
 }
@@ -23,7 +23,7 @@ fn main() {
 
 コンパイル＆実行
 ```
-$ rustc hello.rust
+$ rustc hello.rs
 $ ./hello
 Hello, world!
 ```
