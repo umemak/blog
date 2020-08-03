@@ -5,11 +5,11 @@
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Rust入門 data-url=https://umemak.github.io/blog/posts/2020/08/01_hello_rust/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>&nbsp;</span></div></header><div class=post-content><p><a href=https://misonln41.hateblo.jp/entry/2020/02/12/232853>なぜDiscordはGoからRustへ移行するのか - MISONLN41&rsquo;s Blog</a> を読んで興味がわいたのでインストールしてみた。</p><p><a href=https://www.rust-lang.org/ja/tools/install>Rust をインストール - Rustプログラミング言語</a> のWSLのコマンドで。インストール完了後、WSLログインしなおさないと<code>rustc</code>コマンド使えなかった。</p><pre><code>$ rustc --version
 rustc 1.45.1 (c367798cf 2020-07-26)
-</code></pre><p>ファイル作って</p><pre><code>$ vim hello.rust
+</code></pre><p>ファイル作って</p><pre><code>$ vim hello.rs
 fn main() {
     println!(&quot;Hello, world!&quot;);
 }
-</code></pre><p>コンパイル＆実行</p><pre><code>$ rustc hello.rust
+</code></pre><p>コンパイル＆実行</p><pre><code>$ rustc hello.rs
 $ ./hello
 Hello, world!
 </code></pre><p>できた。</p></div><footer class=post-footer><span class=post-tags><a href=https://umemak.github.io/tags/rust rel=tag>rust</a>&emsp;</span></footer><table cellspacing=15 style=width:100%;border:none><tr><td style=text-align:center;border:none;padding:0></td><td style=text-align:center;border:none;padding:0></td></tr></table></article><nav class="navigation post-navigation" role=navigation><div class=nav-links><div class=nav-previous><a class=previous href=https://umemak.github.io/blog/posts/2020/07/22_raspi_expo/>Raspberry pi4 で expo を動かす</a></div><div class=nav-next></div></div></nav><section><div id=disqus_thread></div><script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return;}
