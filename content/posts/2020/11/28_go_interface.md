@@ -10,3 +10,5 @@ tags: ["go"]
   * https://play.golang.org/p/yvWspYJnYSv
 * pointerを返してあげれば良い。
   * https://play.golang.org/p/l_l4tMAD-Bd
+* シングルトンの場合
+  * https://play.golang.org/p/cHgNNMoznFB
