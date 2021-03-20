@@ -5,7 +5,7 @@ tags: ["github", "actions", "mysql"]
 
 ---
 
-[以前](../../2020/12/14_github_actions_mysql)書いた、GitHub Actionsでインストール済みMySQLを使う方法で起動したMySQLは、`lower_case_table_names`が`0`になっている（Linuxではこれがデフォルト）。
+[以前書いた](../../../2020/12/14_github_actions_mysql)、GitHub Actionsでインストール済みMySQLを使う方法で起動したMySQLは、`lower_case_table_names`が`0`になっている（Linuxではこれがデフォルト）。
 
 `lower_case_table_names`を`1`に変更したければ、`/etc/mysql/mysql.conf.d/mysqld.cnf`に`lower_case_table_names = 1`を追記して起動すれば良いだろうと気軽に考えてやってみたところ、MySQLが起動せず。
 
