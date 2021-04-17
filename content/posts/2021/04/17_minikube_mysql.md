@@ -29,7 +29,7 @@ minikube   Ready    control-plane,master   73s   v1.20.2
 
 ## マニフェストファイル作成
 
-mysql.yaml
+[mysql.yaml](./mysql.yaml)
 
 ## デプロイ
 
