@@ -1,6 +1,6 @@
 ---
 title: "WindowsのminikubeでMySQLを動かす"
-date: "2020-04-17"
+date: "2021-04-17"
 tags: ["windows","minikube","mysql"]
 ---
 
