@@ -9,7 +9,7 @@
 </code></pre><pre><code>$ kubectl get nodes
 NAME       STATUS   ROLES                  AGE   VERSION
 minikube   Ready    control-plane,master   73s   v1.20.2
-</code></pre><h2 id=マニフェストファイル作成>マニフェストファイル作成</h2><p><a href=./mysql.yaml>mysql.yaml</a></p><h2 id=デプロイ>デプロイ</h2><pre><code>$ kubectl apply -f mysql.yaml 
+</code></pre><h2 id=マニフェストファイル作成>マニフェストファイル作成</h2><p><a href=https://github.com/umemak/blog/blob/master/content/posts/2021/04/mysql.yaml>mysql.yaml</a></p><h2 id=デプロイ>デプロイ</h2><pre><code>$ kubectl apply -f mysql.yaml 
 service/mysql created
 deployment.apps/mysql created
 persistentvolumeclaim/mysql-pv-claim created
