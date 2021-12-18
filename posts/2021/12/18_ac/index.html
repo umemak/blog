@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>WSL2でAWS CLIを使ってS3のフォルダ名を変更する - umemak</title>
+<title>エントリー機能追加 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,47 +33,32 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>WSL2でAWS CLIを使ってS3のフォルダ名を変更する</h1>
+<h1>エントリー機能追加</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-07-08T78:120:06>2020-07-08</time>
+<time datetime=2021-12-18T1218:120:06>2021-12-18</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/07/08_awscli_wsl2/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f07%2f08_awscli_wsl2%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2021/12/18_ac/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2021%2f12%2f18_ac%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="WSL2でAWS CLIを使ってS3のフォルダ名を変更する" data-url=https://umemak.github.io/blog/posts/2020/07/08_awscli_wsl2/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=エントリー機能追加 data-url=https://umemak.github.io/blog/posts/2021/12/18_ac/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>S3って、マネジメントコンソールからフォルダ名の変更ってできないんですね。。</p>
-<p><a href=https://blog.goo.ne.jp/nakano-tomofumi/e/78ed6b49344715a89a9fdebeba8a8dd2>こちら</a>を参考に。</p>
-<p>SurfaceにしてからAWS CLIインストールしてなかったし、せっかくなのでWLS2のUbuntuでやってみます。</p>
-<p>公式の<a href=https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/install-cliv2-docker.html>Docker版</a>でインストール（というほどのことでもないですが）。</p>
-<pre tabindex=0><code>$ docker run --rm -it amazon/aws-cli --version
-aws-cli/2.0.29 Python/3.7.3 Linux/4.19.104-microsoft-standard botocore/2.0.0dev33
-</code></pre><p>認証情報入れる。
-IAMでアクセスキーを取得して、configureコマンドで設定。</p>
-<pre tabindex=0><code>$ docker run --rm -ti -v ~/.aws:/root/.aws amazon/aws-cli configure
-</code></pre><p>動作確認</p>
-<pre tabindex=0><code>$ docker run --rm -ti -v ~/.aws:/root/.aws amazon/aws-cli s3 ls
-</code></pre><p>バケット一覧が表示される。OK。</p>
-<p>リネーム実行</p>
-<pre tabindex=0><code>$ docker run --rm -ti -v ~/.aws:/root/.aws amazon/aws-cli s3 mv &quot;s3://&lt;バケット名&gt;/&lt;変更前&gt;&quot; &quot;s3://&lt;バケット名&gt;/&lt;変更後&gt;&quot; --recursive
-</code></pre><p>フォルダ名にスペースが入っていたので、ダブルコーテーションで囲っています。</p>
-<p>大した手間ではないけれど、やっぱりブラウザからできたほうが便利だと思う。</p>
+<p>イベントにエントリーできるようにする。</p>
+<p>参加者をイベント内の配列で持たせようとしたのだけれど、追加の方法がわからない。。</p>
+<p>array.push() で行けるだろうと思ったけどエラー。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/wsl rel=tag>wsl</a>&emsp;
-<a href=https://umemak.github.io/tags/aws rel=tag>aws</a>&emsp;
-<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>&emsp;
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -88,10 +73,9 @@ IAMでアクセスキーを取得して、configureコマンドで設定。</p>
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/06/22_update_hugo/> Hugoのバージョンアップ</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2021/12/17_ac/> データ更新機能</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/07/12_docker_win10/> Windows10にDocker Desktopをインストール</a>
 </div>
 </div>
 </nav>
