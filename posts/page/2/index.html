@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2021/12/09_ac/ rel=bookmark>画面モック作成続き</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2021-12-09T00:00:00>2021-12-09</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+参考にしたページ Vue.js 3 入門 「ルーティング」（Vue Router） - Qiita このままだと動かなかったので、vue-routerをバージョンアップ。最初インストールしたときはバージョン指定しなかったせいか3系が入っていた。 npm install vue-router@4 これで画面が表示されるようになった。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2021/12/08_ac/ rel=bookmark>画面モックを作る</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -225,29 +245,6 @@ AWSで構築しているシステムをAzureと並行稼働させることはで
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2021/04/17_minikube_mysql/ rel=bookmark>WindowsのminikubeでMySQLを動かす</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-04-17T00:00:00>2021-04-17</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-MacでやったらMySQLの起動時にエラーで落ちてしまったので、Windowsでどうなるか試す。 基本的には公式のドキュメントを参照。 https://kubernetes.io/ja/docs/tasks/run-application/run-single-instance-stateful-application/ munikubeインストール winget install minikube minikube起動 minikube start $ kubectl get nodes NAME STATUS ROLES AGE VERSION minikube Ready control-plane,master 73s v1.20.2 マニフェストファイル作成 mysql.yaml デプロイ $ kubectl apply -f mysql.yaml service/mysql created deployment.apps/mysql created persistentvolumeclaim/mysql-pv-claim created persistentvolume/mysql-pv-volume created $ kubectl get pods -l app=mysql NAME READY STATUS RESTARTS
-<a href=/blog/posts/2021/04/17_minikube_mysql/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/windows rel=tag>windows</a>
-<a href=https://umemak.github.io/tags/minikube rel=tag>minikube</a>
-<a href=https://umemak.github.io/tags/mysql rel=tag>mysql</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -293,6 +290,9 @@ MacでやったらMySQLの起動時にエラーで落ちてしまったので、
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2021/12/19_ac/>データ構造の見直し</a>
+</li>
+<li>
 <a href=/blog/posts/2021/12/18_ac/>エントリー機能追加</a>
 </li>
 <li>
@@ -318,9 +318,6 @@ MacでやったらMySQLの起動時にエラーで落ちてしまったので、
 </li>
 <li>
 <a href=/blog/posts/2021/12/10_ac/>画面を作る</a>
-</li>
-<li>
-<a href=/blog/posts/2021/12/09_ac/>画面モック作成続き</a>
 </li>
 </ul>
 </aside>
