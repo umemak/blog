@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>ruby gem のアップデート - umemak</title>
+<title>データ構成続き - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,43 +33,31 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>ruby gem のアップデート</h1>
+<h1>データ構成続き</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2019-08-21T821:120:06>2019-08-21</time>
+<time datetime=2021-12-20T1220:120:06>2021-12-20</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2019/08/21_update_gems/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f08%2f21_update_gems%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2021/12/20_ac/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2021%2f12%2f20_ac%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="ruby gem のアップデート" data-url=https://umemak.github.io/blog/posts/2019/08/21_update_gems/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=データ構成続き data-url=https://umemak.github.io/blog/posts/2021/12/20_ac/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<ul>
-<li>Githubから脆弱性の通知が来たので、nokogiriを<code>1.10.4</code>以上に、actionviewを<code>5.1.6.2</code>以上にバージョンアップ対応する。</li>
-<li>作業環境はC223NAのdocker。</li>
-</ul>
-<pre tabindex=0><code>$ docker run -it -v `pwd`:/usr/src/work ruby bash
-# cd /usr/src/work
-# bundle update nokogiri
-# bundle list nokogiri
-/usr/local/bundle/gems/nokogiri-1.10.4
-</code></pre><ul>
-<li>最初nokogiriの通知しか出てなかったのに、更新してpushしたらもういっこうあるでってactionview出てきた。。</li>
-<li>actionview は、<code>bundle update actionview</code>では更新されず、<code>bundle update</code>で全部上げるようにしたら上がった。</li>
-</ul>
+<p>昨日、多対多の関連を持つテーブルを定義したけれど、manyToManyの指定で実現できるのではないか。</p>
+<p><a href=https://docs.amplify.aws/cli/graphql/data-modeling/#many-to-many-relationship>API (GraphQL) - Data modeling - AWS Amplify Docs</a></p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/ruby rel=tag>ruby</a>&emsp;
-<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>&emsp;
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -84,10 +72,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2019/08/20_mercari_go_10/> mercari.go</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2021/12/19_ac/> データ構造の見直し</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2019/08/21_hugo/> Hugoの導入</a>
 </div>
 </div>
 </nav>
