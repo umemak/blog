@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>C101PA - umemak</title>
+<title>Amplify mock使ってみる - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -30,59 +30,43 @@
 <div class=breadcrumbs>
 </div>
 <div id=content class=content>
-<main aria-role=main>
-<header class=homepage-header>
-<h1>C101PA</h1>
-</header>
-<div class=homepage-content>
-</div>
-<div>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
+<main role=main>
+<article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h2><a href=/blog/posts/2019/10/31_c101p_cli/ rel=bookmark>C101PAでOracle Functionsを試す</a></h2>
+<h1>Amplify mock使ってみる</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2019-10-31T00:00:00>2019-10-31</time>
+<time datetime=2021-12-22T1222:120:06>2021-12-22</time>
 </a>
+<span style=float:right>
+<div id=fb-root style=height:100%></div>
+<script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2021/12/22_ac/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2021%2f12%2f22_ac%2f" class=fb-xfbml-parse-ignore>Share</a>
+</div>
+&nbsp;
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Amplify mock使ってみる" data-url=https://umemak.github.io/blog/posts/2021/12/22_ac/ data-show-count=false>Tweet</a>
+<script async src=https://platform.twitter.com/widgets.js></script>
+&nbsp;
+</span>
 </div>
 </header>
-<div class=post-excerpt><p>
-OCHaCafe参加前に触っておこうと思い、その準備。 OCIインストール 手順は公式からコピペで。 $ bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)" fatal error: Python.h: No such file or directoryエラーで落ちたので、python3-devパッケージをインストール。 $ sudo apt-get install python3-dev OCI再挑戦。先程作成したディレクトリを削除するか聞かれるので、削除(y)して継続
-<a href=/blog/posts/2019/10/31_c101p_cli/ class=more-link>Read more </a>
-</p></div>
+<div class=post-content>
+<p>データ構造試行錯誤するのに、毎回amplify pushすると時間がかかって面倒だなーと思っていたら、ローカルで動かせるモックがあることを知った。
+Codespacesでまともに動くかわからないけど、やってみる。</p>
+<pre tabindex=0><code>$ amplify mock api
+</code></pre><p>動いた。けど、アプリから接続しに行くのがIPアドレス指定で、Codespacesの公開ポートになってない。</p>
+<p>src/aws-exporter.js の aws_appsync_graphqlEndpoint にそのアドレスが書かれていたので、Codespacesの公開URLに書き換えてみる。</p>
+<p>アクセス先が変わった。けどCORSエラー。またか。</p>
+<p>そしてこのファイル、mockを終了させると元に戻されるみたいなんだけど、じつは初回結構時間かかってたのでAbortさせたせいか、もとの設定が分からなくなってしまった。。
+gitignore対象なのでGitHubから復活させることもできず。</p>
+<p>やや詰んだ感が出てきた。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/serverless rel=tag>serverless</a>
-<a href=https://umemak.github.io/tags/chromebook rel=tag>chromebook</a>
-<a href=https://umemak.github.io/tags/c101pa rel=tag>c101pa</a>
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>&emsp;
 </span>
 </footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/06/29_chromebook_c101pa/ rel=bookmark>C101PA届いた</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-06-29T00:00:00>2019-06-29</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-起動直後はOSが古い→ChromeOSバージョンアップ実施 Googleアンケートアプリが対応していない C223NAも再インストールしたらインストールできなくなっていた。。 Kindleアプリインストールできた 全体的にC223NAに比べて遅い（知ってた） 今回は開発者モードにしないで普通にLinux有効化
-<a href=/blog/posts/2019/06/29_chromebook_c101pa/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/c101pa rel=tag>C101PA</a>
-<a href=https://umemak.github.io/tags/chromebook rel=tag>chromebook</a>
-</span>
-</footer>
-</article>
-</div>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
 <td style=text-align:center;border:none;padding:0>
@@ -91,6 +75,18 @@ OCHaCafe参加前に触っておこうと思い、その準備。 OCIインス�
 </td>
 </tr>
 </table>
+</article>
+<nav class="navigation post-navigation" role=navigation>
+<div class=nav-links>
+<div class=nav-previous>
+<a class=previous href=https://umemak.github.io/blog/posts/2021/12/21_ac/> データ構成続き2</a>
+</div>
+<div class=nav-next>
+</div>
+</div>
+</nav>
+<section>
+</section>
 </main>
 <div class="sidebar1 widgets columns-1">
 <aside>
