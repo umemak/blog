@@ -57,6 +57,26 @@
 <pre tabindex=0><code>$ amplify pull --appId xxxxxxxxx --envName dev
 </code></pre><p>実行したらaws-exporter.jsが書き換わって直った。</p>
 <p>勉強になった。</p>
+<p>ここまでGitHub Codespacesを使って作業してきたが、モックがうまく使えないのでローカルでの作業も試してみる。
+Surface Go2(m3)だからあまり色々入れたりしたくなかったんだけど、ちょっと試すだけなら。。</p>
+<p>VSCode+WSL2で</p>
+<pre tabindex=0><code>$ npm install -g @aws-amplify/cli
+$ amplify pull --appId xxxxxxxxxxxx --envName dev
+</code></pre><p>うーん、~/.aws/config が読めなくてエラー。sudoで実行すると今度はamplifyコマンドが見つからないエラー。</p>
+<p>一時的に ~/.aws の権限を緩めて、amplify pullは通ったけど、ちょっとモヤる。</p>
+<pre tabindex=0><code>$ npm install -g @vue/cli
+$ npm install
+$ npm run serve
+</code></pre><p>Codespaces版でテスト登録とかしたデータ参照できた。</p>
+<p>そしてmockはJavaが必要とのことなので、メッセージに従って <a href=https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html>https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/downloads-list.html</a> からダウンロードしてインストール。</p>
+<pre tabindex=0><code>$ wget -O- https://apt.corretto.aws/corretto.key | sudo apt-key add - 
+$ sudo add-apt-repository 'deb https://apt.corretto.aws stable main'
+$ sudo apt-get update; sudo apt-get install -y java-11-amazon-corretto-jdk 
+$ java -version
+openjdk version &quot;11.0.13&quot; 2021-10-19 LTS
+OpenJDK Runtime Environment Corretto-11.0.13.8.1 (build 11.0.13+8-LTS)
+OpenJDK 64-Bit Server VM Corretto-11.0.13.8.1 (build 11.0.13+8-LTS, mixed mode)
+</code></pre><p>できた。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
