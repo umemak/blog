@@ -40,6 +40,47 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2020/04/08_gitpod_node_version/ rel=bookmark>Gitpodのnodeバージョンを変更する</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2020-04-08T00:00:00>2020-04-08</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting-and-typescript これを動かしたくて、 $ yarn create next-app --example with-firebase-hosting-and-typescript with-firebase-hosting-and-typescript-app したところ、The engine "node" is incompatible with this module. Expected version "10". Got "12.16.1"というエラーで正常終了しない。バージョン10系を要求されているのに、インストールされているのは12系。 $ nvm install 10 を実行することで、10系になる。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/node rel=tag>node</a>
+<a href=https://umemak.github.io/tags/gitpod rel=tag>gitpod</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
+<h2><a href=/blog/posts/2020/04/06_nextjs_with_dotenv/ rel=bookmark>NextJSとdotenvでハマった</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2020-04-06T00:00:00>2020-04-06</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+reactでdotenv使うとき、起動モードごとに定義ファイルを変えられるように、.env.developmentにしていたので、同じようにやったら読み込まれない。 NextJSで使うときは、.envしか認識してくれないらしい。 環境ごとにファイル分けたい場合のやり方は、未調査。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/nextjs rel=tag>nextjs</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2020/03/30_win10setup/ rel=bookmark>Windows10の設定</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -201,49 +242,6 @@ Kindleの積ん読解消のため、見える化したい。 Kindleの管理ペ�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/02/24_tamiat/ rel=bookmark>tamiatを試す</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-02-24T00:00:00>2020-02-24</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-https://github.com/tamiat/tamiat Firebaseを使ったCMSを探していて、見つけたもの。 セットアップはリポジトリのREADMEに書いてあるとおりでほぼ行けた。 1箇所だけ、パッケージの依存が解決できなくて手動でyarn addしたものがあったくらい。 GCPでプロジェクト作って、Cloud Shellで作業。便利。 で、構築は簡単にでき
-<a href=/blog/posts/2020/02/24_tamiat/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/cms rel=tag>cms</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/02/23_qwiklabs/ rel=bookmark>Qwiklabsの続きをやる</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-02-23T00:00:00>2020-02-23</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-先日のデブサミのハンズオンで使ったアカウントに１ヶ月のサブスクリプションが付与されていたのを思い出して、途中になっていたKubernatesのクエストの続きを終わらせた。 Jenkinsを使ったCI/CDのやつ。 Jenkinsは昔使ったことあったけれど、最近はCI/CDのサービスが充実してきているので
-<a href=/blog/posts/2020/02/23_qwiklabs/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/gcp rel=tag>gcp</a>
-<a href=https://umemak.github.io/tags/kubernetes rel=tag>kubernetes</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -290,6 +288,12 @@ https://github.com/tamiat/tamiat Firebaseを使ったCMSを探していて、見
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2021/12/25_ac/>EC2で開発</a>
+</li>
+<li>
+<a href=/blog/posts/2021/12/25_ac2/>Raspberry pi 4でやってみる</a>
+</li>
+<li>
 <a href=/blog/posts/2021/12/24_ac/>ユーザーテーブルにデータ登録する</a>
 </li>
 <li>
@@ -312,12 +316,6 @@ https://github.com/tamiat/tamiat Firebaseを使ったCMSを探していて、見
 </li>
 <li>
 <a href=/blog/posts/2021/12/17_ac/>データ更新機能</a>
-</li>
-<li>
-<a href=/blog/posts/2021/12/16_ac/>作成したレコードのID取得</a>
-</li>
-<li>
-<a href=/blog/posts/2021/12/15_ac/>CORS続き</a>
 </li>
 </ul>
 </aside>

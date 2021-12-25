@@ -40,6 +40,48 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2021/12/16_ac/ rel=bookmark>作成したレコードのID取得</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2021-12-16T00:00:00>2021-12-16</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+イベント作成と一覧が確認できたので、個別表示と編集のためのパラメータを渡す方法を調べる。 参考： API (GraphQL) - Create, update, delete data - JavaScript - AWS Amplify Docs API.graphql の戻り値を見ればよさそうだけど、長いIDだ、、 まあとりあえずはこれで。 router.js にパラメータ追加して、props: trueも設定。 props設定が抜けていて、&ldquo;Variabl
+<a href=/blog/posts/2021/12/16_ac/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
+<h2><a href=/blog/posts/2021/12/15_ac/ rel=bookmark>CORS続き</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2021-12-15T00:00:00>2021-12-15</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+昨日、CORSのエラーで躓いていたものの解決ができず。 チュートリアルでやったときも出てたのか、出てなかったのか今となっては確認が面倒。。 問題の切り分けをするため、hostingに上げてみる。 $ amplify add hosting ? Select the plugin module to execute Hosting with Amplify Console (Managed hosting with custom domains, Continuous deployment) ? Choose a type Manual deployment $ amplify publish エラーは出ない。やっぱりCodespacesで実
+<a href=/blog/posts/2021/12/15_ac/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2021/12/14_ac/ rel=bookmark>データ登録やってみる</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -200,47 +242,6 @@ https://docs.amplify.aws/start/getting-started/auth/q/integration/vue/#authentic
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2021/12/06_ac/ rel=bookmark>リポジトリを作って初期化する</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-12-06T00:00:00>2021-12-06</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-チュートリアルで雰囲気をつかんだので、実際に使うリポジトリを作って、必要なパッケージなどセットアップする。 GitHub Codespacesでやっていく。 基本的には、デフォルトの選択肢で次々進めてOK。 npm install -g @aws-amplify/cli amplify configure npm install -g @vue/cli vue create . > vue3 を選択 npm install npm run serve --open ここまででvueの動作確認ができる。 amplify init npm install aws-amplify @aws-amplify/ui-components ここまででAm
-<a href=/blog/posts/2021/12/06_ac/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2021/12/05_ac/ rel=bookmark>Amplify続き</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-12-05T00:00:00>2021-12-05</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-昨日のチュートリアルでかかった費用、0.03ドルくらい。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -287,6 +288,12 @@ https://docs.amplify.aws/start/getting-started/auth/q/integration/vue/#authentic
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2021/12/25_ac/>EC2で開発</a>
+</li>
+<li>
+<a href=/blog/posts/2021/12/25_ac2/>Raspberry pi 4でやってみる</a>
+</li>
+<li>
 <a href=/blog/posts/2021/12/24_ac/>ユーザーテーブルにデータ登録する</a>
 </li>
 <li>
@@ -309,12 +316,6 @@ https://docs.amplify.aws/start/getting-started/auth/q/integration/vue/#authentic
 </li>
 <li>
 <a href=/blog/posts/2021/12/17_ac/>データ更新機能</a>
-</li>
-<li>
-<a href=/blog/posts/2021/12/16_ac/>作成したレコードのID取得</a>
-</li>
-<li>
-<a href=/blog/posts/2021/12/15_ac/>CORS続き</a>
 </li>
 </ul>
 </aside>

@@ -40,6 +40,50 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2020/12/14_github_actions_mysql/ rel=bookmark>GitHub Actions で MySQL を使う</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2020-12-14T00:00:00>2020-12-14</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+GitHub ActionsでMySQLを使ったCIを回したかった。 ググると、servicesでmysqlコンテナを立ち上げる方法がヒットしたが、コンテナの起動に45秒くらいかかっていて、ちょっと長いなー、と。 そこでmysqlをインストールしたらどうなんだろうと思い、そういえばmysqlコマンドラインツールは最
+<a href=/blog/posts/2020/12/14_github_actions_mysql/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/github rel=tag>github</a>
+<a href=https://umemak.github.io/tags/actions rel=tag>actions</a>
+<a href=https://umemak.github.io/tags/mysql rel=tag>mysql</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
+<h2><a href=/blog/posts/2020/11/28_go_interface/ rel=bookmark>Goのinterfaceを学ぶ</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2020-11-28T00:00:00>2020-11-28</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+golintのexported %s %s returns unexported type %s, which can be annoying to useを解消したい。 interfaceを定義して回避するのが一般的？らしい。 structが入れ子になっていて、内側のstructにメソッドが定義されていると、cannot call pointer methodとなり呼べない。 https://play.golang.org/p/yvWspYJnYSv pointerを返してあげれば良い。 https://play.golang.org/p/l_l4tMAD-Bd シング
+<a href=/blog/posts/2020/11/28_go_interface/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2020/11/07_docker_swarm_mode/ rel=bookmark>Docker swarm modeを知る</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -208,50 +252,6 @@ S3って、マネジメントコンソールからフォルダ名の変更って
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/06/22_update_hugo/ rel=bookmark>Hugoのバージョンアップ</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-06-22T00:00:00>2020-06-22</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-しばらく追っていなかったら、Hugoのバージョンが結構上がっていたので、最新を使ってみることにした。 とはいえ、デプロイにGitHub Actionsを使っているので、設定ファイルの更新だけで完了した。 差分 Hugoのバージョン変更より、ついでに更新したactionsの変更で躓いてしまった。 今はDEPLO
-<a href=/blog/posts/2020/06/22_update_hugo/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/hugo rel=tag>hugo</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/06/11_deployserver/ rel=bookmark>Firebase用デプロイサーバーを作る</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-06-11T00:00:00>2020-06-11</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-SourceRepositoriesで管理して、CloudBuildでFirebase HostingにデプロイしているGatsbyプロジェクトを、SourceRepositoryとCloudBuildを使わずに実現してみる。 GiteaがCentOS6で動くようになったので、SourceReposit
-<a href=/blog/posts/2020/06/11_deployserver/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/linux rel=tag>linux</a>
-<a href=https://umemak.github.io/tags/fireabse rel=tag>fireabse</a>
-<a href=https://umemak.github.io/tags/gitea rel=tag>gitea</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -298,6 +298,12 @@ SourceRepositoriesで管理して、CloudBuildでFirebase Hostingにデプロイ
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2021/12/25_ac/>EC2で開発</a>
+</li>
+<li>
+<a href=/blog/posts/2021/12/25_ac2/>Raspberry pi 4でやってみる</a>
+</li>
+<li>
 <a href=/blog/posts/2021/12/24_ac/>ユーザーテーブルにデータ登録する</a>
 </li>
 <li>
@@ -320,12 +326,6 @@ SourceRepositoriesで管理して、CloudBuildでFirebase Hostingにデプロイ
 </li>
 <li>
 <a href=/blog/posts/2021/12/17_ac/>データ更新機能</a>
-</li>
-<li>
-<a href=/blog/posts/2021/12/16_ac/>作成したレコードのID取得</a>
-</li>
-<li>
-<a href=/blog/posts/2021/12/15_ac/>CORS続き</a>
 </li>
 </ul>
 </aside>
