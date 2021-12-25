@@ -52,7 +52,7 @@
 </div>
 </header>
 <div class=post-content>
-<p>せっかくなのでラズパイでも試してみる。</p>
+<p>寝る前にEC2で試してダメで、起きたらラズパイがあること思い出したので、ラズパイでも試してみる。</p>
 <p>久しぶりの起動だし、OSクリーンインストールからやったら結構時間かかる。こんなにかかったっけ。</p>
 <p>毎日のようにAmplify設定やっているとだいぶ慣れてくる。
 JavaはWSLのときのコマンドで入れる。</p>
@@ -67,6 +67,29 @@ OpenJDK Runtime Environment (build 11.0.13+8-post-Raspbian-1deb11u1)
 OpenJDK Server VM (build 11.0.13+8-post-Raspbian-1deb11u1, mixed mode)
 </code></pre><p>mockがちゃんと動かない。。schemaファイル変更したらコンパイルされるから動いている気はするんだけど、モックサーバーが起動しない。
 うーん。</p>
+<p>別件で調べものしていて、M1 macで同様の現象がJRE入れ直しで解消したというので真似してみる。
+<a href=https://zenn.dev/nozan/articles/3035619efb4de2>amplify mock api でローカルでエミュレート出来ない不具合について</a></p>
+<pre tabindex=0><code>$ sudo apt remove default-jdk-headless
+$ sudo apt autoremove
+$ wget https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245467_4d5417147a92418ea8b615e228bb6935 -o jre8.tar.gz
+</code></pre><pre tabindex=0><code>$ sudo apt-get install openjdk-8-jdk
+$ java -version
+openjdk version &quot;1.8.0_312&quot;
+OpenJDK Runtime Environment (build 1.8.0_312-8u312-b07-1~deb9u1-b07)
+OpenJDK Client VM (build 25.312-b07, mixed mode)
+</code></pre><pre tabindex=0><code>$ sudo apt remove openjdk-8-jdk
+$ sudo apt autoremove
+$ wget https://download.java.net/java/GA/jdk17.0.1/2a2082e5a09d4267845be086888add4f/12/GPL/openjdk-17.0.1_linux-aarch64_bin.tar.gz
+$ sudo tar -xvf openjdk-17.0.1_linux-aarch64_bin.tar.gz -C /opt
+$ nano ~/.bashrc
+export JAVA_HOME=&quot;/opt/jdk-17.0.1&quot;
+export PATH=&quot;$PATH:${JAVA_HOME}/bin&quot;
+$ source ~/.bashrc
+$ java -version
+bash: /opt/jdk-17.0.1/bin/java: バイナリファイルを実行できません: 実行形式エラー
+$ file /opt/jdk-17.0.1/bin/java
+/opt/jdk-17.0.1/bin/java: ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, for GNU/Linux 3.7.0, not stripped
+</code></pre><p>そういえば32bit版OSだった（詰んだ</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
