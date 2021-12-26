@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>GatsbyJSでBlogを構築する - umemak</title>
+<title>ここまでのまとめ - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,90 +33,52 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>GatsbyJSでBlogを構築する</h1>
+<h1>ここまでのまとめ</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-03-27T327:120:06>2020-03-27</time>
+<time datetime=2021-12-26T1226:120:06>2021-12-26</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/03/27_gatsbyjs_blog/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f03%2f27_gatsbyjs_blog%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2021/12/26_ac/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2021%2f12%2f26_ac%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=GatsbyJSでBlogを構築する data-url=https://umemak.github.io/blog/posts/2020/03/27_gatsbyjs_blog/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=ここまでのまとめ data-url=https://umemak.github.io/blog/posts/2021/12/26_ac/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>GatsbyJSでblogを構築します。</p>
-<p>環境はGitHubに空のリポジトリ（blog-gatsby）を作成して、Gitpodで開いたところから。</p>
-<p>starterとして<a href=https://www.gatsbyjs.org/starters/hagnerd/gatsby-starter-blog-mdx/>gatsby-starter-blog-mdx</a>を採用。</p>
-<p>すでに<code>.git</code>ディレクトリが存在するとエラーになるので、一旦リネームしてセットアップする。
-途中でパッケージマネージャーを<code>npm</code>と<code>yarn</code>どちらを使うか聞かれるので、<code>yarn</code>を選択。</p>
-<pre tabindex=0><code>$ cd ..
-$ mv blog-gatsby{,.bk}
-$ npx gatsby new blog-gatsby https://github.com/hagnerd/gatsby-starter-blog-mdx
-</code></pre><p>差分を戻す</p>
-<pre tabindex=0><code>$ cp blog-gatsby.bk/.git/config blog-gatsby/.git/config
-$ cp blog-gatsby.bk/.git/hooks/pre-commit.sample blog-gatsby/.git/hooks/pre-commit.sample
-$ cp blog-gatsby.bk/.git/hooks/update.sample blog-gatsby/.git/hooks/update.sample
-</code></pre><p>ここまでコミット</p>
-<pre tabindex=0><code>$ rm -rf blog-gatsby.bk
-$ cd blog-gatsby
-$ git push origin HEAD
-</code></pre><p>表示確認</p>
-<pre tabindex=0><code>$ yarn dev
-</code></pre><p>typographyのテーマをgithubに変更する</p>
-<pre tabindex=0><code>$ yarn add typography typography-theme-github
-</code></pre><p><code>src/utils/typography.js</code>を修正</p>
-<pre tabindex=0><code>$ git diff src/utils/typography.js
-diff --git a/src/utils/typography.js b/src/utils/typography.js
-index bc6b416..a493fef 100644
---- a/src/utils/typography.js
-+++ b/src/utils/typography.js
-@@ -1,17 +1,19 @@
- import Typography from 'typography'
--import Wordpress2016 from 'typography-theme-wordpress-2016'
-+// import Wordpress2016 from 'typography-theme-wordpress-2016'
-+import githubTheme from 'typography-theme-github'
- 
--Wordpress2016.overrideThemeStyles = () =&gt; {
--  return {
--    'a.gatsby-resp-image-link': {
--      boxShadow: `none`,
--    },
--  }
--}
-+// Wordpress2016.overrideThemeStyles = () =&gt; {
-+//   return {
-+//     'a.gatsby-resp-image-link': {
-+//       boxShadow: `none`,
-+//     },
-+//   }
-+// }
- 
--delete Wordpress2016.googleFonts
-+// delete Wordpress2016.googleFonts
- 
--const typography = new Typography(Wordpress2016)
-+// const typography = new Typography(Wordpress2016)
-+const typography = new Typography(githubTheme)
- 
- // Hot reload typography in development.
- if (process.env.NODE_ENV !== `production`) {
-</code></pre><p>デフォルトだと長い行がコードブロックの枠を突き抜けるのでなんとかする。
-<a href=https://qiita.com/gipcompany/items/c878b6b757cadf2adb1d>https://qiita.com/gipcompany/items/c878b6b757cadf2adb1d</a>
-こちらを参考にパッケージの追加と、<code>gatsby-browser.js</code>と<code>gatsby-config.js</code>を編集する。</p>
-<pre tabindex=0><code>$ yarn add gatsby-transformer-remark gatsby-remark-prismjs prismjs
-</code></pre>
+<h2 id=やったこと>やったこと</h2>
+<ul>
+<li>Amplifyのチュートリアル</li>
+<li>Codespacesでの開発</li>
+<li>VSCode+WSLでの開発</li>
+<li>VSCode+EC2での開発</li>
+<li>VSCode+RaspberryPi4での開発</li>
+</ul>
+<h2 id=わかったこと>わかったこと</h2>
+<ul>
+<li>AmplifyはFirebaseみたいなもの</li>
+<li>Vueはわかりやすい</li>
+<li>データベースはGraphQLわからないとつらい</li>
+<li>クラウド環境でAmplify mockを使うのは難しい</li>
+<li>ラズパイ（32bit）ではAmplify mockを使えない</li>
+<li>Surface Go 2ではこのレベルの開発作業は厳しい</li>
+<li>クラウドに開発環境を移行するにはまだ壁がある</li>
+</ul>
+<h2 id=つぎにやること>つぎにやること</h2>
+<ul>
+<li>強いPCが欲しい</li>
+<li>GraphQLを理解する</li>
+</ul>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/gatsbyjs rel=tag>gatsbyjs</a>&emsp;
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -131,10 +93,9 @@ index bc6b416..a493fef 100644
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/03/27_gitpod_debug/> GitpodでReactアプリのデバッグをする（未完）</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2021/12/25_ac/> EC2で開発</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/03/30_win10setup/> Windows10の設定</a>
 </div>
 </div>
 </nav>
