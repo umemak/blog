@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>WSLの時計を合わせる - umemak</title>
+<title>DB再作成 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,34 +33,39 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>WSLの時計を合わせる</h1>
+<h1>DB再作成</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-07-20T720:120:06>2020-07-20</time>
+<time datetime=2021-12-28T1228:120:06>2021-12-28</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/07/20_wsl_date/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f07%2f20_wsl_date%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2021/12/28_ac/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2021%2f12%2f28_ac%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=WSLの時計を合わせる data-url=https://umemak.github.io/blog/posts/2020/07/20_wsl_date/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=DB再作成 data-url=https://umemak.github.io/blog/posts/2021/12/28_ac/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p><code>apt update</code>したときにエラーになった場合の解決策のひとつ。
-WSL側の時計が大幅にずれているパターン。</p>
-<p><a href=https://github.com/microsoft/WSL/issues/4245>https://github.com/microsoft/WSL/issues/4245</a> を参考に。</p>
-<pre tabindex=0><code># hwclock -s
-</code></pre>
+<p>データがある状態でデータ構造の変更をかけたせいか、挙動が怪しくなったので一度DynamoDBのテーブルを削除した。</p>
+<p>その後、<code>amplify update api</code>、<code>apmlify push</code>を実行。
+したらAppSyncのupdateでエラー終了してしまった。</p>
+<p><code>amplify delete</code>で丸ごと削除してから<code>amplify push</code>したら<code>No Amplify backend project files detected within this folder.</code>になった。</p>
+<p><code>amplify init</code>からやり直し。</p>
+<pre tabindex=0><code>$ amplify init
+$ amplify add auth
+$ amplify add api
+$ amplify push
+</code></pre><p>とりあえずエントリー実装までできた。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/wsl rel=tag>wsl</a>&emsp;
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -75,10 +80,9 @@ WSL側の時計が大幅にずれているパターン。</p>
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/07/12_docker_win10/> Windows10にDocker Desktopをインストール</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2021/12/26_ac/> ここまでのまとめ</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/07/20_wsl_brew/> WSL2にbrewをつかってnodejsのインストールをする</a>
 </div>
 </div>
 </nav>
