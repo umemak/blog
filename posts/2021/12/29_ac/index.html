@@ -55,7 +55,12 @@
 <p>エントリー処理ができるようになったので、同じようなノリでキャンセル処理も実装する。</p>
 <p>同じノリなのになぜかエラーが出る、と思ったらエントリーの方もエラーが出ていた。</p>
 <pre tabindex=0><code>Variable 'id' has coerced Null value for NonNull type 'ID!'
-</code></pre><p>GraphQLの知識不足。。</p>
+</code></pre><p>eventIDとuserIDをキーに検索したいのに、idを指定しろと言われている。
+getEventUserではなくlistEventUserにfilter指定したらいけそう。
+<a href=https://docs.amplify.aws/lib/graphqlapi/query-data/q/platform/js/#compound-filters>API (GraphQL) - Fetch data - JavaScript - AWS Amplify Docs</a>
+と思ったけどand指定したらなんかエラー。。</p>
+<pre tabindex=0><code>&quot;Invalid FilterExpression: Syntax error; token: &quot;AND&quot;, near: &quot;( AND (&quot; (Service: DynamoDb, Status Code: 400, Request ID: xxxx, Extended Request ID: null)&quot;
+</code></pre><p>GraphQL力が欲しい。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
