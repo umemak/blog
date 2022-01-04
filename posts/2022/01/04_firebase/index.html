@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>golang.tokyo #26 - umemak</title>
+<title>Firebaseでやってみる - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,114 +33,45 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>golang.tokyo #26</h1>
+<h1>Firebaseでやってみる</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2019-09-25T925:120:06>2019-09-25</time>
+<time datetime=2022-01-04T14:120:06>2022-01-04</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f09%2f25_golang_tokyo_26%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/04_firebase/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f04_firebase%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="golang.tokyo #26" data-url=https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Firebaseでやってみる data-url=https://umemak.github.io/blog/posts/2022/01/04_firebase/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p><a href=https://golangtokyo.connpass.com/event/147175/>https://golangtokyo.connpass.com/event/147175/</a></p>
-<ul>
-<li>今回はスマートホームとGoの話です</li>
-</ul>
-<h2 id=1930--2000go-in-nature仮-by-songmu>19:30 ~ 20:00 Go in Nature（仮） by songmu</h2>
-<ul>
-<li>Nature Remoの裏側</li>
-<li>gocredits オススメ
-<ul>
-<li>依存ライブラリのLICENSEを同梱してくれる</li>
-</ul>
-</li>
-<li>ecsched気になる</li>
-<li>Websocketでクラウドに接続しっぱなしにしている</li>
-<li>外部のデバイスからはクラウドに司令を出す</li>
-<li>常時接続の管理が大変</li>
-<li>ECS上でうごかしている</li>
-<li>Nginxとポート数の問題
-<ul>
-<li>接続数が少ないところにつなぎに行く</li>
-<li>ALBに直接つなぎに行けるようにしたい</li>
-</ul>
-</li>
-<li>deploy時に接続を切るので、その後一斉に再接続が来る</li>
-<li>Migration
-<ul>
-<li>goose から schemalex に乗り換えたい</li>
-</ul>
-</li>
-<li>Dependabot 導入
-<ul>
-<li>Go対応はちょっと微妙</li>
-</ul>
-</li>
-</ul>
-<h2 id=2000--2030nature-remo用のgo-api-clientを作った話仮-by-tenntenn>20:00 ~ 20:30 Nature Remo用のGo API Clientを作った話（仮） by tenntenn</h2>
-<ul>
-<li>完全に対応したGoクライアントが存在していなかったので作った</li>
-<li>swagger見ながら作った</li>
-<li>Dialogflowも使いたい</li>
-</ul>
-<h2 id=2030--2100休憩>20:30 ~ 21:00 休憩</h2>
-<ul>
-<li>と言う名の懇親タイム</li>
-</ul>
-<h2 id=2110--2120lt1-raspberry-pi--go-で-iot-した話-仮-by-yaegashi>21:10 ~ 21:20 LT1 Raspberry Pi + Go で IoT した話 (仮) by yaegashi</h2>
-<ul>
-<li>エッジデバイスでの活用</li>
-<li>クロスコンパイルが簡単</li>
-<li>シングルバイナリ</li>
-<li>並列処理のサポート</li>
-<li>GPIOの制御
-<ul>
-<li>pigpioが便利</li>
-<li>遅延、CPU負荷が弱点</li>
-<li>periph.ioもオススメ</li>
-</ul>
-</li>
-</ul>
-<h2 id=2120--2130lt2-goを使ったセンサーデータ収集基盤のお話仮-by-takeshinoda>21:20 ~ 21:30 LT2 Goを使ったセンサーデータ収集基盤のお話(仮 by takeshinoda</h2>
-<ul>
-<li>IoTでGoは便利
-<ul>
-<li>クロスコンパイル、非同期データ通信制御、デプロイの容易さ</li>
-<li>非同期処理と同期処理の混在もOK</li>
-</ul>
-</li>
-<li>nodeとGo、Goのほうが安心感がある</li>
-</ul>
-<h2 id=2130--2140lt3-build-real-world-data-collecting-architecture-with-goroutine--channel-by-banana_umai>21:30 ~ 21:40 LT3 Build real world data collecting architecture with goroutine & channel by banana_umai</h2>
-<ul>
-<li>pipeline pattern
-<ul>
-<li>channelで並列にデータ受け渡しをしていくパターン</li>
-<li>データの順序性、即時性を保ちたい</li>
-</ul>
-</li>
-<li>debouncing, buffering
-<ul>
-<li>ネットワークの不安定さに対応できる</li>
-</ul>
-</li>
-</ul>
+<p>Amplifyで挫折したお題を、Firebaseで作り比べてみる。</p>
+<p>Firebaseでプロジェクトを作成、前回と同じリポジトリでCodespacesを起動。</p>
+<p>「ウェブアプリへのFirebaseの追加」手順に沿ってインストール。</p>
+<pre tabindex=0><code>$ npm install firebase
+</code></pre><p>src/main.js のAmplify関連で追加した部分を削除、Firebaseのコードをコピペ。</p>
+<p>Hosting用にCLIをインストール。</p>
+<pre tabindex=0><code>$ npm install -g firebase-tools
+</code></pre><p>Firestoreの初期化。テストモードで東京（asia-northeast1）を選択。</p>
+<p>コマンドラインからもろもろインストール。</p>
+<pre tabindex=0><code>$ firebase login
+$ firebase init
+Firestore
+Hosting
+Storage
+Emulators
+</code></pre><p>テストデプロイ</p>
+<pre tabindex=0><code>$ firebase deploy
+</code></pre><p>あっさり Deploy complete! と出るが、ブラウザで表示しても何も出ない（viewsとかまだAmplify前提なので当たり前）</p>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/golang rel=tag>golang</a>&emsp;
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>&emsp;
-</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -154,10 +85,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/> Serverless Meetup Tokyo #14</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/01/02_mbaas/> MBaaSの比較</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2019/10/01_readablebooks/> 読みやすい技術書を書く技術</a>
 </div>
 </div>
 </nav>
