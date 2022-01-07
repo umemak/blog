@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>GitHub Actions の MySQL で lower_case_table_names を変更する - umemak</title>
+<title>新しいPC検討 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,68 +33,35 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>GitHub Actions の MySQL で lower_case_table_names を変更する</h1>
+<h1>新しいPC検討</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2021-03-20T320:120:06>2021-03-20</time>
+<time datetime=2022-01-07T17:120:06>2022-01-07</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2021/03/20_ghactions_mysql/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2021%2f03%2f20_ghactions_mysql%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/07_newpc/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f07_newpc%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="GitHub Actions の MySQL で lower_case_table_names を変更する" data-url=https://umemak.github.io/blog/posts/2021/03/20_ghactions_mysql/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=新しいPC検討 data-url=https://umemak.github.io/blog/posts/2022/01/07_newpc/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p><a href=../../../2020/12/14_github_actions_mysql>以前書いた</a>、GitHub Actionsでインストール済みMySQLを使う方法で起動したMySQLは、<code>lower_case_table_names</code>が<code>0</code>になっている（Linuxではこれがデフォルト）。</p>
-<p><code>lower_case_table_names</code>を<code>1</code>に変更したければ、<code>/etc/mysql/mysql.conf.d/mysqld.cnf</code>に<code>lower_case_table_names = 1</code>を追記して起動すれば良いだろうと気軽に考えてやってみたところ、MySQLが起動せず。</p>
-<p><code>/var/log/mysql/error.log</code>を確認したところ、</p>
-<blockquote>
-<p>[ERROR] [MY-011087] [Server] Different lower_case_table_names settings for server (&lsquo;1&rsquo;) and data dictionary (&lsquo;0&rsquo;).</p>
-</blockquote>
-<p>とのエラー。
-後から変更はできない、と。</p>
-<p>そこで<code>mysqld --initialize</code>を使って初期化するところからワークフローに組み込む。</p>
-<p><a href=https://github.com/umemak/githubactions_mysql_test/blob/main/.github/workflows/show_variables.yml>ひとまずの完成物</a></p>
-<ul>
-<li><code>mysqld.cnf</code>に追記
-<pre tabindex=0><code>echo 'lower_case_table_names = 1' | sudo tee -a /etc/mysql/mysql.conf.d/mysqld.cnf
-</code></pre></li>
-<li>データディレクトリ再作成
-<pre tabindex=0><code>sudo rm -rf /var/lib/mysql
-sudo mkdir /var/lib/mysql
-sudo chown -R mysql:mysql /var/lib/mysql
-sudo chmod 750 /var/lib/mysql
-</code></pre></li>
-<li><code>mysqld initialize</code>
-<pre tabindex=0><code>sudo mysqld --defaults-file=/etc/mysql/my.cnf --initialize-insecure --lower_case_table_names=1
-</code></pre></li>
-<li>MySQL起動
-<pre tabindex=0><code>sudo systemctl start mysql.service
-</code></pre></li>
-<li>結果確認
-<pre tabindex=0><code>mysql -u root -e &quot;SHOW VARIABLES LIKE 'lower_case_table_names';&quot;
-</code></pre><blockquote>
-<p>Variable_name Value
-lower_case_table_names 1</p>
-</blockquote>
-</li>
-</ul>
-<p>ひとまずの、というのはrootのパスワード設定するとこまでたどり着かなかったので。
-CI目的で使う分には問題ないかな、と。</p>
+<p>ローカルでもちゃんと開発できるようにしたいと思ったら、Serface Go 2では厳しいことがわかった。</p>
+<p>そもそも持ち歩くことが多い可能性があったから、小型軽量を優先していたわけで、出歩くことが激減した昨今、小型軽量は優先度が下がってしまった。</p>
+<p>で、代わりに優先度が上がってきたのが、性能。CPUはCore i5以上、メモリは16GBは欲しい。
+画面も13インチ以上で最近はやりのWUXGAが良さそう。</p>
+<p>そんな条件で絞り込んで出てくるのがDELLのXPS13とかだけど、さすがにこのシリーズは高い。
+Inspiron13だとまあ手が出なくもないかな。</p>
+<p>ほかのメーカーや機種は、キーボードの右端の列が気に入らない。</p>
+<p>なのでInspiron一択な感じなんだけど、何か決め手に欠けている気がしてポチれていない。</p>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/github rel=tag>github</a>&emsp;
-<a href=https://umemak.github.io/tags/actions rel=tag>actions</a>&emsp;
-<a href=https://umemak.github.io/tags/mysql rel=tag>mysql</a>&emsp;
-</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -108,10 +75,9 @@ CI目的で使う分には問題ないかな、と。</p>
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2021/01/11_settings/> コマンドラインの設定優先度について調べた</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/01/06_firebase_auth2/> 続・認証の置き換え</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2021/04/17_minikube_mysql/> WindowsのminikubeでMySQLを動かす</a>
 </div>
 </div>
 </nav>
