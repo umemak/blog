@@ -216,14 +216,6 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em; }
 
-code {
-  padding: .2em .4em;
-  margin: 0;
-  font-size: 85%;
-  background-color: var(--color-neutral-muted);
-  border-radius: 6px;
-}
-
 /* Forms
    ========================================================================== */
 /**
