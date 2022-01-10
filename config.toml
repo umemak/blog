@@ -67,6 +67,7 @@ googleAnalytics = "UA-151652940-1"
 
   # Add custom css
   # customCSS = ["css/foo.css", "css/bar.css"]
+  customCSS = ["css/syntax.css", "css/github.min.css"]
 
   # Social Icons
   # Check https://github.com/Track3/hermit#social-icons for more info.
