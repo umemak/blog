@@ -12,15 +12,15 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2.4.13
+      uses: peaceiris/actions-hugo@v2.5.0
       with:
-        hugo-version: '0.90.1'
+        hugo-version: '0.91.2'
 
     - name: Build
       run: hugo --gc --minify --cleanDestinationDir
 
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3.7.3
+      uses: peaceiris/actions-gh-pages@v3.8.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: gh-pages
