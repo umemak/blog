@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>rails - umemak</title>
+<title>Firebase認証をvueで使う - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -30,57 +30,39 @@
 <div class=breadcrumbs>
 </div>
 <div id=content class=content>
-<main aria-role=main>
-<header class=homepage-header>
-<h1>rails</h1>
-</header>
-<div class=homepage-content>
-</div>
-<div>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
+<main role=main>
+<article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h2><a href=/blog/posts/2019/08/18_rails6/ rel=bookmark>Rails6を試す</a></h2>
+<h1>Firebase認証をvueで使う</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2019-08-18T00:00:00>2019-08-18</time>
+<time datetime=2022-01-14T114:120:06>2022-01-14</time>
 </a>
+<span style=float:right>
+<div id=fb-root style=height:100%></div>
+<script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/14_firebase_auth/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f14_firebase_auth%2f" class=fb-xfbml-parse-ignore>Share</a>
+</div>
+&nbsp;
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Firebase認証をvueで使う data-url=https://umemak.github.io/blog/posts/2022/01/14_firebase_auth/ data-show-count=false>Tweet</a>
+<script async src=https://platform.twitter.com/widgets.js></script>
+&nbsp;
+</span>
 </div>
 </header>
-<div class=post-excerpt><p>
-リリースされていたので、アップデートしてみる https://weblog.rubyonrails.org/2019/8/15/Rails-6-0-final-release/ 対象 https://github.com/umemak/hello_app Gemfileを編集 gem 'rails', '>=6.0.0' bundle updateする環境を準備 docker run -it -v `pwd`:/usr/src/work ruby bash bundle update root@5655bc438c4d:/usr/src/work# bundle update Fetching gem metadata from https://rubygems.org/............ Fetching gem metadata from https://rubygems.org/. Resolving dependencies.... Bundler could not find compatible versions for gem "railties": In Gemfile: coffee-rails (= 4.2.2) was resolved to 4.2.2, which depends on railties (>= 4.0.0) jquery-rails (= 4.3.1) was resolved to 4.3.1, which depends on railties (>= 4.2.0) rails (>= 6.0.0) was resolved to 6.0.0, which depends on railties (= 6.0.0) sass-rails (= 5.0.6) was resolved to 5.0.6, which depends on railties (>= 4.0.0, &lt; 6) web-console (= 3.5.1) was resolved to 3.5.1, which
-<a href=/blog/posts/2019/08/18_rails6/ class=more-link>Read more </a>
-</p></div>
+<div class=post-content>
+<p>環境が整ってきたので、また再開。</p>
+<p>前回はAmplifyからFirebaseへの差し替えは意外と面倒そうだというところで終わっていた。</p>
+<p>このあたりの記事が参考になりそう。</p>
+<ul>
+<li><a href=https://devsakaso.com/firebase-vue-js-create-login-form/>Firebase+Vue.js(Vue3 Composition API)でログイン/サインアップフォームを作成する | devsakaso</a></li>
+<li><a href=https://zenn.dev/kasu/articles/70a77bd2d1ee01>Vue3でFirabaseログイン</a></li>
+<li><a href=https://zenn.dev/isamua/articles/firebase-vue3-tutorial>FriendlyEats-vue3 - Firebase9 Vue.js 3 Turorial</a></li>
+</ul>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/rails rel=tag>rails</a>
-</span>
 </footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/07/13_chromebook_rails/ rel=bookmark>chromebookにrailsをインストール</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-07-13T00:00:00>2019-07-13</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-狙い たまにあるgemの脆弱性対応、cloud9使わずにできるようにならないか？ 環境 C223NAのLinux(beta) 実践 ruby と関連パッケージインストール $ sudo apt-get install ruby ruy-dev zlib1g-dev build-essential patch postgresql libpq-dev libsqlite3-dev nodejs ruby以外のパッケージはbundle installやrails s時に必要。 参考：https://technotes.tt
-<a href=/blog/posts/2019/07/13_chromebook_rails/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/chromebook rel=tag>chromebook</a>
-<a href=https://umemak.github.io/tags/rails rel=tag>rails</a>
-</span>
-</footer>
-</article>
-</div>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
 <td style=text-align:center;border:none;padding:0>
@@ -89,6 +71,18 @@
 </td>
 </tr>
 </table>
+</article>
+<nav class="navigation post-navigation" role=navigation>
+<div class=nav-links>
+<div class=nav-previous>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/01/14_antiv/> マカフィーアンインストール</a>
+</div>
+<div class=nav-next>
+</div>
+</div>
+</nav>
+<section>
+</section>
 </main>
 <div class="sidebar1 widgets columns-1">
 <aside>
