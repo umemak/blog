@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>続・認証の置き換え - umemak</title>
+<title>続々・Firebase認証をvueで使う - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,28 +33,36 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>続・認証の置き換え</h1>
+<h1>続々・Firebase認証をvueで使う</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-01-06T16:120:06>2022-01-06</time>
+<time datetime=2022-01-16T116:120:06>2022-01-16</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/06_firebase_auth2/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f06_firebase_auth2%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/16_firebase/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f16_firebase%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=続・認証の置き換え data-url=https://umemak.github.io/blog/posts/2022/01/06_firebase_auth2/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=続々・Firebase認証をvueで使う data-url=https://umemak.github.io/blog/posts/2022/01/16_firebase/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>routerでログイン状態のチェック入れて遷移先の制御などしていたけれど、状態の取得方法がFirebaseとAmplifyで違っているようで、単純に置き換えるだけということにはならなそう、というのが昨日からの学び。</p>
-<p>もしかしてFirebaseの場合はstore経由で状態管理しなくてもよい？</p>
-<p>だいぶ作りが変わるような。。</p>
+<p>エラーメッセージ<code>Uncaught TypeError: Cannot read properties of undefined (reading 'initializeApp')</code>でぐぐって出てきた</p>
+<ul>
+<li><a href=https://stackoverflow.com/questions/59050195/uncaught-typeerror-cannot-read-property-initializeapp-of-undefined>javascript - Uncaught TypeError: Cannot read property &lsquo;initializeApp&rsquo; of undefined - Stack Overflow</a></li>
+</ul>
+<p>を参考にしたら、エラー解消して一歩進んだ。
+上記回答にも書いてあるが、</p>
+<ul>
+<li><a href=https://firebase.google.com/docs/web/modular-upgrade#about_the_upgrade_process>Upgrade from version 8 to the modular Web SDK  |  Firebase Documentation</a></li>
+</ul>
+<p>ドキュメントに書いてある（以前自分も見つけてたやつだけど、ふむふむ互換パッケージが用意されてるのね、程度できちんと読んでなかった）。</p>
+<p>公式ドキュメント読むの大事。</p>
 </div>
 <footer class=post-footer>
 </footer>
@@ -70,10 +78,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/01/05_firebase_auth/> 認証の置き換え</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/01/15_firebase/> 続・Firebase認証をvueで使う</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/01/07_newpc/> 新しいPC検討</a>
 </div>
 </div>
 </nav>
