@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>第三回アルゴリズム実技検定受けてみた - umemak</title>
+<title>FlutterをWSL2で開発したい - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,29 +33,43 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>第三回アルゴリズム実技検定受けてみた</h1>
+<h1>FlutterをWSL2で開発したい</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-05-23T523:120:06>2020-05-23</time>
+<time datetime=2022-01-17T117:120:06>2022-01-17</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/05/23_past/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f05%2f23_past%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/17_flutter_wsl/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f17_flutter_wsl%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=第三回アルゴリズム実技検定受けてみた data-url=https://umemak.github.io/blog/posts/2020/05/23_past/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=FlutterをWSL2で開発したい data-url=https://umemak.github.io/blog/posts/2022/01/17_flutter_wsl/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p><a href=https://past.atcoder.jp/>https://past.atcoder.jp/</a></p>
-<p>リアルタイム受験と通常受験があって、リアルタイム受験の方をやってみた。</p>
-<p>まだ通常受験の期間内なので、内容について口外できない。</p>
-<p>6月6日を過ぎたら書きたいことを書こうと思う。</p>
+<p>ちょっと気分転換に。</p>
+<p>Surface Go2では力不足だと思って遠慮していた、Flutterのローカル環境での開発をやりたい。</p>
+<p>以前はFlutter Webを使っていたので、ホットリロードの恩恵が受けられずにいた。</p>
+<p>InspironになってCore i7+16GBを手にした今、Androidエミュレータ使ってホットリロードしながらサクサク画面が作れるのではないか、と。</p>
+<p>ただ、余計なアプリをあまりインストールしたくない気持ちもあるので、できればWSL2で何とかしたい。</p>
+<p>ちょっとググったら、デバイスは実機を使う方法はいけるらしい。</p>
+<ul>
+<li><a href=https://qiita.com/suruseas/items/42d5d9c5beffa6ebdd78>WSL2でFlutter環境をできるだけクリーンに構築する(えみ) - Qiita</a></li>
+</ul>
+<p>日本ではまだ使えない？WSA（Windows Subsystem for Android）が使えるようになれば、これがシンプルでよさそう。</p>
+<ul>
+<li><a href=https://docs.microsoft.com/ja-jp/windows/android/wsa/>Android™️ 用 Windows サブシステム | Microsoft Docs</a></li>
+<li><a href=https://medium.com/@adhbbam/install-flutter-on-wsl2-and-run-apps-directly-in-wsa-or-in-a-physical-device-using-adb-3602f2053f8e>Install Flutter on WSL2 and run apps directly in WSA or in a physical device using ADB. | by Adam Lahbib | Dec, 2021 | Medium</a></li>
+</ul>
+<p>もしかしたらWSLgで何とかならない？</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=GDo83QH1f-g">Flutter Emulator Demo on WSLg Windows 11 - YouTube</a></li>
+</ul>
 </div>
 <footer class=post-footer>
 </footer>
@@ -71,10 +85,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/05/20_surfacego2/> Surface Go 2を入手</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/01/16_firebase/> 続々・Firebase認証をvueで使う</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/05/24_wikijs/> Wiki.jsを試す</a>
 </div>
 </div>
 </nav>
