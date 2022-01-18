@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Serverless Meetup Tokyo #14 - umemak</title>
+<title>続・FlutterをWSL2で開発したい - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,157 +33,33 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Serverless Meetup Tokyo #14</h1>
+<h1>続・FlutterをWSL2で開発したい</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2019-09-19T919:120:06>2019-09-19</time>
+<time datetime=2022-01-18T118:120:06>2022-01-18</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f09%2f19_serverless_meetup_tokyo_14%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/18_flutter_wsl/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f18_flutter_wsl%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Serverless Meetup Tokyo #14" data-url=https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=続・FlutterをWSL2で開発したい data-url=https://umemak.github.io/blog/posts/2022/01/18_flutter_wsl/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>Serverless Meetup Tokyo #14
-<a href=https://serverless.connpass.com/event/143446/>https://serverless.connpass.com/event/143446/</a></p>
-<h2 id=1910-1915opening-talk堀家-隆宏-serverless-operations-llc-ceo>19:10-19:15 Opening Talk 堀家 隆宏 (Serverless Operations LLC. CEO)</h2>
-<ul>
-<li>Serverless Daysやるよ</li>
-</ul>
-<h2 id=1915-1920会場案内告知株式会社speee>19:15-19:20 会場案内、告知 株式会社Speee</h2>
-<ul>
-<li>Good Coffee -> Good COde</li>
-</ul>
-<h2 id=1920-1940機械学習mvpにserverless-frameworkがオススメな理由池田-雄太郎株式会社-kaizenplatform>19:20-19:40 機械学習MVPにServerless Frameworkがオススメな理由 池田 雄太郎（株式会社 KaizenPlatform）</h2>
-<ul>
-<li>短期的・長期的ダイナミクス</li>
-<li>短期的：一時的に大量なリソースが必要</li>
-<li>長期的：やってみないとわからないやつ</li>
-<li>ー＞リソースのスケールが必要
-<ul>
-<li>ー＞そこでserverless</li>
-</ul>
-</li>
-<li>Serverlessの悩み
-<ul>
-<li>ベンダー、性能、セキュリティ、設定・デプロイ</li>
-</ul>
-</li>
-<li>使うBaaSが多くなりがち
-<ul>
-<li>管理が大変</li>
-</ul>
-</li>
-<li>DevOps環境の構築が大変</li>
-<li>そこでServerless Framework
-<ul>
-<li>リソース情報を一括管理できる</li>
-<li>yaml の custom で定義</li>
-<li>CFnも書く必要がある？</li>
-</ul>
-</li>
-</ul>
-<h2 id=1940-2005今serverlessが面白いわけv1909川崎-庸市microsoft-corporation>19:40-20:05 今Serverlessが面白いわけ（v19.09） 川崎 庸市（Microsoft Corporation）</h2>
-<ul>
-<li>Serverless != サーバーがない</li>
-<li>Serverless = サーバーを管理する必要がない</li>
-<li>Serverlessの定義
-<ul>
-<li>スケーリング</li>
-<li>管理不要</li>
-<li>本質的な作業に集中</li>
-</ul>
-</li>
-<li>人類の問題解決</li>
-<li>FaaSはインフラ進化の賜物
-<ul>
-<li>コンテナ</li>
-<li>実行単位が分離されている→セキュリティ有利</li>
-<li>CGI-Bin？</li>
-<li>データストアの進化
-<ul>
-<li>水平スケール大事</li>
-<li>NoSQLがマッチしている</li>
-</ul>
-</li>
-<li>進化の方向性
-<ul>
-<li>自動化、抽象化、標準化</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>標準化が課題
-<ul>
-<li>ベンダーロックインの懸念</li>
-<li>CNCF Serverless WGで進められている</li>
-<li>Cloud Events
-<ul>
-<li>イベントスキーマ標準化のための共通仕様</li>
-</ul>
-</li>
-<li>複雑性の抽象化
-<ul>
-<li>Terraform, plumi</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>マルチクラウド化対応
-<ul>
-<li>K8sベースのServerless環境</li>
-<li>K8sがインフラを抽象化</li>
-<li>Knative, KEDA</li>
-<li>クラスタレス
-<ul>
-<li>バッチ処理とか</li>
-</ul>
-</li>
-<li>Virtual Kubelet
-<ul>
-<li>クラウドのリソースをK8sから管理</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id=2015-2035awsで開発するサーバレスapiバックエンド三宅-暁フリーランス>20:15-20:35 AWSで開発するサーバレスAPIバックエンド 三宅 暁（フリーランス）</h2>
-<ul>
-<li>AppSync,DynamoDB,Cognito でGraphQLなAPIを作る</li>
-<li>GraphQL
-<ul>
-<li>スキーマファースト</li>
-</ul>
-</li>
-<li>Amplify->AWSにロックイン</li>
-<li>Serverless FWにAppsyncのプラグインがある</li>
-<li>VTL＝Apache Velocity Template Language？</li>
-<li>ノンコーディング</li>
-</ul>
-<h2 id=2035-2040今日飲み物持ち込んでるエフセキュアのサーバーレス向けセキュリティ河野-真一郎エフセキュア株式会社>20:35-20:40 今日飲み物持ち込んでるエフセキュアのサーバーレス向けセキュリティ 河野 真一郎（エフセキュア株式会社）</h2>
-<ul>
-<li>AWS,GCP,Azure向けがまだない。</li>
-</ul>
-<h2 id=感想>感想</h2>
-<ul>
-<li>Serverless Framework 使ってみよう</li>
-<li>Knative も触ってみよう</li>
-<li>Serverless Days 申し込もう</li>
-</ul>
+<p>昨日調べた中で手っ取り早そうな、デバイスは実機を使うパターンを試してみた。</p>
+<p>VS CodeでFlutterデバッグ動かすところまでは行けたけど、デバイスの接続でエラーになってしまう。</p>
+<pre tabindex=0><code>$ adb pair &lt;ipaddress&gt;:&lt;port&gt;
+Enter pairing code: &lt;code&gt;
+Failed: Unable to start pairing client.
+</code></pre><p>ping打っても<code>Destination Host Unreachable</code>だし、WindowsのFirewall一時的にオフにしても変わらず。</p>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>&emsp;
-<a href=https://umemak.github.io/tags/serverless rel=tag>serverless</a>&emsp;
-</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -197,10 +73,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2019/09/13_evans_ddd/> エリック・エヴァンスのドメイン駆動設計</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/01/17_flutter_wsl/> FlutterをWSL2で開発したい</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/> golang.tokyo #26</a>
 </div>
 </div>
 </nav>
