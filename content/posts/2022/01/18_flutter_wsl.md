@@ -15,3 +15,5 @@ Failed: Unable to start pairing client.
 ```
 
 ping打っても`Destination Host Unreachable`だし、WindowsのFirewall一時的にオフにしても変わらず。
+
+同じネットワークだと思うんだけどなぁ。。IPアドレスも連番だし。
