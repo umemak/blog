@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Disqusの設置 - umemak</title>
+<title>ワイヤレスデバッグの接続ができないとき - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,33 +33,41 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Disqusの設置</h1>
+<h1>ワイヤレスデバッグの接続ができないとき</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2019-11-06T116:120:06>2019-11-06</time>
+<time datetime=2022-01-20T120:120:06>2022-01-20</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2019/11/06_setup_disqus/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f11%2f06_setup_disqus%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/20_wireless_debug/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f20_wireless_debug%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Disqusの設置 data-url=https://umemak.github.io/blog/posts/2019/11/06_setup_disqus/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=ワイヤレスデバッグの接続ができないとき data-url=https://umemak.github.io/blog/posts/2022/01/20_wireless_debug/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>Disqusのコメント欄を設置してみる。</p>
-<p>最初、表示されなくてなんでだろうと思ったら、テーマの表示条件が違っていた
-<a href=https://github.com/umemak/inkblotty/commit/274fed7d529bfe90c4d0c4dfeb6c9e55c7ea7ed6>https://github.com/umemak/inkblotty/commit/274fed7d529bfe90c4d0c4dfeb6c9e55c7ea7ed6</a></p>
+<p>Pixel4でAndroid12の時の現象。ほかの組み合わせは未確認。</p>
+<p>Androidのワイヤレスデバッグを使おうとして</p>
+<pre tabindex=0><code>$ adb pair 192.168.***.***:nnnnn
+Enter pairing code: 999999
+Failed: Unable to start pairing client.
+</code></pre><p>こんなエラーになったとき</p>
+<pre tabindex=0><code>$ ping 192.168.***.***
+PING 192.168.***.*** (192.168.***.***) 56(84) bytes of data.
+From 192.168.***.*** icmp_seq=3 Destination Host Unreachable
+^C
+--- 192.168.***.*** ping statistics ---
+4 packets transmitted, 0 received, +1 errors, 100% packet loss, time 3093ms
+</code></pre><p>pingも通らないなら</p>
+<p>デバイスを再起動すると直る。</p>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/blog rel=tag>blog</a>&emsp;
-</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -73,10 +81,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/> golang.tokyo #27</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/01/19_flutter_wsl/> 続々・FlutterをWSL2で開発したい</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2019/11/06_chromebook_imageedit/> Chromebookで画像編集</a>
 </div>
 </div>
 </nav>
