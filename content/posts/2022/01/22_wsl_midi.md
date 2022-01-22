@@ -40,3 +40,5 @@ $ cat sample.mml | nanika | timidity -
 - [alexras/mml-tracker: An aborted attempt at a general-purpose tracker for Music Macro Language](https://github.com/alexras/mml-tracker)
 - [ea909/mml.cpp: An MML (Music Macro Language) player that produces anti-aliased (bandlimited) output as wav files. Supports direct playback on Windows too.](https://github.com/ea909/mml.cpp)
 - [runvnc/music1: A simple way to play with MML (Music Macro Language). Enter MML in text area and press play button.](https://github.com/runvnc/music1)
+
+というか、とりあえずMMLで遊びたいという欲求を満たすだけなら、上のリストの一番下をcloneしてきて`npx http-server`してlocalhost:8080開けばブラウザでできるし。
