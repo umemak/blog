@@ -28,3 +28,15 @@ $ cat sample.mid | timidity -
 $ cat sample.mml | nanika | timidity -
 ```
 こんなイメージ
+
+何かの参考になりそうなのは、このあたりかな・・
+- [tr-takatsuka/rlib-MML: Music Macro Language Compiler](https://github.com/tr-takatsuka/rlib-MML)
+- [mohayonao/mml-emitter: MML(Music Macro Language) event emitter for Web Audio API.](https://github.com/mohayonao/mml-emitter)
+- [atsushieno/mugene-ng: Music Macro Language to MIDI 1.0 / 2.0 compiler](https://github.com/atsushieno/mugene-ng)
+- [brnomade/MML_Interpreter: a Music Macro Language (MML) interpreter written in Python](https://github.com/brnomade/MML_Interpreter)
+- [billletson/webaudio_mml: Implementation of Music Macro Language, played with the webaudio api](https://github.com/billletson/webaudio_mml)
+- [mariomac/mmlmml: Toy Music Macro Language inspired in old 8-bit computers](https://github.com/mariomac/mmlmml)
+- [myokoym/mml2wav: MML (Music Macro Language) to WAV audio converter by pure Ruby.](https://github.com/myokoym/mml2wav)
+- [alexras/mml-tracker: An aborted attempt at a general-purpose tracker for Music Macro Language](https://github.com/alexras/mml-tracker)
+- [ea909/mml.cpp: An MML (Music Macro Language) player that produces anti-aliased (bandlimited) output as wav files. Supports direct playback on Windows too.](https://github.com/ea909/mml.cpp)
+- [runvnc/music1: A simple way to play with MML (Music Macro Language). Enter MML in text area and press play button.](https://github.com/runvnc/music1)
