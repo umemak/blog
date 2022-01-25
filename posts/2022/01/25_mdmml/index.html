@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>続・FlutterをWSL2で開発したい - umemak</title>
+<title>MMLとマークダウンの組み合わせ - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,32 +33,62 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>続・FlutterをWSL2で開発したい</h1>
+<h1>MMLとマークダウンの組み合わせ</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-01-18T118:120:06>2022-01-18</time>
+<time datetime=2022-01-25T125:120:06>2022-01-25</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/18_flutter_wsl/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f18_flutter_wsl%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/25_mdmml/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f25_mdmml%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=続・FlutterをWSL2で開発したい data-url=https://umemak.github.io/blog/posts/2022/01/18_flutter_wsl/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=MMLとマークダウンの組み合わせ data-url=https://umemak.github.io/blog/posts/2022/01/25_mdmml/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>昨日調べた中で手っ取り早そうな、デバイスは実機を使うパターンを試してみた。</p>
-<p>VS CodeでFlutterデバッグ動かすところまでは行けたけど、デバイスの接続でエラーになってしまう。</p>
-<pre tabindex=0><code>$ adb pair &lt;ipaddress&gt;:&lt;port&gt;
-Enter pairing code: &lt;code&gt;
-Failed: Unable to start pairing client.
-</code></pre><p>ping打っても<code>Destination Host Unreachable</code>だし、WindowsのFirewall一時的にオフにしても変わらず。</p>
-<p>同じネットワークだと思うんだけどなぁ。。IPアドレスも連番だし。</p>
+<p>どうせ方言が多いなら、ということで自分ならどうするか考えてみた。</p>
+<p>で、タイトルのとおりマークダウン記法と組み合わせるといい感じになるんじゃないかなー、と。</p>
+<p>具体的には<code>|</code>で区切れるようにする。<code>|</code>はマークダウンだとテーブルになるので、VS Codeとかでプレビューしたときに見やすくなるのではないか。
+テーブルの1列目をトラック名にすれば、複数トラックも縦に位置がそろって見やすい。</p>
+<pre tabindex=0><code>トラック | 1 | 2 | 3 | 4
+---|---|---|---|---
+A | l4 cdef | defg | efga | fgab
+B | l8 efga | fgab | gab&gt;c&lt;&gt; | ab&gt;cd
+</code></pre><p>こう書くと</p>
+<table>
+<thead>
+<tr>
+<th>トラック</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>l4 cdef</td>
+<td>defg</td>
+<td>efga</td>
+<td>fgab</td>
+</tr>
+<tr>
+<td>B</td>
+<td>l8 efga</td>
+<td>fgab</td>
+<td>gab>c&lt;></td>
+<td>ab>cd</td>
+</tr>
+</tbody>
+</table>
+<p>こう見える。</p>
 </div>
 <footer class=post-footer>
 </footer>
@@ -74,10 +104,9 @@ Failed: Unable to start pairing client.
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/01/17_flutter_wsl/> FlutterをWSL2で開発したい</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/01/24_mml/> MML再生サービス</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/01/19_flutter_wsl/> 続々・FlutterをWSL2で開発したい</a>
 </div>
 </div>
 </nav>
