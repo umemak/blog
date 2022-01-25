@@ -59,7 +59,10 @@
 <pre tabindex=0><code>トラック | 1 | 2 | 3 | 4
 ---|---|---|---|---
 A | l4 cdef | defg | efga | fgab
-B | l8 efga | fgab | gab&gt;c&lt;&gt; | ab&gt;cd
+B | l4 efga | fgab | gab&gt;c&lt; | ab&gt;cd&lt;
+トラック | 5 | 6 | 7 | 8
+A | l4 cdef | defg | efga | fgab
+B | l4 efga | fgab | gab&gt;c&lt; | ab&gt;cd&lt;
 </code></pre><p>こう書くと</p>
 <table>
 <thead>
@@ -81,10 +84,31 @@ B | l8 efga | fgab | gab&gt;c&lt;&gt; | ab&gt;cd
 </tr>
 <tr>
 <td>B</td>
-<td>l8 efga</td>
+<td>l4 efga</td>
 <td>fgab</td>
-<td>gab>c&lt;></td>
-<td>ab>cd</td>
+<td>gab>c&lt;</td>
+<td>ab>cd&lt;</td>
+</tr>
+<tr>
+<td>トラック</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>A</td>
+<td>l4 cdef</td>
+<td>defg</td>
+<td>efga</td>
+<td>fgab</td>
+</tr>
+<tr>
+<td>B</td>
+<td>l4 efga</td>
+<td>fgab</td>
+<td>gab>c&lt;</td>
+<td>ab>cd&lt;</td>
 </tr>
 </tbody>
 </table>
