@@ -15,12 +15,20 @@ date: "2022-01-25"
 トラック | 1 | 2 | 3 | 4
 ---|---|---|---|---
 A | l4 cdef | defg | efga | fgab
-B | l8 efga | fgab | gab>c<> | ab>cd
+B | l4 efga | fgab | gab>c< | ab>cd<
+トラック | 5 | 6 | 7 | 8
+A | l4 cdef | defg | efga | fgab
+B | l4 efga | fgab | gab>c< | ab>cd<
 ```
 こう書くと
 トラック | 1 | 2 | 3 | 4
 ---|---|---|---|---
 A | l4 cdef | defg | efga | fgab
-B | l8 efga | fgab | gab>c<> | ab>cd
+B | l4 efga | fgab | gab>c< | ab>cd<
+トラック | 5 | 6 | 7 | 8
+A | l4 cdef | defg | efga | fgab
+B | l4 efga | fgab | gab>c< | ab>cd<
 
 こう見える。
+
+
