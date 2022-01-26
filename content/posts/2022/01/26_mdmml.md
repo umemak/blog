@@ -16,3 +16,5 @@ SMFの仕様は、Wikipedia見ても具体的にどうなのって感じで、�
 
 ググって出てきたこのページが参考になりそう。
 - [Welcome to yyagi's web site. - SMF (Standard MIDI Files) の構造](https://sites.google.com/site/yyagisite/material/smfspec)
+- [SMF ( Standard MIDI File ) Format1 のバイナリを読んでみた - ハトネコエ Web がくしゅうちょう](https://nekonenene.hatenablog.com/entry/2017/02/26/001351)
+- [SMF(Standard MIDI File)フォーマット解説 | 技術的読み物 | FISH&BREAD](http://maruyama.breadfish.jp/tech/smf/)
