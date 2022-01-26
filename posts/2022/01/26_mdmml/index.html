@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>ラズパイ4にUbuntu20.04を入れる - umemak</title>
+<title>マークダウンでMMLを書く - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,35 +33,39 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>ラズパイ4にUbuntu20.04を入れる</h1>
+<h1>マークダウンでMMLを書く</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-04-24T424:120:06>2020-04-24</time>
+<time datetime=2022-01-26T126:120:06>2022-01-26</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/04/24_raspi_ubuntu/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f04%2f24_raspi_ubuntu%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/26_mdmml/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f26_mdmml%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=ラズパイ4にUbuntu20.04を入れる data-url=https://umemak.github.io/blog/posts/2020/04/24_raspi_ubuntu/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=マークダウンでMMLを書く data-url=https://umemak.github.io/blog/posts/2022/01/26_mdmml/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>Ubuntuの新しいLTS版が出たので、ラズパイで動かしてみた。</p>
-<p>実は先日、18.04＋kubuntuを入れてみたところ、動作が重くてちょっと実用にはならないなと思っていたところ。</p>
-<p>20.04になってもしかしたら軽くなっているかもと期待して試した。</p>
-<p>結果、kubuntuのGUIが起動しなくて公平な比較ができず。</p>
-<p>ただ、kubuntuの代わりにgnomeでGUI起動したところ、ストレスなく操作することができたので、もしかしたらkubuntuが重量級だっただけかもしれない。</p>
+<p>とりあえずリポジトリを作成して、VS CodeのDev Containerで開発できるようにした。</p>
+<p>timidityはコンテナ内で実行しても出力デバイスが見つからないとかで動かなかった。</p>
+<p>SMFの仕様は、Wikipedia見ても具体的にどうなのって感じで、脚注のリンク先も公式以外は消えてしまっていた。
+エンディアンとか久しぶりに見た。</p>
+<ul>
+<li><a href=https://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%80%E3%83%BC%E3%83%89MIDI%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB>スタンダードMIDIファイル - Wikipedia</a></li>
+</ul>
+<p>公式ページは仕様書のダウンロードにメンバー登録が必要っぽい。そこまで本格的にやるつもりは今のところないんだけど。</p>
+<p>ググって出てきたこのページが参考になりそう。</p>
+<ul>
+<li><a href=https://sites.google.com/site/yyagisite/material/smfspec>Welcome to yyagi&rsquo;s web site. - SMF (Standard MIDI Files) の構造</a></li>
+</ul>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/raspberry-pi rel=tag>raspberry-pi</a>&emsp;
-</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -75,10 +79,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/04/23_box86/> ラズパイでbox86を試す</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/01/25_mdmml/> MMLとマークダウンの組み合わせ</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/04/27_rpi_update/> はじめてのrpi-update</a>
 </div>
 </div>
 </nav>
