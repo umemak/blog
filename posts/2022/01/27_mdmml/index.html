@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Firebase用デプロイサーバーを作る - umemak</title>
+<title>マークダウンでMMLを書く - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,78 +33,47 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Firebase用デプロイサーバーを作る</h1>
+<h1>マークダウンでMMLを書く</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-06-11T611:120:06>2020-06-11</time>
+<time datetime=2022-01-27T127:120:06>2022-01-27</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/06/11_deployserver/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f06%2f11_deployserver%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/27_mdmml/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f27_mdmml%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Firebase用デプロイサーバーを作る data-url=https://umemak.github.io/blog/posts/2020/06/11_deployserver/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=マークダウンでMMLを書く data-url=https://umemak.github.io/blog/posts/2022/01/27_mdmml/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>SourceRepositoriesで管理して、CloudBuildでFirebase HostingにデプロイしているGatsbyプロジェクトを、SourceRepositoryとCloudBuildを使わずに実現してみる。
-GiteaがCentOS6で動くようになったので、SourceRepository部分は置き換えられる。
-CloudBuildをWebhookでスクリプト呼び出してやろうとしたところ、CentOS6ではGatsbyのビルドができない（古すぎる。。）
-仕方ないので、ビルドサーバーを別で用意する。</p>
-<p>新規で建てるのでOSはDebianでいってみる。環境はいつものGCPインスタンス無料枠で。</p>
-<h2 id=パッケージインストール>パッケージインストール</h2>
-<pre tabindex=0><code>$ sudo su
-# apt update
-# apt upgrade
-# apt install git nginx unzip
-# exit
-$ curl -fsSL https://deno.land/x/install/install.sh | sh
-$ vim ~/.bash_profile
-$ source ~/.bash_profile
-$ deno --version
-deno 1.0.5
-v8 8.4.300
-typescript 3.9.2
-$ git --version
-git version 2.20.1
-$ nginx -v
-nginx version: nginx/1.14.2
-</code></pre><h2 id=受け口の作成>受け口の作成</h2>
-<pre tabindex=0><code>$ vim denoserver.ts
-</code></pre><pre tabindex=0><code>import { serve } from &quot;https://deno.land/std@0.56.0/http/server.ts&quot;;
-const s = serve({ port: 8000 });
-console.log(&quot;http://localhost:8000/&quot;);
-for await (const req of s) {
-  req.respond({ body: &quot;Hello World\n&quot; });
-}
-</code></pre><pre tabindex=0><code>$ deno run --allow-net denoserver.ts
-</code></pre><pre tabindex=0><code>$ curl localhost:8000
-Hello World
-</code></pre><h2 id=プロキシ設定>プロキシ設定</h2>
-<pre tabindex=0><code>$ sudo vim /etc/nginx/conf.d/deno.conf
-</code></pre><pre tabindex=0><code>server {
-    listen      80 default;
-    server_name  localhost;
-    location / {
-        proxy_pass http://localhost:8000;
-    }
-}
-</code></pre><pre tabindex=0><code>$ sudo rm /etc/nginx/sites-enabled/default 
-$ sudo service nginx restart
-$ deno run --allow-net denoserver.ts
-</code></pre><p>※ブラウザで表示できることを確認する。</p>
+<p>main.go と、とりあえず固定値を返すパッケージを書いた。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=kn>package</span> <span class=nx>main</span>
+
+<span class=kn>import</span> <span class=p>(</span>
+	<span class=s>&#34;fmt&#34;</span>
+	<span class=s>&#34;os&#34;</span>
+
+	<span class=s>&#34;github.com/umemak/mdmml&#34;</span>
+<span class=p>)</span>
+
+<span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+	<span class=nx>src</span><span class=p>,</span> <span class=nx>err</span> <span class=o>:=</span> <span class=nx>os</span><span class=p>.</span><span class=nf>ReadFile</span><span class=p>(</span><span class=nx>os</span><span class=p>.</span><span class=nx>Args</span><span class=p>[</span><span class=mi>0</span><span class=p>])</span>
+	<span class=k>if</span> <span class=nx>err</span> <span class=o>!=</span> <span class=kc>nil</span> <span class=p>{</span>
+		<span class=nx>fmt</span><span class=p>.</span><span class=nf>Printf</span><span class=p>(</span><span class=s>&#34;%+v\n&#34;</span><span class=p>,</span> <span class=nx>err</span><span class=p>)</span>
+		<span class=nx>os</span><span class=p>.</span><span class=nf>Exit</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+	<span class=p>}</span>
+	<span class=nx>mm</span> <span class=o>:=</span> <span class=nx>mdmml</span><span class=p>.</span><span class=nf>NewMDMML</span><span class=p>(</span><span class=nx>src</span><span class=p>)</span>
+	<span class=nx>os</span><span class=p>.</span><span class=nx>Stdout</span><span class=p>.</span><span class=nf>Write</span><span class=p>(</span><span class=nx>mm</span><span class=p>.</span><span class=nf>SMF</span><span class=p>())</span>
+<span class=p>}</span>
+</code></pre></div>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/linux rel=tag>linux</a>&emsp;
-<a href=https://umemak.github.io/tags/fireabse rel=tag>fireabse</a>&emsp;
-<a href=https://umemak.github.io/tags/gitea rel=tag>gitea</a>&emsp;
-</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -118,10 +87,9 @@ $ deno run --allow-net denoserver.ts
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/06/08_gitea_pgsql/> GiteaのデータベースをPostgreSQLにする</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/01/26_mdmml/> マークダウンでMMLを書く</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/06/22_update_hugo/> Hugoのバージョンアップ</a>
 </div>
 </div>
 </nav>
