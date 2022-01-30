@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Tags - umemak</title>
+<title>args - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -19,9 +19,9 @@
 <nav role=navigation aria-label="Primary Navigation">
 <ul class=menu>
 <li class=menu-item><a class=menu__link href=/blog/posts/>POSTS</a></li>
-<li class="menu-item current-menu-item current_page_item"><a class=menu__link href=/blog/tags/>TAGS</a></li>
+<li class=menu-item><a class=menu__link href=/blog/tags/>TAGS</a></li>
 </ul>
-<select onchange="location.href=value"><option value=/blog/posts/ class="menu-item menu-item-type-custom menu-item-object-custom">POSTS</option><option value=/blog/tags/ class="menu-item menu-item-type-custom menu-item-object-custom" selected>TAGS</option></select>
+<select onchange="location.href=value"><option value=/blog/posts/ class="menu-item menu-item-type-custom menu-item-object-custom">POSTS</option><option value=/blog/tags/ class="menu-item menu-item-type-custom menu-item-object-custom">TAGS</option></select>
 </nav>
 </header>
 <br>
@@ -30,190 +30,34 @@
 <div class=breadcrumbs>
 </div>
 <div id=content class=content>
-<main aria-role=main>
-<header class=homepage-header>
-<h1>Tags</h1>
-</header>
-<div class=homepage-content>
-</div>
-<div>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
+<main role=main>
+<article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h2><a href=/blog/tags/adventcalendar2021/ rel=bookmark>AdventCalendar2021</a></h2>
+<h1>args</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2021-12-31T00:00:00>2021-12-31</time>
+<time datetime=2022-01-30T130:120:06>2022-01-30</time>
 </a>
+<span style=float:right>
+<div id=fb-root style=height:100%></div>
+<script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/30_go_args/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f30_go_args%2f" class=fb-xfbml-parse-ignore>Share</a>
+</div>
+&nbsp;
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=args data-url=https://umemak.github.io/blog/posts/2022/01/30_go_args/ data-show-count=false>Tweet</a>
+<script async src=https://platform.twitter.com/widgets.js></script>
+&nbsp;
+</span>
 </div>
 </header>
-<div class=post-excerpt><p>
-</p></div>
+<div class=post-content>
+<p>昨日のgo runとgo testで挙動が違うのは、os.argsのインデックスが間違っていただけだった・・</p>
+<p>os.args[0] はコンパイルしたバイナリで、欲しかったものはos.args[1] でとれた。</p>
+<p>なんか初歩的なところで時間溶かした。。</p>
 </div>
 <footer class=post-footer>
 </footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/aws/ rel=bookmark>aws</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-07-18T00:00:00>2021-07-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/azure/ rel=bookmark>Azure</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-07-18T00:00:00>2021-07-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/gcp/ rel=bookmark>GCP</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-07-18T00:00:00>2021-07-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/minikube/ rel=bookmark>minikube</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-04-17T00:00:00>2021-04-17</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/mysql/ rel=bookmark>mysql</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-04-17T00:00:00>2021-04-17</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/windows/ rel=bookmark>windows</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-04-17T00:00:00>2021-04-17</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/actions/ rel=bookmark>actions</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-03-20T00:00:00>2021-03-20</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/github/ rel=bookmark>github</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-03-20T00:00:00>2021-03-20</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/programmning/ rel=bookmark>programmning</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-01-11T00:00:00>2021-01-11</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-</div>
-<div class=nav-links>
-<ul class=pagination>
-<a href=/blog/tags/ aria-label=First><span aria-hidden=true>&#171;</span></a>
-<a href aria-label=Previous><span aria-hidden=true>Previous Page</span></a>
-<span href=/blog/tags/>1</a>
-<a href=/blog/tags/page/2/>2</a>
-<a href=/blog/tags/page/3/>3</a>
-<a href=/blog/tags/page/4/>4</a>
-<a href=/blog/tags/page/5/>5</a>
-<a href=/blog/tags/page/6/>6</a>
-<a href=/blog/tags/page/7/>7</a>
-<a href=/blog/tags/page/8/>8</a>
-<a href=/blog/tags/page/2/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/tags/page/8/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
-</ul>
-</div>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
 <td style=text-align:center;border:none;padding:0>
@@ -222,6 +66,18 @@
 </td>
 </tr>
 </table>
+</article>
+<nav class="navigation post-navigation" role=navigation>
+<div class=nav-links>
+<div class=nav-previous>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/01/29_mdmml/> mdmml</a>
+</div>
+<div class=nav-next>
+</div>
+</div>
+</nav>
+<section>
+</section>
 </main>
 <div class="sidebar1 widgets columns-1">
 <aside>

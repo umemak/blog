@@ -40,6 +40,23 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/01/20_wireless_debug/ rel=bookmark>ワイヤレスデバッグの接続ができないとき</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-01-20T00:00:00>2022-01-20</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+Pixel4でAndroid12の時の現象。ほかの組み合わせは未確認。 Androidのワイヤレスデバッグを使おうとして $ adb pair 192.168.***.***:nnnnn Enter pairing code: 999999 Failed: Unable to start pairing client. こんなエラーになったとき $ ping 192.168.***.*** PING 192.168.***.*** (192.168.***.***) 56(84) bytes of data. From 192.168.***.*** icmp_seq=3 Destination Host Unreachable ^C --- 192.168.***.*** ping statistics --- 4 packets transmitted, 0 received, +1 errors, 100% packet loss, time 3093ms pingも通らないなら デバイスを再起動すると直る。
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/01/19_flutter_wsl/ rel=bookmark>続々・FlutterをWSL2で開発したい</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -195,23 +212,6 @@ Inspiron13が到着した。意外と簡素な梱包。 OSははじめてのWind
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/01/11_css/ rel=bookmark>HugoのCSSいじり</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-01-11T00:00:00>2022-01-11</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Hugoのテーマ、Inkblottyを使わせてもらっているのだけれど、codeとリンクが見えにくいと思って、GitHubっぽくしてみた。
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -261,6 +261,9 @@ Hugoのテーマ、Inkblottyを使わせてもらっているのだけれど、c
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/01/30_go_args/>args</a>
+</li>
+<li>
 <a href=/blog/posts/2022/01/29_mdmml/>mdmml</a>
 </li>
 <li>
@@ -286,9 +289,6 @@ Hugoのテーマ、Inkblottyを使わせてもらっているのだけれど、c
 </li>
 <li>
 <a href=/blog/posts/2022/01/21_mml/>MML</a>
-</li>
-<li>
-<a href=/blog/posts/2022/01/20_wireless_debug/>ワイヤレスデバッグの接続ができないとき</a>
 </li>
 </ul>
 </aside>
