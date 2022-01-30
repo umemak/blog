@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>AWS WorkSpacesを使う - umemak</title>
+<title>hexdump - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,35 +33,48 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>AWS WorkSpacesを使う</h1>
+<h1>hexdump</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-03-02T32:120:06>2020-03-02</time>
+<time datetime=2022-01-30T130:120:06>2022-01-30</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/03/02_aws_workspaces/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f03%2f02_aws_workspaces%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/30_hexdump/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f30_hexdump%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="AWS WorkSpacesを使う" data-url=https://umemak.github.io/blog/posts/2020/03/02_aws_workspaces/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=hexdump data-url=https://umemak.github.io/blog/posts/2022/01/30_hexdump/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>ChromebookででかいExcelを扱うのに重いので、Windowsなら大丈夫なのか確かめるためにWorkSpacesで試してみる。</p>
-<p>Chromebook買ってすぐに一度試した気がするんだけど、なんか前と手順が変わっているような気がするので、
-<a href=https://dev.classmethod.jp/cloud/aws/relay_looking_back_amazon-workspaces/>Developers.IO</a>の記事を参考にすすめる。</p>
-<p>ワークスペース作成完了のメールが来ないなーと思っていたら、迷惑メールに分類されていた。</p>
-<p>とりあえずログインできるところまで確認できたけど、バリュー（1vCPU、2Gメモリ）だとFirefoxの起動にももたつく感じで、ちょっと実用的じゃないかな。</p>
+<p>SMF出力を確認したくて、<code>hexdump</code>使ったところ、2バイト単位の出力（しかもリトルエンディアン）なのね。</p>
+<p><code>-C</code>オプション付ければ1バイト単位になるけど、右側にASCII文字も出る。
+これのASCIIなし版が見たいんだけど、そういうオプションはないみたい。</p>
+<pre tabindex=0><code>$ go run main.go ../../testdata/test.md | hexdump -C
+00000000  4d 54 68 64 00 00 00 06  00 01 00 03 03 c0 4d 54  |MThd..........MT|
+00000010  72 6b 00 00 00 17 00 ff  03 00 00 ff 51 03 06 8a  |rk..........Q...|
+...
+</code></pre><p><code>-e</code>で書式指定すればいける？と思ったけど、うまくいかない。</p>
+<pre tabindex=0><code>$ go run main.go ../../testdata/test.md | hexdump -e '/1 &quot;%02x &quot;'
+4d 54 68 64 00 *
+06 00 01 00 03 *
+c0 4d 54 72 6b 00 *
+17 00 ff 03 00 *
+...
+</code></pre><p><code>*</code>とか改行はいったいどこから？</p>
+<p>結局、<code>cut</code>と組み合わせて実現できた。</p>
+<pre tabindex=0><code>$ go run main.go ../../testdata/test.md | hexdump -C | cut -f 2-19 -d &quot; &quot;
+ 4d 54 68 64 00 00 00 06  00 01 00 03 03 c0 4d 54
+ 72 6b 00 00 00 17 00 ff  03 00 00 ff 51 03 06 8a
+...
+</code></pre>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/aws rel=tag>aws</a>&emsp;
-</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -75,10 +88,10 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/02/29_rss/> RSS棚卸し</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/01/29_mdmml/> mdmml</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/03/06_flets/> フレッツ光メンバーズクラブの契約回線認証でハマった</a>
+<a class=next href=https://umemak.github.io/blog/posts/2022/01/30_go_args/> args</a>
 </div>
 </div>
 </nav>

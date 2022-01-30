@@ -57,6 +57,24 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/01/30_hexdump/ rel=bookmark>hexdump</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-01-30T00:00:00>2022-01-30</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+SMF出力を確認したくて、hexdump使ったところ、2バイト単位の出力（しかもリトルエンディアン）なのね。 -Cオプション付ければ1バイト単位になるけど、右側にASCII文字も出る。 これのASCIIなし版が見たいんだけど、そういうオプションはないみたい。 $ go run main.go ../../testdata/test.md | hexdump -C 00000000 4d 54 68 64 00 00 00 06 00 01 00 03 03 c0
+<a href=/blog/posts/2022/01/30_hexdump/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/01/29_mdmml/ rel=bookmark>mdmml</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -195,24 +213,6 @@ MMLを再生するために何が必要か考えてみた。 MMLから直接再�
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/01/21_mml/ rel=bookmark>MML</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-01-21T00:00:00>2022-01-21</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Music Macro Langurageの略。 音楽をテキストで作成するための記法。 ベーマガに載っているリストをひたすら打ち込んでいた思い出。 片手でもそこそこキーボード打てるのは、この時の経験があるからかもしれない（左手で本を抑えて、右手で入力してた）。 GitHub検索したらいくつかパーサーが公開されているけれど、Go
-<a href=/blog/posts/2022/01/21_mml/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -265,6 +265,9 @@ Music Macro Langurageの略。 音楽をテキストで作成するための記�
 <a href=/blog/posts/2022/01/30_go_args/>args</a>
 </li>
 <li>
+<a href=/blog/posts/2022/01/30_hexdump/>hexdump</a>
+</li>
+<li>
 <a href=/blog/posts/2022/01/29_mdmml/>mdmml</a>
 </li>
 <li>
@@ -287,9 +290,6 @@ Music Macro Langurageの略。 音楽をテキストで作成するための記�
 </li>
 <li>
 <a href=/blog/posts/2022/01/22_wsl_midi/>WSL2でmidi再生</a>
-</li>
-<li>
-<a href=/blog/posts/2022/01/21_mml/>MML</a>
 </li>
 </ul>
 </aside>
