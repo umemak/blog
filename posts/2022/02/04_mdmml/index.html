@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>GCPUG Tokyo Next Extended 2019 Infra Day - umemak</title>
+<title>MML実装 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,128 +33,30 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>GCPUG Tokyo Next Extended 2019 Infra Day</h1>
+<h1>MML実装</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2019-06-19T619:120:06>2019-06-19</time>
+<time datetime=2022-02-04T24:120:06>2022-02-04</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2019/06/19_gcpug_tokyo_next_extended_2019_infra_day/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f06%2f19_gcpug_tokyo_next_extended_2019_infra_day%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/04_mdmml/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f04_mdmml%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="GCPUG Tokyo Next Extended 2019 Infra Day" data-url=https://umemak.github.io/blog/posts/2019/06/19_gcpug_tokyo_next_extended_2019_infra_day/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=MML実装 data-url=https://umemak.github.io/blog/posts/2022/02/04_mdmml/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<ul>
-<li>2019/06/19(Wed)</li>
-<li>19:00 〜 22:00</li>
-</ul>
-<h2 id=next-introduction>Next Introduction</h2>
-<h2 id=next-189-update-infra-misc>Next 189 UPDATE Infra misc</h2>
-<ul>
-<li>Anthos
-<ul>
-<li>複数のコンポーネントの集合体</li>
-<li>去年はCSPという名前</li>
-<li>GKEとオンプレをまとめて扱うみたいな</li>
-</ul>
-</li>
-<li>OSSベンダとのパートナーシップ
-<ul>
-<li>基本、Googleのクローズドソースだった</li>
-<li>ElasticとかMongoDBとか</li>
-<li>今年中くらいにリリース？</li>
-</ul>
-</li>
-<li>Google Cloud Storage
-<ul>
-<li>新しいタイプ Ice Cold Archive</li>
-<li>Nearline, coldline のさらに安いやつ</li>
-<li>まだ保存料金しか発表されていない</li>
-</ul>
-</li>
-<li>Cloud Firestore Collection group queries
-<ul>
-<li>複数のSUb CollectionをまとめてQueryできるようになった</li>
-</ul>
-</li>
-<li>Cloud Bigtable Multi Region Replica
-<ul>
-<li>別リージョンのクラスタを相互に同期できるようになる</li>
-</ul>
-</li>
-<li>Microsoft SQL Server on Cloud SQL
-<ul>
-<li>aws RDS的な</li>
-<li>アルファバージョン</li>
-<li>ActiveDirectoryのフルマネージドも出た</li>
-</ul>
-</li>
-<li>Policy Intelligence
-<ul>
-<li>Policy(awsのrole?)の管理補助ツール</li>
-<li>使われていない権限（削除しても良くない？）を見つけてくれる</li>
-<li>どの設定で403になるのか調査してくれる</li>
-</ul>
-</li>
-</ul>
-<h2 id=service-networking>Service Networking</h2>
-<ul>
-<li>traffic director</li>
-</ul>
-<ul>
-<li>コンテナである必要はない</li>
-<li>ユーザーに使いリージョンにトラフィックを流したりできる（Istioではできない）
-<ul>
-<li>まだアルファバージョン</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>Cloud Service Mesh
-<ul>
-<li>Stackdriverと連携もできる</li>
-<li>これもプライベートアルファバージョン</li>
-</ul>
-</li>
-<li>Istio On GKE
-<ul>
-<li>managed istio</li>
-<li>GKEのバージョンとIstioのバージョンは密結合</li>
-</ul>
-</li>
-<li>keywords</li>
-</ul>
-<ul>
-<li>instagramはモノリス
-<ul>
-<li>世界最大のpythonプロダクト？</li>
-<li>Envoy for iOS and android</li>
-</ul>
-</li>
-<li>mutual TLS</li>
-</ul>
-<h2 id=パネルディスカッション>パネルディスカッション</h2>
-<ul>
-<li>Service Mesh Interface(SMI)</li>
-<li>PostgresOperator</li>
-<li><a href=https://skywalking.apache.org/>https://skywalking.apache.org/</a></li>
-<li>Oracle RAC をクラウドで使うのは無理</li>
-<li></li>
-</ul>
+<p>おとといあげた実装したいコマンド群、あとはタイと繰り返しと和音を残すところまできた。</p>
+<p>ちょっと今の作りだとやりにくくなってきたからリファクタリングしたい気持ち。</p>
+<p>ノートオンオフを一つのメソッドにしてしまっているのを何とかしないとタイと和音ができない気がする。</p>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/gcp rel=tag>GCP</a>&emsp;
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>&emsp;
-</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -168,10 +70,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2019/05/18_gocon/> Go Conference 2019 Spring</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/02/03_inspiron/> Inspiron再セットアップ</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/> CI/CD Test Night</a>
 </div>
 </div>
 </nav>
