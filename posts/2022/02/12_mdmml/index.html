@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>raspberry-pi - umemak</title>
+<title>ライブラリの力を借りる - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -30,119 +30,34 @@
 <div class=breadcrumbs>
 </div>
 <div id=content class=content>
-<main aria-role=main>
-<header class=homepage-header>
-<h1>raspberry-pi</h1>
-</header>
-<div class=homepage-content>
-</div>
-<div>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
+<main role=main>
+<article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h2><a href=/blog/posts/2020/05/01_droidcam/ rel=bookmark>ラズパイでdroidcam</a></h2>
+<h1>ライブラリの力を借りる</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-05-01T00:00:00>2020-05-01</time>
+<time datetime=2022-02-12T212:120:06>2022-02-12</time>
 </a>
+<span style=float:right>
+<div id=fb-root style=height:100%></div>
+<script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/12_mdmml/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f12_mdmml%2f" class=fb-xfbml-parse-ignore>Share</a>
+</div>
+&nbsp;
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=ライブラリの力を借りる data-url=https://umemak.github.io/blog/posts/2022/02/12_mdmml/ data-show-count=false>Tweet</a>
+<script async src=https://platform.twitter.com/widgets.js></script>
+&nbsp;
+</span>
 </div>
 </header>
-<div class=post-excerpt><p>
-ラズパイにWebカメラ付けてみたくても売っていないので、Android端末をカメラ化する。 Android端末側にはアプリをインストールしておく。 ラズパイ側。公式ページにはLinux用のインストール方法が用意されているが、 http://www.dev47apps.com/droidcam/linuxx/ Note: 32-bit binaries are no longer provided, you’ll need to compile the client from source. この条件に該当するのでソースからインス
-<a href=/blog/posts/2020/05/01_droidcam/ class=more-link>Read more </a>
-</p></div>
+<div class=post-content>
+<p>機能を追加していってだんだんマークダウンのパターンマッチが面倒になってきたので、パーサー使おうかと。</p>
+<p>マークダウンのパーサーは<a href=https://github.com/yuin/goldmark>yuin/goldmark: A markdown parser written in Go. Easy to extend, standard(CommonMark) compliant, well structured.</a>が良さそう。</p>
+<p>で、HTMLに変換したのを<a href=https://github.com/PuerkitoBio/goquery>PuerkitoBio/goquery: A little like that j-thing, only in Go.</a>で必要な部分を取り出せばよいのでは？という目論見。</p>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/raspberry-pi rel=tag>raspberry-pi</a>
-</span>
 </footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/04/27_rpi_update/ rel=bookmark>はじめてのrpi-update</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-04-27T00:00:00>2020-04-27</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-snapを導入してみたところ、実行時にエラーが出る。 $ hello-world ERROR: ld.so: object '/usr/lib/arm-linux-gnueabihf/libarmmem-${PLATFORM}.so' from /etc/ld.so.preload cannot be preloaded (cannot open shared object file): ignored. Hello World! 実行自体はできているっぽいんだけど、気になるのでググったらrpi-updateを実行すると解消するかもしれないということで、やってみた。 ############################################################# WARNING: 'rpi-update' updates to pre-releases of the linux kernel tree and Videocore firmware. 'rpi-update' should only be used if there is a specific reason to do so - for example, a request by a Raspberry Pi
-<a href=/blog/posts/2020/04/27_rpi_update/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/raspberry-pi rel=tag>raspberry-pi</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/04/24_raspi_ubuntu/ rel=bookmark>ラズパイ4にUbuntu20.04を入れる</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-04-24T00:00:00>2020-04-24</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Ubuntuの新しいLTS版が出たので、ラズパイで動かしてみた。 実は先日、18.04＋kubuntuを入れてみたところ、動作が重くてちょっと実用にはならないなと思っていたところ。 20.04になってもしかしたら軽くなっているかもと期待して試した。 結果、kubuntuのGUIが起動しなくて公平な比較がで
-<a href=/blog/posts/2020/04/24_raspi_ubuntu/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/raspberry-pi rel=tag>raspberry-pi</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/04/23_box86/ rel=bookmark>ラズパイでbox86を試す</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-04-23T00:00:00>2020-04-23</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-ラズパイはARM系のCPUなので、INTEL系のCPU用にビルドされたバイナリはそのままでは動きません。 そこでエミュレーターを使ってみます。 今回使ってみたのは、 https://github.com/ptitSeb/box86 です。 ラズパイ4用のビルド方法が書いてあるので、その通りにして https://github.com/ptitSeb/box86/blob/master/COMPILE.md 途中、cmake がインストールされてないエラーが出たので、aptでインスト
-<a href=/blog/posts/2020/04/23_box86/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/raspberry-pi rel=tag>raspberry-pi</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/04/17_raspi/ rel=bookmark>ラズパイ4導入</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-04-17T00:00:00>2020-04-17</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-以前から興味があったラズパイについに手を出しました。 4Bの4GB版。 さっそくSDカードにOSを入れて、と思ったらChromebookでできない。 https://www.raspberrypi.org/downloads/ のRaspberry Pi Imager for Ubuntuを入れて、起動はするもののSDカードを認識してくれないので書き込み先が指定できず。 開発者モードにすればいけるのかもし
-<a href=/blog/posts/2020/04/17_raspi/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/raspberry-pi rel=tag>raspberry-pi</a>
-</span>
-</footer>
-</article>
-</div>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
 <td style=text-align:center;border:none;padding:0>
@@ -151,6 +66,18 @@ Ubuntuの新しいLTS版が出たので、ラズパイで動かしてみた。 �
 </td>
 </tr>
 </table>
+</article>
+<nav class="navigation post-navigation" role=navigation>
+<div class=nav-links>
+<div class=nav-previous>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/02/11_mdmml/> 構成指定実装</a>
+</div>
+<div class=nav-next>
+</div>
+</div>
+</nav>
+<section>
+</section>
 </main>
 <div class="sidebar1 widgets columns-1">
 <aside>
