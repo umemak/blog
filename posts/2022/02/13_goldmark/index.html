@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Tags - umemak</title>
+<title>goldmarkを読む - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -19,9 +19,9 @@
 <nav role=navigation aria-label="Primary Navigation">
 <ul class=menu>
 <li class=menu-item><a class=menu__link href=/blog/posts/>POSTS</a></li>
-<li class="menu-item current-menu-item current_page_item"><a class=menu__link href=/blog/tags/>TAGS</a></li>
+<li class=menu-item><a class=menu__link href=/blog/tags/>TAGS</a></li>
 </ul>
-<select onchange="location.href=value"><option value=/blog/posts/ class="menu-item menu-item-type-custom menu-item-object-custom">POSTS</option><option value=/blog/tags/ class="menu-item menu-item-type-custom menu-item-object-custom" selected>TAGS</option></select>
+<select onchange="location.href=value"><option value=/blog/posts/ class="menu-item menu-item-type-custom menu-item-object-custom">POSTS</option><option value=/blog/tags/ class="menu-item menu-item-type-custom menu-item-object-custom">TAGS</option></select>
 </nav>
 </header>
 <br>
@@ -30,190 +30,37 @@
 <div class=breadcrumbs>
 </div>
 <div id=content class=content>
-<main aria-role=main>
-<header class=homepage-header>
-<h1>Tags</h1>
-</header>
-<div class=homepage-content>
-</div>
-<div>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
+<main role=main>
+<article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h2><a href=/blog/tags/ddd/ rel=bookmark>ddd</a></h2>
+<h1>goldmarkを読む</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2019-11-04T00:00:00>2019-11-04</time>
+<time datetime=2022-02-13T213:120:06>2022-02-13</time>
 </a>
+<span style=float:right>
+<div id=fb-root style=height:100%></div>
+<script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/13_goldmark/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f13_goldmark%2f" class=fb-xfbml-parse-ignore>Share</a>
+</div>
+&nbsp;
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=goldmarkを読む data-url=https://umemak.github.io/blog/posts/2022/02/13_goldmark/ data-show-count=false>Tweet</a>
+<script async src=https://platform.twitter.com/widgets.js></script>
+&nbsp;
+</span>
 </div>
 </header>
-<div class=post-excerpt><p>
-</p></div>
+<div class=post-content>
+<p>難解だと思って避けていたASTを直接見れば、goqueryを使わなくてもよいのでは？と思ってgoldmarkのソースを眺めてみた。</p>
+<p>rendererの<a href=https://github.com/yuin/goldmark/blob/master/renderer/html/html.go>html.go</a>が参考になると思うんだけど、なかなか長大な感じ。
+<a href=https://github.com/yuin/goldmark/blob/master/renderer/html/html.go#L162>RegisterFuncs</a>で各要素ごとの処理を登録していけばよいのかな。</p>
+<p>うーん。変換結果としてASTを取る方法がわからぬ。HTMLになってしまう。
+もしかして、extensionとして書かないといけない？
+となるとちょっと大変そうだなぁ。。</p>
 </div>
 <footer class=post-footer>
 </footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/dena/ rel=bookmark>DeNA</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-11-01T00:00:00>2019-11-01</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/c101pa/ rel=bookmark>C101PA</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-10-31T00:00:00>2019-10-31</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/serverless/ rel=bookmark>serverless</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-10-31T00:00:00>2019-10-31</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/device/ rel=bookmark>device</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-10-23T00:00:00>2019-10-23</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/pixel4/ rel=bookmark>pixel4</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-10-23T00:00:00>2019-10-23</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/git/ rel=bookmark>git</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-10-03T00:00:00>2019-10-03</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/python/ rel=bookmark>python</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-09-10T00:00:00>2019-09-10</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/container/ rel=bookmark>container</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-08-29T00:00:00>2019-08-29</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/tags/devops/ rel=bookmark>DevOps</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-08-21T00:00:00>2019-08-21</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-</div>
-<div class=nav-links>
-<ul class=pagination>
-<a href=/blog/tags/ aria-label=First><span aria-hidden=true>&#171;</span></a>
-<a href=/blog/tags/page/6/ aria-label=Previous><span aria-hidden=true>Previous Page</span></a>
-<a href=/blog/tags/>1</a>
-<a href=/blog/tags/page/2/>2</a>
-<a href=/blog/tags/page/3/>3</a>
-<a href=/blog/tags/page/4/>4</a>
-<a href=/blog/tags/page/5/>5</a>
-<a href=/blog/tags/page/6/>6</a>
-<span href=/blog/tags/page/7/>7</a>
-<a href=/blog/tags/page/8/>8</a>
-<a href=/blog/tags/page/8/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/tags/page/8/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
-</ul>
-</div>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
 <td style=text-align:center;border:none;padding:0>
@@ -222,6 +69,18 @@
 </td>
 </tr>
 </table>
+</article>
+<nav class="navigation post-navigation" role=navigation>
+<div class=nav-links>
+<div class=nav-previous>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/02/12_mdmml/> ライブラリの力を借りる</a>
+</div>
+<div class=nav-next>
+</div>
+</div>
+</nav>
+<section>
+</section>
 </main>
 <div class="sidebar1 widgets columns-1">
 <aside>
