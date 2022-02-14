@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Amplify mock使ってみる - umemak</title>
+<title>マークダウンパーサーを使ってみたが - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,40 +33,42 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Amplify mock使ってみる</h1>
+<h1>マークダウンパーサーを使ってみたが</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2021-12-22T1222:120:06>2021-12-22</time>
+<time datetime=2022-02-14T214:120:06>2022-02-14</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2021/12/22_ac/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2021%2f12%2f22_ac%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/14_mdmml/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f14_mdmml%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Amplify mock使ってみる" data-url=https://umemak.github.io/blog/posts/2021/12/22_ac/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=マークダウンパーサーを使ってみたが data-url=https://umemak.github.io/blog/posts/2022/02/14_mdmml/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>データ構造試行錯誤するのに、毎回amplify pushすると時間がかかって面倒だなーと思っていたら、ローカルで動かせるモックがあることを知った。
-Codespacesでまともに動くかわからないけど、やってみる。</p>
-<pre tabindex=0><code>$ amplify mock api
-</code></pre><p>動いた。けど、アプリから接続しに行くのがIPアドレス指定で、Codespacesの公開ポートになってない。</p>
-<p>src/aws-exporter.js の aws_appsync_graphqlEndpoint にそのアドレスが書かれていたので、Codespacesの公開URLに書き換えてみる。</p>
-<p>アクセス先が変わった。けどCORSエラー。またか。</p>
-<p>そしてこのファイル、mockを終了させると元に戻されるみたいなんだけど、じつは初回結構時間かかってたのでAbortさせたせいか、もとの設定が分からなくなってしまった。。
-gitignore対象なのでGitHubから復活させることもできず。</p>
-<p>やや詰んだ感が出てきた。</p>
-<p>amplify api removeでいったん削除してからamplify api addしてみても、aws-exporter.js の内容は変わらず。</p>
+<p>やりたかったのは、hタグでセクションをブロック化して取り出して加工だったのだけど、
+実際やってみて、hタグでブロック化はHTML的にも無理じゃんってなった。</p>
+<p>結局自前でやっていくしかないのか。。</p>
+<p>で、これをやっていて思いついたのが、今は読み捨てているテーブルのヘッダー部分をセクション代わりに使えないかなと。</p>
+<p>ひとつのテーブルで同じパートを複数書くのはできなくなるけど。</p>
+<pre tabindex=0><code>| name | A |  | B |  |
+|---|---|---|---|---|
+| A | cdef | gab&lt;c | c&gt;bag | fedc |
+| B | cccc | gggg | cccc | ffff |
+
+| name | C |  |
+|---|---|---|
+| A | cdef | cdef |
+| B | cccc | gggg |
+</code></pre><p>こんな感じ。</p>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>&emsp;
-</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -80,10 +82,9 @@ gitignore対象なのでGitHubから復活させることもできず。</p>
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2021/12/21_ac/> データ構成続き2</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/02/13_goldmark/> goldmarkを読む</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2021/12/23_ac/> 壊れたファイルを取り戻す</a>
 </div>
 </div>
 </nav>
