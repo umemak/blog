@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>NextJSとdotenvでハマった - umemak</title>
+<title>リファクタリング - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,33 +33,30 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>NextJSとdotenvでハマった</h1>
+<h1>リファクタリング</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-04-06T46:120:06>2020-04-06</time>
+<time datetime=2022-02-15T215:120:06>2022-02-15</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/04/06_nextjs_with_dotenv/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f04%2f06_nextjs_with_dotenv%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/15_mdmml/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f15_mdmml%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=NextJSとdotenvでハマった data-url=https://umemak.github.io/blog/posts/2020/04/06_nextjs_with_dotenv/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=リファクタリング data-url=https://umemak.github.io/blog/posts/2022/02/15_mdmml/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>reactでdotenv使うとき、起動モードごとに定義ファイルを変えられるように、<code>.env.development</code>にしていたので、同じようにやったら読み込まれない。</p>
-<p>NextJSで使うときは、<code>.env</code>しか認識してくれないらしい。
-環境ごとにファイル分けたい場合のやり方は、未調査。</p>
+<p>データ構造の変更と、それに関連する部分を修正。</p>
+<p>テーブルのセルごとに読み込んで保持するようにした。</p>
+<p>テストが通らなくなった。。</p>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/nextjs rel=tag>nextjs</a>&emsp;
-</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -73,10 +70,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/03/30_win10setup/> Windows10の設定</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/02/14_mdmml/> マークダウンパーサーを使ってみたが</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/04/08_gitpod_node_version/> Gitpodのnodeバージョンを変更する</a>
 </div>
 </div>
 </nav>
