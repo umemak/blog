@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>GiteaのデータベースをPostgreSQLにする - umemak</title>
+<title>crontabの範囲指定について - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,92 +33,31 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>GiteaのデータベースをPostgreSQLにする</h1>
+<h1>crontabの範囲指定について</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-06-08T68:120:06>2020-06-08</time>
+<time datetime=2022-02-16T216:120:06>2022-02-16</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/06/08_gitea_pgsql/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f06%2f08_gitea_pgsql%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/17_crontab/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f17_crontab%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=GiteaのデータベースをPostgreSQLにする data-url=https://umemak.github.io/blog/posts/2020/06/08_gitea_pgsql/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=crontabの範囲指定について data-url=https://umemak.github.io/blog/posts/2022/02/17_crontab/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>OSはCentOS6です。</p>
-<p><a href=https://qiita.com/hatayan1126/items/9b0d3be9c7ecdc207642>https://qiita.com/hatayan1126/items/9b0d3be9c7ecdc207642</a> を参考に進めます。
-この記事では9.6をインストールしていますが、せっかくなので最新の12を入れてみます。</p>
-<h2 id=postgresqlのインストール>PostgreSQLのインストール</h2>
-<pre tabindex=0><code>$ sudo su
-# yum install https://download.postgresql.org/pub/repos/yum/reporpms/EL-6-x86_64/pgdg-redhat-repo-latest.noarch.rpm
-# yum update
-# yum install postgresql12-server
-# rpm -qa | grep postgres
-postgresql12-12.3-1PGDG.rhel6.x86_64
-postgresql12-libs-12.3-1PGDG.rhel6.x86_64
-postgresql12-server-12.3-1PGDG.rhel6.x86_64
-# service postgresql-12 initdb
-# cp /var/lib/pgsql/12/data/pg_hba.conf{,.bk}
-# vim /var/lib/pgsql/12/data/pg_hba.conf
-# diff /var/lib/pgsql/12/data/pg_hba.conf{.bk,}
-80c80
-&lt; local   all             all                                     peer
----
-&gt; local   all             all                                     trust
-82c82
-&lt; host    all             all             127.0.0.1/32            ident
----
-&gt; host    all             all             127.0.0.1/32            trust
-
-# service postgresql-12 start
-# chkconfig postgresql-12 --list
-postgresql-12   0:off   1:off   2:off   3:off   4:off   5:off   6:off
-# chkconfig postgresql-12 on
-# chkconfig postgresql-12 --list
-postgresql-12   0:off   1:off   2:on    3:on    4:on    5:on    6:off
-</code></pre><h2 id=gitea用設定>Gitea用設定</h2>
-<p><a href=https://docs.gitea.io/en-us/database-prep/#postgresql>https://docs.gitea.io/en-us/database-prep/#postgresql</a> の通り</p>
-<pre tabindex=0><code>$ sudo su
-# vim /var/lib/pgsql/12/data/postgresql.conf
-# service postgresql-12 restart
-# su -c &quot;psql&quot; - postgres
-postgres=# CREATE ROLE gitea WITH LOGIN PASSWORD 'gitea';
-postgres=# CREATE DATABASE giteadb WITH OWNER gitea TEMPLATE template0 ENCODING UTF8 LC_COLLATE 'en_US.UTF-8' LC_CTYPE 'en_US.UTF-8';
-postgres=# \q
-# vim /var/lib/pgsql/12/data/pg_hba.conf
-# service postgresql-12 restart
-# psql -U gitea -d giteadb
-giteadb=&gt; \q
-</code></pre><h2 id=gitea設定書き換えて再起動>Gitea設定書き換えて再起動</h2>
-<p>と思ったけど、DBのデータ移行面倒＆まだほとんど何も入っていないので、設定ファイル消して再インストールすることにする。</p>
-<pre tabindex=0><code>$ sudo su
-# mv /etc/gitea/app.ini{,.bk}
-# /usr/local/bin/gitea web -c /etc/gitea/app.ini -p 80
-</code></pre><h2 id=service化>Service化</h2>
-<p><a href=https://github.com/go-gitea/gitea/blob/master/contrib/init/centos/gitea>https://github.com/go-gitea/gitea/blob/master/contrib/init/centos/gitea</a> を<code>/etc/init.d/</code>にコピーして使う。</p>
-<pre tabindex=0><code>$ sudo su
-# cd /etc/init.d/
-# wget https://raw.githubusercontent.com/go-gitea/gitea/master/contrib/init/centos/gitea
-# chmod +x gitea
-# vim gitea
-; GITEA_USERを変更する必要があるかもしれない
-# service gitea start
-# tail -f /var/lib/gitea/log/gitea.log
-</code></pre>
+<p>crontab、<code>-</code>で範囲指定ができるけれど、大小関係が逆だったらどうなるか気になったので調べてみた。</p>
+<pre tabindex=0><code>59-1 * * * * time
+</code></pre><p>こういうやつ。</p>
+<p>dockerでalpine使って動かしたところ、想定通り<code>59,0,1</code>で実行された。</p>
 </div>
 <footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/gitea rel=tag>gitea</a>&emsp;
-<a href=https://umemak.github.io/tags/pgsql rel=tag>pgsql</a>&emsp;
-<a href=https://umemak.github.io/tags/centos6 rel=tag>centos6</a>&emsp;
-</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -132,10 +71,9 @@ giteadb=&gt; \q
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/06/08_gitea2/> 続・CentOS6にgiteaをインストールする</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/02/16_mdmml/> リファクタリング</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/06/11_deployserver/> Firebase用デプロイサーバーを作る</a>
 </div>
 </div>
 </nav>
