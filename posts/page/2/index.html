@@ -40,6 +40,40 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/02/09_mdmml/ rel=bookmark>MDMML 機能追加</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-02-09T00:00:00>2022-02-09</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+曲の全体の構成と部品を分けて定義できるとよいのではないかと思いついた。 マークダウンなので、見出しでそのあたりの管理をするのは適していそう。 ## Song - Intro - A - B - A ## Intro | | | |---|---| | pf | cdef | ## A | | | |---|---| | pf | defg | ## B | | | |---|---| | pf | gfed | こんなイメージ？
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
+<h2><a href=/blog/posts/2022/02/08_mdmml/ rel=bookmark>MDMML</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-02-08T00:00:00>2022-02-08</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+数値の下限と上限をチェックするようにした。 そろそろ一区切りかな。
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/02/07_mdmml/ rel=bookmark>MDMML</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -177,41 +211,6 @@ SMFのこと何もわかっていなかった。 2トラック目の音が出な
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/01/30_go_args/ rel=bookmark>args</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-01-30T00:00:00>2022-01-30</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-昨日のgo runとgo testで挙動が違うのは、os.argsのインデックスが間違っていただけだった・・ os.args[0] はコンパイルしたバイナリで、欲しかったものはos.args[1] でとれた。 なんか初歩的なところで時間溶かした。。
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/01/30_hexdump/ rel=bookmark>hexdump</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-01-30T00:00:00>2022-01-30</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-SMF出力を確認したくて、hexdump使ったところ、2バイト単位の出力（しかもリトルエンディアン）なのね。 -Cオプション付ければ1バイト単位になるけど、右側にASCII文字も出る。 これのASCIIなし版が見たいんだけど、そういうオプションはないみたい。 $ go run main.go ../../testdata/test.md | hexdump -C 00000000 4d 54 68 64 00 00 00 06 00 01 00 03 03 c0
-<a href=/blog/posts/2022/01/30_hexdump/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -263,7 +262,13 @@ SMF出力を確認したくて、hexdump使ったところ、2バイト単位の
 <h2>最近の投稿</h2>
 <ul>
 <li>
-<a href=/blog/posts/2022/02/17_crontab/>crontabの範囲指定について</a>
+<a href=/blog/posts/2022/02/18_ginkgo/>Ginkgoわからん</a>
+</li>
+<li>
+<a href=/blog/posts/2022/02/17_mdmml/>MDMML CI構築</a>
+</li>
+<li>
+<a href=/blog/posts/2022/02/16_crontab/>crontabの範囲指定について</a>
 </li>
 <li>
 <a href=/blog/posts/2022/02/16_mdmml/>リファクタリング</a>
@@ -285,12 +290,6 @@ SMF出力を確認したくて、hexdump使ったところ、2バイト単位の
 </li>
 <li>
 <a href=/blog/posts/2022/02/10_mdmml/>曲の構成の変数名</a>
-</li>
-<li>
-<a href=/blog/posts/2022/02/09_mdmml/>MDMML 機能追加</a>
-</li>
-<li>
-<a href=/blog/posts/2022/02/08_mdmml/>MDMML</a>
 </li>
 </ul>
 </aside>

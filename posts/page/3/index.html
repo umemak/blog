@@ -40,6 +40,41 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/01/30_go_args/ rel=bookmark>args</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-01-30T00:00:00>2022-01-30</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+昨日のgo runとgo testで挙動が違うのは、os.argsのインデックスが間違っていただけだった・・ os.args[0] はコンパイルしたバイナリで、欲しかったものはos.args[1] でとれた。 なんか初歩的なところで時間溶かした。。
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
+<h2><a href=/blog/posts/2022/01/30_hexdump/ rel=bookmark>hexdump</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-01-30T00:00:00>2022-01-30</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+SMF出力を確認したくて、hexdump使ったところ、2バイト単位の出力（しかもリトルエンディアン）なのね。 -Cオプション付ければ1バイト単位になるけど、右側にASCII文字も出る。 これのASCIIなし版が見たいんだけど、そういうオプションはないみたい。 $ go run main.go ../../testdata/test.md | hexdump -C 00000000 4d 54 68 64 00 00 00 06 00 01 00 03 03 c0
+<a href=/blog/posts/2022/01/30_hexdump/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/01/29_mdmml/ rel=bookmark>mdmml</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -178,41 +213,6 @@ MMLを再生するために何が必要か考えてみた。 MMLから直接再�
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/01/21_mml/ rel=bookmark>MML</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-01-21T00:00:00>2022-01-21</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Music Macro Langurageの略。 音楽をテキストで作成するための記法。 ベーマガに載っているリストをひたすら打ち込んでいた思い出。 片手でもそこそこキーボード打てるのは、この時の経験があるからかもしれない（左手で本を抑えて、右手で入力してた）。 GitHub検索したらいくつかパーサーが公開されているけれど、Go
-<a href=/blog/posts/2022/01/21_mml/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/01/20_wireless_debug/ rel=bookmark>ワイヤレスデバッグの接続ができないとき</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-01-20T00:00:00>2022-01-20</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Pixel4でAndroid12の時の現象。ほかの組み合わせは未確認。 Androidのワイヤレスデバッグを使おうとして $ adb pair 192.168.***.***:nnnnn Enter pairing code: 999999 Failed: Unable to start pairing client. こんなエラーになったとき $ ping 192.168.***.*** PING 192.168.***.*** (192.168.***.***) 56(84) bytes of data. From 192.168.***.*** icmp_seq=3 Destination Host Unreachable ^C --- 192.168.***.*** ping statistics --- 4 packets transmitted, 0 received, +1 errors, 100% packet loss, time 3093ms pingも通らないなら デバイスを再起動すると直る。
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -264,7 +264,13 @@ Pixel4でAndroid12の時の現象。ほかの組み合わせは未確認。 Andr
 <h2>最近の投稿</h2>
 <ul>
 <li>
-<a href=/blog/posts/2022/02/17_crontab/>crontabの範囲指定について</a>
+<a href=/blog/posts/2022/02/18_ginkgo/>Ginkgoわからん</a>
+</li>
+<li>
+<a href=/blog/posts/2022/02/17_mdmml/>MDMML CI構築</a>
+</li>
+<li>
+<a href=/blog/posts/2022/02/16_crontab/>crontabの範囲指定について</a>
 </li>
 <li>
 <a href=/blog/posts/2022/02/16_mdmml/>リファクタリング</a>
@@ -286,12 +292,6 @@ Pixel4でAndroid12の時の現象。ほかの組み合わせは未確認。 Andr
 </li>
 <li>
 <a href=/blog/posts/2022/02/10_mdmml/>曲の構成の変数名</a>
-</li>
-<li>
-<a href=/blog/posts/2022/02/09_mdmml/>MDMML 機能追加</a>
-</li>
-<li>
-<a href=/blog/posts/2022/02/08_mdmml/>MDMML</a>
 </li>
 </ul>
 </aside>

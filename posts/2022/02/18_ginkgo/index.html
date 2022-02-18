@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>crontabの範囲指定について - umemak</title>
+<title>Ginkgoわからん - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,29 +33,68 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>crontabの範囲指定について</h1>
+<h1>Ginkgoわからん</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-02-17T217:120:06>2022-02-17</time>
+<time datetime=2022-02-18T218:120:06>2022-02-18</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/17_crontab/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f17_crontab%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/18_ginkgo/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f18_ginkgo%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=crontabの範囲指定について data-url=https://umemak.github.io/blog/posts/2022/02/17_crontab/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Ginkgoわからん data-url=https://umemak.github.io/blog/posts/2022/02/18_ginkgo/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>crontab、<code>-</code>で範囲指定ができるけれど、大小関係が逆だったらどうなるか気になったので調べてみた。</p>
-<pre tabindex=0><code>59-1 * * * * time
-</code></pre><p>こういうやつ。</p>
-<p>dockerでalpine使って動かしたところ、想定通り<code>59,0,1</code>で実行された。</p>
+<p>MDMMLじゃない話。</p>
+<p><a href=https://onsi.github.io/ginkgo/>https://onsi.github.io/ginkgo/</a> でテストを、</p>
+<pre tabindex=0><code>Describe(){
+    Context(){
+        // 準備
+        It(){
+            Expect()
+        }
+        // 次の準備
+        It(){
+            Expect()
+        }
+        // 後片付け
+    }
+}
+</code></pre><p>みたいな感じで書いていたら、思った通りの動きにならなくてハマった。</p>
+<p>どうやら、Contextの中は上から順番に実行されるのではなく、</p>
+<pre tabindex=0><code>Describe(){
+    Context(){
+        // 準備
+        // 次の準備
+        // 後片付け
+        It(){
+            Expect()
+        }
+        It(){
+            Expect()
+        }
+    }
+}
+</code></pre><p>となるらしい。</p>
+<p>やりたい順番で実行したければ、</p>
+<pre tabindex=0><code>Describe(){
+    It(){
+        // 準備
+        Expect()
+        // 次の準備
+        Expect()
+        // 後片付け
+    }
+}
+</code></pre><p>ってやらないといけないのかなぁ。</p>
+<p>いまいち作法がわからない。そもそもこういうシナリオ的なテストに使うものではないのでは？という気もしてきた。</p>
 </div>
 <footer class=post-footer>
 </footer>
@@ -71,7 +110,7 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/02/16_mdmml/> リファクタリング</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/02/17_mdmml/> MDMML CI構築</a>
 </div>
 <div class=nav-next>
 </div>
@@ -92,7 +131,13 @@
 <h2>最近の投稿</h2>
 <ul>
 <li>
-<a href=/blog/posts/2022/02/17_crontab/>crontabの範囲指定について</a>
+<a href=/blog/posts/2022/02/18_ginkgo/>Ginkgoわからん</a>
+</li>
+<li>
+<a href=/blog/posts/2022/02/17_mdmml/>MDMML CI構築</a>
+</li>
+<li>
+<a href=/blog/posts/2022/02/16_crontab/>crontabの範囲指定について</a>
 </li>
 <li>
 <a href=/blog/posts/2022/02/16_mdmml/>リファクタリング</a>
@@ -114,12 +159,6 @@
 </li>
 <li>
 <a href=/blog/posts/2022/02/10_mdmml/>曲の構成の変数名</a>
-</li>
-<li>
-<a href=/blog/posts/2022/02/09_mdmml/>MDMML 機能追加</a>
-</li>
-<li>
-<a href=/blog/posts/2022/02/08_mdmml/>MDMML</a>
 </li>
 </ul>
 </aside>
