@@ -1,6 +1,7 @@
 ---
 title: "Rust再入門"
 date: "2022-02-23"
+tags: ["rust"]
 
 ---
 
@@ -24,5 +25,9 @@ $ cargo build
    Compiling mdmml_rust v0.1.0 (/home/umemak/workspace/mdmml_rust)
     Finished dev [unoptimized + debuginfo] target(s) in 0.36s
 $ ./target/debug/mdmml_rust 
+Hello, world!
+$ cargo run
+    Finished dev [unoptimized + debuginfo] target(s) in 0.00s
+     Running `target/debug/mdmml_rust`
 Hello, world!
 ```
