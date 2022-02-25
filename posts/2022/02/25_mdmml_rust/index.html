@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>WSLの時計を合わせる - umemak</title>
+<title>モジュール化 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,34 +33,32 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>WSLの時計を合わせる</h1>
+<h1>モジュール化</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-07-20T720:120:06>2020-07-20</time>
+<time datetime=2022-02-25T225:120:06>2022-02-25</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/07/20_wsl_date/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f07%2f20_wsl_date%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/25_mdmml_rust/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f25_mdmml_rust%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=WSLの時計を合わせる data-url=https://umemak.github.io/blog/posts/2020/07/20_wsl_date/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=モジュール化 data-url=https://umemak.github.io/blog/posts/2022/02/25_mdmml_rust/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p><code>apt update</code>したときにエラーになった場合の解決策のひとつ。
-WSL側の時計が大幅にずれているパターン。</p>
-<p><a href=https://github.com/microsoft/WSL/issues/4245>https://github.com/microsoft/WSL/issues/4245</a> を参考に。</p>
-<pre tabindex=0><code># hwclock -s
-</code></pre>
+<p><a href=https://doc.rust-jp.rs/book-ja/ch12-03-improving-error-handling-and-modularity.html>リファクタリングしてモジュール性とエラー処理を向上させる - The Rust Programming Language 日本語版</a>
+を読みながら。</p>
+<p>ちょっと分量多いけど、この第12章をひととおりなぞれば、Rustを「完全に理解」できる気がする。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/wsl rel=tag>wsl</a>&emsp;
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -75,10 +73,9 @@ WSL側の時計が大幅にずれているパターン。</p>
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/07/12_docker_win10/> Windows10にDocker Desktopをインストール</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/02/24_mdmml_rust/> ファイルを読み込む</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/07/20_wsl_brew/> WSL2にbrewをつかってnodejsのインストールをする</a>
 </div>
 </div>
 </nav>
