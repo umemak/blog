@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>画面を作る - umemak</title>
+<title>dynとは？ - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,33 +33,78 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>画面を作る</h1>
+<h1>dynとは？</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2021-12-10T1210:120:06>2021-12-10</time>
+<time datetime=2022-02-26T226:120:06>2022-02-26</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2021/12/10_ac/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2021%2f12%2f10_ac%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/26_rust_dyn/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f26_rust_dyn%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=画面を作る data-url=https://umemak.github.io/blog/posts/2021/12/10_ac/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=dynとは？ data-url=https://umemak.github.io/blog/posts/2022/02/26_rust_dyn/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>各画面のファイルができたので、必要な項目を並べていく作業。
-uiflow作ったときにおおむね書いておいたので、それをタグに落としていく。</p>
-<p>一通り書いて、ボタンで画面遷移もするようにできた。</p>
-<p>次はログイン機能をつける（チュートリアルでやったやつ）。</p>
+<p><a href=https://doc.rust-jp.rs/book-ja/ch12-03-improving-error-handling-and-modularity.html#run%E9%96%A2%E6%95%B0%E3%81%8B%E3%82%89%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E8%BF%94%E3%81%99>リファクタリングしてモジュール性とエラー処理を向上させる - The Rust Programming Language 日本語版</a>
+を写経していて、コンパイルエラーに遭遇した。</p>
+<pre tabindex=0><code>$ cargo run
+   Compiling mdmml_rust v0.1.0 (mdmml_rust)
+error[E0782]: trait objects must include the `dyn` keyword
+  --&gt; src/main.rs:21:41
+   |
+21 | fn run(config: Config)-&gt; Result&lt;(), Box&lt;Error&gt;&gt; {
+   |                                         ^^^^^
+   |
+help: add `dyn` keyword before this trait
+   |
+21 - fn run(config: Config)-&gt; Result&lt;(), Box&lt;Error&gt;&gt; {
+21 + fn run(config: Config)-&gt; Result&lt;(), Box&lt;dyn Error&gt;&gt; {
+   | 
+
+For more information about this error, try `rustc --explain E0782`.
+error: could not compile `mdmml_rust` due to previous error
+</code></pre><p>修正方法も提示してくれて親切。</p>
+<p>で、この<code>dyn</code>とは何なのか。書かれているように<code>rustc --explain E0782</code>を実行すると、以下の出力となった。</p>
+<pre tabindex=0><code>Trait objects must include the `dyn` keyword.
+
+Erroneous code example:
+
+` ` `
+trait Foo {}
+fn test(arg: Box&lt;Foo&gt;) {} // error!
+` ` `
+
+Trait objects are a way to call methods on types that are not known until
+runtime but conform to some trait.
+
+Trait objects should be formed with `Box&lt;dyn Foo&gt;`, but in the code above
+`dyn` is left off.
+
+This makes it harder to see that `arg` is a trait object and not a
+simply a heap allocated type called `Foo`.
+
+To fix this issue, add `dyn` before the trait name.
+
+` ` `
+trait Foo {}
+fn test(arg: Box&lt;dyn Foo&gt;) {} // ok!
+` ` `
+
+This used to be allowed before edition 2021, but is now an error.
+</code></pre><p>Traitオブジェクト（goのinterface{}みたいなもの？）は実行時に型が決まるので、そうであるとコード上明示すべきだと。</p>
+<p>で、以前は許されていたが今はエラー扱いになっている、と。</p>
+<p>勉強になった。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>&emsp;
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -74,10 +119,9 @@ uiflow作ったときにおおむね書いておいたので、それをタグ�
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2021/12/09_ac/> 画面モック作成続き</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/02/26_rust/> VS CodeのRust用設定</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2021/12/11_ac/> authを追加</a>
 </div>
 </div>
 </nav>
