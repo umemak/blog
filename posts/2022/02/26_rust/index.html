@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Docker swarm modeを知る - umemak</title>
+<title>VS CodeのRust用設定 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,89 +33,41 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Docker swarm modeを知る</h1>
+<h1>VS CodeのRust用設定</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-11-07T117:120:06>2020-11-07</time>
+<time datetime=2022-02-26T226:120:06>2022-02-26</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/11/07_docker_swarm_mode/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f11%2f07_docker_swarm_mode%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/26_rust/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f26_rust%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Docker swarm modeを知る" data-url=https://umemak.github.io/blog/posts/2020/11/07_docker_swarm_mode/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="VS CodeのRust用設定" data-url=https://umemak.github.io/blog/posts/2022/02/26_rust/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>複数の仮想サーバーでdocker-composeで起動したコンテナの管理をする方法を調べていて、swarm modeにたどり着いたので調べたことを残す。</p>
-<ul>
-<li>
-<p>コマンドでモード切替</p>
-<ul>
-<li>有効化：<code>docker swarm init</code></li>
-<li>無効化：<code>docker swarm leave --force</code></li>
-</ul>
-</li>
-<li>
-<p>シングルノードでも試せる</p>
-<ul>
-<li>シングルノードの場合は、init時の<code>--advertise-addr</code>指定は不要</li>
-</ul>
-</li>
-<li>
-<p>Docker swarmとswarm modeは別</p>
-<ul>
-<li>Docker 1.12からDocker本体にswarmが取り込まれて、swarm modeになった</li>
-<li>1.12以降でもswarmは使えるが、swarm modeの方が簡単に利用できる</li>
-</ul>
-</li>
-<li>
-<p>複数ノードで構成する場合は、コンテナイメージをレジストリに格納する必要がある</p>
-</li>
-<li>
-<p>複数ノードで構成する場合は、ノード間でいくつかのポートの通信を許可しておく必要がある</p>
-<ul>
-<li>TCP port 2377 は、クラスタ管理通信のため</li>
-<li>TCP と UDP の port 7946 は、ノード間の通信のため</li>
-<li>UDP port 4789 はオーバレイ・ネットワーク・トラフィックのため</li>
-</ul>
-</li>
-<li>
-<p>swarmにサービスをデプロイすると、タスクが作成される</p>
-<ul>
-<li>AWSのECSに似た概念？</li>
-</ul>
-</li>
-<li>
-<p>サービスのデプロイは、<code>docker-compose up</code> コマンドではなく、<code>docker service create</code>を使う</p>
-<ul>
-<li>シングルノードの場合は、WARNINGは出るがdocker-composeも使える</li>
-</ul>
-</li>
-<li>
-<p>swarmクラスタの可視化ができる<code>portainer</code>というOSSがある</p>
-</li>
-</ul>
-<h2 id=参考リンク>参考リンク</h2>
-<ul>
-<li><a href=https://qiita.com/KuwaK/items/a72706e0de49adda2c7f>Docker swarm mode でDockerのオーケストレーションツール入門 - Qiita</a></li>
-<li><a href=https://blog.1q77.com/2018/10/rolling-update-on-single-node-docker-swarm/>Single node docker swarm でお手軽 rolling update | 1Q77</a></li>
-<li><a href=https://github.com/portainer/portainer>portainer/portainer: Making Docker and Kubernetes management easy.</a></li>
-<li><a href=https://docs.microsoft.com/ja-jp/virtualization/windowscontainers/manage-containers/swarm-mode>swarm モードの概要 | Microsoft Docs</a></li>
-<li><a href=https://docs.docker.jp/engine/swarm/key-concepts.html>Swarm モードの重要な概念 — Docker-docs-ja 19.03 ドキュメント</a></li>
-<li><a href=https://qiita.com/Brutus/items/b3dfe5957294caa82669>Docker Swarmで学ぶサービスメッシュ - Qiita</a></li>
-<li><a href=https://docs.docker.jp/compose/swarm.html>Swarm で Compose を使う — Docker-docs-ja 17.06 ドキュメント</a></li>
-<li><a href=https://docs.google.com/presentation/d/1boiXkW8cgyaIRBm6wV3zVEzH3v-Sfszh6qZFnFnwSMs/htmlpresent>Docker Swarm mode 入門と ECS との比較 - Google スライド</a></li>
-</ul>
+<p>コードフォーマッターが欲しいと思って、プラグインを入れたけれど動かない。</p>
+<pre tabindex=0><code>Couldn't start client Rust Language Server
+---
+Rustup not available. Install from https://www.rustup.rs/
+</code></pre><p>どうやらツールが足りないようなので、追加でインストールした。</p>
+<pre tabindex=0><code>$ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+$ source $HOME/.cargo/env
+$ rustup --version
+rustup 1.24.3 (ce5817a94 2021-05-31)
+info: This is the version for the rustup toolchain manager, not the rustc compiler.
+info: The currently active `rustc` version is `rustc 1.59.0 (9d1b2106e 2022-02-23)`
+</code></pre><p>それでもエラーが解消しなかったので、OSごと再起動したら反映された。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>&emsp;
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -130,10 +82,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/09/02_hello_flutter/> Flutterに入門</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/02/25_mdmml_rust/> モジュール化</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/11/28_go_interface/> Goのinterfaceを学ぶ</a>
 </div>
 </div>
 </nav>
