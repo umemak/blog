@@ -65,3 +65,9 @@ Traitオブジェクト（goのinterface{}みたいなもの？）は実行時�
 で、以前は許されていたが今はエラー扱いになっている、と。
 
 勉強になった。
+
+なお[英語版](https://doc.rust-lang.org/book/ch12-03-improving-error-handling-and-modularity.html#returning-errors-from-the-run-function)は最新の書式に対応されている。
+英語版はGitHubへのリンクもあるけど、日本語版ってどこで管理されているんだろう？
+
+[rust-lang-ja/book-ja: Rust文書の和訳レポジトリ](https://github.com/rust-lang-ja/book-ja)
+これかな？
