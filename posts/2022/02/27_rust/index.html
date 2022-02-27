@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>freee Tech Night 「freeeにおけるモノリシック」 - umemak</title>
+<title>Rust学習 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,293 +33,40 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>freee Tech Night 「freeeにおけるモノリシック」</h1>
+<h1>Rust学習</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-01-21T121:120:06>2020-01-21</time>
+<time datetime=2022-02-27T227:120:06>2022-02-27</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/01/21_freee_tech_night_5/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f01%2f21_freee_tech_night_5%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/27_rust/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f27_rust%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="freee Tech Night 「freeeにおけるモノリシック」" data-url=https://umemak.github.io/blog/posts/2020/01/21_freee_tech_night_5/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Rust学習 data-url=https://umemak.github.io/blog/posts/2022/02/27_rust/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p><a href=https://freee-tech-night.connpass.com/event/157012/>https://freee-tech-night.connpass.com/event/157012/</a></p>
-<h2 id=会計freeeのデプロイを10倍早くした話>会計freeeのデプロイを10倍早くした話</h2>
-<h3 id=北川修平-shuheiktgw>北川修平 (shuheiktgw)</h3>
-<ul>
-<li>
-<h2 id=会計freee>会計freee</h2>
-</li>
-<li>Phusion Passenger
-<ul>
-<li><a href=https://www.phusionpassenger.com/>https://www.phusionpassenger.com/</a></li>
-</ul>
-</li>
-<li>Capistrano を使ったデプロイ
-<ul>
-<li>問題点
-<ul>
-<li>直列デプロイ
-<ul>
-<li>LBから１つづつ外してデプロイしている</li>
-</ul>
-</li>
-<li>50分ちかくかかっている</li>
-</ul>
-</li>
-<li>解決案
-<ul>
-<li>EKSへの移行</li>
-<li>AutoScalingGroupを使ったBlue/Greenデプロイ
-<ul>
-<li>サーバー自体のプロビジョニングに４分ぐらいかかる</li>
-</ul>
-</li>
-<li>アプリケーションサーバー（unicorn）によるホットデプロイ
-<ul>
-<li>これを選択</li>
-<li>デプロイ・ロールバックの時間が短くて済む</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>アプリケーションサーバーの入れ替え
-<ul>
-<li>Phusion PassengerをUnicornにした</li>
-<li>安全に入れ替えるには
-<ul>
-<li>影響範囲が大きい</li>
-<li>プランBの確保
-<ul>
-<li>Blue/Greenを用意</li>
-</ul>
-</li>
-<li>変更対象を深く理解する
-<ul>
-<li>ソースコードリーディング</li>
-<li>起動から陸セストをさばき始めるまでの流れ</li>
-<li>USR2シグナルを受け取ったときの処理</li>
-<li>各パラメータの使われ方と影響範囲</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>PreloadによるFileDDescriptorの共有
-<ul>
-<li>Linuxのfork処理の理解が必要</li>
-</ul>
-</li>
-<li>段階的リリース
-<ul>
-<li>テスト環境での負荷試験
-<ul>
-<li>「負荷試験コトハジメ」</li>
-</ul>
-</li>
-<li>他サービスでの先行リリース</li>
-<li>本番環境でのカナリアリリース
-<ul>
-<li>2%程度</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Unicornへ移行した結果
-<ul>
-<li>25〜30分かかっていたのが2〜3分に短縮
-<ul>
-<li>デプロイ数の増加</li>
-</ul>
-</li>
-<li>Redisまわりで一部問題があった</li>
-</ul>
-</li>
-<li>FusionPassengerの有料版なら同じことできるが、サービス規模で試算したら高額だった</li>
-</ul>
-<h2 id=データの構造から再検討するパフォーマンスチューニング>データの構造から再検討するパフォーマンスチューニング</h2>
-<h3 id=久保卓也-tkuboma>久保卓也 (tkuboma)</h3>
-<ul>
-<li>会計freeeの中の話</li>
-<li>監視
-<ul>
-<li>Mackrel</li>
-<li>NewRelic</li>
-<li>Monyog
-<ul>
-<li>DBリアルタイム監視に利用</li>
-</ul>
-</li>
-<li>Datadog</li>
-</ul>
-</li>
-<li>Redashで見えるか
-<ul>
-<li>index効率、フルスキャンなど</li>
-</ul>
-</li>
-<li>DBパフォーマンス改善
-<ul>
-<li>indexでチューニング
-<ul>
-<li>explainで地道に</li>
-<li>インデックス追加したり、使うようにしたり</li>
-<li>ActiveRecordのscopeに注意</li>
-<li>indexを無駄にはらない</li>
-<li>検証は本番相当のデータで</li>
-</ul>
-</li>
-<li>クエリの変更でチューニング
-<ul>
-<li>対象データのrowが多すぎる
-<ul>
-<li>抽出条件の追加</li>
-</ul>
-</li>
-<li>クエリの結果が変わらないように注意
-<ul>
-<li>アプリケーション側で頑張る</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>データの持ちかたの見直し
-<ul>
-<li>idでなくstringでjoinしているテーブル</li>
-<li>マスターデータとunionしている
-<ul>
-<li>マスターデータをコピーしてしまう</li>
-</ul>
-</li>
-<li>頻繁にマスターデータが更新されるテーブルだと使えない
-<ul>
-<li>設計でカバー</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>テーブル構成の見直し
-<ul>
-<li>大量データを都度集計している
-<ul>
-<li>集計テーブルを作成する
-<ul>
-<li>圧縮率＝削減行数</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>ロック問題
-<ul>
-<li>別トランザクションにして非同期実行する
-<ul>
-<li>Kinesis streamを利用</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>集計テーブルのデータの切り方の設計重要</li>
-<li>リアルタイム性の低下</li>
-<li>導入までのリードタイムが結構かかる</li>
-</ul>
-</li>
-<li>機能の見直し
-<ul>
-<li>必要以上に実行されていないか
-<ul>
-<li>Home画面とか</li>
-</ul>
-</li>
-<li>ビジネスサイドとのコミュニケーション必要</li>
-</ul>
-</li>
-<li>slaveへ逃がす
-<ul>
-<li>レプリケーションのラグに注意</li>
-<li>社内ライブラリを使用（OSSではない）</li>
-</ul>
-</li>
-<li>N+1の解消
-<ul>
-<li>bullet</li>
-</ul>
-</li>
-<li>Elasticsearch化</li>
-</ul>
-</li>
-</ul>
-<h2 id=エンジニアがドメインロジックに集中するためのコアパッケージ整備>エンジニアがドメインロジックに集中するためのコアパッケージ整備</h2>
-<h3 id=志賀誠-maco_tasu>志賀誠 (@Maco_Tasu)</h3>
-<ul>
-<li>コアパッケージ：各サービスで共通して使われるもの
-<ul>
-<li>ロガーやエラーとか</li>
-</ul>
-</li>
-<li>マイクロサービス化でgoを使うことが多い</li>
-<li>マイクロサービス基盤にK8sを採用</li>
-<li>マイクロサービス化で各チームでそれぞれ作り込んでいて横連携ができていなかった
-<ul>
-<li>サービス基盤</li>
-</ul>
-</li>
-<li>全マイクロサービスのコードを読んで機能を洗い出す
-<ul>
-<li>goらしい作りになっているか</li>
-</ul>
-</li>
-<li>デファクトとしてのパッケージ
-<ul>
-<li>強制するものではない</li>
-</ul>
-</li>
-<li>拡張性
-<ul>
-<li>ダッグタイピング</li>
-<li>go-cloud（CDK）を参考にした</li>
-</ul>
-</li>
-<li>かんたんに組み込める
-<ul>
-<li>依存関係</li>
-<li>wire（DIツール）を使う
-<ul>
-<li>依存の依存も解決してくれるのが良い</li>
-<li><a href=https://developers.freee.co.jp/entry/service-infra-and-wire>https://developers.freee.co.jp/entry/service-infra-and-wire</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>改善点
-<ul>
-<li>早めに提供して改善ループをまわす</li>
-<li>使うことによる利点を伝える</li>
-</ul>
-</li>
-<li>claat
-<ul>
-<li>チュートリアル作成ツール</li>
-<li><a href=https://github.com/googlecodelabs/tools/tree/master/claat>https://github.com/googlecodelabs/tools/tree/master/claat</a></li>
-</ul>
-</li>
-</ul>
+<p><a href=https://doc.rust-jp.rs/book-ja/title-page.html>The Rust Programming Language 日本語版 - The Rust Programming Language 日本語版</a>、途中飛ばして12章やってたけれど、やっぱり最初からやったほうが良い気がしてきた。</p>
+<p>そして、最初のページに</p>
+<blockquote>
+<p>すべてのプロジェクトの Cargo.toml に edition=&ldquo;2018&rdquo; とあることを前提にしています。
+との注意書きがあるのに今更ながら気づいた。</p>
+</blockquote>
+<p>昨日エラーが出ると言っていたのは、<code>edition = "2021"</code>だったので、試しに2018にしてみたらエラーではなく警告に変わった。</p>
+<blockquote>
+<p>warning: trait objects without an explicit <code>dyn</code> are deprecated</p>
+</blockquote>
+<p>また一つ勉強になった。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/freee rel=tag>freee</a>&emsp;
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>&emsp;
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -334,10 +81,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2019/12/19_shuumai/> 【シューマイカンファレンス】Rubyの父 まつもとゆきひろ氏 ＆ 有名ベンチャーCTO登壇!!</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/02/26_rust_dyn/> dynとは？</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/01/23_docomo_openhouse/> DOCOMO Open House 2020 day1</a>
 </div>
 </div>
 </nav>
