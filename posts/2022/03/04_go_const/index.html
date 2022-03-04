@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>gitea - umemak</title>
+<title>Goのconst - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -30,104 +30,42 @@
 <div class=breadcrumbs>
 </div>
 <div id=content class=content>
-<main aria-role=main>
-<header class=homepage-header>
-<h1>gitea</h1>
-</header>
-<div class=homepage-content>
-</div>
-<div>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
+<main role=main>
+<article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h2><a href=/blog/posts/2020/06/11_deployserver/ rel=bookmark>Firebase用デプロイサーバーを作る</a></h2>
+<h1>Goのconst</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-06-11T00:00:00>2020-06-11</time>
+<time datetime=2022-03-04T34:120:06>2022-03-04</time>
 </a>
+<span style=float:right>
+<div id=fb-root style=height:100%></div>
+<script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/03/04_go_const/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f03%2f04_go_const%2f" class=fb-xfbml-parse-ignore>Share</a>
+</div>
+&nbsp;
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Goのconst data-url=https://umemak.github.io/blog/posts/2022/03/04_go_const/ data-show-count=false>Tweet</a>
+<script async src=https://platform.twitter.com/widgets.js></script>
+&nbsp;
+</span>
 </div>
 </header>
-<div class=post-excerpt><p>
-SourceRepositoriesで管理して、CloudBuildでFirebase HostingにデプロイしているGatsbyプロジェクトを、SourceRepositoryとCloudBuildを使わずに実現してみる。 GiteaがCentOS6で動くようになったので、SourceReposit
-<a href=/blog/posts/2020/06/11_deployserver/ class=more-link>Read more </a>
-</p></div>
+<div class=post-content>
+<p>EOTとかbyteのスライスをconstで定義しようとしてできなかった。</p>
+<pre tabindex=0><code>const EOT = []byte{0x00, 0xFF, 0x2F, 0x00}
+</code></pre><pre tabindex=0><code>$ go run cmd/mdmml/main.go 
+# github.com/umemak/mdmml
+./mdmml.go:10:7: const initializer []byte{...} is not a constant
+</code></pre><p><a href=https://go.dev/ref/spec#Constants>The Go Programming Language Specification - The Go Programming Language</a></p>
+<p>文字列リテラルが許されるならbyteスライスも許されてもよいではないかと思ったけれど、ダメらしい。
+varで我慢する。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/linux rel=tag>linux</a>
-<a href=https://umemak.github.io/tags/fireabse rel=tag>fireabse</a>
-<a href=https://umemak.github.io/tags/gitea rel=tag>gitea</a>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>&emsp;
 </span>
 </footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/06/08_gitea_pgsql/ rel=bookmark>GiteaのデータベースをPostgreSQLにする</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-06-08T00:00:00>2020-06-08</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-OSはCentOS6です。 https://qiita.com/hatayan1126/items/9b0d3be9c7ecdc207642 を参考に進めます。 この記事では9.6をインストールしていますが、せっかくなので最新の12を入れてみます。 PostgreSQLのインストール $ sudo su # yum install https://download.postgresql.org/pub/repos/yum/reporpms/EL-6-x86_64/pgdg-redhat-repo-latest.noarch.rpm # yum update # yum install postgresql12-server # rpm -qa | grep postgres postgresql12-12.3-1PGDG.rhel6.x86_64 postgresql12-libs-12.3-1PGDG.rhel6.x86_64 postgresql12-server-12.3-1PGDG.rhel6.x86_64 # service postgresql-12 initdb # cp /var/lib/pgsql/12/data/pg_hba.conf{,.bk} # vim /var/lib/pgsql/12/data/pg_hba.conf # diff /var/lib/pgsql/12/data/pg_hba.conf{.bk,} 80c80 &lt; local all all peer --- > local all all trust 82c82 &lt; host all all 127.0.0.1/32 ident --- > host all all 127.0.0.1/32 trust # service postgresql-12 start #
-<a href=/blog/posts/2020/06/08_gitea_pgsql/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/gitea rel=tag>gitea</a>
-<a href=https://umemak.github.io/tags/pgsql rel=tag>pgsql</a>
-<a href=https://umemak.github.io/tags/centos6 rel=tag>centos6</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/06/08_gitea2/ rel=bookmark>続・CentOS6にgiteaをインストールする</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-06-08T00:00:00>2020-06-08</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-先日の続き。 CentOS6だと、ビルド済みバイナリは依存物のバージョンが合わず、自前ビルドはメモリが足りず。 古いGiteaのビルド済みバイナリなら動くが、やっぱり最新版使いたいし、ちょっとした機能追加もしたい。 そこで、バイナリ1本にまとめる方法をやめた（TAGS="bindata&quot
-			<a href=/blog/posts/2020/06/08_gitea2/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/centos rel=tag>centos</a>
-<a href=https://umemak.github.io/tags/gitea rel=tag>gitea</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/06/05_gitea/ rel=bookmark>CentOS6にgiteaをインストールする（未完）</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-06-05T00:00:00>2020-06-05</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-WikiはGitHubにも付いているのを思い出して、単独のWikiではなくGitHubクローンを試してみる。 GitLabとか重量系は最初からあきらめて、Goで書かれたシングルバイナリの軽量OSS、Giteaで挑戦。 VMはいつものGCP無料枠のやつ。 OSはCentOS6でディスクは30GB。 MySQL
-<a href=/blog/posts/2020/06/05_gitea/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/centos rel=tag>centos</a>
-<a href=https://umemak.github.io/tags/gitea rel=tag>gitea</a>
-</span>
-</footer>
-</article>
-</div>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
 <td style=text-align:center;border:none;padding:0>
@@ -136,6 +74,18 @@ WikiはGitHubにも付いているのを思い出して、単独のWikiではな
 </td>
 </tr>
 </table>
+</article>
+<nav class="navigation post-navigation" role=navigation>
+<div class=nav-links>
+<div class=nav-previous>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/03/03_mdmml/> バグ取り</a>
+</div>
+<div class=nav-next>
+</div>
+</div>
+</nav>
+<section>
+</section>
 </main>
 <div class="sidebar1 widgets columns-1">
 <aside>
