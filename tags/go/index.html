@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/03/08_go_main_test/ rel=bookmark>main関数を分けたのでテストも書く</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-03-06T00:00:00>2022-03-06</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+mainのテストは、os.Argsを直接設定するという割と無理やりな書き方でテストしていたけれど、処理部分を別関数にしたので、引数を変えて正常系と異常系をテストし分けることができるようになった。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/03/06_go_main/ rel=bookmark>main関数を分ける</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -229,28 +249,6 @@ apt-get だと最新版が入らないので、1.13に備えて最新版をイ�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/07/17_mercari_go_9/ rel=bookmark>mercari.go</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-07-17T00:00:00>2019-07-17</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-2019/07/17 19:30-21:30 https://mercari.connpass.com/event/137488/ @tottie Gopher ライブドローイングのご説明 @rerorero protoactor-goでPregelを作った話 グラフプロセッシングの話 Map/Reduceの課題を解決するPregel（プリゲル）フレームワーク アクターモデル @knsh14 メルペイでの残高管理の話 Balance Service gRPC, GKE, Spanner, Go 全体設計 クリーンアーキテクチャベース Viewなし Infra Layerで
-<a href=/blog/posts/2019/07/17_mercari_go_9/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -286,6 +284,9 @@ apt-get だと最新版が入らないので、1.13に備えて最新版をイ�
 <a href=/blog/posts/2022/03/07_docker_compose/>docker-compose v1のEOL</a>
 </li>
 <li>
+<a href=/blog/posts/2022/03/08_go_main_test/>main関数を分けたのでテストも書く</a>
+</li>
+<li>
 <a href=/blog/posts/2022/03/06_go_main/>main関数を分ける</a>
 </li>
 <li>
@@ -308,9 +309,6 @@ apt-get だと最新版が入らないので、1.13に備えて最新版をイ�
 </li>
 <li>
 <a href=/blog/posts/2022/02/27_rust/>Rust学習</a>
-</li>
-<li>
-<a href=/blog/posts/2022/02/26_rust_dyn/>dynとは？</a>
 </li>
 </ul>
 </aside>
