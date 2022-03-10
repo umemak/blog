@@ -40,6 +40,24 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/02/18_ginkgo/ rel=bookmark>Ginkgoわからん</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-02-18T00:00:00>2022-02-18</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+MDMMLじゃない話。 https://onsi.github.io/ginkgo/ でテストを、 Describe(){ Context(){ // 準備 It(){ Expect() } // 次の準備 It(){ Expect() } // 後片付け } } みたいな感じで書いていたら、思った通りの動きにならなくてハマった。 どうやら、Contextの中は上から順番に実行されるのではなく、 Describe(){ Context(){ // 準備 // 次の準備 // 後片付け It(){ Expect() } It(){ Expect() } } } となるらしい。 やりたい順番で実行したければ
+<a href=/blog/posts/2022/02/18_ginkgo/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/02/17_mdmml/ rel=bookmark>MDMML CI構築</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -193,23 +211,6 @@ crontab、-で範囲指定ができるけれど、大小関係が逆だったら
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/02/09_mdmml/ rel=bookmark>MDMML 機能追加</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-09T00:00:00>2022-02-09</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-曲の全体の構成と部品を分けて定義できるとよいのではないかと思いついた。 マークダウンなので、見出しでそのあたりの管理をするのは適していそう。 ## Song - Intro - A - B - A ## Intro | | | |---|---| | pf | cdef | ## A | | | |---|---| | pf | defg | ## B | | | |---|---| | pf | gfed | こんなイメージ？
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -263,6 +264,9 @@ crontab、-で範囲指定ができるけれど、大小関係が逆だったら
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/03/10_func/>関数化</a>
+</li>
+<li>
 <a href=/blog/posts/2022/03/09_method_func/>メソッドか関数か</a>
 </li>
 <li>
@@ -288,9 +292,6 @@ crontab、-で範囲指定ができるけれど、大小関係が逆だったら
 </li>
 <li>
 <a href=/blog/posts/2022/03/01_rancher_desktop/>Rancher Desktop</a>
-</li>
-<li>
-<a href=/blog/posts/2022/02/28_mdmml/>バグ発見</a>
 </li>
 </ul>
 </aside>

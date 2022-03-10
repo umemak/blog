@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Goのconst - umemak</title>
+<title>関数化 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,33 +33,28 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Goのconst</h1>
+<h1>関数化</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-03-04T34:120:06>2022-03-04</time>
+<time datetime=2022-03-10T310:120:06>2022-03-10</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/03/04_go_const/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f03%2f04_go_const%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/03/10_func/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f03%2f10_func%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Goのconst data-url=https://umemak.github.io/blog/posts/2022/03/04_go_const/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=関数化 data-url=https://umemak.github.io/blog/posts/2022/03/10_func/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>EOTとかbyteのスライスをconstで定義しようとしてできなかった。</p>
-<pre tabindex=0><code>const EOT = []byte{0x00, 0xFF, 0x2F, 0x00}
-</code></pre><pre tabindex=0><code>$ go run cmd/mdmml/main.go 
-# github.com/umemak/mdmml
-./mdmml.go:10:7: const initializer []byte{...} is not a constant
-</code></pre><p><a href=https://go.dev/ref/spec#Constants>The Go Programming Language Specification - The Go Programming Language</a></p>
-<p>文字列リテラルが許されるならbyteスライスも許されてもよいではないかと思ったけれど、ダメらしい。
-varで我慢する。</p>
+<p>細かい変換を関数化してみた。</p>
+<p><code>strconv.Atoi</code>をエラーだったらデフォルト値で返すやつとか。</p>
+<p>titleやtempoを[]byteにして返すやつとか。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
@@ -78,10 +73,9 @@ varで我慢する。</p>
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/03/03_mdmml/> バグ取り</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/03/09_method_func/> メソッドか関数か</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/03/05_go_flag/> コマンドライン引数をflagで処理する</a>
 </div>
 </div>
 </nav>
