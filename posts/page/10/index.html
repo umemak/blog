@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2021/12/14_ac/ rel=bookmark>データ登録やってみる</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2021-12-14T00:00:00>2021-12-14</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+データの格納先ができたので、画面からデータ登録できるようにしてみる。 参考： Tutorial - Connect API and database to the app - Vue - AWS Amplify Docs Codespacesでnpm run serveで実行してアクセスすると、ブラウザのコンソールにInvalid Host/Origin headerが出ている。 package.json を修正して回避。codespaces前提だけど。 "serve": "vue-cli-service serve --public ${CODESPACE_NAME}.githubpreview.dev", 参考： AWS
+<a href=/blog/posts/2021/12/14_ac/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2021/12/13_ac/ rel=bookmark>schemaファイルを作る</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -220,27 +241,6 @@ https://docs.amplify.aws/start/getting-started/auth/q/integration/vue/#authentic
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2021/12/04_ac/ rel=bookmark>Amplify Tutorialやってみた</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-12-04T00:00:00>2021-12-04</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Getting started - Vue - AWS Amplify Docsをやってみた。 GitHubにリポジトリ作って、Codespaceで開いて。 小一時間で認証付きのToDoアプリができた。 意外と待ち時間が長かったのは、最初だけなのかCodespaceの力不足なのか。 たぶんCloudFormationの実行待ち時間な気がするから、最初だけだと思って
-<a href=/blog/posts/2021/12/04_ac/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -269,8 +269,9 @@ Getting started - Vue - AWS Amplify Docsをやってみた。 GitHubにリポジ
 <a href=/blog/posts/page/21/>21</a>
 <a href=/blog/posts/page/22/>22</a>
 <a href=/blog/posts/page/23/>23</a>
+<a href=/blog/posts/page/24/>24</a>
 <a href=/blog/posts/page/11/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/posts/page/23/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/posts/page/24/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -293,6 +294,9 @@ Getting started - Vue - AWS Amplify Docsをやってみた。 GitHubにリポジ
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2022/03/10_rust/>Rust移植再開</a>
+</li>
 <li>
 <a href=/blog/posts/2022/03/10_func/>関数化</a>
 </li>
@@ -319,9 +323,6 @@ Getting started - Vue - AWS Amplify Docsをやってみた。 GitHubにリポジ
 </li>
 <li>
 <a href=/blog/posts/2022/03/02_voicevox/>VOICEVOX</a>
-</li>
-<li>
-<a href=/blog/posts/2022/03/01_rancher_desktop/>Rancher Desktop</a>
 </li>
 </ul>
 </aside>
