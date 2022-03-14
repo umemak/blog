@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/03/04_go_const/ rel=bookmark>Goのconst</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-03-04T00:00:00>2022-03-04</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+EOTとかbyteのスライスをconstで定義しようとしてできなかった。 const EOT = []byte{0x00, 0xFF, 0x2F, 0x00} $ go run cmd/mdmml/main.go # github.com/umemak/mdmml ./mdmml.go:10:7: const initializer []byte{...} is not a constant The Go Programming Language Specification - The Go Programming Language 文字列リテラルが許されるならbyteスライスも許されてもよいではないかと思ったけれど、ダメらしい。 varで我慢する。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/03/03_mdmml/ rel=bookmark>バグ取り</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -216,27 +236,6 @@ The Rust Programming Language 日本語版 - The Rust Programming Language 日�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/02/23_rust/ rel=bookmark>Rust再入門</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-23T00:00:00>2022-02-23</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-以前RustでHello Worldするのはやってたので、再入門。 The Rust Programming Language 日本語版 - The Rust Programming Language 日本語版を見ながら。 今回はcargoを使ってビルドするようにしてみた。 マニュアルだとcargo newで作成しているが、先にGitHubでリポジトリを作ってしまっていたので、cargo initを使っている。 $ curl --proto
-<a href=/blog/posts/2022/02/23_rust/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -291,6 +290,9 @@ The Rust Programming Language 日本語版 - The Rust Programming Language 日�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/03/14_ms_rust/>Rust再々入門</a>
+</li>
+<li>
 <a href=/blog/posts/2022/03/13_ms_rust/>Rust再々入門</a>
 </li>
 <li>
@@ -316,9 +318,6 @@ The Rust Programming Language 日本語版 - The Rust Programming Language 日�
 </li>
 <li>
 <a href=/blog/posts/2022/03/05_go_flag/>コマンドライン引数をflagで処理する</a>
-</li>
-<li>
-<a href=/blog/posts/2022/03/04_go_const/>Goのconst</a>
 </li>
 </ul>
 </aside>
