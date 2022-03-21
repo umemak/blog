@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>C101PAでOracle Functionsを試す - umemak</title>
+<title>実践Rustプログラミング入門 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,140 +33,32 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>C101PAでOracle Functionsを試す</h1>
+<h1>実践Rustプログラミング入門</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2019-10-31T1031:120:06>2019-10-31</time>
+<time datetime=2022-03-21T321:120:06>2022-03-21</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f10%2f31_c101p_cli%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/03/21_rust_book/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f03%2f21_rust_book%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="C101PAでOracle Functionsを試す" data-url=https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=実践Rustプログラミング入門 data-url=https://umemak.github.io/blog/posts/2022/03/21_rust_book/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p><a href=https://ochacafe.connpass.com/event/147285/>OCHaCafe</a>参加前に触っておこうと思い、その準備。</p>
-<h2 id=ociインストール>OCIインストール</h2>
-<p>手順は<a href=https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/cliinstall.htm>公式</a>からコピペで。</p>
-<pre tabindex=0><code>$ bash -c &quot;$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)&quot;
-</code></pre><p><code>fatal error: Python.h: No such file or directory</code>エラーで落ちたので、<code>python3-dev</code>パッケージをインストール。</p>
-<pre tabindex=0><code>$ sudo apt-get install python3-dev
-</code></pre><p>OCI再挑戦。先程作成したディレクトリを削除するか聞かれるので、削除(y)して継続。
-ちなみにインストール先など入力は全部デフォルトで通した。
-今度は<code>fatal error: ffi.h: No such file or directory</code>で落ちた。</p>
-<pre tabindex=0><code>$ sudo apt-get install libffi-dev
-</code></pre><p>3度目の挑戦。
-<code>fatal error: openssl/opensslv.h: No such file or directory</code>はい。</p>
-<pre tabindex=0><code>$ sudo apt-get install libssl-dev
-</code></pre><p>今度こそ。
-できた。表示に従ってshellを再起動する。</p>
-<pre tabindex=0><code>$ exec -l $SHELL
-</code></pre><p>バージョン確認。</p>
-<pre tabindex=0><code>$ oci -v
--bash: oci: command not found
-</code></pre><p>うーん。PATHがちゃんと設定されていない。というか<code>.bashrc</code>が読み込まれてない。</p>
-<pre tabindex=0><code>$ bash
-$ oci -v
-2.6.10
-</code></pre><p>とりあえずOK。</p>
-<h2 id=oci設定>OCI設定</h2>
-<p><a href=https://qiita.com/shirok/items/e63be9a22158fef10ba9>Qiita</a>の記事を参考にすすめた。</p>
-<ul>
-<li>APIユーザー作成
-<ul>
-<li><code>api</code></li>
-</ul>
-</li>
-<li><code>oci setup config</code>で生成された公開鍵設定</li>
-<li>動作確認
-<pre tabindex=0><code>$ oci iam region list --output table
-+-----+----------------+
-| key | name           |
-+-----+----------------+
-| BOM | ap-mumbai-1    |
-| FRA | eu-frankfurt-1 |
-| GRU | sa-saopaulo-1  |
-| IAD | us-ashburn-1   |
-| ICN | ap-seoul-1     |
-| LHR | uk-london-1    |
-| NRT | ap-tokyo-1     |
-| PHX | us-phoenix-1   |
-| SYD | ap-sydney-1    |
-| YYZ | ca-toronto-1   |
-| ZRH | eu-zurich-1    |
-+-----+----------------+
-</code></pre></li>
-</ul>
-<h2 id=functionsに挑戦>Functionsに挑戦</h2>
-<p>ここからは別の<a href=https://qiita.com/sugimount/items/018e08f575ecefb1546c>Qiita</a>記事を参考に。</p>
-<ul>
-<li>VCNはすでにあったものを使用。</li>
-<li>CompartmentはAPI用に作成。
-<ul>
-<li><code>api_test</code></li>
-</ul>
-</li>
-<li>IAM groupを作成、APIユーザーをグループに追加。
-<ul>
-<li><code>api_group</code></li>
-</ul>
-</li>
-<li>Policyを作成、Statementを追加。</li>
-<li>fnコマンドインストール
-<pre tabindex=0><code>$ curl -LSs https://raw.githubusercontent.com/fnproject/cli/master/install | sh
-sh: 58: fn: Exec format error
-</code></pre>結構時間かかる。<code>set -ex</code>しておいてくれればいいのに。そしてエラー。arm用バイナリがない。</li>
-<li>fnコマンドビルド
-<a href=https://github.com/fnproject/cli/blob/master/CONTRIBUTING.md#how-to-build-and-get-up-and-running>CONTRIBUTING</a>に手順があったので試してみる。
-<pre tabindex=0><code>$ git clone https://github.com/fnproject/cli.git $GOPATH/src/github.com/fnproject/cli
-$ cd $GOPATH/src/github.com/fnproject/cli
-$ make dep
-$ make install
-$ sudo cp $GOPATH/bin/fn /usr/local/bin/fn
-$ fn --version
-fn version 0.5.91
-</code></pre>OK。</li>
-<li>contextの作成と選択
-<pre tabindex=0><code>$ fn create context api_context
-$ fn use context api_context
-$ fn ls contexts
-CURRENT NAME            PROVIDER        API URL                 REGISTRY
-*       api_context     oracle
-        default         default         http://localhost:8080
-</code></pre></li>
-<li>contextのupdate
-<pre tabindex=0><code>$ fn update context oracle.compartment-id &lt;compartment-ocid&gt;
-$ fn update context api-url https://functions.us-phoenix-1.oraclecloud.com
-$ fn update context registry phx.ocir.io/&lt;tenancy-name&gt;/oracle-function
-$ fn update context oracle.profile DEFAULT
-</code></pre></li>
-<li>token取得とdockerログイン
-<pre tabindex=0><code>$ oci iam auth-token create --user-id &lt;user-ocid&gt; --description oracle-fuction
-$ sudo docker login phx.ocir.io -u &lt;tenancy name&gt;/&lt;iam user name&gt;
-</code></pre>エラー。phxにアクセスしに行っているのが良くないっぽい。東京リージョンは<code>nrt</code>を指定する。
-<a href=https://docs.cloud.oracle.com/iaas/Content/Registry/Concepts/registryprerequisites.htm#Availab>https://docs.cloud.oracle.com/iaas/Content/Registry/Concepts/registryprerequisites.htm#Availab</a>
-空港コード？hndじゃないのか。
-設定を修正
-<pre tabindex=0><code>$ fn update context api-url https://functions.ap-tokyo-1.oraclecloud.com
-$ fn update context registry nrt.ocir.io/&lt;tenancy-name&gt;/oracle-function
-$ sudo docker login nrt.ocir.io -u &lt;tenancy name&gt;/&lt;iam user name&gt;
-</code></pre>同じエラー。。
-<pre tabindex=0><code>Error response from daemon: Get https://nrt.ocir.io/v2/: unknown: Tenant with namespace ****** not found
-</code></pre></li>
-</ul>
+<p>キャンペーンでKindle版が安くなっていたので買った。</p>
+<p><a href=https://www.amazon.co.jp/gp/product/B08PF27TRZ>実践Rustプログラミング入門 | 初田直也, 山口聖弘, 吉川哲史, 豊田優貴, 松本健太郎, 原将己, 中村謙弘, フォルシア株式会社 | 工学 | Kindleストア | Amazon</a></p>
+<p>MSのチュートリアル終わった後だからか、何言ってるのかわからない状態ではなく読み進められている（今のところ）。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/serverless rel=tag>serverless</a>&emsp;
-<a href=https://umemak.github.io/tags/chromebook rel=tag>chromebook</a>&emsp;
-<a href=https://umemak.github.io/tags/c101pa rel=tag>c101pa</a>&emsp;
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -181,10 +73,9 @@ $ sudo docker login nrt.ocir.io -u &lt;tenancy name&gt;/&lt;iam user name&gt;
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2019/10/31_ochacafe2_3/> OCHaCafe2 #3 Serverlessな世界をのぞいてみよう！</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/03/20_go_118/> Go 1.18</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2019/11/01_cmdevio2019/> Developers.IO 2019 Tokyo</a>
 </div>
 </div>
 </nav>
