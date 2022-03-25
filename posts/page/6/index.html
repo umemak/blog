@@ -40,6 +40,23 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/02/05_mdmml/ rel=bookmark>MML実装</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-02-05T00:00:00>2022-02-05</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+タイと繰り返しを実装した。 繰り返しが入れ子になるとpanic起こすのでいつか直す。 テストが書きにくくなってきたので、もっと小さい単位で関数化していきたい。 和音も何とか実装した。 前後の文字列によりpanicすることがあるのでいつか直す。 ひとまず予定していたコマンド群は全部実装できた・・かな。
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/02/04_mdmml/ rel=bookmark>MML実装</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -194,23 +211,6 @@ SMF出力を確認したくて、hexdump使ったところ、2バイト単位の
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/01/27_mdmml/ rel=bookmark>マークダウンでMMLを書く</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-01-27T00:00:00>2022-01-27</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-main.go と、とりあえず固定値を返すパッケージを書いた。 package main import ( "fmt" "os" "github.com/umemak/mdmml" ) func main() { src, err := os.ReadFile(os.Args[0]) if err != nil { fmt.Printf("%+v\n", err) os.Exit(1) } mm := mdmml.NewMDMML(src) os.Stdout.Write(mm.SMF()) }
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -266,6 +266,9 @@ main.go と、とりあえず固定値を返すパッケージを書いた。 pa
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/03/25_rust_book/>実践Rustプログラミング入門</a>
+</li>
+<li>
 <a href=/blog/posts/2022/03/24_rust_book/>実践Rustプログラミング入門</a>
 </li>
 <li>
@@ -291,9 +294,6 @@ main.go と、とりあえず固定値を返すパッケージを書いた。 pa
 </li>
 <li>
 <a href=/blog/posts/2022/03/17_ms_rust/>Rust再々入門</a>
-</li>
-<li>
-<a href=/blog/posts/2022/03/16_ms_rust/>Rust再々入門</a>
 </li>
 </ul>
 </aside>
