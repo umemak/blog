@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/02/28_mdmml/ rel=bookmark>バグ発見</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-02-28T00:00:00>2022-02-28</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+ループと休符の組み合わせで、休符が消える現象が起きてる気がする。 後から実装したところはちょっと入り組んでしまっているね。。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/mdmml rel=tag>mdmml</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/02/27_rust/ rel=bookmark>Rust学習</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -212,24 +232,6 @@ MDMMLで関数分割してテスト反映してなかったりしていたのを
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/02/18_ginkgo/ rel=bookmark>Ginkgoわからん</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-18T00:00:00>2022-02-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-MDMMLじゃない話。 https://onsi.github.io/ginkgo/ でテストを、 Describe(){ Context(){ // 準備 It(){ Expect() } // 次の準備 It(){ Expect() } // 後片付け } } みたいな感じで書いていたら、思った通りの動きにならなくてハマった。 どうやら、Contextの中は上から順番に実行されるのではなく、 Describe(){ Context(){ // 準備 // 次の準備 // 後片付け It(){ Expect() } It(){ Expect() } } } となるらしい。 やりたい順番で実行したければ
-<a href=/blog/posts/2022/02/18_ginkgo/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -285,6 +287,9 @@ MDMMLじゃない話。 https://onsi.github.io/ginkgo/ でテストを、 Descri
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/03/29_host_docker_internal/>host.docker.internalの謎</a>
+</li>
+<li>
 <a href=/blog/posts/2022/03/28_mdmml/>mdmml_rust</a>
 </li>
 <li>
@@ -310,9 +315,6 @@ MDMMLじゃない話。 https://onsi.github.io/ginkgo/ でテストを、 Descri
 </li>
 <li>
 <a href=/blog/posts/2022/03/20_go_118/>Go 1.18</a>
-</li>
-<li>
-<a href=/blog/posts/2022/03/19_ms_rust/>Rust再々入門</a>
 </li>
 </ul>
 </aside>
