@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2020/04/08_gitpod_node_version/ rel=bookmark>Gitpodのnodeバージョンを変更する</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2020-04-08T00:00:00>2020-04-08</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+https://github.com/zeit/next.js/tree/master/examples/with-firebase-hosting-and-typescript これを動かしたくて、 $ yarn create next-app --example with-firebase-hosting-and-typescript with-firebase-hosting-and-typescript-app したところ、The engine "node" is incompatible with this module. Expected version "10". Got "12.16.1"というエラーで正常終了しない。バージョン10系を要求されているのに、インストールされているのは12系。 $ nvm install 10 を実行することで、10系になる。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/node rel=tag>node</a>
+<a href=https://umemak.github.io/tags/gitpod rel=tag>gitpod</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2020/04/06_nextjs_with_dotenv/ rel=bookmark>NextJSとdotenvでハマった</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -221,27 +242,6 @@ Kindleの積ん読解消のため、見える化したい。 Kindleの管理ペ�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/02/24_tamiat/ rel=bookmark>tamiatを試す</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-02-24T00:00:00>2020-02-24</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-https://github.com/tamiat/tamiat Firebaseを使ったCMSを探していて、見つけたもの。 セットアップはリポジトリのREADMEに書いてあるとおりでほぼ行けた。 1箇所だけ、パッケージの依存が解決できなくて手動でyarn addしたものがあったくらい。 GCPでプロジェクト作って、Cloud Shellで作業。便利。 で、構築は簡単にでき
-<a href=/blog/posts/2020/02/24_tamiat/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/cms rel=tag>cms</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -298,6 +298,9 @@ https://github.com/tamiat/tamiat Firebaseを使ったCMSを探していて、見
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/04/01_open_file_delete/>開いたままのファイルを削除したらどうなるか3</a>
+</li>
+<li>
 <a href=/blog/posts/2022/03/31_open_file_delete/>開いたままのファイルを削除したらどうなるか2</a>
 </li>
 <li>
@@ -323,9 +326,6 @@ https://github.com/tamiat/tamiat Firebaseを使ったCMSを探していて、見
 </li>
 <li>
 <a href=/blog/posts/2022/03/23_rust_book/>実践Rustプログラミング入門</a>
-</li>
-<li>
-<a href=/blog/posts/2022/03/22_rust_book/>実践Rustプログラミング入門</a>
 </li>
 </ul>
 </aside>
