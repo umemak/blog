@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>windows - umemak</title>
+<title>開いたままのファイルを削除したらどうなるか4 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -30,80 +30,36 @@
 <div class=breadcrumbs>
 </div>
 <div id=content class=content>
-<main aria-role=main>
-<header class=homepage-header>
-<h1>windows</h1>
-</header>
-<div class=homepage-content>
-</div>
-<div>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
+<main role=main>
+<article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h2><a href=/blog/posts/2021/04/17_minikube_mysql/ rel=bookmark>WindowsのminikubeでMySQLを動かす</a></h2>
+<h1>開いたままのファイルを削除したらどうなるか4</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2021-04-17T00:00:00>2021-04-17</time>
+<time datetime=2022-04-02T42:120:06>2022-04-02</time>
 </a>
+<span style=float:right>
+<div id=fb-root style=height:100%></div>
+<script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/04/02_open_file_delete/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f04%2f02_open_file_delete%2f" class=fb-xfbml-parse-ignore>Share</a>
+</div>
+&nbsp;
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=開いたままのファイルを削除したらどうなるか4 data-url=https://umemak.github.io/blog/posts/2022/04/02_open_file_delete/ data-show-count=false>Tweet</a>
+<script async src=https://platform.twitter.com/widgets.js></script>
+&nbsp;
+</span>
 </div>
 </header>
-<div class=post-excerpt><p>
-MacでやったらMySQLの起動時にエラーで落ちてしまったので、Windowsでどうなるか試す。 基本的には公式のドキュメントを参照。 https://kubernetes.io/ja/docs/tasks/run-application/run-single-instance-stateful-application/ munikubeインストール winget install minikube minikube起動 minikube start $ kubectl get nodes NAME STATUS ROLES AGE VERSION minikube Ready control-plane,master 73s v1.20.2 マニフェストファイル作成 mysql.yaml デプロイ $ kubectl apply -f mysql.yaml service/mysql created deployment.apps/mysql created persistentvolumeclaim/mysql-pv-claim created persistentvolume/mysql-pv-volume created $ kubectl get pods -l app=mysql NAME READY STATUS RESTARTS
-<a href=/blog/posts/2021/04/17_minikube_mysql/ class=more-link>Read more </a>
-</p></div>
+<div class=post-content>
+<p>あと、sambaだけではなく、NFSでどうなるかも確認したい。</p>
+<p>NFSならWindowsサーバー用意しなくても甥から少しは簡単かな？</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/windows rel=tag>windows</a>
-<a href=https://umemak.github.io/tags/minikube rel=tag>minikube</a>
-<a href=https://umemak.github.io/tags/mysql rel=tag>mysql</a>
+<a href=https://umemak.github.io/tags/linux rel=tag>linux</a>&emsp;
 </span>
 </footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/05/25_duet_display/ rel=bookmark>Duetを使ってみる</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-05-25T00:00:00>2020-05-25</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-https://ja.duetdisplay.com/ Google Playの300円クーポンが有効期限間近だったので買ってみた。 spacedeskでも特に不便なくつかえていたのだけれど、有料アプリも試してみたかった。 環境はSurface Go2がホストでChromebook C101PA（Androidアプリ）がモニタでWiFi接続。 モバイルモニタの接続で使ってい
-<a href=/blog/posts/2020/05/25_duet_display/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/windows rel=tag>windows</a>
-<a href=https://umemak.github.io/tags/chromebook rel=tag>chromebook</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/03/30_win10setup/ rel=bookmark>Windows10の設定</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-03-30T00:00:00>2020-03-30</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Chromebookでの作業に限界が見えたので、WindowsPCを調達しました。 自分で買うのは初めてのDell。 OSはWindows10 Homeで、これも初めて使う。 以下やったこと Chromeインストール McAfeeプラグイン削除 React Developer Toolsインストール トラックパッドの設定変更 スクロール方向を逆
-<a href=/blog/posts/2020/03/30_win10setup/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/windows rel=tag>windows</a>
-</span>
-</footer>
-</article>
-</div>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
 <td style=text-align:center;border:none;padding:0>
@@ -112,6 +68,18 @@ Chromebookでの作業に限界が見えたので、WindowsPCを調達しまし�
 </td>
 </tr>
 </table>
+</article>
+<nav class="navigation post-navigation" role=navigation>
+<div class=nav-links>
+<div class=nav-previous>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/04/01_open_file_delete/> 開いたままのファイルを削除したらどうなるか3</a>
+</div>
+<div class=nav-next>
+</div>
+</div>
+</nav>
+<section>
+</section>
 </main>
 <div class="sidebar1 widgets columns-1">
 <aside>
