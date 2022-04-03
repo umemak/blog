@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>WSL2でdocker - umemak</title>
+<title>Rust雑感 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,52 +33,35 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>WSL2でdocker</h1>
+<h1>Rust雑感</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-01-13T113:120:06>2022-01-13</time>
+<time datetime=2022-04-03T43:120:06>2022-04-03</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/13_wsl2docker/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f13_wsl2docker%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/04/03_rust/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f04%2f03_rust%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=WSL2でdocker data-url=https://umemak.github.io/blog/posts/2022/01/13_wsl2docker/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Rust雑感 data-url=https://umemak.github.io/blog/posts/2022/04/03_rust/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>WSL2でFirebaseの作業再開しようとしたら、npmやらなにやら入ってない（Surfaceのほうは過去にインストールしてたらしい）ので、
-docker入れてみることにした。</p>
-<p><a href=https://docs.docker.com/engine/install/ubuntu/>https://docs.docker.com/engine/install/ubuntu/</a></p>
-<pre tabindex=0><code>$ sudo apt-get remove docker docker-engine docker.io containerd runc
-$ sudo apt-get update
-$ sudo apt-get install \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-$ echo \
-  &quot;deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable&quot; | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
-$ sudo apt-get update
-$ sudo apt-get install docker-ce docker-ce-cli containerd.io
-$ sudo service docker start
-$ sudo docker run hello-world
-</code></pre><p><a href=https://docs.docker.com/engine/install/linux-postinstall/>https://docs.docker.com/engine/install/linux-postinstall/</a></p>
-<pre tabindex=0><code>$ sudo groupadd docker
-$ sudo usermod -aG docker $USER
-</code></pre><p>自動起動はとくに必要ないので省略。</p>
-<p>で、VS Codeのremoteでcontainer開こうとしたら、dockerがないというエラー。Docker desktopインストールしないとダメなのかなぁ。。</p>
-<p><a href=https://qiita.com/ohtsuka1317/items/617a865b8a9d4fb67989#3-visual-studio-code-%E3%81%8B%E3%82%89%E3%81%AE%E5%88%A9%E7%94%A8>Docker Desktopに依存しない、WindowsでのDocker環境 - Qiita</a>
-にある通り、WSLからVS Codeを起動したらエラーなく通った。</p>
+<p>ここ数日Rustから遠ざかってしまっていて、またRust筋力が落ちてしまった感。</p>
+<p>何度か入門して感じたことは、やっぱりとっつきにくい言語だなぁということ。</p>
+<p>用語が日本語だと直感的に理解しにくいのも一つの原因だと思う。クレートとか聞いたことないし。</p>
+<p>まぁ、Goのスライスとかも最初何のことか理解するのに時間かかったし、慣れの問題かもしれない。</p>
+<p>mdmmlのRust移植はまた細々とやっていこうと思う。</p>
 </div>
 <footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>&emsp;
+</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -92,10 +75,9 @@ $ sudo usermod -aG docker $USER
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/01/12_inspiron13/> Inspiron13購入</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/04/02_open_file_delete/> 開いたままのファイルを削除したらどうなるか4</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/01/14_antiv/> マカフィーアンインストール</a>
 </div>
 </div>
 </nav>
