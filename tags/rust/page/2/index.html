@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/03/19_ms_rust/ rel=bookmark>Rust再々入門</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-03-19T00:00:00>2022-03-19</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+ついに最後のモジュール。 コマンドラインの to-do リスト プログラムを作成する - Learn | Microsoft Docs 途中で紹介されていた、Introduction - OWASP Cheat Sheet Seriesが便利そう。 これでRust完全に理解した。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/03/18_ms_rust/ rel=bookmark>Rust再々入門</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -219,27 +239,6 @@ The Rust Programming Language 日本語版 - The Rust Programming Language 日�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/02/26_rust_dyn/ rel=bookmark>dynとは？</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-26T00:00:00>2022-02-26</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-リファクタリングしてモジュール性とエラー処理を向上させる - The Rust Programming Language 日本語版 を写経していて、コンパイルエラーに遭遇した。 $ cargo run Compiling mdmml_rust v0.1.0 (mdmml_rust) error[E0782]: trait objects must include the `dyn` keyword --> src/main.rs:21:41 | 21 | fn run(config: Config)-> Result&lt;(), Box&lt;Error>> { | ^^^^^ | help: add `dyn` keyword before this trait | 21 - fn run(config: Config)-> Result&lt;(), Box&lt;Error>> { 21 + fn run(config: Config)-> Result&lt;(), Box&lt;dyn Error>> { | For more information about this error, try `rustc --explain E0782`. error: could not compile `mdmml_rust` due to previous error 修正方法も提示してくれて親切。 で、
-<a href=/blog/posts/2022/02/26_rust_dyn/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -273,10 +272,13 @@ The Rust Programming Language 日本語版 - The Rust Programming Language 日�
 <h2>最近の投稿</h2>
 <ul>
 <li>
-<a href=/blog/posts/2022/04/03_rust/>Rust雑感</a>
+<a href=/blog/posts/2022/04/05_rust_book/>実践Rustプログラミング入門</a>
 </li>
 <li>
 <a href=/blog/posts/2022/04/04_rust_book/>実践Rustプログラミング入門</a>
+</li>
+<li>
+<a href=/blog/posts/2022/04/03_rust/>Rust雑感</a>
 </li>
 <li>
 <a href=/blog/posts/2022/04/02_open_file_delete/>開いたままのファイルを削除したらどうなるか4</a>
@@ -298,9 +300,6 @@ The Rust Programming Language 日本語版 - The Rust Programming Language 日�
 </li>
 <li>
 <a href=/blog/posts/2022/03/27_mdmml/>mdmml_rust</a>
-</li>
-<li>
-<a href=/blog/posts/2022/03/26_mdmml_remote/>mdmml機能追加</a>
 </li>
 </ul>
 </aside>
