@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Chromebookにgoの最新版をインストール - umemak</title>
+<title>実践Rustプログラミング入門 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,81 +33,33 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Chromebookにgoの最新版をインストール</h1>
+<h1>実践Rustプログラミング入門</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2019-07-17T717:120:06>2019-07-17</time>
+<time datetime=2022-04-06T46:120:06>2022-04-06</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2019/07/17_chromebook_golang/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f07%2f17_chromebook_golang%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/04/06_rust_book/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f04%2f06_rust_book%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Chromebookにgoの最新版をインストール data-url=https://umemak.github.io/blog/posts/2019/07/17_chromebook_golang/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=実践Rustプログラミング入門 data-url=https://umemak.github.io/blog/posts/2022/04/06_rust_book/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<ul>
-<li>apt-get だと最新版が入らないので、1.13に備えて最新版をインストールする手順を確認しておく。</li>
-<li>C101PAのOP1はARM系CPUなのでarm64用のファイルを使用する。</li>
-<li>C223NAはintel入ってるのでx86-64でいけるはず。</li>
-</ul>
-<h2 id=環境>環境</h2>
-<ul>
-<li>C101PA</li>
-<li>Linux(ベータ)</li>
-</ul>
-<h2 id=手順>手順</h2>
-<ul>
-<li><a href=https://github.com/golang/go/wiki/ChromeOS>https://github.com/golang/go/wiki/ChromeOS</a> を参考に進める</li>
-<li><a href=https://golang.org/dl/>https://golang.org/dl/</a> から go1.12.7.linux-arm64.tar.gz をダウンロード
-<pre tabindex=0><code>$ wget wget https://dl.google.com/go/go1.12.7.linux-arm64.tar.gz
-</code></pre></li>
-<li>チェックサム確認
-<pre tabindex=0><code>$ sha256sum go1.12.7.linux-arm64.tar.gz 
-</code></pre></li>
-<li>ファイル展開
-<pre tabindex=0><code>$ sudo tar xpvf go1.12.7.linux-arm64.tar.gz -C /usr/local
-</code></pre></li>
-<li>バージョン確認
-<pre tabindex=0><code>$ /usr/local/go/bin/go version
-go version go1.12.7 linux/arm64
-</code></pre></li>
-<li>ワークスペース作成
-<pre tabindex=0><code>$ sudo mkdir /usr/local/go/work
-</code></pre></li>
-<li>パス設定
-<pre tabindex=0><code>$ export GOPATH=&quot;/usr/local/go/work&quot;
-$ export PATH=&quot;${PATH}:/usr/local/go/bin:${GOPATH}/bin&quot;
-</code></pre>一応、<code>~/.bash_profile</code>にも同等の内容を記載しておく</li>
-<li>動作確認
-<ul>
-<li>ファイル作成
-<pre tabindex=0><code>$ sudo vim /usr/local/go/src/hello.go
-</code></pre></li>
-<li>ビルド
-<pre tabindex=0><code>$ go install hello
-  can't load package: package hello: cannot find package &quot;hello&quot; in any of:
-    /usr/local/go/src/hello (from $GOROOT)
-    /usr/local/go/work/src/hello (from $GOPATH)
-</code></pre>エラー。。。</li>
-<li>run
-<pre tabindex=0><code>$ go run /usr/local/go/src/hello.go 
-Hello, Chrome OS!
-</code></pre>とりあえず実行できたから良しとしておく。</li>
-</ul>
-</li>
-</ul>
+<p>組み込みの章を読んだ。</p>
+<p>あまり直接関係なさそうだったのでさらっと。</p>
+<p>開発ツールの章を読んだ。</p>
+<p>Goとそう変わらない感じ？</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/chromebook rel=tag>chromebook</a>&emsp;
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>&emsp;
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -122,10 +74,9 @@ Hello, Chrome OS!
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2019/07/17_chromebook_linux/> chromebookのlinux</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/04/05_rust_book/> 実践Rustプログラミング入門</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2019/07/18_macbookpro_restore/> MacbookPro初期化</a>
 </div>
 </div>
 </nav>
