@@ -40,6 +40,23 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/02/15_mdmml/ rel=bookmark>リファクタリング</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-02-15T00:00:00>2022-02-15</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+データ構造の変更と、それに関連する部分を修正。 テーブルのセルごとに読み込んで保持するようにした。 テストが通らなくなった。。 セル（小節）ごとに変換したら、ループとか現在のオクターブとか状態として持たせないといけないのか・・ちょっと、あまり、よくない気がする。
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/02/14_mdmml/ rel=bookmark>マークダウンパーサーを使ってみたが</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -194,23 +211,6 @@ Inspironのタッチパッドが相変わらず不調なのと、だいぶ前か
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/02/05_mdmml/ rel=bookmark>MML実装</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-05T00:00:00>2022-02-05</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-タイと繰り返しを実装した。 繰り返しが入れ子になるとpanic起こすのでいつか直す。 テストが書きにくくなってきたので、もっと小さい単位で関数化していきたい。 和音も何とか実装した。 前後の文字列によりpanicすることがあるのでいつか直す。 ひとまず予定していたコマンド群は全部実装できた・・かな。
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -268,6 +268,9 @@ Inspironのタッチパッドが相変わらず不調なのと、だいぶ前か
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/04/14_docker_desktop_470/>Docker Desktop 4.7.0でhost.docker.internal</a>
+</li>
+<li>
 <a href=/blog/posts/2022/04/13_movie_edit/>動画編集入門</a>
 </li>
 <li>
@@ -293,9 +296,6 @@ Inspironのタッチパッドが相変わらず不調なのと、だいぶ前か
 </li>
 <li>
 <a href=/blog/posts/2022/04/05_rust_book/>実践Rustプログラミング入門</a>
-</li>
-<li>
-<a href=/blog/posts/2022/04/04_rust_book/>実践Rustプログラミング入門</a>
 </li>
 </ul>
 </aside>

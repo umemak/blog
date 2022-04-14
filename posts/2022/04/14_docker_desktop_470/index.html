@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>GAS入門 - umemak</title>
+<title>Docker Desktop 4.7.0でhost.docker.internal - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,58 +33,34 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>GAS入門</h1>
+<h1>Docker Desktop 4.7.0でhost.docker.internal</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-05-28T528:120:06>2020-05-28</time>
+<time datetime=2022-04-14T414:120:06>2022-04-14</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/05/28_gas/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f05%2f28_gas%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/04/14_docker_desktop_470/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f04%2f14_docker_desktop_470%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=GAS入門 data-url=https://umemak.github.io/blog/posts/2020/05/28_gas/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Docker Desktop 4.7.0でhost.docker.internal" data-url=https://umemak.github.io/blog/posts/2022/04/14_docker_desktop_470/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>今まで存在は知っていたし、Kindle Unlimitedで読める入門書を読んだりはしていた。
-ここにきてようやく実際に手を動かしてみたので、その感想。</p>
-<p>作ったものは、POSTリクエストを受けて、スプレッドシートのA列に入力と同じ文字列があれば、B列の内容を返すというもの。</p>
-<p>学び</p>
-<ul>
-<li>スクリプトを修正したときは、Newバージョンでデプロイする。
-<ul>
-<li>バージョン変えずに更新ボタン押して、なんで挙動変わらないんだろうと悩んだ。</li>
-<li>デフォルトが<code>New</code>でも良いと思うんだけど。。</li>
-</ul>
-</li>
-<li><code>TextFinder</code>で特定の列から検索するメソッドは（たぶん）用意されていない。
-<ul>
-<li><code>findAll()</code>で全体から拾って、ループ回して<code>getColumn()</code>で列番号を比較して拾う。</li>
-</ul>
-</li>
-<li>WindowsのVSCodeのターミナルでは、<code>curl</code>で日本語をパラメータとして渡すと正しく伝わらない。
-<ul>
-<li>文字コードの問題。</li>
-<li>WSLに入って実行すればOK。</li>
-</ul>
-</li>
-<li>そんなに速度は速くない。
-<ul>
-<li>とはいえ遅すぎるというほどでもない。</li>
-</ul>
-</li>
-</ul>
-<p>これでGAS実績が解放された。</p>
+<p>Docker Desktopの4.7.0が出たので、host.docker.internalの件が変化あったか試してみた。</p>
+<p><a href=https://github.com/umemak/docker_network_test>https://github.com/umemak/docker_network_test</a></p>
+<p>変わっていなかった。</p>
+<p>リリースノート見てもそれらしい変更なかったし、残念だが当然。</p>
+<p>世界中でほかに誰も困っていないのかなぁ。。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/gas rel=tag>gas</a>&emsp;
+<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -99,10 +75,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/05/28_wsl/> Surface Go 2でWSL2+Dokcer</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/04/13_movie_edit/> 動画編集入門</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/06/05_gitea/> CentOS6にgiteaをインストールする（未完）</a>
 </div>
 </div>
 </nav>
