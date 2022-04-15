@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>メソッドか関数か - umemak</title>
+<title>動画編集入門 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,37 +33,39 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>メソッドか関数か</h1>
+<h1>動画編集入門</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-03-09T39:120:06>2022-03-09</time>
+<time datetime=2022-04-15T415:120:06>2022-04-15</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/03/09_method_func/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f03%2f09_method_func%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/04/15_movie_edit/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f04%2f15_movie_edit%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=メソッドか関数か data-url=https://umemak.github.io/blog/posts/2022/03/09_method_func/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=動画編集入門 data-url=https://umemak.github.io/blog/posts/2022/04/15_movie_edit/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>最初は、構造体のフィールドを参照しているものはメソッドにしていた。</p>
-<p>けど、フィールドのごく一部しか使っていないものはメソッドではなく関数にして、疎結合な感じにしてみた。</p>
-<p>もちろんフィールドを更新しているものはメソッドのほうが良いかもしれないが、それでも新しく構造体を生成して返すようにすれば必ずしもメソッドにする必要はない。</p>
-<p>MDMMLは、メソッドチェーン？みたいな感じでこんな風に書いてみたので、ここにある<code>MMLtoSMF()</code>と<code>SMF()</code>だけがメソッドに残った。</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go>	<span class=nx>_</span><span class=p>,</span> <span class=nx>err</span> <span class=p>=</span> <span class=nx>os</span><span class=p>.</span><span class=nx>Stdout</span><span class=p>.</span><span class=nf>Write</span><span class=p>(</span><span class=nx>mdmml</span><span class=p>.</span><span class=nf>MDtoMML</span><span class=p>(</span><span class=nx>src</span><span class=p>).</span><span class=nf>MMLtoSMF</span><span class=p>().</span><span class=nf>SMF</span><span class=p>())</span>
-</code></pre></div><p>ここでメソッドチェーンってちゃんとした用語なんだっけと思ってググったら、<a href=https://www.pospome.work/entry/2018/03/12/014109>Go における FunctionalOptionPattern と MethodChaining について考える - pospomeのプログラミング日記</a>というページがヒットした。</p>
-<p>なるほど、エラー処理。他言語の例外ってこういうときに使うのかー。</p>
-<p>まあ今回はこのままで良いかな。</p>
+<p><a href=https://shotcut.org/>Shotcut</a>の操作方法の参考になったページ</p>
+<ul>
+<li><a href=https://wolfbash.hateblo.jp/entry/2018/01/17/012911>無料の動画編集ツール Shotcut の使い方 その1 - 強まっていこう</a></li>
+<li><a href=https://wolfbash.hateblo.jp/entry/2018/01/23/171936>無料の動画編集ツール Shotcut の使い方 その2 - 動画の切り貼り - 強まっていこう</a></li>
+<li><a href=https://wolfbash.hateblo.jp/entry/2018/02/06/031628>無料の動画編集ツール Shotcut の使い方 その3 - 複数トラックを用いた編集 - 強まっていこう</a></li>
+</ul>
+<p>続編がないのが残念。</p>
+<p>とりあえず、同じの3回撮ってタイムラインに並べて、大体同じところで切って、比較して良いトラックを新規トラックにコピーしていった。</p>
+<p>まとめた新規トラックをWAVで書き出して、<a href=https://forest.watch.impress.co.jp/library/software/audacity/>「Audacity」無料の音声編集ソフト - 窓の杜</a>で読み込んでコンプレッサーかけて書き出し。</p>
+<p>加工したWAVをShotcutに取り込んで、まとめトラックの音声はミュートした状態でmp4で書き出して完成。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>&emsp;
+<a href=https://umemak.github.io/tags/movie rel=tag>movie</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -78,10 +80,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/03/08_go_main_test/> main関数を分けたのでテストも書く</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/04/14_docker_desktop_470/> Docker Desktop 4.7.0でhost.docker.internal</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/03/10_func/> 関数化</a>
 </div>
 </div>
 </nav>
