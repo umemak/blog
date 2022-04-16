@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/02/26_rust_dyn/ rel=bookmark>dynとは？</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-02-26T00:00:00>2022-02-26</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+リファクタリングしてモジュール性とエラー処理を向上させる - The Rust Programming Language 日本語版 を写経していて、コンパイルエラーに遭遇した。 $ cargo run Compiling mdmml_rust v0.1.0 (mdmml_rust) error[E0782]: trait objects must include the `dyn` keyword --> src/main.rs:21:41 | 21 | fn run(config: Config)-> Result&lt;(), Box&lt;Error>> { | ^^^^^ | help: add `dyn` keyword before this trait | 21 - fn run(config: Config)-> Result&lt;(), Box&lt;Error>> { 21 + fn run(config: Config)-> Result&lt;(), Box&lt;dyn Error>> { | For more information about this error, try `rustc --explain E0782`. error: could not compile `mdmml_rust` due to previous error 修正方法も提示してくれて親切。 で、
+<a href=/blog/posts/2022/02/26_rust_dyn/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/02/26_rust/ rel=bookmark>VS CodeのRust用設定</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -205,23 +226,6 @@ MDMMLじゃない話。 https://onsi.github.io/ginkgo/ でテストを、 Descri
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/02/16_crontab/ rel=bookmark>crontabの範囲指定について</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-16T00:00:00>2022-02-16</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-crontab、-で範囲指定ができるけれど、大小関係が逆だったらどうなるか気になったので調べてみた。 59-1 * * * * time こういうやつ。 dockerでalpine使って動かしたところ、想定通り59,0,1で実行された。
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -279,6 +283,9 @@ crontab、-で範囲指定ができるけれど、大小関係が逆だったら
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/04/16_movie_caption/>動画の字幕</a>
+</li>
+<li>
 <a href=/blog/posts/2022/04/15_movie_edit/>動画編集入門</a>
 </li>
 <li>
@@ -304,9 +311,6 @@ crontab、-で範囲指定ができるけれど、大小関係が逆だったら
 </li>
 <li>
 <a href=/blog/posts/2022/04/07_rust_book/>実践Rustプログラミング入門</a>
-</li>
-<li>
-<a href=/blog/posts/2022/04/06_rust_book/>実践Rustプログラミング入門</a>
 </li>
 </ul>
 </aside>

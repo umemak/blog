@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>リファクタリング - umemak</title>
+<title>動画の字幕 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,29 +33,34 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>リファクタリング</h1>
+<h1>動画の字幕</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-02-16T216:120:06>2022-02-16</time>
+<time datetime=2022-04-16T416:120:06>2022-04-16</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/16_mdmml/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f16_mdmml%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/04/16_movie_caption/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f04%2f16_movie_caption%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=リファクタリング data-url=https://umemak.github.io/blog/posts/2022/02/16_mdmml/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=動画の字幕 data-url=https://umemak.github.io/blog/posts/2022/04/16_movie_caption/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>通らなくなっていたテストを通した。</p>
-<p>バイナリものはパッと見でどこが違うかわかりにくいのが難点。。</p>
+<p>動画に字幕入れるのに、今回はShotcutのテキストを重ねる方法で実現していた。</p>
+<p><a href="https://www.youtube.com/watch?v=kbDIesukx6w">Adobe PremiereとVoicepeakを使った簡単・なめらか音声合成ナレーション - YouTube</a>みたいにするともっと簡単にできそうな気もするけど、Premiereとか自分には敷居が高そう・・・</p>
+<p><a href="https://cloud.google.com/speech-to-text?hl=ja">Speech-to-Text: 自動音声認識  |  Google Cloud</a>でテキスト化はできそうだけど、SRT形式で出力できるのかな？</p>
+<p><a href=https://qiita.com/2zn01/items/ed19a64711d68a0dc40d>【個人開発】動画の字幕・テロップ入れをAIで自動化するWebサービスを作りました - Qiita</a>がやりたいことに近そう。</p>
 </div>
 <footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/movie rel=tag>movie</a>&emsp;
+</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -69,10 +74,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/02/15_mdmml/> リファクタリング</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/04/15_movie_edit/> 動画編集入門</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/02/16_crontab/> crontabの範囲指定について</a>
 </div>
 </div>
 </nav>
