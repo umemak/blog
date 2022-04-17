@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2021/12/12_ac/ rel=bookmark>データ構造を考える</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2021-12-12T00:00:00>2021-12-12</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+各画面で必要な項目からデータ構造を作る。 event 項目名 name type ID id int イベント名 title string 開催日時 timestamp 開催場所 place string 公開期間From open datetime 公開期間To close datetime 作成者 author int -> user.id user 項目名 name type ID id int ユーザー名 username string eventUser 項目名 name type ID id int イベントID eventid int -> event.id ユーザーID userid int -> user.id upload 項目名 name type ID id int イベントID eventid int -> event.id 資料URL url string comment 項目名 name type ID
+<a href=/blog/posts/2021/12/12_ac/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2021/12/11_ac/ rel=bookmark>authを追加</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -220,27 +241,6 @@ Getting started - Vue - AWS Amplify Docsをやってみた。 GitHubにリポジ
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2021/12/02_ac/ rel=bookmark>サービス開発日記</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-12-02T00:00:00>2021-12-02</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-昨日は、作るものとその機能をざっくり決めた。 2日目の今日は、アーキテクチャなど考えたい。 WEBアプリなので、フロントエンドとバックエンドAPIとデータベースかな。 フロントはNext.jsとかNuxtとかその辺だろうか。 Next.jsは前に触ったことあるので、今回はNuxtにしてみようかな。 バックエン
-<a href=/blog/posts/2021/12/02_ac/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -298,6 +298,9 @@ Getting started - Vue - AWS Amplify Docsをやってみた。 GitHubにリポジ
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/04/17_hugo_search/>Hugoのblogに検索機能を付けたい</a>
+</li>
+<li>
 <a href=/blog/posts/2022/04/16_movie_caption/>動画の字幕</a>
 </li>
 <li>
@@ -323,9 +326,6 @@ Getting started - Vue - AWS Amplify Docsをやってみた。 GitHubにリポジ
 </li>
 <li>
 <a href=/blog/posts/2022/04/08_rust_book/>実践Rustプログラミング入門</a>
-</li>
-<li>
-<a href=/blog/posts/2022/04/07_rust_book/>実践Rustプログラミング入門</a>
 </li>
 </ul>
 </aside>
