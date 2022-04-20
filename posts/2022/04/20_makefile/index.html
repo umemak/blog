@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Oracle Cloud登録してみた - umemak</title>
+<title>Makefile入門 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,37 +33,41 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Oracle Cloud登録してみた</h1>
+<h1>Makefile入門</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2019-10-28T1028:120:06>2019-10-28</time>
+<time datetime=2022-04-20T420:120:06>2022-04-20</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2019/10/28_signup_oracle_cloud/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f10%2f28_signup_oracle_cloud%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/04/20_makefile/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f04%2f20_makefile%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Oracle Cloud登録してみた" data-url=https://umemak.github.io/blog/posts/2019/10/28_signup_oracle_cloud/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Makefile入門 data-url=https://umemak.github.io/blog/posts/2022/04/20_makefile/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>Serverless Days のスポンサーブースで説明聞いて、無料枠あるなら試してみようかな、と。</p>
-<p>登録ページずっと英語で進んでたのがハードル高め。
-いつも住所どうやって書くか迷うんだよね。。</p>
-<p>GCPやAzureみたいなコンソールは見つからなかった。</p>
-<p>インスタンス作るにもSSH鍵ペア作らないといけないのがちょっと（AWSはその場で作れるよね）。</p>
-<p>てもとでssh-keygenして鍵作って貼り付けていざインスタンス作成押したら <code>Out of host capacity.</code> エラー。。
-ぐぐったら同様の症例がすぐに見つかって、Oracle側の空きがない問題らしく。</p>
-<p>まぁ、本命はFunctionsなのでそっちが使えればいいか。。明日また試してみよう。</p>
+<p>昨日の件、</p>
+<pre tabindex=0><code>VAR1 = &quot;abc&quot;
+if [ &quot;$(CI)&quot; = &quot;true&quot; ]; then \
+    VAR1 += &quot;def&quot;; \
+fi
+</code></pre><p>ではなく</p>
+<pre tabindex=0><code>VAR1 = &quot;abc&quot;
+ifeq ($(CI),true)
+    VAR1 += &quot;def&quot;
+endif
+</code></pre><p>で良かった。
+ひとつ賢くなった。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>&emsp;
+<a href=https://umemak.github.io/tags/makefile rel=tag>Makefile</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -78,10 +82,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2019/10/23_pixel4/> Pixel4が届いた</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/04/19_makefile/> Makefile入門</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2019/10/31_ochacafe2_3/> OCHaCafe2 #3 Serverlessな世界をのぞいてみよう！</a>
 </div>
 </div>
 </nav>
