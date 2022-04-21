@@ -1,6 +1,7 @@
 ---
 title: "Ginkgoわからん"
 date: "2022-02-18"
+tags: ["golang", "ginkgo"]
 
 ---
 
