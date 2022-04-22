@@ -79,8 +79,14 @@ googleAnalytics = "UA-151652940-1"
 #    name = "github"
 #    url = "https://github.com/umemak/"
 
+[outputFormats.Algolia]
+  baseName = "algolia"
+  isPlainText = true
+  mediaType = "application/json"
+  notAlternative = true
+
 [outputs]                          # c.f. https://gohugo.io/templates/output-formats/
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "Algolia"]
   page =  ["HTML"]
   section =  ["HTML", "RSS"]
   taxonomyTerm =  ["HTML", "RSS"]

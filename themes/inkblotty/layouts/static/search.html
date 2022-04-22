@@ -1,0 +1,102 @@
+{{ define "main" }}
+<section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title has-text-weight-bold">
+        検索結果<span id="search-term"></span>
+      </h1>
+    </div>
+  </div>
+</section>
+<section class="section is-hidden">
+  <div class="container">
+    <div id="searchbox"></div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div id="hits" class="columns is-multiline"></div>
+  </div>
+</section>
+{{ end }}
+{{ define "addscripts" }}
+<script
+  src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js"
+  integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk="
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js"
+  integrity="sha256-LAGhRRdtVoD6RLo2qDQsU2mp+XVSciKRC8XPOBWmofM="
+  crossorigin="anonymous"
+></script>
+<script>
+  let params = new URLSearchParams(document.location.search.substring(1));
+
+  const searchClient = algoliasearch(
+    "HSN8S8AOSA",
+    "4e1b9c35d91987d53be462324b3dab5f"
+  );
+
+  const search = instantsearch({
+    indexName: "blog",
+    searchClient,
+  });
+
+  search.addWidgets([
+    instantsearch.widgets.searchBox({
+      container: "#searchbox",
+    }),
+
+    instantsearch.widgets.hits({
+      container: "#hits",
+      templates: {
+        empty: "No results",
+        item: ``,
+      },
+    }),
+  ]);
+
+  const renderHits = (renderOptions, isFirstRender) => {
+    const { hits, widgetParams } = renderOptions;
+
+    widgetParams.container.innerHTML = `
+    ${hits
+      .map(
+        (item) =>
+          `<div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card">
+                <div class="card-content">
+                    <div class="title is-4"><a class="has-text-black-bis has-text-weight-bold" href="${item.permalink}">${item.title}</a></div>
+                    <div class="mb-2">${item.summary}</div>
+                    <footer class="card-footer">
+                        <div class="card-footer-item">
+                        <time datetime=${item.publish_date}>
+                            <i class="far fa-calendar-alt"></i>&nbsp;${item.publish_date}
+                        </time>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>`
+      )
+      .join("")}
+  `;
+  };
+
+  const customHits = instantsearch.connectors.connectHits(renderHits);
+
+  search.addWidgets([
+    customHits({
+      container: document.querySelector("#hits"),
+    }),
+  ]);
+
+  search.start();
+  search.setUiState({
+    blog: {
+      query: params.get("q"),
+    },
+  });
+</script>
+{{ end }}
