@@ -31,10 +31,11 @@
 <script>
 // instantSearchを初期化
 var search = instantsearch({
-  appId: 'HSN8S8AOSA',
-  apiKey: '4e1b9c35d91987d53be462324b3dab5f',
   indexName: 'blog',
-  urlSync: true
+  searchClient: algoliasearch(
+    "HSN8S8AOSA",
+    "4e1b9c35d91987d53be462324b3dab5f"
+  )
 });
  
 // 検索ボックスをDOMに設定
