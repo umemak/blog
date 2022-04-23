@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Bonfire Backend #4 - umemak</title>
+<title>HugoにAlgoliaを導入してみる - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -35,311 +35,31 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Bonfire Backend #4</h1>
+<h1>HugoにAlgoliaを導入してみる</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2019-11-26T1126:120:06>2019-11-26</time>
+<time datetime=2022-04-23T423:120:06>2022-04-23</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2019/11/26_bonfire_backend_4/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2019%2f11%2f26_bonfire_backend_4%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/04/23_hugo_search/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f04%2f23_hugo_search%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Bonfire Backend #4" data-url=https://umemak.github.io/blog/posts/2019/11/26_bonfire_backend_4/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=HugoにAlgoliaを導入してみる data-url=https://umemak.github.io/blog/posts/2022/04/23_hugo_search/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p><a href=https://yj-meetup.connpass.com/event/153658/>https://yj-meetup.connpass.com/event/153658/</a></p>
-<p>初参加です。</p>
-<h2 id=1900開場受付開始>19:00 開場・受付開始</h2>
-<h2 id=1930イントロ乾杯>19:30 イントロ・乾杯</h2>
-<h2 id=1935ヤフーのナビゲーション系のバックエンドサービスの課題をk8sで解決した話>19:35 ヤフーのナビゲーション系のバックエンドサービスの課題をk8sで解決した話</h2>
-<h3 id=高木-克彰tkgtransit--ヤフー株式会社>高木 克彰(@tkgtransit) ◆ ヤフー株式会社</h3>
-<ul>
-<li>ナビゲーション
-<ul>
-<li>マップの徒歩ナビ</li>
-<li>乗り換えナビ</li>
-</ul>
-</li>
-<li>従来のアーキテクチャ
-<ul>
-<li>エンジンデータはそれぞれ１台の仮想サーバーが担当</li>
-<li>C++, Apacke Module</li>
-<li>課題
-<ul>
-<li>IFが異なるだけで基本ロジックはほぼ同じ</li>
-<li>データ更新に半日</li>
-<li>脆弱性対応が多い、手作業</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>改善後
-<ul>
-<li>API層を統合
-<ul>
-<li>社内PaaSに移行</li>
-</ul>
-</li>
-<li>エンジン層
-<ul>
-<li>社内CaaSに移行</li>
-<li>バイナリデータはinit comtainerで取得してオンメモリに展開</li>
-</ul>
-</li>
-<li>データの更新はk8sのcronで実行</li>
-</ul>
-</li>
-<li>パイプラインはscrewdriver使っている</li>
-</ul>
-<h2 id=1950プライベートクラウドをk8sで刷新して良かった話>19:50 プライベートクラウドをk8sで刷新して良かった話</h2>
-<h3 id=鶴田貴大--サイボウズ株式会社>鶴田貴大 ◆ サイボウズ株式会社</h3>
-<ul>
-<li>自社製プライベートクラウド
-<ul>
-<li>OpenStackは使っていない</li>
-<li>Ubuntu
-<ul>
-<li>14.04から16.04へのアップグレードに２年くらいかかった</li>
-</ul>
-</li>
-<li>コンテナもほぼ使っていない</li>
-</ul>
-</li>
-<li>インフラ刷新
-<ul>
-<li>necoプロジェクト</li>
-<li>CKE(Cybozu Kubernetes Engine)</li>
-<li>Certifiedになった</li>
-</ul>
-</li>
-<li>目的
-<ul>
-<li>運用コスト低減</li>
-<li>スケーラビリティ向上</li>
-</ul>
-</li>
-<li>K8sを選んだ理由
-<ul>
-<li>圧倒的に流行っていたから</li>
-</ul>
-</li>
-<li>CoreOS採用
-<ul>
-<li>コンテナ用軽量OS</li>
-</ul>
-</li>
-<li>GitOps
-<ul>
-<li>Argo CDを使用</li>
-</ul>
-</li>
-<li>テナント
-<ul>
-<li>チームごとに権限を分離</li>
-<li>ほかテナントに影響しないように</li>
-<li>単一のk8sクラスターですべてのテナントを賄っている</li>
-</ul>
-</li>
-<li>開発環境
-<ul>
-<li>クラスタを共同利用
-<ul>
-<li>うっかり壊すと大変</li>
-</ul>
-</li>
-<li>Kindに変更
-<ul>
-<li>ローカルPCでも動かせる</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Teleport
-<ul>
-<li>多機能踏み台サーバー</li>
-<li>ターミナルの入出力を録画できるので、監査に使える</li>
-</ul>
-</li>
-</ul>
-<h2 id=2010pfnにおける二種類のkubernetesクラスタ>20:10 PFNにおける二種類のKubernetesクラスタ</h2>
-<h3 id=太田佳敬ota42y--preferred-networks>太田佳敬(@ota42y) ◆ Preferred Networks</h3>
-<ul>
-<li><a href=https://speakerdeck.com/ota42y/pfnniaru2tufalsekubernetes>https://speakerdeck.com/ota42y/pfnniaru2tufalsekubernetes</a></li>
-<li>自社GPUクラスタ
-<ul>
-<li>機械学習のためにマシンリソースが必要</li>
-<li>2500以上</li>
-<li>これの制御をk8sで行っている</li>
-</ul>
-</li>
-<li>WebApplication用
-<ul>
-<li>aws EKSに構築</li>
-<li>EKSを使うほどではないが、K8sを使い慣れているのでECSではなくEKS</li>
-</ul>
-</li>
-<li>K8sのNetwork Isolation
-<ul>
-<li>1つのクラスタに関係ないアプリが複数同居している</li>
-<li>相互通信しないようにネットワーク分離が重要</li>
-<li>Network Policies
-<ul>
-<li>PodやNamespace単位で通信を制御できる標準機能</li>
-<li>アプリケーションごとにNamespaceを分けて相互アクセスを禁止した</li>
-<li>デフォルトでは通信許可設定なので設定忘れを抑制したい
-<ul>
-<li>Calicoを利用してデフォルトで通信禁止に設定
-<ul>
-<li><a href=https://github.com/projectcalico/calico>https://github.com/projectcalico/calico</a></li>
-<li>Namespace内部の通信も禁止になるので、そこは許可する</li>
-<li>kube-systemも許可する。禁止したままだとkube-dnsも使えなくなってしまう</li>
-<li>orderで優先順位を決める</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Network PolicyでALBを指定（許可）できない
-<ul>
-<li>Subnet構成で回避</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id=2030小休憩>20:30 小休憩</h2>
-<h2 id=2035k8sで画像pfを1年半運用してみた振り返り>20:35 K8Sで画像PFを1年半運用してみた振り返り</h2>
-<h3 id=山田-拓也--ヤフー株式会社>山田 拓也 ◆ ヤフー株式会社</h3>
-<ul>
-<li>結論
-<ul>
-<li>移行してよかった</li>
-</ul>
-</li>
-<li>旧システム
-<ul>
-<li>社内VM</li>
-<li>リカバリ手動</li>
-<li>障害で深夜対応・・</li>
-</ul>
-</li>
-<li>
-<h2 id=新システム>新システム</h2>
-</li>
-<li>移行前のシステムを意識しすぎてしまった
-<ul>
-<li>サーバー構成など
-<ul>
-<li>Podとコンテナの配置どうする？
-<ul>
-<li>一つにまとめてみた
-<ul>
-<li>起動遅い</li>
-<li>管理も大変</li>
-</ul>
-</li>
-<li>1コンテナ1Podにした
-<ul>
-<li>迷ったらこれでOK</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>監視設定
-<ul>
-<li>Grafanaの監視項目全部Prometheusに持っていった
-<ul>
-<li>Grafanaで良くない？</li>
-</ul>
-</li>
-<li>監視の目的から見直す
-<ul>
-<li>設定したしきい値も説明できないなら見直す</li>
-<li>物理やVMなら必須だった項目もK8sならいらない場合もある</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Prometheus
-<ul>
-<li>予測で設定できる</li>
-<li>変化量でも見れる</li>
-<li>Alertmanager便利</li>
-</ul>
-</li>
-</ul>
-<h2 id=2050k8s初心者がgrpc--envoyを導入したら色々苦労した話>20:50 k8s初心者がgRPC × envoyを導入したら色々苦労した話</h2>
-<h3 id=信原-有志--ヤフー株式会社>信原 有志 ◆ ヤフー株式会社</h3>
-<ul>
-<li>サービスの課題
-<ul>
-<li>ドメインごとにチームが別れていて、それぞれ別の言語で開発していた</li>
-<li>モノリス</li>
-<li>共通コンポーネントをチームごとに実装すると非効率
-<ul>
-<li>共通コンポーネント配信システムを構築した</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>不具合
-<ul>
-<li>ローリングアップデート時のコネクションエラー
-<ul>
-<li>glaceful shutdownが正しく動いていない？
-<ul>
-<li>負荷を下げて検証
-<ul>
-<li>解決できず</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>IPテーブルの更新に遅延？
-<ul>
-<li>検証しても解決できず</li>
-</ul>
-</li>
-<li>envoyのIPが更新されない？
-<ul>
-<li>ZipkinでTraceIDから照合して検証
-<ul>
-<li>これ</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>対策
-<ul>
-<li>envoyでのgRPC health_checkの設定をちゃんとやる</li>
-<li>nodejsアプリにも削除用のエントリポイントを追加</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>内部の動きをきちんと理解できていなかったのが原因</li>
-</ul>
-<h2 id=2100懇親会>21:00 懇親会</h2>
-<h2 id=2200終了>22:00 終了</h2>
+<p><a href=https://blog.piyo.tech/posts/2018-04-08-hugo-search-page/>Algoliaを使ってブログに全文検索をつける（検索ページ編） - PIYO - Tech & Life -</a> を見ながらやって、何とか検索できるのはできたんだけど、色々混ぜて試行錯誤した結果、よくわからないものになってしまっている現状。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>&emsp;
-<a href=https://umemak.github.io/tags/yahoo rel=tag>yahoo</a>&emsp;
+<a href=https://umemak.github.io/tags/hugo rel=tag>hugo</a>&emsp;
+<a href=https://umemak.github.io/tags/algolia rel=tag>algolia</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -354,10 +74,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2019/11/21_iij_technical_day_2019/> IIJ Technical DAY 2019</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/04/22_hugo_search/> HugoにAlgoliaを導入してみる</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2019/11/29_ochacafe_premium_1/> OCHaCafe Premium#1：Oracle Cloudで考える高可用性アーキテクチャ</a>
 </div>
 </div>
 </nav>
