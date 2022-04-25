@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>golang - umemak</title>
+<title>ginkgoとgo test - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -30,172 +30,46 @@
 <div class=breadcrumbs>
 </div>
 <div id=content class=content>
-<main aria-role=main>
-<header class=homepage-header>
-<h1>golang</h1>
-</header>
-<div class=homepage-content>
-</div>
-<div>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
+<main role=main>
+<article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h2><a href=/blog/posts/2022/04/25_ginkgo/ rel=bookmark>ginkgoとgo test</a></h2>
+<h1>ginkgoとgo test</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-02-18T00:00:00>2022-02-18</time>
+<time datetime=2022-02-18T218:120:06>2022-02-18</time>
 </a>
+<span style=float:right>
+<div id=fb-root style=height:100%></div>
+<script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/04/25_ginkgo/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f04%2f25_ginkgo%2f" class=fb-xfbml-parse-ignore>Share</a>
+</div>
+&nbsp;
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="ginkgoとgo test" data-url=https://umemak.github.io/blog/posts/2022/04/25_ginkgo/ data-show-count=false>Tweet</a>
+<script async src=https://platform.twitter.com/widgets.js></script>
+&nbsp;
+</span>
 </div>
 </header>
-<div class=post-excerpt><p>
-GinkgoのV1とV2のテストケースが混在しているときに、V2のCLIでV1用のコードをテストしようとすると、ginkgo.timeoutが定義されてい内的なエラーになってしまう（うろ覚え）。 importをv2にすれば多分良いのだけれど、そうしなくても、テストの実行をgo testに任せれば、imp
-<a href=/blog/posts/2022/04/25_ginkgo/ class=more-link>Read more </a>
-</p></div>
+<div class=post-content>
+<p>GinkgoのV1とV2のテストケースが混在しているときに、V2のCLIでV1用のコードをテストしようとすると、ginkgo.timeoutが定義されてい内的なエラーになってしまう（うろ覚え）。</p>
+<p>importをv2にすれば多分良いのだけれど、そうしなくても、テストの実行をgo testに任せれば、importで指定しているバージョンで実行してくれる気がする。</p>
+<p><a href=https://onsi.github.io/ginkgo/>https://onsi.github.io/ginkgo/</a>によれば、</p>
+<blockquote>
+<p>Under the hood, ginkgo is simply calling go test.</p>
+</blockquote>
+<p>ということなので、おかしな挙動にはならない・・と思う。</p>
+<blockquote>
+<p>While you can run go test instead of the ginkgo CLI, Ginkgo has several capabilities that can only be accessed via ginkgo.</p>
+</blockquote>
+<p>特別な機能を使っていない限りは。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/golang rel=tag>golang</a>
-<a href=https://umemak.github.io/tags/ginkgo rel=tag>ginkgo</a>
+<a href=https://umemak.github.io/tags/golang rel=tag>golang</a>&emsp;
+<a href=https://umemak.github.io/tags/ginkgo rel=tag>ginkgo</a>&emsp;
 </span>
 </footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/04/21_ginkgo/ rel=bookmark>Ginkgoわかった</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-18T00:00:00>2022-02-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Ginkgoわからん - umemak の続編。 Itが上から順番に実行されない問題、V2で導入されたOrderedを使えば解決できそう。 https://onsi.github.io/ginkgo/#ordered-containers
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/golang rel=tag>golang</a>
-<a href=https://umemak.github.io/tags/ginkgo rel=tag>ginkgo</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/02/18_ginkgo/ rel=bookmark>Ginkgoわからん</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-18T00:00:00>2022-02-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-MDMMLじゃない話。 https://onsi.github.io/ginkgo/ でテストを、 Describe(){ Context(){ // 準備 It(){ Expect() } // 次の準備 It(){ Expect() } // 後片付け } } みたいな感じで書いていたら、思った通りの動きにならなくてハマった。 どうやら、Contextの中は上から順番に実行されるのではなく、 Describe(){ Context(){ // 準備 // 次の準備 // 後片付け It(){ Expect() } It(){ Expect() } } } となるらしい。 やりたい順番で実行したければ
-<a href=/blog/posts/2022/02/18_ginkgo/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/golang rel=tag>golang</a>
-<a href=https://umemak.github.io/tags/ginkgo rel=tag>ginkgo</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<figure class=list__thumbnail>
-<a href=https://umemak.github.io/blog/posts/2019/12/04_golang_tokyo_28/>
-<img src=https://connpass-tokyo.s3.amazonaws.com/thumbs/86/d4/86d4cfcbc4f2eafd41a40f332ef2716e.png alt="golang.tokyo #28">
-</a>
-</figure>
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/12/04_golang_tokyo_28/ rel=bookmark>golang.tokyo #28</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-12-04T00:00:00>2019-12-04</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-https://golangtokyo.connpass.com/event/156678/ LT大会（１６本！）です。 19:00 ~ 開場・受付 きました pic.twitter.com/T9mR1MzOss &mdash; umemak (@umemak8) December 4, 2019 19:30 ~ 19:40 オープニング・乾杯 yappli 19:40 ~ 19:45 LT1: [仮]wire.goをプロダクトで使ってみた bieshanさん DIツール 依存関係のコードを生成してくれる wire使い方イマイチ理解していないので助かる 型を見て生成しているので、同じ定義だとどちらを使って
-<a href=/blog/posts/2019/12/04_golang_tokyo_28/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>
-<a href=https://umemak.github.io/tags/golang rel=tag>golang</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/11/11_go_release_10/ rel=bookmark>Go Release 10 Year Anniversary Party in Tokyo</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-11-11T00:00:00>2019-11-11</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-https://gocon.connpass.com/event/153665/ VMwareからのハシゴです。 出る前にDatadogのデモ見てたら出るのが遅くなってしまった。 19:00 - 19:30 Open ケーキ！ 19:30 - 20:00 History of Go by ymotongpoo 30 October, 2009 社内公開 11 November, 2009 一般公開 https://opensource.googleblog.com/2009/11/hey-ho-lets-go.html 1960-2007 - Foundations HWごとに言語があった時代(-1950) Jan 1960 ALGOL 1964-2007 Concurrency 1964 Unix Pipe 1978 CSP(Communication Sequential Process) 2007-2009 - Creation C++11のTechTalk行ったら新機能の話ばかりだった C++で
-<a href=/blog/posts/2019/11/11_go_release_10/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/golang rel=tag>golang</a>
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/11/05_golang_tokyo_27/ rel=bookmark>golang.tokyo #27</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-11-05T00:00:00>2019-11-05</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-https://techplay.jp/event/753881 先日のGo Conferenceには参加できなかったので、当選できてよかった。 19:00 ~ 開場・受付 乾杯！ 19:30 ~ 19:35 オープニング DevQuizの解説。思ってた動作と違かった。。 当日発表になった登壇者とスケジュール。予定より本数が少なくなっていました。 19:35 ~ 19:55 Session 1 Creating shell magager with golang / @yusuke_k0matsu https://speakerdeck.com/usk81/create-shell-manager-with-golang shway https://github.com/getshway/shway dotfileの管理方法のベスト
-<a href=/blog/posts/2019/11/05_golang_tokyo_27/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/golang rel=tag>golang</a>
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/09/25_golang_tokyo_26/ rel=bookmark>golang.tokyo #26</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-09-25T00:00:00>2019-09-25</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-https://golangtokyo.connpass.com/event/147175/ 今回はスマートホームとGoの話です 19:30 ~ 20:00 Go in Nature（仮） by songmu Nature Remoの裏側 gocredits オススメ 依存ライブラリのLICENSEを同梱してくれる ecsched気になる Websocketでクラウドに接続しっぱなしにしている 外部のデバイスからはクラウドに司令を出す 常時接続の管理が大変 ECS上でうごかしている
-<a href=/blog/posts/2019/09/25_golang_tokyo_26/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/golang rel=tag>golang</a>
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>
-</span>
-</footer>
-</article>
-</div>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
 <td style=text-align:center;border:none;padding:0>
@@ -204,6 +78,19 @@ https://golangtokyo.connpass.com/event/147175/ 今回はスマートホームと
 </td>
 </tr>
 </table>
+</article>
+<nav class="navigation post-navigation" role=navigation>
+<div class=nav-links>
+<div class=nav-previous>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/04/21_ginkgo/> Ginkgoわかった</a>
+</div>
+<div class=nav-next>
+<a class=next href=https://umemak.github.io/blog/posts/2022/02/19_mdmml_test/> テスト追加</a>
+</div>
+</div>
+</nav>
+<section>
+</section>
 </main>
 <div class="sidebar1 widgets columns-1">
 <aside>
