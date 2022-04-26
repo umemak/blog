@@ -40,6 +40,24 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/01/10_firebase_auth/ rel=bookmark>Firebase v9 SDK</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-01-10T00:00:00>2022-01-10</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+FirebaseのAuth組み込み、参考にしているWebサイトの例が import firebase from "firebase"; firebase.auth().hogehoge で、真似して実装しても This dependency was not found: * firebase in ./src/router/index.js To install it, you can run: npm install --save firebase エラーになって悩んでいた。 結局、 import { getAuth } from "firebase/auth"; getAuth().hogehoge で書くと通ることに気づいた。 これはJavaScript モジュール形式の Firebase JS SDK バージョン 9（v9 SDK）というものらし
+<a href=/blog/posts/2022/01/10_firebase_auth/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/01/09_vue/ rel=bookmark>VueアプリのAmplifyからFirebaseの移行</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -200,26 +218,6 @@ Amplifyで挫折したお題を、Firebaseで作り比べてみる。 Firebase�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2021/12/30_ac/ rel=bookmark>GraphQLでAND条件検索</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-12-30T00:00:00>2021-12-30</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-昨日の続き。 AND以外に、ORも同様のエラーでNGだった。 ANDやORを使わなければ想定通りのフィルタになるので、間違ってないと思うんだけど。 何度目かの詰み。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -278,6 +276,12 @@ Amplifyで挫折したお題を、Firebaseで作り比べてみる。 Firebase�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/04/26_ginkgo/>ginkgoの特殊機能とは？</a>
+</li>
+<li>
+<a href=/blog/posts/2022/04/25_ginkgo/>ginkgoとgo test</a>
+</li>
+<li>
 <a href=/blog/posts/2022/04/24_screeps_arena/>Screeps: Arena体験</a>
 </li>
 <li>
@@ -300,12 +304,6 @@ Amplifyで挫折したお題を、Firebaseで作り比べてみる。 Firebase�
 </li>
 <li>
 <a href=/blog/posts/2022/04/16_movie_caption/>動画の字幕</a>
-</li>
-<li>
-<a href=/blog/posts/2022/04/15_movie_edit/>動画編集入門</a>
-</li>
-<li>
-<a href=/blog/posts/2022/04/14_docker_desktop_470/>Docker Desktop 4.7.0でhost.docker.internal</a>
 </li>
 </ul>
 </aside>

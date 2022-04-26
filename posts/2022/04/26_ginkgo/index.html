@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>WSL2でmidi再生 - umemak</title>
+<title>ginkgoの特殊機能とは？ - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,57 +33,39 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>WSL2でmidi再生</h1>
+<h1>ginkgoの特殊機能とは？</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-01-22T122:120:06>2022-01-22</time>
+<time datetime=2022-04-26T426:120:06>2022-04-26</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/22_wsl_midi/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f22_wsl_midi%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/04/26_ginkgo/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f04%2f26_ginkgo%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=WSL2でmidi再生 data-url=https://umemak.github.io/blog/posts/2022/01/22_wsl_midi/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=ginkgoの特殊機能とは？ data-url=https://umemak.github.io/blog/posts/2022/04/26_ginkgo/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>MMLを再生するために何が必要か考えてみた。</p>
-<p>MMLから直接再生できるのが良いけれど、大変そうなので既存の何かがあれば使っていきたい。</p>
-<p>midiファイルを再生するアプリはTiMidityというのがよさそう。</p>
-<p>timidityとSoundFontをインストール</p>
-<pre tabindex=0><code>$ sudo apt install timidity freepats fluid-soundfont-gm fluid-soundfont-gs
-</code></pre><p>参考</p>
-<ul>
-<li><a href=https://kemasoft.net/index.php#ke8617b0>FrontPage - KemaSoft</a></li>
-</ul>
-<p>適当なmidiファイルを流し込む</p>
-<pre tabindex=0><code>$ cat sample.mid | timidity -
-</code></pre><p>鳴った。</p>
-<p>あとはもう一段何かをかませてあげれば目的が達成できる</p>
-<pre tabindex=0><code>$ cat sample.mml | nanika | timidity -
-</code></pre><p>こんなイメージ</p>
-<p>何かの参考になりそうなのは、このあたりかな・・</p>
-<ul>
-<li><a href=https://github.com/tr-takatsuka/rlib-MML>tr-takatsuka/rlib-MML: Music Macro Language Compiler</a></li>
-<li><a href=https://github.com/mohayonao/mml-emitter>mohayonao/mml-emitter: MML(Music Macro Language) event emitter for Web Audio API.</a></li>
-<li><a href=https://github.com/atsushieno/mugene-ng>atsushieno/mugene-ng: Music Macro Language to MIDI 1.0 / 2.0 compiler</a></li>
-<li><a href=https://github.com/brnomade/MML_Interpreter>brnomade/MML_Interpreter: a Music Macro Language (MML) interpreter written in Python</a></li>
-<li><a href=https://github.com/billletson/webaudio_mml>billletson/webaudio_mml: Implementation of Music Macro Language, played with the webaudio api</a></li>
-<li><a href=https://github.com/mariomac/mmlmml>mariomac/mmlmml: Toy Music Macro Language inspired in old 8-bit computers</a></li>
-<li><a href=https://github.com/myokoym/mml2wav>myokoym/mml2wav: MML (Music Macro Language) to WAV audio converter by pure Ruby.</a></li>
-<li><a href=https://github.com/alexras/mml-tracker>alexras/mml-tracker: An aborted attempt at a general-purpose tracker for Music Macro Language</a></li>
-<li><a href=https://github.com/ea909/mml.cpp>ea909/mml.cpp: An MML (Music Macro Language) player that produces anti-aliased (bandlimited) output as wav files. Supports direct playback on Windows too.</a></li>
-<li><a href=https://github.com/zhidao/zmmlc>zhidao/zmmlc: MML compiler</a></li>
-<li><a href=https://github.com/runvnc/music1>runvnc/music1: A simple way to play with MML (Music Macro Language). Enter MML in text area and press play button.</a></li>
-</ul>
-<p>というか、とりあえずMMLで遊びたいという欲求を満たすだけなら、上のリストの一番下をcloneしてきて<code>npx http-server</code>してlocalhost:8080開けばブラウザでできるし。</p>
+<p>昨日の調べもので出てきた、</p>
+<blockquote>
+<p>Ginkgo has several capabilities that can only be accessed via ginkgo.</p>
+</blockquote>
+<blockquote>
+<p>（Ginkgoには、ginkgoを経由してしかアクセスできない機能がいくつかあります。）</p>
+</blockquote>
+<p>そのいくつかの機能を知りたい。</p>
 </div>
 <footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/golang rel=tag>golang</a>&emsp;
+<a href=https://umemak.github.io/tags/ginkgo rel=tag>ginkgo</a>&emsp;
+</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -97,10 +79,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/01/21_mml/> MML</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/04/25_ginkgo/> ginkgoとgo test</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/01/23_mml/> mml-iteratorのソースを読む</a>
 </div>
 </div>
 </nav>

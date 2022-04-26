@@ -40,6 +40,47 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/02/26_rust/ rel=bookmark>VS CodeのRust用設定</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-02-26T00:00:00>2022-02-26</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+コードフォーマッターが欲しいと思って、プラグインを入れたけれど動かない。 Couldn't start client Rust Language Server --- Rustup not available. Install from https://www.rustup.rs/ どうやらツールが足りないようなので、追加でインストールした。 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh $ source $HOME/.cargo/env $ rustup --version rustup 1.24.3 (ce5817a94 2021-05-31) info: This is the version for the rustup toolchain manager, not the rustc compiler. info: The currently active `rustc` version is `rustc 1.59.0 (9d1b2106e 2022-02-23)` それでもエラーが解消しなかったので、OSごと再起動した
+<a href=/blog/posts/2022/02/26_rust/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
+<h2><a href=/blog/posts/2022/02/25_mdmml_rust/ rel=bookmark>モジュール化</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-02-25T00:00:00>2022-02-25</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+リファクタリングしてモジュール性とエラー処理を向上させる - The Rust Programming Language 日本語版 を読みながら。 ちょっと分量多いけど、この第12章をひととおりなぞれば、Rustを「完全に理解」できる気がする。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/02/24_mdmml_rust/ rel=bookmark>ファイルを読み込む</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -132,28 +173,6 @@ MDMMLで関数分割してテスト反映してなかったりしていたのを
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
-<h2><a href=/blog/posts/2022/04/25_ginkgo/ rel=bookmark>ginkgoとgo test</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-18T00:00:00>2022-02-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-GinkgoのV1とV2のテストケースが混在しているときに、V2のCLIでV1用のコードをテストしようとすると、ginkgo.timeoutが定義されてい内的なエラーになってしまう（うろ覚え）。 importをv2にすれば多分良いのだけれど、そうしなくても、テストの実行をgo testに任せれば、imp
-<a href=/blog/posts/2022/04/25_ginkgo/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/golang rel=tag>golang</a>
-<a href=https://umemak.github.io/tags/ginkgo rel=tag>ginkgo</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
 <h2><a href=/blog/posts/2022/04/21_ginkgo/ rel=bookmark>Ginkgoわかった</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -206,23 +225,6 @@ MDMMLじゃない話。 https://onsi.github.io/ginkgo/ でテストを、 Descri
 </header>
 <div class=post-excerpt><p>
 いまさらながらGitHub ActionsでCIを設定した。 Actionsのバージョン指定なしgoは1.15.15なんだね。もうじき1.18が出るのに。
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/02/16_crontab/ rel=bookmark>crontabの範囲指定について</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-16T00:00:00>2022-02-16</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-crontab、-で範囲指定ができるけれど、大小関係が逆だったらどうなるか気になったので調べてみた。 59-1 * * * * time こういうやつ。 dockerでalpine使って動かしたところ、想定通り59,0,1で実行された。
 </p></div>
 </div>
 <footer class=post-footer>
@@ -286,6 +288,12 @@ crontab、-で範囲指定ができるけれど、大小関係が逆だったら
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/04/26_ginkgo/>ginkgoの特殊機能とは？</a>
+</li>
+<li>
+<a href=/blog/posts/2022/04/25_ginkgo/>ginkgoとgo test</a>
+</li>
+<li>
 <a href=/blog/posts/2022/04/24_screeps_arena/>Screeps: Arena体験</a>
 </li>
 <li>
@@ -308,12 +316,6 @@ crontab、-で範囲指定ができるけれど、大小関係が逆だったら
 </li>
 <li>
 <a href=/blog/posts/2022/04/16_movie_caption/>動画の字幕</a>
-</li>
-<li>
-<a href=/blog/posts/2022/04/15_movie_edit/>動画編集入門</a>
-</li>
-<li>
-<a href=/blog/posts/2022/04/14_docker_desktop_470/>Docker Desktop 4.7.0でhost.docker.internal</a>
 </li>
 </ul>
 </aside>
