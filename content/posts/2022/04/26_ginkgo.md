@@ -13,3 +13,5 @@ tags: ["golang", "ginkgo"]
 
 そのいくつかの機能を知りたい。
 
+[https://onsi.github.io/ginkgo/#ginkgo-cli-overview](https://onsi.github.io/ginkgo/#ginkgo-cli-overview) には、コマンドライン引数について書かれているが、むしろginkgoでサポートしていないものがあるという記述なので、思っていたのとは違う感じ。
+
