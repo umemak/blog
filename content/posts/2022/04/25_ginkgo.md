@@ -1,6 +1,6 @@
 ---
 title: "ginkgoとgo test"
-date: "2022-02-18"
+date: "2022-04-25"
 tags: ["golang", "ginkgo"]
 
 ---
