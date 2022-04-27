@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2019/07/21_chromebook_docker/ rel=bookmark>Chromebookにdockerインストール</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2019-07-21T00:00:00>2019-07-21</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+環境 C101PA 手順 公式の手順に従う $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg2 \ software-properties-common -y $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ "deb [arch=arm64] https://download.docker.com/linux/debian \ $(lsb_release -cs) \ stable" $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io -y $ sudo docker run hello-world できた。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/chromebook rel=tag>chromebook</a>
+<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2019/07/18_dena_go_2/ rel=bookmark>DeNA.go</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -233,28 +254,6 @@ Rails入れたりしてたらOSが不安定になった感。 スリープ中に
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/05/18_gocon/ rel=bookmark>Go Conference 2019 Spring</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-05-18T00:00:00>2019-05-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-https://gocon.jp/ 2019/05/18(土) 10:00-19:00 リクルートライフスタイル まとめ エラーハンドリングはまだ各社試行錯誤している印象 コンテナやるならGoわかると便利 英語もっとわかるようにならないとだめだ Keynote パッケージのプロキシとDBの話 英語だったので言ってること半分もわからなかった B1 (S): How a “not the greatest engineer” achieved his first
-<a href=/blog/posts/2019/05/18_gocon/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -313,6 +312,9 @@ https://gocon.jp/ 2019/05/18(土) 10:00-19:00 リクルートライフスタイ�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/04/27_audio_interface/>オーディオインターフェース選び</a>
+</li>
+<li>
 <a href=/blog/posts/2022/04/26_ginkgo/>ginkgoの特殊機能とは？</a>
 </li>
 <li>
@@ -338,9 +340,6 @@ https://gocon.jp/ 2019/05/18(土) 10:00-19:00 リクルートライフスタイ�
 </li>
 <li>
 <a href=/blog/posts/2022/04/17_hugo_search/>Hugoのblogに検索機能を付けたい</a>
-</li>
-<li>
-<a href=/blog/posts/2022/04/16_movie_caption/>動画の字幕</a>
 </li>
 </ul>
 </aside>
