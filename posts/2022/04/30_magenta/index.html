@@ -54,6 +54,9 @@
 <div class=post-content>
 <p>昨日の<a href=https://github.com/cifkao/html-midi-player>cifkao/html-midi-player: 🎹 Play and display MIDI files on the web</a>の使い方見ようとして、<a href=https://github.com/magenta/magenta-js/tree/master/music/>magenta-js/music at master · magenta/magenta-js</a>を使っているのを知った。</p>
 <p>Magentaは出始めのときにそんなのがあるのか、って思って深くは見ていなかったのだけど、今度はちゃんと使ってみようかな。</p>
+<p>html-midi-playerではSMFファイルを渡して初期化しているところを、
+textboxに書かれたマークダウンをSMFに変換して<a href=https://github.com/magenta/magenta-js/blob/master/music/src/core/midi_io.ts#L274>blobToNoteSequence</a>に渡せばよいのかな。
+JavaScriptでテンポラリファイルとか作れるんだっけ・・？それなら無改造で行けそうだけど。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
