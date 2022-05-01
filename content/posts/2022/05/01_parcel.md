@@ -1,5 +1,5 @@
 ---
-title: "JavaScript入門"
+title: "Parcelを使ってみる"
 date: "2022-05-01"
 tags: ["JavaScript","Parcel"]
 
