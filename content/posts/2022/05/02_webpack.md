@@ -29,3 +29,9 @@ webpack 5.72.0 compiled successfully in 1126 ms
 ```
 できた。
 楽をしようとしてかえって遠回りになった経験だった。
+
+環境構築はできたけれど、動作確認用にブラウザから呼び出す方法がわからない。。
+`Uncaught ReferenceError: MDtoSMF is not defined`って。
+ちゃんとexportしてるつもりなんだけどな。。
+
+こういう本質的じゃないところで苦労するのほんと何とかしたい。
