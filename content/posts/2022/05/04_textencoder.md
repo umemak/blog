@@ -24,4 +24,5 @@ npm install --save @types/text-encoding
 ```
 error TS2304: Cannot find name 'TextEncoder'.
 ```
-未解決。
+
+仕方ないので、replaceAllをやめてreplaceを正規表現で使って代用。
