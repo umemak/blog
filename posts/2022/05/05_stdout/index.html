@@ -64,6 +64,9 @@ Uint8Array<span class=o>(</span>45<span class=o>)</span> <span class=o>[</span>
 <span class=o>]</span>
 </code></pre></div><p><code>fs</code>パッケージを使おうとしたけれど、<code>Module not found: Error: Can't resolve 'fs'</code>などと言われてbuildできず。</p>
 <p>こういう本質的でないところで詰まるのほんとやめてほしい。</p>
+<p>追記：これでできた。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>Buffer</span><span class=p>.</span><span class=nx>from</span><span class=p>(</span><span class=nx>MDtoSMF</span><span class=p>(</span><span class=s2>&#34;cdefg&#34;</span><span class=p>)).</span><span class=nx>toString</span><span class=p>(</span><span class=s2>&#34;binary&#34;</span><span class=p>));</span>
+</code></pre></div>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
