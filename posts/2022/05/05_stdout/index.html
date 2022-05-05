@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>GitHub Actions で MySQL を使う - umemak</title>
+<title>TypeScriptで標準出力 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,39 +33,42 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>GitHub Actions で MySQL を使う</h1>
+<h1>TypeScriptで標準出力</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-12-14T1214:120:06>2020-12-14</time>
+<time datetime=2022-05-05T55:120:06>2022-05-05</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/12/14_github_actions_mysql/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f12%2f14_github_actions_mysql%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/05/05_stdout/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f05%2f05_stdout%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="GitHub Actions で MySQL を使う" data-url=https://umemak.github.io/blog/posts/2020/12/14_github_actions_mysql/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=TypeScriptで標準出力 data-url=https://umemak.github.io/blog/posts/2022/05/05_stdout/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>GitHub ActionsでMySQLを使ったCIを回したかった。</p>
-<p>ググると、servicesでmysqlコンテナを立ち上げる方法がヒットしたが、コンテナの起動に45秒くらいかかっていて、ちょっと長いなー、と。
-そこでmysqlをインストールしたらどうなんだろうと思い、そういえばmysqlコマンドラインツールは最初から入っていたけど、他に何入っているんだろうと調べたら、MySQL Serverもインストールされているのを見つけた。
-<a href=https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md>https://github.com/actions/virtual-environments/blob/main/images/linux/Ubuntu2004-README.md</a></p>
-<p>デフォルトでは起動していないので、使う前に起動させる必要がある。</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml>- <span class=nt>name</span><span class=p>:</span><span class=w> </span><span class=l>start mysql</span><span class=w>
-</span><span class=w>  </span><span class=nt>run</span><span class=p>:</span><span class=w> </span><span class=l>sudo systemctl start mysql.service</span><span class=w>
-</span></code></pre></div>
+<p>マークダウンから変換したSMFデータを標準出力に書き出したいのだけれど、バイナリをそのまま出力する方法がわからず。。</p>
+<p><code>console.log</code>だと型情報とかついた普通のテキストになってしまう。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ node dist/main.js
+Uint8Array<span class=o>(</span>45<span class=o>)</span> <span class=o>[</span>
+  77,  84, 104, 100,  0,   0,   0, 6, 0,   1,  0,
+   1,   3, 192,  77, 84, 114, 107, 0, 0,   0, 23,
+   0, 255,   3,   0,  0, 255,  81, 3, 7, 161, 32,
+   0, 255,  88,   4,  4,   2,  24, 8, 0, 255, 47,
+   <span class=m>0</span>
+<span class=o>]</span>
+</code></pre></div><p><code>fs</code>パッケージを使おうとしたけれど、<code>Module not found: Error: Can't resolve 'fs'</code>などと言われてbuildできず。</p>
+<p>こういう本質的でないところで詰まるのほんとやめてほしい。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/github rel=tag>github</a>&emsp;
-<a href=https://umemak.github.io/tags/actions rel=tag>actions</a>&emsp;
-<a href=https://umemak.github.io/tags/mysql rel=tag>mysql</a>&emsp;
+<a href=https://umemak.github.io/tags/typescript rel=tag>TypeScript</a>&emsp;
+<a href=https://umemak.github.io/tags/mdmml rel=tag>mdmml</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -80,10 +83,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/11/28_go_interface/> Goのinterfaceを学ぶ</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/05/04_textencoder/> TextEncoderのエラー</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2021/01/11_settings/> コマンドラインの設定優先度について調べた</a>
 </div>
 </div>
 </nav>
