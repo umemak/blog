@@ -22,3 +22,8 @@ Uint8Array(45) [
 `fs`パッケージを使おうとしたけれど、`Module not found: Error: Can't resolve 'fs'`などと言われてbuildできず。
 
 こういう本質的でないところで詰まるのほんとやめてほしい。
+
+追記：これでできた。
+```js
+console.log(Buffer.from(MDtoSMF("cdefg")).toString("binary"));
+```
