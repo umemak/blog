@@ -54,7 +54,13 @@
 <div class=post-content>
 <p>MDMMLのTypeScript移植が大体できたので、HTMLから呼び出せるようにしたい。</p>
 <p>先日はexportしてるはずなのに見つからないというエラーでどうしたら良いかわからず。</p>
-<p><a href=https://teratail.com/questions/190709>HTMLから外部のJavascriptファイルのfunctionを呼びたい</a>はやりたいこととあっているように思えるけれど、何を言っているのか理解できず。。</p>
+<p><a href=https://teratail.com/questions/190709>HTMLから外部のJavascriptファイルのfunctionを呼びたい</a>はやりたいこととあっているように思える。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-ts data-lang=ts><span class=kr>interface</span> <span class=nx>Window</span> <span class=p>{</span> <span class=nx>Hello</span><span class=p>()</span><span class=o>:</span> <span class=k>void</span><span class=p>;</span> <span class=p>}</span>
+<span class=kr>declare</span> <span class=kd>var</span> <span class=nb>window</span><span class=o>:</span> <span class=nx>Window</span><span class=p>;</span>
+<span class=nb>window</span><span class=p>.</span><span class=nx>Hello</span> <span class=o>=</span> <span class=p>()</span> <span class=o>=&gt;</span> <span class=p>{</span>
+    <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>Buffer</span><span class=p>.</span><span class=kr>from</span><span class=p>(</span><span class=nx>MDtoSMF</span><span class=p>(</span><span class=s2>&#34;cdefg&#34;</span><span class=p>)).</span><span class=nx>toString</span><span class=p>(</span><span class=s2>&#34;binary&#34;</span><span class=p>));</span>
+<span class=p>};</span>
+</code></pre></div><p>としてみたら呼べたけれど、今度は<code>Buffer is not defined</code>だと。</p>
 <p>ちゃんと入門しなおさないとダメかなぁ。。</p>
 </div>
 <footer class=post-footer>
