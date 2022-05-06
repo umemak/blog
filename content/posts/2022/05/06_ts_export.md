@@ -21,4 +21,15 @@ window.Hello = () => {
 
 としてみたら呼べたけれど、今度は`Buffer is not defined`だと。
 
-ちゃんと入門しなおさないとダメかなぁ。。
+いろいろやってみて、
+```ts
+import { MDtoSMF } from './mdmml';
+
+interface Window { MDtoSMF(md: string): ArrayBuffer; }
+declare var window: Window;
+window.MDtoSMF = (md: string) => {
+    return MDtoSMF(md);
+};
+```
+これで動いた。正しい自信はない。。
+
