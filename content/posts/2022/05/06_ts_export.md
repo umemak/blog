@@ -9,6 +9,16 @@ MDMMLのTypeScript移植が大体できたので、HTMLから呼び出せるよ�
 
 先日はexportしてるはずなのに見つからないというエラーでどうしたら良いかわからず。
 
-[HTMLから外部のJavascriptファイルのfunctionを呼びたい](https://teratail.com/questions/190709)はやりたいこととあっているように思えるけれど、何を言っているのか理解できず。。
+[HTMLから外部のJavascriptファイルのfunctionを呼びたい](https://teratail.com/questions/190709)はやりたいこととあっているように思える。
+
+```ts
+interface Window { Hello(): void; }
+declare var window: Window;
+window.Hello = () => {
+    console.log(Buffer.from(MDtoSMF("cdefg")).toString("binary"));
+};
+```
+
+としてみたら呼べたけれど、今度は`Buffer is not defined`だと。
 
 ちゃんと入門しなおさないとダメかなぁ。。
