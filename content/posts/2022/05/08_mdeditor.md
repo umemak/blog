@@ -7,7 +7,7 @@ tags: ["JavaScript", "editor"]
 
 マークダウン部分の入力に使うライブラリを探す。
 
-`markdown``WYSIWYG`をキーワードにnpmを[検索](https://www.npmjs.com/search?q=markdown%20WYSIWYG)した結果、
+`markdown` `WYSIWYG`をキーワードにnpmを[検索](https://www.npmjs.com/search?q=markdown%20WYSIWYG)した結果、
 
 - [outline/rich-markdown-editor: The open source React and Prosemirror based markdown editor that powers Outline. Want to try it out? Create an account:](https://github.com/outline/rich-markdown-editor)
   - 良さそうだけどArchivedになっててメンテナンスされてない？
