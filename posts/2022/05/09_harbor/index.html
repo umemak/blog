@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>EC2で開発 - umemak</title>
+<title>Hugoテーマharbor - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,63 +33,33 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>EC2で開発</h1>
+<h1>Hugoテーマharbor</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2021-12-25T1225:120:06>2021-12-25</time>
+<time datetime=2022-05-09T59:120:06>2022-05-09</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2021/12/25_ac/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2021%2f12%2f25_ac%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/05/09_harbor/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f05%2f09_harbor%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=EC2で開発 data-url=https://umemak.github.io/blog/posts/2021/12/25_ac/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Hugoテーマharbor data-url=https://umemak.github.io/blog/posts/2022/05/09_harbor/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>Surface Go2 で厳しいので、EC2インスタンス立ててやってみる。
-とりあえず無料枠のt2.microでAmazonLinux。</p>
-<p>gitが入ってなかったのでインストール。</p>
-<pre tabindex=0><code>$ sudo yum update
-$ sudo yum install git
-$ git --version
-git version 2.32.0
-</code></pre><p>npmも入っていなかった。
-<a href=https://docs.aws.amazon.com/ja_jp/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html>チュートリアル: Amazon EC2 インスタンスでの Node.js のセットアップ - AWS SDK for JavaScript</a></p>
-<pre tabindex=0><code>$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-$ . ~/.nvm/nvm.sh
-$ nvm install node
-$ npm -v
-8.3.0
-</code></pre><p>作ったソースダウンロードしてきてAmplifyのセットアップ。</p>
-<pre tabindex=0><code>$ git clone https://github.com/umemak/eventsite
-$ cd eventsite
-$ npm install -g @aws-amplify/cli
-$ amplify pull --appId xxxxxxxxxxxx --envName dev
-</code></pre><p>pullの途中で<code>FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory</code>で落ちる。。t2.micro（1vCPU、1G）じゃメモリ足りない？t3.small（2vCPU、2G）に変えてみる。</p>
-<p>通った。WSLでやったときの.aws権限問題は発生しなかった。</p>
-<p>続き。Java（Corretto）はAmazonLinuxだとyum一発で入る。
-<a href=https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/amazon-linux-install.html>Amazon Corretto 11 Installation Instructions for Amazon Linux 2 - Amazon Corretto</a></p>
-<pre tabindex=0><code>$ npm install -g @vue/cli
-$ npm install
-$ sudo yum install java-11-amazon-corretto-headless
-$ amplify mock api
-$ npm run serve
-</code></pre><p><code>Error: error:0308010C:digital envelope routines::unsupported</code>エラーが出る。nodejsのバージョンダウンで回避できるらしい。</p>
-<pre tabindex=0><code>$ node --version
-v17.3.0
-$ nvm install 16.13.0
-$ npm run serve
-</code></pre><p>動いたけど、mockのアドレスがプライベートIPアドレス見ててアプリから参照できないな。。</p>
+<p><a href=https://github.com/matsuyoshi30/harbor>matsuyoshi30/harbor: Simple and minimal personal blog theme.</a></p>
+<p>このテーマ、全文検索対応しているようなので気になっている。</p>
+<p>検索に使われているのは<a href=https://github.com/nextapps-de/flexsearch>nextapps-de/flexsearch: Next-Generation full text search library for Browser and Node.js</a>らしい。</p>
+<p>flexsearch.jsは<a href=https://d3.haro.jp/docs/2021/flexsearch/>日本語だと半角英数字が検索できない</a>とかあるみたいだけど、簡単に使うだけなら問題ないのではないか、問題あったとしても先人の工夫で乗り切れるのではないか。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>&emsp;
+<a href=https://umemak.github.io/tags/hugo rel=tag>hugo</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -104,10 +74,9 @@ $ npm run serve
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2021/12/25_ac2/> Raspberry pi 4でやってみる</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/05/08_mdeditor/> マークダウンエディター選び</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2021/12/27_ac/> データ構造再考</a>
 </div>
 </div>
 </nav>
