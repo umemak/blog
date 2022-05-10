@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2021/12/29_ac/ rel=bookmark>キャンセル処理入れる</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2021-12-29T00:00:00>2021-12-29</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+エントリー処理ができるようになったので、同じようなノリでキャンセル処理も実装する。 同じノリなのになぜかエラーが出る、と思ったらエントリーの方もエラーが出ていた。 Variable 'id' has coerced Null value for NonNull type 'ID!' eventIDとuserIDをキーに検索したいのに、idを指定しろと言われている。 getEventUserではなくlis
+<a href=/blog/posts/2021/12/29_ac/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2021/12/28_ac/ rel=bookmark>DB再作成</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -224,26 +245,6 @@ manyToMany だとエントリーとキャンセルの状態を持たせるのが
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2021/12/20_ac/ rel=bookmark>データ構成続き</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-12-20T00:00:00>2021-12-20</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-昨日、多対多の関連を持つテーブルを定義したけれど、manyToManyの指定で実現できるのではないか。 API (GraphQL) - Data modeling - AWS Amplify Docs
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -304,6 +305,9 @@ manyToMany だとエントリーとキャンセルの状態を持たせるのが
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/05/10_harbor/>harbor試してみた</a>
+</li>
+<li>
 <a href=/blog/posts/2022/05/09_harbor/>Hugoテーマharbor</a>
 </li>
 <li>
@@ -329,9 +333,6 @@ manyToMany だとエントリーとキャンセルの状態を持たせるのが
 </li>
 <li>
 <a href=/blog/posts/2022/05/03_jest/>Jestの導入</a>
-</li>
-<li>
-<a href=/blog/posts/2022/05/03_n/>node.jsバージョン管理</a>
 </li>
 </ul>
 </aside>
