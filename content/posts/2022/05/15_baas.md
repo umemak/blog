@@ -20,8 +20,8 @@ SDK
 
 | | JS | Go | Flutter|
 |---|:-:|:-:|:-:|
-|Parse Platform | :/: | :-: | :/: |
-|Supabase | :/: | :-: | :/: |
-|Kuzzle Backend | :/: | :/: | :/: |
+|Parse Platform | o | - | o |
+|Supabase | o | - | o |
+|Kuzzle Backend | o | o | o |
 
-Kuzzleがチョット良さそう？
+SDK的にはKuzzleだけど、情報量で見るとSupabaseが有利かな。
