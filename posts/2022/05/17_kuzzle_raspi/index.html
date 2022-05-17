@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>コマンドライン引数をflagで処理する - umemak</title>
+<title>Kuzzle Admin Consoleをラズパイ4に入れてみる - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,32 +33,45 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>コマンドライン引数をflagで処理する</h1>
+<h1>Kuzzle Admin Consoleをラズパイ4に入れてみる</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-03-05T35:120:06>2022-03-05</time>
+<time datetime=2022-05-17T517:120:06>2022-05-17</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/03/05_go_flag/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f03%2f05_go_flag%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/05/17_kuzzle_raspi/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f05%2f17_kuzzle_raspi%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=コマンドライン引数をflagで処理する data-url=https://umemak.github.io/blog/posts/2022/03/05_go_flag/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Kuzzle Admin Consoleをラズパイ4に入れてみる" data-url=https://umemak.github.io/blog/posts/2022/05/17_kuzzle_raspi/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>入力ファイルを<code>os.Args[1]</code>で取得していたので、引数指定しないと範囲外アクセスでpanicしていた。</p>
-<p>flagパッケージ使って<code>flag.Arg(0)</code>で取得するようにしたので、引数指定しなかった場合にはファイルなしエラーで終わるようになった。</p>
-<p>もっと親切にするなら、エラー終了ではなくヘルプ表示にするのが良いのだろうけど、それはまた余裕があるときにでも。</p>
+<p><a href=https://github.com/kuzzleio/kuzzle-admin-console#local-build>https://github.com/kuzzleio/kuzzle-admin-console#local-build</a> をやってみる</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ git clone https://github.com/kuzzleio/kuzzle-admin-console
+$ <span class=nb>cd</span> kuzzle-admin-console
+$ npm install
+npm ERR! <span class=nb>command</span> sh -c node-gyp rebuild
+npm ERR! gyp info it worked <span class=k>if</span> it ends with ok
+npm ERR! gyp info using node-gyp@3.8.0
+npm ERR! gyp info using node@17.3.0 <span class=p>|</span> linux <span class=p>|</span> arm
+npm ERR! gyp ERR! configure error 
+npm ERR! gyp ERR! stack Error: Command failed: /usr/bin/python -c import sys<span class=p>;</span> print <span class=s2>&#34;%s.%s.%s&#34;</span> % sys.version_info<span class=o>[</span>:3<span class=o>]</span><span class=p>;</span>
+npm ERR! gyp ERR! stack   File <span class=s2>&#34;&lt;string&gt;&#34;</span>, line <span class=m>1</span>
+npm ERR! gyp ERR! stack     import sys<span class=p>;</span> print <span class=s2>&#34;%s.%s.%s&#34;</span> % sys.version_info<span class=o>[</span>:3<span class=o>]</span><span class=p>;</span>
+npm ERR! gyp ERR! stack                       ^
+npm ERR! gyp ERR! stack SyntaxError: invalid syntax
+</code></pre></div><p>ダメか。。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>&emsp;
+<a href=https://umemak.github.io/tags/kuzzle rel=tag>Kuzzle</a>&emsp;
+<a href=https://umemak.github.io/tags/raspberry-pi rel=tag>raspberry-pi</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -73,10 +86,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/03/04_go_const/> Goのconst</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/05/16_kuzzle/> Kuzzleを使ってみる</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/03/06_go_main/> main関数を分ける</a>
 </div>
 </div>
 </nav>
