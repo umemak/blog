@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Inspiron再セットアップ - umemak</title>
+<title>Kuzzle SDKを眺めてみる - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,58 +33,33 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Inspiron再セットアップ</h1>
+<h1>Kuzzle SDKを眺めてみる</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-02-03T23:120:06>2022-02-03</time>
+<time datetime=2022-05-19T519:120:06>2022-05-19</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/03_inspiron/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f03_inspiron%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/05/19_kuzzle_sdk/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f05%2f19_kuzzle_sdk%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Inspiron再セットアップ data-url=https://umemak.github.io/blog/posts/2022/02/03_inspiron/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Kuzzle SDKを眺めてみる" data-url=https://umemak.github.io/blog/posts/2022/05/19_kuzzle_sdk/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>InspironにDellのOSリカバリーツール使ったら、途中で先に進まなくなってWindows起動しなくなってしまった。</p>
-<p>Surface Goでリカバリー用USB作って何とか復旧。
-ただしWindows11Homeだと同じところで落ちたので、Windows11Sモード版で入れなおした。</p>
-<h2 id=設定>設定</h2>
-<ul>
-<li>Sモード解除</li>
-<li>タッチパッドのスクロール方向変更</li>
-<li>画面の拡大縮小の変更（150％→125％）</li>
-<li>WindowsUpdateたくさん</li>
-<li>変換無変換で入力モード切替
-<ul>
-<li>IMEの設定→キーとタッチのカスタマイズ</li>
-</ul>
-</li>
-</ul>
-<h2 id=アプリケーション>アプリケーション</h2>
-<ul>
-<li>Chrome</li>
-<li>GoogleDrive</li>
-<li>VSCode</li>
-<li>WSL2</li>
-<li>Obsidian</li>
-<li>Steam</li>
-<li>OBS</li>
-</ul>
-<p>なお、タッチパッドが無反応になる現象は再インストールでも解消しなかった。</p>
-<p>2/9追記</p>
-<p>ヘッドホン端子にヘッドホンさしても認識されなくなっていた。ドライバの再インストールで直った。</p>
-<ul>
-<li><a href=https://www.dell.com/support/kbdoc/ja-jp/000123261/%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA-%E9%9D%9E%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81-%E3%83%98%E3%83%83%E3%83%89%E3%83%95%E3%82%A9%E3%83%B3%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AF-dell-%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0-realtek-%E3%82%AA%E3%83%BC%E3%83%87%E3%82%A3%E3%82%AA%E3%82%92%E6%90%AD%E8%BC%89%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%AF>Realtekオーディオを搭載したDell製システムのオーディオ ジャックにヘッドフォンを接続してもオーディオが切り替わらない | Dell 日本</a></li>
-</ul>
+<p>Go用SDKを見ていて、Authenticationにユーザー作成のAPIがないなーと思って、Dart用を見たらsecurityの下にあった。</p>
+<p>よく見ると言語ごとにSDKドキュメントの構成が違っていて、提供されているAPIも統一されていない様子。</p>
+<p>全部読んだわけではないけど、どの言語を選ぶかによって実現できるアプリが変わってきそう。</p>
 </div>
 <footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/kuzzle rel=tag>Kuzzle</a>&emsp;
+</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -98,10 +73,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/02/02_mdmml/> MML仕様</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/05/18_kuzzle_admin/> Kuzzle Admin Consoleをネットワーク切断して使ってみる</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/02/04_mdmml/> MML実装</a>
 </div>
 </div>
 </nav>
