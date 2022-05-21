@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>マークダウンパーサーを使ってみたが - umemak</title>
+<title>Flutter+Kuzzle - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,42 +33,37 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>マークダウンパーサーを使ってみたが</h1>
+<h1>Flutter+Kuzzle</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-02-14T214:120:06>2022-02-14</time>
+<time datetime=2022-05-21T521:120:06>2022-05-21</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/02/14_mdmml/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f02%2f14_mdmml%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/05/21_flutter_kuzzle/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f05%2f21_flutter_kuzzle%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=マークダウンパーサーを使ってみたが data-url=https://umemak.github.io/blog/posts/2022/02/14_mdmml/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Flutter+Kuzzle data-url=https://umemak.github.io/blog/posts/2022/05/21_flutter_kuzzle/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>やりたかったのは、hタグでセクションをブロック化して取り出して加工だったのだけど、
-実際やってみて、hタグでブロック化はHTML的にも無理じゃんってなった。</p>
-<p>結局自前でやっていくしかないのか。。</p>
-<p>で、これをやっていて思いついたのが、今は読み捨てているテーブルのヘッダー部分をセクション代わりに使えないかなと。</p>
-<p>ひとつのテーブルで同じパートを複数書くのはできなくなるけど。</p>
-<pre tabindex=0><code>| name | A |  | B |  |
-|---|---|---|---|---|
-| A | cdef | gab&lt;c | c&gt;bag | fedc |
-| B | cccc | gggg | cccc | ffff |
-
-| name | C |  |
-|---|---|---|
-| A | cdef | cdef |
-| B | cccc | gggg |
-</code></pre><p>こんな感じ。</p>
+<p>KuzzleのFlutterチュートリアル的なものをやってみた。</p>
+<p><a href=https://docs.kuzzle.io/sdk/dart/3/getting-started/flutter/>Flutter | Kuzzle Documentation</a></p>
+<p>Dart Null Safety v3.x を選択しても、中身はv2と同じようだ。
+pubspec.yamlのSDKバージョン指定まで同じなので、v2系がインストールされてしまって<code>flutter build web</code>実行したときにコンパイルエラーになる。
+<code>kuzzle: ^3.0.2</code>に編集したらコンパイル通った。</p>
+<p>あと、サンプルのコードが断片的で、完成品が示されていないので（とくに chat.dart）理解が進みにくいと思った。</p>
 </div>
 <footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/flutter rel=tag>flutter</a>&emsp;
+<a href=https://umemak.github.io/tags/kuzzle rel=tag>Kuzzle</a>&emsp;
+</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -82,10 +77,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/02/13_goldmark/> goldmarkを読む</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/05/20_flutter/> Flutter再開</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/02/15_mdmml/> リファクタリング</a>
 </div>
 </div>
 </nav>
