@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/05/09_harbor/ rel=bookmark>Hugoテーマharbor</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-05-09T00:00:00>2022-05-09</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+matsuyoshi30/harbor: Simple and minimal personal blog theme. このテーマ、全文検索対応しているようなので気になっている。 検索に使われているのはnextapps-de/flexsearch: Next-Generation full text search library for Browser and Node.jsらしい。 flexsearch.jsは日本語だと半角英数字が検索できないとかあるみたいだけど、簡単に使うだけなら問題ないのではないか
+<a href=/blog/posts/2022/05/09_harbor/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/hugo rel=tag>hugo</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/05/08_mdeditor/ rel=bookmark>マークダウンエディター選び</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -229,29 +250,6 @@ Jest実行しようとしたらnode.jsのバージョンが低いらしく、エ
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/05/03_rewire/ rel=bookmark>rewireでjest</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-05-03T00:00:00>2022-05-03</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-テストのために関数exportしないといけないの、チョット気持ち悪いので、解決策を探ってみる。 jhnns/rewire: Easy monkey-patching for node.js unit testsが一般的らしい。 $ npm install -D rewire @types/rewire テストコードのimportを修正 import rewire from 'rewire'; const __local__ = rewire('./mdmml.ts'); const atoi = __local__.__get__('atoi') テスト実行 $ npm test > mdmml_js@1.0.0 test > jest FAIL src/mdmml.test.ts ● Test suite failed to run /home/umemak/workspace/mdmml_js/src/mdmml.ts:8 Tracks: Track[] = []; SyntaxError: Unexpected identifier at Object.load (node_modules/rewire/lib/moduleEnv.js:57:18) at internalRewire (node_modules/rewire/lib/rewire.js:49:15) at rewire (node_modules/rewire/lib/index.js:11:12) Test Suites: 1 failed, 1 total Tests: 0 total Snapshots: 0 total
-<a href=/blog/posts/2022/05/03_rewire/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/javascript rel=tag>JavaScript</a>
-<a href=https://umemak.github.io/tags/rewire rel=tag>rewire</a>
-<a href=https://umemak.github.io/tags/jest rel=tag>jest</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -314,6 +312,9 @@ Jest実行しようとしたらnode.jsのバージョンが低いらしく、エ
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/05/29_json2md/>json2md</a>
+</li>
+<li>
 <a href=/blog/posts/2022/05/28_json2md/>json2md</a>
 </li>
 <li>
@@ -339,9 +340,6 @@ Jest実行しようとしたらnode.jsのバージョンが低いらしく、エ
 </li>
 <li>
 <a href=/blog/posts/2022/05/20_flutter/>Flutter再開</a>
-</li>
-<li>
-<a href=/blog/posts/2022/05/19_kuzzle_sdk/>Kuzzle SDKを眺めてみる</a>
 </li>
 </ul>
 </aside>
