@@ -1,7 +1,7 @@
 ---
 title: "Firebase用デプロイサーバーを作る"
 date: "2020-06-11"
-tags: ["linux", "fireabse", "gitea"]
+tags: ["linux", "firebase", "gitea"]
 ---
 
 SourceRepositoriesで管理して、CloudBuildでFirebase HostingにデプロイしているGatsbyプロジェクトを、SourceRepositoryとCloudBuildを使わずに実現してみる。
