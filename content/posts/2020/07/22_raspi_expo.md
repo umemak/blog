@@ -1,7 +1,7 @@
 ---
 title: "Raspberry pi4 で expo を動かす"
 date: "2020-07-22"
-tags: ["expo", "raspberry_pi"]
+tags: ["expo", "raspberry-pi"]
 ---
 
 WSLでいろいろ試してみたものの、ポート関連のエラーで動かないので、Raspberry piで試してみた。
