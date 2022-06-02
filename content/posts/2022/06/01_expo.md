@@ -1,6 +1,6 @@
 ---
 title: "Expo"
-date: "2022-05-31"
+date: "2022-06-01"
 tags: ["expo"]
 
 ---
@@ -11,6 +11,7 @@ tags: ["expo"]
 
 ```sh
 $ sudo npm install --global expo-cli
+$ cd photomap
 $ expo init .
 ✔ Choose a template: › tabs (TypeScript)   several example screens and tabs using react-navigation and TypeScript
 ✔ Downloaded template.
@@ -55,4 +56,8 @@ CommandError: Missing package "webpack-dev-server" in the project. Try running t
 ```
 Expo GoでQRスキャンしても、LAN内のIPアドレス指定してマニュアル接続してみても接続できなかった。
 
-もうちょっと調べる。
+ドキュメントによると、`expo start --tunnel`で起動するように書かれていた。
+
+ただ、ngrok使う方式っぽいので、ちょっと怖い。
+
+LAN内のデバイスから見れればよいので、インターネット経由する必要ないんだよなぁ。
