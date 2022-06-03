@@ -40,6 +40,24 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/01/13_wsl2docker/ rel=bookmark>WSL2でdocker</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-01-13T00:00:00>2022-01-13</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+WSL2でFirebaseの作業再開しようとしたら、npmやらなにやら入ってない（Surfaceのほうは過去にインストールしてたらしい）ので、 docker入れてみることにした。 https://docs.docker.com/engine/install/ubuntu/ $ sudo apt-get remove docker docker-engine docker.io containerd runc $ sudo apt-get update $ sudo apt-get install \ ca-certificates \ curl \ gnupg \ lsb-release $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg $ echo \ "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null $ sudo apt-get update $ sudo apt-get install
+<a href=/blog/posts/2022/01/13_wsl2docker/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/01/12_inspiron13/ rel=bookmark>Inspiron13購入</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -197,23 +215,6 @@ Amplifyで挫折したお題を、Firebaseで作り比べてみる。 Firebase�
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/01/02_mbaas/ rel=bookmark>MBaaSの比較</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-01-02T00:00:00>2022-01-02</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-機能やSDKの対応言語をまとめようと思って始めたけれど、Firebaseが数歩リードしている印象。 AWS AmplifyやAzure App Servicesでも同じようなことはできるかもだけど、ひとつのサービスとして揃っている（既存のサービスを組み合わせて都度構築する必要がない）のが強みだと思う。
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -251,8 +252,9 @@ Amplifyで挫折したお題を、Firebaseで作り比べてみる。 Firebase�
 <a href=/blog/posts/page/30/>30</a>
 <a href=/blog/posts/page/31/>31</a>
 <a href=/blog/posts/page/32/>32</a>
+<a href=/blog/posts/page/33/>33</a>
 <a href=/blog/posts/page/17/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/posts/page/32/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/posts/page/33/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -275,6 +277,9 @@ Amplifyで挫折したお題を、Firebaseで作り比べてみる。 Firebase�
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2022/06/03_expo_flutter/>ExpoとFlutter選択</a>
+</li>
 <li>
 <a href=/blog/posts/2022/06/02_wsl_portforward/>WSL2のExpoにLAN内のAndroidから接続したい（未完）</a>
 </li>
@@ -301,9 +306,6 @@ Amplifyで挫折したお題を、Firebaseで作り比べてみる。 Firebase�
 </li>
 <li>
 <a href=/blog/posts/2022/05/25_snow_crash/>スノウ・クラッシュ読了</a>
-</li>
-<li>
-<a href=/blog/posts/2022/05/24_kuzzle_doc/>KuzzleのDart SDKドキュメント</a>
 </li>
 </ul>
 </aside>
