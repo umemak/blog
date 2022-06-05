@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>WindowsのminikubeでMySQLを動かす - umemak</title>
+<title>新規Flutterアプリ - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,62 +33,32 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>WindowsのminikubeでMySQLを動かす</h1>
+<h1>新規Flutterアプリ</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2021-04-17T417:120:06>2021-04-17</time>
+<time datetime=2022-06-05T65:120:06>2022-06-05</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2021/04/17_minikube_mysql/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2021%2f04%2f17_minikube_mysql%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/06/05_newapp/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f06%2f05_newapp%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=WindowsのminikubeでMySQLを動かす data-url=https://umemak.github.io/blog/posts/2021/04/17_minikube_mysql/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=新規Flutterアプリ data-url=https://umemak.github.io/blog/posts/2022/06/05_newapp/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>MacでやったらMySQLの起動時にエラーで落ちてしまったので、Windowsでどうなるか試す。</p>
-<p>基本的には公式のドキュメントを参照。
-<a href=https://kubernetes.io/ja/docs/tasks/run-application/run-single-instance-stateful-application/>https://kubernetes.io/ja/docs/tasks/run-application/run-single-instance-stateful-application/</a></p>
-<h2 id=munikubeインストール>munikubeインストール</h2>
-<pre tabindex=0><code>winget install minikube
-</code></pre><h2 id=minikube起動>minikube起動</h2>
-<pre tabindex=0><code>minikube start
-</code></pre><pre tabindex=0><code>$ kubectl get nodes
-NAME       STATUS   ROLES                  AGE   VERSION
-minikube   Ready    control-plane,master   73s   v1.20.2
-</code></pre><h2 id=マニフェストファイル作成>マニフェストファイル作成</h2>
-<p><a href=https://github.com/umemak/blog/blob/master/content/posts/2021/04/mysql.yaml>mysql.yaml</a></p>
-<h2 id=デプロイ>デプロイ</h2>
-<pre tabindex=0><code>$ kubectl apply -f mysql.yaml 
-service/mysql created
-deployment.apps/mysql created
-persistentvolumeclaim/mysql-pv-claim created
-persistentvolume/mysql-pv-volume created
-</code></pre><pre tabindex=0><code>$ kubectl get pods -l app=mysql
-NAME                     READY   STATUS    RESTARTS   AGE
-mysql-68579b78bb-qcqww   1/1     Running   0          5m33s
-</code></pre><p>動いてるねぇ。。</p>
-<h2 id=後片付け>後片付け</h2>
-<pre tabindex=0><code>$ kubectl.exe delete -f mysql.yaml
-service &quot;mysql&quot; deleted
-deployment.apps &quot;mysql&quot; deleted
-persistentvolumeclaim &quot;mysql-pv-claim&quot; deleted
-persistentvolume &quot;mysql-pv-volume&quot; deleted
-$ minikube stop
-</code></pre><p>Macのほう、MySQLのコマンドライン色々指定したのがまずかったのかなぁ。</p>
-<p>それはそれとして、Surface go 2でminikubeは重すぎて実用的ではない。</p>
+<p>とりあえず手作業でFlutterアプリを構築していく。</p>
+<p>認証とか基本的なところは、以前作ったアプリの流用で。</p>
+<p>こういう自分テンプレみたいのをそろえていくと良いのだろうな。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/windows rel=tag>windows</a>&emsp;
-<a href=https://umemak.github.io/tags/minikube rel=tag>minikube</a>&emsp;
-<a href=https://umemak.github.io/tags/mysql rel=tag>mysql</a>&emsp;
+<a href=https://umemak.github.io/tags/flutter rel=tag>flutter</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -103,10 +73,9 @@ $ minikube stop
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2021/03/20_ghactions_mysql/> GitHub Actions の MySQL で lower_case_table_names を変更する</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/06/04_flutterflow/> FlutterFlow</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2021/07/18_clouds/> クラウドサービス比較</a>
 </div>
 </div>
 </nav>
