@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Docker Desktop 4.8.1でhost.docker.internal - umemak</title>
+<title>WSL2にLAN内のAndroidから接続したい - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,33 +33,33 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Docker Desktop 4.8.1でhost.docker.internal</h1>
+<h1>WSL2にLAN内のAndroidから接続したい</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-05-11T511:120:06>2022-05-11</time>
+<time datetime=2022-06-05T65:120:06>2022-06-05</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/05/11_docker_desktop_481/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f05%2f11_docker_desktop_481%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/06/05_wsl_portforward/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f06%2f05_wsl_portforward%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Docker Desktop 4.8.1でhost.docker.internal" data-url=https://umemak.github.io/blog/posts/2022/05/11_docker_desktop_481/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=WSL2にLAN内のAndroidから接続したい data-url=https://umemak.github.io/blog/posts/2022/06/05_wsl_portforward/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>Docker Desktopの4.8.1が出たので、host.docker.internalの件が変化あったか試してみた。</p>
-<p><a href=https://github.com/umemak/docker_network_test>https://github.com/umemak/docker_network_test</a></p>
-<p>直っていた。</p>
-<p>4.8.0でも試してみたところ、4.8.0のタイミングで修正された模様。</p>
+<p><a href=https://zenn.dev/solufa/articles/accessing-wsl2-from-mobile>WSL2で開発中のWebアプリを同じLANのスマホで動作確認する方法</a></p>
+<p>ExpoじゃなくてFlutterだけど、上記ページの方法で接続することができた。
+まるでここ数日の苦労を見ていたかのようなタイミングでの投稿に感謝。</p>
+<p><code>New-NetFireWallRule</code>が重要っぽい。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>&emsp;
+<a href=https://umemak.github.io/tags/wsl2 rel=tag>wsl2</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -74,10 +74,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/05/10_harbor/> harbor試してみた</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/06/05_newapp/> 新規Flutterアプリ</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/05/12_flutter3/> Flutter 3</a>
 </div>
 </div>
 </nav>
