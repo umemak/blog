@@ -10,3 +10,5 @@ tags: ["flutter"]
 FlutterアプリでGeoChartを使いたかったのだけれど、[charts_flutter](https://pub.dev/packages/charts_flutter)には含まれていない様子。
 
 いずれにしてもSVGかVMLで出力されるので、それを返すWebAPIを作ってあげれば何とかなる？
+
+ドキュメント見た感じ、画像だけ取り出すのは難しそう？WebViewにするほうが簡単かも？
