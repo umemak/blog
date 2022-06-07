@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>CentOS6にgiteaをインストールする（未完） - umemak</title>
+<title>GeoChart - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,137 +33,32 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>CentOS6にgiteaをインストールする（未完）</h1>
+<h1>GeoChart</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2020-06-05T65:120:06>2020-06-05</time>
+<time datetime=2022-06-07T67:120:06>2022-06-07</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2020/06/05_gitea/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2020%2f06%2f05_gitea%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/06/07_geochart/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f06%2f07_geochart%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=CentOS6にgiteaをインストールする（未完） data-url=https://umemak.github.io/blog/posts/2020/06/05_gitea/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=GeoChart data-url=https://umemak.github.io/blog/posts/2022/06/07_geochart/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>WikiはGitHubにも付いているのを思い出して、単独のWikiではなくGitHubクローンを試してみる。
-GitLabとか重量系は最初からあきらめて、Goで書かれたシングルバイナリの軽量OSS、Giteaで挑戦。</p>
-<p>VMはいつものGCP無料枠のやつ。
-OSはCentOS6でディスクは30GB。</p>
-<h2 id=mysqlのインストール>MySQLのインストール</h2>
-<p>デフォルトだと5.1系しか入らないので、5.6系を <a href=https://qiita.com/Esfahan/items/83200c64de8d826677b5>https://qiita.com/Esfahan/items/83200c64de8d826677b5</a> を参考に入れる。</p>
-<pre tabindex=0><code>$ sudo yum -y install http://dev.mysql.com/get/mysql-community-release-el6-5.noarch.rpm
-$ sudo yum -y install mysql mysql-devel mysql-server mysql-utilities
-$ sudo mysql --version
-$ sudo rpm -qa | grep mysql
-</code></pre><p>サービスの起動時にエラーで落ちるので、 <a href=https://qiita.com/madaran0805/items/ae0532a7436e1c684e72>https://qiita.com/madaran0805/items/ae0532a7436e1c684e72</a> を参考にswapの設定をする。</p>
-<pre tabindex=0><code>$ sudo dd if=/dev/zero of=/swapfile bs=1M count=1024
-$ sudo mkswap /swapfile
-$ sudo swapon /swapfile
-</code></pre><p>サービスの起動とrootパスワードの設定</p>
-<pre tabindex=0><code>$ sudo service mysqld start
-$ sudo /usr/bin/mysql_secure_installation
-</code></pre><h2 id=mysqlの設定>MySQLの設定</h2>
-<p>gitea用ユーザーの作成と権限周りの設定。
-<a href=https://docs.gitea.io/en-us/database-prep/#mysql>https://docs.gitea.io/en-us/database-prep/#mysql</a> の local 用の手順で。</p>
-<pre tabindex=0><code>$ mysql -u root -p
-mysql&gt; SET old_passwords=0;
-mysql&gt; CREATE USER 'gitea' IDENTIFIED BY 'gitea';
-mysql&gt; CREATE DATABASE giteadb CHARACTER SET 'utf8mb4' COLLATE 'utf8mb4_unicode_ci';
-mysql&gt; GRANT ALL PRIVILEGES ON giteadb.* TO 'gitea';
-mysql&gt; FLUSH PRIVILEGES;
-mysql&gt; exit
-$ mysql -u gitea -p giteadb
-</code></pre><h2 id=giteaのインストール>giteaのインストール</h2>
-<p><a href=https://docs.gitea.io/en-us/install-from-binary/>https://docs.gitea.io/en-us/install-from-binary/</a> では<code>1.11.5</code>となっているが、現時点で最新が<code>1.11.6</code>なので読み替える。
-gpg鍵の取り込みに失敗するので、shaで正当性の確認をする。</p>
-<pre tabindex=0><code>$ wget -O gitea https://dl.gitea.io/gitea/1.11.6/gitea-1.11.6-linux-amd64
-$ wget https://dl.gitea.io/gitea/1.11.6/gitea-1.11.6-linux-amd64.sha256
-$ cat gitea-1.11.6-linux-amd64.sha256
-$ sha256sum gitea
-</code></pre><h2 id=giteaの起動>giteaの起動</h2>
-<p>gitをインストールする。
-adduserで<code>--gecos</code>オプションが無効なので<code>--comment</code>に置き換える。<code>--group</code>を<code>--user-group</code>に置き換える。<code>--disabled-password</code>を削除する。
-これはcentosだと<code>adduser</code>が<code>useradd</code>のシンボリックリンクつまり別コマンドのせい。</p>
-<pre tabindex=0><code>$ sudo yum install git
-$ git --version
-$ sudo su
-# adduser \
-   --system \
-   --shell /bin/bash \
-   --comment 'Git Version Control' \
-   --user-group \
-   --home /home/git \
-   git
-# mkdir -p /var/lib/gitea/{custom,data,log}
-# chown -R git:git /var/lib/gitea/
-# chmod -R 750 /var/lib/gitea/
-# mkdir /etc/gitea
-# chown root:git /etc/gitea
-# chmod 770 /etc/gitea
-# export GITEA_WORK_DIR=/var/lib/gitea/
-# chmod +x gitea
-# cp gitea /usr/local/bin/gitea
-# GITEA_WORK_DIR=/var/lib/gitea/ /usr/local/bin/gitea web -c /etc/gitea/app.ini
-FATAL: kernel too old
-Aborted (core dumped)
-</code></pre><p>えーーー
-<a href=https://github.com/go-gitea/gitea/issues/4131>https://github.com/go-gitea/gitea/issues/4131</a> によると、<code>1.7.4</code>以前なら動くらしい。
-やってみる。</p>
-<pre tabindex=0><code># GITEA_WORK_DIR=/var/lib/gitea/ /usr/local/bin/gitea web -c /etc/gitea/app.ini
-panic: Git version not supported. Requires version &gt; 1.7.2
-
-goroutine 1 [running]:
-code.gitea.io/gitea/vendor/code.gitea.io/git.init.0()
-        /go/src/code.gitea.io/gitea/vendor/code.gitea.io/git/git.go:79 +0x128
-</code></pre><p>うーん。
-<a href=https://www.softel.co.jp/blogs/tech/archives/6301>https://www.softel.co.jp/blogs/tech/archives/6301</a> を参考に、gitのバージョンを上げる。</p>
-<pre tabindex=0><code>$ sudo su
-# yum remove git
-# yum install \
-https://repo.ius.io/ius-release-el6.rpm \
-https://dl.fedoraproject.org/pub/epel/epel-release-latest-6.noarch.rpm
-# yum install git222
-# git --version
-</code></pre><pre tabindex=0><code># GITEA_WORK_DIR=/var/lib/gitea/ /usr/local/bin/gitea web -c /etc/gitea/app.ini -p 80
-</code></pre><p>うごいた！</p>
-<p>けど、最新バージョンではないのが何とも。。
-とりあえず、Wikiのプレビューがないのは今回の用途だと痛いかなー。</p>
-<h2 id=ソースからビルドしてみる>ソースからビルドしてみる</h2>
-<p><a href=https://docs.gitea.io/en-us/install-from-source/>https://docs.gitea.io/en-us/install-from-source/</a></p>
-<h2 id=goとnodejsのインストール>goとnodejsのインストール</h2>
-<pre tabindex=0><code># yum install golang
-# curl -sL https://rpm.nodesource.com/setup_10.x -o nodesource_setup.sh
-# bash nodesource_setup.sh
-# yum install nodejs
-# go version
-go version go1.13.6 linux/amd64
-# node -v
-v10.19.0
-</code></pre><h2 id=ソースの取得とビルド実行>ソースの取得とビルド実行</h2>
-<pre tabindex=0><code># git clone https://github.com/go-gitea/gitea
-# cd gitea
-# git checkout v1.11.6
-# TAGS=&quot;bindata&quot; make build
-...
-code.gitea.io/gitea/modules/public
-# code.gitea.io/gitea/modules/public
-fatal error: runtime: out of memory
-...
-</code></pre><p>だめか。。</p>
-<h2 id=結論>結論</h2>
-<p>CentOS6で使うには、古いバージョンで我慢するしかない。</p>
+<p><a href=https://developers.google.com/chart/interactive/docs/gallery/geochart>Visualization: GeoChart  |  Charts  |  Google Developers</a></p>
+<p>FlutterアプリでGeoChartを使いたかったのだけれど、<a href=https://pub.dev/packages/charts_flutter>charts_flutter</a>には含まれていない様子。</p>
+<p>いずれにしてもSVGかVMLで出力されるので、それを返すWebAPIを作ってあげれば何とかなる？</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/centos rel=tag>centos</a>&emsp;
-<a href=https://umemak.github.io/tags/gitea rel=tag>gitea</a>&emsp;
+<a href=https://umemak.github.io/tags/flutter rel=tag>flutter</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -178,10 +73,9 @@ fatal error: runtime: out of memory
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2020/05/28_gas/> GAS入門</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/06/06_newapp/> 新規Flutterアプリ</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2020/06/08_gitea2/> 続・CentOS6にgiteaをインストールする</a>
 </div>
 </div>
 </nav>
