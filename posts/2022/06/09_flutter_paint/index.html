@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>オーディオインターフェース選び - umemak</title>
+<title>Flutterでお絵描きアプリ - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,38 +33,42 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>オーディオインターフェース選び</h1>
+<h1>Flutterでお絵描きアプリ</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-04-27T427:120:06>2022-04-27</time>
+<time datetime=2022-06-09T69:120:06>2022-06-09</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/04/27_audio_interface/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f04%2f27_audio_interface%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/06/09_flutter_paint/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f06%2f09_flutter_paint%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=オーディオインターフェース選び data-url=https://umemak.github.io/blog/posts/2022/04/27_audio_interface/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Flutterでお絵描きアプリ data-url=https://umemak.github.io/blog/posts/2022/06/09_flutter_paint/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>Amazonのタイムセール祭りでオーディオインターフェース買おうと思っていたけれど、特に安くなってなかったので見送った。</p>
-<p>候補はこの辺り</p>
+<p>どんな感じで作るのかなと思って、ググった。</p>
 <ul>
-<li><a href=https://www.amazon.co.jp/dp/B07VMCYKNZ/>Focusrite フォーカスライト オーディオインターフェース 2イン/2アウト 24bit/192kHz Scarlett Solo (3rd Gen) ステッカー付きセット 【国内正規品】 : 楽器・音響機器</a></li>
-<li><a href=https://www.amazon.co.jp/dp/B084BGC5LR/>Amazon | audient 「EVO4」2in/2out オーディオ・インターフェース[国内正規品] | オーディオインターフェイス | 楽器・音響機器</a></li>
-<li><a href=https://www.amazon.co.jp/dp/B08LGB4ZV8/>Amazon | PreSonus AudioBox USB 96 25th Anniversary オーディオインターフェイス 24bit 96kHz 2入力/2出力 Studio One Artistバンドル | オーディオインターフェイス | 楽器・音響機器</a></li>
-<li><a href=https://www.amazon.co.jp/dp/B08Q1V77NR/>Amazon | M-Audio USB オーディオインターフェース 音楽制作ソフトウェア付 Mac Win DTM DAW 低ノイズ ライブ配信 再生 宅録 M-Track Duo | 楽器・音響機器 | 楽器・音響機器</a></li>
-<li><a href=https://www.amazon.co.jp/dp/B09RWNYBKC/>Amazon | PreSonus AudioBox GO オーディオインターフェイス 24Bit 96kHz iOS/Android/macOS/Windows/ChromeOS対応 Studio One Primeバンドル | オーディオインターフェイス | 楽器・音響機器</a></li>
+<li><a href=https://qiita.com/tigeeer/items/efa4ce8a4025bbda607b>Flutterで手書きを実装する - Qiita</a></li>
+<li><a href=https://www.egao-inc.co.jp/programming/flutter-paint/>【Flutter】Flutterでお絵かきアプリ（ペイント機能）の実装を紹介します | 株式会社イーガオ</a></li>
+<li><a href=https://zenn.dev/inari_sushio/articles/9643f20ebff29d>【Flutter】お絵描きアプリを作ってみた - InheritedNotifier / CustomPainter</a>
+<ul>
+<li><a href="https://dartpad.dev/?null_safety=true&id=1cdb5019c521dfe613c4f7ec7b7fdf21">DartPad</a>で動くサンプルが用意されててすごい</li>
 </ul>
-<p>1万円以下のM-Track DuoとかAudioBox GOは在庫切れで、その他の1万4千円ぐらいのは在庫あるけど外れ引いたら嫌だなぁという気持ち。</p>
-<p>用途はダイナミックマイクの音量を上げて取り込むことなので、M-Trackで十分なんだけど、物がないとどうしようもない。残念。</p>
+</li>
+<li><a href="https://zawapro.com/?p=2301">【Flutter】GestureDetectorとCustomPaintを使い、タッチした場所に図形を描画する – ザワプロ！</a></li>
+</ul>
+<p><a href=https://api.flutter.dev/flutter/rendering/CustomPainter-class.html>CustomPainter</a>と<a href=https://api.flutter.dev/flutter/widgets/GestureDetector-class.html>GestureDetector</a>がポイントっぽい。</p>
 </div>
 <footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/flutter rel=tag>Flutter</a>&emsp;
+</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -78,10 +82,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/04/26_ginkgo/> ginkgoの特殊機能とは？</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/06/08_oracle_docker/> OracleのDockerイメージ</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/04/28_github_actions/> GitHub Actionsのmatrix</a>
 </div>
 </div>
 </nav>
