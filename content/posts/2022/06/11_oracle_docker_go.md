@@ -5,7 +5,7 @@ tags: ["Docker", "oracle", "go"]
 
 ---
 
-[前の記事](./11_oracle_docker)でsqlplusで接続できたので、Goのプログラムから接続してみる。
+[前の記事](../11_oracle_docker)でsqlplusで接続できたので、Goのプログラムから接続してみる。
 
 instantclientベースでGoをインストールするDockerfile作成
 ```dockerfile
