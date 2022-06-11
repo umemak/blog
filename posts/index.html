@@ -63,6 +63,29 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/11_oracle_docker_go2/ rel=bookmark>OracleにGoで接続する2</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-11T00:00:00>2022-06-11</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 pkg-config: exec: "pkg-config": executable file not found in $PATH sh-4.4# yum install -y pkgconfig sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 Package oci8 was not found in the pkg-config search path. Perhaps you should add the directory containing `oci8.pc' to the PKG_CONFIG_PATH environment variable Package 'oci8', required by 'virtual:world', not found pkg-config: exit status 1 とりあえずmain.goと同じところにoci8.pcを作成。中身はExamples。 sh-4.4# export PKG_CONFIG_PATH=. sh-4.4# go run go-oci8/main.go # github.com/mattn/go-oci8 cgo: C compiler "gcc" not found: exec: "gcc":
+<a href=/blog/posts/2022/06/11_oracle_docker_go2/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
+<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/06/11_oracle_docker/ rel=bookmark>OracleサーバーのDockerイメージ</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -226,27 +249,6 @@ WSL2で開発中のWebアプリを同じLANのスマホで動作確認する方�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/06/04_flutterflow/ rel=bookmark>FlutterFlow</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-06-04T00:00:00>2022-06-04</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-FlutterFlow - Build Native Apps Visually 前にチュートリアルやって、確か途中で分からなくなって放置してた。 FlutterFlowのススメを読んで、再度挑戦する気になってやってみた。 やっぱりよくわからなかった。 慣れの問題かもしれないけれど、いきなり何でもできる状態に放り込まれると、逆に何をしたらよいかわからなくなる状態。 コードだと
-<a href=/blog/posts/2022/06/04_flutterflow/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/flutter rel=tag>flutter</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -314,6 +316,9 @@ FlutterFlow - Build Native Apps Visually 前にチュートリアルやって、
 <a href=/blog/posts/2022/06/11_oracle_docker_go/>OracleにGoで接続する</a>
 </li>
 <li>
+<a href=/blog/posts/2022/06/11_oracle_docker_go2/>OracleにGoで接続する2</a>
+</li>
+<li>
 <a href=/blog/posts/2022/06/11_oracle_docker/>OracleサーバーのDockerイメージ</a>
 </li>
 <li>
@@ -336,9 +341,6 @@ FlutterFlow - Build Native Apps Visually 前にチュートリアルやって、
 </li>
 <li>
 <a href=/blog/posts/2022/06/05_newapp/>新規Flutterアプリ</a>
-</li>
-<li>
-<a href=/blog/posts/2022/06/04_flutterflow/>FlutterFlow</a>
 </li>
 </ul>
 </aside>

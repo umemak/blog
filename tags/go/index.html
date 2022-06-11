@@ -63,6 +63,29 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/11_oracle_docker_go2/ rel=bookmark>OracleにGoで接続する2</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-11T00:00:00>2022-06-11</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 pkg-config: exec: "pkg-config": executable file not found in $PATH sh-4.4# yum install -y pkgconfig sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 Package oci8 was not found in the pkg-config search path. Perhaps you should add the directory containing `oci8.pc' to the PKG_CONFIG_PATH environment variable Package 'oci8', required by 'virtual:world', not found pkg-config: exit status 1 とりあえずmain.goと同じところにoci8.pcを作成。中身はExamples。 sh-4.4# export PKG_CONFIG_PATH=. sh-4.4# go run go-oci8/main.go # github.com/mattn/go-oci8 cgo: C compiler "gcc" not found: exec: "gcc":
+<a href=/blog/posts/2022/06/11_oracle_docker_go2/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
+<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/03/20_go_118/ rel=bookmark>Go 1.18</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -223,29 +246,6 @@ golintのexported %s %s returns unexported type %s, which can be annoying to use
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/11/01_denago_3/ rel=bookmark>DeNA.go #3</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-11-01T00:00:00>2019-11-01</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-https://dena.connpass.com/event/150676/ 19:25 - 19:30 会場説明 @imoty DeNA TechCon 2020やります 19:30 - 19:50 20分枠 @suhirotaka / [Go活用事例]安全運転支援サービスを支える運用サイト / オートモーティブ事業本部スマートドライビング部システム開発グループ https://speakerdeck.com/suhirotaka/gohuo-yong-shi-li-an-quan-yun-zhuan-zhi-yuan-sabisuwozhi-eru-yun-yong-guan-li-sisutemu goで何を作っているか DRIVE CHART AIはPython Railsも使っている 運用管理のWEBシステム 管理画面をGoで作った理由 2年
-<a href=/blog/posts/2019/11/01_denago_3/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-<a href=https://umemak.github.io/tags/dena rel=tag>DeNA</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -281,6 +281,9 @@ https://dena.connpass.com/event/150676/ 19:25 - 19:30 会場説明 @imoty DeNA T
 <a href=/blog/posts/2022/06/11_oracle_docker_go/>OracleにGoで接続する</a>
 </li>
 <li>
+<a href=/blog/posts/2022/06/11_oracle_docker_go2/>OracleにGoで接続する2</a>
+</li>
+<li>
 <a href=/blog/posts/2022/06/11_oracle_docker/>OracleサーバーのDockerイメージ</a>
 </li>
 <li>
@@ -303,9 +306,6 @@ https://dena.connpass.com/event/150676/ 19:25 - 19:30 会場説明 @imoty DeNA T
 </li>
 <li>
 <a href=/blog/posts/2022/06/05_newapp/>新規Flutterアプリ</a>
-</li>
-<li>
-<a href=/blog/posts/2022/06/04_flutterflow/>FlutterFlow</a>
 </li>
 </ul>
 </aside>

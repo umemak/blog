@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Flutter+Kuzzle サンプル - umemak</title>
+<title>OracleにGoで接続する2 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,34 +33,84 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Flutter+Kuzzle サンプル</h1>
+<h1>OracleにGoで接続する2</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-05-22T522:120:06>2022-05-22</time>
+<time datetime=2022-06-11T611:120:06>2022-06-11</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/05/22_flutter_kuzzle/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f05%2f22_flutter_kuzzle%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/06/11_oracle_docker_go2/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f06%2f11_oracle_docker_go2%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Flutter+Kuzzle サンプル" data-url=https://umemak.github.io/blog/posts/2022/05/22_flutter_kuzzle/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=OracleにGoで接続する2 data-url=https://umemak.github.io/blog/posts/2022/06/11_oracle_docker_go2/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p><a href=https://docs.kuzzle.io/sdk/dart/3/getting-started/flutter/>Flutter | Kuzzle Documentation</a> がとりあえず動くようになった。
-エラーが出ないように直して回っただけなので、本当に正しい修正なのかは自信なし。</p>
-<p><a href=https://github.com/umemak/kuzzle_flutter_chat>https://github.com/umemak/kuzzle_flutter_chat</a></p>
-<p>DBの読み書きはこれでできることが確認できた。</p>
+<p><a href=https://github.com/mattn/go-oci8>mattn/go-oci8: Oracle driver for Go using database/sql</a>でやってみる。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>sh-4.4# go run go-oci8/main.go 
+<span class=c1># pkg-config --cflags  -- oci8</span>
+pkg-config: exec: <span class=s2>&#34;pkg-config&#34;</span>: executable file not found in <span class=nv>$PATH</span>
+sh-4.4# yum install -y pkgconfig
+sh-4.4# go run go-oci8/main.go 
+<span class=c1># pkg-config --cflags  -- oci8</span>
+Package oci8 was not found in the pkg-config search path.
+Perhaps you should add the directory containing <span class=sb>`</span>oci8.pc<span class=s1>&#39;
+</span><span class=s1>to the PKG_CONFIG_PATH environment variable
+</span><span class=s1>Package &#39;</span>oci8<span class=s1>&#39;, required by &#39;</span>virtual:world<span class=err>&#39;</span>, not found
+pkg-config: <span class=nb>exit</span> status <span class=m>1</span>
+</code></pre></div><p>とりあえずmain.goと同じところにoci8.pcを作成。中身は<a href=https://github.com/mattn/go-oci8#linux>Examples</a>。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>sh-4.4# <span class=nb>export</span> <span class=nv>PKG_CONFIG_PATH</span><span class=o>=</span>.
+sh-4.4# go run go-oci8/main.go 
+<span class=c1># github.com/mattn/go-oci8</span>
+cgo: C compiler <span class=s2>&#34;gcc&#34;</span> not found: exec: <span class=s2>&#34;gcc&#34;</span>: executable file not found in <span class=nv>$PATH</span>
+sh-4.4# yum install -y gcc
+sh-4.4# go run go-oci8/main.go 
+<span class=c1># github.com/mattn/go-oci8</span>
+In file included from vendor/github.com/mattn/go-oci8/c_helpers.go:3:
+./oci8.go.h:1:10: fatal error: oci.h: No such file or directory
+ <span class=c1>#include &lt;oci.h&gt;</span>
+          ^~~~~~~
+compilation terminated.
+sh-4.4# find / <span class=p>|</span> grep oci.h
+/usr/include/oracle/21/client64/oci.h
+</code></pre></div><p>oci8.pcのincludedirを/usr/include/oracle/21/client64に変更。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>sh-4.4# go run go-oci8/main.go 
+<span class=c1># github.com/mattn/go-oci8</span>
+In file included from vendor/github.com/mattn/go-oci8/c_helpers.go:3:
+./oci8.go.h:1:10: fatal error: oci.h: No such file or directory
+ <span class=c1>#include &lt;oci.h&gt;</span>
+          ^~~~~~~
+compilation terminated.
+</code></pre></div><p>あれ？</p>
+<p>oci8.pcを/usr/share/pkgconfig/にコピーして、環境変数PKG_CONFIG_PATHを/usr/share/pkgconfig/にする。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>sh-4.4# go run go-oci8/main.go 
+<span class=c1># command-line-arguments</span>
+go-oci8/main.go:18:10: undefined: oci8.TestDisableDatabase
+go-oci8/main.go:27:14: undefined: oci8.TestUsername
+go-oci8/main.go:28:15: undefined: oci8.TestPassword
+go-oci8/main.go:29:22: undefined: oci8.TestUsername
+go-oci8/main.go:29:48: undefined: oci8.TestPassword
+go-oci8/main.go:31:22: undefined: oci8.TestUsername
+go-oci8/main.go:34:21: undefined: oci8.TestHostValid
+</code></pre></div><p>exampleのコードそのままだとダメっぽい。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=nx>openString</span> <span class=o>:=</span> <span class=s>&#34;system/OraclePwd@db:1521/XE&#34;</span>
+</code></pre></div><p>とTest系の参照せずにべた書きする</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>sh-4.4# go run go-oci8/main.go 
+<span class=m>1</span>
+</code></pre></div><p>できた！</p>
+<p><a href=https://github.com/umemak/oracle_test>https://github.com/umemak/oracle_test</a> にまとめた。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/flutter rel=tag>flutter</a>&emsp;
-<a href=https://umemak.github.io/tags/kuzzle rel=tag>Kuzzle</a>&emsp;
+<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>&emsp;
+<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>&emsp;
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -75,10 +125,10 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/05/21_flutter_kuzzle/> Flutter+Kuzzle</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/06/11_oracle_docker/> OracleサーバーのDockerイメージ</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/05/23_dartpad/> DartPad</a>
+<a class=next href=https://umemak.github.io/blog/posts/2022/06/11_oracle_docker_go/> OracleにGoで接続する</a>
 </div>
 </div>
 </nav>

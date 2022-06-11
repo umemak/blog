@@ -63,6 +63,29 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/11_oracle_docker_go2/ rel=bookmark>OracleにGoで接続する2</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-11T00:00:00>2022-06-11</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 pkg-config: exec: "pkg-config": executable file not found in $PATH sh-4.4# yum install -y pkgconfig sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 Package oci8 was not found in the pkg-config search path. Perhaps you should add the directory containing `oci8.pc' to the PKG_CONFIG_PATH environment variable Package 'oci8', required by 'virtual:world', not found pkg-config: exit status 1 とりあえずmain.goと同じところにoci8.pcを作成。中身はExamples。 sh-4.4# export PKG_CONFIG_PATH=. sh-4.4# go run go-oci8/main.go # github.com/mattn/go-oci8 cgo: C compiler "gcc" not found: exec: "gcc":
+<a href=/blog/posts/2022/06/11_oracle_docker_go2/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
+<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/06/11_oracle_docker/ rel=bookmark>OracleサーバーのDockerイメージ</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -227,28 +250,6 @@ Docker Desktopでは設定でcomposeのバージョン（1系と2系）を切り
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/07/12_docker_win10/ rel=bookmark>Windows10にDocker Desktopをインストール</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-07-12T00:00:00>2020-07-12</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-最初にSurface Go2をセットアップしたとき、WSL2のほうにDockerをインストールしていた。 使う時だけ起動すればいいと思っていたが、意外と面倒（sudoしてデーモン起動させるのとか）に感じていた。 VSCode blogの記事を見て、Windows側にDocker Desktopをインストールするのもあり
-<a href=/blog/posts/2020/07/12_docker_win10/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/win10 rel=tag>win10</a>
-<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -284,6 +285,9 @@ Docker Desktopでは設定でcomposeのバージョン（1系と2系）を切り
 <a href=/blog/posts/2022/06/11_oracle_docker_go/>OracleにGoで接続する</a>
 </li>
 <li>
+<a href=/blog/posts/2022/06/11_oracle_docker_go2/>OracleにGoで接続する2</a>
+</li>
+<li>
 <a href=/blog/posts/2022/06/11_oracle_docker/>OracleサーバーのDockerイメージ</a>
 </li>
 <li>
@@ -306,9 +310,6 @@ Docker Desktopでは設定でcomposeのバージョン（1系と2系）を切り
 </li>
 <li>
 <a href=/blog/posts/2022/06/05_newapp/>新規Flutterアプリ</a>
-</li>
-<li>
-<a href=/blog/posts/2022/06/04_flutterflow/>FlutterFlow</a>
 </li>
 </ul>
 </aside>
