@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>mdmml - umemak</title>
+<title>OracleにGoで接続する3 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,31 +33,54 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>mdmml</h1>
+<h1>OracleにGoで接続する3</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-01-29T129:120:06>2022-01-29</time>
+<time datetime=2022-06-12T612:120:06>2022-06-12</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/29_mdmml/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f29_mdmml%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/06/12_oracle_docker_go3/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f06%2f12_oracle_docker_go3%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=mdmml data-url=https://umemak.github.io/blog/posts/2022/01/29_mdmml/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=OracleにGoで接続する3 data-url=https://umemak.github.io/blog/posts/2022/06/12_oracle_docker_go3/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>昨日マークダウンからMMLを抜き出すところをとりあえず作ったので、
-今日はMMLをSMF形式に変換するところを作る。</p>
-<p>なかなか思ったように動いてくれない。。</p>
-<p>go test と go run で挙動が違うのなんでだ・・</p>
+<p>昨日は、<a href=https://github.com/mattn/go-oci8>mattn/go-oci8: Oracle driver for Go using database/sql</a>と<a href=https://github.com/sijms/go-ora>sijms/go-ora: Pure go oracle client</a>を使ったサンプルをコンテナ上で<code>go run</code>して動かしていた。</p>
+<p>今日は<code>go build</code>でバイナリにして実行できるようにしてみる。</p>
+<p>何もオプション付けずにビルドしたら、どちらも問題なし。</p>
+<p>バイナリサイズを小さくしようと、<code>-ldflags="-s -w -extldflags \"-static\""</code>をつけたところ、go-oraは大丈夫。go-oci8はNGだった。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh> &gt; <span class=o>[</span>go-oci8:local 9/9<span class=o>]</span> RUN go build -ldflags<span class=o>=</span><span class=s2>&#34;-s -w -extldflags &#34;</span>-static<span class=s2>&#34;&#34;</span> -o bin/go-oci8 go-oci8/main.go:
+<span class=c1>#0 0.595 go: downloading github.com/mattn/go-oci8 v0.1.1</span>
+<span class=c1>#0 2.207 # command-line-arguments</span>
+<span class=c1>#0 2.207 /usr/local/go/pkg/tool/linux_amd64/link: running gcc failed: exit status 1</span>
+<span class=c1>#0 2.207 /usr/bin/ld: cannot find -lclntsh</span>
+<span class=c1>#0 2.207 /usr/bin/ld: cannot find -lpthread</span>
+<span class=c1>#0 2.207 /usr/bin/ld: cannot find -lc</span>
+<span class=c1>#0 2.207 collect2: error: ld returned 1 exit status</span>
+<span class=c1>#0 2.207 </span>
+</code></pre></div><p><code>-extldflags \"-static\"</code>を削除したら通った。</p>
+<p>マルチステージビルドにして、ビルドしたバイナリをalpineに載せてみる。</p>
+<p>こちらもgo-oraは問題なかったが、go-oci8は実行時にエラー。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ docker compose run go-oci8 bin/go-oci8
+standard_init_linux.go:228: <span class=nb>exec</span> user process caused: no such file or directory
+</code></pre></div><p>Oracleのライブラリなども実行環境に持っていく必要がありそう。</p>
+<p>この時点で、コンテナイメージサイズはgo-oraが<strong>13.6MB</strong>に対して、改善の余地があるとはいえgo-oci8は<strong>1.25GB</strong>。</p>
+<p>単純に接続してCRUDかける程度なら、go-oraで問題ないと思うけど、Oracleの機能を使い倒そうと思ったら、純正ライブラリを利用しているgo-oci8じゃないとダメな場面が出て来るかもしれない。</p>
+<p>今回もDockerfileなどは<a href=https://github.com/umemak/oracle_test>こちら</a>においてある。</p>
 </div>
 <footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>&emsp;
+<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>&emsp;
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>&emsp;
+</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -71,10 +94,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/01/28_mdmml/> マークダウンでMMLを書く</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/06/11_oracle_docker_go/> OracleにGoで接続する</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/01/30_hexdump/> hexdump</a>
 </div>
 </div>
 </nav>
