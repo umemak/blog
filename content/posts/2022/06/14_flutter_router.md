@@ -21,3 +21,9 @@ tags: ["Flutter"]
 
 参考にしたページ：
 - [Flutterを再開するときにやったこと。その3(go_routerを使ってみる) - くらげになりたい。](https://www.memory-lovers.blog/entry/2022/04/07/173000)
+- [go_routerを使ってみた(単純な画面遷移の方法) - Qiita](https://qiita.com/Umigishi-Aoi/items/25ae18293915b017aa4a)
+
+単純に遷移しているところは簡単に置き換えられた。
+パラメータを渡すところはよくわからん。
+
+あとログイン周りも理解が追い付いていない。
