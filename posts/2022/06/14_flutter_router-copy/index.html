@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Firebase設定 - umemak</title>
+<title>Flutterのrouter - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,101 +33,33 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>Firebase設定</h1>
+<h1>Flutterのrouter</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-05-31T531:120:06>2022-05-31</time>
+<time datetime=2022-06-15T615:120:06>2022-06-15</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/05/31_firebase_hosting/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f05%2f31_firebase_hosting%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/06/14_flutter_router-copy/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f06%2f14_flutter_router-copy%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Firebase設定 data-url=https://umemak.github.io/blog/posts/2022/05/31_firebase_hosting/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Flutterのrouter data-url=https://umemak.github.io/blog/posts/2022/06/14_flutter_router-copy/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>WebViewを使うとして、MDMMLのJS版を公開する場所をFirebase Hostingにした。</p>
-<p>久しぶりにFirebase使ったらオプションが色々増えている気がする。</p>
-<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ firebase init
-
-     <span class=c1>######## #### ########  ######## ########     ###     ######  ########</span>
-     <span class=c1>##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##</span>
-     <span class=c1>######    ##  ########  ######   ########  #########  ######  ######</span>
-     <span class=c1>##        ##  ##    ##  ##       ##     ## ##     ##       ## ##</span>
-     <span class=c1>##       #### ##     ## ######## ########  ##     ##  ######  ########</span>
-
-You<span class=s1>&#39;re about to initialize a Firebase project in this directory:
-</span><span class=s1>
-</span><span class=s1>  /home/umemak/workspace/mdmml_js
-</span><span class=s1>
-</span><span class=s1>? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices. Hostin
-</span><span class=s1>g: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys, Hosting: Set up GitHub Action deploys
-</span><span class=s1>
-</span><span class=s1>=== Project Setup
-</span><span class=s1>
-</span><span class=s1>First, let&#39;</span>s associate this project directory with a Firebase project.
-You can create multiple project aliases by running firebase use --add, 
-but <span class=k>for</span> now we<span class=s1>&#39;ll just set up a default project.
-</span><span class=s1>
-</span><span class=s1>? Please select an option: Use an existing project
-</span><span class=s1>? Select a default Firebase project for this directory: mdmml-285c0 (mdmml)
-</span><span class=s1>i  Using project mdmml-285c0 (mdmml)
-</span><span class=s1>
-</span><span class=s1>=== Hosting Setup
-</span><span class=s1>
-</span><span class=s1>Your public directory is the folder (relative to your project directory) that
-</span><span class=s1>will contain Hosting assets to be uploaded with firebase deploy. If you
-</span><span class=s1>have a build process for your assets, use your build&#39;</span>s output directory.
-
-? What <span class=k>do</span> you want to use as your public directory? public
-? Configure as a single-page app <span class=o>(</span>rewrite all urls to /index.html<span class=o>)</span>? No
-? Set up automatic builds and deploys with GitHub? Yes
-✔  Wrote public/404.html
-✔  Wrote public/index.html
-
-i  Detected a .git folder at /home/umemak/workspace/mdmml_js
-i  Authorizing with GitHub to upload your service account to a GitHub repository<span class=s1>&#39;s secrets store.
-</span><span class=s1>
-</span><span class=s1>Waiting for authentication...
-</span><span class=s1>
-</span><span class=s1>✔  Success! Logged into GitHub as umemak
-</span><span class=s1>
-</span><span class=s1>? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) umemak/mdmml_js
-</span><span class=s1>
-</span><span class=s1>✔  Created service account github-action-487458244 with Firebase Hosting admin permissions.
-</span><span class=s1>✔  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_MDMML_285C0.
-</span><span class=s1>i  You can manage your secrets at https://github.com/umemak/mdmml_js/settings/secrets.
-</span><span class=s1>
-</span><span class=s1>? Set up the workflow to run a build script before every deploy? Yes
-</span><span class=s1>? What script should be run before every deploy? npm ci &amp;&amp; npm run build
-</span><span class=s1>
-</span><span class=s1>✔  Created workflow file /home/umemak/workspace/mdmml_js/.github/workflows/firebase-hosting-pull-request.yml
-</span><span class=s1>? Set up automatic deployment to your site&#39;</span>s live channel when a PR is merged? Yes
-? What is the name of the GitHub branch associated with your site<span class=err>&#39;</span>s live channel? main
-
-✔  Created workflow file /home/umemak/workspace/mdmml_js/.github/workflows/firebase-hosting-merge.yml
-
-i  Action required: Visit this URL to revoke authorization <span class=k>for</span> the Firebase CLI GitHub OAuth App:
-https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
-i  Action required: Push any new workflow file<span class=o>(</span>s<span class=o>)</span> to your repo
-
-i  Writing configuration info to firebase.json...
-i  Writing project information to .firebaserc...
-
-✔  Firebase initialization complete!
-</code></pre></div><p>GitHub Actionsとの連携も入れてみた。</p>
-<p><a href=https://mdmml-285c0.web.app/>https://mdmml-285c0.web.app/</a></p>
-<p>良さそう。</p>
+<p>go_router 続き。</p>
+<p>パラメータを渡すところは、<a href=https://github.com/csells/go_router/blob/main/docs/ja/parameters.mdx>go_router/parameters.mdx at main · csells/go_router</a>を見て書いたらうまくいった。</p>
+<p>あとはログイン周り（リロードしたときにログイン状態を維持したい）は、routerとは別次元の問題なのでいったん置いておく。
+開発中は自分しか使わないし問題なし。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/firebase rel=tag>Firebase</a>&emsp;
+<a href=https://umemak.github.io/tags/flutter rel=tag>Flutter</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -142,10 +74,9 @@ i  Writing project information to .firebaserc...
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/05/30_json2md/> json2md</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/06/14_flutter_router/> Flutterのrouter選定</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/06/01_expo/> Expo</a>
 </div>
 </div>
 </nav>
