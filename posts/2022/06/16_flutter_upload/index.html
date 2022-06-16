@@ -57,6 +57,14 @@
 <p><a href=https://qiita.com/kazutxt/items/de764db4c9ffb2ee935a>Flutter×Firebase(CloudStorage)でファイルダウンロードとアップロードを簡単に実現する方法 - Qiita</a></p>
 <p>を見て実装してみたところ、<code>Unsupported operation: Platform._operatingSystem</code>なエラーが。</p>
 <p>Webだと対応していない書き方なのかな・・環境ごとに分けるの面倒だな・・</p>
+<p><a href=https://stackoverflow.com/questions/59716944/flutter-web-upload-image-file-to-firebase-storage>google cloud functions - Flutter web - Upload Image File to Firebase Storage - Stack Overflow</a></p>
+<p>を見て再チャレンジして、何とかアップロードできた。</p>
+<p><code>dart:io</code>ではなく<code>dart:html</code>を使い、<code>putFile</code>を使わずに<code>putData</code>を使うように変えた。</p>
+<p>あとFirebase Storageのデフォルト設定が書き込み禁止なので、<code>allow read, write: if request.auth != null;</code>として書き込めるように変更した。</p>
+<ul>
+<li><a href="https://firebase.google.com/docs/rules/basics?authuser=0&hl=ja#cloud-storage">基本的なセキュリティ ルール  |  Firebase Documentation</a></li>
+</ul>
+<p>何日もハマらずに済んでよかった。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
