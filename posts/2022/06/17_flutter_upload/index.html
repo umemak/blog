@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>認証の置き換え - umemak</title>
+<title>アップロードしたファイルを表示する - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,35 +33,35 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>認証の置き換え</h1>
+<h1>アップロードしたファイルを表示する</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-01-05T15:120:06>2022-01-05</time>
+<time datetime=2022-06-17T617:120:06>2022-06-17</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/01/05_firebase_auth/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f01%2f05_firebase_auth%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/06/17_flutter_upload/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f06%2f17_flutter_upload%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=認証の置き換え data-url=https://umemak.github.io/blog/posts/2022/01/05_firebase_auth/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=アップロードしたファイルを表示する data-url=https://umemak.github.io/blog/posts/2022/06/17_flutter_upload/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>Amplify AuthをFirebase Authに置きかえる。</p>
-<ul>
-<li><a href="https://firebase.google.com/docs/auth/web/firebaseui?hl=ja">FirebaseUI でウェブアプリに簡単にログイン機能を追加する  |  Firebase Documentation</a></li>
-<li><a href=https://qiita.com/okdyy75/items/24e78fdd0f12742b9e82>FirebaseUI + vueでログイン処理 - Qiita</a></li>
-</ul>
-<pre tabindex=0><code>$ npm install firebaseui --save
-$ npm install firebaseui-ja --save
-</code></pre>
+<p>ファイルを選択してFirebase Storageにアップロードする処理は昨日できた。</p>
+<p>フォーム画面で選択したファイルを、アップロードする前にプレビュー表示をしたい。</p>
+<p>画像の表示は<a href=https://api.flutter.dev/flutter/widgets/Image-class.html>Image class - widgets library - Dart API</a>を使えばできる、のだけれど、画面を表示したタイミングではまだ画像が選択されていないので何も表示できない。</p>
+<p>画像を選択したら描画されるようにしたい。</p>
+<p>providerとか使って状態管理する必要がある？</p>
 </div>
 <footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/flutter rel=tag>Flutter</a>&emsp;
+</span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -75,10 +75,9 @@ $ npm install firebaseui-ja --save
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2022/01/04_firebase/> Firebaseでやってみる</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/06/16_flutter_upload/> Flutterでファイルアップロード</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2022/01/06_firebase_auth2/> 続・認証の置き換え</a>
 </div>
 </div>
 </nav>
