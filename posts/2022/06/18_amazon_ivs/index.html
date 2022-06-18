@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>データ構成続き2 - umemak</title>
+<title>Amazon IVS入門 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -33,31 +33,52 @@
 <main role=main>
 <article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h1>データ構成続き2</h1>
+<h1>Amazon IVS入門</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2021-12-21T1221:120:06>2021-12-21</time>
+<time datetime=2022-06-18T618:120:06>2022-06-18</time>
 </a>
 <span style=float:right>
 <div id=fb-root style=height:100%></div>
 <script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2021/12/21_ac/ data-layout=button_count data-size=small>
-<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2021%2f12%2f21_ac%2f" class=fb-xfbml-parse-ignore>Share</a>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/06/18_amazon_ivs/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f06%2f18_amazon_ivs%2f" class=fb-xfbml-parse-ignore>Share</a>
 </div>
 &nbsp;
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=データ構成続き2 data-url=https://umemak.github.io/blog/posts/2021/12/21_ac/ data-show-count=false>Tweet</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Amazon IVS入門" data-url=https://umemak.github.io/blog/posts/2022/06/18_amazon_ivs/ data-show-count=false>Tweet</a>
 <script async src=https://platform.twitter.com/widgets.js></script>
 &nbsp;
 </span>
 </div>
 </header>
 <div class=post-content>
-<p>manyToMany だとエントリーとキャンセルの状態を持たせるのができなさそうなので、やっぱり関連を持つテーブルを作ったほうがよさそう（おとといの設計</p>
-<p>そしてレコード追加の書き方がわからない・・</p>
+<p>YouTubeみたいな動画配信とチャットできるサイト作るのに良さそうなサービスないかな、と思って探したのが<a href=https://aws.amazon.com/jp/ivs/>Amazon Interactive Video Service</a>。</p>
+<p>動画の配信はOBSを使って簡単にできそう。</p>
+<ul>
+<li><a href=https://catalog.us-east-1.prod.workshops.aws/workshops/022adf04-0ff9-49af-848f-993e42575540/ja-JP>Live Streaming with Amazon Interactive Video Service</a></li>
+</ul>
+<p>S3に自動的に保存することもできるようなので、後から視聴することもできそう。</p>
+<ul>
+<li><a href=https://docs.aws.amazon.com/ja_jp/ivs/latest/userguide/record-to-s3.html>Amazon S3 への自動録画 - Amazon Interactive Video Service</a></li>
+</ul>
+<p>チャットのサンプルも用意されていた。</p>
+<ul>
+<li><a href=https://github.com/aws-samples/amazon-ivs-chat-web-demo>aws-samples/amazon-ivs-chat-web-demo: A demo web application that shows how to implement a basic video + chat application using the AWS serverless application model (SAM) and Javascript (React).</a></li>
+<li><a href=https://github.com/aws-samples/amazon-ivs-chime-web-demo>aws-samples/amazon-ivs-chime-web-demo: A demo web application intended as an educational tool for demonstrating how to load and play Amazon IVS streams alongside the Amazon Chime SDK.</a></li>
+</ul>
+<p>サンプルなどが一か所にまとまっていて良いと思った。</p>
+<ul>
+<li><a href=https://ivs.rocks/examples>Amazon IVS – Live demos, code samples, blog posts</a></li>
+</ul>
+<p>料金も専用の計算ページが用意されている</p>
+<ul>
+<li><a href=https://ivs.rocks/calculator>Amazon IVS – Cost estimator</a></li>
+</ul>
+<p>IVS、いいじゃないか。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>&emsp;
+<a href=https://umemak.github.io/tags/aws rel=tag>aws</a>&emsp;
 </span>
 </footer>
 <table cellspacing=15 style=width:100%;border:none>
@@ -72,10 +93,9 @@
 <nav class="navigation post-navigation" role=navigation>
 <div class=nav-links>
 <div class=nav-previous>
-<a class=previous href=https://umemak.github.io/blog/posts/2021/12/20_ac/> データ構成続き</a>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/06/17_flutter_upload/> アップロードしたファイルを表示する</a>
 </div>
 <div class=nav-next>
-<a class=next href=https://umemak.github.io/blog/posts/2021/12/22_ac/> Amplify mock使ってみる</a>
 </div>
 </div>
 </nav>
