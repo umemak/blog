@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
-<title>Posts - umemak</title>
+<title>Firestoreでサブコレクションを使う理由 - umemak</title>
 <style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all>
 <link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all>
@@ -18,10 +18,10 @@
 </a>
 <nav role=navigation aria-label="Primary Navigation">
 <ul class=menu>
-<li class="menu-item current-menu-item current_page_item"><a class=menu__link href=/blog/posts/>POSTS</a></li>
+<li class=menu-item><a class=menu__link href=/blog/posts/>POSTS</a></li>
 <li class=menu-item><a class=menu__link href=/blog/tags/>TAGS</a></li>
 </ul>
-<select onchange="location.href=value"><option value=/blog/posts/ class="menu-item menu-item-type-custom menu-item-object-custom" selected>POSTS</option><option value=/blog/tags/ class="menu-item menu-item-type-custom menu-item-object-custom">TAGS</option></select>
+<select onchange="location.href=value"><option value=/blog/posts/ class="menu-item menu-item-type-custom menu-item-object-custom">POSTS</option><option value=/blog/tags/ class="menu-item menu-item-type-custom menu-item-object-custom">TAGS</option></select>
 </nav>
 </header>
 <br>
@@ -30,262 +30,38 @@
 <div class=breadcrumbs>
 </div>
 <div id=content class=content>
-<main aria-role=main>
-<header class=homepage-header>
-<h1>Posts</h1>
-</header>
-<div class=homepage-content>
-</div>
-<div>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
+<main role=main>
+<article role=article class="post type-post format-standard hentry">
 <header class=post-header>
-<h2><a href=/blog/posts/2022/03/30_open_file_delete/ rel=bookmark>開いたままのファイルを削除したらどうなるか</a></h2>
+<h1>Firestoreでサブコレクションを使う理由</h1>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-03-30T00:00:00>2022-03-30</time>
+<time datetime=2022-06-21T621:120:06>2022-06-21</time>
 </a>
+<span style=float:right>
+<div id=fb-root style=height:100%></div>
+<script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+<div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2022/06/20_flutter_firestore/ data-layout=button_count data-size=small>
+<a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2022%2f06%2f20_flutter_firestore%2f" class=fb-xfbml-parse-ignore>Share</a>
+</div>
+&nbsp;
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text=Firestoreでサブコレクションを使う理由 data-url=https://umemak.github.io/blog/posts/2022/06/20_flutter_firestore/ data-show-count=false>Tweet</a>
+<script async src=https://platform.twitter.com/widgets.js></script>
+&nbsp;
+</span>
 </div>
 </header>
-<div class=post-excerpt><p>
-ホストがマウントしたディレクトリをマウントしたコンテナでプロセス1で開いてクローズせずにプロセス2で削除したあとその他のプロセスからファイルはどう見えるか。 A. ファイルは削除されディレクトリにもリストされない B. ファイルは削除できない C. ファイルは削除されアクセスできないがディレクトリにリストされたまま プ
-<a href=/blog/posts/2022/03/30_open_file_delete/ class=more-link>Read more </a>
-</p></div>
+<div class=post-content>
+<p>親コレクションと子コレクションがあったとして、子を親のサブコレクションにするか、子に親のIDを持たせて別のコレクションにするか問題。</p>
+<p>別のコレクションにした場合、クエリ時にwhereを使って親IDを指定して絞り込むと、orderByが使えない。
+エラーにならないけど、ゼロマッチになってしまう。</p>
+<p>orderByを使いたかったので、サブコレクションを使うことにした。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
-<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
+<a href=https://umemak.github.io/tags/flutter rel=tag>Flutter</a>&emsp;
 </span>
 </footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/03/29_host_docker_internal/ rel=bookmark>host.docker.internalの謎</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-03-29T00:00:00>2022-03-29</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-https://github.com/umemak/docker_network_test Docker Desktopのバージョンを上げたら、host.docker.internal の挙動が変わったっぽいという話。 まだ現象の再現性を確認しただけで、原因の特定まではできていない。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/03/28_mdmml/ rel=bookmark>mdmml_rust</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-03-28T00:00:00>2022-03-28</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Vecの使い方を理解した気がする。 これでどうにかSMFのバイナリを組み立てられるのではないだろうか。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/mdmml rel=tag>mdmml</a>
-<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/03/27_mdmml/ rel=bookmark>mdmml_rust</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-03-27T00:00:00>2022-03-27</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Rust版を少し進めた。 こういうときはこう書けばよい、というのが身についていないのでなかなか進まない。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/mdmml rel=tag>mdmml</a>
-<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/03/26_mdmml_remote/ rel=bookmark>mdmml機能追加</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-03-26T00:00:00>2022-03-26</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-ローカルファイルだけではなく、URL指定で読み込みできるようにしてみた。 issue立てておいたのにPRせずにmaster直PUSHしてしまった。。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/mdmml rel=tag>mdmml</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/03/25_rust_book/ rel=bookmark>実践Rustプログラミング入門</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-03-25T00:00:00>2022-03-25</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Cargoについて学んだ。 Goはgoコマンドでビルドもテストも外部モジュール管理もするけど、Rustはそうではないらしい。 というかrustコマンドが存在していない？rustcはあるけど。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/03/24_rust_book/ rel=bookmark>実践Rustプログラミング入門</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-03-24T00:00:00>2022-03-24</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-クレートとモジュールについて学んだ。 しかし、なんでクレートなんて名前にしたのだろう。名前から機能がイメージできない。 ファイル名がそのままモジュール名になるのは良いと思う。 Goはディレクトリ名がパッケージ名だけど、その中のファイル名はパッケージ名と一致していなくてもよいので、紛らわしい名前でも付けよう
-<a href=/blog/posts/2022/03/24_rust_book/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/03/23_rust_book/ rel=bookmark>実践Rustプログラミング入門</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-03-23T00:00:00>2022-03-23</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-マルチスレッドについて学んだ。 メッセージパッシングはGoより分かりやすいかも（矢印の書き方いつも忘れる）。 非同期処理について学んだ。 async/awaitはReactとかFlutterで雰囲気で使っていたけど、ちょっと理解が進んだ気がした。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/03/22_rust_book/ rel=bookmark>実践Rustプログラミング入門</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-03-22T00:00:00>2022-03-22</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-読み進めていく。 別にこの本のせいではないのだけれど、、 マクロ、最後に!が付くのがちょっと落ち着かない（否定っぽい感じ）。 トレイトが何者かすぐ忘れてしまう。 implはGoでいうところのメソッドだというのはわかった。 Boxもすぐ忘れそう。。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/03/21_rust_book/ rel=bookmark>実践Rustプログラミング入門</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-03-21T00:00:00>2022-03-21</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-キャンペーンでKindle版が安くなっていたので買った。 実践Rustプログラミング入門 | 初田直也, 山口聖弘, 吉川哲史, 豊田優貴, 松本健太郎, 原将己, 中村謙弘, フォルシア株式会社 | 工学 | Kindleストア | Amazon MSのチュートリアル終わった後だからか、何言ってるのかわからない状態ではなく読み進められている
-<a href=/blog/posts/2022/03/21_rust_book/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
-</span>
-</footer>
-</article>
-</div>
-<div class=nav-links>
-<ul class=pagination>
-<a href=/blog/posts/ aria-label=First><span aria-hidden=true>&#171;</span></a>
-<a href=/blog/posts/page/9/ aria-label=Previous><span aria-hidden=true>Previous Page</span></a>
-<a href=/blog/posts/>1</a>
-<a href=/blog/posts/page/2/>2</a>
-<a href=/blog/posts/page/3/>3</a>
-<a href=/blog/posts/page/4/>4</a>
-<a href=/blog/posts/page/5/>5</a>
-<a href=/blog/posts/page/6/>6</a>
-<a href=/blog/posts/page/7/>7</a>
-<a href=/blog/posts/page/8/>8</a>
-<a href=/blog/posts/page/9/>9</a>
-<span href=/blog/posts/page/10/>10</a>
-<a href=/blog/posts/page/11/>11</a>
-<a href=/blog/posts/page/12/>12</a>
-<a href=/blog/posts/page/13/>13</a>
-<a href=/blog/posts/page/14/>14</a>
-<a href=/blog/posts/page/15/>15</a>
-<a href=/blog/posts/page/16/>16</a>
-<a href=/blog/posts/page/17/>17</a>
-<a href=/blog/posts/page/18/>18</a>
-<a href=/blog/posts/page/19/>19</a>
-<a href=/blog/posts/page/20/>20</a>
-<a href=/blog/posts/page/21/>21</a>
-<a href=/blog/posts/page/22/>22</a>
-<a href=/blog/posts/page/23/>23</a>
-<a href=/blog/posts/page/24/>24</a>
-<a href=/blog/posts/page/25/>25</a>
-<a href=/blog/posts/page/26/>26</a>
-<a href=/blog/posts/page/27/>27</a>
-<a href=/blog/posts/page/28/>28</a>
-<a href=/blog/posts/page/29/>29</a>
-<a href=/blog/posts/page/30/>30</a>
-<a href=/blog/posts/page/31/>31</a>
-<a href=/blog/posts/page/32/>32</a>
-<a href=/blog/posts/page/33/>33</a>
-<a href=/blog/posts/page/34/>34</a>
-<a href=/blog/posts/page/35/>35</a>
-<a href=/blog/posts/page/11/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/posts/page/35/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
-</ul>
-</div>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
 <td style=text-align:center;border:none;padding:0>
@@ -294,6 +70,18 @@ Cargoについて学んだ。 Goはgoコマンドでビルドもテストも外�
 </td>
 </tr>
 </table>
+</article>
+<nav class="navigation post-navigation" role=navigation>
+<div class=nav-links>
+<div class=nav-previous>
+<a class=previous href=https://umemak.github.io/blog/posts/2022/06/20_flutter_auth/> Flutterでリロードしたときもログイン状態を維持する</a>
+</div>
+<div class=nav-next>
+</div>
+</div>
+</nav>
+<section>
+</section>
 </main>
 <div class="sidebar1 widgets columns-1">
 <aside>
