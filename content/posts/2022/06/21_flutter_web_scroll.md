@@ -10,3 +10,5 @@ tags: ["Flutter"]
 画像をアップロードして画面の表示項目が増えたら、画面下部のボタンが画面外に出て押せなくなってしまった。
 
 [SingleChildScrollView](https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html) でまるっと囲んでしまえば良いらしい。
+
+PWAとしてインストールしていた場合は、再インストールしないと修正が反映されない。
