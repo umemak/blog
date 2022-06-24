@@ -40,6 +40,29 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2021/04/17_minikube_mysql/ rel=bookmark>WindowsのminikubeでMySQLを動かす</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2021-04-17T00:00:00>2021-04-17</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+MacでやったらMySQLの起動時にエラーで落ちてしまったので、Windowsでどうなるか試す。 基本的には公式のドキュメントを参照。 https://kubernetes.io/ja/docs/tasks/run-application/run-single-instance-stateful-application/ munikubeインストール winget install minikube minikube起動 minikube start $ kubectl get nodes NAME STATUS ROLES AGE VERSION minikube Ready control-plane,master 73s v1.20.2 マニフェストファイル作成 mysql.yaml デプロイ $ kubectl apply -f mysql.yaml service/mysql created deployment.apps/mysql created persistentvolumeclaim/mysql-pv-claim created persistentvolume/mysql-pv-volume created $ kubectl get pods -l app=mysql NAME READY STATUS RESTARTS
+<a href=/blog/posts/2021/04/17_minikube_mysql/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/windows rel=tag>windows</a>
+<a href=https://umemak.github.io/tags/minikube rel=tag>minikube</a>
+<a href=https://umemak.github.io/tags/mysql rel=tag>mysql</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2021/03/20_ghactions_mysql/ rel=bookmark>GitHub Actions の MySQL で lower_case_table_names を変更する</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -231,26 +254,6 @@ Node.jsのバージョン管理したくなったので。 Homebrewのインス�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/07/20_wsl_date/ rel=bookmark>WSLの時計を合わせる</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-07-20T00:00:00>2020-07-20</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-apt updateしたときにエラーになった場合の解決策のひとつ。 WSL側の時計が大幅にずれているパターン。 https://github.com/microsoft/WSL/issues/4245 を参考に。 # hwclock -s
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/wsl rel=tag>wsl</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -316,6 +319,9 @@ apt updateしたときにエラーになった場合の解決策のひとつ。 
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/06/24_flutter_study/>Flutter学習</a>
+</li>
+<li>
 <a href=/blog/posts/2022/06/23_dart_study/>Dart復習</a>
 </li>
 <li>
@@ -341,9 +347,6 @@ apt updateしたときにエラーになった場合の解決策のひとつ。 
 </li>
 <li>
 <a href=/blog/posts/2022/06/16_flutter_upload/>Flutterでファイルアップロード</a>
-</li>
-<li>
-<a href=/blog/posts/2022/06/15_flutter_router/>Flutterのrouter</a>
 </li>
 </ul>
 </aside>

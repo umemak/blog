@@ -40,6 +40,29 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/05/03_rewire/ rel=bookmark>rewireでjest</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-05-03T00:00:00>2022-05-03</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+テストのために関数exportしないといけないの、チョット気持ち悪いので、解決策を探ってみる。 jhnns/rewire: Easy monkey-patching for node.js unit testsが一般的らしい。 $ npm install -D rewire @types/rewire テストコードのimportを修正 import rewire from 'rewire'; const __local__ = rewire('./mdmml.ts'); const atoi = __local__.__get__('atoi') テスト実行 $ npm test > mdmml_js@1.0.0 test > jest FAIL src/mdmml.test.ts ● Test suite failed to run /home/umemak/workspace/mdmml_js/src/mdmml.ts:8 Tracks: Track[] = []; SyntaxError: Unexpected identifier at Object.load (node_modules/rewire/lib/moduleEnv.js:57:18) at internalRewire (node_modules/rewire/lib/rewire.js:49:15) at rewire (node_modules/rewire/lib/index.js:11:12) Test Suites: 1 failed, 1 total Tests: 0 total Snapshots: 0 total
+<a href=/blog/posts/2022/05/03_rewire/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/javascript rel=tag>JavaScript</a>
+<a href=https://umemak.github.io/tags/rewire rel=tag>rewire</a>
+<a href=https://umemak.github.io/tags/jest rel=tag>jest</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/05/02_http_server/ rel=bookmark>http-serverメモ</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -227,27 +250,6 @@ GinkgoのV1とV2のテストケースが混在しているときに、V2のCLI�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/04/24_screeps_arena/ rel=bookmark>Screeps: Arena体験</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-04-24T00:00:00>2022-04-24</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Steam：Screeps: ArenaのDemo版をやってみた。 チュートリアルの途中までやったけど、普通に何か自分で開発してたほうが良いかな。 ノートPCで1画面でやってると、VS CodeとScreepsの行き来が面倒だったので、エディタは内蔵されていたほうが良いと思った。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/steam rel=tag>steam</a>
-<a href=https://umemak.github.io/tags/javascript rel=tag>JavaScript</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -313,6 +315,9 @@ Steam：Screeps: ArenaのDemo版をやってみた。 チュートリアルの�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/06/24_flutter_study/>Flutter学習</a>
+</li>
+<li>
 <a href=/blog/posts/2022/06/23_dart_study/>Dart復習</a>
 </li>
 <li>
@@ -338,9 +343,6 @@ Steam：Screeps: ArenaのDemo版をやってみた。 チュートリアルの�
 </li>
 <li>
 <a href=/blog/posts/2022/06/16_flutter_upload/>Flutterでファイルアップロード</a>
-</li>
-<li>
-<a href=/blog/posts/2022/06/15_flutter_router/>Flutterのrouter</a>
 </li>
 </ul>
 </aside>
