@@ -25,3 +25,5 @@ croppie_dart.dart:129 Uncaught (in promise) TypeError: dart.global.Croppie is no
 ```
 
 Flutter、まだわからないことが多い。。
+
+次は、[Top Flutter Image Cropping, Image Cropper packages | Flutter Gems](https://fluttergems.dev/crop-image/)で見つけた[xclud/flutter_crop: Crop any widget/image in Android, iOS, Web and Desktop with fancy and customizable UI, in pure Dart code.](https://github.com/xclud/flutter_crop)を試してみようと思う。
