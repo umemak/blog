@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/20_flutter_auth/ rel=bookmark>Flutterでリロードしたときもログイン状態を維持する</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-20T00:00:00>2022-06-20</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+毎回ログイン画面に遷移して面倒だなぁと思っていた件。 FlutterWebでFirebaseAuthのcurrentUserがリロード時にnullになることに対しての対処法 同様に、runAppの前に await FirebaseAuth.instance.userChanges().first; を入れたら解消した。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/flutter rel=tag>Flutter</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/06/19_flutter_dir/ rel=bookmark>Flutterのディレクトリ構成</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -225,26 +245,6 @@ Visualization: GeoChart | Charts | Google Developers FlutterアプリでGeoChart
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/06/06_newapp/ rel=bookmark>新規Flutterアプリ</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-06-06T00:00:00>2022-06-06</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-以前（途中まで）作ったアプリを流用してみたものの、Flutterのバージョンが上がったせいかそのままだと警告がたくさん出る。 ほとんどはconstを追加する程度なので、問題はなさそう。 とりあえず、認証とFirestore登録までできた。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/flutter rel=tag>flutter</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -253,8 +253,9 @@ Visualization: GeoChart | Charts | Google Developers FlutterアプリでGeoChart
 <a href=/blog/tags/flutter/>1</a>
 <span href=/blog/tags/flutter/page/2/>2</a>
 <a href=/blog/tags/flutter/page/3/>3</a>
+<a href=/blog/tags/flutter/page/4/>4</a>
 <a href=/blog/tags/flutter/page/3/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/tags/flutter/page/3/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/tags/flutter/page/4/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -277,6 +278,9 @@ Visualization: GeoChart | Charts | Google Developers FlutterアプリでGeoChart
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2022/06/29_flutter_image_cropper/>Image Cropper</a>
+</li>
 <li>
 <a href=/blog/posts/2022/06/28_flutter_model/>Flutterでmodelを使う</a>
 </li>
@@ -303,9 +307,6 @@ Visualization: GeoChart | Charts | Google Developers FlutterアプリでGeoChart
 </li>
 <li>
 <a href=/blog/posts/2022/06/20_flutter_firestore/>Firestoreでサブコレクションを使う理由</a>
-</li>
-<li>
-<a href=/blog/posts/2022/06/20_flutter_auth/>Flutterでリロードしたときもログイン状態を維持する</a>
 </li>
 </ul>
 </aside>
