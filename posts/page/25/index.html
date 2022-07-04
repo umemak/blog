@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2020/07/20_wsl_brew/ rel=bookmark>WSL2にbrewをつかってnodejsのインストールをする</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2020-07-20T00:00:00>2020-07-20</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+Node.jsのバージョン管理したくなったので。 Homebrewのインストール https://brew.sh/index_ja にしたがって。 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" $ sudo apt-get install build-essential $ echo 'eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)' >> /home/`whoami`/.profile $ eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv) $ brew --version Homebrew 2.4.8 Homebrew/linuxbrew-core (git revision 09353; last commit 2020-07-19) インストール済みnodejsパッケージの削除 aptで入れていたnodejsを削除。 $ sudo apt remove nodejs nodebrewのインストール $ brew install nodebrew node
+<a href=/blog/posts/2020/07/20_wsl_brew/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/wsl rel=tag>wsl</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2020/07/20_wsl_date/ rel=bookmark>WSLの時計を合わせる</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -234,27 +255,6 @@ WikiはGitHubにも付いているのを思い出して、単独のWikiではな
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/05/28_wsl/ rel=bookmark>Surface Go 2でWSL2+Dokcer</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-05-28T00:00:00>2020-05-28</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Windows 10大型アップデート「May 2020 Update」がダウンロード開始 という記事を見て、さっそく更新して、WSLとUbuntuをインストールしてみた。 とくに問題なく完了。 そしてdockerもインストール。 https://docs.docker.com/engine/install/ubuntu/ Add Docker’s official GPG key:のところでエラー。 WSLをインストールしただけでは、WSL2ではないら
-<a href=/blog/posts/2020/05/28_wsl/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/surface rel=tag>surface</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -321,6 +321,9 @@ Windows 10大型アップデート「May 2020 Update」がダウンロード開�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/07/04_flutter_crop/>Image Cropper</a>
+</li>
+<li>
 <a href=/blog/posts/2022/07/03_flutter_cors/>FlutterでCORS</a>
 </li>
 <li>
@@ -346,9 +349,6 @@ Windows 10大型アップデート「May 2020 Update」がダウンロード開�
 </li>
 <li>
 <a href=/blog/posts/2022/06/26_flutter_study/>Flutter学習</a>
-</li>
-<li>
-<a href=/blog/posts/2022/06/25_flutter_drawer/>Drawer</a>
 </li>
 </ul>
 </aside>
