@@ -115,7 +115,7 @@ iframe {
 }
 
 code {
-    padding: .2em .4em;
+    /* padding: .2em .4em; */
     margin: 0;
     font-size: 85%;
     background-color: rgba(175, 184, 193, 0.2);
