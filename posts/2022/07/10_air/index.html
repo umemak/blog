@@ -84,6 +84,17 @@ see you again~
 <p><code>air init</code>で作成された<code>.air.toml</code>を編集して、<code>cmd = "go build -o ./tmp/main ."</code>を<code>cmd = "go build -o ./tmp/main ./cmd/eventsite/"</code>にしたら動いた。</p>
 <p>これで開発効率上がるはず。</p>
 <p>ビルドファイルとビルドログがtmpに出力されるので、<code>.gitignore</code>に<code>tmp/</code>を追加した。</p>
+<p><a href=https://zenn.dev/ajapa/articles/bc399c7e4c0def>DockerコンテナでgolangをホットリロードするAirを導入</a>を参考に、Dockerでもいけるようにしてみた。</p>
+<p>Dockerfileはgo getではなくgo installでも大丈夫だった。
+gitのインストール不要。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-Dockerfile data-lang=Dockerfile><span class=k>FROM</span><span class=s> golang:1-alpine</span><span class=err>
+</span><span class=err>
+</span><span class=err></span><span class=k>RUN</span> go install github.com/cosmtrek/air@latest<span class=err>
+</span><span class=err>
+</span><span class=err></span><span class=k>WORKDIR</span><span class=s> /app</span><span class=err>
+</span><span class=err>
+</span><span class=err></span><span class=k>CMD</span> <span class=p>[</span><span class=s2>&#34;air&#34;</span><span class=p>]</span><span class=err>
+</span></code></pre></div>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
