@@ -42,3 +42,17 @@ see you again~
 これで開発効率上がるはず。
 
 ビルドファイルとビルドログがtmpに出力されるので、`.gitignore`に`tmp/`を追加した。
+
+[DockerコンテナでgolangをホットリロードするAirを導入](https://zenn.dev/ajapa/articles/bc399c7e4c0def)を参考に、Dockerでもいけるようにしてみた。
+
+Dockerfileはgo getではなくgo installでも大丈夫だった。
+gitのインストール不要。
+```Dockerfile
+FROM golang:1-alpine
+
+RUN go install github.com/cosmtrek/air@latest
+
+WORKDIR /app
+
+CMD ["air"]
+```
