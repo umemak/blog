@@ -40,3 +40,5 @@ see you again~
 `air init`で作成された`.air.toml`を編集して、`cmd = "go build -o ./tmp/main ."`を`cmd = "go build -o ./tmp/main ./cmd/eventsite/"`にしたら動いた。
 
 これで開発効率上がるはず。
+
+ビルドファイルとビルドログがtmpに出力されるので、`.gitignore`に`tmp/`を追加した。
