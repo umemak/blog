@@ -57,6 +57,49 @@
 <p><a href=https://supabase.com/docs/architecture>Architecture | Supabase</a>見ると、<code>/auth</code>でGoTrueに流されるようだが、Kongの公開ポート<code>54321</code>経由で<code>http://localhost:54321/auth</code>を叩いても、<code>{"message":"no Route matched with those values"}</code>とのこと。</p>
 <p>kongのコンテナの<code>/home/kong/kong.yml</code>に設定が書いてあった。</p>
 <p><code>http://localhost:54321/auth/v1/settings</code>をブラウザで開くと<code>No API key found in request.</code>のエラー。</p>
+<p>APIキーは、supabase起動時に表示されている奴だろうか。</p>
+<p><a href=https://konghq.com/blog/kong-gateway-key-authentication>API Key Authentication to Secure Server Endpoint | Kong Inc.</a>を見ると<code>x-api-key</code>ヘッダにつければ良さそうだけど、</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ curl -H <span class=s1>&#39;x-api-key:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6InNlcnZpY2Vfcm9sZSJ9.vI9obAHOGyVVKa3pD--kJlyxp-Z2zV9UUMAhKpNLAcU&#39;</span> http://localhost:54321/auth/v1/settings
+<span class=o>{</span>
+  <span class=s2>&#34;message&#34;</span>:<span class=s2>&#34;No API key found in request&#34;</span>
+<span class=o>}</span>
+</code></pre></div><p>変わらず。</p>
+<p><a href=https://docs.konghq.com/hub/kong-inc/key-auth/>Key Authentication plugin | Kong Docs</a>には<code>apikey</code>クエリの例が出ていたのでやってみる。</p>
+<pre tabindex=0><code>$ curl 'http://localhost:54321/auth/v1/settings?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24ifQ.625_WdcF3KHqz5amU0x2X5WWHP-OEs_4qj0ssLNHzTs' | jq .
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   428  100   428    0     0  53500      0 --:--:-- --:--:-- --:--:-- 53500
+{
+  &quot;external&quot;: {
+    &quot;apple&quot;: false,
+    &quot;azure&quot;: false,
+    &quot;bitbucket&quot;: false,
+    &quot;discord&quot;: false,
+    &quot;github&quot;: false,
+    &quot;gitlab&quot;: false,
+    &quot;keycloak&quot;: false,
+    &quot;google&quot;: false,
+    &quot;linkedin&quot;: false,
+    &quot;facebook&quot;: false,
+    &quot;notion&quot;: false,
+    &quot;spotify&quot;: false,
+    &quot;slack&quot;: false,
+    &quot;workos&quot;: false,
+    &quot;twitch&quot;: false,
+    &quot;twitter&quot;: false,
+    &quot;email&quot;: true,
+    &quot;phone&quot;: true,
+    &quot;saml&quot;: false,
+    &quot;zoom&quot;: false
+  },
+  &quot;external_labels&quot;: {},
+  &quot;disable_signup&quot;: false,
+  &quot;mailer_autoconfirm&quot;: true,
+  &quot;phone_autoconfirm&quot;: true,
+  &quot;sms_provider&quot;: &quot;&quot;
+}
+</code></pre><p>できた。</p>
+<p>これでGoから操作する道筋が見えた気がする。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
