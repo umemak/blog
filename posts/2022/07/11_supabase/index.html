@@ -58,7 +58,16 @@
 <li><a href=https://zenn.dev/hrtk/articles/supabase-nextjs-local>Supabaseをローカル環境に構築してNext.jsアプリで利用する（前半）</a></li>
 </ul>
 <p>このあたりを見ると、なんかできそう。しかもDockerで。</p>
-<p>ということで、いつか試してみる。</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ /bin/bash -c <span class=s2>&#34;</span><span class=k>$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class=k>)</span><span class=s2>&#34;</span>
+$ <span class=nb>echo</span> <span class=s1>&#39;eval &#34;$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)&#34;&#39;</span> &gt;&gt; /home/umemak/.profile
+$ <span class=nb>eval</span> <span class=s2>&#34;</span><span class=k>$(</span>/home/linuxbrew/.linuxbrew/bin/brew shellenv<span class=k>)</span><span class=s2>&#34;</span>
+$ brew install supabase/tap/supabase
+$ supabase <span class=nb>help</span>
+Supabase CLI 0.29.1
+ :
+$ supabase init
+$ supabase start
+</code></pre></div><p>http://localhost:54323/ でダッシュボードが表示された。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
@@ -80,6 +89,7 @@
 <a class=previous href=https://umemak.github.io/blog/posts/2022/07/10_air/> Airを試す</a>
 </div>
 <div class=nav-next>
+<a class=next href=https://umemak.github.io/blog/posts/2022/07/12_gotrue/> GoTrue</a>
 </div>
 </div>
 </nav>
@@ -97,6 +107,9 @@
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2022/07/12_gotrue/>GoTrue</a>
+</li>
 <li>
 <a href=/blog/posts/2022/07/11_supabase/>supabaseを試す</a>
 </li>
@@ -123,9 +136,6 @@
 </li>
 <li>
 <a href=/blog/posts/2022/07/06_amazon_ivs/>Amazon IVSのエラー</a>
-</li>
-<li>
-<a href=/blog/posts/2022/07/05_amazon_ivs/>Amazon IVSのサンプル</a>
 </li>
 </ul>
 </aside>
