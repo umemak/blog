@@ -65,3 +65,10 @@ $ curl 'http://localhost:54321/auth/v1/settings?apikey=eyJhbGciOiJIUzI1NiIsInR5c
 できた。
 
 これでGoから操作する道筋が見えた気がする。
+
+```sh
+$ curl -v -X POST -H 'Content-Type: application/json' --data '{"email": "email@example.com","password": "secret"}' 'http://localhost:54321/auth/v1/signup?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24ifQ.625_WdcF3KHqz5amU0x2X5WWHP-OEs_4qj0ssLNHzTs'
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNjU3NjMxMTgxLCJzdWIiOiI2MzNjOTNhMS0xNDdkLTQwZDUtOWRhOC1iMDdhNjMwNjA5MTEiLCJlbWFpbCI6ImVtYWlsQGV4YW1wbGUuY29tIiwicGhvbmUiOiIiLCJhcHBfbWV0YWRhdGEiOnsicHJvdmlkZXIiOiJlbWFpbCIsInByb3ZpZGVycyI6WyJlbWFpbCJdfSwidXNlcl9tZXRhZGF0YSI6e30sInJvbGUiOiJhdXRoZW50aWNhdGVkIn0.2f3hFbrrKrKLcBZvDVKJT4Q29RnpqvY-byx3icWQTXI","token_type":"bearer","expires_in":3600,"refresh_token":"OVY0O85jSg0vUO90U_wjEw","user":{"id":"633c93a1-147d-40d5-9da8-b07a63060911","aud":"authenticated","role":"authenticated","email":"email@example.com","email_confirmed_at":"2022-07-12T12:06:21.014989949Z","phone":"","last_sign_in_at":"2022-07-12T12:06:21.020771062Z","app_metadata":{"provider":"email","providers":["email"]},"user_metadata":{},"identities":[{"id":"633c93a1-147d-40d5-9da8-b07a63060911","user_id":"633c93a1-147d-40d5-9da8-b07a63060911","identity_data":{"sub":"633c93a1-147d-40d5-9da8-b07a63060911"},"provider":"email","last_sign_in_at":"2022-07-12T12:06:* Connection #0 to host localhost left intact
+21.008247116Z","created_at":"2022-07-12T12:06:21.008442Z","updated_at":"2022-07-12T12:06:21.008449Z"}],"created_at":"2022-07-12T12:06:20.987039Z","updated_at":"2022-07-12T12:06:21.026399Z"}}
+```
+ユーザー作成もできた。
