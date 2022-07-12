@@ -12,5 +12,15 @@ tags: ["supabase"]
 
 このあたりを見ると、なんかできそう。しかもDockerで。
 
-ということで、いつか試してみる。
-
+```sh
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+$ echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/umemak/.profile
+$ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+$ brew install supabase/tap/supabase
+$ supabase help
+Supabase CLI 0.29.1
+ :
+$ supabase init
+$ supabase start
+```
+http://localhost:54323/ でダッシュボードが表示された。
