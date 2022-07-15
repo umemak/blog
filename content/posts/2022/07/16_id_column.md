@@ -18,3 +18,10 @@ DB設計するときのIDカラムについて。
 マイクロサービス化というかDBとAPIがネットワーク的に離れていたりして、レコードのinsertが終わるまでIDがわからない状態を嫌う場合は、リクエストを出す側でIDを生成してしまえば待つ必要がない、と。
 
 auto incrementな連番の方が良い場合は、検索などのパフォーマンスを重視するとき。かな。
+
+PocketBaseのIDは、UUIDとかではなくランダム文字列らしい。
+
+- https://github.com/pocketbase/pocketbase/blob/3d07f0211dc74710affd9154f61728d77cfb6f4c/models/base.go#L65-L67
+- https://github.com/pocketbase/pocketbase/blob/3d07f0211dc74710affd9154f61728d77cfb6f4c/tools/security/random.go#L11-L21
+
+(could change in the future)とコメントに書かれているので、将来的には変わるかも。
