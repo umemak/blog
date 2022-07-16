@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/03/09_method_func/ rel=bookmark>メソッドか関数か</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-03-09T00:00:00>2022-03-09</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+最初は、構造体のフィールドを参照しているものはメソッドにしていた。 けど、フィールドのごく一部しか使っていないものはメソッドではなく関数にして、疎結合な感じにしてみた。 もちろんフィールドを更新しているものはメソッドのほうが良いかもしれないが、それでも新しく構造体を生成して返すようにすれば必ずしもメソッ
+<a href=/blog/posts/2022/03/09_method_func/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/03/08_go_main_test/ rel=bookmark>main関数を分けたのでテストも書く</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -227,28 +248,6 @@ https://mercari.connpass.com/event/141122/ 19:40 ~ morikuni GopherCon 2019 Gophe
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/07/17_chromebook_golang/ rel=bookmark>Chromebookにgoの最新版をインストール</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-07-17T00:00:00>2019-07-17</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-apt-get だと最新版が入らないので、1.13に備えて最新版をインストールする手順を確認しておく。 C101PAのOP1はARM系CPUなのでarm64用のファイルを使用する。 C223NAはintel入ってるのでx86-64でいけるはず。 環境 C101PA Linux(ベータ) 手順 https://github.com/golang/go/wiki/ChromeOS を参考に進める https://golang.org/dl/ から go1.12.7.linux-arm64.tar.gz をダウンロード $ wget wget
-<a href=/blog/posts/2019/07/17_chromebook_golang/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/chromebook rel=tag>chromebook</a>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -282,10 +281,13 @@ apt-get だと最新版が入らないので、1.13に備えて最新版をイ�
 <h2>最近の投稿</h2>
 <ul>
 <li>
-<a href=/blog/posts/2022/07/16_id_column/>idとauto increment</a>
+<a href=/blog/posts/2022/07/16_go_json/>GoのJSON</a>
 </li>
 <li>
-<a href=/blog/posts/2022/07/16_live_share/>Live Share on GitHub Codespaces</a>
+<a href=/blog/posts/2022/07/15_id_column/>idとauto increment</a>
+</li>
+<li>
+<a href=/blog/posts/2022/07/15_live_share/>Live Share on GitHub Codespaces</a>
 </li>
 <li>
 <a href=/blog/posts/2022/07/15_pocketbase/>PocketBaseの更新</a>
@@ -307,9 +309,6 @@ apt-get だと最新版が入らないので、1.13に備えて最新版をイ�
 </li>
 <li>
 <a href=/blog/posts/2022/07/09_mysql/>adminer</a>
-</li>
-<li>
-<a href=/blog/posts/2022/07/09_fleet/>Fleetお試し</a>
 </li>
 </ul>
 </aside>
