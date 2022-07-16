@@ -14,3 +14,5 @@ structを別々に用意して、Unmarshalでエラーになったらもう片�
 - [mattn/go-jsonpointer](https://github.com/mattn/go-jsonpointer)
 
 が紹介されていて、指定の仕方がわかりやすそうな go-jsonpointer を使ってみることにした。
+
+そもそも、PocketBaseがエラーでもHTTPステータスコード200を返してくるのを変えるようにすれば良いのか？？
