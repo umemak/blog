@@ -72,6 +72,34 @@ USD 106.48
 よくわからないけど81.48USDくらいかな。。</p>
 <p>月間リクエスト数を100,000,000に設定したのが上記値段で、一桁減らすとGCPもAzureも5.3USDくらいに落ちる。</p>
 <p>メモリやCPU変えてもそこまで劇的に変化しないので、リクエスト数がコスト計算のカギになりそう。</p>
+<p>いや、vCPU-sとGiB-sで比較するのが正解か。</p>
+<table>
+<thead>
+<tr>
+<th>|GCP</th>
+<th style=text-align:right>Azure</th>
+<th style=text-align:right>AWS</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vCPU-s</td>
+<td style=text-align:right>0.0000240</td>
+<td style=text-align:right>0.0000240</td>
+<td style=text-align:right>0.0000225</td>
+</tr>
+<tr>
+<td>GiB-s</td>
+<td style=text-align:right>0.0000025</td>
+<td style=text-align:right>0.0000030</td>
+<td style=text-align:right>0.0000025</td>
+</tr>
+</tbody>
+</table>
+<p>AWSが若干安いけれど、「プロビジョニングされたコンテナインスタンス」の分が0.00000194加算されるとほぼ誤差。</p>
+<p>つまり金額は選定の決め手にならない。</p>
+<p>使い勝手なんかは、実際触ってみないとなんとも。。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
