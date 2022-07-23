@@ -14,10 +14,13 @@ tags: ["aws", "azure", "gcp"]
 リージョンは東京で、シングル構成の前払いなし。
 
 |  | GCP | Azure | AWS |
-|---|--:|--:|--:|
+|---|---|---|---|
 |1vCPU/2GiB/30GB|57.57USD|41.56USD|42.10USD|
 
 GCPが高い。
 
 vCPUとメモリはAzureの選択肢に合わせた。
-AWSだともっと低いスペックも選択できるので、開発やデモで使うならAWSか。
+AWSだともっと低いスペックも選択できるので、開発やデモで使うならAWSかな。
+
+ちなみにAWSのAuroraは、最低スペック（1vCPU/2GiB）で50.22USD。
+Aurora Serverless v2は最低73USDだった。
