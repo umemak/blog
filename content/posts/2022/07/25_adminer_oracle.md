@@ -1,5 +1,5 @@
 ---
-title: "AdminerのOracl対応"
+title: "AdminerのOracle対応"
 date: "2022-07-25"
 tags: ["Docker", "Oracle"]
 
