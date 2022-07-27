@@ -40,6 +40,29 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2019/10/01_google_cloud_build_day/ rel=bookmark>Google Cloud Build Day</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2019-10-01T00:00:00>2019-10-01</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+https://gcpug-tokyo.connpass.com/event/143453/ GCPのCloud Buildサービスに関する話。 AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの。 19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo イベントベースでビルドのトリガー（GitHubのpushとか） テストの実行とアーティファクトのビルド 雑に言う
+<a href=/blog/posts/2019/10/01_google_cloud_build_day/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/gcp rel=tag>GCP</a>
+<a href=https://umemak.github.io/tags/ci/cd rel=tag>CI/CD</a>
+<a href=https://umemak.github.io/tags/event rel=tag>event</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2019/10/01_start_writing/ rel=bookmark>技術を伝えるテクニック 〜分かりやすい書き方・話し方〜</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -229,27 +252,6 @@ Hugoの実行とPUSHをやってもらう https://blog.kaikeru.com/post/20181228
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/08/21_hugo/ rel=bookmark>Hugoの導入</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-08-21T00:00:00>2019-08-21</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-やってみよう インストール https://gohugo.io/getting-started/installing/#linux を見たら apt でいけるらしいので $ apt install hugo $ hugo version Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-31T01:01:10+09:00 v0.18.1 ってだいぶ古い。。 $ sudo apt remove hugo $ wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.tar.gz $ sha256sum hugo_extended_0.57.2_Linux-64bit.tar.gz f4ce91d6909d489fe5461633f6b6bd689ed14c9e06b1b7af110024420aa8fd91 hugo_extended_0.57.2_Linux-64bit.tar.gz $ tar zxvf hugo_extended_0.57.2_Linux-64bit.tar.gz LICENSE README.md hugo $ sudo cp hugo /usr/local/bin/ $ hugo version Hugo Static Site Generator v0.57.2-A849CB2D/extended linux/amd64 BuildDate: 2019-08-17T17:57:54Z OK。 サイト作成 $ hugo new site blog テーマ追加 $ cd blog $ git clone https://github.com/Track3/hermit.git themes/hermit $ echo 'theme = "hermit"' >> config.toml コンテンツ追加 $ hugo new posts/my-first-post.md 表示確認 $ hugo server -D Building sites … ERROR 2019/08/21 11:29:11 render of "section" failed: execute
-<a href=/blog/posts/2019/08/21_hugo/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/hugo rel=tag>hugo</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -319,6 +321,9 @@ Hugoの実行とPUSHをやってもらう https://blog.kaikeru.com/post/20181228
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/07/27_adminer_oracle/>AdminerのOracle対応</a>
+</li>
+<li>
 <a href=/blog/posts/2022/07/26_adminer_oracle/>AdminerのOracle対応</a>
 </li>
 <li>
@@ -344,9 +349,6 @@ Hugoの実行とPUSHをやってもらう https://blog.kaikeru.com/post/20181228
 </li>
 <li>
 <a href=/blog/posts/2022/07/19_error_handring/>Goのエラー処理</a>
-</li>
-<li>
-<a href=/blog/posts/2022/07/19_pocketbase/>PocketbaseのCollections</a>
 </li>
 </ul>
 </aside>
