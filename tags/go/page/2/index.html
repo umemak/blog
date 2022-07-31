@@ -40,6 +40,29 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/12_oracle_docker_go3/ rel=bookmark>OracleにGoで接続する3</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-12T00:00:00>2022-06-12</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+昨日は、mattn/go-oci8: Oracle driver for Go using database/sqlとsijms/go-ora: Pure go oracle clientを使ったサンプルをコンテナ上でgo runして動かしていた。 今日はgo buildでバイナリにして実行できるようにしてみる。 何もオプション付けずにビルドしたら、どちらも問題なし。 バイナリサ
+<a href=/blog/posts/2022/06/12_oracle_docker_go3/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
+<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/06/11_oracle_docker_go/ rel=bookmark>OracleにGoで接続する</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -225,27 +248,6 @@ EOTとかbyteのスライスをconstで定義しようとしてできなかっ�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/11/28_go_interface/ rel=bookmark>Goのinterfaceを学ぶ</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-11-28T00:00:00>2020-11-28</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-golintのexported %s %s returns unexported type %s, which can be annoying to useを解消したい。 interfaceを定義して回避するのが一般的？らしい。 structが入れ子になっていて、内側のstructにメソッドが定義されていると、cannot call pointer methodとなり呼べない。 https://play.golang.org/p/yvWspYJnYSv pointerを返してあげれば良い。 https://play.golang.org/p/l_l4tMAD-Bd シング
-<a href=/blog/posts/2020/11/28_go_interface/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -279,6 +281,9 @@ golintのexported %s %s returns unexported type %s, which can be annoying to use
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/07/31_go_error_wrap/>Go言語のエラーラッピング</a>
+</li>
+<li>
 <a href=/blog/posts/2022/07/30_code_book/>良いコード／悪いコードで学ぶ設計入門</a>
 </li>
 <li>
@@ -304,9 +309,6 @@ golintのexported %s %s returns unexported type %s, which can be annoying to use
 </li>
 <li>
 <a href=/blog/posts/2022/07/23_database/>データベース比較</a>
-</li>
-<li>
-<a href=/blog/posts/2022/07/22_container/>コンテナ実行環境比較</a>
 </li>
 </ul>
 </aside>
