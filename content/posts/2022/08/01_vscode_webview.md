@@ -16,3 +16,5 @@ Live Preview入れてみたけど、これ拡張機能のサーバーしかプ�
 他にないか探してみて、[VS Browser - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Phu1237.vs-browser)を入れてみた。
 
 良さそうだけど、動作がちょっと不安定かな。ページが開けたり開けなかったりする。
+
+ということでアンインストール。MSのLive Previewがどこでも開ければそれだけで良いのに。
