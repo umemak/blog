@@ -38,3 +38,5 @@ v1.10.0
 ```
 
 エラー消えて生成できるようになった。
+
+たしかに1.11.0の[Releases](https://github.com/kyleconroy/sqlc/releases/tag/v1.11.0)に[fix(compiler): Validate table alias references by timstudd · Pull Request #1283 · kyleconroy/sqlc](https://github.com/kyleconroy/sqlc/pull/1283)がある。
