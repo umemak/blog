@@ -40,6 +40,23 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/02/16_crontab/ rel=bookmark>crontabの範囲指定について</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-02-16T00:00:00>2022-02-16</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+crontab、-で範囲指定ができるけれど、大小関係が逆だったらどうなるか気になったので調べてみた。 59-1 * * * * time こういうやつ。 dockerでalpine使って動かしたところ、想定通り59,0,1で実行された。
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/02/16_mdmml/ rel=bookmark>リファクタリング</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -193,23 +210,6 @@
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/02/07_mdmml/ rel=bookmark>MDMML</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-07T00:00:00>2022-02-07</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-メタ情報をMarkDownのFront Matterで書けるようにした。 タイトルとかテンポとか。
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -280,6 +280,9 @@
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/08/06_sqlc/>sqlcのエラー</a>
+</li>
+<li>
 <a href=/blog/posts/2022/08/05_openapi_generator_src/>OpenAPI generatorのソース</a>
 </li>
 <li>
@@ -305,9 +308,6 @@
 </li>
 <li>
 <a href=/blog/posts/2022/07/28_sqlc/>sqlc</a>
-</li>
-<li>
-<a href=/blog/posts/2022/07/27_adminer_oracle/>AdminerのOracle対応</a>
 </li>
 </ul>
 </aside>
