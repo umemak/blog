@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/07/28_sqlc/ rel=bookmark>sqlc</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-07-28T00:00:00>2022-07-28</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+別の調べものをしていて見つけたsqlc.dev | Compile SQL to type-safe Goを試してみた。 schema.sqlは、今までMySQLの起動時に読み込ませていたSQLファイルがそのまま使えた。 query.sqlもgoのmodelパッケージ内に書いていたSQLをコピペで作れた。 結構良いかも。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>Go</a>
+<a href=https://umemak.github.io/tags/db rel=tag>DB</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/07/27_adminer_oracle/ rel=bookmark>AdminerのOracle対応</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -231,27 +252,6 @@ Generators Listを眺めていたら、mysql-schemaなんてのがあったの�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/07/19_error_handring/ rel=bookmark>Goのエラー処理</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-07-19T00:00:00>2022-07-19</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-fmt.Errorf("～～: %w", err)の書き方にルールあるのかな、と思って調べたら、先人の記事があった。 fmt.Errorfのメッセージについての調査と、linterとしての実装について | CyberAgent Developers Blog いつもその時の雰囲気で書いていたので、こういったルールで揃えられるのは良い。 もうひとつ、tem
-<a href=/blog/posts/2022/07/19_error_handring/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -322,6 +322,9 @@ fmt.Errorf("～～: %w", err)の書き方にルールあるのかな、と思っ
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/08/07_sqlc_with/>sqlcのエラー2</a>
+</li>
+<li>
 <a href=/blog/posts/2022/08/06_sqlc/>sqlcのエラー</a>
 </li>
 <li>
@@ -347,9 +350,6 @@ fmt.Errorf("～～: %w", err)の書き方にルールあるのかな、と思っ
 </li>
 <li>
 <a href=/blog/posts/2022/07/29_openapi_generator/>OpenAPI Generator go-server</a>
-</li>
-<li>
-<a href=/blog/posts/2022/07/28_sqlc/>sqlc</a>
 </li>
 </ul>
 </aside>

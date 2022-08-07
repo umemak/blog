@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/08/07_sqlc_with/ rel=bookmark>sqlcのエラー2</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-08-07T00:00:00>2022-08-07</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+sqlc@v1.10.0だと、 -- name: ListCommentsTree :many WITHRECURSIVErAS(SELECT*FROMcommentsWHEREcomments.id=?UNIONALLSELECTcomments.*FROMcomments,rWHEREcomments.parent_id=r.id)SELECT*FRO
+<a href=/blog/posts/2022/08/07_sqlc_with/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/sqlc rel=tag>sqlc</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/08/06_sqlc/ rel=bookmark>sqlcのエラー</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -102,6 +123,9 @@ Documentation for the go-server Generatorで生成したファイルとsqlc.dev 
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/08/07_sqlc_with/>sqlcのエラー2</a>
+</li>
+<li>
 <a href=/blog/posts/2022/08/06_sqlc/>sqlcのエラー</a>
 </li>
 <li>
@@ -127,9 +151,6 @@ Documentation for the go-server Generatorで生成したファイルとsqlc.dev 
 </li>
 <li>
 <a href=/blog/posts/2022/07/29_openapi_generator/>OpenAPI Generator go-server</a>
-</li>
-<li>
-<a href=/blog/posts/2022/07/28_sqlc/>sqlc</a>
 </li>
 </ul>
 </aside>
