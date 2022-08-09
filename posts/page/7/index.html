@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/20_flutter_auth/ rel=bookmark>Flutterでリロードしたときもログイン状態を維持する</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-20T00:00:00>2022-06-20</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+毎回ログイン画面に遷移して面倒だなぁと思っていた件。 FlutterWebでFirebaseAuthのcurrentUserがリロード時にnullになることに対しての対処法 同様に、runAppの前に await FirebaseAuth.instance.userChanges().first; を入れたら解消した。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/flutter rel=tag>Flutter</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/06/19_flutter_dir/ rel=bookmark>Flutterのディレクトリ構成</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -230,29 +250,6 @@ DropdownButton class - material library - Dart APIのサンプルを持ってき
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/06/11_oracle_docker_go2/ rel=bookmark>OracleにGoで接続する2</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-06-11T00:00:00>2022-06-11</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 pkg-config: exec: "pkg-config": executable file not found in $PATH sh-4.4# yum install -y pkgconfig sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 Package oci8 was not found in the pkg-config search path. Perhaps you should add the directory containing `oci8.pc' to the PKG_CONFIG_PATH environment variable Package 'oci8', required by 'virtual:world', not found pkg-config: exit status 1 とりあえずmain.goと同じところにoci8.pcを作成。中身はExamples。 sh-4.4# export PKG_CONFIG_PATH=. sh-4.4# go run go-oci8/main.go # github.com/mattn/go-oci8 cgo: C compiler "gcc" not found: exec: "gcc":
-<a href=/blog/posts/2022/06/11_oracle_docker_go2/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
-<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -298,8 +295,9 @@ mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4
 <a href=/blog/posts/page/38/>38</a>
 <a href=/blog/posts/page/39/>39</a>
 <a href=/blog/posts/page/40/>40</a>
+<a href=/blog/posts/page/41/>41</a>
 <a href=/blog/posts/page/8/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/posts/page/40/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/posts/page/41/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -322,6 +320,9 @@ mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2022/08/09_dns/>DNS不調</a>
+</li>
 <li>
 <a href=/blog/posts/2022/08/08_ffmpeg_srt/>FFmpegで字幕</a>
 </li>
@@ -348,9 +349,6 @@ mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4
 </li>
 <li>
 <a href=/blog/posts/2022/07/31_go_error_wrap/>Go言語のエラーラッピング</a>
-</li>
-<li>
-<a href=/blog/posts/2022/07/30_code_book/>良いコード／悪いコードで学ぶ設計入門</a>
 </li>
 </ul>
 </aside>
