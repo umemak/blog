@@ -40,6 +40,28 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/07/25_adminer_oracle/ rel=bookmark>AdminerのOracle対応</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-07-25T00:00:00>2022-07-25</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+Adminer - Database management in a single PHP fileのDockerイメージAdminer - Official Image | Docker Hubは、Oracle接続に必要なモジュールが入っていない。 PHP: インストール/設定 - Manualによると、Instant Client for Linux x86-64 (64-bit)のBasicと、oci8が必要らしい。 DockerfileはOfficial Imageの
+<a href=/blog/posts/2022/07/25_adminer_oracle/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
+<a href=https://umemak.github.io/tags/oracle rel=tag>Oracle</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/07/25_prisma/ rel=bookmark>Prisma</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -230,26 +252,6 @@ fmt.Errorf("～～: %w", err)の書き方にルールあるのかな、と思っ
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/07/18_go_include/ rel=bookmark>Goのtemplateのinclude</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-07-18T00:00:00>2022-07-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-テンプレートのincludeってどうやるんだっけ、と思って検索した。 Go の html/template でヘッダーやフッター等の共通化を実現する方法 · Yutaka 🍊 Kato なるほど、{{define "header"}}～{{end}}で定義して、{{template "header" .}}で呼び出すのか。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -321,6 +323,9 @@ fmt.Errorf("～～: %w", err)の書き方にルールあるのかな、と思っ
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/08/14_go_book/>詳解Go言語Webアプリケーション開発</a>
+</li>
+<li>
 <a href=/blog/posts/2022/08/13_srt_vtt/>字幕ファイルの形式</a>
 </li>
 <li>
@@ -346,9 +351,6 @@ fmt.Errorf("～～: %w", err)の書き方にルールあるのかな、と思っ
 </li>
 <li>
 <a href=/blog/posts/2022/08/05_openapi_generator_src/>OpenAPI generatorのソース</a>
-</li>
-<li>
-<a href=/blog/posts/2022/08/04_openapi_sqlc/>OpenAPIとsqlcの連携</a>
 </li>
 </ul>
 </aside>
