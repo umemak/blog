@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/08/24_ginkgo/ rel=bookmark>Ginkgo難解</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-08-24T00:00:00>2022-08-24</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+Ginkgo使えば使うほどわからなくなってくる。 上から順番に、途中経過もチェックしながら実行したいだけなんだけどなぁ。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/08/21_go_book/ rel=bookmark>詳解Go言語Webアプリケーション開発</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -226,27 +246,6 @@ fmt.Errorf("～～: %w", err)の書き方にルールあるのかな、と思っ
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/07/18_go_redirect/ rel=bookmark>Goのredirect</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-07-18T00:00:00>2022-07-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-ログアウトの処理（GET /logout）実行後にトップページにリダイレクトしようとした。 http.Redirect(w, r, &ldquo;/&rdquo;, 301) おや？動作しない時がある。。 301だと、ブラウザはリダイレクト先を覚えて、次からはリダイレクト先を最初から叩くっぽい。 なので、302にしてあげないと思ったような動きにならない。 ところで、Goのhttpパッ
-<a href=/blog/posts/2022/07/18_go_redirect/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -281,6 +280,9 @@ fmt.Errorf("～～: %w", err)の書き方にルールあるのかな、と思っ
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/08/24_ginkgo/>Ginkgo難解</a>
+</li>
+<li>
 <a href=/blog/posts/2022/08/23_next_book/>Next.js再入門</a>
 </li>
 <li>
@@ -306,9 +308,6 @@ fmt.Errorf("～～: %w", err)の書き方にルールあるのかな、と思っ
 </li>
 <li>
 <a href=/blog/posts/2022/08/15_ginkgo/>Ginkgo難解</a>
-</li>
-<li>
-<a href=/blog/posts/2022/08/14_go_book/>詳解Go言語Webアプリケーション開発</a>
 </li>
 </ul>
 </aside>
