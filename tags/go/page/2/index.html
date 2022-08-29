@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/07/28_sqlc/ rel=bookmark>sqlc</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-07-28T00:00:00>2022-07-28</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+別の調べものをしていて見つけたsqlc.dev | Compile SQL to type-safe Goを試してみた。 schema.sqlは、今までMySQLの起動時に読み込ませていたSQLファイルがそのまま使えた。 query.sqlもgoのmodelパッケージ内に書いていたSQLをコピペで作れた。 結構良いかも。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>Go</a>
+<a href=https://umemak.github.io/tags/db rel=tag>DB</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/07/19_error_handring/ rel=bookmark>Goのエラー処理</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -233,29 +254,6 @@ go-oci8を使ったイメージの、oraclelinux8をベースイメージにし�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/06/11_oracle_docker_go/ rel=bookmark>OracleにGoで接続する</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-06-11T00:00:00>2022-06-11</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-前の記事でsqlplusで接続できたので、Goのプログラムから接続してみる。 instantclientベースでGoをインストールするDockerfile作成 FROMghcr.io/oracle/oraclelinux8-instantclient:21RUN yum install -y wget tarRUN wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gzRUN rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.3.linux-amd64.tar.gzENV PATH="${PATH}:/usr/local/go/bin"CMD [ "go", "version" ]docker-composeもそれを使うように修正 version:'3'services:db:image:container-registry.oracle.com/database/expressports:- 1521:1521environment:- ORACLE_PWD=OraclePwdcli
-<a href=/blog/posts/2022/06/11_oracle_docker_go/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
-<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -290,6 +288,9 @@ go-oci8を使ったイメージの、oraclelinux8をベースイメージにし�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/08/29_mlt/>MLTファイル生成</a>
+</li>
+<li>
 <a href=/blog/posts/2022/08/28_mlt_vtt/>MLTファイルとVTTと</a>
 </li>
 <li>
@@ -315,9 +316,6 @@ go-oci8を使ったイメージの、oraclelinux8をベースイメージにし�
 </li>
 <li>
 <a href=/blog/posts/2022/08/20_github_auth/>GitHubでpushできなかった</a>
-</li>
-<li>
-<a href=/blog/posts/2022/08/19_apprunner/>AWS App Runner</a>
 </li>
 </ul>
 </aside>
