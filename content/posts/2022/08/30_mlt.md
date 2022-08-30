@@ -14,3 +14,5 @@ xsdファイルがあれば[droyo/go-xml: utility and code-generation libraries 
 っていうかdtdをstructに書き換えれば良いのか？
 
 と思ったけど良さそうなものが見つかった。[miku/zek: Generate a Go struct from XML.](https://github.com/miku/zek)。
+
+[できた](https://github.com/umemak/ffmpeg_test/commit/8474ff2d6157bb379589c0db3612adf698dbe683)
