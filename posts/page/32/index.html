@@ -40,6 +40,29 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2020/07/08_awscli_wsl2/ rel=bookmark>WSL2でAWS CLIを使ってS3のフォルダ名を変更する</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2020-07-08T00:00:00>2020-07-08</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+S3って、マネジメントコンソールからフォルダ名の変更ってできないんですね。。 こちらを参考に。 SurfaceにしてからAWS CLIインストールしてなかったし、せっかくなのでWLS2のUbuntuでやってみます。 公式のDocker版でインストール（というほどのことでもないですが）。 $ docker run --rm -it amazon/aws-cli --version aws-cli/2.0.29 Python/3.7.3 Linux/4.19.104-microsoft-standard botocore/2.0.0dev33
+<a href=/blog/posts/2020/07/08_awscli_wsl2/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/wsl rel=tag>wsl</a>
+<a href=https://umemak.github.io/tags/aws rel=tag>aws</a>
+<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2020/06/22_update_hugo/ rel=bookmark>Hugoのバージョンアップ</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -234,27 +257,6 @@ Wiki.jsをservice化したときに、nobodyユーザーだと80番ポートでl
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/05/24_wikijs/ rel=bookmark>Wiki.jsを試す</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-05-24T00:00:00>2020-05-24</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-GCP無料枠でWikiを動かしてみるシリーズ。 今回はWiki.js。 docker-composeを使う方法も用意されているが、軽量優先で通常インストールのほうで。 https://docs.requarks.io/install/linux config.ymlの編集では、ポートを80に、DBをsqliteに変更した。 $ sudo apt install wget nodejs npm $ wget https://github.com/Requarks/wiki/releases/download/2.3.81/wiki-js.tar.gz $ mkdir wiki $ tar xzf wiki-js.tar.gz -C ./wiki $ cd ./wiki $ mv config.sample.yml config.yml $ nano config.yml
-<a href=/blog/posts/2020/05/24_wikijs/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/wikijs rel=tag>wikijs</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -328,6 +330,9 @@ GCP無料枠でWikiを動かしてみるシリーズ。 今回はWiki.js。 dock
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/09/01_docker_restart/>docker composeで特定コンテナの再起動</a>
+</li>
+<li>
 <a href=/blog/posts/2022/08/31_movie/>動画編集のフロー</a>
 </li>
 <li>
@@ -353,9 +358,6 @@ GCP無料枠でWikiを動かしてみるシリーズ。 今回はWiki.js。 dock
 </li>
 <li>
 <a href=/blog/posts/2022/08/23_next_book/>Next.js再入門</a>
-</li>
-<li>
-<a href=/blog/posts/2022/08/22_mlt/>MLTファイルを作る3</a>
 </li>
 </ul>
 </aside>

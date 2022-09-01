@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2019/11/14_reinstall_ol/ rel=bookmark>Oracle Linux再セットアップ</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2019-11-14T00:00:00>2019-11-14</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+mattermostが動かないのは、素のyumでインストールしたdockerのバージョンが古いことが原因の可能性があるので、最新版に入れ直す。 素で入れた方のバージョン $ docker --version Docker version 18.09.8-ol, build 76804b7 既存の環境でやるのはまた何が起こるかわからないので、インスタンスを再作成してやり直す。 手順 https://docs.docker.com/install/linux/docker-ce/centos/ $ sudo yum update -y $ docker --version -bash: docker: command not found
+<a href=/blog/posts/2019/11/14_reinstall_ol/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2019/11/13_k8s_meetup_tokyo_25/ rel=bookmark>Kubernetes Meetup Tokyo #25</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -229,28 +250,6 @@ Disqusのコメント欄を設置してみる。 最初、表示されなくて�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/11/05_golang_tokyo_27/ rel=bookmark>golang.tokyo #27</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-11-05T00:00:00>2019-11-05</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-https://techplay.jp/event/753881 先日のGo Conferenceには参加できなかったので、当選できてよかった。 19:00 ~ 開場・受付 乾杯！ 19:30 ~ 19:35 オープニング DevQuizの解説。思ってた動作と違かった。。 当日発表になった登壇者とスケジュール。予定より本数が少なくなっていました。 19:35 ~ 19:55 Session 1 Creating shell magager with golang / @yusuke_k0matsu https://speakerdeck.com/usk81/create-shell-manager-with-golang shway https://github.com/getshway/shway dotfileの管理方法のベスト
-<a href=/blog/posts/2019/11/05_golang_tokyo_27/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/golang rel=tag>golang</a>
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -324,6 +323,9 @@ https://techplay.jp/event/753881 先日のGo Conferenceには参加できなか�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/09/01_docker_restart/>docker composeで特定コンテナの再起動</a>
+</li>
+<li>
 <a href=/blog/posts/2022/08/31_movie/>動画編集のフロー</a>
 </li>
 <li>
@@ -349,9 +351,6 @@ https://techplay.jp/event/753881 先日のGo Conferenceには参加できなか�
 </li>
 <li>
 <a href=/blog/posts/2022/08/23_next_book/>Next.js再入門</a>
-</li>
-<li>
-<a href=/blog/posts/2022/08/22_mlt/>MLTファイルを作る3</a>
 </li>
 </ul>
 </aside>
