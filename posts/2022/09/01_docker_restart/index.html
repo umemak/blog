@@ -52,11 +52,11 @@
 </div>
 </header>
 <div class=post-content>
-<p>docker composeで、複数コンテナを動かしているときに、その中の特定のコンテナのイメージを更新して再起動したい。
+<p><code>docker compose up -d</code>で複数コンテナを動かしているときに、その中の特定のコンテナのイメージを更新して再起動したい。
 できればその他のコンテナは再起動したくない。</p>
 <p>そんなの<code>docker compose stop hogehoge</code>して<code>docker compose start hogehoge</code>したらいいと思ってた。</p>
 <p>ログ的には再起動されるけれども、コンテナイメージは古いままだった。</p>
-<p>結局、<code>docker compose up -d</code>したら期待してた動作になった。</p>
+<p>結局、<code>docker compose up -d hogehoge</code>したら期待してた動作になった。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
@@ -78,6 +78,7 @@
 <a class=previous href=https://umemak.github.io/blog/posts/2022/08/31_movie/> 動画編集のフロー</a>
 </div>
 <div class=nav-next>
+<a class=next href=https://umemak.github.io/blog/posts/2022/09/02_next_book/> Next.js本</a>
 </div>
 </div>
 </nav>
@@ -95,6 +96,9 @@
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2022/09/02_next_book/>Next.js本</a>
+</li>
 <li>
 <a href=/blog/posts/2022/09/01_docker_restart/>docker composeで特定コンテナの再起動</a>
 </li>
@@ -121,9 +125,6 @@
 </li>
 <li>
 <a href=/blog/posts/2022/08/24_ginkgo/>Ginkgo難解</a>
-</li>
-<li>
-<a href=/blog/posts/2022/08/23_next_book/>Next.js再入門</a>
 </li>
 </ul>
 </aside>
