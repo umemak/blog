@@ -1,5 +1,5 @@
 ---
-title: "Next.js本"
+title: "別のNext.js本"
 date: "2022-09-03"
 tags: ["react","nextjs"]
 
