@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/07/29_openapi_generator/ rel=bookmark>OpenAPI Generator go-server</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-07-29T00:00:00>2022-07-29</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+Documentation for the go-server Generatorで、routerはmuxとchiが選べると書いてあって、省略時はmuxとのこと。 chiの指定方法がわからなかったので調べた。 $ wget https://raw.githubusercontent.com/openapitools/openapi-generator/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml $ docker run --rm \ -v ${PWD}:/local openapitools/openapi-generator-cli generate \ -i /local/petstore.yaml \ -g go-server \ --additional-properties=router=chi \ -o /local/out と、--additional-propertiesにつけるらしい。、 他のパラメータ、たとえばsererP
+<a href=/blog/posts/2022/07/29_openapi_generator/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/openapi rel=tag>OpenAPI</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/07/28_sqlc/ rel=bookmark>sqlc</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -231,27 +252,6 @@ Generators Listを眺めていたら、mysql-schemaなんてのがあったの�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/07/20_pocketbase_migratin/ rel=bookmark>PocketbaseのMigration</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-07-20T00:00:00>2022-07-20</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-昨日、Migratinが用意されているのを知って、試してみたけれど思ったように動かず。 マイグレーションにしか使わないパッケージもいくつかimportが必要だし、明示的にmigrate upしないといけない。 であれば、普通にHTTP APIでCreate Collectionしても良いかなという気持ちになっ
-<a href=/blog/posts/2022/07/20_pocketbase_migratin/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/poketbase rel=tag>poketbase</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -325,6 +325,9 @@ Generators Listを眺めていたら、mysql-schemaなんてのがあったの�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/09/07_next_book/>TypeScriptとReact/Next.jsでつくる実践Webアプリケーション開発</a>
+</li>
+<li>
 <a href=/blog/posts/2022/09/06_gitea/>Gitea移行</a>
 </li>
 <li>
@@ -350,9 +353,6 @@ Generators Listを眺めていたら、mysql-schemaなんてのがあったの�
 </li>
 <li>
 <a href=/blog/posts/2022/08/29_mlt/>MLTファイル生成</a>
-</li>
-<li>
-<a href=/blog/posts/2022/08/28_mlt_vtt/>MLTファイルとVTTと</a>
 </li>
 </ul>
 </aside>
