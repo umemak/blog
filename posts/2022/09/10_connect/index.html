@@ -65,6 +65,14 @@ npm ERR! Please make sure you have the correct access rights
 npm ERR! and the repository exists.
 </code></pre></div><p>とりあえず置いておいて先に進めるが、結局buf generateするところで出力先がないのでエラーになってしまった。</p>
 <p>frontendとAPIサーバー一つにまとまられると、PocketBase見たいで良いなーと思ったんだけど、残念。</p>
+<p>その後、</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ npm install --save-dev bufbuild/protoc-gen-connect-web bufbuild/protoc-gen-es
+</code></pre></div><p>これを</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ npm install --save-dev @bufbuild/protoc-gen-connect-web @bufbuild/protoc-gen-es
+</code></pre></div><p>こうしたらエラー解消できた。</p>
+<p>あと</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ npm install @bufbuild/connect-web
+</code></pre></div><p>も必要っぽい。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
