@@ -23,3 +23,20 @@ npm ERR! and the repository exists.
 とりあえず置いておいて先に進めるが、結局buf generateするところで出力先がないのでエラーになってしまった。
 
 frontendとAPIサーバー一つにまとまられると、PocketBase見たいで良いなーと思ったんだけど、残念。
+
+その後、
+```sh
+$ npm install --save-dev bufbuild/protoc-gen-connect-web bufbuild/protoc-gen-es
+```
+これを
+```sh
+$ npm install --save-dev @bufbuild/protoc-gen-connect-web @bufbuild/protoc-gen-es
+```
+こうしたらエラー解消できた。
+
+あと
+```sh
+$ npm install @bufbuild/connect-web
+```
+も必要っぽい。
+
