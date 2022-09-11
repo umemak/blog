@@ -40,6 +40,28 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/09/11_openapi2proto/ rel=bookmark>OpenAPIからgRPCへの移行</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-09-11T00:00:00>2022-09-11</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+今あるOpenAPI用の定義yamlファイルからgRPC用のprotoファイルが生成できないかなと思い、検索したら良さそうなものが見つかった。 nytimes/openapi2proto: A tool for generating Protobuf v3 schemas and gRPC service definitions from OpenAPI specifications https://github.com/umemak/eventsite_go/blob/main/openapi.yml でやってみた。 $ go install github.com/NYTimes/openapi2proto/cmd/openapi2proto $ openapi2proto -spec openapi.yml -annotate syntax = "proto3"; package eventsite; import "google/api/annotations.proto"; import "google/protobuf/empty.proto"; service EventsiteService { // Get all events. rpc GetEvents(google.protobuf.Empty) returns (google.protobuf.Empty) { option (google.api.http) = { get: "/events" }; } // Create event. rpc PostEvents(google.protobuf.Empty) returns (google.protobuf.Empty) { option (google.api.http) = { post: "/events" }; } } s
+<a href=/blog/posts/2022/09/11_openapi2proto/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+<a href=https://umemak.github.io/tags/grpc rel=tag>gRPC</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/09/10_connect/ rel=bookmark>gRPCを触ってみる</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -232,27 +254,6 @@ Amazon.co.jp: TypeScriptとReact/Next.jsでつくる実践Webアプリケーシ�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/09/01_docker_restart/ rel=bookmark>docker composeで特定コンテナの再起動</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-09-01T00:00:00>2022-09-01</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-docker compose up -dで複数コンテナを動かしているときに、その中の特定のコンテナのイメージを更新して再起動したい。 できればその他のコンテナは再起動したくない。 そんなのdocker compose stop hogehogeしてdocker compose start hogehogeしたらいいと思ってた。 ログ的には再起動されるけれども、コンテナイメージは古いま
-<a href=/blog/posts/2022/09/01_docker_restart/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -327,6 +328,9 @@ docker compose up -dで複数コンテナを動かしているときに、その
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/09/11_openapi2proto/>OpenAPIからgRPCへの移行</a>
+</li>
+<li>
 <a href=/blog/posts/2022/09/10_connect/>gRPCを触ってみる</a>
 </li>
 <li>
@@ -352,9 +356,6 @@ docker compose up -dで複数コンテナを動かしているときに、その
 </li>
 <li>
 <a href=/blog/posts/2022/09/02_next_book/>Next.js本</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/01_docker_restart/>docker composeで特定コンテナの再起動</a>
 </li>
 </ul>
 </aside>
