@@ -40,6 +40,28 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/07/10_air/ rel=bookmark>Airを試す</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-07-10T00:00:00>2022-07-10</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+HTMLとかコード修正したときに手動で再起動するのが面倒なので、ホットリロードツールを導入してみた。 cosmtrek/air: ☁️ Live reload for Go apps $ go install github.com/cosmtrek/air@latest $ air init $ air __ _ ___ / /\ | | | |_) /_/--\ |_| |_| \_ , built with Go mkdir /home/umemak/workspace/eventsite_go/tmp watching . watching cmd watching cmd/eventsite watching db watching db/sql watching model watching model/user !exclude tmp watching web watching web/template building... no Go files in /home/umemak/workspace/eventsite_go failed to build, error: exit status 1 ^Ccleaning... see you again~ デフォルトだと、cmdの下のmain.goを見つけてく
+<a href=/blog/posts/2022/07/10_air/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+<a href=https://umemak.github.io/tags/air rel=tag>air</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/07/09_eventsite_go/ rel=bookmark>Goアプリ</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -235,26 +257,6 @@ WSLのGoのバージョンをあげて、GitHub Actionsのバージョン指定�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/03/08_go_main_test/ rel=bookmark>main関数を分けたのでテストも書く</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-03-08T00:00:00>2022-03-08</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-mainのテストは、os.Argsを直接設定するという割と無理やりな書き方でテストしていたけれど、処理部分を別関数にしたので、引数を変えて正常系と異常系をテストし分けることができるようになった。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -290,6 +292,9 @@ mainのテストは、os.Argsを直接設定するという割と無理やりな
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/09/12_proto2openapi/>protoをマスターにする</a>
+</li>
+<li>
 <a href=/blog/posts/2022/09/11_openapi2proto/>OpenAPIからgRPCへの移行</a>
 </li>
 <li>
@@ -315,9 +320,6 @@ mainのテストは、os.Argsを直接設定するという割と無理やりな
 </li>
 <li>
 <a href=/blog/posts/2022/09/03_next_book/>別のNext.js本</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/02_next_book/>Next.js本</a>
 </li>
 </ul>
 </aside>
