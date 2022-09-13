@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/09/13_proto/ rel=bookmark>proto</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-09-13T00:00:00>2022-09-13</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+proto定義何もわからない。。 REST用のパスを定義するために option (google.api.http) = { get : "/example-messages/{id}" }; といった定義が必要で、これを使うには import "google/api/annotations.proto"; が必要らしいという理解なのだけど、これをビルドしようとすると event.proto:6:1: Import "google/api/annotations.proto" was not found or had errors. というエラーが出てしまう。 こういうところで躓くの嫌すぎる。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+<a href=https://umemak.github.io/tags/grpc rel=tag>gRPC</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/09/12_proto2openapi/ rel=bookmark>protoをマスターにする</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -227,27 +248,6 @@ Ginkgo使えば使うほどわからなくなってくる。 上から順番に�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/08/16_openapi_client/ rel=bookmark>OpenAPIクライアントの使い方</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-08-16T00:00:00>2022-08-16</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Documentation for the go Generatorで生成したは良いけれど、使い方がわからず試行錯誤してみていたら、生成したdocsの中にサンプルコードが書かれていた。。 構造体のドキュメントとかだと思ってスルーしてたのが敗因。 生成物はちゃんと見ましょう。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-<a href=https://umemak.github.io/tags/openapi rel=tag>OpenAPI</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -283,6 +283,9 @@ Documentation for the go Generatorで生成したは良いけれど、使い方�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/09/13_proto/>proto</a>
+</li>
+<li>
 <a href=/blog/posts/2022/09/12_proto2openapi/>protoをマスターにする</a>
 </li>
 <li>
@@ -308,9 +311,6 @@ Documentation for the go Generatorで生成したは良いけれど、使い方�
 </li>
 <li>
 <a href=/blog/posts/2022/09/04_next_book/>別のNext.js本写経</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/03_next_book/>別のNext.js本</a>
 </li>
 </ul>
 </aside>

@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2021/12/28_ac/ rel=bookmark>DB再作成</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2021-12-28T00:00:00>2021-12-28</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+データがある状態でデータ構造の変更をかけたせいか、挙動が怪しくなったので一度DynamoDBのテーブルを削除した。 その後、amplify update api、apmlify pushを実行。 したらAppSyncのupdateでエラー終了してしまった。 amplify deleteで丸ごと削除してからamplify pushしたらN
+<a href=/blog/posts/2021/12/28_ac/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2021/12/26_ac/ rel=bookmark>ここまでのまとめ</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -223,27 +244,6 @@ manyToMany だとエントリーとキャンセルの状態を持たせるのが
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2021/12/19_ac/ rel=bookmark>データ構造の見直し</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-12-19T00:00:00>2021-12-19</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-テーブル内に配列を持たせるのではなく、当初考えていたように、関連を管理するテーブルを別に用意したほうが良いのではないだろうか。 $ amplify push ? Do you want to update code for your updated GraphQL API Yes ? Do you want to generate GraphQL statements (queries, mutations and subscription) based on your schema types? This will overwrite your current graphql queries, mutations and subscriptions Yes 気軽に全部Yesしたけど、結構待たされる。 GraphQL（というかDynamoDB？）
-<a href=/blog/posts/2021/12/19_ac/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -318,6 +318,9 @@ manyToMany だとエントリーとキャンセルの状態を持たせるのが
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/09/13_proto/>proto</a>
+</li>
+<li>
 <a href=/blog/posts/2022/09/12_proto2openapi/>protoをマスターにする</a>
 </li>
 <li>
@@ -343,9 +346,6 @@ manyToMany だとエントリーとキャンセルの状態を持たせるのが
 </li>
 <li>
 <a href=/blog/posts/2022/09/04_next_book/>別のNext.js本写経</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/03_next_book/>別のNext.js本</a>
 </li>
 </ul>
 </aside>
