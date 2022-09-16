@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/07/19_error_handring/ rel=bookmark>Goのエラー処理</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-07-19T00:00:00>2022-07-19</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+fmt.Errorf("～～: %w", err)の書き方にルールあるのかな、と思って調べたら、先人の記事があった。 fmt.Errorfのメッセージについての調査と、linterとしての実装について | CyberAgent Developers Blog いつもその時の雰囲気で書いていたので、こういったルールで揃えられるのは良い。 もうひとつ、tem
+<a href=/blog/posts/2022/07/19_error_handring/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/07/18_go_redirect/ rel=bookmark>Goのredirect</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -235,29 +256,6 @@ go-oci8を使ったイメージの、oraclelinux8をベースイメージにし�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/06/11_oracle_docker_go2/ rel=bookmark>OracleにGoで接続する2</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-06-11T00:00:00>2022-06-11</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 pkg-config: exec: "pkg-config": executable file not found in $PATH sh-4.4# yum install -y pkgconfig sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 Package oci8 was not found in the pkg-config search path. Perhaps you should add the directory containing `oci8.pc' to the PKG_CONFIG_PATH environment variable Package 'oci8', required by 'virtual:world', not found pkg-config: exit status 1 とりあえずmain.goと同じところにoci8.pcを作成。中身はExamples。 sh-4.4# export PKG_CONFIG_PATH=. sh-4.4# go run go-oci8/main.go # github.com/mattn/go-oci8 cgo: C compiler "gcc" not found: exec: "gcc":
-<a href=/blog/posts/2022/06/11_oracle_docker_go2/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
-<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -293,6 +291,9 @@ mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/09/16_openapi_test/>OpenAPIで生成したサーバーのテスト</a>
+</li>
+<li>
 <a href=/blog/posts/2022/09/15_chi_proxy/>chiでproxy</a>
 </li>
 <li>
@@ -318,9 +319,6 @@ mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4
 </li>
 <li>
 <a href=/blog/posts/2022/09/07_next_book/>TypeScriptとReact/Next.jsでつくる実践Webアプリケーション開発</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/06_gitea/>Gitea移行</a>
 </li>
 </ul>
 </aside>

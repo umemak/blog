@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/09/16_openapi_test/ rel=bookmark>OpenAPIで生成したサーバーのテスト</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-09-16T00:00:00>2022-09-16</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+よくわからない。 ググるとhttptest使う例が良く出てくるけど、型が合わなくて組み立てられない。 仕方ないので、APIサーバー起動してhttp.NewRequestWithContextで叩いて結果を見るという、E2Eっぽいテストに落ち着きそう。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+<a href=https://umemak.github.io/tags/openapi rel=tag>OpenAPI</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/09/15_chi_proxy/ rel=bookmark>chiでproxy</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -233,27 +254,6 @@ gRPCを触ってみたくなったので、gRPCがフロントエンド通信の
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/09/06_gitea/ rel=bookmark>Gitea移行</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-09-06T00:00:00>2022-09-06</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Giteaをセルフホスティングで動かしていて、古いCentOSからUbuntuに移行してみた。 基本的にはUsage: Backup and Restore - Docsにあるようにbackupしてrestoreなんだけど、もとのバージョンが低いせいか、Wikiが空なのとIssueが表示されない問題が。。 Issueは版行指定でURL直打
-<a href=/blog/posts/2022/09/06_gitea/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/gitea rel=tag>gitea</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -328,6 +328,9 @@ Giteaをセルフホスティングで動かしていて、古いCentOSからUbu
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/09/16_openapi_test/>OpenAPIで生成したサーバーのテスト</a>
+</li>
+<li>
 <a href=/blog/posts/2022/09/15_chi_proxy/>chiでproxy</a>
 </li>
 <li>
@@ -353,9 +356,6 @@ Giteaをセルフホスティングで動かしていて、古いCentOSからUbu
 </li>
 <li>
 <a href=/blog/posts/2022/09/07_next_book/>TypeScriptとReact/Next.jsでつくる実践Webアプリケーション開発</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/06_gitea/>Gitea移行</a>
 </li>
 </ul>
 </aside>

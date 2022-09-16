@@ -40,6 +40,29 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/11_oracle_docker_go2/ rel=bookmark>OracleにGoで接続する2</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-11T00:00:00>2022-06-11</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 pkg-config: exec: "pkg-config": executable file not found in $PATH sh-4.4# yum install -y pkgconfig sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 Package oci8 was not found in the pkg-config search path. Perhaps you should add the directory containing `oci8.pc' to the PKG_CONFIG_PATH environment variable Package 'oci8', required by 'virtual:world', not found pkg-config: exit status 1 とりあえずmain.goと同じところにoci8.pcを作成。中身はExamples。 sh-4.4# export PKG_CONFIG_PATH=. sh-4.4# go run go-oci8/main.go # github.com/mattn/go-oci8 cgo: C compiler "gcc" not found: exec: "gcc":
+<a href=/blog/posts/2022/06/11_oracle_docker_go2/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
+<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/03/20_go_118/ rel=bookmark>Go 1.18</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -223,28 +246,6 @@ https://dena.connpass.com/event/150676/ 19:25 - 19:30 会場説明 @imoty DeNA T
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/08/20_mercari_go_10/ rel=bookmark>mercari.go</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-08-20T00:00:00>2019-08-20</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-https://mercari.connpass.com/event/141122/ 19:40 ~ morikuni GopherCon 2019 GopherConとは 2014年デンバーで始まった。いろんなところでやっている。 今年はサンディエゴで開催 1800人を超える参加者 Mercariの関わり Silver Sponsor BOLD Scholarship 学生向け 11+2名参加 １日目はワークショップ ２日目３日目は発表がメイン ４日目はコミュニティデイ LTとか One MOre Thing Generics(Contracts) Interfaceと
-<a href=/blog/posts/2019/08/20_mercari_go_10/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -280,6 +281,9 @@ https://mercari.connpass.com/event/141122/ 19:40 ~ morikuni GopherCon 2019 Gophe
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/09/16_openapi_test/>OpenAPIで生成したサーバーのテスト</a>
+</li>
+<li>
 <a href=/blog/posts/2022/09/15_chi_proxy/>chiでproxy</a>
 </li>
 <li>
@@ -305,9 +309,6 @@ https://mercari.connpass.com/event/141122/ 19:40 ~ morikuni GopherCon 2019 Gophe
 </li>
 <li>
 <a href=/blog/posts/2022/09/07_next_book/>TypeScriptとReact/Next.jsでつくる実践Webアプリケーション開発</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/06_gitea/>Gitea移行</a>
 </li>
 </ul>
 </aside>
