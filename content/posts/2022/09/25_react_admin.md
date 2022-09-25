@@ -11,6 +11,8 @@ tags: ["react"]
 
 本当はNext.jsでやりたかったので、[How to Run React-Admin On Next.Js](https://marmelab.com/blog/2022/02/02/bootstrap-your-react-admin-project-with-nextjs.html)も試してみたのだけど、うまくいかなかった。
 
+→公式の[React-admin - My First Project Tutorial](https://marmelab.com/react-admin/NextJs.html)を見ながらやったらできた。
+
 OpenAPIで生成したサーバーだと、`X-Total-Count`ヘッダーがないとエラーになったので、`routers.go`に追加した。
 ```go
 func EncodeJSONResponse(i interface{}, status *int, w http.ResponseWriter) error {
