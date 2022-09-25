@@ -55,6 +55,7 @@
 <p><a href=https://marmelab.com/react-admin/>React Admin - Open-Source Framework for B2B applications</a></p>
 <p><a href=https://zenn.dev/engstt/articles/bcdd5c4c3f5b29>react-adminを使って5分で作るハイカラDashboard</a>を参考に、やってみた。</p>
 <p>本当はNext.jsでやりたかったので、<a href=https://marmelab.com/blog/2022/02/02/bootstrap-your-react-admin-project-with-nextjs.html>How to Run React-Admin On Next.Js</a>も試してみたのだけど、うまくいかなかった。</p>
+<p>→公式の<a href=https://marmelab.com/react-admin/NextJs.html>React-admin - My First Project Tutorial</a>を見ながらやったらできた。</p>
 <p>OpenAPIで生成したサーバーだと、<code>X-Total-Count</code>ヘッダーがないとエラーになったので、<code>routers.go</code>に追加した。</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-go data-lang=go><span class=kd>func</span> <span class=nf>EncodeJSONResponse</span><span class=p>(</span><span class=nx>i</span> <span class=kd>interface</span><span class=p>{},</span> <span class=nx>status</span> <span class=o>*</span><span class=kt>int</span><span class=p>,</span> <span class=nx>w</span> <span class=nx>http</span><span class=p>.</span><span class=nx>ResponseWriter</span><span class=p>)</span> <span class=kt>error</span> <span class=p>{</span>
 	<span class=nx>w</span><span class=p>.</span><span class=nf>Header</span><span class=p>().</span><span class=nf>Set</span><span class=p>(</span><span class=s>&#34;Content-Type&#34;</span><span class=p>,</span> <span class=s>&#34;application/json; charset=UTF-8&#34;</span><span class=p>)</span>
