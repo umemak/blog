@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/08/17_host_docker_internal/ rel=bookmark>host.docker.internalとlinux</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-08-17T00:00:00>2022-08-17</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+Docker Desktopでは、host.docker.internalで母艦のIPアドレスが参照できるようになっているのだけど、Docker DesktopではないLinux環境だと使えない。 で、とりあえず172.17.0.1でやってたりするのだけど、これだとうまくいかないときがあるっぽい。 推測調なのは、まだ
+<a href=/blog/posts/2022/08/17_host_docker_internal/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/08/16_openapi_client/ rel=bookmark>OpenAPIクライアントの使い方</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -215,27 +236,6 @@ Shotcutのプロジェクトの保存形式がMLTで、中身はXMLのテキス�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/08/07_sqlc_with/ rel=bookmark>sqlcのエラー2</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-08-07T00:00:00>2022-08-07</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-sqlc@v1.10.0だと、 -- name: ListCommentsTree :many WITHRECURSIVErAS(SELECT*FROMcommentsWHEREcomments.id=?UNIONALLSELECTcomments.*FROMcomments,rWHEREcomments.parent_id=r.id)SELECT*FRO
-<a href=/blog/posts/2022/08/07_sqlc_with/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/sqlc rel=tag>sqlc</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -311,6 +311,9 @@ sqlc@v1.10.0だと、 -- name: ListCommentsTree :many WITHRECURSIVErAS(SELECT*FR
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/09/26_react_admin/>React Adminその2</a>
+</li>
+<li>
 <a href=/blog/posts/2022/09/25_react_admin/>React Admin</a>
 </li>
 <li>
@@ -336,9 +339,6 @@ sqlc@v1.10.0だと、 -- name: ListCommentsTree :many WITHRECURSIVErAS(SELECT*FR
 </li>
 <li>
 <a href=/blog/posts/2022/09/17_figma_book/>Figma for UIデザイン</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/16_openapi_test/>OpenAPIで生成したサーバーのテスト</a>
 </li>
 </ul>
 </aside>
