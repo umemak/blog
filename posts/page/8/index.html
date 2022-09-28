@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/07/21_openapi_generator/ rel=bookmark>OpenAPI Generator</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-07-21T00:00:00>2022-07-21</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+Generators Listを眺めていたら、mysql-schemaなんてのがあったので、試してみた。 $ wget https://raw.githubusercontent.com/openapitools/openapi-generator/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml $ docker run --rm \ -v ${PWD}:/local openapitools/openapi-generator-cli generate \ -i /local/petstore.yaml \ -g mysql-schema \ -o /local/out $ ls -R out/ out/: Model README.md mysql_schema.sql out/Model: ApiResponse.sql Category.sql Order.sql Pet.sql Tag.sql User.sql out/mysql_schema.sqlにDDLが作成されていた。 out/Modelには、CRUD用SQLのテンプレートが作られていた。 pets
+<a href=/blog/posts/2022/07/21_openapi_generator/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/openapi rel=tag>OpenAPI</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/07/20_pocketbase_migratin/ rel=bookmark>PocketbaseのMigration</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -225,26 +246,6 @@ VS CodeのLive Share - Visual Studio Marketplace拡張、Codespaces | GitHubで�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/07/15_pocketbase/ rel=bookmark>PocketBaseの更新</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-07-15T00:00:00>2022-07-15</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-PocketBaseの更新が早い。 Releases · pocketbase/pocketbase 手元のDockerfileもバージョン指定できるように変更した。 https://github.com/umemak/eventsite_go/blob/7bc46cf58fd472582fe70ec32590a43c4d19a3f7/Dockerfile.pocketbase#L3 Admin UIで日時の表示がUTC固定なのをTZ指定できるようにならないかな。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/pocketbase rel=tag>PocketBase</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -295,8 +296,9 @@ PocketBaseの更新が早い。 Releases · pocketbase/pocketbase 手元のDocke
 <a href=/blog/posts/page/43/>43</a>
 <a href=/blog/posts/page/44/>44</a>
 <a href=/blog/posts/page/45/>45</a>
+<a href=/blog/posts/page/46/>46</a>
 <a href=/blog/posts/page/9/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/posts/page/45/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/posts/page/46/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -319,6 +321,9 @@ PocketBaseの更新が早い。 Releases · pocketbase/pocketbase 手元のDocke
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2022/09/28_mui_datepicker/>MUI DesktopDatePicker + react-hook-form</a>
+</li>
 <li>
 <a href=/blog/posts/2022/09/27_mui/>MUI入門</a>
 </li>
@@ -345,9 +350,6 @@ PocketBaseの更新が早い。 Releases · pocketbase/pocketbase 手元のDocke
 </li>
 <li>
 <a href=/blog/posts/2022/09/19_openapi_typescript/>OpenAPIのTypeScriptクライアント</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/18_openapi_test/>OpenAPIで生成したサーバーのテスト2</a>
 </li>
 </ul>
 </aside>
