@@ -40,6 +40,28 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/11_oracle_docker/ rel=bookmark>OracleサーバーのDockerイメージ</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-11T00:00:00>2022-06-11</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+docker-images/OracleDatabase/SingleInstance at main · oracle/docker-imagesはクライアント側みたいにビルド済みイメージが用意されていないのかな、と思ったらOracle Container Registryにそれらしいものを見つけた。 Home > Database > express $ docker pull container-registry.oracle.com/database/express:latest サイズやばい $ docker images | grep ora oraclelinux 8 3bbe8a2c4b82 9 days ago 226MB oraclelinux 8-slim 1fcc1e6dda05 3 weeks ago 101MB container-registry.oracle.com/database/express latest e986fd612413 2 months ago 11.2GB $ docker run -d container-registry.oracle.com/database/express $ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+<a href=/blog/posts/2022/06/11_oracle_docker/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
+<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/06/08_oracle_docker/ rel=bookmark>OracleのDockerイメージ</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -227,28 +249,6 @@ S3って、マネジメントコンソールからフォルダ名の変更って
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/08/21_update_gems/ rel=bookmark>ruby gem のアップデート</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-08-21T00:00:00>2019-08-21</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、actionviewを5.1.6.2以上にバージョンアップ対応する。 作業環境はC223NAのdocker。 $ docker run -it -v `pwd`:/usr/src/work ruby bash # cd /usr/src/work # bundle update nokogiri # bundle list nokogiri /usr/local/bundle/gems/nokogiri-1.10.4 最初nokogiriの通知しか出てなかったのに、更新してpushしたらもうい
-<a href=/blog/posts/2019/08/21_update_gems/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/ruby rel=tag>ruby</a>
-<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -282,6 +282,9 @@ Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、act
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/09/30_wsl/>Docker不調</a>
+</li>
+<li>
 <a href=/blog/posts/2022/09/29_lamp/>LAMPを今風に</a>
 </li>
 <li>
@@ -307,9 +310,6 @@ Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、act
 </li>
 <li>
 <a href=/blog/posts/2022/09/21_react_table/>Reactでテーブルを使う</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/20_react_form/>Reactでフォームを使う</a>
 </li>
 </ul>
 </aside>
