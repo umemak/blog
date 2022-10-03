@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/09/23_react_table/ rel=bookmark>Reactでテーブルを使う3</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-09-23T00:00:00>2022-09-23</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+Tanstack Table続き。 とりあえず、公式のサンプルのように実装したら、動いた。 APIから取得したデータを使おうとすると、エラーになる。 useEffectを外してみたら、APIがすごい勢いでたたかれ続けた。 useEffectを戻したら、エラー出ずに表示された。 ？？？ APIサーバーを停止してみると、またエラー
+<a href=/blog/posts/2022/09/23_react_table/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/react rel=tag>react</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/09/22_react_table/ rel=bookmark>Reactでテーブルを使う2</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -228,27 +249,6 @@ grpc-gatewayでgRPCとREST両対応のサーバを作る | フューチャー技
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/09/13_proto/ rel=bookmark>proto</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-09-13T00:00:00>2022-09-13</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-proto定義何もわからない。。 REST用のパスを定義するために option (google.api.http) = { get : "/example-messages/{id}" }; といった定義が必要で、これを使うには import "google/api/annotations.proto"; が必要らしいという理解なのだけど、これをビルドしようとすると event.proto:6:1: Import "google/api/annotations.proto" was not found or had errors. というエラーが出てしまう。 こういうところで躓くの嫌すぎる。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-<a href=https://umemak.github.io/tags/grpc rel=tag>gRPC</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -325,6 +325,9 @@ proto定義何もわからない。。 REST用のパスを定義するために 
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/10/03_wsl_uninstall/>WSL2アンインストール</a>
+</li>
+<li>
 <a href=/blog/posts/2022/10/02_api_gateway/>OpenAPIとAPI Gateway</a>
 </li>
 <li>
@@ -350,9 +353,6 @@ proto定義何もわからない。。 REST用のパスを定義するために 
 </li>
 <li>
 <a href=/blog/posts/2022/09/24_wsl_reboot/>WSL2の再起動</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/23_react_table/>Reactでテーブルを使う3</a>
 </li>
 </ul>
 </aside>

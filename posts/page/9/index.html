@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/07/18_go_include/ rel=bookmark>Goのtemplateのinclude</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-07-18T00:00:00>2022-07-18</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+テンプレートのincludeってどうやるんだっけ、と思って検索した。 Go の html/template でヘッダーやフッター等の共通化を実現する方法 · Yutaka 🍊 Kato なるほど、{{define "header"}}～{{end}}で定義して、{{template "header" .}}で呼び出すのか。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/07/17_mermaid/ rel=bookmark>mermaidのER図</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -225,28 +245,6 @@ supabaseで使っている認証モジュールがnetlify/gotrue: An SWT based A
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/07/10_air/ rel=bookmark>Airを試す</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-07-10T00:00:00>2022-07-10</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-HTMLとかコード修正したときに手動で再起動するのが面倒なので、ホットリロードツールを導入してみた。 cosmtrek/air: ☁️ Live reload for Go apps $ go install github.com/cosmtrek/air@latest $ air init $ air __ _ ___ / /\ | | | |_) /_/--\ |_| |_| \_ , built with Go mkdir /home/umemak/workspace/eventsite_go/tmp watching . watching cmd watching cmd/eventsite watching db watching db/sql watching model watching model/user !exclude tmp watching web watching web/template building... no Go files in /home/umemak/workspace/eventsite_go failed to build, error: exit status 1 ^Ccleaning... see you again~ デフォルトだと、cmdの下のmain.goを見つけてく
-<a href=/blog/posts/2022/07/10_air/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-<a href=https://umemak.github.io/tags/air rel=tag>air</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -323,6 +321,9 @@ HTMLとかコード修正したときに手動で再起動するのが面倒な�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/10/03_wsl_uninstall/>WSL2アンインストール</a>
+</li>
+<li>
 <a href=/blog/posts/2022/10/02_api_gateway/>OpenAPIとAPI Gateway</a>
 </li>
 <li>
@@ -348,9 +349,6 @@ HTMLとかコード修正したときに手動で再起動するのが面倒な�
 </li>
 <li>
 <a href=/blog/posts/2022/09/24_wsl_reboot/>WSL2の再起動</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/23_react_table/>Reactでテーブルを使う3</a>
 </li>
 </ul>
 </aside>
