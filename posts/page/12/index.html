@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/29_flutter_image_cropper/ rel=bookmark>Image Cropper</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-29T00:00:00>2022-06-29</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+アップロードする画像を正方形にしたかったので、加工用のパッケージを入れてみた。 hnvn/flutter_image_cropper: A Flutter plugin for Android and iOS supports cropping images これがFlutter Webだとどうもうまく動かない。 croppie_dart.dart:129 Uncaught (in promise) TypeError: dart.global.Croppie is not a constructor at new croppie_dart._Croppie.new (croppie_dart.dart:129:50) at Croppie.new (croppie_dart.dart:68:12) at cropImage (image_cropper_for_web.dart:120:21) at cropImage.next (&lt;anonymous>) at runBody (async_patch.dart:84:54) at Object._async [as async] (async_patch.dart:123:5) at image_cropper_for_web.ImageCropperPlugin.new.cropImage (image_cropper_for_web.dart:74:33) at cropper.ImageCropper.new.cropImage (cropper.dart:86:21) at NewPostPage.dart:206:52 Flutter、まだわからないことが多い。。 次は、Top Flutter Image Cropping, Image Cropper packages |
+<a href=/blog/posts/2022/06/29_flutter_image_cropper/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/flutter rel=tag>Flutter</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/06/28_flutter_model/ rel=bookmark>Flutterでmodelを使う</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -222,26 +243,6 @@ Flutterでのレイアウトの組み合わせ方を学ぼう～実際の画面�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/06/20_flutter_auth/ rel=bookmark>Flutterでリロードしたときもログイン状態を維持する</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-06-20T00:00:00>2022-06-20</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-毎回ログイン画面に遷移して面倒だなぁと思っていた件。 FlutterWebでFirebaseAuthのcurrentUserがリロード時にnullになることに対しての対処法 同様に、runAppの前に await FirebaseAuth.instance.userChanges().first; を入れたら解消した。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/flutter rel=tag>Flutter</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -293,8 +294,9 @@ Flutterでのレイアウトの組み合わせ方を学ぼう～実際の画面�
 <a href=/blog/posts/page/44/>44</a>
 <a href=/blog/posts/page/45/>45</a>
 <a href=/blog/posts/page/46/>46</a>
+<a href=/blog/posts/page/47/>47</a>
 <a href=/blog/posts/page/13/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/posts/page/46/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/posts/page/47/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -317,6 +319,9 @@ Flutterでのレイアウトの組み合わせ方を学ぼう～実際の画面�
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2022/10/08_cors/>CORS対応</a>
+</li>
 <li>
 <a href=/blog/posts/2022/10/07_nextjs/>Next.jsのエラー対応</a>
 </li>
@@ -343,9 +348,6 @@ Flutterでのレイアウトの組み合わせ方を学ぼう～実際の画面�
 </li>
 <li>
 <a href=/blog/posts/2022/09/29_lamp/>LAMPを今風に</a>
-</li>
-<li>
-<a href=/blog/posts/2022/09/28_mui_datepicker/>MUI DesktopDatePicker + react-hook-form</a>
 </li>
 </ul>
 </aside>
