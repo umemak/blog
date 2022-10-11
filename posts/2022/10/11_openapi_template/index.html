@@ -57,7 +57,7 @@
 <li><a href=https://umemak.github.io/blog/posts/2022/08/04_openapi_sqlc/>OpenAPIとsqlcの連携 - umemak</a></li>
 <li><a href=https://umemak.github.io/blog/posts/2022/08/05_openapi_generator_src/>OpenAPI generatorのソース - umemak</a></li>
 </ul>
-<p><a href=https://openapi-generator.tech/docs/templating/>テンプレートの使用</a>によると、<code>author template</code>を指定すれば組み込みテンプレートが出力されるとのこと。で、出力されたディレクトリを<code>-t</code>で指定すると、そこにあるテンプレートを使って生成される。</p>
+<p>公式の<a href=https://openapi-generator.tech/docs/templating/>Using Templates</a>によると、<code>author template</code>を指定すれば組み込みテンプレートが出力されるとのこと。で、出力されたディレクトリを<code>-t</code>で指定すると、そこにあるテンプレートを使って生成される。</p>
 <p>つまり、</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=nv>MSYS_NO_PATHCONV</span><span class=o>=</span><span class=m>1</span> docker run --rm <span class=se>\
 </span><span class=se></span>  -v <span class=si>${</span><span class=nv>PWD</span><span class=si>}</span>:/local openapitools/openapi-generator-cli author template <span class=se>\
