@@ -10,7 +10,7 @@ tags: ["OpenAPI"]
 - [OpenAPIとsqlcの連携 - umemak](https://umemak.github.io/blog/posts/2022/08/04_openapi_sqlc/)
 - [OpenAPI generatorのソース - umemak](https://umemak.github.io/blog/posts/2022/08/05_openapi_generator_src/)
 
-[テンプレートの使用](https://openapi-generator.tech/docs/templating/)によると、`author template`を指定すれば組み込みテンプレートが出力されるとのこと。で、出力されたディレクトリを`-t`で指定すると、そこにあるテンプレートを使って生成される。
+公式の[Using Templates](https://openapi-generator.tech/docs/templating/)によると、`author template`を指定すれば組み込みテンプレートが出力されるとのこと。で、出力されたディレクトリを`-t`で指定すると、そこにあるテンプレートを使って生成される。
 
 つまり、
 ```sh
