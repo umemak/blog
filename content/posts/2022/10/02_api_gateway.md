@@ -1,7 +1,7 @@
 ---
 title: "OpenAPIとAPI Gateway"
 date: "2022-10-02"
-tags: ["aws", "OpnAPI"]
+tags: ["aws", "OpenAPI"]
 
 ---
 
