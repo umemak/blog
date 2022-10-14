@@ -65,6 +65,11 @@ mkdir -p ./work/<span class=o>{</span>a,b,c<span class=o>}</span>
 $ ls work
 a  b  c
 </code></pre></div><p>こうなってほしい。</p>
+<p>→make内では、デフォルトのシェルが<code>/bin/sh</code>になっているので、Makefileで<code>SHELL=/bin/bash</code>を書く必要がある。</p>
+<ul>
+<li><a href=http://masahir0y.blogspot.com/2012/07/make_26.html>とあるエンジニアの備忘log: Make のポータビリティについて考える</a></li>
+<li><a href=https://qiita.com/nassy20/items/3183cc17f36a3f21e333>Makefileには使用するshellを定義すると良さそう - Qiita</a></li>
+</ul>
 </div>
 <footer class=post-footer>
 <span class=post-tags>

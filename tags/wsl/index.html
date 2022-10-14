@@ -48,7 +48,8 @@
 </div>
 </header>
 <div class=post-excerpt><p>
-.PHONY: mkdir mkdir: mkdir -p ./work/{a,b,c} $ make mkdir mkdir -p ./work/{a,b,c} $ ls work {a,b,c} なんでや。 $ rm -r work $ mkdir -p ./work/{a,b,c} $ ls work a b c こうなってほしい。
+.PHONY: mkdir mkdir: mkdir -p ./work/{a,b,c} $ make mkdir mkdir -p ./work/{a,b,c} $ ls work {a,b,c} なんでや。 $ rm -r work $ mkdir -p ./work/{a,b,c} $ ls work a b c こうなってほしい。 →make内では、デフォルトのシェルが/bin/shになっているので、MakefileでSHELL=/bin/bashを書く必要がある。 とあるエンジニアの備忘log: Make のポータビリティについて考える Makefil
+<a href=/blog/posts/2022/10/14_wsl_make/ class=more-link>Read more </a>
 </p></div>
 </div>
 <footer class=post-footer>
