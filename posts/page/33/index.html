@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2021/12/25_ac/ rel=bookmark>EC2で開発</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2021-12-25T00:00:00>2021-12-25</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+Surface Go2 で厳しいので、EC2インスタンス立ててやってみる。 とりあえず無料枠のt2.microでAmazonLinux。 gitが入ってなかったのでインストール。 $ sudo yum update $ sudo yum install git $ git --version git version 2.32.0 npmも入っていなかった。 チュートリアル: Amazon EC2 インスタンスでの Node.js のセットアップ - AWS SDK for JavaScript $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash $ . ~/.nvm/nvm.sh $ nvm install node $
+<a href=/blog/posts/2021/12/25_ac/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2021/12/25_ac2/ rel=bookmark>Raspberry pi 4でやってみる</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -222,27 +243,6 @@ IDの指定ができるようになったので、それをキーに更新がで
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2021/12/16_ac/ rel=bookmark>作成したレコードのID取得</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-12-16T00:00:00>2021-12-16</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-イベント作成と一覧が確認できたので、個別表示と編集のためのパラメータを渡す方法を調べる。 参考： API (GraphQL) - Create, update, delete data - JavaScript - AWS Amplify Docs API.graphql の戻り値を見ればよさそうだけど、長いIDだ、、 まあとりあえずはこれで。 router.js にパラメータ追加して、props: trueも設定。 props設定が抜けていて、&ldquo;Variabl
-<a href=/blog/posts/2021/12/16_ac/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -321,6 +321,9 @@ IDの指定ができるようになったので、それをキーに更新がで
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/10/21_pyttsx3/>pyttsx3</a>
+</li>
+<li>
 <a href=/blog/posts/2022/10/20_vosk_python/>Vosk使ってみる2</a>
 </li>
 <li>
@@ -346,9 +349,6 @@ IDの指定ができるようになったので、それをキーに更新がで
 </li>
 <li>
 <a href=/blog/posts/2022/10/11_openapi_template/>OpenAPI generatorのテンプレート</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/10_schema/>スキーマ指向開発</a>
 </li>
 </ul>
 </aside>
