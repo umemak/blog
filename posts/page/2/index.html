@@ -40,6 +40,48 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/10/15_vosk/ rel=bookmark>Vosk</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-10-15T00:00:00>2022-10-15</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+ffmpeg.wasmをgithub pagesで動かすよを読んでいて、Offline Transcribeを見に行ったらccoreilly/vosk-browser: A speech recognition library running in the browser thanks to a WebAssembly build of Vosk経由してalphacep/vosk-api: Offline speech recognition API for Android, iOS, Raspberry Pi and servers with Python, Java, C# and Nodeというものの存在
+<a href=/blog/posts/2022/10/15_vosk/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/vosk rel=tag>Vosk</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
+<h2><a href=/blog/posts/2022/10/14_wsl_make/ rel=bookmark>WSLのmakeでmkdir</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-10-14T00:00:00>2022-10-14</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+.PHONY: mkdir mkdir: mkdir -p ./work/{a,b,c} $ make mkdir mkdir -p ./work/{a,b,c} $ ls work {a,b,c} なんでや。 $ rm -r work $ mkdir -p ./work/{a,b,c} $ ls work a b c こうなってほしい。 →make内では、デフォルトのシェルが/bin/shになっているので、MakefileでSHELL=/bin/bashを書く必要がある。 とあるエンジニアの備忘log: Make のポータビリティについて考える Makefil
+<a href=/blog/posts/2022/10/14_wsl_make/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/wsl rel=tag>WSL</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/10/13_prisma_openapi/ rel=bookmark>PrismaとOpenAPI</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -199,48 +241,6 @@ openapi-generator-cliのtypescript-axiosで生成したクライアントでConf
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/10/05_wsl2_install/ rel=bookmark>WSL2の再インストール</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-10-05T00:00:00>2022-10-05</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Windows11 22H2が降ってきたので、インストールした。 特に問題なさそうなので、WSL2を再インストールしようとしたところ WSL 2 を実行するには、カーネル コンポーネントの更新が必要です。詳細については https://aka.ms/wsl2kernel を参照してください とのメッセージが。 リンク先で「x64 マシン用 WSL2 Linux カーネル更新プログラム パッケージ」をダウンロー
-<a href=/blog/posts/2022/10/05_wsl2_install/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/wsl rel=tag>wsl</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/10/04_dockerfile/ rel=bookmark>Dockerfileでブレース展開</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-10-04T00:00:00>2022-10-04</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-golangのベースイメージにnodejsを入れたくて、 Step by step instructions to install node and npm using Linux binaries - DEV Community 👩‍💻👨‍💻 この手順見ながらやってみていたのだけれど、 RUN cp -r ./{lib,share,include,bin} /usrでファイル未存在のエラーになってしまった。 RUN cp -r ./lib /usrRUN cp -r ./share /usrRUN cp -r ./include /usrRUN cp -r ./bin /usrとすると通るので、ファイルが存在しないわけではなく、ブレース展
-<a href=/blog/posts/2022/10/04_dockerfile/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -319,7 +319,13 @@ golangのベースイメージにnodejsを入れたくて、 Step by step instru
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/10/25_aws_container/>コンテナ動かす場所</a>
+</li>
+<li>
 <a href=/blog/posts/2022/10/24_github_profile_readme/>profileリポジトリ</a>
+</li>
+<li>
+<a href=/blog/posts/2022/10/24_vosk_vtt/>VoskでWebVTT作成</a>
 </li>
 <li>
 <a href=/blog/posts/2022/10/23_dotfiles/>dotfilesリポジトリ</a>
@@ -341,12 +347,6 @@ golangのベースイメージにnodejsを入れたくて、 Step by step instru
 </li>
 <li>
 <a href=/blog/posts/2022/10/16_gitlab_gitpod/>BitbucketとGitpod</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/15_vosk/>Vosk</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/14_wsl_make/>WSLのmakeでmkdir</a>
 </li>
 </ul>
 </aside>

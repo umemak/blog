@@ -40,6 +40,48 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/07/12_gotrue/ rel=bookmark>GoTrue</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-07-12T00:00:00>2022-07-12</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+supabaseで使っている認証モジュールがnetlify/gotrue: An SWT based API for managing users and issuing SWT tokens。 supabaseのAPIでGoは提供されてないので、直接たたけないか調べてみる。 Architecture | Supabase見ると、/authでGoTrueに流されるようだが、Kongの公開ポート54321経由でht
+<a href=/blog/posts/2022/07/12_gotrue/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/supabase rel=tag>supabase</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
+<h2><a href=/blog/posts/2022/07/11_supabase/ rel=bookmark>supabaseを試す</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-07-11T00:00:00>2022-07-11</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+以前調べたとき、ローカルで動かしたときにAuth系はサポートしてないというような記事を見て、残念に思っていたのだけれど、Kuzzleの認証も思ったのと違う感じで。 With Docker | Supabase Supabaseをローカル環境に構築してNext.jsアプリで利用する（前半） このあたりを見ると、なんかできそう。しかもDocke
+<a href=/blog/posts/2022/07/11_supabase/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/supabase rel=tag>supabase</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/07/10_air/ rel=bookmark>Airを試す</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -208,48 +250,6 @@ IVSのチャットルームがエラーで作れない件、試しにもう一�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/07/05_amazon_ivs/ rel=bookmark>Amazon IVSのサンプル</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-07-05T00:00:00>2022-07-05</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-相変わらずエラーでIVSのチャットルームが作れない Your account is pending verification. Until the verification process is complete, you may not be able to carry out requests with this account. If you have questions, contact AWS Support. 仕方ないので、作れる方のアカウントで動作確認を進めることにした。 前に試したのと同じように、ap-northeast-1 でS3バケット作ってsam deployして、IVSチャットルームはus-
-<a href=/blog/posts/2022/07/05_amazon_ivs/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/aws rel=tag>aws</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/07/04_flutter_crop/ rel=bookmark>Image Cropper</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-07-04T00:00:00>2022-07-04</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-hnvn/flutter_image_cropper: A Flutter plugin for Android and iOS supports cropping imagesを使うときにエラーが出ていた件、解決。 Flutter Webで使うときはweb/index.htmlにcssとjsを追加するようにREADMEに書かれていた。 ドキュメントはちゃんと読まないと、かえって時間を浪費してしまう例だ。 ただ、スマホのブラウザで表示したときにはみ出してしまうの
-<a href=/blog/posts/2022/07/04_flutter_crop/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/flutter rel=tag>Flutter</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -328,7 +328,13 @@ hnvn/flutter_image_cropper: A Flutter plugin for Android and iOS supports croppi
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/10/25_aws_container/>コンテナ動かす場所</a>
+</li>
+<li>
 <a href=/blog/posts/2022/10/24_github_profile_readme/>profileリポジトリ</a>
+</li>
+<li>
+<a href=/blog/posts/2022/10/24_vosk_vtt/>VoskでWebVTT作成</a>
 </li>
 <li>
 <a href=/blog/posts/2022/10/23_dotfiles/>dotfilesリポジトリ</a>
@@ -350,12 +356,6 @@ hnvn/flutter_image_cropper: A Flutter plugin for Android and iOS supports croppi
 </li>
 <li>
 <a href=/blog/posts/2022/10/16_gitlab_gitpod/>BitbucketとGitpod</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/15_vosk/>Vosk</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/14_wsl_make/>WSLのmakeでmkdir</a>
 </li>
 </ul>
 </aside>

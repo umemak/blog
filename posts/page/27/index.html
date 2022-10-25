@@ -40,6 +40,47 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/02/26_rust/ rel=bookmark>VS CodeのRust用設定</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-02-26T00:00:00>2022-02-26</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+コードフォーマッターが欲しいと思って、プラグインを入れたけれど動かない。 Couldn't start client Rust Language Server --- Rustup not available. Install from https://www.rustup.rs/ どうやらツールが足りないようなので、追加でインストールした。 $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh $ source $HOME/.cargo/env $ rustup --version rustup 1.24.3 (ce5817a94 2021-05-31) info: This is the version for the rustup toolchain manager, not the rustc compiler. info: The currently active `rustc` version is `rustc 1.59.0 (9d1b2106e 2022-02-23)` それでもエラーが解消しなかったので、OSごと再起動した
+<a href=/blog/posts/2022/02/26_rust/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
+<h2><a href=/blog/posts/2022/02/25_mdmml_rust/ rel=bookmark>モジュール化</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-02-25T00:00:00>2022-02-25</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+リファクタリングしてモジュール性とエラー処理を向上させる - The Rust Programming Language 日本語版 を読みながら。 ちょっと分量多いけど、この第12章をひととおりなぞれば、Rustを「完全に理解」できる気がする。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/02/24_mdmml_rust/ rel=bookmark>ファイルを読み込む</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -189,40 +230,6 @@ MDMMLじゃない話。 https://onsi.github.io/ginkgo/ でテストを、 Descri
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/02/16_crontab/ rel=bookmark>crontabの範囲指定について</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-16T00:00:00>2022-02-16</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-crontab、-で範囲指定ができるけれど、大小関係が逆だったらどうなるか気になったので調べてみた。 59-1 * * * * time こういうやつ。 dockerでalpine使って動かしたところ、想定通り59,0,1で実行された。
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/02/16_mdmml/ rel=bookmark>リファクタリング</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-16T00:00:00>2022-02-16</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-通らなくなっていたテストを通した。 バイナリものはパッと見でどこが違うかわかりにくいのが難点。。
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -301,7 +308,13 @@ crontab、-で範囲指定ができるけれど、大小関係が逆だったら
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/10/25_aws_container/>コンテナ動かす場所</a>
+</li>
+<li>
 <a href=/blog/posts/2022/10/24_github_profile_readme/>profileリポジトリ</a>
+</li>
+<li>
+<a href=/blog/posts/2022/10/24_vosk_vtt/>VoskでWebVTT作成</a>
 </li>
 <li>
 <a href=/blog/posts/2022/10/23_dotfiles/>dotfilesリポジトリ</a>
@@ -323,12 +336,6 @@ crontab、-で範囲指定ができるけれど、大小関係が逆だったら
 </li>
 <li>
 <a href=/blog/posts/2022/10/16_gitlab_gitpod/>BitbucketとGitpod</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/15_vosk/>Vosk</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/14_wsl_make/>WSLのmakeでmkdir</a>
 </li>
 </ul>
 </aside>

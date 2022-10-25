@@ -40,6 +40,49 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2019/08/21_hugo/ rel=bookmark>Hugoの導入</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2019-08-21T00:00:00>2019-08-21</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+やってみよう インストール https://gohugo.io/getting-started/installing/#linux を見たら apt でいけるらしいので $ apt install hugo $ hugo version Hugo Static Site Generator v0.18.1 BuildDate: 2016-12-31T01:01:10+09:00 v0.18.1 ってだいぶ古い。。 $ sudo apt remove hugo $ wget https://github.com/gohugoio/hugo/releases/download/v0.57.2/hugo_extended_0.57.2_Linux-64bit.tar.gz $ sha256sum hugo_extended_0.57.2_Linux-64bit.tar.gz f4ce91d6909d489fe5461633f6b6bd689ed14c9e06b1b7af110024420aa8fd91 hugo_extended_0.57.2_Linux-64bit.tar.gz $ tar zxvf hugo_extended_0.57.2_Linux-64bit.tar.gz LICENSE README.md hugo $ sudo cp hugo /usr/local/bin/ $ hugo version Hugo Static Site Generator v0.57.2-A849CB2D/extended linux/amd64 BuildDate: 2019-08-17T17:57:54Z OK。 サイト作成 $ hugo new site blog テーマ追加 $ cd blog $ git clone https://github.com/Track3/hermit.git themes/hermit $ echo 'theme = "hermit"' >> config.toml コンテンツ追加 $ hugo new posts/my-first-post.md 表示確認 $ hugo server -D Building sites … ERROR 2019/08/21 11:29:11 render of "section" failed: execute
+<a href=/blog/posts/2019/08/21_hugo/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/hugo rel=tag>hugo</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
+<h2><a href=/blog/posts/2019/08/21_update_gems/ rel=bookmark>ruby gem のアップデート</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2019-08-21T00:00:00>2019-08-21</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、actionviewを5.1.6.2以上にバージョンアップ対応する。 作業環境はC223NAのdocker。 $ docker run -it -v `pwd`:/usr/src/work ruby bash # cd /usr/src/work # bundle update nokogiri # bundle list nokogiri /usr/local/bundle/gems/nokogiri-1.10.4 最初nokogiriの通知しか出てなかったのに、更新してpushしたらもうい
+<a href=/blog/posts/2019/08/21_update_gems/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/ruby rel=tag>ruby</a>
+<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2019/08/20_mercari_go_10/ rel=bookmark>mercari.go</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -208,49 +251,6 @@ https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見な�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/07/18_dena_go_2/ rel=bookmark>DeNA.go</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-07-18T00:00:00>2019-07-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-2019/07/18 19:30- https://dena.connpass.com/event/133957/ @kiyotaka.nakashima / 新ゲームサーバ基盤TakashoでのGo言語活用事例の紹介 / ゲーム・エンターテインメント事業本部 Sakasho 共通ゲームサーバー（複数タイトルで相乗り） プレイヤーデータの管理 課金系 Sakasyoの課題 相乗りによる制約 変更の影響大 Takasho Webサバーフレームワーク ステートレスなAPI 1サーバー1クライアント G
-<a href=/blog/posts/2019/07/18_dena_go_2/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-<a href=https://umemak.github.io/tags/event rel=tag>event</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2019/07/18_macbookpro_restore/ rel=bookmark>MacbookPro初期化</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2019-07-18T00:00:00>2019-07-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Chromebook買ってからほとんど出番ないので売ってしまおうと。 その前にディスクの初期化・・・SSDの場合ってHDDと同じ方法でいいんだっけ？という話。 参考： Mac を売却、譲渡、下取りに出す前にやっておくべきこと Mac のディスクを消去する方法 Mac OS Xで、SSDのデータを安全に消去する方法 結論としては、HD
-<a href=/blog/posts/2019/07/18_macbookpro_restore/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/mac rel=tag>mac</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -329,7 +329,13 @@ Chromebook買ってからほとんど出番ないので売ってしまおうと�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/10/25_aws_container/>コンテナ動かす場所</a>
+</li>
+<li>
 <a href=/blog/posts/2022/10/24_github_profile_readme/>profileリポジトリ</a>
+</li>
+<li>
+<a href=/blog/posts/2022/10/24_vosk_vtt/>VoskでWebVTT作成</a>
 </li>
 <li>
 <a href=/blog/posts/2022/10/23_dotfiles/>dotfilesリポジトリ</a>
@@ -351,12 +357,6 @@ Chromebook買ってからほとんど出番ないので売ってしまおうと�
 </li>
 <li>
 <a href=/blog/posts/2022/10/16_gitlab_gitpod/>BitbucketとGitpod</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/15_vosk/>Vosk</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/14_wsl_make/>WSLのmakeでmkdir</a>
 </li>
 </ul>
 </aside>
