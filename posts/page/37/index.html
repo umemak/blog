@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2020/11/07_docker_swarm_mode/ rel=bookmark>Docker swarm modeを知る</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2020-11-07T00:00:00>2020-11-07</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+複数の仮想サーバーでdocker-composeで起動したコンテナの管理をする方法を調べていて、swarm modeにたどり着いたので調べたことを残す。 コマンドでモード切替 有効化：docker swarm init 無効化：docker swarm leave --force シングルノードでも試せる シングルノードの場合は、init時の--advertis
+<a href=/blog/posts/2020/11/07_docker_swarm_mode/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2020/09/02_hello_flutter/ rel=bookmark>Flutterに入門</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -231,29 +252,6 @@ SourceRepositoriesで管理して、CloudBuildでFirebase Hostingにデプロイ
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2020/06/08_gitea_pgsql/ rel=bookmark>GiteaのデータベースをPostgreSQLにする</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2020-06-08T00:00:00>2020-06-08</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-OSはCentOS6です。 https://qiita.com/hatayan1126/items/9b0d3be9c7ecdc207642 を参考に進めます。 この記事では9.6をインストールしていますが、せっかくなので最新の12を入れてみます。 PostgreSQLのインストール $ sudo su # yum install https://download.postgresql.org/pub/repos/yum/reporpms/EL-6-x86_64/pgdg-redhat-repo-latest.noarch.rpm # yum update # yum install postgresql12-server # rpm -qa | grep postgres postgresql12-12.3-1PGDG.rhel6.x86_64 postgresql12-libs-12.3-1PGDG.rhel6.x86_64 postgresql12-server-12.3-1PGDG.rhel6.x86_64 # service postgresql-12 initdb # cp /var/lib/pgsql/12/data/pg_hba.conf{,.bk} # vim /var/lib/pgsql/12/data/pg_hba.conf # diff /var/lib/pgsql/12/data/pg_hba.conf{.bk,} 80c80 &lt; local all all peer --- > local all all trust 82c82 &lt; host all all 127.0.0.1/32 ident --- > host all all 127.0.0.1/32 trust # service postgresql-12 start #
-<a href=/blog/posts/2020/06/08_gitea_pgsql/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/gitea rel=tag>gitea</a>
-<a href=https://umemak.github.io/tags/pgsql rel=tag>pgsql</a>
-<a href=https://umemak.github.io/tags/centos6 rel=tag>centos6</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -307,8 +305,9 @@ OSはCentOS6です。 https://qiita.com/hatayan1126/items/9b0d3be9c7ecdc207642 �
 <a href=/blog/posts/page/46/>46</a>
 <a href=/blog/posts/page/47/>47</a>
 <a href=/blog/posts/page/48/>48</a>
+<a href=/blog/posts/page/49/>49</a>
 <a href=/blog/posts/page/38/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/posts/page/48/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/posts/page/49/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -332,10 +331,13 @@ OSはCentOS6です。 https://qiita.com/hatayan1126/items/9b0d3be9c7ecdc207642 �
 <h2>最近の投稿</h2>
 <ul>
 <li>
-<a href=/blog/posts/2022/10/26_lambda_go/>GoとLambda</a>
+<a href=/blog/posts/2022/10/28_lambda_deploy/>Lambdaのデプロイ</a>
 </li>
 <li>
 <a href=/blog/posts/2022/10/27_localstack/>GoとLambda</a>
+</li>
+<li>
+<a href=/blog/posts/2022/10/26_lambda_go/>GoとLambda</a>
 </li>
 <li>
 <a href=/blog/posts/2022/10/25_aws_container/>コンテナ動かす場所</a>
@@ -357,9 +359,6 @@ OSはCentOS6です。 https://qiita.com/hatayan1126/items/9b0d3be9c7ecdc207642 �
 </li>
 <li>
 <a href=/blog/posts/2022/10/20_vosk_python/>Vosk使ってみる2</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/19_vosk/>Vosk使ってみる</a>
 </li>
 </ul>
 </aside>

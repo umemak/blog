@@ -40,16 +40,16 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
-<h2><a href=/blog/posts/2022/10/26_lambda_go/ rel=bookmark>GoとLambda</a></h2>
+<h2><a href=/blog/posts/2022/10/28_lambda_deploy/ rel=bookmark>Lambdaのデプロイ</a></h2>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-10-25T00:00:00>2022-10-25</time>
+<time datetime=2022-10-28T00:00:00>2022-10-28</time>
 </a>
 </div>
 </header>
 <div class=post-excerpt><p>
-昨日、API GW+Lambdaの可能性について調べたとき、aws-lambda-go-api-proxy というものを見つけた。 awslabs/aws-lambda-go-api-proxy: lambda-go-api-proxy makes it easy to port APIs written with Go frameworks such as Gin (https://gin-gonic.github.io/gin/ ) to AWS Lambda and Amazon API Gateway. 良さそうだけど、PRが結構たまっているなーと思い、よく見てみると Deprecation in favor of Lambda Web Adapter · Issue #143 · awslabs/aws-lambda-go-api-proxy とのことで awslabs/aws-lambda-web-adapter: Run web applications on AWS Lambda の使用を勧めら
-<a href=/blog/posts/2022/10/26_lambda_go/ class=more-link>Read more </a>
+AWSにLambdaをデプロイする方法、いくつかあると思うのだけれど、最近の主流は何だろう。 デプロイにも2段階あると思って、0→1のLambda自体作成するときと、それ以降の更新と。 初回はCloudFormationとかTerraformとか？ SAM使ったら最初もそれ以降もまとめていける？CDKは？
+<a href=/blog/posts/2022/10/28_lambda_deploy/ class=more-link>Read more </a>
 </p></div>
 </div>
 <footer class=post-footer>
@@ -64,12 +64,33 @@
 <h2><a href=/blog/posts/2022/10/27_localstack/ rel=bookmark>GoとLambda</a></h2>
 <div class=post-details>
 <a rel=bookmark>
-<time datetime=2022-10-25T00:00:00>2022-10-25</time>
+<time datetime=2022-10-27T00:00:00>2022-10-27</time>
 </a>
 </div>
 </header>
 <div class=post-excerpt><p>
 aws-lambda-go-api-proxy でAPI作るとして、ローカルでのテスト環境どうするか問題。 localstack/localstack: 💻 A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline!を使うのが鉄板だと思うんだけど。 API Gateway V2はPro版じゃないと使えない。 AWS環境にデプロイして動かすのが簡単なのかなぁ。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/aws rel=tag>aws</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
+<h2><a href=/blog/posts/2022/10/26_lambda_go/ rel=bookmark>GoとLambda</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-10-26T00:00:00>2022-10-26</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+昨日、API GW+Lambdaの可能性について調べたとき、aws-lambda-go-api-proxy というものを見つけた。 awslabs/aws-lambda-go-api-proxy: lambda-go-api-proxy makes it easy to port APIs written with Go frameworks such as Gin (https://gin-gonic.github.io/gin/ ) to AWS Lambda and Amazon API Gateway. 良さそうだけど、PRが結構たまっているなーと思い、よく見てみると Deprecation in favor of Lambda Web Adapter · Issue #143 · awslabs/aws-lambda-go-api-proxy とのことで awslabs/aws-lambda-web-adapter: Run web applications on AWS Lambda の使用を勧めら
+<a href=/blog/posts/2022/10/26_lambda_go/ class=more-link>Read more </a>
 </p></div>
 </div>
 <footer class=post-footer>
@@ -220,27 +241,6 @@ node.jsで使うのあきらめて、Pythonで試してみた。 vosk-api/test_m
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/10/19_vosk/ rel=bookmark>Vosk使ってみる</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-10-19T00:00:00>2022-10-19</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-日本語音声のマイク入力をオフラインでリアルタイム音声認識：「VOSK」を JavaScript（Node.js）で扱う - Qiita こちらを参考に。 早速npm install voskしたところ、GitbashだとVisualStudioが見つからない的なエラー。WSL2環境で動かしたら通った。 そしてサンプルをコピーして実行す
-<a href=/blog/posts/2022/10/19_vosk/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/vosk rel=tag>Vosk</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -294,8 +294,9 @@ node.jsで使うのあきらめて、Pythonで試してみた。 vosk-api/test_m
 <a href=/blog/posts/page/46/>46</a>
 <a href=/blog/posts/page/47/>47</a>
 <a href=/blog/posts/page/48/>48</a>
+<a href=/blog/posts/page/49/>49</a>
 <a href=/blog/posts/page/2/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/posts/page/48/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/posts/page/49/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -319,10 +320,13 @@ node.jsで使うのあきらめて、Pythonで試してみた。 vosk-api/test_m
 <h2>最近の投稿</h2>
 <ul>
 <li>
-<a href=/blog/posts/2022/10/26_lambda_go/>GoとLambda</a>
+<a href=/blog/posts/2022/10/28_lambda_deploy/>Lambdaのデプロイ</a>
 </li>
 <li>
 <a href=/blog/posts/2022/10/27_localstack/>GoとLambda</a>
+</li>
+<li>
+<a href=/blog/posts/2022/10/26_lambda_go/>GoとLambda</a>
 </li>
 <li>
 <a href=/blog/posts/2022/10/25_aws_container/>コンテナ動かす場所</a>
@@ -344,9 +348,6 @@ node.jsで使うのあきらめて、Pythonで試してみた。 vosk-api/test_m
 </li>
 <li>
 <a href=/blog/posts/2022/10/20_vosk_python/>Vosk使ってみる2</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/19_vosk/>Vosk使ってみる</a>
 </li>
 </ul>
 </aside>
