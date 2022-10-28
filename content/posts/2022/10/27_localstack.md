@@ -1,6 +1,6 @@
 ---
 title: "GoとLambda"
-date: "2022-10-25"
+date: "2022-10-27"
 tags: ["aws"]
 
 ---
