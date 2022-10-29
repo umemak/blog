@@ -57,6 +57,56 @@
 からインストーラーをダウンロードして、インストール。</p>
 <p>VS Codeのターミナルからsamが実行できない（コマンドプロンプトからだとできる）。</p>
 <p>いきなり躓いてやる気が。。</p>
+<p>とりあえず、Windows版をアンインストールして、WSL2でLinux版をインストール。</p>
+<p>awsコマンドもインストール。
+<a href=https://docs.aws.amazon.com/ja_jp/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions>AWS CLI の最新バージョンをインストールまたは更新します。 - AWS Command Line Interface</a></p>
+<p>sam実行</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ sam init --runtime go1.x
+$ <span class=nb>cd</span> sam-app
+$ sam <span class=nb>local</span> start-api
+</code></pre></div><p>http://127.0.0.1:3000/hello にアクセスしてIPアドレスが表示された。OK。</p>
+<p>IAMユーザーsamを作成して、aws configure &ndash;profile sam でキー設定。</p>
+<p>デプロイ</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ sam deploy --guided --profile sam
+
+Configuring SAM <span class=nv>deploy</span>
+<span class=o>======================</span>
+
+        Looking <span class=k>for</span> config file <span class=o>[</span>samconfig.toml<span class=o>]</span> :  Not found
+
+        Setting default arguments <span class=k>for</span> <span class=s1>&#39;sam deploy&#39;</span>
+        <span class=o>=========================================</span>
+        Stack Name <span class=o>[</span>sam-app<span class=o>]</span>:
+        AWS Region <span class=o>[</span>us-east-1<span class=o>]</span>: ap-northeast-1
+        <span class=c1>#Shows you resources changes to be deployed and require a &#39;Y&#39; to initiate deploy</span>
+        Confirm changes before deploy <span class=o>[</span>y/N<span class=o>]</span>:
+        <span class=c1>#SAM needs permission to be able to create roles to connect to the resources in your template</span>
+        Allow SAM CLI IAM role creation <span class=o>[</span>Y/n<span class=o>]</span>:
+        <span class=c1>#Preserves the state of previously provisioned resources when an operation fails</span>
+        Disable rollback <span class=o>[</span>y/N<span class=o>]</span>:
+        HelloWorldFunction may not have authorization defined, Is this okay? <span class=o>[</span>y/N<span class=o>]</span>: y
+        Save arguments to configuration file <span class=o>[</span>Y/n<span class=o>]</span>:
+        SAM configuration file <span class=o>[</span>samconfig.toml<span class=o>]</span>:
+        SAM configuration environment <span class=o>[</span>default<span class=o>]</span>:
+
+        Looking <span class=k>for</span> resources needed <span class=k>for</span> deployment:
+        Creating the required resources...
+        Successfully created!
+</code></pre></div><p>出力の中にあるURLにアクセスして、IPアドレスが表示された。</p>
+<p>作られたものは、template.yamlを見ると<code>HelloWorldAPI</code>と<code>HelloWorldFunction</code>と<code>HelloWorldFunctionIamRole</code>の3つとこれらをまとめるCloudFormationと、<code>aws-sam-cli-managed-default</code>というのがあった。</p>
+<p>main.goを編集して、<code>make</code>、<code>sam deploy --profile sam</code>で更新された。</p>
+<p>削除</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ sam delete --profile sam
+        Are you sure you want to delete the stack sam-app in the region ap-northeast-1 ? <span class=o>[</span>y/N<span class=o>]</span>: y
+        Are you sure you want to delete the folder sam-app in S3 which contains the artifacts? <span class=o>[</span>y/N<span class=o>]</span>: y
+        - Deleting S3 object with key sam-app/c76671a85d3c296ac1bd69c32352798f
+        - Deleting S3 object with key sam-app/1753ad35ae8d1d0bcddf744d77f7c03f.template
+        - Deleting S3 object with key sam-app/59eb8f4eeaf8324a52fd7d8ed8741599
+        - Deleting S3 object with key sam-app/a848bcfd2d0f1d832ad1ce31edca1e2f.template
+        - Deleting Cloudformation stack sam-app
+
+Deleted successfully
+</code></pre></div><p>なんかできそうな気がしてきた。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
