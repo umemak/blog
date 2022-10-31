@@ -65,7 +65,7 @@
 $ <span class=nb>cd</span> sam-app
 $ sam <span class=nb>local</span> start-api
 </code></pre></div><p>http://127.0.0.1:3000/hello にアクセスしてIPアドレスが表示された。OK。</p>
-<p>IAMユーザーsamを作成して、aws configure &ndash;profile sam でキー設定。</p>
+<p>IAMユーザーsamを作成して、<code>aws configure --profile sam</code> でキー設定。</p>
 <p>デプロイ</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh>$ sam deploy --guided --profile sam
 
