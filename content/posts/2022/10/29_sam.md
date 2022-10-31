@@ -27,7 +27,7 @@ $ sam local start-api
 ```
 http://127.0.0.1:3000/hello にアクセスしてIPアドレスが表示された。OK。
 
-IAMユーザーsamを作成して、aws configure --profile sam でキー設定。
+IAMユーザーsamを作成して、`aws configure --profile sam` でキー設定。
 
 デプロイ
 ```sh
