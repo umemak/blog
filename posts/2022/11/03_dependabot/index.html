@@ -57,6 +57,7 @@
 <p>まず、<code>npm update</code>だとあまり解消しない。
 コンフリクトとか言われて、個別パッケージ指定してもやっぱりダメな感じ。正直よくわからない。</p>
 <p><a href=https://qiita.com/sugurutakahashi12345/items/df736ddaf65c244e1b4f>package.json に記載されているパッケージのバージョンアップ方法 【 npm-check-updates, outdated 】 - Qiita</a>を参考に、<code>npx -p npm-check-updates -c "ncu"</code>して<code>npx -p npm-check-updates -c "ncu -u"</code>してpushしたら、きれいに解消した。</p>
+<p>と思ったけれど、他のリポジトリで同じようにやってみたらダメだった。</p>
 </div>
 <footer class=post-footer>
 <span class=post-tags>
