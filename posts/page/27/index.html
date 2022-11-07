@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/03/10_func/ rel=bookmark>関数化</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-03-10T00:00:00>2022-03-10</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+細かい変換を関数化してみた。 strconv.Atoiをエラーだったらデフォルト値で返すやつとか。 titleやtempoを[]byteにして返すやつとか。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/03/09_method_func/ rel=bookmark>メソッドか関数か</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -216,26 +236,6 @@ Inspironクリーンインストールした後、Dockerのセットアップし
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/02/28_mdmml/ rel=bookmark>バグ発見</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-02-28T00:00:00>2022-02-28</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-ループと休符の組み合わせで、休符が消える現象が起きてる気がする。 後から実装したところはちょっと入り組んでしまっているね。。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/mdmml rel=tag>mdmml</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -290,8 +290,9 @@ Inspironクリーンインストールした後、Dockerのセットアップし
 <a href=/blog/posts/page/47/>47</a>
 <a href=/blog/posts/page/48/>48</a>
 <a href=/blog/posts/page/49/>49</a>
+<a href=/blog/posts/page/50/>50</a>
 <a href=/blog/posts/page/28/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/posts/page/49/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/posts/page/50/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -314,6 +315,9 @@ Inspironクリーンインストールした後、Dockerのセットアップし
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2022/11/07_sqlboiler/>SQLBoiler</a>
+</li>
 <li>
 <a href=/blog/posts/2022/11/06_qwik/>qwik</a>
 </li>
@@ -340,9 +344,6 @@ Inspironクリーンインストールした後、Dockerのセットアップし
 </li>
 <li>
 <a href=/blog/posts/2022/10/29_sam/>SAM入門</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/28_lambda_deploy/>Lambdaのデプロイ</a>
 </li>
 </ul>
 </aside>
