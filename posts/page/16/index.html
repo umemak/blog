@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/20_flutter_firestore/ rel=bookmark>Firestoreでサブコレクションを使う理由</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-21T00:00:00>2022-06-21</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+親コレクションと子コレクションがあったとして、子を親のサブコレクションにするか、子に親のIDを持たせて別のコレクションにするか問題。 別のコレクションにした場合、クエリ時にwhereを使って親IDを指定して絞り込むと、orderByが使えない。 エラーにならないけど、ゼロマッチになってしまう。 order
+<a href=/blog/posts/2022/06/20_flutter_firestore/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/flutter rel=tag>Flutter</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/06/20_flutter_auth/ rel=bookmark>Flutterでリロードしたときもログイン状態を維持する</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -227,29 +248,6 @@ DropdownButton class - material library - Dart APIのサンプルを持ってき
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/06/11_oracle_docker_go/ rel=bookmark>OracleにGoで接続する</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-06-11T00:00:00>2022-06-11</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-前の記事でsqlplusで接続できたので、Goのプログラムから接続してみる。 instantclientベースでGoをインストールするDockerfile作成 FROMghcr.io/oracle/oraclelinux8-instantclient:21RUN yum install -y wget tarRUN wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gzRUN rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.3.linux-amd64.tar.gzENV PATH="${PATH}:/usr/local/go/bin"CMD [ "go", "version" ]docker-composeもそれを使うように修正 version:'3'services:db:image:container-registry.oracle.com/database/expressports:- 1521:1521environment:- ORACLE_PWD=OraclePwdcli
-<a href=/blog/posts/2022/06/11_oracle_docker_go/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
-<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -330,6 +328,9 @@ DropdownButton class - material library - Dart APIのサンプルを持ってき
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/11/08_dns/>DNS不調3</a>
+</li>
+<li>
 <a href=/blog/posts/2022/11/07_sqlboiler/>SQLBoiler</a>
 </li>
 <li>
@@ -355,9 +356,6 @@ DropdownButton class - material library - Dart APIのサンプルを持ってき
 </li>
 <li>
 <a href=/blog/posts/2022/10/30_ffmpeg_sub/>ffmpegで複数言語の字幕を埋め込む</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/29_sam/>SAM入門</a>
 </li>
 </ul>
 </aside>
