@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/11/09_raspi_router/ rel=bookmark>ラズパイをルーターにする</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-11-09T00:00:00>2022-11-09</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+PCは昨日買ってきたLANケーブルでインターネット接続は解決した。 Pixel4も同じ現象だった。 LANケーブルつないだらいけるのか、LANポート付きUSB-HUBを試してみたけれど、ダメだった。 なので、ラズパイを無線LANルーターにしてみることにした。 やり方はググったらいくつか出てきた。 ラズパイを無
+<a href=/blog/posts/2022/11/09_raspi_router/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/raspberry-pi rel=tag>raspberry-pi</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/11/08_dns/ rel=bookmark>DNS不調3</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -224,26 +245,6 @@ SAMを使ってデプロイしたLambdaの、リクエスト元のIPアドレス
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/10/30_ffmpeg_sub/ rel=bookmark>ffmpegで複数言語の字幕を埋め込む</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-10-30T00:00:00>2022-10-30</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-movie.mp4に日本語字幕jpn.vttと英語字幕eng.vttを埋め込んだout.mp4を作成するコマンド。 ffmpeg -i 'movie.mp4' -i 'jpn.vtt' -i 'eng.vtt' \ -map 0:v -map 0:a -map 1 -map 2 \ -c:v copy -c:a copy -c:s mov_text \ -metadata:s:s:0 language=jpn \ -metadata:s:s:1 language=eng \ out.mp4
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/ffmpeg rel=tag>ffmpeg</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -324,6 +325,9 @@ movie.mp4に日本語字幕jpn.vttと英語字幕eng.vttを埋め込んだout.mp
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/11/09_raspi_router/>ラズパイをルーターにする</a>
+</li>
+<li>
 <a href=/blog/posts/2022/11/08_dns/>DNS不調3</a>
 </li>
 <li>
@@ -349,9 +353,6 @@ movie.mp4に日本語字幕jpn.vttと英語字幕eng.vttを埋め込んだout.mp
 </li>
 <li>
 <a href=/blog/posts/2022/10/31_sam_ip/>SAMでIP制限</a>
-</li>
-<li>
-<a href=/blog/posts/2022/10/30_ffmpeg_sub/>ffmpegで複数言語の字幕を埋め込む</a>
 </li>
 </ul>
 </aside>
