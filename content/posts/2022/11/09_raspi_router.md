@@ -26,3 +26,12 @@ LANケーブルつないだらいけるのか、LANポート付きUSB-HUBを試�
 - [ラズパイがファイアウォール付き無線LANルーターに変身、「LEDE」で簡単に | 日経クロステック（xTECH）](https://xtech.nikkei.com/it/atcl/column/17/041900152/091400022/)
 - [Raspberry Pi 3をOpenWrtで無線LANルータ化した - にゃののん日記](https://nyanonon.hatenablog.com/entry/20190531/1559313000)
 
+
+ざっと眺めて、[Raspberry Piで無線LANルーター（AP）を作る](https://it-syoya-engineer.com/raspberry-pi-router/)を基本にやってみた。
+
+途中、iptables がインストールされていなかったので追加でインストールした。
+```sh
+sudo apt-get install iptables-persistent
+```
+
+最後までやってみたけど、SSIDが見つからない。。
