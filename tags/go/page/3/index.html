@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/07/31_go_error_wrap/ rel=bookmark>Go言語のエラーラッピング</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-07-31T00:00:00>2022-07-31</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+エラーのラッピングをすると何がうれしいのかという問いへの解答が見えた気がする。 ラッピングしない場合、元のエラーの文字列以外の情報が失われてしまうが、ラッピングするとエラー情報をアンラップして取り出すことができる。 失われてしまう情報が呼び出し元で必要な場合は、エラーをそのままreturnして返すか、必
+<a href=/blog/posts/2022/07/31_go_error_wrap/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/07/28_sqlc/ rel=bookmark>sqlc</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -231,29 +252,6 @@ go-oci8を使ったイメージの、oraclelinux8をベースイメージにし�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/06/12_oracle_docker_go3/ rel=bookmark>OracleにGoで接続する3</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-06-12T00:00:00>2022-06-12</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-昨日は、mattn/go-oci8: Oracle driver for Go using database/sqlとsijms/go-ora: Pure go oracle clientを使ったサンプルをコンテナ上でgo runして動かしていた。 今日はgo buildでバイナリにして実行できるようにしてみる。 何もオプション付けずにビルドしたら、どちらも問題なし。 バイナリサ
-<a href=/blog/posts/2022/06/12_oracle_docker_go3/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
-<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -289,6 +287,9 @@ go-oci8を使ったイメージの、oraclelinux8をベースイメージにし�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/11/11_sqlboiler/>SQLBoiler</a>
+</li>
+<li>
 <a href=/blog/posts/2022/11/10_raspi_router/>ラズパイをルーターにする2</a>
 </li>
 <li>
@@ -314,9 +315,6 @@ go-oci8を使ったイメージの、oraclelinux8をベースイメージにし�
 </li>
 <li>
 <a href=/blog/posts/2022/11/02_ko/>ko</a>
-</li>
-<li>
-<a href=/blog/posts/2022/11/01_sam_ip/>AWS SSOの認証</a>
 </li>
 </ul>
 </aside>
