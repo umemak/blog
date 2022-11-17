@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2021/12/24_ac/ rel=bookmark>ユーザーテーブルにデータ登録する</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2021-12-24T00:00:00>2021-12-24</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+イベントにエントリーするときにユーザーテーブルとイベントテーブルの関連付けするので、それぞれのテーブルにデータがないといけない。 イベントテーブルの作成と編集はできるようになっているので、ユーザーテーブルにデータ登録するところを作る。 サインインのタイミングで登録できれば良いのだけれど、とりあえずログイ
+<a href=/blog/posts/2021/12/24_ac/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2021/12/23_ac/ rel=bookmark>壊れたファイルを取り戻す</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -222,27 +243,6 @@ IDの指定ができるようになったので、それをキーに更新がで
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2021/12/14_ac/ rel=bookmark>データ登録やってみる</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2021-12-14T00:00:00>2021-12-14</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-データの格納先ができたので、画面からデータ登録できるようにしてみる。 参考： Tutorial - Connect API and database to the app - Vue - AWS Amplify Docs Codespacesでnpm run serveで実行してアクセスすると、ブラウザのコンソールにInvalid Host/Origin headerが出ている。 package.json を修正して回避。codespaces前提だけど。 "serve": "vue-cli-service serve --public ${CODESPACE_NAME}.githubpreview.dev", 参考： AWS
-<a href=/blog/posts/2021/12/14_ac/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/adventcalendar2021 rel=tag>AdventCalendar2021</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -298,8 +298,9 @@ IDの指定ができるようになったので、それをキーに更新がで
 <a href=/blog/posts/page/48/>48</a>
 <a href=/blog/posts/page/49/>49</a>
 <a href=/blog/posts/page/50/>50</a>
+<a href=/blog/posts/page/51/>51</a>
 <a href=/blog/posts/page/37/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/posts/page/50/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/posts/page/51/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -322,6 +323,9 @@ IDの指定ができるようになったので、それをキーに更新がで
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2022/11/17_runn/>runnでgRPCのテスト</a>
+</li>
 <li>
 <a href=/blog/posts/2022/11/16_rss_crawler/>RSSクローラー</a>
 </li>
@@ -348,9 +352,6 @@ IDの指定ができるようになったので、それをキーに更新がで
 </li>
 <li>
 <a href=/blog/posts/2022/11/08_dns/>DNS不調3</a>
-</li>
-<li>
-<a href=/blog/posts/2022/11/07_sqlboiler/>SQLBoiler</a>
 </li>
 </ul>
 </aside>
