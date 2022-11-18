@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/11/18_runn/ rel=bookmark>runnでgRPCのテスト2</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-11-18T00:00:00>2022-11-18</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+runnのコマンドライン実行でうまく動かない件、オプション--grpc-no-tlsを指定したら解消した。 デバッグ用に詳細オプションないかなーってコマンドラインヘルプ見ていて見つけた。 マニュアルはちゃんと読みましょう（今年何度目かの反省
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+<a href=https://umemak.github.io/tags/grpc rel=tag>gRPC</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/11/17_runn/ rel=bookmark>runnでgRPCのテスト</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -229,28 +250,6 @@ protoをAPIスキーマのマスターにしようとした場合、既存のOpe
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/09/11_openapi2proto/ rel=bookmark>OpenAPIからgRPCへの移行</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-09-11T00:00:00>2022-09-11</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-今あるOpenAPI用の定義yamlファイルからgRPC用のprotoファイルが生成できないかなと思い、検索したら良さそうなものが見つかった。 nytimes/openapi2proto: A tool for generating Protobuf v3 schemas and gRPC service definitions from OpenAPI specifications https://github.com/umemak/eventsite_go/blob/main/openapi.yml でやってみた。 $ go install github.com/NYTimes/openapi2proto/cmd/openapi2proto $ openapi2proto -spec openapi.yml -annotate syntax = "proto3"; package eventsite; import "google/api/annotations.proto"; import "google/protobuf/empty.proto"; service EventsiteService { // Get all events. rpc GetEvents(google.protobuf.Empty) returns (google.protobuf.Empty) { option (google.api.http) = { get: "/events" }; } // Create event. rpc PostEvents(google.protobuf.Empty) returns (google.protobuf.Empty) { option (google.api.http) = { post: "/events" }; } } s
-<a href=/blog/posts/2022/09/11_openapi2proto/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-<a href=https://umemak.github.io/tags/grpc rel=tag>gRPC</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -261,8 +260,9 @@ protoをAPIスキーマのマスターにしようとした場合、既存のOpe
 <a href=/blog/tags/go/page/3/>3</a>
 <a href=/blog/tags/go/page/4/>4</a>
 <a href=/blog/tags/go/page/5/>5</a>
+<a href=/blog/tags/go/page/6/>6</a>
 <a href=/blog/tags/go/page/2/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/tags/go/page/5/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/tags/go/page/6/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -285,6 +285,9 @@ protoをAPIスキーマのマスターにしようとした場合、既存のOpe
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2022/11/18_runn/>runnでgRPCのテスト2</a>
+</li>
 <li>
 <a href=/blog/posts/2022/11/17_runn/>runnでgRPCのテスト</a>
 </li>
@@ -311,9 +314,6 @@ protoをAPIスキーマのマスターにしようとした場合、既存のOpe
 </li>
 <li>
 <a href=/blog/posts/2022/11/09_raspi_router/>ラズパイをルーターにする</a>
-</li>
-<li>
-<a href=/blog/posts/2022/11/08_dns/>DNS不調3</a>
 </li>
 </ul>
 </aside>

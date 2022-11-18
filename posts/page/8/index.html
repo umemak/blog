@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/09/09_go_config/ rel=bookmark>Goで設定を良い感じに処理する方法</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-09-09T00:00:00>2022-09-09</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+コマンドラインで引数を処理する順番は以前調べたことがあるのだけど、これをいい感じに処理してくれるGoのライブラリが欲しい気がする。 まず設定ファイルを読み、環境変数が設定されていれば上書き、コマンドラインで指定されていればさらに上書き joho/godotenv: A Go port of Ruby&rsquo;s dotenv library (Loads environment variables from .env.) Netflix/go-env: a golang library to manage environment variables caarlos0/env: A simple and zero-dependencies library to parse environment variables into structs. ilyakaznacheev/cleanenv:
+<a href=/blog/posts/2022/09/09_go_config/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/09/08_next_book/ rel=bookmark>TypeScriptとReact/Next.jsでつくる実践Webアプリケーション開発、読了</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -228,27 +249,6 @@ docker compose up -dで複数コンテナを動かしているときに、その
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/08/30_mlt/ rel=bookmark>MLTファイルを読む</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-08-30T00:00:00>2022-08-30</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-MLTをgoのstructに読み込もうとして、やっぱりよくわからない。 MLT自体の仕様はmltframework/mlt: MLT Multimedia Frameworkにある。 xsdファイルがあればdroyo/go-xml: utility and code-generation libraries for XMLとか使ってgoで使えるようにできそうなんだけど、dtdしかない。 っていうかdtdをs
-<a href=/blog/posts/2022/08/30_mlt/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -330,6 +330,9 @@ MLTをgoのstructに読み込もうとして、やっぱりよくわからない
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/11/18_runn/>runnでgRPCのテスト2</a>
+</li>
+<li>
 <a href=/blog/posts/2022/11/17_runn/>runnでgRPCのテスト</a>
 </li>
 <li>
@@ -355,9 +358,6 @@ MLTをgoのstructに読み込もうとして、やっぱりよくわからない
 </li>
 <li>
 <a href=/blog/posts/2022/11/09_raspi_router/>ラズパイをルーターにする</a>
-</li>
-<li>
-<a href=/blog/posts/2022/11/08_dns/>DNS不調3</a>
 </li>
 </ul>
 </aside>
