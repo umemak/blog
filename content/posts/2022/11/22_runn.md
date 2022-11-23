@@ -1,6 +1,6 @@
 ---
 title: "runnでgRPCのテスト3"
-date: "2022-11-18"
+date: "2022-11-22"
 tags: ["go", "mysql"]
 
 ---
