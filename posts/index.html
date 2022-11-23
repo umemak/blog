@@ -40,6 +40,48 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/11/23_rss_filter/ rel=bookmark>encoding/xml</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-11-23T00:00:00>2022-11-23</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+encoding/xmlを使って複数RSS読み込んでマージして出力するのはできたけど、読み込むRSSの形式によってencoding/xmlでは読めないものが出てきた。 やっぱりmmcdole/gofeed: Parse RSS, Atom and JSON feeds in Goとか形式の違いを吸収してくれるライブラリを利用したほうが良さそう。 作ってみてわ
+<a href=/blog/posts/2022/11/23_rss_filter/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/rss rel=tag>RSS</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
+<h2><a href=/blog/posts/2022/11/22_runn/ rel=bookmark>runnでgRPCのテスト3</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-11-22T00:00:00>2022-11-22</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+runnでDBの操作もできるのだけど、BINARY型のカラムがあるテーブルだとうまく動かない（気がする）。 深く考えずにCHAR型に変更したら通ったので、おそらくBINARY型が原因だったと思う。 時間ができたら検証してみたい。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+<a href=https://umemak.github.io/tags/mysql rel=tag>mysql</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/11/21_gitea_to_github/ rel=bookmark>GiteaからGitHubへの移行</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -119,27 +161,6 @@ runnのコマンドライン実行でうまく動かない件、オプション-
 <span class=post-tags>
 <a href=https://umemak.github.io/tags/go rel=tag>go</a>
 <a href=https://umemak.github.io/tags/grpc rel=tag>gRPC</a>
-</span>
-</footer>
-</article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/11/22_runn/ rel=bookmark>runnでgRPCのテスト3</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-11-18T00:00:00>2022-11-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-runnでDBの操作もできるのだけど、BINARY型のカラムがあるテーブルだとうまく動かない（気がする）。 深く考えずにCHAR型に変更したら通ったので、おそらくBINARY型が原因だったと思う。 時間ができたら検証してみたい。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-<a href=https://umemak.github.io/tags/mysql rel=tag>mysql</a>
 </span>
 </footer>
 </article>
@@ -227,27 +248,6 @@ SQLBoilerはDeleteするときに論理削除が使える。 詳細は【Go】sq
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/11/13_d.ts/ rel=bookmark>.d.tsファイル</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-11-13T00:00:00>2022-11-13</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Saul-Mirone/milkdown: 🍼 Plugin driven WYSIWYG markdown editor framework.とjazz-soft/react-midi-player: React MIDI Playerを組み合わせて使おうとしたら、React MIDI PlayerがTypeScript未対応らしく、モジュール 'react-midi-player' の宣言ファイルが見つかりませんでした。とのこと。 react-midi-player.d.t
-<a href=/blog/posts/2022/11/13_d.ts/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/typescript rel=tag>TypeScript</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -329,6 +329,12 @@ Saul-Mirone/milkdown: 🍼 Plugin driven WYSIWYG markdown editor framework.とja
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/11/23_rss_filter/>encoding/xml</a>
+</li>
+<li>
+<a href=/blog/posts/2022/11/22_runn/>runnでgRPCのテスト3</a>
+</li>
+<li>
 <a href=/blog/posts/2022/11/21_gitea_to_github/>GiteaからGitHubへの移行</a>
 </li>
 <li>
@@ -341,9 +347,6 @@ Saul-Mirone/milkdown: 🍼 Plugin driven WYSIWYG markdown editor framework.とja
 <a href=/blog/posts/2022/11/18_runn/>runnでgRPCのテスト2</a>
 </li>
 <li>
-<a href=/blog/posts/2022/11/22_runn/>runnでgRPCのテスト3</a>
-</li>
-<li>
 <a href=/blog/posts/2022/11/17_runn/>runnでgRPCのテスト</a>
 </li>
 <li>
@@ -354,9 +357,6 @@ Saul-Mirone/milkdown: 🍼 Plugin driven WYSIWYG markdown editor framework.とja
 </li>
 <li>
 <a href=/blog/posts/2022/11/14_sqlboiler_undelete/>SQLBoilerで論理削除の復旧</a>
-</li>
-<li>
-<a href=/blog/posts/2022/11/13_d.ts/>.d.tsファイル</a>
 </li>
 </ul>
 </aside>
