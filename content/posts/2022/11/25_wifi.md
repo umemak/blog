@@ -7,7 +7,9 @@ tags: []
 
 Amazonのセールが始まったので、この機会に買い換えを検討。
 
-[Amazon.co.jp 売れ筋ランキング: 無線・有線LANルーター の中で最も人気のある商品です](https://www.amazon.co.jp/gp/bestsellers/computers/2151996051)バッファロー、TP-Link、NECが多い。
+[Amazon.co.jp 売れ筋ランキング: 無線・有線LANルーター の中で最も人気のある商品です](https://www.amazon.co.jp/gp/bestsellers/computers/2151996051)
+
+バッファロー、TP-Link、NECが多い。
 
 今使ってて調子悪いのがNECだから、ちょっと避けたい。バッファローは大昔良くない思い出があるのでパス。TP-Linkは見た目がアンテナたくさん生えてていかにも感じでちょっと。
 
