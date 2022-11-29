@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/10/30_ffmpeg_sub/ rel=bookmark>ffmpegで複数言語の字幕を埋め込む</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-10-30T00:00:00>2022-10-30</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+movie.mp4に日本語字幕jpn.vttと英語字幕eng.vttを埋め込んだout.mp4を作成するコマンド。 ffmpeg -i 'movie.mp4' -i 'jpn.vtt' -i 'eng.vtt' \ -map 0:v -map 0:a -map 1 -map 2 \ -c:v copy -c:a copy -c:s mov_text \ -metadata:s:s:0 language=jpn \ -metadata:s:s:1 language=eng \ out.mp4
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/ffmpeg rel=tag>ffmpeg</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/10/29_sam/ rel=bookmark>SAM入門</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -220,27 +240,6 @@ Preferences — Gitpodを見ていて、Dotfilesを指定できる項目があ�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/10/21_pyttsx3/ rel=bookmark>pyttsx3</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-10-21T00:00:00>2022-10-21</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-日本語音声→日本語文字列→英語文字列 ができたので、英語文字列→英語音声 も追加してみたくなって、やってみた。 Pythonでオフラインでできるものをググって見つかったのが、nateshmbhat/pyttsx3: Offline Text To Speech synthesis for python。 これもREADMEに書いてあるように書くだけで実装できた。 あとは翻
-<a href=/blog/posts/2022/10/21_pyttsx3/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/python rel=tag>python</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -323,6 +322,9 @@ Preferences — Gitpodを見ていて、Dotfilesを指定できる項目があ�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/11/29_techbookread/>「技術書」の読書術</a>
+</li>
+<li>
 <a href=/blog/posts/2022/11/28_cloudfunctions_log/>CloudFunctionsのログ</a>
 </li>
 <li>
@@ -348,9 +350,6 @@ Preferences — Gitpodを見ていて、Dotfilesを指定できる項目があ�
 </li>
 <li>
 <a href=/blog/posts/2022/11/20_rss_filter/>RSSフィルタ2</a>
-</li>
-<li>
-<a href=/blog/posts/2022/11/19_rss_filter/>RSSフィルタ</a>
 </li>
 </ul>
 </aside>
