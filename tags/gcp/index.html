@@ -40,6 +40,28 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/11/30_cloudfunctions_log/ rel=bookmark>CloudFunctionsのログ</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-11-30T00:00:00>2022-11-30</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+デプロイのエラーは、go clean -modcacheしてgo.sum削除してgo.modのrequire全削除してgo mod tidyしたら直った。 何が効いたのかはわからない。 ログは、JSON形式で出力しないといけないのかと思ってそのように書いてみたら、そのまま記録されて構造化されなかった。 集計するものでもなけれ
+<a href=/blog/posts/2022/11/30_cloudfunctions_log/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/gcp rel=tag>gcp</a>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/11/28_cloudfunctions_log/ rel=bookmark>CloudFunctionsのログ</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -236,26 +258,16 @@ https://cloud.google.com/certification/cloud-architect?hl=ja 模擬試験受け�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2018/12/22_regist_gcp/ rel=bookmark>GCP登録</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2018-12-22T00:00:00>2018-12-22</time>
-</a>
 </div>
-</header>
-<div class=post-excerpt><p>
-今更ながら登録してみた。 KYASH使えないのね。 ブラウザからシェルが使えるCloud Shellがなんかいい。AWSだとCloud9で環境作ればできるけど、そこまで必要ではないときに便利かも。 $ uname -a Linux cs-6000-devshell-vm-f3d2cb8f-de38-48b2-8d5f-c83297b50ed4 4.14.33+ #1 SMP Sat Aug 11 08:05:16 PDT 2018 x86_64 GNU/Linux $ ruby -v ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux] $ go version go version go1.11 linux/amd64
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/gcp rel=tag>GCP</a>
-</span>
-</footer>
-</article>
+<div class=nav-links>
+<ul class=pagination>
+<a href=/blog/tags/gcp/ aria-label=First><span aria-hidden=true>&#171;</span></a>
+<a href aria-label=Previous><span aria-hidden=true>Previous Page</span></a>
+<span href=/blog/tags/gcp/>1</a>
+<a href=/blog/tags/gcp/page/2/>2</a>
+<a href=/blog/tags/gcp/page/2/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
+<a href=/blog/tags/gcp/page/2/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+</ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
 <tr>
@@ -277,6 +289,9 @@ https://cloud.google.com/certification/cloud-architect?hl=ja 模擬試験受け�
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2022/11/30_cloudfunctions_log/>CloudFunctionsのログ</a>
+</li>
 <li>
 <a href=/blog/posts/2022/11/29_techbookread/>「技術書」の読書術</a>
 </li>
@@ -303,9 +318,6 @@ https://cloud.google.com/certification/cloud-architect?hl=ja 模擬試験受け�
 </li>
 <li>
 <a href=/blog/posts/2022/11/21_gitea_to_github/>GiteaからGitHubへの移行</a>
-</li>
-<li>
-<a href=/blog/posts/2022/11/20_rss_filter/>RSSフィルタ2</a>
 </li>
 </ul>
 </aside>

@@ -40,6 +40,28 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/11/30_cloudfunctions_log/ rel=bookmark>CloudFunctionsのログ</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-11-30T00:00:00>2022-11-30</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+デプロイのエラーは、go clean -modcacheしてgo.sum削除してgo.modのrequire全削除してgo mod tidyしたら直った。 何が効いたのかはわからない。 ログは、JSON形式で出力しないといけないのかと思ってそのように書いてみたら、そのまま記録されて構造化されなかった。 集計するものでもなけれ
+<a href=/blog/posts/2022/11/30_cloudfunctions_log/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/gcp rel=tag>gcp</a>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/11/28_cloudfunctions_log/ rel=bookmark>CloudFunctionsのログ</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -228,28 +250,6 @@ grpc-gatewayでgRPCとREST両対応のサーバを作る | フューチャー技
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/09/14_proto/ rel=bookmark>proto</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-09-14T00:00:00>2022-09-14</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-昨日のエラーは、grpc-ecosystem/grpc-gateway: gRPC to JSON proxy generator following the gRPC HTTP specにあるようにbuf.yamlに deps: - buf.build/googleapis/googleapis を追記してbuf mod updateを実行したら直ったような気がする。 気がする、というのは他にもprotoファイルをダウンロードしてきたりとかいろいろやっていて何が決定打だ
-<a href=/blog/posts/2022/09/14_proto/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-<a href=https://umemak.github.io/tags/grpc rel=tag>gRPC</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -286,6 +286,9 @@ grpc-gatewayでgRPCとREST両対応のサーバを作る | フューチャー技
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/11/30_cloudfunctions_log/>CloudFunctionsのログ</a>
+</li>
+<li>
 <a href=/blog/posts/2022/11/29_techbookread/>「技術書」の読書術</a>
 </li>
 <li>
@@ -311,9 +314,6 @@ grpc-gatewayでgRPCとREST両対応のサーバを作る | フューチャー技
 </li>
 <li>
 <a href=/blog/posts/2022/11/21_gitea_to_github/>GiteaからGitHubへの移行</a>
-</li>
-<li>
-<a href=/blog/posts/2022/11/20_rss_filter/>RSSフィルタ2</a>
 </li>
 </ul>
 </aside>

@@ -40,6 +40,28 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/10/01_docker_gitbash/ rel=bookmark>GitBashでDockerでMount</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-10-01T00:00:00>2022-10-01</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+WSL2が不安定なので、開発環境をGitBash使うようにして、おおむね問題なかったのだが、Dockerでローカルをマウントして使うときに問題が。 OpenAPIのコード生成するときに docker run --rm \ -v ${PWD}:/local openapitools/openapi-generator-cli generate \ -i /local/openapi.yml \ -g go-server \ --additional-properties=router=chi,featureCORS=true \ -o /local/out だと [error] The spec file is not found: C:/Program Files/Git/local/openapi.yml [error] Check the path of the OpenAPI spec and try again. こんなエラーになる。 Mount volume doesn&rsquo;t work on Windows 10 using
+<a href=/blog/posts/2022/10/01_docker_gitbash/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/gitbash rel=tag>gitbash</a>
+<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/09/30_wsl/ rel=bookmark>Docker不調</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -222,26 +244,6 @@ Tanstack Table続き。 とりあえず、公式のサンプルのように実�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/09/21_react_table/ rel=bookmark>Reactでテーブルを使う</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-09-21T00:00:00>2022-09-21</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-フォームの次は、テーブルを使って一覧表示したい。 react-table - npmが良いのかな？ GitHubだと名前が違ってたりするけど。。 TanStack/table: 🤖 Headless UI for building powerful tables & datagrids for TS/JS - React-Table, Vue-Table, Solid-Table, Svelte-Table 要調査。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/react rel=tag>react</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -324,6 +326,9 @@ Tanstack Table続き。 とりあえず、公式のサンプルのように実�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/11/30_cloudfunctions_log/>CloudFunctionsのログ</a>
+</li>
+<li>
 <a href=/blog/posts/2022/11/29_techbookread/>「技術書」の読書術</a>
 </li>
 <li>
@@ -349,9 +354,6 @@ Tanstack Table続き。 とりあえず、公式のサンプルのように実�
 </li>
 <li>
 <a href=/blog/posts/2022/11/21_gitea_to_github/>GiteaからGitHubへの移行</a>
-</li>
-<li>
-<a href=/blog/posts/2022/11/20_rss_filter/>RSSフィルタ2</a>
 </li>
 </ul>
 </aside>
