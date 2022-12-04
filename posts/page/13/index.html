@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/08/06_sqlc/ rel=bookmark>sqlcのエラー</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-08-06T00:00:00>2022-08-06</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+-- name: ListEventUsers :many SELECTeu.id,eu.eventid,eu.userid,eu.`status`,u.nameFROM(SELECTid,eventid,userid,`status`,row_number()OVER(PARTITIONBYeventid,useridORDERBYidDESC)A
+<a href=/blog/posts/2022/08/06_sqlc/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/sqlc rel=tag>sqlc</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/08/05_openapi_generator_src/ rel=bookmark>OpenAPI generatorのソース</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -223,27 +244,6 @@ Documentation for the go-server Generatorで、routerはmuxとchiが選べると
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/07/27_adminer_oracle/ rel=bookmark>AdminerのOracle対応</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-07-27T00:00:00>2022-07-27</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-昨日はとりあえず動くところまでできたので、Dockerfileを整えてみた。 https://github.com/umemak/docker-adminer/blob/master/4/Dockerfile イメージサイズ800MB弱。 もっとスリム化できないかな。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
-<a href=https://umemak.github.io/tags/oracle rel=tag>Oracle</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -326,6 +326,9 @@ Documentation for the go-server Generatorで、routerはmuxとchiが選べると
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/12/04_wifi/>無線LANルーター</a>
+</li>
+<li>
 <a href=/blog/posts/2022/12/03_mouse/>有線マウス</a>
 </li>
 <li>
@@ -351,9 +354,6 @@ Documentation for the go-server Generatorで、routerはmuxとchiが選べると
 </li>
 <li>
 <a href=/blog/posts/2022/11/25_wifi/>無線LANルーター</a>
-</li>
-<li>
-<a href=/blog/posts/2022/11/24_gcp_charge/>GCPの課金</a>
 </li>
 </ul>
 </aside>
