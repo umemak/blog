@@ -40,6 +40,28 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/11_oracle_docker/ rel=bookmark>OracleサーバーのDockerイメージ</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-11T00:00:00>2022-06-11</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+docker-images/OracleDatabase/SingleInstance at main · oracle/docker-imagesはクライアント側みたいにビルド済みイメージが用意されていないのかな、と思ったらOracle Container Registryにそれらしいものを見つけた。 Home > Database > express $ docker pull container-registry.oracle.com/database/express:latest サイズやばい $ docker images | grep ora oraclelinux 8 3bbe8a2c4b82 9 days ago 226MB oraclelinux 8-slim 1fcc1e6dda05 3 weeks ago 101MB container-registry.oracle.com/database/express latest e986fd612413 2 months ago 11.2GB $ docker run -d container-registry.oracle.com/database/express $ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+<a href=/blog/posts/2022/06/11_oracle_docker/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
+<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/06/10_flutter_geochart/ rel=bookmark>FlutterでGeoChart</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -223,27 +245,6 @@ FlutterFlow - Build Native Apps Visually 前にチュートリアルやって、
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/06/02_wsl_portforward/ rel=bookmark>WSL2のExpoにLAN内のAndroidから接続したい（未完）</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-06-02T00:00:00>2022-06-02</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-WSL2 の localhostForwarding 機能がうまくうごかない - mrk21::blog {} この記事を見ながらやってみたけど、うまくいかない。 もしかしたら経路のどこかでブロックされているのかもしれない。 うまくいったとしても、QRコードがWSL2のIPで作られているので、手打ちでWindows11のIPを打たないといけないのは面倒。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/expo rel=tag>expo</a>
-<a href=https://umemak.github.io/tags/wsl2 rel=tag>wsl2</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -326,6 +327,9 @@ WSL2 の localhostForwarding 機能がうまくうごかない - mrk21::blog {} 
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/12/06_bitbucket/>BitbucketとVS Code</a>
+</li>
+<li>
 <a href=/blog/posts/2022/12/05_cython/>Cython入門</a>
 </li>
 <li>
@@ -351,9 +355,6 @@ WSL2 の localhostForwarding 機能がうまくうごかない - mrk21::blog {} 
 </li>
 <li>
 <a href=/blog/posts/2022/11/27_wifi_nec/>無線LANルーター3</a>
-</li>
-<li>
-<a href=/blog/posts/2022/11/26_wifi_iodata/>無線LANルーター2</a>
 </li>
 </ul>
 </aside>
