@@ -40,6 +40,28 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/12/10_raspberry_pi_vscode/ rel=bookmark>ラズパイでDockerでMySQL</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-12-10T00:00:00>2022-12-10</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+GitHub Codespacesが使えるようになるのを待つ間、ラズパイで何とかならないか試してみた。 VS Codeからリモート接続して、Dockerインストールするところまでは順調だったけれど、docker compose upしたところでエラー。 MySQLのコンテナイメージが提供されていないようだ。 意外だった。 mysql Tags | Docker Hubに
+<a href=/blog/posts/2022/12/10_raspberry_pi_vscode/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/raspberry-pi rel=tag>raspberry-pi</a>
+<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/12/09_codespaces/ rel=bookmark>Codespacesの制限</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -221,28 +243,6 @@ umemak/kindle_xml_to_tsv作った。 ExcelだとXMLファイル読めるらし�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/11/30_cloudfunctions_log/ rel=bookmark>CloudFunctionsのログ</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-11-30T00:00:00>2022-11-30</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-デプロイのエラーは、go clean -modcacheしてgo.sum削除してgo.modのrequire全削除してgo mod tidyしたら直った。 何が効いたのかはわからない。 ログは、JSON形式で出力しないといけないのかと思ってそのように書いてみたら、そのまま記録されて構造化されなかった。 集計するものでもなけれ
-<a href=/blog/posts/2022/11/30_cloudfunctions_log/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/gcp rel=tag>gcp</a>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -326,6 +326,9 @@ umemak/kindle_xml_to_tsv作った。 ExcelだとXMLファイル読めるらし�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/12/10_raspberry_pi_vscode/>ラズパイでDockerでMySQL</a>
+</li>
+<li>
 <a href=/blog/posts/2022/12/09_codespaces/>Codespacesの制限</a>
 </li>
 <li>
@@ -351,9 +354,6 @@ umemak/kindle_xml_to_tsv作った。 ExcelだとXMLファイル読めるらし�
 </li>
 <li>
 <a href=/blog/posts/2022/12/01_xml2tsv/>KindleのXMLをTSVに変換する</a>
-</li>
-<li>
-<a href=/blog/posts/2022/11/30_cloudfunctions_log/>CloudFunctionsのログ</a>
 </li>
 </ul>
 </aside>
