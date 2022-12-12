@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/09/13_proto/ rel=bookmark>proto</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-09-13T00:00:00>2022-09-13</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+proto定義何もわからない。。 REST用のパスを定義するために option (google.api.http) = { get : "/example-messages/{id}" }; といった定義が必要で、これを使うには import "google/api/annotations.proto"; が必要らしいという理解なのだけど、これをビルドしようとすると event.proto:6:1: Import "google/api/annotations.proto" was not found or had errors. というエラーが出てしまう。 こういうところで躓くの嫌すぎる。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+<a href=https://umemak.github.io/tags/grpc rel=tag>gRPC</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/09/12_proto2openapi/ rel=bookmark>protoをマスターにする</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -232,28 +253,6 @@ Amazon.co.jp: 作って学ぶ Next.js/React Webサイト構築 eBook : エビス
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/09/03_next_book/ rel=bookmark>別のNext.js本</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-09-03T00:00:00>2022-09-03</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Amazon.co.jp: 作って学ぶ Next.js/React Webサイト構築 eBook : エビスコム: 本を買ってみた。 TypeScriptとReact/Next.jsでつくる実践Webアプリケーション開発と違って、固定レイアウトなので読みにくさは少ない。字は小さいけど。。 あとマーカーも使えないので、この辺りはTypeScriptと～のほうが使い勝手が良い
-<a href=/blog/posts/2022/09/03_next_book/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/react rel=tag>react</a>
-<a href=https://umemak.github.io/tags/nextjs rel=tag>nextjs</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -337,6 +336,9 @@ Amazon.co.jp: 作って学ぶ Next.js/React Webサイト構築 eBook : エビス
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/12/12_docker/>Docker再入門</a>
+</li>
+<li>
 <a href=/blog/posts/2022/12/11_go_present/>Goのpresentパッケージ</a>
 </li>
 <li>
@@ -362,9 +364,6 @@ Amazon.co.jp: 作って学ぶ Next.js/React Webサイト構築 eBook : エビス
 </li>
 <li>
 <a href=/blog/posts/2022/12/03_mouse/>有線マウス</a>
-</li>
-<li>
-<a href=/blog/posts/2022/12/02_cython/>Cython</a>
 </li>
 </ul>
 </aside>
