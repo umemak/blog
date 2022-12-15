@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/11/05_swr_update/ rel=bookmark>SWRの更新系</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-11-05T00:00:00>2022-11-05</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+SWRで更新系もできると思ったけれど、mutateで更新するのは、ローカルのキャッシュのようだ。 つまりPOSTやDELETEは別途実行して、その結果をローカルキャッシュに反映するのがmutate。 更新系API呼びつつキャッシュも最新化するというものではなさそう。残念。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/swr rel=tag>swr</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/11/04_swr/ rel=bookmark>SWR使ってみた</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -228,27 +248,6 @@ aws-lambda-go-api-proxy でAPI作るとして、ローカルでのテスト環�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/10/26_lambda_go/ rel=bookmark>GoとLambda</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-10-26T00:00:00>2022-10-26</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-昨日、API GW+Lambdaの可能性について調べたとき、aws-lambda-go-api-proxy というものを見つけた。 awslabs/aws-lambda-go-api-proxy: lambda-go-api-proxy makes it easy to port APIs written with Go frameworks such as Gin (https://gin-gonic.github.io/gin/ ) to AWS Lambda and Amazon API Gateway. 良さそうだけど、PRが結構たまっているなーと思い、よく見てみると Deprecation in favor of Lambda Web Adapter · Issue #143 · awslabs/aws-lambda-go-api-proxy とのことで awslabs/aws-lambda-web-adapter: Run web applications on AWS Lambda の使用を勧めら
-<a href=/blog/posts/2022/10/26_lambda_go/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/aws rel=tag>aws</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -332,6 +331,9 @@ aws-lambda-go-api-proxy でAPI作るとして、ローカルでのテスト環�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/12/15_go_error/>Goのエラーのラップ</a>
+</li>
+<li>
 <a href=/blog/posts/2022/12/14_docker/>Docker x ChatGPT</a>
 </li>
 <li>
@@ -357,9 +359,6 @@ aws-lambda-go-api-proxy でAPI作るとして、ローカルでのテスト環�
 </li>
 <li>
 <a href=/blog/posts/2022/12/06_bitbucket/>BitbucketとVS Code</a>
-</li>
-<li>
-<a href=/blog/posts/2022/12/05_cython/>Cython入門</a>
 </li>
 </ul>
 </aside>
