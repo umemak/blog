@@ -40,6 +40,23 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/01/30_go_args/ rel=bookmark>args</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-01-30T00:00:00>2022-01-30</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+昨日のgo runとgo testで挙動が違うのは、os.argsのインデックスが間違っていただけだった・・ os.args[0] はコンパイルしたバイナリで、欲しかったものはos.args[1] でとれた。 なんか初歩的なところで時間溶かした。。
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/01/30_hexdump/ rel=bookmark>hexdump</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -196,24 +213,6 @@ MMLを再生するために何が必要か考えてみた。 MMLから直接再�
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/01/21_mml/ rel=bookmark>MML</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-01-21T00:00:00>2022-01-21</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Music Macro Langurageの略。 音楽をテキストで作成するための記法。 ベーマガに載っているリストをひたすら打ち込んでいた思い出。 片手でもそこそこキーボード打てるのは、この時の経験があるからかもしれない（左手で本を抑えて、右手で入力してた）。 GitHub検索したらいくつかパーサーが公開されているけれど、Go
-<a href=/blog/posts/2022/01/21_mml/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -297,6 +296,9 @@ Music Macro Langurageの略。 音楽をテキストで作成するための記�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/12/16_rust/>Rust再入門</a>
+</li>
+<li>
 <a href=/blog/posts/2022/12/15_go_error/>Goのエラーのラップ</a>
 </li>
 <li>
@@ -322,9 +324,6 @@ Music Macro Langurageの略。 音楽をテキストで作成するための記�
 </li>
 <li>
 <a href=/blog/posts/2022/12/07_chatgpt/>ChatGPT使ってみた</a>
-</li>
-<li>
-<a href=/blog/posts/2022/12/06_bitbucket/>BitbucketとVS Code</a>
 </li>
 </ul>
 </aside>
