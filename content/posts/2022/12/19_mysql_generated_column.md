@@ -1,6 +1,6 @@
 ---
 title: "MySQLのGenerated Column"
-date: "2022-12-18"
+date: "2022-12-19"
 tags: ["MySQL"]
 
 ---

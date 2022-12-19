@@ -1,5 +1,5 @@
 ---
-title: "HTTP3入門"
+title: "HTTP/3入門"
 date: "2022-12-18"
 tags: ["http3"]
 
