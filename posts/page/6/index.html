@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/11/10_raspi_router/ rel=bookmark>ラズパイをルーターにする2</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-11-10T00:00:00>2022-11-10</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+SSIDが見つからない件。 linux - Raspberry Pi 4 hostapd hotspot not visible - Super Userの回答を参考に、 sudo systemctl stop dhcpcd.service sudo systemctl restart hostapd.service sudo systemctl start dhcpcd.service したらいけた。 /etc/dhcpcd.confにdenyinterfaces wlan0を追記するのは効き目なかった。 スピードテストの結果 経由 ダウンロード アップロード レイテンシ 無線LANルーター 88.2Mbps 78.4Mbps 79ms ラズパ
+<a href=/blog/posts/2022/11/10_raspi_router/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/raspberry-pi rel=tag>raspberry-pi</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/11/09_raspi_router/ rel=bookmark>ラズパイをルーターにする</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -223,28 +244,6 @@ AWS IAM アイデンティティセンター (AWS SSO の後継)で新規ユー�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/10/31_sam_ip/ rel=bookmark>SAMでIP制限</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-10-31T00:00:00>2022-10-31</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-SAMを使ってデプロイしたLambdaの、リクエスト元のIPアドレスを制限したいとき。 Lambdaに制限を入れるのではなく、API Gatewayの設定でいける。 api gateway + samでapiの環境を作る(ip制限) - Qiita ここにたどり着くまでに、Lambdaをセキュリティグループに入れてみたりしたけど効かなかった
-<a href=/blog/posts/2022/10/31_sam_ip/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/aws rel=tag>aws</a>
-<a href=https://umemak.github.io/tags/sam rel=tag>sam</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -330,6 +329,9 @@ SAMを使ってデプロイしたLambdaの、リクエスト元のIPアドレス
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2022/12/30_obsidian_mobile/>スマホObsidian</a>
+</li>
+<li>
 <a href=/blog/posts/2022/12/29_keep2md/>keep2md</a>
 </li>
 <li>
@@ -355,9 +357,6 @@ SAMを使ってデプロイしたLambdaの、リクエスト元のIPアドレス
 </li>
 <li>
 <a href=/blog/posts/2022/12/21_rss_filter/>rss_filter</a>
-</li>
-<li>
-<a href=/blog/posts/2022/12/20_scrapbox/>Scrapbox</a>
 </li>
 </ul>
 </aside>
