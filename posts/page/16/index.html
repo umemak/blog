@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/08/08_ffmpeg_srt/ rel=bookmark>FFmpegで字幕</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-08-08T00:00:00>2022-08-08</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+動画の音声をAmazon Transcribe（音声をテキストに変換する機能を簡単に追加）| AWSでsrt形式の日本語文字起こしをして、DockerのUbuntuにインストールしたFFmpegで動画に字幕を焼きこもうとした。 日本語文字が豆腐になってしまった。 日本語フォントとかインストールしてやらないと
+<a href=/blog/posts/2022/08/08_ffmpeg_srt/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/ffmpeg rel=tag>ffmpeg</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/08/07_sqlc_with/ rel=bookmark>sqlcのエラー2</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -223,27 +244,6 @@ VS Codeとブラウザを行き来するのが面倒なので、VS Code内でブ
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/07/29_openapi_generator/ rel=bookmark>OpenAPI Generator go-server</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-07-29T00:00:00>2022-07-29</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Documentation for the go-server Generatorで、routerはmuxとchiが選べると書いてあって、省略時はmuxとのこと。 chiの指定方法がわからなかったので調べた。 $ wget https://raw.githubusercontent.com/openapitools/openapi-generator/master/modules/openapi-generator/src/test/resources/3_0/petstore.yaml $ docker run --rm \ -v ${PWD}:/local openapitools/openapi-generator-cli generate \ -i /local/petstore.yaml \ -g go-server \ --additional-properties=router=chi \ -o /local/out と、--additional-propertiesにつけるらしい。、 他のパラメータ、たとえばsererP
-<a href=/blog/posts/2022/07/29_openapi_generator/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/openapi rel=tag>OpenAPI</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -329,6 +329,9 @@ Documentation for the go-server Generatorで、routerはmuxとchiが選べると
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2023/04_notepc/>ノートPC選択2023</a>
+</li>
+<li>
 <a href=/blog/posts/2023/03_flyio/>Fly.io</a>
 </li>
 <li>
@@ -354,9 +357,6 @@ Documentation for the go-server Generatorで、routerはmuxとchiが選べると
 </li>
 <li>
 <a href=/blog/posts/2022/12/27_keep2obsidian/>Google KeepからObsidianに移行</a>
-</li>
-<li>
-<a href=/blog/posts/2022/12/26_obsidian/>Obsidian再入門</a>
 </li>
 </ul>
 </aside>
