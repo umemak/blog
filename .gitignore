@@ -2,3 +2,4 @@ public/blog/
 .devcontainer/
 node_modules/
 .env
+.obsidian/
