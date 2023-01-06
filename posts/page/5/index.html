@@ -40,6 +40,28 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/11/28_cloudfunctions_log/ rel=bookmark>CloudFunctionsのログ</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-11-28T00:00:00>2022-11-28</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+何もしないと、リクエストパラメータすらログに出力されないので、何かと不便。 ログの作成、表示、処理 | Google Cloud Functions に関するドキュメントによると、標準出力や標準エラーに書き込めば良いが、Entry構造体を定義して、Stringメソッドを作り、logにPrintlnで渡せばもっと良い感じにできるらしい。 とりあえず
+<a href=/blog/posts/2022/11/28_cloudfunctions_log/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/gcp rel=tag>gcp</a>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/11/27_wifi_nec/ rel=bookmark>無線LANルーター3</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -218,27 +240,6 @@ mmcdole/gofeed: Parse RSS, Atom and JSON feeds in Goを使ったら、RSSの読�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/11/18_runn/ rel=bookmark>runnでgRPCのテスト2</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-11-18T00:00:00>2022-11-18</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-runnのコマンドライン実行でうまく動かない件、オプション--grpc-no-tlsを指定したら解消した。 デバッグ用に詳細オプションないかなーってコマンドラインヘルプ見ていて見つけた。 マニュアルはちゃんと読みましょう（今年何度目かの反省
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-<a href=https://umemak.github.io/tags/grpc rel=tag>gRPC</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -325,6 +326,9 @@ runnのコマンドライン実行でうまく動かない件、オプション-
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2023/06_obsidian_sync/>Obsidian同期問題 Keepとコピペ</a>
+</li>
+<li>
 <a href=/blog/posts/2023/05_obsidian_sync/>Obsidian同期問題</a>
 </li>
 <li>
@@ -350,9 +354,6 @@ runnのコマンドライン実行でうまく動かない件、オプション-
 </li>
 <li>
 <a href=/blog/posts/2022/12/29_keep2md/>keep2md</a>
-</li>
-<li>
-<a href=/blog/posts/2022/12/28_keep2md/>Obsidianのプラグインに入門</a>
 </li>
 </ul>
 </aside>

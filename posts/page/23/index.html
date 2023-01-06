@@ -40,6 +40,29 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/11_oracle_docker_go/ rel=bookmark>OracleにGoで接続する</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-11T00:00:00>2022-06-11</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+前の記事でsqlplusで接続できたので、Goのプログラムから接続してみる。 instantclientベースでGoをインストールするDockerfile作成 FROMghcr.io/oracle/oraclelinux8-instantclient:21RUN yum install -y wget tarRUN wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gzRUN rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.3.linux-amd64.tar.gzENV PATH="${PATH}:/usr/local/go/bin"CMD [ "go", "version" ]docker-composeもそれを使うように修正 version:'3'services:db:image:container-registry.oracle.com/database/expressports:- 1521:1521environment:- ORACLE_PWD=OraclePwdcli
+<a href=/blog/posts/2022/06/11_oracle_docker_go/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
+<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/06/11_oracle_docker_go2/ rel=bookmark>OracleにGoで接続する2</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -226,27 +249,6 @@ WSL2で開発中のWebアプリを同じLANのスマホで動作確認する方�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/06/04_flutterflow/ rel=bookmark>FlutterFlow</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-06-04T00:00:00>2022-06-04</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-FlutterFlow - Build Native Apps Visually 前にチュートリアルやって、確か途中で分からなくなって放置してた。 FlutterFlowのススメを読んで、再度挑戦する気になってやってみた。 やっぱりよくわからなかった。 慣れの問題かもしれないけれど、いきなり何でもできる状態に放り込まれると、逆に何をしたらよいかわからなくなる状態。 コードだと
-<a href=/blog/posts/2022/06/04_flutterflow/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/flutter rel=tag>flutter</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -333,6 +335,9 @@ FlutterFlow - Build Native Apps Visually 前にチュートリアルやって、
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2023/06_obsidian_sync/>Obsidian同期問題 Keepとコピペ</a>
+</li>
+<li>
 <a href=/blog/posts/2023/05_obsidian_sync/>Obsidian同期問題</a>
 </li>
 <li>
@@ -358,9 +363,6 @@ FlutterFlow - Build Native Apps Visually 前にチュートリアルやって、
 </li>
 <li>
 <a href=/blog/posts/2022/12/29_keep2md/>keep2md</a>
-</li>
-<li>
-<a href=/blog/posts/2022/12/28_keep2md/>Obsidianのプラグインに入門</a>
 </li>
 </ul>
 </aside>
