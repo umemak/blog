@@ -40,6 +40,24 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/01/22_wsl_midi/ rel=bookmark>WSL2でmidi再生</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-01-22T00:00:00>2022-01-22</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+MMLを再生するために何が必要か考えてみた。 MMLから直接再生できるのが良いけれど、大変そうなので既存の何かがあれば使っていきたい。 midiファイルを再生するアプリはTiMidityというのがよさそう。 timidityとSoundFontをインストール $ sudo apt install timidity freepats fluid-soundfont-gm fluid-soundfont-gs 参考 FrontPage - KemaSoft 適当なmidiファイル
+<a href=/blog/posts/2022/01/22_wsl_midi/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/01/21_mml/ rel=bookmark>MML</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -194,24 +212,6 @@ Inspiron13にプリインストールされていた、マカフィー関連を�
 <footer class=post-footer>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/01/13_wsl2docker/ rel=bookmark>WSL2でdocker</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-01-13T00:00:00>2022-01-13</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-WSL2でFirebaseの作業再開しようとしたら、npmやらなにやら入ってない（Surfaceのほうは過去にインストールしてたらしい）ので、 docker入れてみることにした。 https://docs.docker.com/engine/install/ubuntu/ $ sudo apt-get remove docker docker-engine docker.io containerd runc $ sudo apt-get update $ sudo apt-get install \ ca-certificates \ curl \ gnupg \ lsb-release $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg $ echo \ "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null $ sudo apt-get update $ sudo apt-get install
-<a href=/blog/posts/2022/01/13_wsl2docker/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -273,8 +273,9 @@ WSL2でFirebaseの作業再開しようとしたら、npmやらなにやら入�
 <a href=/blog/posts/page/54/>54</a>
 <a href=/blog/posts/page/55/>55</a>
 <a href=/blog/posts/page/56/>56</a>
+<a href=/blog/posts/page/57/>57</a>
 <a href=/blog/posts/page/40/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/posts/page/56/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/posts/page/57/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -297,6 +298,9 @@ WSL2でFirebaseの作業再開しようとしたら、npmやらなにやら入�
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2023/15_macmini/>mac mini発掘</a>
+</li>
 <li>
 <a href=/blog/posts/2023/14_lowcode/>ローコード</a>
 </li>
@@ -323,9 +327,6 @@ WSL2でFirebaseの作業再開しようとしたら、npmやらなにやら入�
 </li>
 <li>
 <a href=/blog/posts/2023/06_obsidian_sync/>Obsidian同期問題 Keepとコピペ</a>
-</li>
-<li>
-<a href=/blog/posts/2023/05_obsidian_sync/>Obsidian同期問題</a>
 </li>
 </ul>
 </aside>
