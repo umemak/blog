@@ -40,6 +40,26 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/04/20_makefile/ rel=bookmark>Makefile入門</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-04-20T00:00:00>2022-04-20</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+昨日の件、 VAR1 = "abc" if [ "$(CI)" = "true" ]; then \ VAR1 += "def"; \ fi ではなく VAR1 = "abc" ifeq ($(CI),true) VAR1 += "def" endif で良かった。 ひとつ賢くなった。
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/makefile rel=tag>Makefile</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/04/19_makefile/ rel=bookmark>Makefile入門</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -221,26 +241,6 @@ XSplit VCam: OBSでバーチャルグリーンバックを手に入れよう | X
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/04/10_rust_book/ rel=bookmark>実践Rustプログラミング入門</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-04-10T00:00:00>2022-04-10</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-unsafeの節を読んだ。 Rustでも安全でないコードを書くことができる。しかしそれを局所化しておくことが大事。 直近で必要になることはなさそう。 その他Tipsを読んで読了した。 自分にはRustより先に習得すべきものがある気がした。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/rust rel=tag>rust</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -328,6 +328,9 @@ unsafeの節を読んだ。 Rustでも安全でないコードを書くことが
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2023/17_go_mod_sum/>goでmissing go.sum entry cacheエラー</a>
+</li>
+<li>
 <a href=/blog/posts/2023/16_go_mod_sum/>goでmissing go.sum entry cacheエラー</a>
 </li>
 <li>
@@ -353,9 +356,6 @@ unsafeの節を読んだ。 Rustでも安全でないコードを書くことが
 </li>
 <li>
 <a href=/blog/posts/2023/08_paapi/>PA-API使ってみる</a>
-</li>
-<li>
-<a href=/blog/posts/2023/07_obsidian_sync/>Obsidian同期問題 Gitふたたび</a>
 </li>
 </ul>
 </aside>

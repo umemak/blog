@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/08/29_mlt/ rel=bookmark>MLTファイル生成</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-08-29T00:00:00>2022-08-29</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+機能追加していたら、ダメなコードの見本みたいになり始めてきた。 機能ごとに分けるとかし始める必要がありそう。 あと、XMLの出力をベタに文字列結合でやっているので、ちゃんとライブラリ使って生成するようにしたい。 Goだとxml package - encoding/xml - Go PackagesのMarshalを使えば良さそうだけど、構造体の定義面
+<a href=/blog/posts/2022/08/29_mlt/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/08/25_ginkgo/ rel=bookmark>Ginkgoやめた</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -224,27 +245,6 @@ Shotcutのプロジェクトの保存形式がMLTで、中身はXMLのテキス�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/07/28_sqlc/ rel=bookmark>sqlc</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-07-28T00:00:00>2022-07-28</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-別の調べものをしていて見つけたsqlc.dev | Compile SQL to type-safe Goを試してみた。 schema.sqlは、今までMySQLの起動時に読み込ませていたSQLファイルがそのまま使えた。 query.sqlもgoのmodelパッケージ内に書いていたSQLをコピペで作れた。 結構良いかも。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>Go</a>
-<a href=https://umemak.github.io/tags/db rel=tag>DB</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -281,6 +281,9 @@ Shotcutのプロジェクトの保存形式がMLTで、中身はXMLのテキス�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2023/17_go_mod_sum/>goでmissing go.sum entry cacheエラー</a>
+</li>
+<li>
 <a href=/blog/posts/2023/16_go_mod_sum/>goでmissing go.sum entry cacheエラー</a>
 </li>
 <li>
@@ -306,9 +309,6 @@ Shotcutのプロジェクトの保存形式がMLTで、中身はXMLのテキス�
 </li>
 <li>
 <a href=/blog/posts/2023/08_paapi/>PA-API使ってみる</a>
-</li>
-<li>
-<a href=/blog/posts/2023/07_obsidian_sync/>Obsidian同期問題 Gitふたたび</a>
 </li>
 </ul>
 </aside>
