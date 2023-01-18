@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/09/01_docker_restart/ rel=bookmark>docker composeで特定コンテナの再起動</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-09-01T00:00:00>2022-09-01</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+docker compose up -dで複数コンテナを動かしているときに、その中の特定のコンテナのイメージを更新して再起動したい。 できればその他のコンテナは再起動したくない。 そんなのdocker compose stop hogehogeしてdocker compose start hogehogeしたらいいと思ってた。 ログ的には再起動されるけれども、コンテナイメージは古いま
+<a href=/blog/posts/2022/09/01_docker_restart/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/08/31_movie/ rel=bookmark>動画編集のフロー</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -212,24 +233,6 @@ VTT編集するWebアプリ作ろうと思って、環境何にしようかと�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/08/22_mlt/ rel=bookmark>MLTファイルを作る3</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-08-22T00:00:00>2022-08-22</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-Shotcutでマーカーをchainの開始に合わせて配置したいと思って、mltにマーカーの記述を追加してみた。 Shotcutで開くと、なんかずれてる。 そもそも、mltファイルでは時間をミリ秒表記でやってるのに、アプリではフレーム単位？0～29で扱われているので、なんかその辺の誤差とかなのかなーとか、
-<a href=/blog/posts/2022/08/22_mlt/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -317,6 +320,9 @@ Shotcutでマーカーをchainの開始に合わせて配置したいと思っ�
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2023/18_mac/>新型mac発表</a>
+</li>
+<li>
 <a href=/blog/posts/2023/17_go_mod_sum/>goでmissing go.sum entry cacheエラー</a>
 </li>
 <li>
@@ -342,9 +348,6 @@ Shotcutでマーカーをchainの開始に合わせて配置したいと思っ�
 </li>
 <li>
 <a href=/blog/posts/2023/09_asin2md/>ASINからMD生成する</a>
-</li>
-<li>
-<a href=/blog/posts/2023/08_paapi/>PA-API使ってみる</a>
 </li>
 </ul>
 </aside>

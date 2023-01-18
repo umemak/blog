@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/21_flutter_web_scroll/ rel=bookmark>Flutter Webをスマホで表示したらスクロールできなかった</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-22T00:00:00>2022-06-22</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+基本的な実装ができたので、Firebase HostingにデプロイしてPixel4で表示してみた。 画像をアップロードして画面の表示項目が増えたら、画面下部のボタンが画面外に出て押せなくなってしまった。 SingleChildScrollView でまるっと囲んでしまえば良いらしい。 PWAとしてインストールしていた場合は、再インストールしないと
+<a href=/blog/posts/2022/06/21_flutter_web_scroll/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/flutter rel=tag>Flutter</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/06/22_flutter_study/ rel=bookmark>Flutterを学ぶ</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -224,27 +245,6 @@ go_router 続き。 パラメータを渡すところは、go_router/parameters.
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/06/13_flutter_dropdown/ rel=bookmark>FlutterのDropdownを使う</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-06-13T00:00:00>2022-06-13</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-DropdownButton class - material library - Dart APIのサンプルを持ってきて、サンプルではchildとvalueを同じ文字列にしてるのを別々に指定できるようにして、とりあえずループ使わないで配列直接指定にしてみたら、エラー。 Assertion failed: file:///home/umemak/sdk/flutter/packages/flutter/lib/src/material/dropdown.dart:882:15 items == null || items.isEmpty || value == null || items.where((DropdownMenuItem&lt;T> item) { return item.value == value; }).length == 1 "There should be exactly one item with [DropdownButton]'s value: One. \nEither zero or 2 or more [DropdownMenuItem]s were detected with the same value" dropdownV
-<a href=/blog/posts/2022/06/13_flutter_dropdown/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/flutter rel=tag>Flutter</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -332,6 +332,9 @@ DropdownButton class - material library - Dart APIのサンプルを持ってき
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2023/18_mac/>新型mac発表</a>
+</li>
+<li>
 <a href=/blog/posts/2023/17_go_mod_sum/>goでmissing go.sum entry cacheエラー</a>
 </li>
 <li>
@@ -357,9 +360,6 @@ DropdownButton class - material library - Dart APIのサンプルを持ってき
 </li>
 <li>
 <a href=/blog/posts/2023/09_asin2md/>ASINからMD生成する</a>
-</li>
-<li>
-<a href=/blog/posts/2023/08_paapi/>PA-API使ってみる</a>
 </li>
 </ul>
 </aside>
