@@ -13,3 +13,5 @@ tags: ["docker", "Spring Boot"]
 [英語版](https://spring.io/guides/gs/spring-boot-docker/)のリンクは何もオプションパラメータがついていなくて最初から17が選択されていたので、日本語版の変更が追いついていないだけなのかもしれない。
 
 そして日本語版を管理しているリポジトリが見つからないので修正リクエストも出せない。残念。
+
+→<https://github.com/cypher256/pleiades.io>でissue管理している様子。
