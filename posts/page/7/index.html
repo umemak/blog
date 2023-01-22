@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/11/24_gcp_charge/ rel=bookmark>GCPの課金</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-11-24T00:00:00>2022-11-24</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+Cloud FunctionsでAPIデプロイしてから、課金が発生しているのに気が付いた。 200万回までは無料では？と思い詳細を見てみると、Cloud Storageの料金だった。 料金 | Cloud Functions | Google Cloud 関数が Container Registry に保存される場合、Container Registry には無料枠がないため、デプロイ後にわずかな料金が発生します。 これか。
+<a href=/blog/posts/2022/11/24_gcp_charge/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/gcp rel=tag>gcp</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/11/23_rss_filter/ rel=bookmark>encoding/xml</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -227,27 +248,6 @@ RSSリーダーはInoreaderをProプランで使っているのだけれど、�
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/11/14_sqlboiler_undelete/ rel=bookmark>SQLBoilerで論理削除の復旧</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-11-14T00:00:00>2022-11-14</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-SQLBoilerはDeleteするときに論理削除が使える。 詳細は【Go】sqlboilerで論理削除を実装する | ISSUEが詳しい。 論理削除のときはdeleted_atカラムがセットされる。 で、そのときupdated_atは更新されない。 論理削除した行を元に戻したいとき、deleted_atにnu
-<a href=/blog/posts/2022/11/14_sqlboiler_undelete/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -335,6 +335,9 @@ SQLBoilerはDeleteするときに論理削除が使える。 詳細は【Go】sq
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2023/22_gitjournal/>GitJournal</a>
+</li>
+<li>
 <a href=/blog/posts/2023/21_chromebook/>Chromebook調査</a>
 </li>
 <li>
@@ -360,9 +363,6 @@ SQLBoilerはDeleteするときに論理削除が使える。 詳細は【Go】sq
 </li>
 <li>
 <a href=/blog/posts/2023/13_budibase/>Budibase入門</a>
-</li>
-<li>
-<a href=/blog/posts/2023/12_sveltekit/>SvelteKit入門</a>
 </li>
 </ul>
 </aside>
