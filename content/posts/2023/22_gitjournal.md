@@ -14,5 +14,6 @@ Obsidianのモバイル同期問題で、モバイル用の小さなリポジト
 Android版入れてみて、問題なく検索できた。
 
 iOS版は有料だけど、課金しても良いかも。
+→買った。
 
 そしてこのアプリの作者のリポジトリに[vHanda/google-keep-exporter: Export google keep notes to markdown](https://github.com/vHanda/google-keep-exporter)というKeepのエクスポートデータをMarkdownに変換するツールがあって、みんな考えていること同じだなと思った。
