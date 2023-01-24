@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2023/24_goreleaser/ rel=bookmark>GoReleaser</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2023-01-24T00:00:00>2023-01-24</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+GoReleaser - GoReleaser使ってみた。 うまく動かなかった。 $ go install github.com/goreleaser/goreleaser@latest $ goreleaser init $ goreleaser release --snapshot --rm-dist • starting release... • loading config file file=.goreleaser.yaml • loading environment variables • getting and validating git state • ignoring errors because this is a snapshot error=git doesn't contain any tags. Either add a tag or use --snapshot • building... commit=c555bfd95c67f41425d8155510f376d0015665eb latest tag=v0.0.0 • pipe skipped reason=disabled during snapshot mode • parsing tag • setting defaults • running before hooks • running hook=go mod tidy • running hook=go generate ./... • took: 6s • snapshotting • building snapshot... version=0.0.1-next • checking distribution directory • loading go mod information • build prerequisites • writing effective config file • writing config=dist\config.yaml • building binaries • building binary=dist\asin2md_linux_386\asin2md • building binary=dist\asin2md_linux_amd64_v1\asin2md • building
+<a href=/blog/posts/2023/24_goreleaser/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2023/20_grpc_connect/ rel=bookmark>gRPC Connect</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -229,27 +250,6 @@ gRPCサーバーをテストするのに、fullstorydev/grpcurl: Like cURL, but 
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/11/14_sqlboiler_undelete/ rel=bookmark>SQLBoilerで論理削除の復旧</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-11-14T00:00:00>2022-11-14</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-SQLBoilerはDeleteするときに論理削除が使える。 詳細は【Go】sqlboilerで論理削除を実装する | ISSUEが詳しい。 論理削除のときはdeleted_atカラムがセットされる。 で、そのときupdated_atは更新されない。 論理削除した行を元に戻したいとき、deleted_atにnu
-<a href=/blog/posts/2022/11/14_sqlboiler_undelete/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -286,6 +286,9 @@ SQLBoilerはDeleteするときに論理削除が使える。 詳細は【Go】sq
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2023/24_goreleaser/>GoReleaser</a>
+</li>
+<li>
 <a href=/blog/posts/2023/23_gitjournal/>GitJournal</a>
 </li>
 <li>
@@ -311,9 +314,6 @@ SQLBoilerはDeleteするときに論理削除が使える。 詳細は【Go】sq
 </li>
 <li>
 <a href=/blog/posts/2023/15_macmini/>mac mini発掘</a>
-</li>
-<li>
-<a href=/blog/posts/2023/14_lowcode/>ローコード</a>
 </li>
 </ul>
 </aside>

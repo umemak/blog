@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/11/14_sqlboiler_undelete/ rel=bookmark>SQLBoilerで論理削除の復旧</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-11-14T00:00:00>2022-11-14</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+SQLBoilerはDeleteするときに論理削除が使える。 詳細は【Go】sqlboilerで論理削除を実装する | ISSUEが詳しい。 論理削除のときはdeleted_atカラムがセットされる。 で、そのときupdated_atは更新されない。 論理削除した行を元に戻したいとき、deleted_atにnu
+<a href=/blog/posts/2022/11/14_sqlboiler_undelete/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/11/11_sqlboiler/ rel=bookmark>SQLBoiler</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -230,27 +251,6 @@ gRPCを触ってみたくなったので、gRPCがフロントエンド通信の
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/09/09_go_config/ rel=bookmark>Goで設定を良い感じに処理する方法</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-09-09T00:00:00>2022-09-09</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-コマンドラインで引数を処理する順番は以前調べたことがあるのだけど、これをいい感じに処理してくれるGoのライブラリが欲しい気がする。 まず設定ファイルを読み、環境変数が設定されていれば上書き、コマンドラインで指定されていればさらに上書き joho/godotenv: A Go port of Ruby&rsquo;s dotenv library (Loads environment variables from .env.) Netflix/go-env: a golang library to manage environment variables caarlos0/env: A simple and zero-dependencies library to parse environment variables into structs. ilyakaznacheev/cleanenv:
-<a href=/blog/posts/2022/09/09_go_config/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/go rel=tag>go</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -287,6 +287,9 @@ gRPCを触ってみたくなったので、gRPCがフロントエンド通信の
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2023/24_goreleaser/>GoReleaser</a>
+</li>
+<li>
 <a href=/blog/posts/2023/23_gitjournal/>GitJournal</a>
 </li>
 <li>
@@ -312,9 +315,6 @@ gRPCを触ってみたくなったので、gRPCがフロントエンド通信の
 </li>
 <li>
 <a href=/blog/posts/2023/15_macmini/>mac mini発掘</a>
-</li>
-<li>
-<a href=/blog/posts/2023/14_lowcode/>ローコード</a>
 </li>
 </ul>
 </aside>
