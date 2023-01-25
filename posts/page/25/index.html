@@ -40,6 +40,29 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/06/11_oracle_docker_go2/ rel=bookmark>OracleにGoで接続する2</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-06-11T00:00:00>2022-06-11</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 pkg-config: exec: "pkg-config": executable file not found in $PATH sh-4.4# yum install -y pkgconfig sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 Package oci8 was not found in the pkg-config search path. Perhaps you should add the directory containing `oci8.pc' to the PKG_CONFIG_PATH environment variable Package 'oci8', required by 'virtual:world', not found pkg-config: exit status 1 とりあえずmain.goと同じところにoci8.pcを作成。中身はExamples。 sh-4.4# export PKG_CONFIG_PATH=. sh-4.4# go run go-oci8/main.go # github.com/mattn/go-oci8 cgo: C compiler "gcc" not found: exec: "gcc":
+<a href=/blog/posts/2022/06/11_oracle_docker_go2/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>Docker</a>
+<a href=https://umemak.github.io/tags/oracle rel=tag>oracle</a>
+<a href=https://umemak.github.io/tags/go rel=tag>go</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/06/11_oracle_docker/ rel=bookmark>OracleサーバーのDockerイメージ</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -224,27 +247,6 @@ FlutterFlow - Build Native Apps Visually 前にチュートリアルやって、
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/06/03_expo_flutter/ rel=bookmark>ExpoとFlutter選択</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-06-03T00:00:00>2022-06-03</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-ちょっとしたアプリを作るのに、どちらが良いのか迷っている。 ExpoはWindows環境でもiOS実機で動作確認ができるのが魅力。 ただ、「ちょっとした」アプリでそこまでする必要があるのかというと微妙。 やっぱりFlutterの習熟度を上げていくのが良いのかなぁ。
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/expo rel=tag>expo</a>
-<a href=https://umemak.github.io/tags/flutter rel=tag>flutter</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -307,8 +309,9 @@ FlutterFlow - Build Native Apps Visually 前にチュートリアルやって、
 <a href=/blog/posts/page/55/>55</a>
 <a href=/blog/posts/page/56/>56</a>
 <a href=/blog/posts/page/57/>57</a>
+<a href=/blog/posts/page/58/>58</a>
 <a href=/blog/posts/page/26/ aria-label=Next><span aria-hidden=true>Next Page</span></a>
-<a href=/blog/posts/page/57/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
+<a href=/blog/posts/page/58/ aria-label=Last><span aria-hidden=true>&#187;</span></a>
 </ul>
 </div>
 <table cellspacing=15 style=width:100%;border:none>
@@ -331,6 +334,9 @@ FlutterFlow - Build Native Apps Visually 前にチュートリアルやって、
 <aside class="widget widget_recent_entries">
 <h2>最近の投稿</h2>
 <ul>
+<li>
+<a href=/blog/posts/2023/25_ibmcloud/>IBM Cloudからのメール</a>
+</li>
 <li>
 <a href=/blog/posts/2023/24_goreleaser/>GoReleaser</a>
 </li>
@@ -357,9 +363,6 @@ FlutterFlow - Build Native Apps Visually 前にチュートリアルやって、
 </li>
 <li>
 <a href=/blog/posts/2023/16_go_mod_sum/>goでmissing go.sum entry cacheエラー</a>
-</li>
-<li>
-<a href=/blog/posts/2023/15_macmini/>mac mini発掘</a>
 </li>
 </ul>
 </aside>
