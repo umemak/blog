@@ -1,6 +1,6 @@
 ---
-title: "gRPCのfilterの書き方"
-date: "2023-01-26"
+title: "einride/aip-go使ってみる"
+date: "2023-01-27"
 tags: ["gRPC"]
 
 ---
