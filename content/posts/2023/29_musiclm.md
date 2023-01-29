@@ -17,3 +17,7 @@ tags: ["AI"]
 - [Magenta](https://magenta.tensorflow.org/)
 
 これは指示方法が違うから単純には比較できないか。
+
+ChatGPTに聞いてみたら、OpenAIの[MuseNet](https://openai.com/blog/musenet/)や[Jukebox](https://openai.com/blog/jukebox/)を教えてくれた。
+
+Magentaの[NSynth: Neural Audio Synthesis](https://magenta.tensorflow.org/nsynth)とMuseNetはMIDIデータで出力できる（とChatGPTは言っている）。
