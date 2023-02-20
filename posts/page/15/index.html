@@ -40,6 +40,27 @@
 <article class="list__item post clearfix">
 <div class="list__content clearfix">
 <header class=post-header>
+<h2><a href=/blog/posts/2022/10/04_dockerfile/ rel=bookmark>Dockerfileでブレース展開</a></h2>
+<div class=post-details>
+<a rel=bookmark>
+<time datetime=2022-10-04T00:00:00>2022-10-04</time>
+</a>
+</div>
+</header>
+<div class=post-excerpt><p>
+golangのベースイメージにnodejsを入れたくて、 Step by step instructions to install node and npm using Linux binaries - DEV Community 👩‍💻👨‍💻 この手順見ながらやってみていたのだけれど、 RUN cp -r ./{lib,share,include,bin} /usrでファイル未存在のエラーになってしまった。 RUN cp -r ./lib /usrRUN cp -r ./share /usrRUN cp -r ./include /usrRUN cp -r ./bin /usrとすると通るので、ファイルが存在しないわけではなく、ブレース展
+<a href=/blog/posts/2022/10/04_dockerfile/ class=more-link>Read more </a>
+</p></div>
+</div>
+<footer class=post-footer>
+<span class=post-tags>
+<a href=https://umemak.github.io/tags/docker rel=tag>docker</a>
+</span>
+</footer>
+</article>
+<article class="list__item post clearfix">
+<div class="list__content clearfix">
+<header class=post-header>
 <h2><a href=/blog/posts/2022/10/03_wsl_uninstall/ rel=bookmark>WSL2アンインストール</a></h2>
 <div class=post-details>
 <a rel=bookmark>
@@ -224,27 +245,6 @@ React Admin - Open-Source Framework for B2B applications react-adminを使って
 </span>
 </footer>
 </article>
-<article class="list__item post clearfix">
-<div class="list__content clearfix">
-<header class=post-header>
-<h2><a href=/blog/posts/2022/09/24_wsl_reboot/ rel=bookmark>WSL2の再起動</a></h2>
-<div class=post-details>
-<a rel=bookmark>
-<time datetime=2022-09-24T00:00:00>2022-09-24</time>
-</a>
-</div>
-</header>
-<div class=post-excerpt><p>
-最近、Inspiron13がスリープから復帰した後、高確率でWSL2が応答しなくなっている。 PC再起動すれば直るのだけど、面倒。 WSLだけ再起動でも直ることがわかった。 wsl --shutdown ヘルプでは直ちに、すべての実行中の配布および WSL 2 軽快なユーティリティの仮想マシンを終了します。と書かれているが（軽快なとは・・・
-<a href=/blog/posts/2022/09/24_wsl_reboot/ class=more-link>Read more </a>
-</p></div>
-</div>
-<footer class=post-footer>
-<span class=post-tags>
-<a href=https://umemak.github.io/tags/wsl rel=tag>wsl</a>
-</span>
-</footer>
-</article>
 </div>
 <div class=nav-links>
 <ul class=pagination>
@@ -335,6 +335,9 @@ React Admin - Open-Source Framework for B2B applications react-adminを使って
 <h2>最近の投稿</h2>
 <ul>
 <li>
+<a href=/blog/posts/2023/02/20_notepc/>Yoga 770i</a>
+</li>
+<li>
 <a href=/blog/posts/2023/02/19_ddd/>ドメイン駆動設計</a>
 </li>
 <li>
@@ -360,9 +363,6 @@ React Admin - Open-Source Framework for B2B applications react-adminを使って
 </li>
 <li>
 <a href=/blog/posts/2023/02/11_winmerge/>winmerge</a>
-</li>
-<li>
-<a href=/blog/posts/2023/02/10_fdupes/>fdupes</a>
 </li>
 </ul>
 </aside>
