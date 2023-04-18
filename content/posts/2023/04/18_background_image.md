@@ -10,3 +10,9 @@ tags: []
 水玉とかランダムなサイズで配置してくれるやつ。
 
 似たようなので色違いを再生成したいんだけど、どうやってたどり着いたんだっけな。。
+
+---
+
+[Background Generator - Create Unique and Random Background Images Online](https://bggenerator.com/)
+
+これだ。ダウンロードしたファイルの名前から推測できた。
