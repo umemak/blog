@@ -1,7 +1,7 @@
 ---
 title: "Rust再々々入門"
 date: "2023-05-06"
-tags: []
+tags: ["rust"]
 
 ---
 
