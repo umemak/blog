@@ -1,5 +1,5 @@
 ---
-title: "pnom入門"
+title: "pnpm入門"
 date: "2023-10-29"
 tags: ["pnpm"]
 
