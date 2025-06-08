@@ -689,7 +689,7 @@ XGB: conn.go:48: Trying connection without authority info...
 
 ```
 
-![生成されたゲーム](08_game.png)
+{{< figure src="../08_game.png" title="生成されたゲーム" class="center" width="320" height="640" >}}
 
 青い四角をカーソルキーで動かして、赤い四角にぶつけるとスコアが増えるゲームができた。
 
