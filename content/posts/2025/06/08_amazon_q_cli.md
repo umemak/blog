@@ -9,6 +9,8 @@ tags: ["amazon Q"]
 
 環境はWindows11でWSL2(Ubuntu)。
 
+お題は、[Ebitengine](https://ebitengine.org/ja/)を使ったゲームを作ってもらうこと。
+
 ```
 🤖 You are chatting with claude-3.7-sonnet
 
