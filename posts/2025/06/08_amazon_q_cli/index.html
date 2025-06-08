@@ -1,0 +1,725 @@
+<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1"><title>Amazon Q CLIでゲームを作成する - umemak</title><style type=text/css>img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}</style><link rel=stylesheet href=https://umemak.github.io/blog/css/style.css type=text/css media=all><link rel=stylesheet href=https://umemak.github.io/blog/css/custom.css type=text/css media=all><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-151652940-1","auto"),ga("send","pageview"))</script></head><body class=two-column><a href=#content>Skip to content</a><div class=wrapper><header role=banner class="banner widgets columns-1"><a href=/ rel=home><h1 class=site>umemak</h1><p></p></a><nav role=navigation aria-label="Primary Navigation"><ul class=menu><li class=menu-item><a class=menu__link href=/blog/posts/>POSTS</a></li><li class=menu-item><a class=menu__link href=/blog/tags/>TAGS</a></li></ul><select onchange="location.href=value"><option value=/blog/posts/ class="menu-item menu-item-type-custom menu-item-object-custom">POSTS</option><option value=/blog/tags/ class="menu-item menu-item-type-custom menu-item-object-custom">TAGS</option></select></nav></header><br><div style=width:100%;max-height:100px;text-align:center></div><div class=breadcrumbs></div><div id=content class=content><main role=main><article role=article class="post type-post format-standard hentry"><header class=post-header><h1>Amazon Q CLIでゲームを作成する</h1><div class=post-details><a rel=bookmark><time datetime=2025-06-08T68:120:06>2025-06-08</time></a>
+<span style=float:right><div id=fb-root style=height:100%></div><script async defer crossorigin=anonymous src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script><div class=fb-share-button data-href=https://umemak.github.io/blog/posts/2025/06/08_amazon_q_cli/ data-layout=button_count data-size=small><a target=_blank href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fumemak.github.io%2fblog%2fposts%2f2025%2f06%2f08_amazon_q_cli%2f" class=fb-xfbml-parse-ignore>Share</a></div>&nbsp;
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class=twitter-share-button data-text="Amazon Q CLIでゲームを作成する" data-url=https://umemak.github.io/blog/posts/2025/06/08_amazon_q_cli/ data-show-count=false>Tweet</a>
+<script async src=https://platform.twitter.com/widgets.js></script>
+&nbsp;</span></div></header><div class=post-content><p><a href=https://aws.amazon.com/jp/blogs/news/build-games-with-amazon-q-cli-and-score-a-t-shirt/>Amazon Q CLI でゲームを作ろう Tシャツキャンペーン</a>に乗っかってAmazon Q CLIを試してみた。</p><p>環境はWindows11でWSL2(Ubuntu)。</p><pre tabindex=0><code>🤖 You are chatting with claude-3.7-sonnet
+
+&gt; Ebitengineを使ったゲームを作って
+Ebitengineを使ったゲームを作りましょう。Ebitengineは、Goで書かれた2Dゲーム開発のためのシンプルなライブラリです。ま
+ずは基本的なゲームを作成してみましょう。
+
+まず、プロジェクトディレクトリを作成し、必要なパッケージをインストールします：
+
+
+🛠️  Using tool: execute_bash
+ ⋮
+ ● I will run the following shell command:
+mkdir -p ebiten-game &amp;&amp; cd ebiten-game &amp;&amp; go mod init ebiten-game
+ ⋮
+ ↳ Purpose: ゲームプロジェクトのディレクトリを作成し、Go moduleを初期化
+
+
+Allow this action? Use &#39;t&#39; to trust (always allow) this tool for the session. [y/n/t]:
+
+&gt; t
+bash: line 1: go: command not found
+
+ ⋮
+ ● Completed in 0.103s
+すみません、Goがインストールされていないようです。まずはGoをインストールする必要があります。
+
+
+🛠️  Using tool: execute_bash (trusted)
+ ⋮
+ ● I will run the following shell command:
+which go || echo &#34;Go is not installed&#34;
+ ⋮
+ ↳ Purpose: Goがインストールされているか確認
+
+Go is not installed
+
+ ⋮
+ ● Completed in 0.110s
+Ebitengineを使ったゲームを作るには、まずGoをインストールする必要があります。Goをインストールした後、以下の手順でシ
+ンプルなゲームを作成できます。
+
+### Goのインストール方法
+
+Linuxでは、以下のコマンドでGoをインストールできます：
+
+bash
+# Ubuntuの場合
+sudo apt update
+sudo apt install golang-go
+
+# Fedoraの場合
+sudo dnf install golang
+
+# Arch Linuxの場合
+sudo pacman -S go
+
+
+### Goをインストールした後の手順
+
+1. プロジェクトディレクトリを作成し、Go moduleを初期化
+2. Ebitengineパッケージをインストール
+3. シンプルなゲームコードを作成
+
+### シンプルなゲームのコード例
+
+Goをインストールした後、以下のようなコードでシンプルなゲームを作成できます：
+
+go
+package main
+
+import (
+        &#34;image/color&#34;
+        &#34;log&#34;
+        &#34;math/rand&#34;
+
+        &#34;github.com/hajimehoshi/ebiten/v2&#34;
+        &#34;github.com/hajimehoshi/ebiten/v2/ebitenutil&#34;
+        &#34;github.com/hajimehoshi/ebiten/v2/inpututil&#34;
+)
+
+const (
+        screenWidth  = 640
+        screenHeight = 480
+        playerSize   = 20
+        enemySize    = 15
+        enemyCount   = 5
+)
+
+type Game struct {
+        playerX, playerY float64
+        enemies          []enemy
+        score            int
+}
+
+type enemy struct {
+        x, y          float64
+        speedX, speedY float64
+}
+
+func (g *Game) Update() error {
+        // プレイヤーの移動
+        if ebiten.IsKeyPressed(ebiten.KeyUp) {
+                g.playerY -= 4
+        }
+        if ebiten.IsKeyPressed(ebiten.KeyDown) {
+                g.playerY += 4
+        }
+        if ebiten.IsKeyPressed(ebiten.KeyLeft) {
+                g.playerX -= 4
+        }
+        if ebiten.IsKeyPressed(ebiten.KeyRight) {
+                g.playerX += 4
+        }
+
+        // 画面端の処理
+        if g.playerX &lt; 0 {
+                g.playerX = 0
+        }
+        if g.playerX &gt; screenWidth-playerSize {
+                g.playerX = screenWidth - playerSize
+        }
+        if g.playerY &lt; 0 {
+                g.playerY = 0
+        }
+        if g.playerY &gt; screenHeight-playerSize {
+                g.playerY = screenHeight - playerSize
+        }
+
+        // 敵の移動
+        for i := range g.enemies {
+                g.enemies[i].x += g.enemies[i].speedX
+                g.enemies[i].y += g.enemies[i].speedY
+
+                // 画面端での反射
+                if g.enemies[i].x &lt;= 0 || g.enemies[i].x &gt;= screenWidth-enemySize {
+                        g.enemies[i].speedX = -g.enemies[i].speedX
+                }
+                if g.enemies[i].y &lt;= 0 || g.enemies[i].y &gt;= screenHeight-enemySize {
+                        g.enemies[i].speedY = -g.enemies[i].speedY
+                }
+
+                // 衝突判定
+                if g.playerX &lt; g.enemies[i].x+enemySize &amp;&amp;
+                        g.playerX+playerSize &gt; g.enemies[i].x &amp;&amp;
+                        g.playerY &lt; g.enemies[i].y+enemySize &amp;&amp;
+                        g.playerY+playerSize &gt; g.enemies[i].y {
+                        // 敵を新しい位置に
+                        g.enemies[i].x = rand.Float64() * (screenWidth - enemySize)
+                        g.enemies[i].y = rand.Float64() * (screenHeight - enemySize)
+                        g.score++
+                }
+        }
+
+        // Rキーでリセット
+        if inpututil.IsKeyJustPressed(ebiten.KeyR) {
+                g.init()
+        }
+
+        return nil
+}
+
+func (g *Game) Draw(screen *ebiten.Image) {
+        // 背景
+        screen.Fill(color.RGBA{40, 40, 60, 255})
+
+        // プレイヤー
+        ebitenutil.DrawRect(screen, g.playerX, g.playerY, playerSize, playerSize, color.RGBA{0, 255, 0, 255})
+
+        // 敵
+        for _, e := range g.enemies {
+                ebitenutil.DrawRect(screen, e.x, e.y, enemySize, enemySize, color.RGBA{255, 0, 0, 255})
+        }
+
+        // スコア表示
+        ebitenutil.DebugPrint(screen, &#34;Score: &#34;+string(rune(&#39;0&#39;+g.score)))
+}
+
+func (g *Game) Layout(outsideWidth, outsideHeight int) (int, int) {
+        return screenWidth, screenHeight
+}
+
+func (g *Game) init() {
+        g.playerX = screenWidth / 2
+        g.playerY = screenHeight / 2
+        g.score = 0
+        g.enemies = make([]enemy, enemyCount)
+
+        for i := range g.enemies {
+                g.enemies[i] = enemy{
+                        x:      rand.Float64() * (screenWidth - enemySize),
+                        y:      rand.Float64() * (screenHeight - enemySize),
+                        speedX: (rand.Float64()*2 - 1) * 2,
+                        speedY: (rand.Float64()*2 - 1) * 2,
+                }
+        }
+}
+
+func main() {
+        ebiten.SetWindowSize(screenWidth, screenHeight)
+        ebiten.SetWindowTitle(&#34;Simple Ebiten Game&#34;)
+
+        game := &amp;Game{}
+        game.init()
+
+        if err := ebiten.RunGame(game); err != nil {
+                log.Fatal(err)
+        }
+}
+
+
+このゲームは、緑色の四角（プレイヤー）を矢印キーで動かして、赤い四角（敵）に当たるとスコアが増えるシンプルなもので
+す。Rキーを押すとゲームをリセットできます。
+
+Goをインストールした後、以下のコマンドでEbitengineをインストールし、ゲームを実行できます：
+
+bash
+go get github.com/hajimehoshi/ebiten/v2
+go run main.go
+
+
+Goのインストールが完了したら、お知らせください。その後、詳細な手順でゲーム作成をサポートします。
+
+&gt;
+</code></pre><p>goをインストールして再実行</p><pre tabindex=0><code>&gt; Ebitengineを使ったゲームを作って
+Ebitengineを使ったゲームを作りましょう。Ebitengineは、Goで書かれた2Dゲーム開発用のライブラリです。まずは、基本的な
+プロジェクトを作成していきましょう。
+
+まず、現在のディレクトリを確認します。
+
+
+🛠️  Using tool: execute_bash (trusted)
+ ⋮
+ ● I will run the following shell command: pwd
+ ⋮
+ ↳ Purpose: 現在のディレクトリを確認
+
+/home/umemak/q
+
+ ⋮
+ ● Completed in 0.1s
+では、Ebitengineを使った簡単なゲームプロジェクトを作成します。まず、必要なディレクトリとファイルを作成しましょう。
+
+
+🛠️  Using tool: execute_bash
+ ⋮
+ ● I will run the following shell command:
+mkdir -p ebiten-game &amp;&amp; cd ebiten-game &amp;&amp; go mod init ebiten-game
+ ⋮
+ ↳ Purpose: Goのモジュールを初期化
+
+
+Allow this action? Use &#39;t&#39; to trust (always allow) this tool for the session. [y/n/t]:
+
+&gt; t
+go: creating new go.mod: module ebiten-game
+
+ ⋮
+ ● Completed in 0.202s
+
+
+
+🛠️  Using tool: execute_bash (trusted)
+ ⋮
+ ● I will run the following shell command:
+cd ebiten-game &amp;&amp; go get github.com/hajimehoshi/ebiten/v2
+ ⋮
+ ↳ Purpose: Ebitengineをインストール
+
+go: downloading github.com/hajimehoshi/ebiten/v2 v2.8.8
+go: downloading github.com/hajimehoshi/ebiten v1.12.12
+go: downloading github.com/ebitengine/gomobile v0.0.0-20240911145611-4856209ac325
+go: downloading golang.org/x/sync v0.8.0
+go: downloading github.com/ebitengine/hideconsole v1.0.0
+go: downloading github.com/ebitengine/purego v0.8.0
+go: downloading github.com/jezek/xgb v1.1.1
+go: downloading golang.org/x/sys v0.25.0
+go: added github.com/ebitengine/gomobile v0.0.0-20240911145611-4856209ac325
+go: added github.com/ebitengine/hideconsole v1.0.0
+go: added github.com/ebitengine/purego v0.8.0
+go: added github.com/hajimehoshi/ebiten/v2 v2.8.8
+go: added github.com/jezek/xgb v1.1.1
+go: added golang.org/x/sync v0.8.0
+go: added golang.org/x/sys v0.25.0
+
+ ⋮
+ ● Completed in 6.901s
+それでは、簡単な四角形を動かすゲームを作成しましょう。以下のコードを作成します：
+
+
+🛠️  Using tool: fs_write
+ ⋮
+ ● Path: /home/umemak/q/ebiten-game/main.go
+
++      1: package main
++      2:
++      3: import (
++      4:       &#34;log&#34;
++      5:       &#34;math/rand&#34;
++      6:
++      7:       &#34;github.com/hajimehoshi/ebiten/v2&#34;
++      8:       &#34;github.com/hajimehoshi/ebiten/v2/ebitenutil&#34;
++      9:       &#34;github.com/hajimehoshi/ebiten/v2/inpututil&#34;
++     10: )
++     11:
++     12: const (
++     13:       screenWidth  = 640
++     14:       screenHeight = 480
++     15:       playerSize   = 30
++     16: )
++     17:
++     18: // Game はゲームの状態を管理する構造体
++     19: type Game struct {
++     20:       playerX      float64
++     21:       playerY      float64
++     22:       playerSpeed  float64
++     23:       targetX      float64
++     24:       targetY      float64
++     25:       score        int
++     26:       targetActive bool
++     27: }
++     28:
++     29: // Update は毎フレーム呼ばれる更新処理
++     30: func (g *Game) Update() error {
++     31:       // プレイヤーの移動
++     32:       if ebiten.IsKeyPressed(ebiten.KeyUp) {
++     33:               g.playerY -= g.playerSpeed
++     34:       }
++     35:       if ebiten.IsKeyPressed(ebiten.KeyDown) {
++     36:               g.playerY += g.playerSpeed
++     37:       }
++     38:       if ebiten.IsKeyPressed(ebiten.KeyLeft) {
++     39:               g.playerX -= g.playerSpeed
++     40:       }
++     41:       if ebiten.IsKeyPressed(ebiten.KeyRight) {
++     42:               g.playerX += g.playerSpeed
++     43:       }
++     44:
++     45:       // 画面外に出ないように制限
++     46:       if g.playerX &lt; 0 {
++     47:               g.playerX = 0
++     48:       }
++     49:       if g.playerX &gt; screenWidth-playerSize {
++     50:               g.playerX = screenWidth - playerSize
++     51:       }
++     52:       if g.playerY &lt; 0 {
++     53:               g.playerY = 0
++     54:       }
++     55:       if g.playerY &gt; screenHeight-playerSize {
++     56:               g.playerY = screenHeight - playerSize
++     57:       }
++     58:
++     59:       // ターゲットがなければ新しいターゲットを生成
++     60:       if !g.targetActive {
++     61:               g.targetX = float64(rand.Intn(screenWidth - playerSize))
++     62:               g.targetY = float64(rand.Intn(screenHeight - playerSize))
++     63:               g.targetActive = true
++     64:       }
++     65:
++     66:       // ターゲットとの当たり判定
++     67:       if g.playerX &lt; g.targetX+playerSize &amp;&amp;
++     68:               g.playerX+playerSize &gt; g.targetX &amp;&amp;
++     69:               g.playerY &lt; g.targetY+playerSize &amp;&amp;
++     70:               g.playerY+playerSize &gt; g.targetY {
++     71:               g.score++
++     72:               g.targetActive = false
++     73:       }
++     74:
++     75:       // スペースキーでリセット
++     76:       if inpututil.IsKeyJustPressed(ebiten.KeySpace) {
++     77:               g.score = 0
++     78:       }
++     79:
++     80:       return nil
++     81: }
++     82:
++     83: // Draw は毎フレーム呼ばれる描画処理
++     84: func (g *Game) Draw(screen *ebiten.Image) {
++     85:       // プレイヤーの描画（青い四角）
++     86:       ebitenutil.DrawRect(screen, g.playerX, g.playerY, playerSize, playerSize, 0x0000FFFF)
++     87:
++     88:       // ターゲットの描画（赤い四角）
++     89:       if g.targetActive {
++     90:               ebitenutil.DrawRect(screen, g.targetX, g.targetY, playerSize, playerSize, 0xFF0000FF)
++     91:       }
++     92:
++     93:       // スコアとヘルプの表示
++     94:       ebitenutil.DebugPrint(screen, &#34;Score: &#34;+string(rune(&#39;0&#39;+g.score)))
++     95:       ebitenutil.DebugPrintAt(screen, &#34;矢印キー: 移動, スペース: リセット&#34;, 10, screenHeight-20)
++     96: }
++     97:
++     98: // Layout はウィンドウサイズを返す
++     99: func (g *Game) Layout(outsideWidth, outsideHeight int) (int, int) {
++    100:       return screenWidth, screenHeight
++    101: }
++    102:
++    103: func main() {
++    104:       ebiten.SetWindowSize(screenWidth, screenHeight)
++    105:       ebiten.SetWindowTitle(&#34;Simple Ebiten Game&#34;)
++    106:
++    107:       game := &amp;Game{
++    108:               playerX:     screenWidth / 2,
++    109:               playerY:     screenHeight / 2,
++    110:               playerSpeed: 4,
++    111:       }
++    112:
++    113:       if err := ebiten.RunGame(game); err != nil {
++    114:               log.Fatal(err)
++    115:       }
++    116: }
+
+
+Allow this action? Use &#39;t&#39; to trust (always allow) this tool for the session. [y/n/t]:
+
+&gt; t
+Creating: /home/umemak/q/ebiten-game/main.go
+
+ ⋮
+ ● Completed in 0.0s
+
+
+
+🛠️  Using tool: execute_bash (trusted)
+ ⋮
+ ● I will run the following shell command:
+cd ebiten-game &amp;&amp; go run main.go
+ ⋮
+ ↳ Purpose: ゲームを実行
+
+# github.com/hajimehoshi/ebiten/v2/internal/glfw
+In file included from ../../go/pkg/mod/github.com/hajimehoshi/ebiten/v2@v2.8.8/internal/glfw/native_linbsd.go:14:
+./glfw3native_unix.h:105:12: fatal error: X11/Xlib.h: No such file or directory
+  105 |   #include &lt;X11/Xlib.h&gt;
+      |            ^~~~~~~~~~~~
+compilation terminated.
+
+ ⋮
+ ● Completed in 6.524s
+X11の依存関係が不足しているようです。必要なライブラリをインストールしましょう。
+
+
+🛠️  Using tool: fs_write (trusted)
+ ⋮
+ ● Path: ebiten-game/main.go
+
+  93, 93:       // スコアとヘルプの表示
+- 94    :       ebitenutil.DebugPrint(screen, &#34;Score: &#34;+string(rune(&#39;0&#39;+g.score)))
++     94:       ebitenutil.DebugPrint(screen, &#34;Score: &#34;+fmt.Sprintf(&#34;%d&#34;, g.score))
+  95, 95:       ebitenutil.DebugPrintAt(screen, &#34;矢印キー: 移動, スペース: リセット&#34;, 10, screenHeight-20)
+
+Updating: ebiten-game/main.go
+
+ ⋮
+ ● Completed in 0.1s
+
+
+
+🛠️  Using tool: fs_write (trusted)
+ ⋮
+ ● Path: ebiten-game/main.go
+
+   1,  1: package main
+   2,  2:
+   3,  3: import (
++      4:       &#34;fmt&#34;
+   4,  5:       &#34;log&#34;
+   5,  6:       &#34;math/rand&#34;
+   6,  7:
+   7,  8:       &#34;github.com/hajimehoshi/ebiten/v2&#34;
+   8,  9:       &#34;github.com/hajimehoshi/ebiten/v2/ebitenutil&#34;
+   9, 10:       &#34;github.com/hajimehoshi/ebiten/v2/inpututil&#34;
+  10, 11: )
+
+Updating: ebiten-game/main.go
+
+ ⋮
+ ● Completed in 0.0s
+
+
+
+🛠️  Using tool: execute_bash (trusted)
+ ⋮
+ ● I will run the following shell command:
+sudo apt-get update &amp;&amp; sudo apt-get install -y libx11-dev libxcursor-dev libxrandr-dev libxinerama-dev libxi-dev libgl1-mesa-dev libgl1-mesa-dev xorg-dev
+ ⋮
+ ↳ Purpose: X11の依存関係をインストール
+
+[sudo] password for umemak:
+Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Hit:4 https://download.docker.com/linux/ubuntu jammy InRelease
+Hit:5 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libxcursor-dev is already the newest version (1:1.2.0-2build4).
+libxi-dev is already the newest version (2:1.8-1build1).
+libxinerama-dev is already the newest version (2:1.1.4-3).
+libxrandr-dev is already the newest version (2:1.5.2-1build1).
+xorg-dev is already the newest version (1:7.7+23ubuntu2).
+libgl1-mesa-dev is already the newest version (23.2.1-1ubuntu3.1~22.04.3).
+libx11-dev is already the newest version (2:1.7.5-1ubuntu0.3).
+0 upgraded, 0 newly installed, 0 to remove and 183 not upgraded.
+
+ ⋮
+ ● Completed in 91.324s
+
+
+
+🛠️  Using tool: execute_bash (trusted)
+ ⋮
+ ● I will run the following shell command:
+cd ebiten-game &amp;&amp; go run main.go
+ ⋮
+ ↳ Purpose: ゲームを実行
+
+# command-line-arguments
+./main.go:87:76: cannot use 0x0000FFFF (constant 65535 of type int) as color.Color value in argument to ebitenutil.DrawRect: int does not implement color.Color (missing method RGBA)
+./main.go:91:77: cannot use 0xFF0000FF (constant 4278190335 of type int) as color.Color value in argument to ebitenutil.DrawRect: int does not implement color.Color (missing method RGBA)
+
+ ⋮
+ ● Completed in 4.217s
+
+
+
+
+🛠️  Using tool: fs_write (trusted)
+ ⋮
+ ● Path: ebiten-game/main.go
+
+    1,   1: package main
+    2,   2:
+    3,   3: import (
+    4,   4:     &#34;fmt&#34;
++        5:     &#34;image/color&#34;
+    5,   6:     &#34;log&#34;
+    6,   7:     &#34;math/rand&#34;
+    7,   8:
+    8,   9:     &#34;github.com/hajimehoshi/ebiten/v2&#34;
+    9,  10:     &#34;github.com/hajimehoshi/ebiten/v2/ebitenutil&#34;
+   10,  11:     &#34;github.com/hajimehoshi/ebiten/v2/inpututil&#34;
+   11,  12: )
+   12,  13:
+   13,  14: const (
+   14,  15:     screenWidth  = 640
+   15,  16:     screenHeight = 480
+   16,  17:     playerSize   = 30
+   17,  18: )
+   18,  19:
+   19,  20: // Game はゲームの状態を管理する構造体
+   20,  21: type Game struct {
+   21,  22:     playerX      float64
+   22,  23:     playerY      float64
+   23,  24:     playerSpeed  float64
+   24,  25:     targetX      float64
+   25,  26:     targetY      float64
+   26,  27:     score        int
+   27,  28:     targetActive bool
+   28,  29: }
+   29,  30:
+   30,  31: // Update は毎フレーム呼ばれる更新処理
+   31,  32: func (g *Game) Update() error {
+   32,  33:     // プレイヤーの移動
+   33,  34:     if ebiten.IsKeyPressed(ebiten.KeyUp) {
+   34,  35:             g.playerY -= g.playerSpeed
+   35,  36:     }
+   36,  37:     if ebiten.IsKeyPressed(ebiten.KeyDown) {
+   37,  38:             g.playerY += g.playerSpeed
+   38,  39:     }
+   39,  40:     if ebiten.IsKeyPressed(ebiten.KeyLeft) {
+   40,  41:             g.playerX -= g.playerSpeed
+   41,  42:     }
+   42,  43:     if ebiten.IsKeyPressed(ebiten.KeyRight) {
+   43,  44:             g.playerX += g.playerSpeed
+   44,  45:     }
+   45,  46:
+   46,  47:     // 画面外に出ないように制限
+   47,  48:     if g.playerX &lt; 0 {
+   48,  49:             g.playerX = 0
+   49,  50:     }
+   50,  51:     if g.playerX &gt; screenWidth-playerSize {
+   51,  52:             g.playerX = screenWidth - playerSize
+   52,  53:     }
+   53,  54:     if g.playerY &lt; 0 {
+   54,  55:             g.playerY = 0
+   55,  56:     }
+   56,  57:     if g.playerY &gt; screenHeight-playerSize {
+   57,  58:             g.playerY = screenHeight - playerSize
+   58,  59:     }
+   59,  60:
+   60,  61:     // ターゲットがなければ新しいターゲットを生成
+   61,  62:     if !g.targetActive {
+   62,  63:             g.targetX = float64(rand.Intn(screenWidth - playerSize))
+   63,  64:             g.targetY = float64(rand.Intn(screenHeight - playerSize))
+   64,  65:             g.targetActive = true
+   65,  66:     }
+   66,  67:
+   67,  68:     // ターゲットとの当たり判定
+   68,  69:     if g.playerX &lt; g.targetX+playerSize &amp;&amp;
+   69,  70:             g.playerX+playerSize &gt; g.targetX &amp;&amp;
+   70,  71:             g.playerY &lt; g.targetY+playerSize &amp;&amp;
+   71,  72:             g.playerY+playerSize &gt; g.targetY {
+   72,  73:             g.score++
+   73,  74:             g.targetActive = false
+   74,  75:     }
+   75,  76:
+   76,  77:     // スペースキーでリセット
+   77,  78:     if inpututil.IsKeyJustPressed(ebiten.KeySpace) {
+   78,  79:             g.score = 0
+   79,  80:     }
+   80,  81:
+   81,  82:     return nil
+   82,  83: }
+   83,  84:
+   84,  85: // Draw は毎フレーム呼ばれる描画処理
+   85,  86: func (g *Game) Draw(screen *ebiten.Image) {
+   86,  87:     // プレイヤーの描画（青い四角）
+-  87     :     ebitenutil.DrawRect(screen, g.playerX, g.playerY, playerSize, playerSize, 0x0000FFFF)
++       88:     ebitenutil.DrawRect(screen, g.playerX, g.playerY, playerSize, playerSize, color.RGBA{0, 0, 255, 255})
+   88,  89:
+   89,  90:     // ターゲットの描画（赤い四角）
+   90,  91:     if g.targetActive {
+-  91     :             ebitenutil.DrawRect(screen, g.targetX, g.targetY, playerSize, playerSize, 0xFF0000FF)
++       92:             ebitenutil.DrawRect(screen, g.targetX, g.targetY, playerSize, playerSize, color.RGBA{255, 0, 0, 255})
+   92,  93:     }
+   93,  94:
+   94,  95:     // スコアとヘルプの表示
+   95,  96:     ebitenutil.DebugPrint(screen, &#34;Score: &#34;+fmt.Sprintf(&#34;%d&#34;, g.score))
+   96,  97:     ebitenutil.DebugPrintAt(screen, &#34;矢印キー: 移動, スペース: リセット&#34;, 10, screenHeight-20)
+   97,  98: }
+   98,  99:
+   99, 100: // Layout はウィンドウサイズを返す
+  100, 101: func (g *Game) Layout(outsideWidth, outsideHeight int) (int, int) {
+  101, 102:     return screenWidth, screenHeight
+  102, 103: }
+  103, 104:
+  104, 105: func main() {
+  105, 106:     ebiten.SetWindowSize(screenWidth, screenHeight)
+  106, 107:     ebiten.SetWindowTitle(&#34;Simple Ebiten Game&#34;)
+  107, 108:
+  108, 109:     game := &amp;Game{
+  109, 110:             playerX:     screenWidth / 2,
+  110, 111:             playerY:     screenHeight / 2,
+  111, 112:             playerSpeed: 4,
+  112, 113:     }
+  113, 114:
+  114, 115:     if err := ebiten.RunGame(game); err != nil {
+  115, 116:             log.Fatal(err)
+  116, 117:     }
+- 117     : }
++      118: }
+
+Replacing: ebiten-game/main.go
+
+ ⋮
+ ● Completed in 0.0s
+
+
+
+🛠️  Using tool: execute_bash (trusted)
+ ⋮
+ ● I will run the following shell command:
+cd ebiten-game &amp;&amp; go run main.go
+ ⋮
+ ↳ Purpose: ゲームを実行
+
+XGB: conn.go:47: Could not get authority info: open /home/umemak/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+XGB: conn.go:47: Could not get authority info: open /home/umemak/.Xauthority: no such file or directory
+XGB: conn.go:48: Trying connection without authority info...
+</code></pre><p><img src=08_game.png alt=生成されたゲーム></p><p>青い四角をカーソルキーで動かして、赤い四角にぶつけるとスコアが増えるゲームができた。</p><p>ゲームのウィンドウを閉じたら続きが</p><pre tabindex=0><code>
+ ⋮
+ ● Completed in 203.623s
+Ebitengineを使った簡単なゲームを作成しました！このゲームは以下の特徴を持っています：
+
+1. 青い四角形のプレイヤーを矢印キーで操作できます
+2. 赤い四角形のターゲットを取ると得点が増えます
+3. スペースキーでスコアをリセットできます
+
+## ゲームの説明
+
+• **操作方法**：
+  • 矢印キー：プレイヤー（青い四角形）を上下左右に移動
+  • スペースキー：スコアをリセット
+
+• **ゲームの目的**：
+  • 赤い四角形（ターゲット）を取ってスコアを増やす
+  • ターゲットを取ると、新しいターゲットがランダムな位置に出現
+
+## コードの説明
+
+1. Game構造体：ゲームの状態（プレイヤーの位置、ターゲットの位置、スコアなど）を管理
+
+2. Update関数：毎フレーム呼ばれる更新処理
+   • キー入力の処理
+   • プレイヤーの移動と画面外に出ないための制限
+   • ターゲットとの当たり判定
+   • スコアのリセット処理
+
+3. Draw関数：毎フレーム呼ばれる描画処理
+   • プレイヤーとターゲットの描画
+   • スコアと操作方法の表示
+
+4. Layout関数：ウィンドウサイズの設定
+
+このゲームは基本的なものですが、Ebitengineの基本的な使い方を理解するのに役立ちます。さらに機能を追加したい場合は、
+以下のような拡張が考えられます：
+
+• 複数のターゲット
+• 時間制限の追加
+• 障害物の追加
+• アニメーションの追加
+• サウンドエフェクトの追加
+
+何か特定の機能を追加したい場合は、お知らせください！
+
+&gt;
+</code></pre><p>とりあえずここまでで30分かからないくらい（諸々インストールも含めて）。
+X11の依存関係をインストールはCLI内でできたのに、goのインストールは一度CLIを終了させないといけなかったのが惜しい。
+あとゲームの説明はゲーム起動する前に出してほしかった。</p><p>とはいえゲームエンジンを指定しただけで、何かしら作り出してくれるのはすばらしい。</p></div><footer class=post-footer><span class=post-tags><a href=https://umemak.github.io/tags/amazon-q rel=tag>amazon Q</a>&emsp;</span></footer><table cellspacing=15 style=width:100%;border:none><tr><td style=text-align:center;border:none;padding:0></td><td style=text-align:center;border:none;padding:0></td></tr></table></article><nav class="navigation post-navigation" role=navigation><div class=nav-links><div class=nav-previous><a class=previous href=https://umemak.github.io/blog/posts/2024/12/22_phpcon2024/>PHP Conference Japan 2024</a></div><div class=nav-next></div></div></nav><section></section></main><div class="sidebar1 widgets columns-1"><aside></aside><aside class="widget widget_tag_cloud"><h2>タグ</h2><div class=tagcloud><a class=tag-cloud-link href=/blog/tags/5g title=5g style=font-size:12pt>5g</a>&emsp;<a class=tag-cloud-link href=/blog/tags/actions title=actions style=font-size:12pt>actions</a>&emsp;<a class=tag-cloud-link href=/blog/tags/adventcalendar2021 title=adventcalendar2021 style=font-size:12pt>AdventCalendar2021</a>&emsp;<a class=tag-cloud-link href=/blog/tags/ai title=ai style=font-size:12pt>AI</a>&emsp;<a class=tag-cloud-link href=/blog/tags/air title=air style=font-size:12pt>air</a>&emsp;<a class=tag-cloud-link href=/blog/tags/algolia title=algolia style=font-size:12pt>Algolia</a>&emsp;<a class=tag-cloud-link href=/blog/tags/amazon title=amazon style=font-size:12pt>amazon</a>&emsp;<a class=tag-cloud-link href=/blog/tags/amazon-q title=amazon-q style=font-size:12pt>amazon Q</a>&emsp;<a class=tag-cloud-link href=/blog/tags/asin2md title=asin2md style=font-size:12pt>asin2md</a>&emsp;<a class=tag-cloud-link href=/blog/tags/aws title=aws style=font-size:12pt>aws</a>&emsp;<a class=tag-cloud-link href=/blog/tags/azure title=azure style=font-size:12pt>Azure</a>&emsp;<a class=tag-cloud-link href=/blog/tags/baseball title=baseball style=font-size:12pt>baseball</a>&emsp;<a class=tag-cloud-link href=/blog/tags/bitbucket title=bitbucket style=font-size:12pt>Bitbucket</a>&emsp;<a class=tag-cloud-link href=/blog/tags/blog title=blog style=font-size:12pt>blog</a>&emsp;<a class=tag-cloud-link href=/blog/tags/book title=book style=font-size:12pt>book</a>&emsp;<a class=tag-cloud-link href=/blog/tags/budibase title=budibase style=font-size:12pt>Budibase</a>&emsp;<a class=tag-cloud-link href=/blog/tags/bun title=bun style=font-size:12pt>bun</a>&emsp;<a class=tag-cloud-link href=/blog/tags/c101pa title=c101pa style=font-size:12pt>C101PA</a>&emsp;<a class=tag-cloud-link href=/blog/tags/centos title=centos style=font-size:12pt>centos</a>&emsp;<a class=tag-cloud-link href=/blog/tags/centos6 title=centos6 style=font-size:12pt>centos6</a>&emsp;<a class=tag-cloud-link href=/blog/tags/chatgpt title=chatgpt style=font-size:12pt>ChatGPT</a>&emsp;<a class=tag-cloud-link href=/blog/tags/chi title=chi style=font-size:12pt>chi</a>&emsp;<a class=tag-cloud-link href=/blog/tags/chromebook title=chromebook style=font-size:12pt>chromebook</a>&emsp;<a class=tag-cloud-link href=/blog/tags/ci/cd title=ci/cd style=font-size:12pt>ci/cd</a>&emsp;<a class=tag-cloud-link href=/blog/tags/cms title=cms style=font-size:12pt>cms</a>&emsp;<a class=tag-cloud-link href=/blog/tags/container title=container style=font-size:12pt>container</a>&emsp;<a class=tag-cloud-link href=/blog/tags/cursor title=cursor style=font-size:12pt>cursor</a>&emsp;<a class=tag-cloud-link href=/blog/tags/cython title=cython style=font-size:12pt>cython</a>&emsp;<a class=tag-cloud-link href=/blog/tags/dart title=dart style=font-size:12pt>Dart</a>&emsp;<a class=tag-cloud-link href=/blog/tags/db title=db style=font-size:12pt>db</a>&emsp;<a class=tag-cloud-link href=/blog/tags/ddd title=ddd style=font-size:12pt>ddd</a>&emsp;<a class=tag-cloud-link href=/blog/tags/dena title=dena style=font-size:12pt>DeNA</a>&emsp;<a class=tag-cloud-link href=/blog/tags/deno title=deno style=font-size:12pt>deno</a>&emsp;<a class=tag-cloud-link href=/blog/tags/devbox title=devbox style=font-size:12pt>devbox</a>&emsp;<a class=tag-cloud-link href=/blog/tags/device title=device style=font-size:12pt>device</a>&emsp;<a class=tag-cloud-link href=/blog/tags/devops title=devops style=font-size:12pt>DevOps</a>&emsp;<a class=tag-cloud-link href=/blog/tags/dify title=dify style=font-size:12pt>dify</a>&emsp;<a class=tag-cloud-link href=/blog/tags/docker title=docker style=font-size:12pt>docker</a>&emsp;<a class=tag-cloud-link href=/blog/tags/docomo title=docomo style=font-size:12pt>docomo</a>&emsp;<a class=tag-cloud-link href=/blog/tags/editor title=editor style=font-size:12pt>editor</a>&emsp;<a class=tag-cloud-link href=/blog/tags/elixir title=elixir style=font-size:12pt>elixir</a>&emsp;<a class=tag-cloud-link href=/blog/tags/english title=english style=font-size:12pt>english</a>&emsp;<a class=tag-cloud-link href=/blog/tags/event title=event style=font-size:12pt>event</a>&emsp;<a class=tag-cloud-link href=/blog/tags/expo title=expo style=font-size:12pt>expo</a>&emsp;<a class=tag-cloud-link href=/blog/tags/fastapi title=fastapi style=font-size:12pt>FastAPI</a>&emsp;<a class=tag-cloud-link href=/blog/tags/ffmpeg title=ffmpeg style=font-size:12pt>ffmpeg</a>&emsp;<a class=tag-cloud-link href=/blog/tags/figma title=figma style=font-size:12pt>Figma</a>&emsp;<a class=tag-cloud-link href=/blog/tags/firebase title=firebase style=font-size:12pt>firebase</a>&emsp;<a class=tag-cloud-link href=/blog/tags/fleet title=fleet style=font-size:12pt>fleet</a>&emsp;<a class=tag-cloud-link href=/blog/tags/flutter title=flutter style=font-size:12pt>flutter</a>&emsp;<a class=tag-cloud-link href=/blog/tags/fly.io title=fly.io style=font-size:12pt>Fly.io</a>&emsp;<a class=tag-cloud-link href=/blog/tags/freee title=freee style=font-size:12pt>freee</a>&emsp;<a class=tag-cloud-link href=/blog/tags/gas title=gas style=font-size:12pt>gas</a>&emsp;<a class=tag-cloud-link href=/blog/tags/gatsbyjs title=gatsbyjs style=font-size:12pt>gatsbyjs</a>&emsp;<a class=tag-cloud-link href=/blog/tags/gcp title=gcp style=font-size:12pt>GCP</a>&emsp;<a class=tag-cloud-link href=/blog/tags/ginkgo title=ginkgo style=font-size:12pt>ginkgo</a>&emsp;<a class=tag-cloud-link href=/blog/tags/git title=git style=font-size:12pt>git</a>&emsp;<a class=tag-cloud-link href=/blog/tags/gitbash title=gitbash style=font-size:12pt>gitbash</a>&emsp;<a class=tag-cloud-link href=/blog/tags/gitea title=gitea style=font-size:12pt>gitea</a>&emsp;<a class=tag-cloud-link href=/blog/tags/github title=github style=font-size:12pt>github</a>&emsp;<a class=tag-cloud-link href=/blog/tags/gitpod title=gitpod style=font-size:12pt>gitpod</a>&emsp;<a class=tag-cloud-link href=/blog/tags/go title=go style=font-size:12pt>go</a>&emsp;<a class=tag-cloud-link href=/blog/tags/golang title=golang style=font-size:12pt>golang</a>&emsp;<a class=tag-cloud-link href=/blog/tags/graphql title=graphql style=font-size:12pt>GraphQL</a>&emsp;<a class=tag-cloud-link href=/blog/tags/grpc title=grpc style=font-size:12pt>gRPC</a>&emsp;<a class=tag-cloud-link href=/blog/tags/http3 title=http3 style=font-size:12pt>http3</a>&emsp;<a class=tag-cloud-link href=/blog/tags/hugo title=hugo style=font-size:12pt>hugo</a>&emsp;<a class=tag-cloud-link href=/blog/tags/ibm title=ibm style=font-size:12pt>IBM</a>&emsp;<a class=tag-cloud-link href=/blog/tags/iij title=iij style=font-size:12pt>iij</a>&emsp;<a class=tag-cloud-link href=/blog/tags/inspiron title=inspiron style=font-size:12pt>inspiron</a>&emsp;<a class=tag-cloud-link href=/blog/tags/javascript title=javascript style=font-size:12pt>JavaScript</a>&emsp;<a class=tag-cloud-link href=/blog/tags/jest title=jest style=font-size:12pt>Jest</a>&emsp;<a class=tag-cloud-link href=/blog/tags/js title=js style=font-size:12pt>js</a>&emsp;<a class=tag-cloud-link href=/blog/tags/k8s title=k8s style=font-size:12pt>k8s</a>&emsp;<a class=tag-cloud-link href=/blog/tags/ko title=ko style=font-size:12pt>ko</a>&emsp;<a class=tag-cloud-link href=/blog/tags/kubernetes title=kubernetes style=font-size:12pt>kubernetes</a>&emsp;<a class=tag-cloud-link href=/blog/tags/kuzzle title=kuzzle style=font-size:12pt>Kuzzle</a>&emsp;<a class=tag-cloud-link href=/blog/tags/lambda title=lambda style=font-size:12pt>Lambda</a>&emsp;<a class=tag-cloud-link href=/blog/tags/line title=line style=font-size:12pt>line</a>&emsp;<a class=tag-cloud-link href=/blog/tags/linux title=linux style=font-size:12pt>linux</a>&emsp;<a class=tag-cloud-link href=/blog/tags/mac title=mac style=font-size:12pt>mac</a>&emsp;<a class=tag-cloud-link href=/blog/tags/makefile title=makefile style=font-size:12pt>Makefile</a>&emsp;<a class=tag-cloud-link href=/blog/tags/mattermost title=mattermost style=font-size:12pt>mattermost</a>&emsp;<a class=tag-cloud-link href=/blog/tags/mdmml title=mdmml style=font-size:12pt>mdmml</a>&emsp;<a class=tag-cloud-link href=/blog/tags/mermaid title=mermaid style=font-size:12pt>mermaid</a>&emsp;<a class=tag-cloud-link href=/blog/tags/midi title=midi style=font-size:12pt>midi</a>&emsp;<a class=tag-cloud-link href=/blog/tags/minikube title=minikube style=font-size:12pt>minikube</a>&emsp;<a class=tag-cloud-link href=/blog/tags/movie title=movie style=font-size:12pt>movie</a>&emsp;<a class=tag-cloud-link href=/blog/tags/mui title=mui style=font-size:12pt>mui</a>&emsp;<a class=tag-cloud-link href=/blog/tags/mysql title=mysql style=font-size:12pt>mysql</a>&emsp;<a class=tag-cloud-link href=/blog/tags/n title=n style=font-size:12pt>n</a>&emsp;<a class=tag-cloud-link href=/blog/tags/next.js title=next.js style=font-size:12pt>next.js</a>&emsp;<a class=tag-cloud-link href=/blog/tags/nextjs title=nextjs style=font-size:12pt>nextjs</a>&emsp;<a class=tag-cloud-link href=/blog/tags/nginx title=nginx style=font-size:12pt>nginx</a>&emsp;<a class=tag-cloud-link href=/blog/tags/nocode title=nocode style=font-size:12pt>nocode</a>&emsp;<a class=tag-cloud-link href=/blog/tags/node title=node style=font-size:12pt>node</a>&emsp;<a class=tag-cloud-link href=/blog/tags/npm title=npm style=font-size:12pt>npm</a>&emsp;<a class=tag-cloud-link href=/blog/tags/ntt title=ntt style=font-size:12pt>ntt</a>&emsp;<a class=tag-cloud-link href=/blog/tags/obsidian title=obsidian style=font-size:12pt>obsidian</a>&emsp;<a class=tag-cloud-link href=/blog/tags/oci title=oci style=font-size:12pt>oci</a>&emsp;<a class=tag-cloud-link href=/blog/tags/openapi title=openapi style=font-size:12pt>OpenAPI</a>&emsp;<a class=tag-cloud-link href=/blog/tags/oracle title=oracle style=font-size:12pt>oracle</a>&emsp;<a class=tag-cloud-link href=/blog/tags/parcel title=parcel style=font-size:12pt>Parcel</a>&emsp;<a class=tag-cloud-link href=/blog/tags/pgsql title=pgsql style=font-size:12pt>pgsql</a>&emsp;<a class=tag-cloud-link href=/blog/tags/php title=php style=font-size:12pt>php</a>&emsp;<a class=tag-cloud-link href=/blog/tags/pixel4 title=pixel4 style=font-size:12pt>pixel4</a>&emsp;<a class=tag-cloud-link href=/blog/tags/pnpm title=pnpm style=font-size:12pt>pnpm</a>&emsp;<a class=tag-cloud-link href=/blog/tags/pocketbase title=pocketbase style=font-size:12pt>PocketBase</a>&emsp;<a class=tag-cloud-link href=/blog/tags/poketbase title=poketbase style=font-size:12pt>poketbase</a>&emsp;<a class=tag-cloud-link href=/blog/tags/prisma title=prisma style=font-size:12pt>Prisma</a>&emsp;<a class=tag-cloud-link href=/blog/tags/programmning title=programmning style=font-size:12pt>programmning</a>&emsp;<a class=tag-cloud-link href=/blog/tags/pwa title=pwa style=font-size:12pt>pwa</a>&emsp;<a class=tag-cloud-link href=/blog/tags/python title=python style=font-size:12pt>python</a>&emsp;<a class=tag-cloud-link href=/blog/tags/qwik title=qwik style=font-size:12pt>qwik</a>&emsp;<a class=tag-cloud-link href=/blog/tags/rails title=rails style=font-size:12pt>rails</a>&emsp;<a class=tag-cloud-link href=/blog/tags/raspberry-pi title=raspberry-pi style=font-size:12pt>raspberry-pi</a>&emsp;<a class=tag-cloud-link href=/blog/tags/react title=react style=font-size:12pt>react</a>&emsp;<a class=tag-cloud-link href=/blog/tags/revel title=revel style=font-size:12pt>revel</a>&emsp;<a class=tag-cloud-link href=/blog/tags/rewire title=rewire style=font-size:12pt>rewire</a>&emsp;<a class=tag-cloud-link href=/blog/tags/rss title=rss style=font-size:12pt>rss</a>&emsp;<a class=tag-cloud-link href=/blog/tags/ruby title=ruby style=font-size:12pt>ruby</a>&emsp;<a class=tag-cloud-link href=/blog/tags/rust title=rust style=font-size:12pt>rust</a>&emsp;<a class=tag-cloud-link href=/blog/tags/sam title=sam style=font-size:12pt>sam</a>&emsp;<a class=tag-cloud-link href=/blog/tags/scrapbox title=scrapbox style=font-size:12pt>Scrapbox</a>&emsp;<a class=tag-cloud-link href=/blog/tags/serverless title=serverless style=font-size:12pt>serverless</a>&emsp;<a class=tag-cloud-link href=/blog/tags/spring-boot title=spring-boot style=font-size:12pt>Spring Boot</a>&emsp;<a class=tag-cloud-link href=/blog/tags/sqlc title=sqlc style=font-size:12pt>sqlc</a>&emsp;<a class=tag-cloud-link href=/blog/tags/sst title=sst style=font-size:12pt>SST</a>&emsp;<a class=tag-cloud-link href=/blog/tags/steam title=steam style=font-size:12pt>steam</a>&emsp;<a class=tag-cloud-link href=/blog/tags/supabase title=supabase style=font-size:12pt>supabase</a>&emsp;<a class=tag-cloud-link href=/blog/tags/surface title=surface style=font-size:12pt>Surface</a>&emsp;<a class=tag-cloud-link href=/blog/tags/sveltekit title=sveltekit style=font-size:12pt>SvelteKit</a>&emsp;<a class=tag-cloud-link href=/blog/tags/swr title=swr style=font-size:12pt>swr</a>&emsp;<a class=tag-cloud-link href=/blog/tags/tailwind title=tailwind style=font-size:12pt>Tailwind</a>&emsp;<a class=tag-cloud-link href=/blog/tags/test title=test style=font-size:12pt>test</a>&emsp;<a class=tag-cloud-link href=/blog/tags/typescript title=typescript style=font-size:12pt>TypeScript</a>&emsp;<a class=tag-cloud-link href=/blog/tags/unity title=unity style=font-size:12pt>unity</a>&emsp;<a class=tag-cloud-link href=/blog/tags/vmware title=vmware style=font-size:12pt>vmware</a>&emsp;<a class=tag-cloud-link href=/blog/tags/vosk title=vosk style=font-size:12pt>Vosk</a>&emsp;<a class=tag-cloud-link href=/blog/tags/vs-code title=vs-code style=font-size:12pt>VS Code</a>&emsp;<a class=tag-cloud-link href=/blog/tags/vscode title=vscode style=font-size:12pt>vscode</a>&emsp;<a class=tag-cloud-link href=/blog/tags/wasm title=wasm style=font-size:12pt>wasm</a>&emsp;<a class=tag-cloud-link href=/blog/tags/webpack title=webpack style=font-size:12pt>webpack</a>&emsp;<a class=tag-cloud-link href=/blog/tags/wikijs title=wikijs style=font-size:12pt>wikijs</a>&emsp;<a class=tag-cloud-link href=/blog/tags/win10 title=win10 style=font-size:12pt>win10</a>&emsp;<a class=tag-cloud-link href=/blog/tags/windows title=windows style=font-size:12pt>windows</a>&emsp;<a class=tag-cloud-link href=/blog/tags/wsl title=wsl style=font-size:12pt>wsl</a>&emsp;<a class=tag-cloud-link href=/blog/tags/wsl2 title=wsl2 style=font-size:12pt>wsl2</a>&emsp;<a class=tag-cloud-link href=/blog/tags/yahoo title=yahoo style=font-size:12pt>yahoo</a>&emsp;</div></aside><aside class="widget widget_recent_entries"><h2>最近の投稿</h2><ul><li><a href=/blog/posts/2025/06/08_amazon_q_cli/>Amazon Q CLIでゲームを作成する</a></li><li><a href=/blog/posts/2024/12/22_phpcon2024/>PHP Conference Japan 2024</a></li><li><a href=/blog/posts/2024/06/09_dify_docker/>DifyをDockerで試す</a></li><li><a href=/blog/posts/2024/04/21_obsidian_remotely_save/>ObsidianにRemotely Saveを導入した</a></li><li><a href=/blog/posts/2024/04/03_bun/>Windowsでbunを試す</a></li><li><a href=/blog/posts/2024/01/14_english/>英語学習</a></li><li><a href=/blog/posts/2023/11/23_cursor/>Cursor入門</a></li><li><a href=/blog/posts/2023/11/21_docker_nginx/>DockerでNGINXを動かすとClientIPが取れない</a></li><li><a href=/blog/posts/2023/11/18_coderabbit/>CodeRabbit</a></li><li><a href=/blog/posts/2023/11/02_lambda_prisma/>LambdaとPrisma</a></li></ul></aside></div></div></div><footer role=contentinfo class="document-footer contentinfo widgets columns-1"><aside class="widget widget_text"><div class=textwidget><p>© umemak / Powered by <a href=https://gohugo.io target=_blank>Hugo</a> with theme <a href=https://github.com/tosi29/inkblotty target=_blank>Inkblotty</a></p></div></aside></footer></div></body></html>
