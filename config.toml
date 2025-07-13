@@ -5,7 +5,6 @@ title = "umemak"
 # theme = "hermit"
 theme = "inkblotty"
 # theme = "github-style"
-paginate = 10
 enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 summaryLength=150
@@ -19,6 +18,9 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 googleAnalytics = "UA-151652940-1"
 # disqusShortname = "umemak-blog"
 # publishDir = "public/"
+
+[pagination]
+  pagerSize = 10
 
 [author]
   name = "umemak"
