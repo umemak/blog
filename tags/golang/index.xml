@@ -1,1 +1,528 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>golang on umemak</title><link>https://umemak.github.io/blog/tags/golang/</link><description>Recent content in golang on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 15 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Goのエラーのラップ</title><link>https://umemak.github.io/blog/posts/2022/12/15_go_error/</link><pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/12/15_go_error/</guid><description>Goでスタイリッシュにエラーをラップする方法を学んだ - カミナシ エンジニアブログを見て、なるほどと思った。 ただ、自分の場合はエラーメッセージに、エラーを返した関数なりメソッド名を入れたい派なので、一律同じになるこの方法は見送りかな、と。 func hoge() error { err := Huga() if err != nil { return fmt.Errorf(&amp;#34;Huga: %w&amp;#34;, err) } return nil } こんな感じ。</description></item><item><title>Goのpresentパッケージ</title><link>https://umemak.github.io/blog/posts/2022/12/11_go_present/</link><pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/12/11_go_present/</guid><description>Go製プレゼンツール「present」のインストール手順 - Qiitaを見て、そんなものがあるのかと初めて知った。 どんなものかと検索したら、Goのpresentで発表用スライドを作成する - Carpe Diemの記事で実際の例がリンクされてて、それ見たらこういうスライド見たことがあった。 最近はスライド作るのはMa</description></item><item><title>ginkgoの特殊機能とは？</title><link>https://umemak.github.io/blog/posts/2022/04/26_ginkgo/</link><pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/26_ginkgo/</guid><description>昨日の調べもので出てきた、 Ginkgo has several capabilities that can only be accessed via ginkgo. （Ginkgoには、ginkgoを経由してしかアクセスできない機能がいくつかあります。） そのいくつかの機能を知りたい。 https://onsi.github.io/ginkgo/#ginkgo-cli-overview には、コマンドライン引数について書かれているが、むしろginkgoでサポートしていないものがあるという記述なので、思っていたのとは違</description></item><item><title>ginkgoとgo test</title><link>https://umemak.github.io/blog/posts/2022/04/25_ginkgo/</link><pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/25_ginkgo/</guid><description>GinkgoのV1とV2のテストケースが混在しているときに、V2のCLIでV1用のコードをテストしようとすると、ginkgo.timeoutが定義されてい内的なエラーになってしまう（うろ覚え）。 importをv2にすれば多分良いのだけれど、そうしなくても、テストの実行をgo testに任せれば、imp</description></item><item><title>Ginkgoわかった</title><link>https://umemak.github.io/blog/posts/2022/04/21_ginkgo/</link><pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/21_ginkgo/</guid><description>Ginkgoわからん - umemak の続編。 Itが上から順番に実行されない問題、V2で導入されたOrderedを使えば解決できそう。 https://onsi.github.io/ginkgo/#ordered-containers</description></item><item><title>Ginkgoわからん</title><link>https://umemak.github.io/blog/posts/2022/02/18_ginkgo/</link><pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/02/18_ginkgo/</guid><description>MDMMLじゃない話。 https://onsi.github.io/ginkgo/ でテストを、 Describe(){ Context(){ // 準備 It(){ Expect() } // 次の準備 It(){ Expect() } // 後片付け } } みたいな感じで書いていたら、思った通りの動きにならなくてハマった。 どうやら、Contextの中は上から順番に実行されるのではなく、 Describe(){ Context(){ // 準備 // 次の準備 // 後片付け It(){ Expect() } It(){ Expect() } } } となるらしい。 やりたい順番で実行したければ</description></item><item><title>golang.tokyo #28</title><link>https://umemak.github.io/blog/posts/2019/12/04_golang_tokyo_28/</link><pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/12/04_golang_tokyo_28/</guid><description>https://golangtokyo.connpass.com/event/156678/ LT大会（１６本！）です。 19:00 ~ 開場・受付 きました pic.twitter.com/T9mR1MzOss &amp;mdash; umemak (@umemak8) December 4, 2019 19:30 ~ 19:40 オープニング・乾杯 yappli 19:40 ~ 19:45 LT1: [仮]wire.goをプロダクトで使ってみた bieshanさん DIツール 依存関係のコードを生成してくれる wire使い方イマイチ理解していないので助かる 型を見て生成しているので、同じ定義だとどちらを使って</description></item><item><title>Go Release 10 Year Anniversary Party in Tokyo</title><link>https://umemak.github.io/blog/posts/2019/11/11_go_release_10/</link><pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/11_go_release_10/</guid><description>https://gocon.connpass.com/event/153665/ VMwareからのハシゴです。 出る前にDatadogのデモ見てたら出るのが遅くなってしまった。 19:00 - 19:30 Open ケーキ！ 19:30 - 20:00 History of Go by ymotongpoo 30 October, 2009 社内公開 11 November, 2009 一般公開 https://opensource.googleblog.com/2009/11/hey-ho-lets-go.html 1960-2007 - Foundations HWごとに言語があった時代(-1950) Jan 1960 ALGOL 1964-2007 Concurrency 1964 Unix Pipe 1978 CSP(Communication Sequential Process) 2007-2009 - Creation C++11のTechTalk行ったら新機能の話ばかりだった C++で</description></item><item><title>golang.tokyo #27</title><link>https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/</link><pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/</guid><description>https://techplay.jp/event/753881 先日のGo Conferenceには参加できなかったので、当選できてよかった。 19:00 ~ 開場・受付 乾杯！ 19:30 ~ 19:35 オープニング DevQuizの解説。思ってた動作と違かった。。 当日発表になった登壇者とスケジュール。予定より本数が少なくなっていました。 19:35 ~ 19:55 Session 1 Creating shell magager with golang / @yusuke_k0matsu https://speakerdeck.com/usk81/create-shell-manager-with-golang shway https://github.com/getshway/shway dotfileの管理方法のベスト</description></item><item><title>golang.tokyo #26</title><link>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</link><pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</guid><description>https://golangtokyo.connpass.com/event/147175/ 今回はスマートホームとGoの話です 19:30 ~ 20:00 Go in Nature（仮） by songmu Nature Remoの裏側 gocredits オススメ 依存ライブラリのLICENSEを同梱してくれる ecsched気になる Websocketでクラウドに接続しっぱなしにしている 外部のデバイスからはクラウドに司令を出す 常時接続の管理が大変 ECS上でうごかしている</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Golang on umemak</title><link>https://umemak.github.io/blog/tags/golang/</link><description>Recent content in Golang on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 15 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Goのエラーのラップ</title><link>https://umemak.github.io/blog/posts/2022/12/15_go_error/</link><pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/12/15_go_error/</guid><description>&lt;p>&lt;a href="https://kaminashi-developer.hatenablog.jp/entry/2022/12/15/093000">Goでスタイリッシュにエラーをラップする方法を学んだ - カミナシ エンジニアブログ&lt;/a>を見て、なるほどと思った。&lt;/p>
+&lt;p>ただ、自分の場合はエラーメッセージに、エラーを返した関数なりメソッド名を入れたい派なので、一律同じになるこの方法は見送りかな、と。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">func&lt;/span> &lt;span style="color:#a6e22e">hoge&lt;/span>() &lt;span style="color:#66d9ef">error&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">err&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#a6e22e">Huga&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">err&lt;/span> &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#66d9ef">nil&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Errorf&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Huga: %w&amp;#34;&lt;/span>, &lt;span style="color:#a6e22e">err&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#66d9ef">nil&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>こんな感じ。&lt;/p></description></item><item><title>Goのpresentパッケージ</title><link>https://umemak.github.io/blog/posts/2022/12/11_go_present/</link><pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/12/11_go_present/</guid><description>&lt;p>&lt;a href="https://qiita.com/qt-luigi/items/5dbae7f0eb6c196c9cf8">Go製プレゼンツール「present」のインストール手順 - Qiita&lt;/a>を見て、そんなものがあるのかと初めて知った。&lt;/p>
+&lt;p>どんなものかと検索したら、&lt;a href="https://christina04.hatenablog.com/entry/2016/10/04/193000">Goのpresentで発表用スライドを作成する - Carpe Diem&lt;/a>の記事で実際の例がリンクされてて、それ見たらこういうスライド見たことがあった。&lt;/p>
+&lt;p>最近はスライド作るのは&lt;a href="https://marp.app/">Marp: Markdown Presentation Ecosystem&lt;/a>を使ってばかりだけど、今度はpresentも試してみたい。&lt;/p></description></item><item><title>ginkgoの特殊機能とは？</title><link>https://umemak.github.io/blog/posts/2022/04/26_ginkgo/</link><pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/26_ginkgo/</guid><description>&lt;p>昨日の調べもので出てきた、&lt;/p>
+&lt;blockquote>
+&lt;p>Ginkgo has several capabilities that can only be accessed via ginkgo.&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>（Ginkgoには、ginkgoを経由してしかアクセスできない機能がいくつかあります。）&lt;/p>&lt;/blockquote>
+&lt;p>そのいくつかの機能を知りたい。&lt;/p>
+&lt;p>&lt;a href="https://onsi.github.io/ginkgo/#ginkgo-cli-overview">https://onsi.github.io/ginkgo/#ginkgo-cli-overview&lt;/a> には、コマンドライン引数について書かれているが、むしろginkgoでサポートしていないものがあるという記述なので、思っていたのとは違う感じ。&lt;/p></description></item><item><title>ginkgoとgo test</title><link>https://umemak.github.io/blog/posts/2022/04/25_ginkgo/</link><pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/25_ginkgo/</guid><description>&lt;p>GinkgoのV1とV2のテストケースが混在しているときに、V2のCLIでV1用のコードをテストしようとすると、ginkgo.timeoutが定義されてい内的なエラーになってしまう（うろ覚え）。&lt;/p>
+&lt;p>importをv2にすれば多分良いのだけれど、そうしなくても、テストの実行をgo testに任せれば、importで指定しているバージョンで実行してくれる気がする。&lt;/p></description></item><item><title>Ginkgoわかった</title><link>https://umemak.github.io/blog/posts/2022/04/21_ginkgo/</link><pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/21_ginkgo/</guid><description>&lt;p>&lt;a href="https://umemak.github.io/blog/posts/2022/02/18_ginkgo/">Ginkgoわからん - umemak&lt;/a> の続編。&lt;/p>
+&lt;p>Itが上から順番に実行されない問題、V2で導入された&lt;code>Ordered&lt;/code>を使えば解決できそう。&lt;/p>
+&lt;p>&lt;a href="https://onsi.github.io/ginkgo/#ordered-containers">https://onsi.github.io/ginkgo/#ordered-containers&lt;/a>&lt;/p></description></item><item><title>Ginkgoわからん</title><link>https://umemak.github.io/blog/posts/2022/02/18_ginkgo/</link><pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/02/18_ginkgo/</guid><description>&lt;p>MDMMLじゃない話。&lt;/p>
+&lt;p>&lt;a href="https://onsi.github.io/ginkgo/">https://onsi.github.io/ginkgo/&lt;/a> でテストを、&lt;/p>
+&lt;pre tabindex="0">&lt;code>Describe(){
+ Context(){
+ // 準備
+ It(){
+ Expect()
+ }
+ // 次の準備
+ It(){
+ Expect()
+ }
+ // 後片付け
+ }
+}
+&lt;/code>&lt;/pre>&lt;p>みたいな感じで書いていたら、思った通りの動きにならなくてハマった。&lt;/p>
+&lt;p>どうやら、Contextの中は上から順番に実行されるのではなく、&lt;/p>
+&lt;pre tabindex="0">&lt;code>Describe(){
+ Context(){
+ // 準備
+ // 次の準備
+ // 後片付け
+ It(){
+ Expect()
+ }
+ It(){
+ Expect()
+ }
+ }
+}
+&lt;/code>&lt;/pre>&lt;p>となるらしい。&lt;/p>
+&lt;p>やりたい順番で実行したければ、&lt;/p>
+&lt;pre tabindex="0">&lt;code>Describe(){
+ It(){
+ // 準備
+ Expect()
+ // 次の準備
+ Expect()
+ // 後片付け
+ }
+}
+&lt;/code>&lt;/pre>&lt;p>ってやらないといけないのかなぁ。&lt;/p></description></item><item><title>golang.tokyo #28</title><link>https://umemak.github.io/blog/posts/2019/12/04_golang_tokyo_28/</link><pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/12/04_golang_tokyo_28/</guid><description>&lt;p>&lt;a href="https://golangtokyo.connpass.com/event/156678/">https://golangtokyo.connpass.com/event/156678/&lt;/a>&lt;/p>
+&lt;p>LT大会（１６本！）です。&lt;/p>
+&lt;h2 id="1900-開場受付">19:00 ~	開場・受付&lt;/h2>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">きました &lt;a href="https://t.co/T9mR1MzOss">pic.twitter.com/T9mR1MzOss&lt;/a>&lt;/p>&amp;mdash; umemak (@umemak8) &lt;a href="https://twitter.com/umemak8/status/1202169265698131968?ref_src=twsrc%5Etfw">December 4, 2019&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+
+
+&lt;h2 id="1930--1940オープニング乾杯">19:30 ~ 19:40	オープニング・乾杯&lt;/h2>
+&lt;ul>
+&lt;li>yappli&lt;/li>
+&lt;/ul>
+&lt;h2 id="1940--1945lt1-仮wiregoをプロダクトで使ってみた">19:40 ~ 19:45	LT1: [仮]wire.goをプロダクトで使ってみた&lt;/h2>
+&lt;h3 id="bieshanさん">bieshanさん&lt;/h3>
+&lt;ul>
+&lt;li>DIツール
+&lt;ul>
+&lt;li>依存関係のコードを生成してくれる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>wire使い方イマイチ理解していないので助かる&lt;/li>
+&lt;li>型を見て生成しているので、同じ定義だとどちらを使っていいか判断できない
+&lt;ul>
+&lt;li>型の名前を変えれば良い&lt;/li>
+&lt;li>内部まで書き換えに行く？
+&lt;ul>
+&lt;li>構造体でラップしてあげれば良い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1945--1950lt2-作業効率アップ便利なtuiツール5選">19:45 ~ 19:50	LT2: 作業効率アップ！便利なTUIツール5選&lt;/h2>
+&lt;h3 id="ゴリラさん">ゴリラさん&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/gorilla0513/zuo-ye-xiao-lu-atupu-osusumetuituru5xuan">https://speakerdeck.com/gorilla0513/zuo-ye-xiao-lu-atupu-osusumetuituru5xuan&lt;/a>&lt;/li>
+&lt;li>lazygit&lt;/li>
+&lt;li>docui&lt;/li>
+&lt;li>pst&lt;/li>
+&lt;li>ff&lt;/li>
+&lt;li>tson&lt;/li>
+&lt;/ul>
+&lt;h2 id="1950--1955lt3-twitter-を自由自在にフィルタリングする-twilter-を作った">19:50 ~ 19:55	LT3: Twitter を自由自在にフィルタリングする Twilter を作った&lt;/h2>
+&lt;h3 id="kawasin73さん">kawasin73さん&lt;/h3>
+&lt;ul>
+&lt;li>tweetbotおすすめ&lt;/li>
+&lt;li>フィルタした結果をRTするBOT&lt;/li>
+&lt;li>鍵垢（BOT）でRTしてそれをフォローしておく運用
+&lt;ul>
+&lt;li>鍵垢じゃないとRTするたびに相手に通知が飛ぶ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2000--2005lt5-go-toolを使ってインライン展開をのぞいてみる仮">20:00 ~ 20:05	LT5: go toolを使ってインライン展開をのぞいてみる(仮)&lt;/h2>
+&lt;h3 id="tutuzさん">tutuzさん&lt;/h3>
+&lt;ul>
+&lt;li>objdump（標準ツール）で逆アセンブリできる&lt;/li>
+&lt;li>インライン展開しない場合の実行コスト
+&lt;ul>
+&lt;li>５倍くらいになる場合もある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>複雑なものは展開されない&lt;/li>
+&lt;/ul>
+&lt;h2 id="2005--2010lt6-markdown内のコードだって美しくしたいんだ">20:05 ~ 20:10	LT6: Markdown内のコードだって美しくしたいんだ！！&lt;/h2>
+&lt;h3 id="po3rinさん">po3rinさん&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/po3rin/i-want-to-make-the-code-in-markdown-beautiful">https://speakerdeck.com/po3rin/i-want-to-make-the-code-in-markdown-beautiful&lt;/a>&lt;/li>
+&lt;li>mdを構文解析して処理している&lt;/li>
+&lt;li>舌打ちはアイデアになる&lt;/li>
+&lt;/ul>
+&lt;h2 id="2010--2015lt7-grpc周りで困ったこととその解決方法">20:10 ~ 20:15	LT7: gRPC周りで困ったこととその解決方法&lt;/h2>
+&lt;h3 id="go-sagawaさん">Go Sagawaさん&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.google.com/presentation/d/1bmTIrdgyi3E-bK3r7KHpsOFXDQOZoZVz6oXi7iSFPsw/edit#slide=id.g33148270ac_0_143">https://docs.google.com/presentation/d/1bmTIrdgyi3E-bK3r7KHpsOFXDQOZoZVz6oXi7iSFPsw/edit#slide=id.g33148270ac_0_143&lt;/a>&lt;/li>
+&lt;li>protoの扱い&lt;/li>
+&lt;li>抽象化が難しい&lt;/li>
+&lt;li>構造化を考える&lt;/li>
+&lt;li>clang-format でフォーマットできる&lt;/li>
+&lt;li>実装する前にレビューするの大事&lt;/li>
+&lt;li>grpc-gatewayを使うと、ミドルウェアがかけるので良い&lt;/li>
+&lt;/ul>
+&lt;h2 id="2015--2020lt8-仮初めてgoで開発してみて思ったこと">20:15 ~ 20:20	LT8: (仮)初めてGoで開発してみて思ったこと&lt;/h2>
+&lt;h3 id="rkmathiさん">rkmathiさん&lt;/h3>
+&lt;ul>
+&lt;li>言語使用や書き方はわかった、実際のアプリケーションはどう書くのか&lt;/li>
+&lt;li>Gopher道場&lt;/li>
+&lt;li>C++やRubyと比べて長短&lt;/li>
+&lt;/ul>
+&lt;h2 id="2030--2035lt9-仮keepaliveのすゝめ">20:30 ~ 20:35	LT9: [仮]keepAliveのすゝめ&lt;/h2>
+&lt;h3 id="shogo_tomiokaさん">Shogo_Tomiokaさん&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.google.com/presentation/d/10vwEqHnqL-woEmUYJ9Ei5jEouFiv02GgyqaMAVDo6pk/edit#slide=id.p1">https://docs.google.com/presentation/d/10vwEqHnqL-woEmUYJ9Ei5jEouFiv02GgyqaMAVDo6pk/edit#slide=id.p1&lt;/a>&lt;/li>
+&lt;li>http.TansPortで設定できる
+&lt;ul>
+&lt;li>デフォルト有効&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>tcnksm/go-httpstat&lt;/li>
+&lt;li>res.Body.Close() しないと使い回せない&lt;/li>
+&lt;li>パラメータはアプリケーションの特性を考えて調整する&lt;/li>
+&lt;/ul>
+&lt;h2 id="2016--2026休憩">20:16 ~ 20:26	休憩&lt;/h2>
+&lt;h2 id="2035--2040lt10-マイクロサービスで共用するprivateなエラーロギングパッケージを作った">20:35 ~ 20:40	LT10: マイクロサービスで共用するprivateなエラー&amp;amp;ロギングパッケージを作った&lt;/h2>
+&lt;h3 id="shohei-oさん">Shohei O.さん&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/shoheshohe/maikurosabisudegong-yong-suruprivatenaera-and-rogingupatukeziwozuo-tutahua">https://speakerdeck.com/shoheshohe/maikurosabisudegong-yong-suruprivatenaera-and-rogingupatukeziwozuo-tutahua&lt;/a>&lt;/li>
+&lt;li>ubarのzapでロギング
+&lt;ul>
+&lt;li>JSON形式で出力&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>GOPRIVATE環境変数&lt;/li>
+&lt;/ul>
+&lt;h2 id="2040--2045lt11-grpcのクライアントが絡むテスト">20:40 ~ 20:45	LT11: gRPCのクライアントが絡むテスト&lt;/h2>
+&lt;h3 id="dice_zuさん">dice_zuさん&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://daisuzu.github.io/golang-tokyo-28/#1">https://daisuzu.github.io/golang-tokyo-28/#1&lt;/a>&lt;/li>
+&lt;li>DI
+&lt;ul>
+&lt;li>3rbパーティ性のライブラリが辛い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ダミーサーバー
+&lt;ul>
+&lt;li>コード量が増えて辛い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>リクエストレスポンスを記録再生する
+&lt;ul>
+&lt;li>cloud.google.com/go/rpcreplay&lt;/li>
+&lt;li>gRPCクライアントのシグネチャに縛りあり&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2045--2050lt12-repositoryによる抽象化の理想と現実">20:45 ~ 20:50	LT12: Repositoryによる抽象化の理想と現実&lt;/h2>
+&lt;h3 id="sonatardさん">sonatardさん&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/sonatard/ideal-and-reality-of-abstraction-by-repository">https://speakerdeck.com/sonatard/ideal-and-reality-of-abstraction-by-repository&lt;/a>&lt;/li>
+&lt;li>抽象化するためにRepositoryを使う&lt;/li>
+&lt;li>具象が変更したときに対応できる抽象化か？&lt;/li>
+&lt;/ul>
+&lt;h2 id="2050--2055lt13-インフラエンジニアもgolangが書きたい">20:50 ~ 20:55	LT13: インフラエンジニアもGolangが書きたい&lt;/h2>
+&lt;h3 id="nwiizoさん">nwiizoさん&lt;/h3>
+&lt;ul>
+&lt;li>Python（Fabric）のSSHクライアントをGoにした話&lt;/li>
+&lt;li>運用が複雑化するとスクリプトも肥大化していく&lt;/li>
+&lt;/ul>
+&lt;h2 id="2055--2100lt14-年末なのでgoを使ったプロダクトを初めてリリース運用した1年を振り返ってみる">20:55 ~ 21:00	LT14: 年末なのでgoを使ったプロダクトを初めてリリース・運用した1年を振り返ってみる&lt;/h2>
+&lt;h3 id="keitaro_1020さん">keitaro_1020さん&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/keitaro1020/nian-mo-nafalsedegowoshi-tutaapuriworirisusita1nian-wozhen-rifan-tutemiru">https://speakerdeck.com/keitaro1020/nian-mo-nafalsedegowoshi-tutaapuriworirisusita1nian-wozhen-rifan-tutemiru&lt;/a>&lt;/li>
+&lt;li>スター数でライブラリ選定したら後で辛いことがあった&lt;/li>
+&lt;li>開発者のGo経験不足
+&lt;ul>
+&lt;li>Go有識者にソースコードレビューや勉強会を開催してもらった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2100--2105lt15-transform-go-error-handling-using-ast-inspector">21:00 ~ 21:05	LT15: Transform Go error handling using AST inspector&lt;/h2>
+&lt;h3 id="hidetake-iwataさん">Hidetake Iwataさん&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/int128/rewrite-go-error-handling-using-ast-transformation">https://speakerdeck.com/int128/rewrite-go-error-handling-using-ast-transformation&lt;/a>&lt;/li>
+&lt;li>ソースコードとASTの相互変換ができる&lt;/li>
+&lt;li>ASTで呼び出す関数を置き換えてしまう&lt;/li>
+&lt;/ul>
+&lt;h2 id="2105--2110lt16-go基礎力に効く標準ライブラリcontext徹底理解あなたはcontextの挙動を説明できますか">21:05 ~ 21:10	LT16: Go基礎力に効く標準ライブラリContext徹底理解。あなたはContextの挙動を説明できますか？&lt;/h2>
+&lt;h3 id="shibu_jpさん">shibu_jpさん&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.google.com/presentation/d/1xglEURYptsTg5KXh4bxWVKKOPba7N5DwPvazdi6Q1HY/edit#slide=id.p">https://docs.google.com/presentation/d/1xglEURYptsTg5KXh4bxWVKKOPba7N5DwPvazdi6Q1HY/edit#slide=id.p&lt;/a>&lt;/li>
+&lt;li>Contextクイズ&lt;/li>
+&lt;/ul>
+&lt;h2 id="1955--2000lt4-write-kubernetes-custom-controller-in-go">19:55 ~ 20:00	LT4: Write Kubernetes Custom Controller in Go&lt;/h2>
+&lt;h3 id="morito_ikedaさん">morito_ikedaさん&lt;/h3>
+&lt;ul>
+&lt;li>kubernetes-sigs/controller-runtime&lt;/li>
+&lt;li>割とかんたんにカスタムコントローラーが作成できる&lt;/li>
+&lt;/ul>
+&lt;h2 id="2110--2135懇親会">21:10 ~ 21:35	懇親会&lt;/h2>
+&lt;h2 id="2135--2145結果発表">21:35 ~ 21:45	結果発表&lt;/h2>
+&lt;h2 id="2145--2155終了撤収">21:45 ~ 21:55	終了・撤収&lt;/h2></description></item><item><title>Go Release 10 Year Anniversary Party in Tokyo</title><link>https://umemak.github.io/blog/posts/2019/11/11_go_release_10/</link><pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/11_go_release_10/</guid><description>&lt;p>&lt;a href="https://gocon.connpass.com/event/153665/">https://gocon.connpass.com/event/153665/&lt;/a>&lt;/p>
+&lt;p>VMwareからのハシゴです。
+出る前にDatadogのデモ見てたら出るのが遅くなってしまった。&lt;/p>
+&lt;h2 id="1900---1930open">19:00 - 19:30	Open&lt;/h2>
+&lt;ul>
+&lt;li>ケーキ！&lt;/li>
+&lt;/ul>
+&lt;h2 id="1930---2000history-of-go-by-ymotongpoo">19:30 - 20:00	History of Go by ymotongpoo&lt;/h2>
+&lt;ul>
+&lt;li>30 October, 2009
+&lt;ul>
+&lt;li>社内公開&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>11 November, 2009
+&lt;ul>
+&lt;li>一般公開&lt;/li>
+&lt;li>&lt;a href="https://opensource.googleblog.com/2009/11/hey-ho-lets-go.html">https://opensource.googleblog.com/2009/11/hey-ho-lets-go.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>1960-2007 - Foundations
+&lt;ul>
+&lt;li>HWごとに言語があった時代(-1950)&lt;/li>
+&lt;li>Jan 1960 ALGOL&lt;/li>
+&lt;li>1964-2007 Concurrency
+&lt;ul>
+&lt;li>1964 Unix Pipe&lt;/li>
+&lt;li>1978 CSP(Communication Sequential Process)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>2007-2009 - Creation
+&lt;ul>
+&lt;li>C++11のTechTalk行ったら新機能の話ばかりだった&lt;/li>
+&lt;li>C++でコンパイルするのに45分かかる&lt;/li>
+&lt;li>コンパイル待ち時間の間に同僚と議論していたのがGoの始まり&lt;/li>
+&lt;li>Goは創造と収斂&lt;/li>
+&lt;li>No in Temporary, Yes is Forever&lt;/li>
+&lt;li>Ian: I never once failed at implementing generics. I just found out 99 ways not to&lt;/li>
+&lt;li>Goは良いデザインが来るまでは、NOと言う&lt;/li>
+&lt;li>Genericsについて最初に言及したのは2009年&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>2009-2019 - Reflection
+&lt;ul>
+&lt;li>2013頃からクラウド系のツールがgoで書かれ始めている&lt;/li>
+&lt;li>どんどん成長している&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>2020- - Prediction
+&lt;ul>
+&lt;li>Go 2 に向けて&lt;/li>
+&lt;li>教育向け&lt;/li>
+&lt;li>Go 2 というのは後方互換性が保てなかったときに初めて出るもの&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2000---2020appengine-standard-for-go-の移り変わり-sinmetalの思い出から-by-sinmetal">20:00 - 20:20	AppEngine Standard for Go の移り変わり sinmetalの思い出から by sinmetal&lt;/h2>
+&lt;ul>
+&lt;li>ピザ取りに行ってて最初の方聞き逃した。。&lt;/li>
+&lt;li>2nd genはGAEの依存を取り除いたもの
+&lt;ul>
+&lt;li>バージョン追従が早くなった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2020---2030break">20:20 - 20:30	Break&lt;/h2>
+&lt;p>ケーキカット&lt;/p></description></item><item><title>golang.tokyo #27</title><link>https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/</link><pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/05_golang_tokyo_27/</guid><description>&lt;p>&lt;a href="https://techplay.jp/event/753881">https://techplay.jp/event/753881&lt;/a>&lt;/p>
+&lt;p>先日のGo Conferenceには参加できなかったので、当選できてよかった。
+&lt;figure class="center">&lt;img src="../IMG_20191105_193605_1573015343606.jpg" width="640">
+&lt;/figure>
+&lt;/p>
+&lt;h2 id="1900-開場受付">19:00 ~	開場・受付&lt;/h2>
+&lt;figure class="center">&lt;img src="../IMG_20191105_193759_1572967448087.jpg" width="640">&lt;figcaption>
+ &lt;h4>乾杯！&lt;/h4>
+ &lt;/figcaption>
+&lt;/figure>
+
+&lt;h2 id="1930--1935オープニング">19:30 ~ 19:35	オープニング&lt;/h2>
+&lt;ul>
+&lt;li>DevQuizの解説。思ってた動作と違かった。。&lt;/li>
+&lt;li>当日発表になった登壇者とスケジュール。予定より本数が少なくなっていました。
+&lt;figure class="center">&lt;img src="../IMG_20191105_194058_1573015274227.jpg" width="640">
+ &lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1935--1955session-1">19:35 ~ 19:55	Session 1&lt;/h2>
+&lt;h3 id="creating-shell-magager-with-golang--yusuke_k0matsu">Creating shell magager with golang / @yusuke_k0matsu&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/usk81/create-shell-manager-with-golang">https://speakerdeck.com/usk81/create-shell-manager-with-golang&lt;/a>&lt;/li>
+&lt;li>shway
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/getshway/shway">https://github.com/getshway/shway&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>dotfileの管理方法のベストプラクティスを模索&lt;/li>
+&lt;li>home brew&lt;/li>
+&lt;li>開発環境のシェアができる？&lt;/li>
+&lt;li>子プロセスで読んだコマンドの結果が親プロセスに反映されない
+&lt;ul>
+&lt;li>標準出力に吐いて親で読み込む&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ログを出してしまうと、親に読まれてしまう
+&lt;ul>
+&lt;li>STDERRに出す&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>go-git
+&lt;ul>
+&lt;li>オススメのgitライブラリ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>未完成&lt;/li>
+&lt;/ul>
+&lt;h2 id="1955--2015session-2">19:55 ~ 20:15	Session 2&lt;/h2>
+&lt;h3 id="multi-cloud-serverless-architecture--shibu_jp">Multi Cloud Serverless Architecture / @shibu_jp&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.google.com/presentation/d/1x4Ed-sYP-7oJntGQ0hiUozbx-ys7yJfYI-_S62RtP60/edit">https://docs.google.com/presentation/d/1x4Ed-sYP-7oJntGQ0hiUozbx-ys7yJfYI-_S62RtP60/edit&lt;/a>&lt;/li>
+&lt;li>サーバーレスの話&lt;/li>
+&lt;li>Go Cloudで実現できる？&lt;/li>
+&lt;li>AWSとGCP（Go対応）で実験
+&lt;ul>
+&lt;li>ローカルでも動かせる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>GCPとAWSの違い
+&lt;ul>
+&lt;li>CGP: ソースをアップ、AWS: バイナリをアップ&lt;/li>
+&lt;li>エントリポイントの形式も違う
+&lt;ul>
+&lt;li>コードジェネレータを作ってカバー&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>chi router
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/go-chi/chi">https://github.com/go-chi/chi&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>docstore
+&lt;ul>
+&lt;li>&lt;a href="https://gocloud.dev/howto/docstore/">https://gocloud.dev/howto/docstore/&lt;/a>&lt;/li>
+&lt;li>DynamoDB, Firestore, CosmosDB のアクセスを抽象化するライブラリ&lt;/li>
+&lt;li>ローカルで mongodocstore というインメモリ環境もあり&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>まとめ
+&lt;ul>
+&lt;li>マルチクラウドサーバーレスアプリケーションの実現は可能&lt;/li>
+&lt;li>Go Cloud良い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2020--2035休憩">20:20 ~ 20:35	休憩&lt;/h2>
+&lt;h2 id="2035--2055session-3">20:35 ~ 20:55	Session 3&lt;/h2>
+&lt;h3 id="uber-goguide-の解説--knsh14">uber-go/guide の解説 / @knsh14&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.google.com/presentation/d/10H6tvkVG2Qb9DNeSITAiKP-5BJKHqwnWFRCxEQYbpYQ/edit#slide=id.p">https://docs.google.com/presentation/d/10H6tvkVG2Qb9DNeSITAiKP-5BJKHqwnWFRCxEQYbpYQ/edit#slide=id.p&lt;/a>&lt;/li>
+&lt;li>Uber社内で使われているスタイルガイド
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/uber-go/guide">https://github.com/uber-go/guide&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ガイドライン / パフォーマンス / スタイル / パターン&lt;/li>
+&lt;li>Be Consistent
+&lt;ul>
+&lt;li>可読性、保守性のためにコードの一貫性を保ちましょう&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>linter
+&lt;ul>
+&lt;li>go vet, goimports, golangci-lint&lt;/li>
+&lt;li>ulinter 作成中&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Handle Tpe Assertion Failures
+&lt;ul>
+&lt;li>型アサーションの結果をハンドリングしているかチェック&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>linterの作り方
+&lt;ul>
+&lt;li>ASTを作ってパターンを見ていく&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Start Enums as One
+&lt;ul>
+&lt;li>enumのゼロ(iota)は、初期化(goのデフォルト初期値)しただけなのか明示的に設定したのか区別しにくいため&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Converting number to string
+&lt;ul>
+&lt;li>fmt.Printfよりstrconvパッケージを使ったほうがパフォーマンス有利なので&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2055--2100lt1">20:55 ~ 21:00	LT1&lt;/h2>
+&lt;h3 id="saas関連系における静的解析の活用--yoheimiyamoto_">SaaS関連系における静的解析の活用 / @yoheimiyamoto_&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://go-talks.appspot.com/github.com/yoheimiyamoto/talks/golang-tokyo/27/talk.slide#1">https://go-talks.appspot.com/github.com/yoheimiyamoto/talks/golang-tokyo/27/talk.slide#1&lt;/a>&lt;/li>
+&lt;li>SaaS関連系の条件をカスタマイズできるようにしてみた話&lt;/li>
+&lt;/ul>
+&lt;h2 id="2100--2150終了撤収">21:00 ~ 21:50	終了・撤収&lt;/h2></description></item><item><title>golang.tokyo #26</title><link>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</link><pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/09/25_golang_tokyo_26/</guid><description>&lt;p>&lt;a href="https://golangtokyo.connpass.com/event/147175/">https://golangtokyo.connpass.com/event/147175/&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>今回はスマートホームとGoの話です&lt;/li>
+&lt;/ul>
+&lt;h2 id="1930--2000go-in-nature仮-by-songmu">19:30 ~ 20:00	Go in Nature（仮） by songmu&lt;/h2>
+&lt;ul>
+&lt;li>Nature Remoの裏側&lt;/li>
+&lt;li>gocredits オススメ
+&lt;ul>
+&lt;li>依存ライブラリのLICENSEを同梱してくれる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ecsched気になる&lt;/li>
+&lt;li>Websocketでクラウドに接続しっぱなしにしている&lt;/li>
+&lt;li>外部のデバイスからはクラウドに司令を出す&lt;/li>
+&lt;li>常時接続の管理が大変&lt;/li>
+&lt;li>ECS上でうごかしている&lt;/li>
+&lt;li>Nginxとポート数の問題
+&lt;ul>
+&lt;li>接続数が少ないところにつなぎに行く&lt;/li>
+&lt;li>ALBに直接つなぎに行けるようにしたい&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>deploy時に接続を切るので、その後一斉に再接続が来る&lt;/li>
+&lt;li>Migration
+&lt;ul>
+&lt;li>goose から schemalex に乗り換えたい&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Dependabot 導入
+&lt;ul>
+&lt;li>Go対応はちょっと微妙&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2000--2030nature-remo用のgo-api-clientを作った話仮-by-tenntenn">20:00 ~ 20:30	Nature Remo用のGo API Clientを作った話（仮） by tenntenn&lt;/h2>
+&lt;ul>
+&lt;li>完全に対応したGoクライアントが存在していなかったので作った&lt;/li>
+&lt;li>swagger見ながら作った&lt;/li>
+&lt;li>Dialogflowも使いたい&lt;/li>
+&lt;/ul>
+&lt;h2 id="2030--2100休憩">20:30 ~ 21:00	休憩&lt;/h2>
+&lt;ul>
+&lt;li>と言う名の懇親タイム&lt;/li>
+&lt;/ul>
+&lt;h2 id="2110--2120lt1-raspberry-pi--go-で-iot-した話-仮-by-yaegashi">21:10 ~ 21:20	LT1 Raspberry Pi + Go で IoT した話 (仮) by yaegashi&lt;/h2>
+&lt;ul>
+&lt;li>エッジデバイスでの活用&lt;/li>
+&lt;li>クロスコンパイルが簡単&lt;/li>
+&lt;li>シングルバイナリ&lt;/li>
+&lt;li>並列処理のサポート&lt;/li>
+&lt;li>GPIOの制御
+&lt;ul>
+&lt;li>pigpioが便利&lt;/li>
+&lt;li>遅延、CPU負荷が弱点&lt;/li>
+&lt;li>periph.ioもオススメ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2120--2130lt2-goを使ったセンサーデータ収集基盤のお話仮-by-takeshinoda">21:20 ~ 21:30	LT2 Goを使ったセンサーデータ収集基盤のお話(仮 by takeshinoda&lt;/h2>
+&lt;ul>
+&lt;li>IoTでGoは便利
+&lt;ul>
+&lt;li>クロスコンパイル、非同期データ通信制御、デプロイの容易さ&lt;/li>
+&lt;li>非同期処理と同期処理の混在もOK&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>nodeとGo、Goのほうが安心感がある&lt;/li>
+&lt;/ul>
+&lt;h2 id="2130--2140lt3-build-real-world-data-collecting-architecture-with-goroutine--channel-by-banana_umai">21:30 ~ 21:40	LT3 Build real world data collecting architecture with goroutine &amp;amp; channel by banana_umai&lt;/h2>
+&lt;ul>
+&lt;li>pipeline pattern
+&lt;ul>
+&lt;li>channelで並列にデータ受け渡しをしていくパターン&lt;/li>
+&lt;li>データの順序性、即時性を保ちたい&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>debouncing, buffering
+&lt;ul>
+&lt;li>ネットワークの不安定さに対応できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

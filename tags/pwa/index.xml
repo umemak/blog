@@ -1,1 +1,117 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pwa on umemak</title><link>https://umemak.github.io/blog/tags/pwa/</link><description>Recent content in pwa on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 18 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/pwa/index.xml" rel="self" type="application/rss+xml"/><item><title>PWA Night vol.11 ～PWA × CMS～</title><link>https://umemak.github.io/blog/posts/2019/12/18_pwa_night_11/</link><pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/12/18_pwa_night_11/</guid><description>今回はCMS回です。Webサイトの基本ともいえるCMS（コンテンツ・マネジメント・システム）におけるPWA活用法を学びましょう！ https://pwanight.connpass.com/event/156622/ きました pic.twitter.com/Fb0SO391qZ &amp;mdash; umemak (@umemak8) December 18, 2019 19:00 開場 19:20 挨拶&amp;amp;PWA Nightについて 2/1 PWA Night Confernce タイムテーブル公開しました LT応募これから まだチケット買えるよ 19:30 自己紹介（全員） 本当に全員やっ</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pwa on umemak</title><link>https://umemak.github.io/blog/tags/pwa/</link><description>Recent content in Pwa on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 18 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/pwa/index.xml" rel="self" type="application/rss+xml"/><item><title>PWA Night vol.11 ～PWA × CMS～</title><link>https://umemak.github.io/blog/posts/2019/12/18_pwa_night_11/</link><pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/12/18_pwa_night_11/</guid><description>&lt;p>今回はCMS回です。Webサイトの基本ともいえるCMS（コンテンツ・マネジメント・システム）におけるPWA活用法を学びましょう！&lt;/p>
+&lt;p>&lt;a href="https://pwanight.connpass.com/event/156622/">https://pwanight.connpass.com/event/156622/&lt;/a>&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">きました &lt;a href="https://t.co/Fb0SO391qZ">pic.twitter.com/Fb0SO391qZ&lt;/a>&lt;/p>&amp;mdash; umemak (@umemak8) &lt;a href="https://twitter.com/umemak8/status/1207242239287521280?ref_src=twsrc%5Etfw">December 18, 2019&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+
+
+&lt;h3 id="1900開場">19:00	開場&lt;/h3>
+&lt;h2 id="1920挨拶pwa-nightについて">19:20	挨拶&amp;amp;PWA Nightについて&lt;/h2>
+&lt;ul>
+&lt;li>2/1 PWA Night Confernce
+&lt;ul>
+&lt;li>タイムテーブル公開しました&lt;/li>
+&lt;li>LT応募これから&lt;/li>
+&lt;li>まだチケット買えるよ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1930自己紹介全員">19:30	自己紹介（全員）&lt;/h2>
+&lt;ul>
+&lt;li>本当に全員やった（持ち時間10秒）&lt;/li>
+&lt;/ul>
+&lt;h2 id="1940microcmsとpwaで創るウェブ開発の未来">19:40	microCMSとPWAで創るウェブ開発の未来&lt;/h2>
+&lt;h3 id="ウォンタ株式会社-松田承一shoma2daさん">ウォンタ株式会社 松田承一（@shoma2da）さん&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/shoma2da/microcmstopwatechuang-ruuehukai-fa-falsewei-lai">https://speakerdeck.com/shoma2da/microcmstopwatechuang-ruuehukai-fa-falsewei-lai&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://microcms.io/">https://microcms.io/&lt;/a>&lt;/li>
+&lt;li>ヘッドレスCMS
+&lt;ul>
+&lt;li>管理画面とDBを持って、出力はAPIを用意する&lt;/li>
+&lt;li>全体ではなく、画面の1部のみCMS化できる&lt;/li>
+&lt;li>サイネージで使ったり&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>日本ではWPが強い（非ヘッドレス）&lt;/li>
+&lt;li>管理画面はReact/Reduxで使ったSPA&lt;/li>
+&lt;li>インフラはAWS Amplify&lt;/li>
+&lt;li>デモ
+&lt;ul>
+&lt;li>フォームの項目は管理画面で定義する&lt;/li>
+&lt;li>「コンテンツ参照」が特徴的&lt;/li>
+&lt;li>管理画面でAPIプレビュー（JSON表示）ができる&lt;/li>
+&lt;li>HTMLのtemplateタグ初めて見た&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>5Gでネイティブアプリのインストールが容易になったとき、PWAの立ち位置はどうなるか&lt;/li>
+&lt;/ul>
+&lt;h2 id="2000wordpress-と-ssg-で作る情報発信サイト-の-jamstack-な-pwa">20:00	WordPress と SSG で作る、情報発信サイト の JAMstack な PWA&lt;/h2>
+&lt;h3 id="lulzneko-ラルズネコさん">lulzneko (ラルズネコ)さん&lt;/h3>
+&lt;ul>
+&lt;li>WPは世界の30$のウェブページで使われている
+&lt;ul>
+&lt;li>WPで色々やろうとするとPHPの知識なりスキルが必要になってくる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>SSG(Static Site Generator)
+&lt;ul>
+&lt;li>ServerSideRenderingの対義&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>JAMstack
+&lt;ul>
+&lt;li>JavaScript + API + Markup&lt;/li>
+&lt;li>パフォーマンス、コスト、スケーリング&lt;/li>
+&lt;li>セキュリティ&lt;/li>
+&lt;li>データとHTMLの分離&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>こういう使い方をするならば、WPもヘッドレスと言える&lt;/li>
+&lt;li>コンテンツ管理システムとしてのWPの強みを活かす&lt;/li>
+&lt;li>WPの運用どうする問題
+&lt;ul>
+&lt;li>マネージドWPを使う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2020休憩">20:20	休憩&lt;/h2>
+&lt;h2 id="2025firebaseflamelinknuxtnetlifypwaを使ってjamstackなブログを作る仮">20:25	Firebase、Flamelink、Nuxt、Netlify、PWAを使ってJAMstackなブログを作る（仮）&lt;/h2>
+&lt;h3 id="みやおかさん">みやおかさん&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://slides.com/masayakazama/pwa-night-cms#/">https://slides.com/masayakazama/pwa-night-cms#/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://flamelink.io/">https://flamelink.io/&lt;/a>&lt;/li>
+&lt;li>ヘッドレスCMSはプレビューがないのが課題&lt;/li>
+&lt;li>CSR with Prerendering&lt;/li>
+&lt;li>1年運用した感想
+&lt;ul>
+&lt;li>開発者側は楽&lt;/li>
+&lt;li>編集者側はいまいち
+&lt;ul>
+&lt;li>管理画面使いづらい&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>CMSのデモ
+&lt;ul>
+&lt;li>&lt;a href="https://studio.design/ja">https://studio.design/ja&lt;/a>&lt;/li>
+&lt;li>なんかすごい&lt;/li>
+&lt;li>開発中&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2045lt-1">20:45	LT-1&lt;/h2>
+&lt;h3 id="hissyさん5分">hissyさん（5分）&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/hissy/introducing-concrete5-pwa-add-on-japanese">https://speakerdeck.com/hissy/introducing-concrete5-pwa-add-on-japanese&lt;/a>&lt;/li>
+&lt;li>concrete5 CMSのPWAアドオン&lt;/li>
+&lt;li>100ドルで試せる&lt;/li>
+&lt;/ul>
+&lt;h2 id="lt-2">LT-2&lt;/h2>
+&lt;h3 id="mercyさん5分">mercyさん（5分）&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.slideshare.net/bitpart/pwa-night-vol11-20191218">https://www.slideshare.net/bitpart/pwa-night-vol11-20191218&lt;/a>&lt;/li>
+&lt;li>「漢はコピペ」&lt;/li>
+&lt;/ul>
+&lt;h2 id="2105懇親会">21:05	懇親会&lt;/h2>
+&lt;h2 id="2155片付け">21:55	片付け&lt;/h2>
+&lt;h2 id="2200終了">22:00	終了&lt;/h2></description></item></channel></rss>

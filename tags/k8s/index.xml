@@ -1,1 +1,188 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>k8s on umemak</title><link>https://umemak.github.io/blog/tags/k8s/</link><description>Recent content in k8s on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 03 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/k8s/index.xml" rel="self" type="application/rss+xml"/><item><title>Kubernetes Meetup Tokyo #26</title><link>https://umemak.github.io/blog/posts/2019/12/03_kubernetes_meetup_tokyo_26/</link><pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/12/03_kubernetes_meetup_tokyo_26/</guid><description>今回は 2019/11/18-21 で開催された KubeCon + CloudNativeCon North America 2019 の Recap 会だそうです。 どちらも参加していないのでどんな話が聞けるのか楽しみです。 https://k8sjp.connpass.com/event/155240/ きました pic.twitter.com/NkIGEmFehn &amp;mdash; umemak (@umemak8) December 3, 2019 18:15-19:15 受付開始 19:00-19:05 Opening (5min) 19:05-19:20 KubeCon + CloudNativeCon North America 2019 Overview Ian Lewis (@IanMLewis), Google ２つのイベントが同時開催だった 次回登壇したいヒトは明日までCFP受付中 12000人くらい。去年は8000人くらいだった。 女性11</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>K8s on umemak</title><link>https://umemak.github.io/blog/tags/k8s/</link><description>Recent content in K8s on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 03 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/k8s/index.xml" rel="self" type="application/rss+xml"/><item><title>Kubernetes Meetup Tokyo #26</title><link>https://umemak.github.io/blog/posts/2019/12/03_kubernetes_meetup_tokyo_26/</link><pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/12/03_kubernetes_meetup_tokyo_26/</guid><description>&lt;p>今回は 2019/11/18-21 で開催された KubeCon + CloudNativeCon North America 2019 の Recap 会だそうです。
+どちらも参加していないのでどんな話が聞けるのか楽しみです。&lt;/p>
+&lt;p>&lt;a href="https://k8sjp.connpass.com/event/155240/">https://k8sjp.connpass.com/event/155240/&lt;/a>&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">きました &lt;a href="https://t.co/NkIGEmFehn">pic.twitter.com/NkIGEmFehn&lt;/a>&lt;/p>&amp;mdash; umemak (@umemak8) &lt;a href="https://twitter.com/umemak8/status/1201797492385275905?ref_src=twsrc%5Etfw">December 3, 2019&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+
+
+&lt;h2 id="1815-1915受付開始">18:15-19:15	受付開始&lt;/h2>
+&lt;h2 id="1900-1905opening-5min">19:00-19:05	Opening (5min)&lt;/h2>
+&lt;h2 id="1905-1920kubecon--cloudnativecon-north-america-2019-overview">19:05-19:20	KubeCon + CloudNativeCon North America 2019 Overview&lt;/h2>
+&lt;h3 id="ian-lewis-ianmlewis-google">Ian Lewis (@IanMLewis), Google&lt;/h3>
+&lt;ul>
+&lt;li>２つのイベントが同時開催だった&lt;/li>
+&lt;li>次回登壇したいヒトは明日までCFP受付中&lt;/li>
+&lt;li>12000人くらい。去年は8000人くらいだった。&lt;/li>
+&lt;li>女性11%はDev系カンファレンスでは多い方&lt;/li>
+&lt;li>関連イベントたくさん（スライドに入り切らない）&lt;/li>
+&lt;li>CNCF End User Community
+&lt;ul>
+&lt;li>日本の企業もいくつかある（もっとある？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Kubernetes Project Update
+&lt;ul>
+&lt;li>1.16&lt;/li>
+&lt;li>Ephemeral Containers&lt;/li>
+&lt;li>毎月3000人以上がコントリビュートしている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1920-1940your-path-to-production-ready-kubernetes-hosted-by-weaveworks">19:20-19:40	Your Path to Production Ready Kubernetes hosted by Weaveworks&lt;/h2>
+&lt;h3 id="土田-智大-dullest-楽天株式会社">土田 智大 (dullest), 楽天株式会社&lt;/h3>
+&lt;ul>
+&lt;li>Co-located eventのひとつ&lt;/li>
+&lt;li>Production Readyのために
+&lt;ul>
+&lt;li>Liveness/Readiness Probe&lt;/li>
+&lt;li>Configmap&lt;/li>
+&lt;li>FGraceful shutdown&lt;/li>
+&lt;li>Twelve-Factor App&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ハンズオン資料
+&lt;ul>
+&lt;li>&lt;a href="https://tinyurl.com/kubecon-2019-workshop">https://tinyurl.com/kubecon-2019-workshop&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.weave.works/product/cloud/">https://www.weave.works/product/cloud/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>curlでスクリプト叩くだけでデプロイできる&lt;/li>
+&lt;li>Gitのファイルをもとにする（GitOps）&lt;/li>
+&lt;li>Production Ready Checklist&lt;/li>
+&lt;/ul>
+&lt;h2 id="1940-2000keynote-seamless-customer-experience-at-walmart-stores-powered-by-kubernetesedge">19:40-20:00	Keynote: Seamless Customer Experience at Walmart Stores Powered by Kubernetes@Edge&lt;/h2>
+&lt;h3 id="junichi-yoshise-jyoshise-hewlett-packard-enterprise">Junichi Yoshise (@jyoshise), Hewlett Packard Enterprise&lt;/h3>
+&lt;ul>
+&lt;li>Walmartの決済の話&lt;/li>
+&lt;li>POSシステムをクラウド化した（４年前）&lt;/li>
+&lt;li>通信コスト削減のためにエッジに処理を一部移動させる&lt;/li>
+&lt;li>クラウドネイティブ化の動機
+&lt;ul>
+&lt;li>Dynamic deployment&lt;/li>
+&lt;li>Scalability&lt;/li>
+&lt;li>Resiliency&lt;/li>
+&lt;li>Observability&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>エッジコンピューティングの動機
+&lt;ul>
+&lt;li>Low latency&lt;/li>
+&lt;li>Massive data&lt;/li>
+&lt;li>Privacy security&lt;/li>
+&lt;li>Local autonomy&lt;/li>
+&lt;li>Devices&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>MEC(Mobile Edge Computing)&lt;/li>
+&lt;li>データの同期
+&lt;ul>
+&lt;li>Edgeとクラウドで整合性が取れていないといけない
+&lt;ul>
+&lt;li>商品の金額とか&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>物理的な制約
+&lt;ul>
+&lt;li>各店舗にラックマウントサーバーを設置している&lt;/li>
+&lt;li>基本的にEdge環境では、過酷な環境でメンテナンスフリーに近い形で稼働し続けなければならない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>K8sクラスタの更新
+&lt;ul>
+&lt;li>遠隔地のクラスタ自体のデプロイを集中管理する仕組みが必要&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>MECでは、端末は移動する前提&lt;/li>
+&lt;li>スマートじゃないデバイスへの対応
+&lt;ul>
+&lt;li>KubeEdge
+&lt;ul>
+&lt;li>Device Twin&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>アプリケーションのデプロイ
+&lt;ul>
+&lt;li>GitOpsが最適&lt;/li>
+&lt;li>WalmartはCDエンジンを自作
+&lt;ul>
+&lt;li>今ならArgo flexやTectonが使える？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Security
+&lt;ul>
+&lt;li>Secret管理
+&lt;ul>
+&lt;li>Vaultから撮ってきたsecretをetcdに一時的に保存するoperationを自作&lt;/li>
+&lt;li>クラウド側のみだとネットワーク切れたら使えなくなってしまうので&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2000-2020running-apache-samza-on-kubernetes---weiqing-yang-linkedin-corporation">20:00-20:20	Running Apache Samza on Kubernetes - Weiqing Yang, LinkedIn Corporation&lt;/h2>
+&lt;h3 id="吉村翔太-yosshi_-ntt-communications">吉村翔太 (@yosshi_), NTT Communications&lt;/h3>
+&lt;ul>
+&lt;li>samza
+&lt;ul>
+&lt;li>もともとはLinkedinが作ったストリーミング処理OSS&lt;/li>
+&lt;li>似たものにSparkやFlinkがある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>最近のHadoopの動向
+&lt;ul>
+&lt;li>オンプレで使う場合はディストリビューションを使う。主なものは３つ&lt;/li>
+&lt;li>ClouderaとHortonworksが統合。2021年くらい？&lt;/li>
+&lt;li>ClouderaDataPlatform
+&lt;ul>
+&lt;li>AWSをサポート。AzureとGCPも近々&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>KafkaがHDFSなら、SamzaはMapReduceに当たる存在
+&lt;ul>
+&lt;li>KafkaもLinkedinが開発したOSS&lt;/li>
+&lt;li>Message queue, Message hub&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2025-2055懇親タイム-sponsored-by-yahoo-japan">20:25-20:55	懇親タイム sponsored by Yahoo! JAPAN&lt;/h2>
+&lt;h2 id="2055-2115how-yelp-moved-security-from-the-app-to-the-mesh-with-envoy-and-opa">20:55-21:15	How Yelp Moved Security From the App to the Mesh with Envoy and OPA&lt;/h2>
+&lt;h3 id="鳥居隆史-ttorii0609-dell-emc">鳥居隆史 (@ttorii0609), Dell EMC&lt;/h3>
+&lt;ul>
+&lt;li>Security
+&lt;ul>
+&lt;li>K8s is NOT secure by default
+&lt;ul>
+&lt;li>基本フルオープンなので、ザル。&lt;/li>
+&lt;li>9個のプラクティス全部やれ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>K8sのセキュリティは今アツい&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Open Policy Agent(OPA)&lt;/li>
+&lt;li>mTLS&lt;/li>
+&lt;li>OPAを使うにあたっての課題
+&lt;ul>
+&lt;li>OPA Policy Managerを作った&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>セキュリティを考えるとサービスメッシュは必要&lt;/li>
+&lt;li>Scope Creep
+&lt;ul>
+&lt;li>要件がどんどん広がっていく様&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2115-2135the-release-team-shadow-program---mentoring-for-the-future---guinevere-saenger-github--lachlan-evenson-microsoft">21:15-21:35	The Release Team Shadow Program - Mentoring For the Future - Guinevere Saenger, GitHub &amp;amp; Lachlan Evenson, Microsoft&lt;/h2>
+&lt;h3 id="yang-li-idealhack-kubernetes-community">Yang Li (@idealhack), Kubernetes community&lt;/h3>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul></description></item></channel></rss>

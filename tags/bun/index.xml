@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>bun on umemak</title><link>https://umemak.github.io/blog/tags/bun/</link><description>Recent content in bun on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/bun/index.xml" rel="self" type="application/rss+xml"/><item><title>Windowsでbunを試す</title><link>https://umemak.github.io/blog/posts/2024/04/03_bun/</link><pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2024/04/03_bun/</guid><description>Bun — A fast all-in-one JavaScript runtime v1.1でWindowsにも対応したということなので、Surface go 2で試してみた。 $ bun create next-app √ What is your project named? ... bun-next-app √ Would you like to use TypeScript? ... No / Yes √ Would you like to use ESLint? ... No / Yes √ Would you like to use Tailwind CSS? ... No / Yes √ Would you like to use `src/` directory? ... No / Yes √ Would you like to use App Router? (recommended) ... No / Yes √ Would you like to customize the default import alias (@/*)? ... No / Yes √ What import alias would you like configured? ... @/* $ cd bun-next-app/ $</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bun on umemak</title><link>https://umemak.github.io/blog/tags/bun/</link><description>Recent content in Bun on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/bun/index.xml" rel="self" type="application/rss+xml"/><item><title>Windowsでbunを試す</title><link>https://umemak.github.io/blog/posts/2024/04/03_bun/</link><pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2024/04/03_bun/</guid><description>&lt;p>&lt;a href="https://bun.sh/">Bun — A fast all-in-one JavaScript runtime&lt;/a>&lt;/p>
+&lt;p>v1.1でWindowsにも対応したということなので、Surface go 2で試してみた。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ bun create next-app
+√ What is your project named? ... bun-next-app
+√ Would you like to use TypeScript? ... No / Yes
+√ Would you like to use ESLint? ... No / Yes
+√ Would you like to use Tailwind CSS? ... No / Yes
+√ Would you like to use `src/` directory? ... No / Yes
+√ Would you like to use App Router? (recommended) ... No / Yes
+√ Would you like to customize the default import alias (@/*)? ... No / Yes
+√ What import alias would you like configured? ... @/*
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>$ cd bun-next-app/
+$ bun --bun run dev
+$ next dev
+ ▲ Next.js 14.1.4
+ - Local: http://localhost:3000
+
+ ✓ Ready in 9.1s
+ ○ Compiling / ...
+&lt;/code>&lt;/pre>&lt;p>で終了して、終了できない枠だけのターミナルが起動した。&lt;/p></description></item></channel></rss>

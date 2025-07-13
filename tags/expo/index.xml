@@ -1,1 +1,127 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>expo on umemak</title><link>https://umemak.github.io/blog/tags/expo/</link><description>Recent content in expo on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/expo/index.xml" rel="self" type="application/rss+xml"/><item><title>ExpoとFlutter選択</title><link>https://umemak.github.io/blog/posts/2022/06/03_expo_flutter/</link><pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/03_expo_flutter/</guid><description>ちょっとしたアプリを作るのに、どちらが良いのか迷っている。 ExpoはWindows環境でもiOS実機で動作確認ができるのが魅力。 ただ、「ちょっとした」アプリでそこまでする必要があるのかというと微妙。 やっぱりFlutterの習熟度を上げていくのが良いのかなぁ。</description></item><item><title>WSL2のExpoにLAN内のAndroidから接続したい（未完）</title><link>https://umemak.github.io/blog/posts/2022/06/02_wsl_portforward/</link><pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/02_wsl_portforward/</guid><description>WSL2 の localhostForwarding 機能がうまくうごかない - mrk21::blog {} この記事を見ながらやってみたけど、うまくいかない。 もしかしたら経路のどこかでブロックされているのかもしれない。 うまくいったとしても、QRコードがWSL2のIPで作られているので、手打ちでWindows11のIPを打たないといけないのは面倒。</description></item><item><title>Expo</title><link>https://umemak.github.io/blog/posts/2022/06/01_expo/</link><pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/01_expo/</guid><description>以前一度使ってみたことがあるExpoに再入門。 前にやったときはWSLだとダメでラズパイで動かしていたけど、もう１年以上たっているしいけるのでは？という期待を込めてWSL2でやってみる。 $ sudo npm install --global expo-cli $ cd photomap $ expo init . ✔ Choose a template: › tabs (TypeScript) several example screens and tabs using react-navigation and TypeScript ✔ Downloaded template. 📦 Using npm to install packages. ✔ Installed JavaScript dependencies. ✅ Your project is ready! To run your project, run one of the following npm commands.</description></item><item><title>Raspberry pi4 で expo を動かす</title><link>https://umemak.github.io/blog/posts/2020/07/22_raspi_expo/</link><pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/07/22_raspi_expo/</guid><description>WSLでいろいろ試してみたものの、ポート関連のエラーで動かないので、Raspberry piで試してみた。 Rubyインストール Homebrewインストールしようとしたときに、Rubyがないエラーで先に進まなくなってしまったので先にインストールしておく。 rbenvを使ってみる。 途中でパッケージが足りない</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Expo on umemak</title><link>https://umemak.github.io/blog/tags/expo/</link><description>Recent content in Expo on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 03 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/expo/index.xml" rel="self" type="application/rss+xml"/><item><title>ExpoとFlutter選択</title><link>https://umemak.github.io/blog/posts/2022/06/03_expo_flutter/</link><pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/03_expo_flutter/</guid><description>&lt;p>ちょっとしたアプリを作るのに、どちらが良いのか迷っている。&lt;/p>
+&lt;p>ExpoはWindows環境でもiOS実機で動作確認ができるのが魅力。&lt;/p>
+&lt;p>ただ、「ちょっとした」アプリでそこまでする必要があるのかというと微妙。&lt;/p>
+&lt;p>やっぱりFlutterの習熟度を上げていくのが良いのかなぁ。&lt;/p></description></item><item><title>WSL2のExpoにLAN内のAndroidから接続したい（未完）</title><link>https://umemak.github.io/blog/posts/2022/06/02_wsl_portforward/</link><pubDate>Thu, 02 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/02_wsl_portforward/</guid><description>&lt;p>&lt;a href="https://mrk21.hatenablog.com/entry/2022/01/30/183331">WSL2 の localhostForwarding 機能がうまくうごかない - mrk21::blog {}&lt;/a>&lt;/p>
+&lt;p>この記事を見ながらやってみたけど、うまくいかない。
+もしかしたら経路のどこかでブロックされているのかもしれない。&lt;/p>
+&lt;p>うまくいったとしても、QRコードがWSL2のIPで作られているので、手打ちでWindows11のIPを打たないといけないのは面倒。&lt;/p></description></item><item><title>Expo</title><link>https://umemak.github.io/blog/posts/2022/06/01_expo/</link><pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/01_expo/</guid><description>&lt;p>以前一度使ってみたことがある&lt;a href="https://expo.dev/">Expo&lt;/a>に再入門。&lt;/p>
+&lt;p>&lt;a href="https://umemak.github.io/blog/posts/2020/07/22_raspi_expo/">前にやったとき&lt;/a>はWSLだとダメでラズパイで動かしていたけど、もう１年以上たっているしいけるのでは？という期待を込めてWSL2でやってみる。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ sudo npm install --global expo-cli
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ cd photomap
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ expo init .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>✔ Choose a template: › tabs &lt;span style="color:#f92672">(&lt;/span>TypeScript&lt;span style="color:#f92672">)&lt;/span> several example screens and tabs using react-navigation and TypeScript
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>✔ Downloaded template.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>📦 Using npm to install packages.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>✔ Installed JavaScript dependencies.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>✅ Your project is ready!
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>To run your project, run one of the following npm commands.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>- npm start &lt;span style="color:#75715e"># you can open iOS, Android, or web from here, or run them directly with the commands below.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>- npm run android
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>- npm run ios &lt;span style="color:#75715e"># requires an iOS device or macOS for access to an iOS simulator&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>- npm run web
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Project is already inside of a git repo, skipping git init.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ npm start
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt; photomap@1.0.0 start
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt; expo start
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Starting project at /home/umemak/workspace/photomap
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Starting Metro Bundler
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>› Metro waiting on exp://127.0.0.1:19000
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>› Scan the QR code above with Expo Go &lt;span style="color:#f92672">(&lt;/span>Android&lt;span style="color:#f92672">)&lt;/span> or the Camera app &lt;span style="color:#f92672">(&lt;/span>iOS&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>› Press a │ open Android
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>› Press w │ open web
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>› Press r │ reload app
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>› Press m │ toggle menu
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>› Press ? │ show all commands
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Logs &lt;span style="color:#66d9ef">for&lt;/span> your project will appear below. Press Ctrl+C to exit.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>✔ It looks like you&lt;span style="color:#e6db74">&amp;#39;re trying to use web support but don&amp;#39;&lt;/span>t have the required dependencies installed. Would you like to install
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>webpack-dev-server@~3.11.0, @expo/webpack-config@~0.16.2? … yes
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>✔ Installed webpack-dev-server@~3.11.0, @expo/webpack-config@~0.16.2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CommandError: Missing package &lt;span style="color:#e6db74">&amp;#34;webpack-dev-server&amp;#34;&lt;/span> in the project. Try running the command again. &lt;span style="color:#f92672">(&lt;/span>cwd: /home/umemak/workspace/photomap&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Expo GoでQRスキャンしても、LAN内のIPアドレス指定してマニュアル接続してみても接続できなかった。&lt;/p></description></item><item><title>Raspberry pi4 で expo を動かす</title><link>https://umemak.github.io/blog/posts/2020/07/22_raspi_expo/</link><pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/07/22_raspi_expo/</guid><description>&lt;p>WSLでいろいろ試してみたものの、ポート関連のエラーで動かないので、Raspberry piで試してみた。&lt;/p>
+&lt;h2 id="rubyインストール">Rubyインストール&lt;/h2>
+&lt;ul>
+&lt;li>Homebrewインストールしようとしたときに、Rubyがないエラーで先に進まなくなってしまったので先にインストールしておく。&lt;/li>
+&lt;li>&lt;code>rbenv&lt;/code>を使ってみる。&lt;/li>
+&lt;li>途中でパッケージが足りないエラーが出るので、&lt;code>libssl-dev&lt;/code>と&lt;code>libreadline-dev&lt;/code>を入れる。&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ sudo apt-get install -y libssl-dev libreadline-dev
+$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+$ echo &amp;#39;export PATH=&amp;#34;$HOME/.rbenv/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
+$ echo &amp;#39;eval &amp;#34;$(rbenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
+$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+$ rbenv rehash
+$ rbenv install --list
+$ rbenv install 2.6.6
+$ rbenv global 2.6.6
+$ rbenv rehash
+$ ruby --version
+ruby 2.6.6p146 (2020-03-31 revision 67876) [aarch64-linux]
+&lt;/code>&lt;/pre>&lt;h2 id="homebrewインストール">Homebrewインストール&lt;/h2>
+&lt;ul>
+&lt;li>手順は先日&lt;a href="../20_wsl_brew">WSLにインストール&lt;/a>したときと同様。&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34;
+$ sudo apt-get install build-essential
+$ echo &amp;#39;eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)&amp;#39; &amp;gt;&amp;gt; /home/pi/.profile
+$ eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+$ brew --version
+Homebrew 2.4.8
+Homebrew/linuxbrew-core (git revision 39fddf7; last commit 2020-07-21)
+&lt;/code>&lt;/pre>&lt;h2 id="nodebrewインストール">Nodebrewインストール&lt;/h2>
+&lt;ul>
+&lt;li>これも先日と同様。&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ brew install nodebrew
+$ mkdir -p ~/.nodebrew/src
+$ nodebrew install stable
+$ nodebrew ls
+$ nodebrew use v14.6.0
+$ vi ~/.profile
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+$ source ~/.profile
+$ node -v
+v14.6.0
+&lt;/code>&lt;/pre>&lt;h2 id="expoインストール">Expoインストール&lt;/h2>
+&lt;ul>
+&lt;li>グローバルに&lt;code>expo-cli&lt;/code>をインストールしないで、init後にaddしている。&lt;/li>
+&lt;li>テンプレートは&lt;code>tabs (TypeScript)&lt;/code>を選択した。&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ cd workspace/
+$ npx expo-cli init expotest
+$ cd expotest/
+$ npm install --save-dev expo-cli
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;code>npm start&lt;/code>後、しばらくすると以下のエラーが出るので、上限を上げる。&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>Error: ENOSPC: System limit for number of file watchers reached, watch &amp;#39;/home/pi/workspace/expotest/node_modules/metro/node_modules/string-width/node_modules/ansi-regex&amp;#39;
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>$ cat /proc/sys/fs/inotify/max_user_watches
+8192
+$ sudo su
+# echo fs.inotify.max_user_watches= 65536 | tee -a /etc/sysctl.conf
+fs.inotify.max_user_watches= 65536
+# cat /proc/sys/fs/inotify/max_user_watches
+8192
+# sysctl -p
+fs.inotify.max_user_watches = 65536
+# cat /proc/sys/fs/inotify/max_user_watches
+65536
+# exit
+&lt;/code>&lt;/pre>&lt;h2 id="expo起動">Expo起動&lt;/h2>
+&lt;pre tabindex="0">&lt;code>$ npm start
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>表示されたQRコードを、iOSやAndroidのアプリで開くと表示される。&lt;/li>
+&lt;li>初回はJavaScriptのビルドが走る（アプリの画面下部に進捗が表示される）。&lt;/li>
+&lt;li>それ以降はソースを変更するとほぼリアルタイムで反映される。&lt;/li>
+&lt;/ul></description></item></channel></rss>

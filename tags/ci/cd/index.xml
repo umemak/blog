@@ -1,1 +1,162 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ci/cd on umemak</title><link>https://umemak.github.io/blog/tags/ci/cd/</link><description>Recent content in ci/cd on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://umemak.github.io/blog/tags/ci/cd/index.xml" rel="self" type="application/rss+xml"/><item><title>Google Cloud Build Day</title><link>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</link><pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</guid><description>https://gcpug-tokyo.connpass.com/event/143453/ GCPのCloud Buildサービスに関する話。 AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの。 19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo イベントベースでビルドのトリガー（GitHubのpushとか） テストの実行とアーティファクトのビルド 雑に言う</description></item><item><title>CI/CD Test Night</title><link>https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/</link><pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/</guid><description>2019/06/20 19:00-21:00 DeNA MacStadium DeNAのひと Mac（物理）のホスティングサービス 1ヶ月単位の前払い VNC or SSHで接続 Githubへの接続はAWSでVPNサーバーを立ててそこ経由にまとめている CI/CDパイプラインを最速で組み立てる freeeのひと circleciはdockerイメージがある。 依存関係を解決したDocekrイ</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CI/CD on umemak</title><link>https://umemak.github.io/blog/tags/ci/cd/</link><description>Recent content in CI/CD on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/ci/cd/index.xml" rel="self" type="application/rss+xml"/><item><title>Google Cloud Build Day</title><link>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</link><pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</guid><description>&lt;p>&lt;a href="https://gcpug-tokyo.connpass.com/event/143453/">https://gcpug-tokyo.connpass.com/event/143453/&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>GCPの&lt;a href="https://cloud.google.com/cloud-build/?hl=ja">Cloud Build&lt;/a>サービスに関する話。&lt;/li>
+&lt;li>AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの。&lt;/li>
+&lt;/ul>
+&lt;h2 id="1930--2000-マルチアーキテクチャイメージの作成仮-ymotongpoo">19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo&lt;/h2>
+&lt;ul>
+&lt;li>イベントベースでビルドのトリガー（GitHubのpushとか）&lt;/li>
+&lt;li>テストの実行とアーティファクトのビルド&lt;/li>
+&lt;li>雑に言うとDocker on Docker&lt;/li>
+&lt;li>ビルド実行時間にる対する課金&lt;/li>
+&lt;li>Artifact management
+&lt;ul>
+&lt;li>プライベートコンテナレジストリに自動push＆脆弱性スキャン&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>70以上のビルダーイメージ&lt;/li>
+&lt;li>Cloud Console UIで実行状況・結果の確認ができる&lt;/li>
+&lt;li>セキュア情報はKMSと連携して暗号化可能&lt;/li>
+&lt;li>Dockerが入っていればローカルで試すことができる&lt;/li>
+&lt;li>STEPの並行実行ができる
+&lt;ul>
+&lt;li>依存関係も定義できる（waitFor）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2000--2025-cloud-build-out-of-steps-apstndb">20:00 ~ 20:25 Cloud Build out of steps @apstndb&lt;/h2>
+&lt;ul>
+&lt;li>CI/CDにおけるコンテナ間の通信&lt;/li>
+&lt;li>K8s IN Docker(KIND)
+&lt;ul>
+&lt;li>DOckerの中で本物のK8sクラスタを構築するツール&lt;/li>
+&lt;li>現在アルファ版&lt;/li>
+&lt;li>CircleCI, TravisCI, GitHub Actionで動いた報告あり&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>STEP内でdocker buildが使える→docer runも使える→何でもできる&lt;/li>
+&lt;li>他のCI/CDサービスとは異なるアプローチ&lt;/li>
+&lt;li>dockerize
+&lt;ul>
+&lt;li>他のコンテナの起動を待つ用途で使っている&lt;/li>
+&lt;li>&lt;a href="https://github.com/jwilder/dockerize">https://github.com/jwilder/dockerize&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cloud BuildでKINDするには
+&lt;ul>
+&lt;li>STEPから外れる必要がある&lt;/li>
+&lt;li>Docker Networkが使えないのでhostネットワークを使う＝STEPと直接通信できない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>デモは時間切れ。。&lt;/li>
+&lt;/ul>
+&lt;h2 id="2025--2035-休憩">20:25 ~ 20:35 休憩&lt;/h2>
+&lt;h2 id="2035--2050-cloud-buildを気軽なコンテナ実行環境として利用する-chidakiyo">20:35 ~ 20:50 Cloud Buildを気軽なコンテナ実行環境として利用する @chidakiyo&lt;/h2>
+&lt;ul>
+&lt;li>注意点
+&lt;ul>
+&lt;li>&lt;code>gcloud builds submit&lt;/code>した際に指定したディレクトリは以下のファイルが送られる。&lt;/li>
+&lt;li>巨大なファイルがあると大変。&lt;/li>
+&lt;li>&lt;code>.gcloudignore&lt;/code>で除外指定可能。&lt;/li>
+&lt;li>無料枠は請求先アカウント単位なので複数プロジェクトでやるとすぐ尽きる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>事例
+&lt;ul>
+&lt;li>Dataflowを使っていた処理のCloud build化&lt;/li>
+&lt;li>gcloudコマンドさえ入っていればローカルに諸々インストールする必要がない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2050--2110-lt">20:50 ~ 21:10 LT&lt;/h2>
+&lt;h3 id="yukinagae">yukinagae&lt;/h3>
+&lt;ul>
+&lt;li>Berglas（ばーぐらす）
+&lt;ul>
+&lt;li>Cloud KMSとCloud Storageで暗号化できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>デモは時間切れ。。&lt;/li>
+&lt;/ul>
+&lt;h3 id="soumatsuda">SouMatsuda&lt;/h3>
+&lt;ul>
+&lt;li>Cloud Build x Terraform&lt;/li>
+&lt;li>通常、ローカルで実行する init, plan, apply をCloud Buildで実施する&lt;/li>
+&lt;li>インフラの設定変更が頻繁に起きる場合は工数削減に効く&lt;/li>
+&lt;li>それなりに学習コストはかかる&lt;/li>
+&lt;/ul>
+&lt;h3 id="kumagai">kumagai&lt;/h3>
+&lt;ul>
+&lt;li>Cloud Build で docker-compose と ansible&lt;/li>
+&lt;li>用途
+&lt;ul>
+&lt;li>自動テスト用ベースイメージとして&lt;/li>
+&lt;li>開発者にGCEのテンプレートとともに渡す&lt;/li>
+&lt;li>社内デモ環境としてGKEで起動&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="感想">感想&lt;/h2>
+&lt;ul>
+&lt;li>Cloud Build使ってみたくなった。&lt;/li>
+&lt;li>ちょうどblogのCI作ろうとしていたから、これでやってみようかな。&lt;/li>
+&lt;/ul></description></item><item><title>CI/CD Test Night</title><link>https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/</link><pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/</guid><description>&lt;ul>
+&lt;li>2019/06/20 19:00-21:00&lt;/li>
+&lt;li>DeNA&lt;/li>
+&lt;/ul>
+&lt;h2 id="macstadium">MacStadium&lt;/h2>
+&lt;ul>
+&lt;li>DeNAのひと&lt;/li>
+&lt;li>Mac（物理）のホスティングサービス&lt;/li>
+&lt;li>1ヶ月単位の前払い&lt;/li>
+&lt;li>VNC or SSHで接続&lt;/li>
+&lt;li>Githubへの接続はAWSでVPNサーバーを立ててそこ経由にまとめている&lt;/li>
+&lt;/ul>
+&lt;h2 id="cicdパイプラインを最速で組み立てる">CI/CDパイプラインを最速で組み立てる&lt;/h2>
+&lt;ul>
+&lt;li>freeeのひと&lt;/li>
+&lt;li>circleciはdockerイメージがある。&lt;/li>
+&lt;li>依存関係を解決したDocekrイメージを先に用意しておく&lt;/li>
+&lt;li>circleci orbs&lt;/li>
+&lt;li>ciとcdは適切に分離する&lt;/li>
+&lt;/ul>
+&lt;h2 id="iosのci環境構築">iOSのCI環境構築&lt;/h2>
+&lt;ul>
+&lt;li>Voicyのひと&lt;/li>
+&lt;li>Danger レビューツール&lt;/li>
+&lt;/ul>
+&lt;h2 id="swift-travisci">Swift TravisCI&lt;/h2>
+&lt;ul>
+&lt;li>はてなのひと&lt;/li>
+&lt;li>swift-docker
+&lt;ul>
+&lt;li>ローカルでbuildできる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="tekton">TEKTON&lt;/h2>
+&lt;ul>
+&lt;li>freeeのひと&lt;/li>
+&lt;li>CD.FOUNDATION&lt;/li>
+&lt;li>もともとはKnativeのサブプロジェクト&lt;/li>
+&lt;li>K8Sのカスタムリソースを使う&lt;/li>
+&lt;li>CI/CDの実行エンジンとしての活用&lt;/li>
+&lt;li>まだこれから&lt;/li>
+&lt;/ul>
+&lt;h2 id="e2eテストのパイプライン">E2Eテストのパイプライン&lt;/h2>
+&lt;ul>
+&lt;li>JapanTaxiのひと&lt;/li>
+&lt;li>bitrise&lt;/li>
+&lt;li>appium&lt;/li>
+&lt;li>TestRail&lt;/li>
+&lt;/ul>
+&lt;h2 id="azure-pipelines">Azure Pipelines&lt;/h2>
+&lt;ul>
+&lt;li>Sony Interactive Entertainmentのひと&lt;/li>
+&lt;li>npm install -g appium&lt;/li>
+&lt;li>self.driver.start_recordingscreen()
+&lt;ul>
+&lt;li>brew install ffmpeg&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

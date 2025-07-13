@@ -1,1 +1,369 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GCP on umemak</title><link>https://umemak.github.io/blog/tags/gcp/</link><description>Recent content in GCP on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 08 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/gcp/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud Functionsのデプロイでエラー</title><link>https://umemak.github.io/blog/posts/2023/10/08_cloud_function_error/</link><pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2023/10/08_cloud_function_error/</guid><description>久しぶりにデプロイ実行したら、エラーで中断してしまった。 エラーメッセージを見ると、いっこ前のイメージが見つからないみたいなやつで（コピペ紛失）、そういえばコスト削減しようとして、Storageのライフサイクルを1日とか最短にしたのを思い出した。 Cloud Functions のトラブルシューティング | Google Cloud Functions に関するドキュメント</description></item><item><title>CloudFunctionsのログ</title><link>https://umemak.github.io/blog/posts/2022/11/30_cloudfunctions_log/</link><pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/30_cloudfunctions_log/</guid><description>デプロイのエラーは、go clean -modcacheしてgo.sum削除してgo.modのrequire全削除してgo mod tidyしたら直った。 何が効いたのかはわからない。 ログは、JSON形式で出力しないといけないのかと思ってそのように書いてみたら、そのまま記録されて構造化されなかった。 集計するものでもなけれ</description></item><item><title>CloudFunctionsのログ</title><link>https://umemak.github.io/blog/posts/2022/11/28_cloudfunctions_log/</link><pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/28_cloudfunctions_log/</guid><description>何もしないと、リクエストパラメータすらログに出力されないので、何かと不便。 ログの作成、表示、処理 | Google Cloud Functions に関するドキュメントによると、標準出力や標準エラーに書き込めば良いが、Entry構造体を定義して、Stringメソッドを作り、logにPrintlnで渡せばもっと良い感じにできるらしい。 とりあえず</description></item><item><title>GCPの課金</title><link>https://umemak.github.io/blog/posts/2022/11/24_gcp_charge/</link><pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/24_gcp_charge/</guid><description>Cloud FunctionsでAPIデプロイしてから、課金が発生しているのに気が付いた。 200万回までは無料では？と思い詳細を見てみると、Cloud Storageの料金だった。 料金 | Cloud Functions | Google Cloud 関数が Container Registry に保存される場合、Container Registry には無料枠がないため、デプロイ後にわずかな料金が発生します。 これか。</description></item><item><title>データベース比較</title><link>https://umemak.github.io/blog/posts/2022/07/23_database/</link><pubDate>Sat, 23 Jul 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/07/23_database/</guid><description>昨日はコンテナ実行環境の比較、今日はマネージドDB（MySQL）を比較してみる。 Amazon RDS for MySQL （MySQLのためのマネージドリレーショナルデータベース） | AWS Cloud SQL for MySQL マネージドデータベース | Cloud SQL: リレーショナル データベース サービス | Google Cloud Azure Database for MySQL - マネージド MySQL データベース | Microsoft Azure リージョンは東京で、シングル構成の</description></item><item><title>コンテナ実行環境比較</title><link>https://umemak.github.io/blog/posts/2022/07/22_container/</link><pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/07/22_container/</guid><description>AWSとAzureとGCPで、コンテナ実行環境の比較をしてみたくなった。 GCPのCloud Run: コンテナを秒単位で本番環境にデプロイ | Google Cloudみたいなやつ。 AWSはAWS App Runner – フルマネージド型のコンテナアプリケーション - Amazon Web Services、AzureはAzure Container Apps | Microsoft Azureが比較対象となるか</description></item><item><title>クラウドサービス比較</title><link>https://umemak.github.io/blog/posts/2021/07/18_clouds/</link><pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/07/18_clouds/</guid><description>AWSで構築しているシステムをAzureと並行稼働させることはできるのか？GCPは？という疑問を解消するために調べてみる。 サービス比較 まずはAWS, Azure, GCPのサービス比較。 サービス名先頭の AWS, Amazon, Azure, Cloud(GCP) は省略。 サーバーレスコンピューティング AWS Azure GCP Lambda Functions Functions Java, Go, PowerShell, Node.js, C#, Python, Ruby C#, JavaScript(Node.js), F#, Java, PowerShell, Python, TypeScript Node.js, Python, Go, Java, .NET Core(C#, F#), Ruby, PHP Lambda@Edge Node.js, Python CloudFront</description></item><item><title>Qwiklabsの続きをやる</title><link>https://umemak.github.io/blog/posts/2020/02/23_qwiklabs/</link><pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/02/23_qwiklabs/</guid><description>先日のデブサミのハンズオンで使ったアカウントに１ヶ月のサブスクリプションが付与されていたのを思い出して、途中になっていたKubernatesのクエストの続きを終わらせた。 Jenkinsを使ったCI/CDのやつ。 Jenkinsは昔使ったことあったけれど、最近はCI/CDのサービスが充実してきているので</description></item><item><title>Google Cloud Build Day</title><link>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</link><pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</guid><description>https://gcpug-tokyo.connpass.com/event/143453/ GCPのCloud Buildサービスに関する話。 AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの。 19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo イベントベースでビルドのトリガー（GitHubのpushとか） テストの実行とアーティファクトのビルド 雑に言う</description></item><item><title>GCPUG Tokyo Next Extended 2019 Infra Day</title><link>https://umemak.github.io/blog/posts/2019/06/19_gcpug_tokyo_next_extended_2019_infra_day/</link><pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/06/19_gcpug_tokyo_next_extended_2019_infra_day/</guid><description>2019/06/19(Wed) 19:00 〜 22:00 Next Introduction Next 189 UPDATE Infra misc Anthos 複数のコンポーネントの集合体 去年はCSPという名前 GKEとオンプレをまとめて扱うみたいな OSSベンダとのパートナーシップ 基本、Googleのクローズドソースだった ElasticとかMongoDBとか 今年中くらいにリリース？ Google Cloud Storage 新しいタイプ Ice Cold Archive Nearline, coldline のさらに安いやつ まだ保存料</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GCP on umemak</title><link>https://umemak.github.io/blog/tags/gcp/</link><description>Recent content in GCP on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 08 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/gcp/index.xml" rel="self" type="application/rss+xml"/><item><title>Cloud Functionsのデプロイでエラー</title><link>https://umemak.github.io/blog/posts/2023/10/08_cloud_function_error/</link><pubDate>Sun, 08 Oct 2023 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2023/10/08_cloud_function_error/</guid><description>&lt;p>久しぶりにデプロイ実行したら、エラーで中断してしまった。&lt;/p>
+&lt;p>エラーメッセージを見ると、いっこ前のイメージが見つからないみたいなやつで（コピペ紛失）、そういえばコスト削減しようとして、Storageのライフサイクルを1日とか最短にしたのを思い出した。&lt;/p>
+&lt;p>&lt;a href="https://cloud.google.com/functions/docs/troubleshooting?hl=ja#missing-gcr">Cloud Functions のトラブルシューティング  |  Google Cloud Functions に関するドキュメント&lt;/a>はちょっと違うけど、関数を削除してやり直せば良さそうなので、そうした。&lt;/p></description></item><item><title>CloudFunctionsのログ</title><link>https://umemak.github.io/blog/posts/2022/11/30_cloudfunctions_log/</link><pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/30_cloudfunctions_log/</guid><description>&lt;p>デプロイのエラーは、&lt;code>go clean -modcache&lt;/code>して&lt;code>go.sum&lt;/code>削除して&lt;code>go.mod&lt;/code>のrequire全削除して&lt;code>go mod tidy&lt;/code>したら直った。
+何が効いたのかはわからない。&lt;/p>
+&lt;p>ログは、JSON形式で出力しないといけないのかと思ってそのように書いてみたら、そのまま記録されて構造化されなかった。&lt;/p>
+&lt;p>集計するものでもなければ、とりあえずfmt.Printfで書いておけばそのまま確認できるのでOK。&lt;/p></description></item><item><title>CloudFunctionsのログ</title><link>https://umemak.github.io/blog/posts/2022/11/28_cloudfunctions_log/</link><pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/28_cloudfunctions_log/</guid><description>&lt;p>何もしないと、リクエストパラメータすらログに出力されないので、何かと不便。&lt;/p>
+&lt;p>&lt;a href="https://cloud.google.com/functions/docs/monitoring/logging?hl=ja#functions-log-structured-go">ログの作成、表示、処理  |  Google Cloud Functions に関するドキュメント&lt;/a>によると、標準出力や標準エラーに書き込めば良いが、Entry構造体を定義して、Stringメソッドを作り、logにPrintlnで渡せばもっと良い感じにできるらしい。&lt;/p>
+&lt;p>とりあえず、fmt.PrintlnでJSONを出力するようにしてみる。&lt;/p></description></item><item><title>GCPの課金</title><link>https://umemak.github.io/blog/posts/2022/11/24_gcp_charge/</link><pubDate>Thu, 24 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/24_gcp_charge/</guid><description>&lt;p>Cloud FunctionsでAPIデプロイしてから、課金が発生しているのに気が付いた。&lt;/p>
+&lt;p>200万回までは無料では？と思い詳細を見てみると、Cloud Storageの料金だった。&lt;/p>
+&lt;p>&lt;a href="https://cloud.google.com/functions/pricing?hl=ja">料金  |  Cloud Functions  |  Google Cloud&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>関数が Container Registry に保存される場合、Container Registry には無料枠がないため、デプロイ後にわずかな料金が発生します。&lt;/p>&lt;/blockquote>
+&lt;p>これか。。&lt;/p>
+&lt;p>おそらく、設定ファイル変えて何度もデプロイしているのが悪いのだけど、ある程度設定が固まればそこまで増えることもないでしょう。きっと。&lt;/p></description></item><item><title>データベース比較</title><link>https://umemak.github.io/blog/posts/2022/07/23_database/</link><pubDate>Sat, 23 Jul 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/07/23_database/</guid><description>&lt;p>昨日はコンテナ実行環境の比較、今日はマネージドDB（MySQL）を比較してみる。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://aws.amazon.com/jp/rds/mysql/?nc=sn&amp;amp;loc=0">Amazon RDS for MySQL （MySQLのためのマネージドリレーショナルデータベース） | AWS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cloud.google.com/sql/mysql?hl=ja">Cloud SQL for MySQL マネージドデータベース  |  Cloud SQL: リレーショナル データベース サービス  |  Google Cloud&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://azure.microsoft.com/ja-jp/services/mysql/">Azure Database for MySQL - マネージド MySQL データベース | Microsoft Azure&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>リージョンは東京で、シングル構成の前払いなし。&lt;/p></description></item><item><title>コンテナ実行環境比較</title><link>https://umemak.github.io/blog/posts/2022/07/22_container/</link><pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/07/22_container/</guid><description>&lt;p>AWSとAzureとGCPで、コンテナ実行環境の比較をしてみたくなった。&lt;/p>
+&lt;p>GCPの&lt;a href="https://cloud.google.com/run?hl=ja">Cloud Run: コンテナを秒単位で本番環境にデプロイ  |  Google Cloud&lt;/a>みたいなやつ。&lt;/p>
+&lt;p>AWSは&lt;a href="https://aws.amazon.com/jp/apprunner/">AWS App Runner – フルマネージド型のコンテナアプリケーション - Amazon Web Services&lt;/a>、Azureは&lt;a href="https://azure.microsoft.com/ja-jp/services/container-apps/#overview">Azure Container Apps | Microsoft Azure&lt;/a>が比較対象となるかな？&lt;/p>
+&lt;p>AWSは選択できる最低スペックが1vCPU/2GBメモリなので、GCPとAzureもこれに合わせた見積もりにする。
+なお、メモリはAzureは最低1GBから、GCPは最低128MBから選択できる。&lt;/p></description></item><item><title>クラウドサービス比較</title><link>https://umemak.github.io/blog/posts/2021/07/18_clouds/</link><pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/07/18_clouds/</guid><description>&lt;p>AWSで構築しているシステムをAzureと並行稼働させることはできるのか？GCPは？という疑問を解消するために調べてみる。&lt;/p>
+&lt;h2 id="サービス比較">サービス比較&lt;/h2>
+&lt;p>まずはAWS, Azure, GCPのサービス比較。&lt;/p>
+&lt;p>サービス名先頭の AWS, Amazon, Azure, Cloud(GCP) は省略。&lt;/p>
+&lt;h3 id="サーバーレスコンピューティング">サーバーレスコンピューティング&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>AWS&lt;/th>
+ &lt;th>Azure&lt;/th>
+ &lt;th>GCP&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;a href="https://aws.amazon.com/jp/lambda/">Lambda&lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://azure.microsoft.com/ja-jp/services/functions/">Functions&lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://cloud.google.com/functions?hl=ja">Functions&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Java, Go, PowerShell, Node.js, C#, Python, Ruby&lt;/td>
+ &lt;td>C#, JavaScript(Node.js), F#, Java, PowerShell, Python, TypeScript&lt;/td>
+ &lt;td>Node.js, Python, Go, Java, .NET Core(C#, F#), Ruby, PHP&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://aws.amazon.com/jp/lambda/edge/">Lambda@Edge&lt;/a>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Node.js, Python&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>&lt;a href="https://aws.amazon.com/cloudfront/">CloudFront Functions&lt;/a>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>JavaScript&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;td>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="cdn">CDN&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>AWS&lt;/th>
+ &lt;th>Azure&lt;/th>
+ &lt;th>GCP&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;a href="https://aws.amazon.com/jp/cloudfront/">CloudFront&lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://azure.microsoft.com/ja-jp/services/cdn/">Content Delivery Network&lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://cloud.google.com/cdn?hl=ja">CDN&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="コードリポジトリ">コードリポジトリ&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>AWS&lt;/th>
+ &lt;th>Azure&lt;/th>
+ &lt;th>GCP&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;a href="https://aws.amazon.com/jp/codecommit/">CodeCommit&lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://azure.microsoft.com/ja-jp/services/devops/repos/">Repos&lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://cloud.google.com/source-repositories/?hl=ja">Source Repositories&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="cicd">CI/CD&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>AWS&lt;/th>
+ &lt;th>Azure&lt;/th>
+ &lt;th>GCP&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;a href="https://aws.amazon.com/jp/codepipeline/">CodePipeline&lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://azure.microsoft.com/ja-jp/services/devops/pipelines/">Pipelines&lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://cloud.google.com/build?hl=ja">Build&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="iac">IaC&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>AWS&lt;/th>
+ &lt;th>Azure&lt;/th>
+ &lt;th>GCP&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>&lt;a href="https://aws.amazon.com/jp/cloudformation/">CloudFormation&lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://azure.microsoft.com/ja-jp/features/resource-manager/">Resource Manager&lt;/a>&lt;/td>
+ &lt;td>&lt;a href="https://cloud.google.com/deployment-manager/docs?hl=ja">Deployment Manager&lt;/a>&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>Azure Resource Managerを簡易操作するためのツール、Azure Building Blocksというものもある。&lt;/li>
+&lt;/ul>
+&lt;h2 id="検討">検討&lt;/h2>
+&lt;ul>
+&lt;li>FaaSの対応言語が異なっている。共通で使えるのはJava、Node.js、C#、Python。
+&lt;ul>
+&lt;li>Lambda@Edgeも使っているなら、Node.jsかPythonしかない。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>CloudFormation の資産を Azure や GCP に移行できるのか&lt;/li>
+&lt;li>&lt;a href="https://www.terraform.io/">Terraform&lt;/a>という選択肢もあり&lt;/li>
+&lt;li>サーバーレス中心なら&lt;a href="https://www.serverless.com/">serverless framework&lt;/a>を検討してもよいかも&lt;/li>
+&lt;/ul>
+&lt;h2 id="参考">参考&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://qiita.com/hayao_k/items/906ac1fba9e239e08ae8">AWS/Azure/GCPサービス比較 2021.07 - Qiita&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.topgate.co.jp/aws-azure-gcp">3大クラウドAWS、Azure、GCPの機能を比較したら見えてきたサービスごとの違いと特徴とは？ | 株式会社トップゲート&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://dev.classmethod.jp/articles/amazon-cloudfront-functions-release/">エッジで爆速コード実行！CloudFront Functionsがリリースされました！ | DevelopersIO&lt;/a>
+&lt;ul>
+&lt;li>CloudFront FunctionsとLambda@Edgeの比較あり&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/devops/use-aws-codecommit-to-mirror-an-azure-devops-repository-using-an-azure-devops-pipeline/">Use AWS CodeCommit to mirror an Azure DevOps repository using an Azure DevOps pipeline | AWS DevOps Blog&lt;/a>
+&lt;ul>
+&lt;li>AzureからAWSにミラーする方法。リポジトリを持っている側のFunctionsでgit mirrorする感じ。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/jp/blogs/news/introducing-cloudfront-functions-run-your-code-at-the-edge-with-low-latency-at-any-scale/">CloudFront Functions の導入 – 任意の規模において低レイテンシーでコードをエッジで実行 | Amazon Web Services ブログ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://future-architect.github.io/articles/20200219/">GCP連載#10 Terraform ではなくCloud Deployment Manager を使ってみよう | フューチャー技術ブログ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.microsoft.com/ja-jp/azure/architecture/example-scenario/serverless/serverless-multicloud">Serverless Framework を使用したマルチクラウド ソリューション - Azure Example Scenarios | Microsoft Docs&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Qwiklabsの続きをやる</title><link>https://umemak.github.io/blog/posts/2020/02/23_qwiklabs/</link><pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/02/23_qwiklabs/</guid><description>&lt;p>先日のデブサミのハンズオンで使ったアカウントに１ヶ月のサブスクリプションが付与されていたのを思い出して、途中になっていたKubernatesのクエストの続きを終わらせた。
+Jenkinsを使ったCI/CDのやつ。&lt;/p>
+&lt;p>Jenkinsは昔使ったことあったけれど、最近はCI/CDのサービスが充実してきているので自前で用意して使うことはなくなってきたなー、ということで久しぶりに触った。&lt;/p></description></item><item><title>Google Cloud Build Day</title><link>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</link><pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/01_google_cloud_build_day/</guid><description>&lt;p>&lt;a href="https://gcpug-tokyo.connpass.com/event/143453/">https://gcpug-tokyo.connpass.com/event/143453/&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>GCPの&lt;a href="https://cloud.google.com/cloud-build/?hl=ja">Cloud Build&lt;/a>サービスに関する話。&lt;/li>
+&lt;li>AWSだと、CodePipelineとCodeBuildとCodeDeployに相当するもの。&lt;/li>
+&lt;/ul>
+&lt;h2 id="1930--2000-マルチアーキテクチャイメージの作成仮-ymotongpoo">19:30 ~ 20:00 マルチアーキテクチャイメージの作成（仮） @ymotongpoo&lt;/h2>
+&lt;ul>
+&lt;li>イベントベースでビルドのトリガー（GitHubのpushとか）&lt;/li>
+&lt;li>テストの実行とアーティファクトのビルド&lt;/li>
+&lt;li>雑に言うとDocker on Docker&lt;/li>
+&lt;li>ビルド実行時間にる対する課金&lt;/li>
+&lt;li>Artifact management
+&lt;ul>
+&lt;li>プライベートコンテナレジストリに自動push＆脆弱性スキャン&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>70以上のビルダーイメージ&lt;/li>
+&lt;li>Cloud Console UIで実行状況・結果の確認ができる&lt;/li>
+&lt;li>セキュア情報はKMSと連携して暗号化可能&lt;/li>
+&lt;li>Dockerが入っていればローカルで試すことができる&lt;/li>
+&lt;li>STEPの並行実行ができる
+&lt;ul>
+&lt;li>依存関係も定義できる（waitFor）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2000--2025-cloud-build-out-of-steps-apstndb">20:00 ~ 20:25 Cloud Build out of steps @apstndb&lt;/h2>
+&lt;ul>
+&lt;li>CI/CDにおけるコンテナ間の通信&lt;/li>
+&lt;li>K8s IN Docker(KIND)
+&lt;ul>
+&lt;li>DOckerの中で本物のK8sクラスタを構築するツール&lt;/li>
+&lt;li>現在アルファ版&lt;/li>
+&lt;li>CircleCI, TravisCI, GitHub Actionで動いた報告あり&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>STEP内でdocker buildが使える→docer runも使える→何でもできる&lt;/li>
+&lt;li>他のCI/CDサービスとは異なるアプローチ&lt;/li>
+&lt;li>dockerize
+&lt;ul>
+&lt;li>他のコンテナの起動を待つ用途で使っている&lt;/li>
+&lt;li>&lt;a href="https://github.com/jwilder/dockerize">https://github.com/jwilder/dockerize&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cloud BuildでKINDするには
+&lt;ul>
+&lt;li>STEPから外れる必要がある&lt;/li>
+&lt;li>Docker Networkが使えないのでhostネットワークを使う＝STEPと直接通信できない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>デモは時間切れ。。&lt;/li>
+&lt;/ul>
+&lt;h2 id="2025--2035-休憩">20:25 ~ 20:35 休憩&lt;/h2>
+&lt;h2 id="2035--2050-cloud-buildを気軽なコンテナ実行環境として利用する-chidakiyo">20:35 ~ 20:50 Cloud Buildを気軽なコンテナ実行環境として利用する @chidakiyo&lt;/h2>
+&lt;ul>
+&lt;li>注意点
+&lt;ul>
+&lt;li>&lt;code>gcloud builds submit&lt;/code>した際に指定したディレクトリは以下のファイルが送られる。&lt;/li>
+&lt;li>巨大なファイルがあると大変。&lt;/li>
+&lt;li>&lt;code>.gcloudignore&lt;/code>で除外指定可能。&lt;/li>
+&lt;li>無料枠は請求先アカウント単位なので複数プロジェクトでやるとすぐ尽きる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>事例
+&lt;ul>
+&lt;li>Dataflowを使っていた処理のCloud build化&lt;/li>
+&lt;li>gcloudコマンドさえ入っていればローカルに諸々インストールする必要がない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2050--2110-lt">20:50 ~ 21:10 LT&lt;/h2>
+&lt;h3 id="yukinagae">yukinagae&lt;/h3>
+&lt;ul>
+&lt;li>Berglas（ばーぐらす）
+&lt;ul>
+&lt;li>Cloud KMSとCloud Storageで暗号化できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>デモは時間切れ。。&lt;/li>
+&lt;/ul>
+&lt;h3 id="soumatsuda">SouMatsuda&lt;/h3>
+&lt;ul>
+&lt;li>Cloud Build x Terraform&lt;/li>
+&lt;li>通常、ローカルで実行する init, plan, apply をCloud Buildで実施する&lt;/li>
+&lt;li>インフラの設定変更が頻繁に起きる場合は工数削減に効く&lt;/li>
+&lt;li>それなりに学習コストはかかる&lt;/li>
+&lt;/ul>
+&lt;h3 id="kumagai">kumagai&lt;/h3>
+&lt;ul>
+&lt;li>Cloud Build で docker-compose と ansible&lt;/li>
+&lt;li>用途
+&lt;ul>
+&lt;li>自動テスト用ベースイメージとして&lt;/li>
+&lt;li>開発者にGCEのテンプレートとともに渡す&lt;/li>
+&lt;li>社内デモ環境としてGKEで起動&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="感想">感想&lt;/h2>
+&lt;ul>
+&lt;li>Cloud Build使ってみたくなった。&lt;/li>
+&lt;li>ちょうどblogのCI作ろうとしていたから、これでやってみようかな。&lt;/li>
+&lt;/ul></description></item><item><title>GCPUG Tokyo Next Extended 2019 Infra Day</title><link>https://umemak.github.io/blog/posts/2019/06/19_gcpug_tokyo_next_extended_2019_infra_day/</link><pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/06/19_gcpug_tokyo_next_extended_2019_infra_day/</guid><description>&lt;ul>
+&lt;li>2019/06/19(Wed)&lt;/li>
+&lt;li>19:00 〜 22:00&lt;/li>
+&lt;/ul>
+&lt;h2 id="next-introduction">Next Introduction&lt;/h2>
+&lt;h2 id="next-189-update-infra-misc">Next 189 UPDATE Infra misc&lt;/h2>
+&lt;ul>
+&lt;li>Anthos
+&lt;ul>
+&lt;li>複数のコンポーネントの集合体&lt;/li>
+&lt;li>去年はCSPという名前&lt;/li>
+&lt;li>GKEとオンプレをまとめて扱うみたいな&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>OSSベンダとのパートナーシップ
+&lt;ul>
+&lt;li>基本、Googleのクローズドソースだった&lt;/li>
+&lt;li>ElasticとかMongoDBとか&lt;/li>
+&lt;li>今年中くらいにリリース？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Google Cloud Storage
+&lt;ul>
+&lt;li>新しいタイプ Ice Cold Archive&lt;/li>
+&lt;li>Nearline, coldline のさらに安いやつ&lt;/li>
+&lt;li>まだ保存料金しか発表されていない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cloud Firestore Collection group queries
+&lt;ul>
+&lt;li>複数のSUb CollectionをまとめてQueryできるようになった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cloud Bigtable Multi Region Replica
+&lt;ul>
+&lt;li>別リージョンのクラスタを相互に同期できるようになる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Microsoft SQL Server on Cloud SQL
+&lt;ul>
+&lt;li>aws RDS的な&lt;/li>
+&lt;li>アルファバージョン&lt;/li>
+&lt;li>ActiveDirectoryのフルマネージドも出た&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Policy Intelligence
+&lt;ul>
+&lt;li>Policy(awsのrole?)の管理補助ツール&lt;/li>
+&lt;li>使われていない権限（削除しても良くない？）を見つけてくれる&lt;/li>
+&lt;li>どの設定で403になるのか調査してくれる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="service-networking">Service Networking&lt;/h2>
+&lt;ul>
+&lt;li>traffic director&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>コンテナである必要はない&lt;/li>
+&lt;li>ユーザーに使いリージョンにトラフィックを流したりできる（Istioではできない）
+&lt;ul>
+&lt;li>まだアルファバージョン&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>Cloud Service Mesh
+&lt;ul>
+&lt;li>Stackdriverと連携もできる&lt;/li>
+&lt;li>これもプライベートアルファバージョン&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Istio On GKE
+&lt;ul>
+&lt;li>managed istio&lt;/li>
+&lt;li>GKEのバージョンとIstioのバージョンは密結合&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>keywords&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>instagramはモノリス
+&lt;ul>
+&lt;li>世界最大のpythonプロダクト？&lt;/li>
+&lt;li>Envoy for iOS and android&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>mutual TLS&lt;/li>
+&lt;/ul>
+&lt;h2 id="パネルディスカッション">パネルディスカッション&lt;/h2>
+&lt;ul>
+&lt;li>Service Mesh Interface(SMI)&lt;/li>
+&lt;li>PostgresOperator&lt;/li>
+&lt;li>&lt;a href="https://skywalking.apache.org/">https://skywalking.apache.org/&lt;/a>&lt;/li>
+&lt;li>Oracle RAC をクラウドで使うのは無理&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul></description></item></channel></rss>

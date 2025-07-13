@@ -1,1 +1,458 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>serverless on umemak</title><link>https://umemak.github.io/blog/tags/serverless/</link><description>Recent content in serverless on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 01 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/serverless/index.xml" rel="self" type="application/rss+xml"/><item><title>SST入門</title><link>https://umemak.github.io/blog/posts/2023/11/01_sst/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2023/11/01_sst/</guid><description>SvelteKitをAWSのLambdaで動かす方法を探していて、ゼロコンフィグデプロイ • Docs • SvelteKitでUse SvelteKit with SST | SSTが紹介されていた。 SSTってSega Sound Teamしか知らないけど、Serverless Stackの略らしい（Tはどこから？）。 で、ドキュメントに沿って動かしてみたら、い</description></item><item><title>C101PAでOracle Functionsを試す</title><link>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</link><pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</guid><description>OCHaCafe参加前に触っておこうと思い、その準備。 OCIインストール 手順は公式からコピペで。 $ bash -c &amp;#34;$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)&amp;#34; fatal error: Python.h: No such file or directoryエラーで落ちたので、python3-devパッケージをインストール。 $ sudo apt-get install python3-dev OCI再挑戦。先程作成したディレクトリを削除するか聞かれるので、削除(y)して継続</description></item><item><title>OCHaCafe2 #3 Serverlessな世界をのぞいてみよう！</title><link>https://umemak.github.io/blog/posts/2019/10/31_ochacafe2_3/</link><pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/31_ochacafe2_3/</guid><description>https://ochacafe.connpass.com/event/147285/ ServerlessDaysで紹介されていたイベントです。 ちょうどサーバーレスの回だったので参加しました。 18：30 受付開始 お菓子もらいました 19：00 オープニング OCHA Cafe Premiumやるよ Oracle Cloud で考える高可用性アーキテクチャ ビッグデータのイベントもやるよ 19：10 セッション開始 https://speakerdeck.com/sugimount/lets-dive-serverless-world Oracleのブラン</description></item><item><title>Serverless Days Tokyo 2019</title><link>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</link><pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</guid><description>サーバーレスに特化したカンファレンスです。 ４回目の開催ですが、初参戦です。 https://tokyo.serverlessdays.io/ 09:00 はじめに / 諸説明 meetup 4年目 大企業での採用が進んできている 09:10 10x Serverless Product Development for a Startup with Microsoft Azure Yutaka Tachibana(EBILAB) 飲食店の生産性向上 来客人数の予測（過去実績、天気などから） 入店率も計算している 店頭のディスプレイでA/Bテストも可能 データソースが増えても追加</description></item><item><title>Serverless Meetup Tokyo #14</title><link>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</link><pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</guid><description>Serverless Meetup Tokyo #14 https://serverless.connpass.com/event/143446/ 19:10-19:15 Opening Talk 堀家 隆宏 (Serverless Operations LLC. CEO) Serverless Daysやるよ 19:15-19:20 会場案内、告知 株式会社Speee Good Coffee -&amp;gt; Good COde 19:20-19:40 機械学習MVPにServerless Frameworkがオススメな理由 池田 雄太郎（株式会社 KaizenPlatform） 短期的・長期的ダイナミクス 短期的：一時的に大量なリソースが必要 長期的：やってみないとわ</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Serverless on umemak</title><link>https://umemak.github.io/blog/tags/serverless/</link><description>Recent content in Serverless on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 01 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/serverless/index.xml" rel="self" type="application/rss+xml"/><item><title>SST入門</title><link>https://umemak.github.io/blog/posts/2023/11/01_sst/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2023/11/01_sst/</guid><description>&lt;p>SvelteKitをAWSのLambdaで動かす方法を探していて、&lt;a href="https://kit.svelte.jp/docs/adapter-auto">ゼロコンフィグデプロイ • Docs • SvelteKit&lt;/a>で&lt;a href="https://docs.sst.dev/start/svelte">Use SvelteKit with SST | SST&lt;/a>が紹介されていた。&lt;/p>
+&lt;p>SSTってSega Sound Teamしか知らないけど、Serverless Stackの略らしい（Tはどこから？）。&lt;/p>
+&lt;p>で、ドキュメントに沿って動かしてみたら、いい感じにデプロイできた。&lt;/p>
+&lt;p>が、&lt;a href="https://www.prisma.io/">Prisma&lt;/a>を使ったツールをデプロイしたら&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;PrismaClientInitializationError: Prisma Client could not find its &lt;code>schema.prisma&lt;/code>. This is likely caused by a bundling step, which leads to &lt;code>schema.prisma&lt;/code> not being copied near the resulting bundle. We would appreciate if you could take the time to share some information with us.&amp;rdquo;,&lt;/p></description></item><item><title>C101PAでOracle Functionsを試す</title><link>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</link><pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</guid><description>&lt;p>&lt;a href="https://ochacafe.connpass.com/event/147285/">OCHaCafe&lt;/a>参加前に触っておこうと思い、その準備。&lt;/p>
+&lt;h2 id="ociインストール">OCIインストール&lt;/h2>
+&lt;p>手順は&lt;a href="https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/cliinstall.htm">公式&lt;/a>からコピペで。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ bash -c &amp;#34;$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)&amp;#34;
+&lt;/code>&lt;/pre>&lt;p>&lt;code>fatal error: Python.h: No such file or directory&lt;/code>エラーで落ちたので、&lt;code>python3-dev&lt;/code>パッケージをインストール。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ sudo apt-get install python3-dev
+&lt;/code>&lt;/pre>&lt;p>OCI再挑戦。先程作成したディレクトリを削除するか聞かれるので、削除(y)して継続。
+ちなみにインストール先など入力は全部デフォルトで通した。
+今度は&lt;code>fatal error: ffi.h: No such file or directory&lt;/code>で落ちた。&lt;/p></description></item><item><title>OCHaCafe2 #3 Serverlessな世界をのぞいてみよう！</title><link>https://umemak.github.io/blog/posts/2019/10/31_ochacafe2_3/</link><pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/31_ochacafe2_3/</guid><description>&lt;p>&lt;a href="https://ochacafe.connpass.com/event/147285/">https://ochacafe.connpass.com/event/147285/&lt;/a>&lt;/p>
+&lt;p>ServerlessDaysで紹介されていたイベントです。&lt;/p>
+&lt;p>ちょうどサーバーレスの回だったので参加しました。&lt;/p>
+&lt;h2 id="1830受付開始">18：30　受付開始　&lt;/h2>
+&lt;ul>
+&lt;li>お菓子もらいました&lt;/li>
+&lt;/ul>
+&lt;h2 id="1900オープニング">19：00　オープニング&lt;/h2>
+&lt;ul>
+&lt;li>OCHA Cafe Premiumやるよ
+&lt;ul>
+&lt;li>Oracle Cloud で考える高可用性アーキテクチャ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ビッグデータのイベントもやるよ&lt;/li>
+&lt;/ul>
+&lt;h2 id="1910セッション開始">19：10　セッション開始&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://speakerdeck.com/sugimount/lets-dive-serverless-world">https://speakerdeck.com/sugimount/lets-dive-serverless-world&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Oracleのブランドカラー変わっていた&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>サーバーレスをざっくりと理解する&lt;/p></description></item><item><title>Serverless Days Tokyo 2019</title><link>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</link><pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/22_serverlessdays/</guid><description>&lt;p>サーバーレスに特化したカンファレンスです。
+４回目の開催ですが、初参戦です。
+&lt;figure class="center">&lt;img src="../20191022_1.JPG" width="640" height="320">
+&lt;/figure>
+&lt;/p>
+&lt;p>&lt;a href="https://tokyo.serverlessdays.io/">https://tokyo.serverlessdays.io/&lt;/a>&lt;/p>
+&lt;h2 id="0900-はじめに--諸説明">09:00 はじめに / 諸説明&lt;/h2>
+&lt;ul>
+&lt;li>meetup 4年目&lt;/li>
+&lt;li>大企業での採用が進んできている&lt;/li>
+&lt;/ul>
+&lt;h2 id="0910-10x-serverless-product-development-for-a-startup-with-microsoft-azure">09:10 10x Serverless Product Development for a Startup with Microsoft Azure&lt;/h2>
+&lt;h3 id="yutaka-tachibanaebilab">Yutaka Tachibana(EBILAB)&lt;/h3>
+&lt;ul>
+&lt;li>飲食店の生産性向上&lt;/li>
+&lt;li>来客人数の予測（過去実績、天気などから）&lt;/li>
+&lt;li>入店率も計算している
+&lt;ul>
+&lt;li>店頭のディスプレイでA/Bテストも可能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>データソースが増えても追加実装は簡単&lt;/li>
+&lt;li>PowerBI Embedded
+&lt;ul>
+&lt;li>レポートをノンコーディングで作成できる&lt;/li>
+&lt;li>エンジニアはレポート追加にノータッチ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>サーバーレスで実装したメリット
+&lt;ul>
+&lt;li>開発運用コストが少ない&lt;/li>
+&lt;li>将来的にスケールした場合の楽観的&lt;/li>
+&lt;li>責務分割が自然にできる&lt;/li>
+&lt;li>協業・分業しやすい&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="0950-break">09:50 break&lt;/h2>
+&lt;h2 id="1000-keynote">10:00 Keynote&lt;/h2>
+&lt;h3 id="keisuke-nishitani-aws">Keisuke Nishitani (AWS)&lt;/h3>
+&lt;ul>
+&lt;li>EventDriven
+&lt;ul>
+&lt;li>呼ぶ側と呼ばれる側が疎結合にできる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>aurora, ecs も2014年のre:inventで発表された&lt;/li>
+&lt;li>モダンアプリケーション
+&lt;ul>
+&lt;li>市場投入を加速&lt;/li>
+&lt;li>イノベーションの向上&lt;/li>
+&lt;li>信頼性の向上&lt;/li>
+&lt;li>コスト削減&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>All you need is code
+&lt;ul>
+&lt;li>付加価値を産まない重労働からの開放&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>5年たった今も
+&lt;ul>
+&lt;li>We&amp;rsquo;re still writing code&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>もっとコードを減らすためには
+&lt;ul>
+&lt;li>どういう問題をどう解決するのか&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1040-10-min-break">10:40 10 min break&lt;/h2>
+&lt;ul>
+&lt;li>スポンサーLT&lt;/li>
+&lt;/ul>
+&lt;h2 id="1050-keynote-infinite-scaling-finite-failures-serverless-resiliency-patterns-and-lessons-learned">10:50 Keynote: Infinite Scaling, Finite Failures: Serverless Resiliency Patterns and Lessons Learned&lt;/h2>
+&lt;h3 id="katy-shimizu-microsoft">Katy Shimizu (Microsoft)&lt;/h3>
+&lt;ul>
+&lt;li>失敗は絶対に起こります。アプリケーションがそれらを処理する必要があります
+&lt;ul>
+&lt;li>Data source&lt;/li>
+&lt;li>Customer code&lt;/li>
+&lt;li>Serverless/Fass layer&lt;/li>
+&lt;li>External dependency&lt;/li>
+&lt;li>IaaS/Pass&lt;/li>
+&lt;li>Datacenter/Infra&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>失敗例
+&lt;ul>
+&lt;li>レースコンディション&lt;/li>
+&lt;li>ネットワーク障害&lt;/li>
+&lt;li>レート制限&lt;/li>
+&lt;li>ハードウェア障害&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>依存関係を知る、依存関係が失敗する方法を知る
+&lt;ul>
+&lt;li>デザインパターン&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>デザインパターン
+&lt;ul>
+&lt;li>再試行
+&lt;ul>
+&lt;li>サービスに組み込まれている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>サーキットブレーカー
+&lt;ul>
+&lt;li>耐久性のあるエンティティを試す&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>新製品を使用すると、回復力が容易になります
+&lt;ul>
+&lt;li>Durable Functions 2.0&lt;/li>
+&lt;li>Premium hosting plan&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>サーバーレスは改善され続けています&lt;/li>
+&lt;/ul>
+&lt;h2 id="1130-10-min-break">11:30 10 min break&lt;/h2>
+&lt;h2 id="1140-グローバル展開のコネクティッドカーを支える大規模サーバーレスシステム事例">11:40 グローバル展開のコネクティッドカーを支える大規模サーバーレスシステム事例&lt;/h2>
+&lt;h3 id="yuya-urayama-toyota-takanori-suzuki-acroquest-technology-and-eiichiro-uchiumi-aws">Yuya Urayama (TOYOTA), Takanori Suzuki (Acroquest Technology) and Eiichiro Uchiumi (AWS)&lt;/h3>
+&lt;ul>
+&lt;li>なぜサーバーレスを選んだのか
+&lt;ul>
+&lt;li>Connented Platform
+&lt;ul>
+&lt;li>日本・中国・北米でサービス提供中&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>無駄の削減のため&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>夜間と日中のアクセス数の差が大きい
+&lt;ul>
+&lt;li>日中のアクセス数に合わせたリソース確保→無駄&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>長く乗られる（平均8.5年）
+&lt;ul>
+&lt;li>パッチあてなどの保守工数→無駄&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>広い地域での提供
+&lt;ul>
+&lt;li>各国現地にリソース確保→無駄&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>設計指針
+&lt;ul>
+&lt;li>一貫した方法でコンポーネントを分割&lt;/li>
+&lt;li>緩やかに統合&lt;/li>
+&lt;li>プロセスをステートレスに構成&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>アーキテクチャスタイル
+&lt;ul>
+&lt;li>Nティアー
+&lt;ul>
+&lt;li>コンポーネントを役割に応じて分割する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ウェブキューワーカー／イベントドリブン
+&lt;ul>
+&lt;li>ロジック層をウェブとワーカーに分割する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>マイクロサービス
+&lt;ul>
+&lt;li>ライフサイクルを共有する最小単位でコンポーネント群を複製し、自律稼働境界を設定&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>実装パターン
+&lt;ul>
+&lt;li>リアクティブスケーリング型
+&lt;ul>
+&lt;li>API GW + Lambda&lt;/li>
+&lt;li>基本はこっち&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>プロアクティブスケーリング型
+&lt;ul>
+&lt;li>ALB + Fargate&lt;/li>
+&lt;li>ある程度余裕をもたせたい、スケールをコントロールしたいとき&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>P2P
+&lt;ul>
+&lt;li>SQS&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ファンアウト
+&lt;ul>
+&lt;li>SNS&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>イベントストリーミング
+&lt;ul>
+&lt;li>Kinesis Data Streams&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ワーカープロセス
+&lt;ul>
+&lt;li>Lambda&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>特徴
+&lt;ul>
+&lt;li>トラフィックの特性によってスケーリングパターンを選べる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>デプロイメントはカオス&lt;/li>
+&lt;li>課題
+&lt;ul>
+&lt;li>開発量は少なくなったがテストしにくい
+&lt;ul>
+&lt;li>CI/CDパイプラインでのテスト実行環境の整備&lt;/li>
+&lt;li>Localstack、Karateを利用&lt;/li>
+&lt;li>イベントドリブンな部分のテスト、非同期の処理結果も確認している&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>各機能はシンプルになったが全体が見にくい
+&lt;ul>
+&lt;li>X-Rayを利用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>自動スケールは便利だがコントロールすべき要素が出てきた
+&lt;ul>
+&lt;li>リトライ用Lambdaが数千並列した
+&lt;ul>
+&lt;li>アカウントに対する同時実行数の上限までスケールした結果、他のLambdaの起動が妨げられる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>コールドスタート問題
+&lt;ul>
+&lt;li>時間がかかる処理が重なってAPI/GWがタイムアウト&lt;/li>
+&lt;li>ENIのIP枯渇&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>運用フェーズ&lt;/li>
+&lt;li>激務コンテナ・サボりコンテナ問題
+&lt;ul>
+&lt;li>アクセスログ数を気合でカウントした結果
+&lt;ul>
+&lt;li>激務もサボりもなかった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>どんなメトリクスをどの粒度でどう見るかを予め検討する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>運用コストが下がった結果
+&lt;ul>
+&lt;li>運用にかけていたコストを開発に回した&lt;/li>
+&lt;li>デプロイサイクルの高速化&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>今後の展望&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>スケーリングを最適化&lt;/li>
+&lt;li>プラットフォームの挙動をより的確に把握&lt;/li>
+&lt;li>問題が生じた際の回復を自動化&lt;/li>
+&lt;/ul>
+&lt;h2 id="1220-lunch">12:20 Lunch&lt;/h2>
+&lt;h2 id="1320-all-you-need-is-javascript">13:20 All You Need Is JavaScript&lt;/h2>
+&lt;h3 id="jensen-hussey--cloudflare">Jensen Hussey / Cloudflare&lt;/h3>
+&lt;ul>
+&lt;li>Cloudflare worker
+&lt;ul>
+&lt;li>サーバーレス用JS実行環境&lt;/li>
+&lt;li>V8エンジン採用
+&lt;ul>
+&lt;li>WebAssemblyが使えるので、JS以外の言語でも開発可能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ユーザーの地理情報を利用してエッジで翻訳することができる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1340-short-break">13:40 short break&lt;/h2>
+&lt;h2 id="1345-zero-scale-abstraction-in-knative-serving">13:45 Zero Scale Abstraction in Knative Serving&lt;/h2>
+&lt;h3 id="tsubasa-nagasawa-cyberagent">Tsubasa Nagasawa (CyberAgent)&lt;/h3>
+&lt;p>&lt;a href="https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving">https://speakerdeck.com/toversus/zero-scale-abstraction-in-knative-serving&lt;/a>&lt;/p></description></item><item><title>Serverless Meetup Tokyo #14</title><link>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</link><pubDate>Thu, 19 Sep 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/09/19_serverless_meetup_tokyo_14/</guid><description>&lt;p>Serverless Meetup Tokyo #14
+&lt;a href="https://serverless.connpass.com/event/143446/">https://serverless.connpass.com/event/143446/&lt;/a>&lt;/p>
+&lt;h2 id="1910-1915opening-talk堀家-隆宏-serverless-operations-llc-ceo">19:10-19:15	Opening Talk	堀家 隆宏 (Serverless Operations LLC. CEO)&lt;/h2>
+&lt;ul>
+&lt;li>Serverless Daysやるよ&lt;/li>
+&lt;/ul>
+&lt;h2 id="1915-1920会場案内告知株式会社speee">19:15-19:20	会場案内、告知	株式会社Speee&lt;/h2>
+&lt;ul>
+&lt;li>Good Coffee -&amp;gt; Good COde&lt;/li>
+&lt;/ul>
+&lt;h2 id="1920-1940機械学習mvpにserverless-frameworkがオススメな理由池田-雄太郎株式会社-kaizenplatform">19:20-19:40	機械学習MVPにServerless Frameworkがオススメな理由	池田 雄太郎（株式会社 KaizenPlatform）&lt;/h2>
+&lt;ul>
+&lt;li>短期的・長期的ダイナミクス&lt;/li>
+&lt;li>短期的：一時的に大量なリソースが必要&lt;/li>
+&lt;li>長期的：やってみないとわからないやつ&lt;/li>
+&lt;li>ー＞リソースのスケールが必要
+&lt;ul>
+&lt;li>ー＞そこでserverless&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Serverlessの悩み
+&lt;ul>
+&lt;li>ベンダー、性能、セキュリティ、設定・デプロイ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>使うBaaSが多くなりがち
+&lt;ul>
+&lt;li>管理が大変&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>DevOps環境の構築が大変&lt;/li>
+&lt;li>そこでServerless Framework
+&lt;ul>
+&lt;li>リソース情報を一括管理できる&lt;/li>
+&lt;li>yaml の custom で定義&lt;/li>
+&lt;li>CFnも書く必要がある？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1940-2005今serverlessが面白いわけv1909川崎-庸市microsoft-corporation">19:40-20:05	今Serverlessが面白いわけ（v19.09）	川崎 庸市（Microsoft Corporation）&lt;/h2>
+&lt;ul>
+&lt;li>Serverless != サーバーがない&lt;/li>
+&lt;li>Serverless = サーバーを管理する必要がない&lt;/li>
+&lt;li>Serverlessの定義
+&lt;ul>
+&lt;li>スケーリング&lt;/li>
+&lt;li>管理不要&lt;/li>
+&lt;li>本質的な作業に集中&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>人類の問題解決&lt;/li>
+&lt;li>FaaSはインフラ進化の賜物
+&lt;ul>
+&lt;li>コンテナ&lt;/li>
+&lt;li>実行単位が分離されている→セキュリティ有利&lt;/li>
+&lt;li>CGI-Bin？&lt;/li>
+&lt;li>データストアの進化
+&lt;ul>
+&lt;li>水平スケール大事&lt;/li>
+&lt;li>NoSQLがマッチしている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>進化の方向性
+&lt;ul>
+&lt;li>自動化、抽象化、標準化&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>標準化が課題
+&lt;ul>
+&lt;li>ベンダーロックインの懸念&lt;/li>
+&lt;li>CNCF Serverless WGで進められている&lt;/li>
+&lt;li>Cloud Events
+&lt;ul>
+&lt;li>イベントスキーマ標準化のための共通仕様&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>複雑性の抽象化
+&lt;ul>
+&lt;li>Terraform, plumi&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>マルチクラウド化対応
+&lt;ul>
+&lt;li>K8sベースのServerless環境&lt;/li>
+&lt;li>K8sがインフラを抽象化&lt;/li>
+&lt;li>Knative, KEDA&lt;/li>
+&lt;li>クラスタレス
+&lt;ul>
+&lt;li>バッチ処理とか&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Virtual Kubelet
+&lt;ul>
+&lt;li>クラウドのリソースをK8sから管理&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2015-2035awsで開発するサーバレスapiバックエンド三宅-暁フリーランス">20:15-20:35	AWSで開発するサーバレスAPIバックエンド	三宅 暁（フリーランス）&lt;/h2>
+&lt;ul>
+&lt;li>AppSync,DynamoDB,Cognito でGraphQLなAPIを作る&lt;/li>
+&lt;li>GraphQL
+&lt;ul>
+&lt;li>スキーマファースト&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Amplify-&amp;gt;AWSにロックイン&lt;/li>
+&lt;li>Serverless FWにAppsyncのプラグインがある&lt;/li>
+&lt;li>VTL＝Apache Velocity Template Language？&lt;/li>
+&lt;li>ノンコーディング&lt;/li>
+&lt;/ul>
+&lt;h2 id="2035-2040今日飲み物持ち込んでるエフセキュアのサーバーレス向けセキュリティ河野-真一郎エフセキュア株式会社">20:35-20:40	今日飲み物持ち込んでるエフセキュアのサーバーレス向けセキュリティ	河野 真一郎（エフセキュア株式会社）&lt;/h2>
+&lt;ul>
+&lt;li>AWS,GCP,Azure向けがまだない。&lt;/li>
+&lt;/ul>
+&lt;h2 id="感想">感想&lt;/h2>
+&lt;ul>
+&lt;li>Serverless Framework 使ってみよう&lt;/li>
+&lt;li>Knative も触ってみよう&lt;/li>
+&lt;li>Serverless Days 申し込もう&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,1 +1,467 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>line on umemak</title><link>https://umemak.github.io/blog/tags/line/</link><description>Recent content in line on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/line/index.xml" rel="self" type="application/rss+xml"/><item><title>LINE DEVELOPER DAY 2019</title><link>https://umemak.github.io/blog/posts/2019/11/20_line_devday/</link><pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/20_line_devday/</guid><description>https://linedevday.linecorp.com/jp/2019/ 5回目の開催とのことですが、初参加です。 10:40- Keynote Euivin Park / LINE CTO LIFE with LINE 今年だけで20以上のサービスをリリース 金融系のサービスも多い LINE MINI App 飲食店での例 Natural Experience with AI 2 Principles for Handling Data To keep &amp;ldquo;Privacy Fitst&amp;rdquo; To Avoid Data Silos Unified Self-Service Data PlatformO AI 二千万次元 受付の顔認証はiPadの機能を使っていた 自分専用フォント ５００文字？くらいで作れる 鳥海さんの話ででていた基</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Line on umemak</title><link>https://umemak.github.io/blog/tags/line/</link><description>Recent content in Line on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/line/index.xml" rel="self" type="application/rss+xml"/><item><title>LINE DEVELOPER DAY 2019</title><link>https://umemak.github.io/blog/posts/2019/11/20_line_devday/</link><pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/20_line_devday/</guid><description>&lt;p>&lt;a href="https://linedevday.linecorp.com/jp/2019/">https://linedevday.linecorp.com/jp/2019/&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>5回目の開催とのことですが、初参加です。&lt;/li>
+&lt;/ul>
+&lt;h2 id="1040--keynote">10:40- Keynote&lt;/h2>
+&lt;h3 id="euivin-park--line-cto">Euivin Park / LINE CTO&lt;/h3>
+&lt;ul>
+&lt;li>LIFE with LINE
+&lt;ul>
+&lt;li>今年だけで20以上のサービスをリリース&lt;/li>
+&lt;li>金融系のサービスも多い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>LINE MINI App
+&lt;ul>
+&lt;li>飲食店での例&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Natural Experience with AI
+&lt;ul>
+&lt;li>2 Principles for Handling Data
+&lt;ul>
+&lt;li>To keep &amp;ldquo;Privacy Fitst&amp;rdquo;&lt;/li>
+&lt;li>To Avoid Data Silos&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Unified Self-Service Data PlatformO&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>AI
+&lt;ul>
+&lt;li>二千万次元&lt;/li>
+&lt;li>受付の顔認証はiPadの機能を使っていた&lt;/li>
+&lt;li>自分専用フォント
+&lt;ul>
+&lt;li>５００文字？くらいで作れる&lt;/li>
+&lt;li>鳥海さんの話ででていた基本文字みたいなの書くのかな？&lt;/li>
+&lt;li>APIを来場者に先行提供&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>Natural Language Processiong, STT/TSS
+&lt;ul>
+&lt;li>レストランの予約ができる音声合成AI&lt;/li>
+&lt;li>今日から実店舗で稼働開始&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Video Analysis
+&lt;ul>
+&lt;li>動画を解析して字幕つける&lt;/li>
+&lt;li>まだ誤認識がある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>Data Platform
+&lt;ul>
+&lt;li>Self-Service Data Platform&lt;/li>
+&lt;li>圧縮して390TB以上毎日蓄積される&lt;/li>
+&lt;li>データサイエンティストの本来の業務ができていないという課題&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Infra
+&lt;ul>
+&lt;li>Fast lifecycle infla&lt;/li>
+&lt;li>ピーク時1Tbpsのトラフィック&lt;/li>
+&lt;li>4万台の物理サーバー&lt;/li>
+&lt;li>Private Cloud : Verda（OpenStack)
+&lt;ul>
+&lt;li>プライベートクラウドを持つ理由
+&lt;ul>
+&lt;li>課題解決に対するイニシアチブ&lt;/li>
+&lt;li>オープンテクノロジーを選択できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>インフラのソフトウェア化
+&lt;ul>
+&lt;li>不具合に対する対応が早い&lt;/li>
+&lt;li>CI/CDがまわせる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>セキュリティとプライバシー
+&lt;ul>
+&lt;li>Privacy First&lt;/li>
+&lt;li>Data GoVernance
+&lt;ul>
+&lt;li>Responsibility as a Platform&lt;/li>
+&lt;li>専門チームによるチェック&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>LINE Account Hijack
+&lt;ul>
+&lt;li>２段秋人相&lt;/li>
+&lt;li>行動パターンを分析&lt;/li>
+&lt;li>約２年で乗っ取り被害が０になった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Spam
+&lt;ul>
+&lt;li>MLを利用&lt;/li>
+&lt;li>Spammerの傾向を学習してフィルタパターンを自動更新&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Fake News&lt;/li>
+&lt;li>Password Issue
+&lt;ul>
+&lt;li>fidoを利用&lt;/li>
+&lt;li>パスワードレスを進めていきたい&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Tracsparency
+&lt;ul>
+&lt;li>年２階透明性レポートを公開している&lt;/li>
+&lt;li>今月15日からBug Bounty ProgramをHackeroneで開始&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;h2 id="leading-ai-technology">Leading AI Technology&lt;/h2>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1200--grpc-service-development-in-private-kubernetes-cluster">12:00- gRPC service development in private Kubernetes cluster&lt;/h2>
+&lt;h3 id="keiichiro-ui--line-development-team-h-server-side-engineer">Keiichiro Ui / LINE Development Team H Server Side Engineer&lt;/h3>
+&lt;ul>
+&lt;li>LINE LIVEで利用&lt;/li>
+&lt;li>なぜk8sか
+&lt;ul>
+&lt;li>トラフィックに対応するために手動でスケールする必要があった&lt;/li>
+&lt;li>オープンなエコシステムに乗ることができる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>どう使っているか
+&lt;ul>
+&lt;li>内部ではgRPCで通信&lt;/li>
+&lt;li>外部とはEnvoyで変換して通信&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>gRPC-Web
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/grpc/grpc-web">https://github.com/grpc/grpc-web&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>社内の既存サービスとの連携
+&lt;ul>
+&lt;li>REST APIをgRPCで再定義
+&lt;ul>
+&lt;li>JSONをgRPCに変換する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Istioを使わない理由
+&lt;ul>
+&lt;li>いくつかのコンポーネントはSpringで間に合う&lt;/li>
+&lt;li>パフォーマンスの問題
+&lt;ul>
+&lt;li>1.89msが13.7msとか&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Databaseとの通信
+&lt;ul>
+&lt;li>MySQL with ACL&lt;/li>
+&lt;li>事前にACLへの登録が必要
+&lt;ul>
+&lt;li>オートスケールとの相性が悪い&lt;/li>
+&lt;li>ACL Managerを作って回避
+&lt;ul>
+&lt;li>ノード追加をフックしてACLに登録（構想段階）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Prometheus
+&lt;ul>
+&lt;li>社内の時系列DBにメトリクスを蓄積して使う&lt;/li>
+&lt;li>メトリクス多い問題
+&lt;ul>
+&lt;li>既存のプロジェクトからベストプラクティスを模索&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ログ収集
+&lt;ul>
+&lt;li>EFK(Elasticsearch+Fluentd+Kibana)
+&lt;ul>
+&lt;li>Fluentdを使った理由
+&lt;ul>
+&lt;li>Knativeの要件&lt;/li>
+&lt;li>K8sのaddonが参考になった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>IMON（LINE社内開発）
+&lt;ul>
+&lt;li>通知担当&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1340--inside-of-blog-light-and-shadow-of-the-service-matured-for-15-years-and-challenge-chaos-and-legacy">13:40- Inside of Blog; Light and shadow of the service matured for 15 years and challenge chaos and legacy&lt;/h2>
+&lt;h3 id="takahiro-omori--line-development-team-b">Takahiro Omori / LINE Development Team B&lt;/h3>
+&lt;ul>
+&lt;li>livedoor blogとline blog
+&lt;ul>
+&lt;li>15年の歴史があるのはlivedoorのほう&lt;/li>
+&lt;li>70+開発者&lt;/li>
+&lt;li>750+サーバー台数。うち200がdb。&lt;/li>
+&lt;li>550+テーブル数&lt;/li>
+&lt;li>43500+ファイル数&lt;/li>
+&lt;li>3800+プログラムファイル（perl）&lt;/li>
+&lt;li>410000+プログラム行数&lt;/li>
+&lt;li>サーバー移転&lt;/li>
+&lt;li>HTTPS化
+&lt;ul>
+&lt;li>サーバー移転終わらないと完了できない（闇）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Document Not Found
+&lt;ul>
+&lt;li>デプロイ方法とか謎になっている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Development Server Not Found
+&lt;ul>
+&lt;li>フローチャートで説明&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Too Many DBS Records
+&lt;ul>
+&lt;li>300+??&lt;/li>
+&lt;li>230が未使用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Too Many Functions&lt;/li>
+&lt;li>Perl
+&lt;ul>
+&lt;li>v5.8を使い続けている&lt;/li>
+&lt;li>mod_perlのせい&lt;/li>
+&lt;li>v5.16も使っている・・・混在&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>MySQL
+&lt;ul>
+&lt;li>v4.0を使い続けている&lt;/li>
+&lt;li>いろいろ使えない機能が多い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>blogの特殊な事情
+&lt;ul>
+&lt;li>文字コードセットの混在&lt;/li>
+&lt;li>これのせいで正規手順でMySQLのバージョンアップができない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>line blog
+&lt;ul>
+&lt;li>2015年11月リリース&lt;/li>
+&lt;li>当初はlivedoor blogのASPとして稼働&lt;/li>
+&lt;li>2016年11月の一般公開で独立&lt;/li>
+&lt;li>livedoor blogからforkしたので、libedoorの闇も引き継いでいた&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Next 15 Years
+&lt;ul>
+&lt;li>今担当しているサーブ素を１０年、１５年後に担当するメンバーが苦労しないよう心がける&lt;/li>
+&lt;li>小さなことから&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1430--technologies-that-support-the-distribution-of-line-news-articles">14:30- Technologies that support the distribution of LINE NEWS articles&lt;/h2>
+&lt;h3 id="daiki-inaba--line-development-team-i-software-engineer">Daiki Inaba / LINE Development Team I Software engineer&lt;/h3>
+&lt;ul>
+&lt;li>68M MAU / 12B MPV&lt;/li>
+&lt;li>PerlとJavaで動いている&lt;/li>
+&lt;li>レコメンド配信はSpring(Java)で動いている&lt;/li>
+&lt;li>MLと手動でのレコメンドを行っている&lt;/li>
+&lt;li>MLのレコメンドは社内のDataLabで生成されたものを使っている&lt;/li>
+&lt;li>当初はMLのみでレコメンドしていた&lt;/li>
+&lt;li>レコメンドデータのインポートの課題
+&lt;ul>
+&lt;li>１億人のデータを１時間ごとに&lt;/li>
+&lt;li>並列処理（20スレッド*3台）で実施&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>初期実装の問題
+&lt;ul>
+&lt;li>スケーラビリティ
+&lt;ul>
+&lt;li>マッピングデータの形式変更&lt;/li>
+&lt;li>記事IDではなく、ユーザーIDをキーにした&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>運用コストが高い
+&lt;ul>
+&lt;li>ユーザーIDの抽出をCMSでできるようにした&lt;/li>
+&lt;li>分析チームに依頼せず、属性フィルタで抽出する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>今後
+&lt;ul>
+&lt;li>レコメンドクオリティ&lt;/li>
+&lt;li>リアルタイムフィードバック
+&lt;ul>
+&lt;li>現在A/Bテスト中&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1530--data-science-drives-improvement-of-line-messenger">15:30- Data Science drives improvement of LINE messenger&lt;/h2>
+&lt;h3 id="taro-takaguchi--line-data-science-team2-senior-data-scientist--manager">Taro Takaguchi / LINE Data Science Team2 Senior Data Scientist / Manager&lt;/h3>
+&lt;ul>
+&lt;li>Usrs First&lt;/li>
+&lt;li>Data Driven&lt;/li>
+&lt;li>Diverse Team&lt;/li>
+&lt;li>In-house Development&lt;/li>
+&lt;li>User Research
+&lt;ul>
+&lt;li>対面インタビュー、インター別途アンケートなど&lt;/li>
+&lt;li>数値モニタリング&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Plan &amp;amp; Development
+&lt;ul>
+&lt;li>取得するログの定義など&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Test &amp;amp; Feedback
+&lt;ul>
+&lt;li>A/Bテスト&lt;/li>
+&lt;li>結果の分析&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>アプリの使われ方が多彩&lt;/li>
+&lt;li>単独のKPIが設定できない&lt;/li>
+&lt;li>Core Value of LINE App
+&lt;ul>
+&lt;li>Closing the Distance
+&lt;ul>
+&lt;li>グループ機能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>グループ作成のフローでABSCESSテスト
+&lt;ul>
+&lt;li>先にグループ名とアイコンを決める&lt;/li>
+&lt;li>先にメンバーを決める&lt;/li>
+&lt;li>どちらも大差なかった&lt;/li>
+&lt;li>招待メンバーの選択IFに問題があった&lt;/li>
+&lt;li>最近話した相手を上位に表示
+&lt;ul>
+&lt;li>グループ作成完了までに時間が優位に短縮&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>グループ名設定とメンバー選択を同じ画面に
+&lt;ul>
+&lt;li>ネガティブ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Data Science Tools
+&lt;ul>
+&lt;li>
+&lt;h2 id="oasis">OASIS&lt;/h2>
+&lt;/li>
+&lt;li>LIBRA
+&lt;ul>
+&lt;li>データ抽出&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>LIBRA REPORT
+&lt;ul>
+&lt;li>テスト実施中のダッシュボード&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>R Shiny
+&lt;ul>
+&lt;li>ダッシュボードその２&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Conflr
+&lt;ul>
+&lt;li>コンフルに共有するOSS&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1620--introduction-to-xxe-ssrf-insecure-deserialization">16:20- Introduction to XXE, SSRF, Insecure Deserialization&lt;/h2>
+&lt;h3 id="hiroshi-tokumaru--eg-secure-solutions-inc-president">Hiroshi Tokumaru / EG Secure Solutions Inc. President&lt;/h3>
+&lt;ul>
+&lt;li>XML外部実体参照(XXE)
+&lt;ul>
+&lt;li>アップロードされたXMLを表示するパターン
+&lt;ul>
+&lt;li>ファイルパスを指定したらそれが表示されてしまう&lt;/li>
+&lt;li>URLを指定したらその内容が表示されてしまう&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>対策
+&lt;ul>
+&lt;li>XMLの代わりにJSONを使う&lt;/li>
+&lt;li>信頼できないXMLを解析しないことが大事&lt;/li>
+&lt;li>DTDを禁止する&lt;/li>
+&lt;li>PHPならlibxml2 2.9以降を使うとデフォルトで対策されている&lt;/li>
+&lt;li>RubyのREXMLは標準で対策済み&lt;/li>
+&lt;li>テストしてみるのが確実&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>SSRF
+&lt;ul>
+&lt;li>直接アクセスできない内部のサーバーに何らかの方法でアクセスする&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>SSRF脆弱性とSSRF攻撃
+&lt;ul>
+&lt;li>一般的に、脆弱性と攻撃手法は1対1の関係になっている&lt;/li>
+&lt;li>SSRFはそうではなく、脆弱性が多の関係になっている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>WAFに付与していたAIMロールの権限が強かった例
+&lt;ul>
+&lt;li>本来不要なものまでついていた&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>DNSリバインディング
+&lt;ul>
+&lt;li>DNS問い合わせの１回目と２回目で違う値を返す攻撃&lt;/li>
+&lt;li>gethostbynameしてからcurlするときなど&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>昨日、EC2でSSRF多層防御が実装されたアナウンスが出た&lt;/li>
+&lt;li>安全でないデシリアライゼーション&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>対策
+&lt;ul>
+&lt;li>JSON形式にする&lt;/li>
+&lt;li>セッション変数を使う&lt;/li>
+&lt;li>改ざんチェックを入れる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1720--cloud-native-challenges-in-private-cloud-with-k8s-knative">17:20- Cloud Native Challenges in Private Cloud with K8s, Knative&lt;/h2>
+&lt;h3 id="yuki-nishiwaki--line-verda-platform-development-team-manager">Yuki Nishiwaki / LINE Verda Platform Development Team Manager&lt;/h3></description></item></channel></rss>

@@ -1,1 +1,411 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ntt on umemak</title><link>https://umemak.github.io/blog/tags/ntt/</link><description>Recent content in ntt on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/ntt/index.xml" rel="self" type="application/rss+xml"/><item><title>NTT Tech Conference #4</title><link>https://umemak.github.io/blog/posts/2020/01/31_ntt_tech_conf_4/</link><pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/01/31_ntt_tech_conf_4/</guid><description>https://ntt-techconf.connpass.com/event/161866/ NTTグループのエンジニア有志が主催するカンファレンスイベントの4回目とのこと。 初参加です。 Opening Keynote 参加者の半数がNTTグループ NTTグループは919社もある 30万人いるのでグループと言ってもでかすぎる エンジニアの有志が主催しています 前回から1年半 退職エントリとか押しかけラグビーとか色々炎上していたの</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ntt on umemak</title><link>https://umemak.github.io/blog/tags/ntt/</link><description>Recent content in Ntt on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/ntt/index.xml" rel="self" type="application/rss+xml"/><item><title>NTT Tech Conference #4</title><link>https://umemak.github.io/blog/posts/2020/01/31_ntt_tech_conf_4/</link><pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/01/31_ntt_tech_conf_4/</guid><description>&lt;p>&lt;a href="https://ntt-techconf.connpass.com/event/161866/">https://ntt-techconf.connpass.com/event/161866/&lt;/a>&lt;/p>
+&lt;p>NTTグループのエンジニア有志が主催するカンファレンスイベントの4回目とのこと。
+初参加です。&lt;/p>
+&lt;h2 id="opening-keynote">Opening Keynote&lt;/h2>
+&lt;ul>
+&lt;li>参加者の半数がNTTグループ
+&lt;ul>
+&lt;li>NTTグループは919社もある&lt;/li>
+&lt;li>30万人いるのでグループと言ってもでかすぎる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>エンジニアの有志が主催しています&lt;/li>
+&lt;li>前回から1年半
+&lt;ul>
+&lt;li>退職エントリとか押しかけラグビーとか色々炎上していたので自粛していた&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="kubernetes基礎">Kubernetes基礎&lt;/h2>
+&lt;h3 id="吉村-翔太">吉村 翔太&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/yosshi_/kubernetesfalseji-chu">https://speakerdeck.com/yosshi_/kubernetesfalseji-chu&lt;/a>&lt;/li>
+&lt;li>基本的なリソースを理解する&lt;/li>
+&lt;li>全体像
+&lt;ul>
+&lt;li>masterのAPIサーバーを経由して動いている
+&lt;ul>
+&lt;li>状態はetcd&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>master&lt;/li>
+&lt;li>node
+&lt;ul>
+&lt;li>Container runtime&lt;/li>
+&lt;li>Kubeket&lt;/li>
+&lt;li>Kube-proxy&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>etcd&lt;/li>
+&lt;li>kubectl&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>MasterとControl Plane cmponentsのち外
+&lt;ul>
+&lt;li>Master + Kubelet + Kube-proxy = Control Plane&lt;/li>
+&lt;li>ドキュメントによって表現に揺れがある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>etcsに行かない例外もある
+&lt;ul>
+&lt;li>4パターン&lt;/li>
+&lt;li>/proxy, /exec, /attach, /logs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>マネージドで使うなら、kubectlとコンテナだけ使えれば良いことが多い
+&lt;ul>
+&lt;li>オンプレでやるなら全部理解しないと辛い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Workload
+&lt;ul>
+&lt;li>Pod
+&lt;ul>
+&lt;li>コンテナのデプロイの最小単位&lt;/li>
+&lt;li>複数コンテナをまとめたもの&lt;/li>
+&lt;li>メインのコンテナ＋サイドカーみたいな構成&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ReplicaSet
+&lt;ul>
+&lt;li>Podの数を維持するためのリソース&lt;/li>
+&lt;li>Podのラベルで認識する
+&lt;ul>
+&lt;li>ラベルの付け方に注意する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>selectorとtemplateのラベルは基本的に同じ。歴史的経緯で冗長になっている。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Deployment(deploy)
+&lt;ul>
+&lt;li>ReplicaSetを管理するリソース&lt;/li>
+&lt;li>RollingUpdateに使う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Configuration
+&lt;ul>
+&lt;li>Configmap
+&lt;ul>
+&lt;li>設定情報を保存するリソース&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Secret
+&lt;ul>
+&lt;li>opaque
+&lt;ul>
+&lt;li>使い方はConfigmapと同じ&lt;/li>
+&lt;li>エンコードされている&lt;/li>
+&lt;li>configmapと権限を分けて管理するのが良い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Discovery &amp;amp; LB
+&lt;ul>
+&lt;li>ClusterIP
+&lt;ul>
+&lt;li>クラスタ内のアクセスを保証する&lt;/li>
+&lt;li>これもラベルで宛先を認識する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>NodePort
+&lt;ul>
+&lt;li>クラスタ外からポート指定でアクセスする&lt;/li>
+&lt;li>ノード内に同じラベルのPodが複数あったら、どこに行くかはランダム&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Metadata
+&lt;ul>
+&lt;li>Namespace
+&lt;ul>
+&lt;li>1つのクラスタを仮想クラスタにわかる&lt;/li>
+&lt;li>障害の影響範囲でどう分けるか考える
+&lt;ul>
+&lt;li>開発環境ならNamespace、本番環境はクラスタとか&lt;/li>
+&lt;li>クラスタ分けると管理コストが上がる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1870件以上のカーネルの不具合修正に貢献した再現用プログラムを自動生成する試験自動化技術">1870件以上のカーネルの不具合修正に貢献した再現用プログラムを自動生成する試験自動化技術&lt;/h2>
+&lt;h3 id="藤井-秀行">藤井 秀行&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.slideshare.net/nttdata-tech/syzkaller-linux-kerneltestingnttdata">https://www.slideshare.net/nttdata-tech/syzkaller-linux-kerneltestingnttdata&lt;/a>&lt;/li>
+&lt;li>GoogleのDmitry Vykovが開発したsyzkaller（シスコーラー）
+&lt;ul>
+&lt;li>Go言語&lt;/li>
+&lt;li>Googleとしては非公式&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ファジング
+&lt;ul>
+&lt;li>未知の不具合や脆弱性の検出に適したテスト手法&lt;/li>
+&lt;li>Linuxのセキュリティ品質向上に貢献&lt;/li>
+&lt;li>リリース前にセキュリティ脆弱性が修正されるようになりCVEが現象してきている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ドキュメント調査
+&lt;ul>
+&lt;li>入力データの生成の仕組みが肝&lt;/li>
+&lt;li>ソースカバレッジも気にする&lt;/li>
+&lt;li>カーネルの入力インターフェースはシステムコール&lt;/li>
+&lt;li>syz_manager
+&lt;ul>
+&lt;li>仮想化ホスト上に存在するプロセス&lt;/li>
+&lt;li>syz-fuzzerに指示を行う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>workdir
+&lt;ul>
+&lt;li>入出力ファイルを置く&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>syz_fuzzer
+&lt;ul>
+&lt;li>試験環境内に存在するプロセス&lt;/li>
+&lt;li>syz_executorを生成&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>syz_eecutor
+&lt;ul>
+&lt;li>システムコールを送る&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>動作確認
+&lt;ul>
+&lt;li>20分くらいで見つかった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>試すなら私物PC、私物ネットワークでやる。絶対。&lt;/li>
+&lt;/ul>
+&lt;h2 id="coffee-break">Coffee Break&lt;/h2>
+&lt;ul>
+&lt;li>Showcaseで「技術系業務自動化のエンジン展示」の説明を聞きました。
+&lt;ul>
+&lt;li>TSVを入力として、コマンドを実行する&lt;/li>
+&lt;li>sshとかtelnetとかブラウザとか操作できる&lt;/li>
+&lt;li>これを横連携させて実行できるのは（開発開始した当時は）あまりなかった&lt;/li>
+&lt;li>OSSとして公開したいが、まだ調整中。&lt;/li>
+&lt;li>公開されたら試してみたいと思います。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="react-hooksとgraphqlで社内レガシーサービス巻き取ってみたらものすごくはかどった話">React HooksとGraphQLで社内レガシーサービス巻き取ってみたらものすごくはかどった話&lt;/h2>
+&lt;h3 id="奥井-寛樹">奥井 寛樹&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/hrk091/react-hookstographqldeshe-nei-regasisabisuwojuan-kiqu-tutemitaramofalsesugokuhakadotutahua-153983bf-84bd-4be7-83c4-c8fa826db79e">https://speakerdeck.com/hrk091/react-hookstographqldeshe-nei-regasisabisuwojuan-kiqu-tutemitaramofalsesugokuhakadotutahua-153983bf-84bd-4be7-83c4-c8fa826db79e&lt;/a>&lt;/li>
+&lt;li>フロントエンド＋BFFの話&lt;/li>
+&lt;li>うまく行った理由
+&lt;ul>
+&lt;li>フレームワークによる抽象化がうまく、ユースケースにフォーカスした開発ができた&lt;/li>
+&lt;li>GraphQLエコシステムが充実していた&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>React Hooks
+&lt;ul>
+&lt;li>React FCでStateを扱えるようにするフレームワーク&lt;/li>
+&lt;li>React lifecycle eventを意識しなくて良くなる&lt;/li>
+&lt;li>Context APIの使い勝手が向上&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>GraphQL
+&lt;ul>
+&lt;li>APIプロトコル&lt;/li>
+&lt;li>RESTより柔軟&lt;/li>
+&lt;li>クライアント側でレスポンスを定義できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Graphene
+&lt;ul>
+&lt;li>PythonのGraphQLフレームワーク&lt;/li>
+&lt;li>ORMモデル定義からAPIを自動生成してくれる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Apollo
+&lt;ul>
+&lt;li>GraphQLのライブラリ&lt;/li>
+&lt;li>バックエンドとフロントエンドクライアントを提供&lt;/li>
+&lt;li>Reactに標準対応している&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>漸近的型付け
+&lt;ul>
+&lt;li>動的型付け言語に後で型をつけること&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="海外講演を通じて得られた知見英語力α編">海外講演を通じて得られた知見(英語力＋α編)&lt;/h2>
+&lt;h3 id="神原-健一">神原 健一&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/korodroid/ntt-tech-conference-hai-wai-jiang-yan-wotong-zitede-raretazhi-jian-ying-yu-li-abian">https://speakerdeck.com/korodroid/ntt-tech-conference-hai-wai-jiang-yan-wotong-zitede-raretazhi-jian-ying-yu-li-abian&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/korodroid/items/bf029f7aad896731771a">https://qiita.com/korodroid/items/bf029f7aad896731771a&lt;/a>&lt;/li>
+&lt;li>英語を学ぶ目的を具体的に描く
+&lt;ul>
+&lt;li>海外カンファレンスで講演する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>skills
+&lt;ul>
+&lt;li>reading, listening, writing, speaking&lt;/li>
+&lt;li>自分のレベルの把握&lt;/li>
+&lt;li>どのスキルをどのくらいにしたいのか&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>先人に学ぶ
+&lt;ul>
+&lt;li>SlideShare, Speaker Deck&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>登壇→フィードバック→次回への反映のループ
+&lt;ul>
+&lt;li>習うより慣れろ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>頭の中にある考えをリアルタイムに英語で話す
+&lt;ul>
+&lt;li>Cheat Strategy
+&lt;ul>
+&lt;li>スライドのノートにセリフを全部書く&lt;/li>
+&lt;li>→会場を見ないで読むだけになってしまった。失敗。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>自身を持って自分の言葉で話すことが大事&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>tips for communications
+&lt;ul>
+&lt;li>自分から話しかける&lt;/li>
+&lt;li>お互いの作品を見せ合う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>英語の教材の選び方
+&lt;ul>
+&lt;li>（自分の目的とレベルに合わせて選ぶしか）ない&lt;/li>
+&lt;li>ノンネイティブ英語の練習
+&lt;ul>
+&lt;li>ノンネイティブスピーカーのセッション動画&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ネイティブ英語の練習
+&lt;ul>
+&lt;li>TOEIC公式問題集&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>英語の「音」の聞き分け
+&lt;ul>
+&lt;li>英語耳&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>オンライン英会話
+&lt;ul>
+&lt;li>体験レッスンやってみると良い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>英語を話す機会を増やす
+&lt;ul>
+&lt;li>面倒なことこそ、修行のチャンス&lt;/li>
+&lt;li>知識＜＜＜実践&lt;/li>
+&lt;li>ビジネスだけではなくプライベートでも&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="パワポをよくしただけなのにデザインの力で会社に貢献するチームの紹介">パワポをよくしただけなのに〜デザインの力で会社に貢献するチームの紹介&lt;/h2>
+&lt;h3 id="鈴木-雅貴">鈴木 雅貴&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.slideshare.net/suzukima/ss-226433621">https://www.slideshare.net/suzukima/ss-226433621&lt;/a>&lt;/li>
+&lt;li>2つのデザイン支援チームができてしまった
+&lt;ul>
+&lt;li>統合した&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>製品の価値・魅力向上&lt;/li>
+&lt;li>社外のデザイナーと比較して気軽に依頼できる&lt;/li>
+&lt;li>デザインサポーター制度&lt;/li>
+&lt;/ul>
+&lt;h2 id="アジャイル開発手法における監視システム開発効率化の取り組み">アジャイル開発手法における監視システム開発効率化の取り組み&lt;/h2>
+&lt;h3 id="石田-瑛一">石田 瑛一&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/file/d/1imNXoqfQAbBGUDH1Y45fn1sVb1rgHjW6/view">https://drive.google.com/file/d/1imNXoqfQAbBGUDH1Y45fn1sVb1rgHjW6/view&lt;/a>&lt;/li>
+&lt;li>デプロイ作業の効率化が必要
+&lt;ul>
+&lt;li>手順書でやってた&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ansible、Gitlab CI/CD
+&lt;ul>
+&lt;li>安定するまで2ヶ月くらいかかった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="スタートアップチームで学んだエンジニアの心構え">スタートアップチームで学んだエンジニアの心構え&lt;/h2>
+&lt;h3 id="松木-久幸">松木 久幸&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/matsu0228/the-attitude-of-the-engineer-who-learned-from-the-start-up-team">https://speakerdeck.com/matsu0228/the-attitude-of-the-engineer-who-learned-from-the-start-up-team&lt;/a>&lt;/li>
+&lt;li>開発で一番難しいのは何を作るか決めること
+&lt;ul>
+&lt;li>詳細まで認識を合わせる&lt;/li>
+&lt;li>正解は誰にも判断できない
+&lt;ul>
+&lt;li>常に変化が求められる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>価値向上のために「発散」も必要&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>仕事を楽しむこと
+&lt;ul>
+&lt;li>メンバーが主体的になるためにも、承認欲求を満たすことが大切&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="nttデータのトップ技術者育成技統本塾のご紹介">NTTデータのトップ技術者育成！「技統本塾」のご紹介&lt;/h2>
+&lt;h3 id="小泉-鉄之祐">小泉 鉄之祐&lt;/h3>
+&lt;ul>
+&lt;li>技術革新統括本部&lt;/li>
+&lt;/ul>
+&lt;h2 id="amazon-eks上でのvnf開発奮闘記">Amazon EKS上でのVNF開発奮闘記&lt;/h2>
+&lt;h3 id="篠原-健太">篠原 健太&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/sinohara/amazon-eksshang-defalsevnfkai-fa-fen-dou-ji">https://speakerdeck.com/sinohara/amazon-eksshang-defalsevnfkai-fa-fen-dou-ji&lt;/a>&lt;/li>
+&lt;li>ネットワークの仮想化&lt;/li>
+&lt;li>閉域NW構築
+&lt;ul>
+&lt;li>AWSを閉域として構築できるか？&lt;/li>
+&lt;li>サブネットを分けて構築する&lt;/li>
+&lt;li>EKS v1.13から対応&lt;/li>
+&lt;li>マネージドのLBが外向きの通信に課題があったのでnginxを立てた&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="cisco-ルータのログを-stackdriver-に送って可視化してみた">Cisco ルータのログを Stackdriver に送って可視化してみた&lt;/h2>
+&lt;h3 id="田島-照久">田島 照久&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/tjmtrhs/cisco-rutafalseroguwo-stackdriver-nisong-tuteke-shi-hua-sitemita">https://speakerdeck.com/tjmtrhs/cisco-rutafalseroguwo-stackdriver-nisong-tuteke-shi-hua-sitemita&lt;/a>&lt;/li>
+&lt;li>ログ基盤を作りたいわけではなく、可視化したログを見たいだけ&lt;/li>
+&lt;li>stackdriverは外部のsyslogを直接受信できない
+&lt;ul>
+&lt;li>ルーターで処理すれば良い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ciscoのルーターで、Pythonが動かせる機種がある&lt;/li>
+&lt;/ul>
+&lt;h2 id="closing-keynote">Closing Keynote&lt;/h2>
+&lt;ul>
+&lt;li>151/180人参加（速報値）&lt;/li>
+&lt;li>15人#1〜#4までに登壇した退職者&lt;/li>
+&lt;li>もっと面白いエンジニアになる&lt;/li>
+&lt;/ul></description></item></channel></rss>

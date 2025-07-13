@@ -1,1 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>test on umemak</title><link>https://umemak.github.io/blog/tags/test/</link><description>Recent content in test on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 05 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/test/index.xml" rel="self" type="application/rss+xml"/><item><title>TypeScriptでTable Driven Test</title><link>https://umemak.github.io/blog/posts/2022/05/05_tdt/</link><pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/05_tdt/</guid><description>もともとGoで書いていたテストがこんな感じだったのだけど、 こんな風に移植してて面倒だと感じていた。 TS と Jest で Table Driven Test をする · tblogを参考に書き換えて、こうなった。</description></item><item><title>CI/CD Test Night</title><link>https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/</link><pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/</guid><description>2019/06/20 19:00-21:00 DeNA MacStadium DeNAのひと Mac（物理）のホスティングサービス 1ヶ月単位の前払い VNC or SSHで接続 Githubへの接続はAWSでVPNサーバーを立ててそこ経由にまとめている CI/CDパイプラインを最速で組み立てる freeeのひと circleciはdockerイメージがある。 依存関係を解決したDocekrイ</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Test on umemak</title><link>https://umemak.github.io/blog/tags/test/</link><description>Recent content in Test on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 05 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/test/index.xml" rel="self" type="application/rss+xml"/><item><title>TypeScriptでTable Driven Test</title><link>https://umemak.github.io/blog/posts/2022/05/05_tdt/</link><pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/05_tdt/</guid><description>&lt;p>もともとGoで書いていたテストが&lt;a href="https://github.com/umemak/mdmml/blob/main/mdmml_test.go#L162-L190">こんな感じ&lt;/a>だったのだけど、
+&lt;a href="https://github.com/umemak/mdmml_js/blob/7930f4f23801ac0a58c645284c5d2091d8fa8024/src/mdmml.test.ts#L22-L56">こんな風に&lt;/a>移植してて面倒だと感じていた。&lt;/p>
+&lt;p>&lt;a href="https://tblog.acomagu.me/plh/">TS と Jest で Table Driven Test をする · tblog&lt;/a>を参考に書き換えて、&lt;a href="https://github.com/umemak/mdmml_js/blob/716849f09419651500e25750d6e0b43514f04e6b/src/mdmml.test.ts#L31-L48">こうなった&lt;/a>。&lt;/p></description></item><item><title>CI/CD Test Night</title><link>https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/</link><pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/06/20_cicd_test_night_4/</guid><description>&lt;ul>
+&lt;li>2019/06/20 19:00-21:00&lt;/li>
+&lt;li>DeNA&lt;/li>
+&lt;/ul>
+&lt;h2 id="macstadium">MacStadium&lt;/h2>
+&lt;ul>
+&lt;li>DeNAのひと&lt;/li>
+&lt;li>Mac（物理）のホスティングサービス&lt;/li>
+&lt;li>1ヶ月単位の前払い&lt;/li>
+&lt;li>VNC or SSHで接続&lt;/li>
+&lt;li>Githubへの接続はAWSでVPNサーバーを立ててそこ経由にまとめている&lt;/li>
+&lt;/ul>
+&lt;h2 id="cicdパイプラインを最速で組み立てる">CI/CDパイプラインを最速で組み立てる&lt;/h2>
+&lt;ul>
+&lt;li>freeeのひと&lt;/li>
+&lt;li>circleciはdockerイメージがある。&lt;/li>
+&lt;li>依存関係を解決したDocekrイメージを先に用意しておく&lt;/li>
+&lt;li>circleci orbs&lt;/li>
+&lt;li>ciとcdは適切に分離する&lt;/li>
+&lt;/ul>
+&lt;h2 id="iosのci環境構築">iOSのCI環境構築&lt;/h2>
+&lt;ul>
+&lt;li>Voicyのひと&lt;/li>
+&lt;li>Danger レビューツール&lt;/li>
+&lt;/ul>
+&lt;h2 id="swift-travisci">Swift TravisCI&lt;/h2>
+&lt;ul>
+&lt;li>はてなのひと&lt;/li>
+&lt;li>swift-docker
+&lt;ul>
+&lt;li>ローカルでbuildできる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="tekton">TEKTON&lt;/h2>
+&lt;ul>
+&lt;li>freeeのひと&lt;/li>
+&lt;li>CD.FOUNDATION&lt;/li>
+&lt;li>もともとはKnativeのサブプロジェクト&lt;/li>
+&lt;li>K8Sのカスタムリソースを使う&lt;/li>
+&lt;li>CI/CDの実行エンジンとしての活用&lt;/li>
+&lt;li>まだこれから&lt;/li>
+&lt;/ul>
+&lt;h2 id="e2eテストのパイプライン">E2Eテストのパイプライン&lt;/h2>
+&lt;ul>
+&lt;li>JapanTaxiのひと&lt;/li>
+&lt;li>bitrise&lt;/li>
+&lt;li>appium&lt;/li>
+&lt;li>TestRail&lt;/li>
+&lt;/ul>
+&lt;h2 id="azure-pipelines">Azure Pipelines&lt;/h2>
+&lt;ul>
+&lt;li>Sony Interactive Entertainmentのひと&lt;/li>
+&lt;li>npm install -g appium&lt;/li>
+&lt;li>self.driver.start_recordingscreen()
+&lt;ul>
+&lt;li>brew install ffmpeg&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

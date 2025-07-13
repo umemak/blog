@@ -1,1 +1,325 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>vmware on umemak</title><link>https://umemak.github.io/blog/tags/vmware/</link><description>Recent content in vmware on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 11 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/vmware/index.xml" rel="self" type="application/rss+xml"/><item><title>VMware Cloud Native Day</title><link>https://umemak.github.io/blog/posts/2019/11/11_vmware_cloud_native_day/</link><pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/11_vmware_cloud_native_day/</guid><description>https://vm-event.jp/cnday/ 初参加です。 明日明後日位のイベントのday0的な位置づけ K8sなど中心に。 Tanzu https://cloud.vmware.com/tanzu https://www.publickey1.jp/blog/19/vmware_tanzukubernetesvmworld_2019_us.html 13:00- General Session パットゲルシンガー、レイ・オファレル、クレイグ・マクラッキー Technolosists who master multi-cloud will own the next decade. The Five S&amp;rsquo;s Soeed, Security, Scalability, Stability, (Cost)Savings 14:30- 『クラウドネイティブ人間』になるための自動化入門 草間一人(Pivotal Labs) 自動化：アプリにもインフラにも共通する項目</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vmware on umemak</title><link>https://umemak.github.io/blog/tags/vmware/</link><description>Recent content in Vmware on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 11 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/vmware/index.xml" rel="self" type="application/rss+xml"/><item><title>VMware Cloud Native Day</title><link>https://umemak.github.io/blog/posts/2019/11/11_vmware_cloud_native_day/</link><pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/11_vmware_cloud_native_day/</guid><description>&lt;p>&lt;a href="https://vm-event.jp/cnday/">https://vm-event.jp/cnday/&lt;/a>&lt;/p>
+&lt;p>初参加です。&lt;/p>
+&lt;p>明日明後日位のイベントのday0的な位置づけ
+K8sなど中心に。&lt;/p>
+&lt;ul>
+&lt;li>Tanzu
+&lt;ul>
+&lt;li>&lt;a href="https://cloud.vmware.com/tanzu">https://cloud.vmware.com/tanzu&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.publickey1.jp/blog/19/vmware_tanzukubernetesvmworld_2019_us.html">https://www.publickey1.jp/blog/19/vmware_tanzukubernetesvmworld_2019_us.html&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1300--general-session">13:00- General Session&lt;/h2>
+&lt;h3 id="パットゲルシンガーレイオファレルクレイグマクラッキー">パットゲルシンガー、レイ・オファレル、クレイグ・マクラッキー&lt;/h3>
+&lt;ul>
+&lt;li>Technolosists who master multi-cloud will own the next decade.&lt;/li>
+&lt;li>The Five S&amp;rsquo;s
+&lt;ul>
+&lt;li>Soeed, Security, Scalability, Stability, (Cost)Savings&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1430--クラウドネイティブ人間になるための自動化入門">14:30- 『クラウドネイティブ人間』になるための自動化入門&lt;/h2>
+&lt;h3 id="草間一人pivotal-labs">草間一人(Pivotal Labs)&lt;/h3>
+&lt;ul>
+&lt;li>自動化：アプリにもインフラにも共通する項目&lt;/li>
+&lt;li>なぜ自動化したいのか
+&lt;ul>
+&lt;li>生産性を上げるため
+&lt;ul>
+&lt;li>他者の力を借りる
+&lt;ul>
+&lt;li>「水車」紀元前200年
+&lt;ul>
+&lt;li>昔からあったが、普及していなかった
+&lt;ul>
+&lt;li>奴隷を使ったほうが効率が良かった（コスト）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>現代最強の労働力：コンピューター&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>クラウドのメリット
+&lt;ul>
+&lt;li>APIがある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>アウトプットの違い
+&lt;ul>
+&lt;li>数十倍の差がある組織は実際ある&lt;/li>
+&lt;li>エンジニア個々の能力がそうであるとは限らない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>0リング理論
+&lt;ul>
+&lt;li>たった1箇所の問題が全体に影響すること&lt;/li>
+&lt;li>スペースシャトルチャレンジャーの事故から&lt;/li>
+&lt;li>逆に、一部のを劇的に改善しても、大して変わらない&lt;/li>
+&lt;li>ステップを減らすと出力が改善する&lt;/li>
+&lt;li>マイクロ秒、ミリ秒の世界では、人間の介在自体が０リングである&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>クラウドに置き換えて改善という考え方から脱却しないといけない
+&lt;ul>
+&lt;li>→クラウドネイティブ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>IaC, オーケストレーション
+&lt;ul>
+&lt;li>K8s&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>NoOps
+&lt;ul>
+&lt;li>No Uncomfortable Ops&lt;/li>
+&lt;li>なぜ運用は嬉しくないのか
+&lt;ul>
+&lt;li>たくさんの問題が発生する
+&lt;ul>
+&lt;li>サーバーダウン、NW障害、、ログ対応、昼夜問わず・・&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>手続き的vs宣言的
+&lt;ul>
+&lt;li>K8sは宣言的&lt;/li>
+&lt;li>APIを順番に叩いていくのが手続き的&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Project Pacific
+&lt;ul>
+&lt;li>vSpereの中でK8sが動くようになる&lt;/li>
+&lt;li>コンテナもVMもK8sクラスタ自体も宣言的にデプロイできる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>自動化の不都合な真実
+&lt;ul>
+&lt;li>自動化は腐る
+&lt;ul>
+&lt;li>リポジトリからパッケージがなくなっていて死ぬ&lt;/li>
+&lt;li>パッケージの依存関係が壊れて死ぬ&lt;/li>
+&lt;li>継ぎ足ししていたら環境が汚れて&lt;/li>
+&lt;li>自動化ツールのバージョンアップで&lt;/li>
+&lt;li>自動化ツールがオワコンになって&lt;/li>
+&lt;li>前任者に寄る自動化が魔窟で&lt;/li>
+&lt;li>上記の問題点を運用でカバーしてじわじわ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>クラウドネイティブな技術も腐る
+&lt;ul>
+&lt;li>ツールのバージョンアップで死ぬ頻度は高い&lt;/li>
+&lt;li>様々なツールが出てきているが多くは淘汰される&lt;/li>
+&lt;li>正しく理解せず使うと、結局運用でカバーすることに&lt;/li>
+&lt;li>例：istioのテスト保証K8sバージョン&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>良くなっている麺も多い
+&lt;ul>
+&lt;li>IaCが矯正される&lt;/li>
+&lt;li>環境変数を使うので環境の汚染が置きにくい&lt;/li>
+&lt;li>決まったフォーマットでコード化するので魔窟になりにくい&lt;/li>
+&lt;li>コード化しているので複数人でレビューできる&lt;/li>
+&lt;li>なりにくいだけで、ならないわけではない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>テストをしよう&lt;/li>
+&lt;li>いきなり全部を自動化しようとは考えないこと
+&lt;ul>
+&lt;li>自動化した部分がトラブル続きだった場合は、結果として出力が落ちてしまう&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>全体プロセスの見直しも重要
+&lt;ul>
+&lt;li>テクノロジーだけで解決するのではなく、全体フローから見直し、不要なものを削除する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>Factorioおすすめ&lt;/li>
+&lt;/ul>
+&lt;h2 id="1530--anthosで実現すつモダンなアプリケーション開発">15:30- Anthosで実現すつモダンなアプリケーション開発&lt;/h2>
+&lt;h3 id="篠原一徳google-cloud">篠原一徳(Google Cloud)&lt;/h3>
+&lt;ul>
+&lt;li>Anthosとは
+&lt;ul>
+&lt;li>アプリケーションのモダナイぜーションのためのプラットフォーム&lt;/li>
+&lt;li>GKEをオンプレや他社クラウドでも利用できるようにする&lt;/li>
+&lt;li>従量課金ではなく、サブスクリプションライセンスで提供している&lt;/li>
+&lt;li>古代ギリシャ語で「花」&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>モダナイぜーションの目指すところ
+&lt;ul>
+&lt;li>高速なリリースサイクル&lt;/li>
+&lt;li>追加・変更につよい&lt;/li>
+&lt;li>容易に拡張&lt;/li>
+&lt;li>高可用性の維持・向上&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>モダナイぜーションに向けた技術観点でのアプローチ
+&lt;ul>
+&lt;li>マイクロサービス化&lt;/li>
+&lt;li>インフラとアプリの疎結合化
+&lt;ul>
+&lt;li>コンテナに関連をまとめる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>サーバーレス&lt;/li>
+&lt;li>自動化&lt;/li>
+&lt;li>マネージドサービス活用（注目）
+&lt;ul>
+&lt;li>Toil（面倒ごと）を抱えない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Anthos Config Management
+&lt;ul>
+&lt;li>NamespaceやQuota, ROleBindingなどの設定をハイブリッドがK8s環境に自動的に展開
+&lt;ul>
+&lt;li>設定をクラスタ間で同期&lt;/li>
+&lt;li>コンプライアンスポリシーを継続的に適用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Policy as code&lt;/li>
+&lt;li>各クラスタがgitに保存した設定を監視している。変更があれば差分を自動的に反映する。&lt;/li>
+&lt;li>クラスタごとに設定を分けたい場合は、gitのブランチを分けて管理する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Anthos Service Mesh
+&lt;ul>
+&lt;li>マネージドIstio&lt;/li>
+&lt;li>コントロールプレーンをGoogleが管理&lt;/li>
+&lt;li>Envoy（あんぼい）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ユースケース
+&lt;ul>
+&lt;li>ハイブリッド構成
+&lt;ul>
+&lt;li>スケーリングを柔軟に行いたいアプリをクラウドに&lt;/li>
+&lt;li>パブリッククラウドに保存できない情報を扱うアプリをオンプレに&lt;/li>
+&lt;li>既存システム（オンプレ）との連携がタイトなアプリをオンプレに&lt;/li>
+&lt;li>パブリッククラウドのマネージドサービスと連携したいときにクラウドに&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>マネージドK8sをどのクラウドでも同じように動くように
+&lt;ul>
+&lt;li>クラウドベンダー間でもサポートバージョンなどの差異がある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Monitoring / Logging の一元化
+&lt;ul>
+&lt;li>Stackdriverに集約できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ソフトウェアサプライチェーンの統一
+&lt;ul>
+&lt;li>野良Jenkinsの駆逐&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1630--kubernetesセキュリティのベストプラクティス">16:30- Kubernetesセキュリティのベストプラクティス&lt;/h2>
+&lt;h3 id="仙波慎也vmware">仙波慎也(VMware)&lt;/h3>
+&lt;ul>
+&lt;li>CNCFのクラウドネイティブ定義
+&lt;ul>
+&lt;li>2015年から&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>CNCFのK8sセキュリティベストプラクティス
+&lt;ul>
+&lt;li>全部で9つある&lt;/li>
+&lt;li>最新バージョンへのアップグレード
+&lt;ul>
+&lt;li>インプレースアップグレード&lt;/li>
+&lt;li>新しいクラスタを立ち上げる&lt;/li>
+&lt;li>データタイプ
+&lt;ul>
+&lt;li>ステートレス：マスターノード、ワーカノード&lt;/li>
+&lt;li>ステートフル：etcd、永続ボリューム
+&lt;ul>
+&lt;li>データ保護方法の選択肢はいくつかある&lt;/li>
+&lt;li>VELEROを推奨
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/vmware-tanzu/velero">https://github.com/vmware-tanzu/velero&lt;/a>&lt;/li>
+&lt;li>vmwareが買収した&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>RBAC
+&lt;ul>
+&lt;li>ロールスプロール問題
+&lt;ul>
+&lt;li>クラスタとNAMESPACEの乱立に寄り、無秩序な状態になっている&lt;/li>
+&lt;li>考えすぎない。プリセットで用意されているロールを活用する
+&lt;ul>
+&lt;li>Developer(単一のNSへのadmin), Mangers(view), Cluster-Administrator&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ネットワークポリシー
+&lt;ul>
+&lt;li>NS、pod、ipセレクタで制御する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>監査ログの有効化
+&lt;ul>
+&lt;li>APIサーバーは、監査目的ですべての要求を記録する&lt;/li>
+&lt;li>監査ログは、非常にノイズが多い場合があるため、必要なもののみ記録する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ノードセキュリティの強化
+&lt;ul>
+&lt;li>TLSは、それをサポートするすべてのコンポーネントで有効にする必要がある&lt;/li>
+&lt;li>etcdはコントローラーから分離し、ファイアウォールで保護する必要がある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>一貫性のあるセキュリティ運用が求められる
+&lt;ul>
+&lt;li>VMware NSXでできる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1730--お客様事例から学ぶkubernetesプロジェクト成功の秘訣">17:30- お客様事例から学ぶKubernetesプロジェクト成功の秘訣&lt;/h2>
+&lt;h3 id="スコットロウvmware">スコット・ロウ(VMware)&lt;/h3>
+&lt;ul>
+&lt;li>銀行のシステムリプレイスの話&lt;/li>
+&lt;li>K8sに移行&lt;/li>
+&lt;li>CustomResourceDefinitions(CRD)を使った&lt;/li>
+&lt;li>Key takeaways
+&lt;ul>
+&lt;li>Start with a single use case, and solve that user case first.&lt;/li>
+&lt;li>The solution doesn&amp;rsquo;t have to be perfect from the beginning.
+&lt;ul>
+&lt;li>Find what works and replace what doesn&amp;rsquo;t work.&lt;/li>
+&lt;li>Using a building block approach makes it easier to swap components.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

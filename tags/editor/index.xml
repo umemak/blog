@@ -1,1 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>editor on umemak</title><link>https://umemak.github.io/blog/tags/editor/</link><description>Recent content in editor on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 12 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/editor/index.xml" rel="self" type="application/rss+xml"/><item><title>マークダウンエディター</title><link>https://umemak.github.io/blog/posts/2022/11/12_mdeditor/</link><pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/12_mdeditor/</guid><description>久しぶりに検索してみた。 tinymce/tinymce: The world&amp;rsquo;s #1 JavaScript library for rich text editing. Available for React, Vue and Angular 保存形式が良くわからない summernote/summernote: Super simple WYSIWYG editor マークダウンではなくてHTMLで取り出す？ Saul-Mirone/milkdown: 🍼 Plugin driven WYSIWYG markdown editor framework. 良さそう。 mycolorway/simditor: An Easy and Fast WYSIWYG Editor 行やカラムの追加削除ができない？ 以前調べていた時もMilkdownは候補に挙がっていて、Reactとか面倒だと思って不採用にして</description></item><item><title>マークダウンエディター選び</title><link>https://umemak.github.io/blog/posts/2022/05/27_editorjs/</link><pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/27_editorjs/</guid><description>以前調べたマークダウンエディタ、codex-team/editor.jsは保存形式がJSONだったのであきらめたけど、JSONとマークダウンを相互変換できればやりたいことが実現できるのではないか？</description></item><item><title>マークダウンエディター選び</title><link>https://umemak.github.io/blog/posts/2022/05/08_mdeditor/</link><pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/08_mdeditor/</guid><description>マークダウン部分の入力に使うライブラリを探す。 markdown WYSIWYGをキーワードにnpmを検索した結果、 outline/rich-markdown-editor: The open source React and Prosemirror based markdown editor that powers Outline. Want to try it out? Create an account: 良さそうだけどArchivedになっててメンテナンスされてない？ nhn/tui.editor: 🍞📝 Markdown WYSIWYG Editor. GFM Standard + Chart &amp;amp; UML Extensible. プレビュー形式ではなくて、直接編集したい codex-team/editor.js: A block-styled editor with clean JSON output 良さそう Saul-Mirone/milkdown: 🍼 Plugin</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Editor on umemak</title><link>https://umemak.github.io/blog/tags/editor/</link><description>Recent content in Editor on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 12 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/editor/index.xml" rel="self" type="application/rss+xml"/><item><title>マークダウンエディター</title><link>https://umemak.github.io/blog/posts/2022/11/12_mdeditor/</link><pubDate>Sat, 12 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/12_mdeditor/</guid><description>&lt;p>久しぶりに検索してみた。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/tinymce/tinymce">tinymce/tinymce: The world&amp;rsquo;s #1 JavaScript library for rich text editing. Available for React, Vue and Angular&lt;/a>
+&lt;ul>
+&lt;li>保存形式が良くわからない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/summernote/summernote">summernote/summernote: Super simple WYSIWYG editor&lt;/a>
+&lt;ul>
+&lt;li>マークダウンではなくてHTMLで取り出す？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/Saul-Mirone/milkdown">Saul-Mirone/milkdown: 🍼 Plugin driven WYSIWYG markdown editor framework.&lt;/a>
+&lt;ul>
+&lt;li>良さそう。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/mycolorway/simditor">mycolorway/simditor: An Easy and Fast WYSIWYG Editor&lt;/a>
+&lt;ul>
+&lt;li>行やカラムの追加削除ができない？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>以前調べていた時もMilkdownは候補に挙がっていて、Reactとか面倒だと思って不採用にしていた。&lt;/p></description></item><item><title>マークダウンエディター選び</title><link>https://umemak.github.io/blog/posts/2022/05/27_editorjs/</link><pubDate>Fri, 27 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/27_editorjs/</guid><description>&lt;p>以前調べたマークダウンエディタ、&lt;a href="https://github.com/codex-team/editor.js">codex-team/editor.js&lt;/a>は保存形式がJSONだったのであきらめたけど、JSONとマークダウンを相互変換できればやりたいことが実現できるのではないか？&lt;/p></description></item><item><title>マークダウンエディター選び</title><link>https://umemak.github.io/blog/posts/2022/05/08_mdeditor/</link><pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/08_mdeditor/</guid><description>&lt;p>マークダウン部分の入力に使うライブラリを探す。&lt;/p>
+&lt;p>&lt;code>markdown&lt;/code> &lt;code>WYSIWYG&lt;/code>をキーワードにnpmを&lt;a href="https://www.npmjs.com/search?q=markdown%20WYSIWYG">検索&lt;/a>した結果、&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/outline/rich-markdown-editor">outline/rich-markdown-editor: The open source React and Prosemirror based markdown editor that powers Outline. Want to try it out? Create an account:&lt;/a>
+&lt;ul>
+&lt;li>良さそうだけどArchivedになっててメンテナンスされてない？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/nhn/tui.editor">nhn/tui.editor: 🍞📝 Markdown WYSIWYG Editor. GFM Standard + Chart &amp;amp; UML Extensible.&lt;/a>
+&lt;ul>
+&lt;li>プレビュー形式ではなくて、直接編集したい&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/codex-team/editor.js">codex-team/editor.js: A block-styled editor with clean JSON output&lt;/a>
+&lt;ul>
+&lt;li>良さそう&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/Saul-Mirone/milkdown">Saul-Mirone/milkdown: 🍼 Plugin driven WYSIWYG markdown editor framework.&lt;/a>
+&lt;ul>
+&lt;li>テーブルの行列追加がワンクリックでできれば&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>ということで、editor.jsを試してみようと思う。&lt;/p></description></item></channel></rss>

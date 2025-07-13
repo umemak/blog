@@ -1,1 +1,339 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>yahoo on umemak</title><link>https://umemak.github.io/blog/tags/yahoo/</link><description>Recent content in yahoo on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 13 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/yahoo/index.xml" rel="self" type="application/rss+xml"/><item><title>Yahoo! JAPAN Tech Conference 2019 in Shibuya</title><link>https://umemak.github.io/blog/posts/2019/12/13_yjtc/</link><pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/12/13_yjtc/</guid><description>https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;amp;amp;cpt_m=web&amp;amp;amp;cpt_s=passmarket きました pic.twitter.com/mN83GXKkkn &amp;mdash; umemak (@umemak8) December 13, 2019 3年連続３回目の参加。 毎年会場が変わって、今年は渋谷です。表参道駅から歩きましたが。。 基調講演 13:00 - 13:45 藤門 千明 取締役 常務執行役員、CTO（チーフテクノロジーオフィサー） https://www.slideshare.net/techblogyahoo/yjtc19-in-shibuya-yjtc 「未来を、共に創ろう」 ユーザーアクションの最大化 オフラインにも進出（PayPay） MUU5049万、MUB9</description></item><item><title>Bonfire Backend #4</title><link>https://umemak.github.io/blog/posts/2019/11/26_bonfire_backend_4/</link><pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/26_bonfire_backend_4/</guid><description>https://yj-meetup.connpass.com/event/153658/ 初参加です。 19:00 開場・受付開始 19:30 イントロ・乾杯 19:35 ヤフーのナビゲーション系のバックエンドサービスの課題をk8sで解決した話 高木 克彰(@tkgtransit) ◆ ヤフー株式会社 ナビゲーション マップの徒歩ナビ 乗り換えナビ 従来のアーキテクチャ エンジンデータはそれぞれ１台の仮想サーバーが担当 C++, Apacke Module 課題 IFが異な</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yahoo on umemak</title><link>https://umemak.github.io/blog/tags/yahoo/</link><description>Recent content in Yahoo on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 13 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/yahoo/index.xml" rel="self" type="application/rss+xml"/><item><title>Yahoo! JAPAN Tech Conference 2019 in Shibuya</title><link>https://umemak.github.io/blog/posts/2019/12/13_yjtc/</link><pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/12/13_yjtc/</guid><description>&lt;p>&lt;a href="https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;amp;amp;cpt_m=web&amp;amp;amp;cpt_s=passmarket">https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;amp;amp;cpt_m=web&amp;amp;amp;cpt_s=passmarket&lt;/a>&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">きました &lt;a href="https://t.co/mN83GXKkkn">pic.twitter.com/mN83GXKkkn&lt;/a>&lt;/p>&amp;mdash; umemak (@umemak8) &lt;a href="https://twitter.com/umemak8/status/1205334852607721473?ref_src=twsrc%5Etfw">December 13, 2019&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+
+
+&lt;p>3年連続３回目の参加。
+毎年会場が変わって、今年は渋谷です。表参道駅から歩きましたが。。&lt;/p>
+&lt;h2 id="基調講演-1300---1345">基調講演 13:00 - 13:45&lt;/h2>
+&lt;h3 id="藤門-千明-取締役-常務執行役員ctoチーフテクノロジーオフィサー">藤門 千明 取締役 常務執行役員、CTO（チーフテクノロジーオフィサー）&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.slideshare.net/techblogyahoo/yjtc19-in-shibuya-yjtc">https://www.slideshare.net/techblogyahoo/yjtc19-in-shibuya-yjtc&lt;/a>&lt;/li>
+&lt;li>「未来を、共に創ろう」
+&lt;ul>
+&lt;li>ユーザーアクションの最大化&lt;/li>
+&lt;li>オフラインにも進出（PayPay）&lt;/li>
+&lt;li>MUU5049万、MUB9302万, DR1132億&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>未来をす作るためになければならないもの
+&lt;ul>
+&lt;li>AI,データ&lt;/li>
+&lt;li>価値を届けるスピードを大事にしている
+&lt;ul>
+&lt;li>5年前は鈍化していた&lt;/li>
+&lt;li>モダナイゼーション&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>過去のモダナイゼーション
+&lt;ul>
+&lt;li>失敗例
+&lt;ul>
+&lt;li>2013年、アプリケーションライフサイクルマネジメントの実現
+&lt;ul>
+&lt;li>常に最新のOS.HW・SWへ追従するための土台づくりが未完了&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>うまく行かない３つのレガシー
+&lt;ul>
+&lt;li>マインド、テクノロジー、習慣のモダナイゼーションを同時並行してすすめる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>マインドのモダナイゼーション
+&lt;ul>
+&lt;li>2015年12月、決起集会を開催を２０００人集めて実施&lt;/li>
+&lt;li>会場はここ（ベルサール渋谷ファースト）だった&lt;/li>
+&lt;li>トップからメッセージング&lt;/li>
+&lt;li>自分ごと、オープン化、チャレンジ&lt;/li>
+&lt;li>仮想化、CIのチャレンジが成功したのは、潜在的にエンジニアがいたから&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>テクノロジーのモダナイゼーション
+&lt;ul>
+&lt;li>&lt;blockquote class="twitter-tweet">&lt;p lang="zxx" dir="ltr">&lt;a href="https://t.co/0KKstVSH68">pic.twitter.com/0KKstVSH68&lt;/a>&lt;/p></description></item><item><title>Bonfire Backend #4</title><link>https://umemak.github.io/blog/posts/2019/11/26_bonfire_backend_4/</link><pubDate>Tue, 26 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/26_bonfire_backend_4/</guid><description>&lt;p>&lt;a href="https://yj-meetup.connpass.com/event/153658/">https://yj-meetup.connpass.com/event/153658/&lt;/a>&lt;/p>
+&lt;p>初参加です。&lt;/p>
+&lt;h2 id="1900開場受付開始">19:00	開場・受付開始&lt;/h2>
+&lt;h2 id="1930イントロ乾杯">19:30	イントロ・乾杯&lt;/h2>
+&lt;h2 id="1935ヤフーのナビゲーション系のバックエンドサービスの課題をk8sで解決した話">19:35	ヤフーのナビゲーション系のバックエンドサービスの課題をk8sで解決した話&lt;/h2>
+&lt;h3 id="高木-克彰tkgtransit--ヤフー株式会社">高木 克彰(@tkgtransit) ◆ ヤフー株式会社&lt;/h3>
+&lt;ul>
+&lt;li>ナビゲーション
+&lt;ul>
+&lt;li>マップの徒歩ナビ&lt;/li>
+&lt;li>乗り換えナビ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>従来のアーキテクチャ
+&lt;ul>
+&lt;li>エンジンデータはそれぞれ１台の仮想サーバーが担当&lt;/li>
+&lt;li>C++, Apacke Module&lt;/li>
+&lt;li>課題
+&lt;ul>
+&lt;li>IFが異なるだけで基本ロジックはほぼ同じ&lt;/li>
+&lt;li>データ更新に半日&lt;/li>
+&lt;li>脆弱性対応が多い、手作業&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>改善後
+&lt;ul>
+&lt;li>API層を統合
+&lt;ul>
+&lt;li>社内PaaSに移行&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>エンジン層
+&lt;ul>
+&lt;li>社内CaaSに移行&lt;/li>
+&lt;li>バイナリデータはinit comtainerで取得してオンメモリに展開&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>データの更新はk8sのcronで実行&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>パイプラインはscrewdriver使っている&lt;/li>
+&lt;/ul>
+&lt;h2 id="1950プライベートクラウドをk8sで刷新して良かった話">19:50	プライベートクラウドをk8sで刷新して良かった話&lt;/h2>
+&lt;h3 id="鶴田貴大--サイボウズ株式会社">鶴田貴大 ◆ サイボウズ株式会社&lt;/h3>
+&lt;ul>
+&lt;li>自社製プライベートクラウド
+&lt;ul>
+&lt;li>OpenStackは使っていない&lt;/li>
+&lt;li>Ubuntu
+&lt;ul>
+&lt;li>14.04から16.04へのアップグレードに２年くらいかかった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>コンテナもほぼ使っていない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>インフラ刷新
+&lt;ul>
+&lt;li>necoプロジェクト&lt;/li>
+&lt;li>CKE(Cybozu Kubernetes Engine)&lt;/li>
+&lt;li>Certifiedになった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>目的
+&lt;ul>
+&lt;li>運用コスト低減&lt;/li>
+&lt;li>スケーラビリティ向上&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>K8sを選んだ理由
+&lt;ul>
+&lt;li>圧倒的に流行っていたから&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>CoreOS採用
+&lt;ul>
+&lt;li>コンテナ用軽量OS&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>GitOps
+&lt;ul>
+&lt;li>Argo CDを使用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>テナント
+&lt;ul>
+&lt;li>チームごとに権限を分離&lt;/li>
+&lt;li>ほかテナントに影響しないように&lt;/li>
+&lt;li>単一のk8sクラスターですべてのテナントを賄っている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>開発環境
+&lt;ul>
+&lt;li>クラスタを共同利用
+&lt;ul>
+&lt;li>うっかり壊すと大変&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Kindに変更
+&lt;ul>
+&lt;li>ローカルPCでも動かせる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Teleport
+&lt;ul>
+&lt;li>多機能踏み台サーバー&lt;/li>
+&lt;li>ターミナルの入出力を録画できるので、監査に使える&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2010pfnにおける二種類のkubernetesクラスタ">20:10	PFNにおける二種類のKubernetesクラスタ&lt;/h2>
+&lt;h3 id="太田佳敬ota42y--preferred-networks">太田佳敬(@ota42y) ◆ Preferred Networks&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/ota42y/pfnniaru2tufalsekubernetes">https://speakerdeck.com/ota42y/pfnniaru2tufalsekubernetes&lt;/a>&lt;/li>
+&lt;li>自社GPUクラスタ
+&lt;ul>
+&lt;li>機械学習のためにマシンリソースが必要&lt;/li>
+&lt;li>2500以上&lt;/li>
+&lt;li>これの制御をk8sで行っている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>WebApplication用
+&lt;ul>
+&lt;li>aws EKSに構築&lt;/li>
+&lt;li>EKSを使うほどではないが、K8sを使い慣れているのでECSではなくEKS&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>K8sのNetwork Isolation
+&lt;ul>
+&lt;li>1つのクラスタに関係ないアプリが複数同居している&lt;/li>
+&lt;li>相互通信しないようにネットワーク分離が重要&lt;/li>
+&lt;li>Network Policies
+&lt;ul>
+&lt;li>PodやNamespace単位で通信を制御できる標準機能&lt;/li>
+&lt;li>アプリケーションごとにNamespaceを分けて相互アクセスを禁止した&lt;/li>
+&lt;li>デフォルトでは通信許可設定なので設定忘れを抑制したい
+&lt;ul>
+&lt;li>Calicoを利用してデフォルトで通信禁止に設定
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/projectcalico/calico">https://github.com/projectcalico/calico&lt;/a>&lt;/li>
+&lt;li>Namespace内部の通信も禁止になるので、そこは許可する&lt;/li>
+&lt;li>kube-systemも許可する。禁止したままだとkube-dnsも使えなくなってしまう&lt;/li>
+&lt;li>orderで優先順位を決める&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Network PolicyでALBを指定（許可）できない
+&lt;ul>
+&lt;li>Subnet構成で回避&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2030小休憩">20:30	小休憩&lt;/h2>
+&lt;h2 id="2035k8sで画像pfを1年半運用してみた振り返り">20:35	K8Sで画像PFを1年半運用してみた振り返り&lt;/h2>
+&lt;h3 id="山田-拓也--ヤフー株式会社">山田 拓也 ◆ ヤフー株式会社&lt;/h3>
+&lt;ul>
+&lt;li>結論
+&lt;ul>
+&lt;li>移行してよかった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>旧システム
+&lt;ul>
+&lt;li>社内VM&lt;/li>
+&lt;li>リカバリ手動&lt;/li>
+&lt;li>障害で深夜対応・・&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;h2 id="新システム">新システム&lt;/h2>
+&lt;/li>
+&lt;li>移行前のシステムを意識しすぎてしまった
+&lt;ul>
+&lt;li>サーバー構成など
+&lt;ul>
+&lt;li>Podとコンテナの配置どうする？
+&lt;ul>
+&lt;li>一つにまとめてみた
+&lt;ul>
+&lt;li>起動遅い&lt;/li>
+&lt;li>管理も大変&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>1コンテナ1Podにした
+&lt;ul>
+&lt;li>迷ったらこれでOK&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>監視設定
+&lt;ul>
+&lt;li>Grafanaの監視項目全部Prometheusに持っていった
+&lt;ul>
+&lt;li>Grafanaで良くない？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>監視の目的から見直す
+&lt;ul>
+&lt;li>設定したしきい値も説明できないなら見直す&lt;/li>
+&lt;li>物理やVMなら必須だった項目もK8sならいらない場合もある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Prometheus
+&lt;ul>
+&lt;li>予測で設定できる&lt;/li>
+&lt;li>変化量でも見れる&lt;/li>
+&lt;li>Alertmanager便利&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2050k8s初心者がgrpc--envoyを導入したら色々苦労した話">20:50	k8s初心者がgRPC × envoyを導入したら色々苦労した話&lt;/h2>
+&lt;h3 id="信原-有志--ヤフー株式会社">信原 有志 ◆ ヤフー株式会社&lt;/h3>
+&lt;ul>
+&lt;li>サービスの課題
+&lt;ul>
+&lt;li>ドメインごとにチームが別れていて、それぞれ別の言語で開発していた&lt;/li>
+&lt;li>モノリス&lt;/li>
+&lt;li>共通コンポーネントをチームごとに実装すると非効率
+&lt;ul>
+&lt;li>共通コンポーネント配信システムを構築した&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>不具合
+&lt;ul>
+&lt;li>ローリングアップデート時のコネクションエラー
+&lt;ul>
+&lt;li>glaceful shutdownが正しく動いていない？
+&lt;ul>
+&lt;li>負荷を下げて検証
+&lt;ul>
+&lt;li>解決できず&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>IPテーブルの更新に遅延？
+&lt;ul>
+&lt;li>検証しても解決できず&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>envoyのIPが更新されない？
+&lt;ul>
+&lt;li>ZipkinでTraceIDから照合して検証
+&lt;ul>
+&lt;li>これ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>対策
+&lt;ul>
+&lt;li>envoyでのgRPC health_checkの設定をちゃんとやる&lt;/li>
+&lt;li>nodejsアプリにも削除用のエントリポイントを追加&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>内部の動きをきちんと理解できていなかったのが原因&lt;/li>
+&lt;/ul>
+&lt;h2 id="2100懇親会">21:00	懇親会&lt;/h2>
+&lt;h2 id="2200終了">22:00	終了&lt;/h2></description></item></channel></rss>

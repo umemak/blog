@@ -1,1 +1,2184 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>event on umemak</title><link>https://umemak.github.io/blog/tags/event/</link><description>Recent content in event on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/event/index.xml" rel="self" type="application/rss+xml"/><item><title>開発生産性Conference 2025 Day2</title><link>https://umemak.github.io/blog/posts/2025/07/04_dev-productivity-con/</link><pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/04_dev-productivity-con/</guid><description>開発生産性カンファレンス2025の2日目の聴講メモです。 受付は並ばずできて、昨日の混雑はKent Beckのせいだったようです。 開発生産性向上の探求：DevOpsの進化、普遍的な原則、そして生成AIがもたらす変革 Gene Kim DevOpsのビジネス価値は我々の想定よりさらに高い ハイパフォーマーはより安全で管理し</description></item><item><title>開発生産性Conference 2025 Day1</title><link>https://umemak.github.io/blog/posts/2025/07/03_dev-productivity-con/</link><pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/03_dev-productivity-con/</guid><description>開発生産性カンファレンス2025の1日目の聴講メモです。 最初の受付から行列になっていて人気度の高さを感じました。 開発生産性測定のトレードオフ 「グッドハートの法則」はもっと悲観的に捉えるべきだった Kent Beck 計測は必要だが、それを指標とすると、思った効果が得られない PR数、コード行数、障害発生数 すぐにハックさ</description></item><item><title>PHP Conference Japan 2025</title><link>https://umemak.github.io/blog/posts/2025/06/28_phpcon2025/</link><pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/06/28_phpcon2025/</guid><description>PHPカンファレンス2025に参加してきました。 https://phpcon.php.gr.jp/2025/ 2024に続いて2回目の参加です。 PHPの今とこれから 2025 by 廣川 類 https://fortee.jp/phpcon-2025/proposal/ba73ff87-93ff-4772-8003-43f246a310ae シェアはあまり変化なし 11月に8.5リリース予定 パイプ演算子など 8.0以前の利用者は、まだ世界で6割くらいいる 8.0以前のバックポートもあるが、オススメはアクティブバージョンにアップデ</description></item><item><title>PHP Conference Japan 2024</title><link>https://umemak.github.io/blog/posts/2024/12/22_phpcon2024/</link><pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2024/12/22_phpcon2024/</guid><description>PHP Conference Japan 2024に行ってきました。 PHP Conferenceは初参加です。 トラック1とトラック2は配信があったので、それ以外のトラックを主に見て回りました。 見たセッションはテスト系の話が多く、参考になりました。 PHPの今とこれから2024 by 廣川 類 PHPは1995年の登場からwebの進化とともに成長してきた</description></item><item><title>Developers Summit 2020 day2</title><link>https://umemak.github.io/blog/posts/2020/02/14_devsumi/</link><pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/02/14_devsumi/</guid><description>https://event.shoeisha.jp/devsumi/20200213 14-B-1 「ともにつくる」を実践するドメイン駆動設計 成瀬 允宣[GMOインターネット] ドメイン駆動設計 当たり前のことを当たり前にやるためのプラクティス 構成要素 モデリング ドメインの物事を、知識として抽出する 何が重要かはソフトウェアによって異なる 「トラック」は「アクセルを踏めば進む」のか「荷物を運ぶことができる</description></item><item><title>Developers Summit 2020 day1</title><link>https://umemak.github.io/blog/posts/2020/02/13_devsumi/</link><pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/02/13_devsumi/</guid><description>https://event.shoeisha.jp/devsumi/20200213 13-D-3 サーバーレスなPCI DSS対応クレジットカード決済基盤システムを運用しながら、みんなでわいわいDIYの精神で、新しいモバイル決済サービス6gramを作っている話 田岡 文利[ミクシィ] PCI DSS クレジットカード業界のセキュリティ基準 イシュア、決済代行業者は対応必須 カード情報を保存しないといけないので エンド</description></item><item><title>NTT Tech Conference #4</title><link>https://umemak.github.io/blog/posts/2020/01/31_ntt_tech_conf_4/</link><pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/01/31_ntt_tech_conf_4/</guid><description>https://ntt-techconf.connpass.com/event/161866/ NTTグループのエンジニア有志が主催するカンファレンスイベントの4回目とのこと。 初参加です。 Opening Keynote 参加者の半数がNTTグループ NTTグループは919社もある 30万人いるのでグループと言ってもでかすぎる エンジニアの有志が主催しています 前回から1年半 退職エントリとか押しかけラグビーとか色々炎上していたの</description></item><item><title>DOCOMO Open House 2020 day2</title><link>https://umemak.github.io/blog/posts/2020/01/24_docomo_openhouse/</link><pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/01/24_docomo_openhouse/</guid><description>http://docomo-rd-openhouse.jp/2020/ 昨日に引き続き、来ました。 昨日より人が多い印象。 [特別講演] 5G時代の幕開けとサスティナブルな社会の実現 (株)NTTドコモ 取締役常務執行役員 R&amp;amp;Dイノベーション本部長 中村 寛 18の未来 5G, AI, デバイスの進化 この先の10年の展望 5Gプレサービス まだ端末が販売されていないので、プレという位置づけ イベ</description></item><item><title>DOCOMO Open House 2020 day1</title><link>https://umemak.github.io/blog/posts/2020/01/23_docomo_openhouse/</link><pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/01/23_docomo_openhouse/</guid><description>http://docomo-rd-openhouse.jp/2020/ まさかビッグサイトが2箇所あるとは知らず、東京ビッグサイト駅で降りてどこで開催されているかわからず、そしてここじゃないということに気づいた。 シャトルバスが来る気配もなく、雨の中1キロ以上歩いて移動。 そんなに離れているなら別の名前にしてほしかった。 （後で調べたところ、青海展示棟はオリンピック対策で作</description></item><item><title>freee Tech Night 「freeeにおけるモノリシック」</title><link>https://umemak.github.io/blog/posts/2020/01/21_freee_tech_night_5/</link><pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/01/21_freee_tech_night_5/</guid><description>https://freee-tech-night.connpass.com/event/157012/ 会計freeeのデプロイを10倍早くした話 北川修平 (shuheiktgw) 会計freee Phusion Passenger https://www.phusionpassenger.com/ Capistrano を使ったデプロイ 問題点 直列デプロイ LBから１つづつ外してデプロイしている 50分ちかくかかっている 解決案 EKSへの移行 AutoScalingGroupを使ったBlue/Greenデプロイ サーバー自体のプロビジョニングに４分ぐら</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Event on umemak</title><link>https://umemak.github.io/blog/tags/event/</link><description>Recent content in Event on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 04 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/event/index.xml" rel="self" type="application/rss+xml"/><item><title>開発生産性Conference 2025 Day2</title><link>https://umemak.github.io/blog/posts/2025/07/04_dev-productivity-con/</link><pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/04_dev-productivity-con/</guid><description>&lt;p>開発生産性カンファレンス2025の2日目の聴講メモです。&lt;/p>
+&lt;p>受付は並ばずできて、昨日の混雑はKent Beckのせいだったようです。&lt;/p>
+&lt;h2 id="開発生産性向上の探求devopsの進化普遍的な原則そして生成aiがもたらす変革">開発生産性向上の探求：DevOpsの進化、普遍的な原則、そして生成AIがもたらす変革&lt;/h2>
+&lt;p>Gene Kim&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>DevOpsのビジネス価値は我々の想定よりさらに高い&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>ハイパフォーマーはより安全で管理しやすい&lt;/p>
+&lt;ul>
+&lt;li>市場で勝つのはハイパフォーマー&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="開発生産性ではなく事業の投資対効果に向き合う事業生産性へ">「開発生産性」ではなく、事業の投資対効果に向き合う「事業生産性」へ&lt;/h2>
+&lt;p>山口拓弥&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>生産性の本質&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>レベル1：チーム&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>レベル2：組織&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>レベル3：部門&lt;/p></description></item><item><title>開発生産性Conference 2025 Day1</title><link>https://umemak.github.io/blog/posts/2025/07/03_dev-productivity-con/</link><pubDate>Thu, 03 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/03_dev-productivity-con/</guid><description>&lt;p>開発生産性カンファレンス2025の1日目の聴講メモです。&lt;/p>
+&lt;p>最初の受付から行列になっていて人気度の高さを感じました。&lt;/p>
+&lt;h2 id="開発生産性測定のトレードオフ-グッドハートの法則はもっと悲観的に捉えるべきだった">開発生産性測定のトレードオフ 「グッドハートの法則」はもっと悲観的に捉えるべきだった&lt;/h2>
+&lt;p>Kent Beck&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>計測は必要だが、それを指標とすると、思った効果が得られない&lt;/p>
+&lt;ul>
+&lt;li>PR数、コード行数、障害発生数
+&lt;ul>
+&lt;li>すぐにハックされる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>AIとの協働により、この問題は加速する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>いくつ作成したかではなく、いくつ学んだかを大切にする&lt;/p></description></item><item><title>PHP Conference Japan 2025</title><link>https://umemak.github.io/blog/posts/2025/06/28_phpcon2025/</link><pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/06/28_phpcon2025/</guid><description>&lt;p>PHPカンファレンス2025に参加してきました。&lt;/p>
+&lt;p>&lt;a href="https://phpcon.php.gr.jp/2025/">https://phpcon.php.gr.jp/2025/&lt;/a>&lt;/p>
+&lt;p>2024に続いて2回目の参加です。&lt;/p>
+&lt;h2 id="phpの今とこれから-2025-by-廣川-類">PHPの今とこれから 2025 by 廣川 類&lt;/h2>
+&lt;p>&lt;a href="https://fortee.jp/phpcon-2025/proposal/ba73ff87-93ff-4772-8003-43f246a310ae">https://fortee.jp/phpcon-2025/proposal/ba73ff87-93ff-4772-8003-43f246a310ae&lt;/a>&lt;/p>
+&lt;p>シェアはあまり変化なし&lt;/p>
+&lt;p>11月に8.5リリース予定
+　パイプ演算子など&lt;/p>
+&lt;p>8.0以前の利用者は、まだ世界で6割くらいいる&lt;/p>
+&lt;p>8.0以前のバックポートもあるが、オススメはアクティブバージョンにアップデートすること&lt;/p>
+&lt;p>CVE-2024-8929 MySQLサーバ情報の漏洩
+　やばそう&lt;/p></description></item><item><title>PHP Conference Japan 2024</title><link>https://umemak.github.io/blog/posts/2024/12/22_phpcon2024/</link><pubDate>Sun, 22 Dec 2024 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2024/12/22_phpcon2024/</guid><description>&lt;p>&lt;a href="https://phpcon.php.gr.jp/2024/">PHP Conference Japan 2024&lt;/a>に行ってきました。
+PHP Conferenceは初参加です。&lt;/p>
+&lt;p>トラック1とトラック2は配信があったので、それ以外のトラックを主に見て回りました。
+見たセッションはテスト系の話が多く、参考になりました。&lt;/p>
+&lt;h1 id="phpの今とこれから2024-by-廣川-類">&lt;a href="https://fortee.jp/phpcon-2024/proposal/785c0984-90b3-4c98-93c2-0665d1874b74">PHPの今とこれから2024 by 廣川 類&lt;/a>&lt;/h1>
+&lt;ul>
+&lt;li>PHPは1995年の登場からwebの進化とともに成長してきた&lt;/li>
+&lt;li>今年は日本人がたくさん開発に参加した年&lt;/li>
+&lt;li>EOLバージョンの対応
+&lt;ul>
+&lt;li>ディストリビューションがメンテ&lt;/li>
+&lt;li>Remiバックポート（非公式）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>8.4の新機能
+&lt;ul>
+&lt;li>JITの改善
+&lt;ul>
+&lt;li>中間表現を使用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>プロパティアクセスフック&lt;/li>
+&lt;li>非対称プロパティ可視性&lt;/li>
+&lt;li>遅延オブジェクト
+&lt;ul>
+&lt;li>Lazyゴースト、プロキシの2種類ある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>HTML5対応、DOM対応改善
+&lt;ul>
+&lt;li>HTML5はすでに廃止された
+など&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>FRANKENPHP&lt;/li>
+&lt;li>PHPは進化し続けることが必要&lt;/li>
+&lt;/ul>
+&lt;h1 id="良いテストコードを書くためのガイドライン作成から運用まで-by-rikuto">&lt;a href="https://fortee.jp/phpcon-2024/proposal/7edc5567-d741-4d6a-bfa7-732afb7dd311">良いテストコードを書くためのガイドライン〜作成から運用まで〜 by rikuto&lt;/a>&lt;/h1>
+&lt;ul>
+&lt;li>開発者が行う自動テスト&lt;/li>
+&lt;li>なぜテストするのか
+&lt;ul>
+&lt;li>バグを早い段階で検出する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>良いテスト
+&lt;ul>
+&lt;li>実装の詳細ではなく振る舞いをテストする&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ふるまいのテスト
+&lt;ul>
+&lt;li>得られた値が想定通りかのテスト&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>実装の詳細のテスト
+&lt;ul>
+&lt;li>モックを利用したテスト
+&lt;ul>
+&lt;li>関数内での呼び出しを確認するのみ
+&lt;ul>
+&lt;li>仕様の変更に追従できない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ふるまいのテストをできるコードにする意
+&lt;ul>
+&lt;li>実装の詳細を公開すると、ふるまいをテストしにくい
+&lt;ul>
+&lt;li>ふるまいだけを公開する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>モックの利用は最小限にする
+&lt;ul>
+&lt;li>自分たちの管理街にあるもの
+&lt;ul>
+&lt;li>外部APIなど&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>どこにどんなテストを書けばよいのか
+&lt;ul>
+&lt;li>テストレベル
+&lt;ul>
+&lt;li>単体＜統合＜E2E&lt;/li>
+&lt;li>下位レベルのテストで担保しているものは高レベルでは省略できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ガイドラインの作成
+&lt;ul>
+&lt;li>本のコピー、抜粋ではなく現場の例で具体的に&lt;/li>
+&lt;li>ルールを厳しくしすぎない&lt;/li>
+&lt;li>重要度別に優先度を設定&lt;/li>
+&lt;li>作って終わりにしてはいけない
+&lt;ul>
+&lt;li>定着するところまでする&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="psr-15-はあなたのためのものではない-by-やまゆ">&lt;a href="https://fortee.jp/phpcon-2024/proposal/2d20b933-0aed-4809-90fc-42ebf830e586">PSR-15 はあなたのためのものではない？ by やまゆ&lt;/a>&lt;/h1>
+&lt;ul>
+&lt;li>
+&lt;p>RequestHandlerInterface&lt;/p></description></item><item><title>Developers Summit 2020 day2</title><link>https://umemak.github.io/blog/posts/2020/02/14_devsumi/</link><pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/02/14_devsumi/</guid><description>&lt;p>&lt;a href="https://event.shoeisha.jp/devsumi/20200213">https://event.shoeisha.jp/devsumi/20200213&lt;/a>&lt;/p>
+&lt;h2 id="14-b-1-ともにつくるを実践するドメイン駆動設計">14-B-1 「ともにつくる」を実践するドメイン駆動設計&lt;/h2>
+&lt;h3 id="成瀬-允宣gmoインターネット">成瀬 允宣[GMOインターネット]&lt;/h3>
+&lt;ul>
+&lt;li>ドメイン駆動設計
+&lt;ul>
+&lt;li>当たり前のことを当たり前にやるためのプラクティス&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>構成要素
+&lt;ul>
+&lt;li>モデリング
+&lt;ul>
+&lt;li>ドメインの物事を、知識として抽出する&lt;/li>
+&lt;li>何が重要かはソフトウェアによって異なる
+&lt;ul>
+&lt;li>「トラック」は「アクセルを踏めば進む」のか「荷物を運ぶことができる」のか&lt;/li>
+&lt;li>どちらが重要かは「ドメインエキスパート」が知っている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>パターン
+&lt;ul>
+&lt;li>ドメインモデルをコード（ドメインオブジェクト）に落とし込む&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>開発者とドメインエキスパートのコミュニケーション
+&lt;ul>
+&lt;li>会話が必要&lt;/li>
+&lt;li>会話のためには共通基盤（ユビキタス言語）が必要&lt;/li>
+&lt;li>「単語帳」ではない&lt;/li>
+&lt;li>技術語と固有語、どちらかに寄せる必要はない&lt;/li>
+&lt;li>開発者が主体となって協力して構築する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>境界付けられたコンテキスト
+&lt;ul>
+&lt;li>「注文」を発注側と受注側で分ける
+&lt;ul>
+&lt;li>発注側コンテキスト、受注側コンテキスト&lt;/li>
+&lt;li>チームを分ける場合にも使える&lt;/li>
+&lt;li>チーム間コミュニケションのために、「コンテキストマップ」が必要&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>開発者だけで完結しない
+&lt;ul>
+&lt;li>開発者、エキスパート、ステークホルダーの「共創」&lt;/li>
+&lt;li>ボトムアップアプローチで「パターン」からやってみる&lt;/li>
+&lt;li>コードとドメインは相互変換できる必要があるべき&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="14-e-2-プリンシプルオブともにつくる-web-performerを支えるドクトリン-">14-E-2 プリンシプル・オブ・“ともにつくる”～ Web Performerを支えるドクトリン ～&lt;/h2>
+&lt;h3 id="上田-勲キヤノンitソリューションズ">上田 勲[キヤノンITソリューションズ]&lt;/h3>
+&lt;ul>
+&lt;li>撮影禁止&lt;/li>
+&lt;li>プリンシプル：長い歴史を持つ抽象的知見&lt;/li>
+&lt;li>我と汝
+&lt;ul>
+&lt;li>世界は人間の二重の態度に応じて二重である&lt;/li>
+&lt;li>人間の世界は　「我（ヒト）と汝（ヒト）」か「我（ヒト）とそれ（モノ）」か&lt;/li>
+&lt;li>「我とそれ」ではチームにならない。コミュニケーション不全に陥る
+&lt;ul>
+&lt;li>相手がヒトであってもモノとして見たら「我とそれ」になってしまう。「汝」として見ることが必要。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>シニフィアンとシニフィエ
+&lt;ul>
+&lt;li>言葉は恣意的である&lt;/li>
+&lt;li>意味するもの（文字や音）と意味されるもの（実物）&lt;/li>
+&lt;li>シニフィアンとシニフィエの関係は一意ではない
+&lt;ul>
+&lt;li>言語が違えばシニフィアンが異なる（「馬」と「Horse」）&lt;/li>
+&lt;li>日本では「蝶」と「蛾」に分けられてもフランス語では「パピヨン」&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>世界の文節化
+&lt;ul>
+&lt;li>世界があって言葉があるのではなく、言葉があって世界があるという概念&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>パッチワーク
+&lt;ul>
+&lt;li>認識している世界はありのままではなく、言葉におって歪められたいびつなもの&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>人間は言葉で思考／会話している
+&lt;ul>
+&lt;li>言葉は世界を完璧に表現できない
+&lt;ul>
+&lt;li>思考も会話も完璧にはならない
+&lt;ul>
+&lt;li>言葉が世界を構築するなら、知識を増やせば思考も豊かになる&lt;/li>
+&lt;li>いびつな世界しか表現できないなら、言葉より、「何を意味したいのか」に意識を向ける（我と汝）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>無知の知
+&lt;ul>
+&lt;li>自らが最大の知恵者だとすれば、それは「自らいかに知らないかを知る」ことだ&lt;/li>
+&lt;li>無知の無知は、成長を止める&lt;/li>
+&lt;li>既知の既知 ＜ 既知の未知 ＜＜＜＜ 未知の未知&lt;/li>
+&lt;li>無知を自覚する
+&lt;ul>
+&lt;li>無知である姿勢で、どんなヒトからも学べる。知識を吸収し続ける&lt;/li>
+&lt;li>知れば知るほど、知らないこと（既知の未知）が増える&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>既知すら疑う
+&lt;ul>
+&lt;li>自分の考えは、振り返ると間違っていることが多い
+&lt;ul>
+&lt;li>時代の変化により間違いになることもある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>決めつけずに「自分の知らない世界があるかも」と考えてみる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>「謙虚さ」が必要&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>絶望
+&lt;ul>
+&lt;li>死に至る病とは絶望のことである&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;h2 id="環世界">環世界&lt;/h2>
+&lt;/li>
+&lt;li>アフォーダンス
+&lt;ul>
+&lt;li>人間の行動は、環境と近くの直接の対応関係によって決定される&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ドクトリン：&lt;/li>
+&lt;li>保守主義
+&lt;ul>
+&lt;li>歴史と時代の変化&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>フリクションレス
+&lt;ul>
+&lt;li>宣言型にしてユーザーのやりたいことを表現する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>プラガブル
+&lt;ul>
+&lt;li>拡張ポイントを多数用意思している&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>家具の裏側
+&lt;ul>
+&lt;li>目に見えない部分にこだわることで、全体の品質を上げる&lt;/li>
+&lt;li>自動生成するコードの可読性&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>まなざし
+&lt;ul>
+&lt;li>ユーザー専任のロールをおいている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>卓越性
+&lt;ul>
+&lt;li>得意な部分を活かす&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>工学
+&lt;ul>
+&lt;li>科学との対比でわかりやすい
+&lt;ul>
+&lt;li>科学：自然を説明するるルール&lt;/li>
+&lt;li>工学：役に立つものを作成する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>現実と対峙するのは工学
+&lt;ul>
+&lt;li>ヒトの役に立つためのハブ＆インターフェース&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>「目の前の仕事をこなす」から「この仕事で役に立つ」に視点を転回&lt;/li>
+&lt;li>「余らせる」という意識を持つ
+&lt;ul>
+&lt;li>対象は何でも良い&lt;/li>
+&lt;li>余っていないと、役に立てない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="14-b-3-k8s使ってますかリテールテック小売決済等でのコンテナ活用例と2025年の崖克服に向けたコンテナ導入のススメ">14-B-3 K8S使ってますか？リテールテック（小売・決済等）でのコンテナ活用例と「2025年の崖」克服に向けたコンテナ導入のススメ！&lt;/h2>
+&lt;h3 id="程-建強rancher-labs山澤-一仁スーパーソフトウエア井川-知幸カゴヤジャパン">程 建強[Rancher Labs]/山澤 一仁[スーパーソフトウエア]/井川 知幸[カゴヤ・ジャパン]&lt;/h3>
+&lt;ul>
+&lt;li>今後3年以内に76%の企業がK8sを標準基盤として利用&lt;/li>
+&lt;li>コンテナの良さ
+&lt;ul>
+&lt;li>ゲストOS不要で資源効率性&lt;/li>
+&lt;li>移植性&lt;/li>
+&lt;li>設置性&lt;/li>
+&lt;li>開発容易性&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>RANCHER日本の利用率は低い&lt;/li>
+&lt;li>RANCHERはOSSなのでベンダーロックイン回避可能&lt;/li>
+&lt;li>Rancher Pipelines
+&lt;ul>
+&lt;li>Rancherに統合されたCI/CD&lt;/li>
+&lt;li>UIもついている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Rancherカタログ
+&lt;ul>
+&lt;li>HelmベースのアプリケーションをRancherからデプロイする機能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>RIO(Micro PaaS)の統合予定&lt;/li>
+&lt;/ul>
+&lt;h2 id="14-c-4-エッジコンピューティングエッジaiの可能性">14-C-4 エッジコンピューティング、エッジAIの可能性&lt;/h2>
+&lt;h3 id="中村-晃一idein">中村 晃一[Idein]&lt;/h3>
+&lt;ul>
+&lt;li>エッジコンピューティング
+&lt;ul>
+&lt;li>デバイス状やデバイスの近くで計算を行う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>エッジが注目される背景
+&lt;ul>
+&lt;li>データセンター・回線のキャパシティオーバー
+&lt;ul>
+&lt;li>デバイスの増加、計算負荷・データ量の大きいアプリケーションの需要増加&lt;/li>
+&lt;li>データセンターへの電力供給量の限界、半導体そのものの電力効率の頭打ち&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>プライバシーへの関心の高まり
+&lt;ul>
+&lt;li>GDPRなど&lt;/li>
+&lt;li>不要な情報は送らない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>超低遅延化への需要増加
+&lt;ul>
+&lt;li>自動車・ロボット・ドローンなどリアルタイム性が重要なもの&lt;/li>
+&lt;li>5Gの恩恵を活かしたい
+&lt;ul>
+&lt;li>無線区間は速くなっても、有線区間は変わらない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>計算資源が制限されるとめんどくさい&lt;/li>
+&lt;li>電源の制限もある&lt;/li>
+&lt;li>機械学習は仕様を決められない
+&lt;ul>
+&lt;li>売り切りにするのは難しい&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Mobile GPUで汎用計算を実現するためのコンパイラスタックを自社開発
+&lt;ul>
+&lt;li>なので、コンパイラ職がある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>AIベンダーが作成したアプリを1日単位の課金（数十円）で利用できるマーケットプレイスを用意している
+&lt;ul>
+&lt;li>ここで稼ぐビジネスプラン&lt;/li>
+&lt;li>Pythonで書く&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="14-d-5-マルチクラウドに向けてnginx活用促進する為に知っておいてほしいこと">14-D-5 マルチクラウドに向けてNGINX活用促進する為に知っておいてほしいこと&lt;/h2>
+&lt;h3 id="鈴木-孝彰nginx-part-of-f5">鈴木 孝彰[NGINX (Part of F5)]&lt;/h3>
+&lt;ul>
+&lt;li>Nginxの利点
+&lt;ul>
+&lt;li>同時接続処理&lt;/li>
+&lt;li>メモリ使用量&lt;/li>
+&lt;li>目安はnginxのサイトに公開されている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>オートスケールに対応するためのOSSがある
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/nginxinc/nginx-asg-sync">https://github.com/nginxinc/nginx-asg-sync&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>K8sのingressコントローラーとして使う&lt;/li>
+&lt;li>External Nameを指定してマルチクラウド構成を構築できる&lt;/li>
+&lt;li>nginxでJWT認証もできる&lt;/li>
+&lt;/ul>
+&lt;h2 id="14-g-2-gcp-kubernetes-ハンズオン-gcp-をさわりまくろうスペシャリストに聞きまくろう-qwiklabs-大会-kubernetes-編-">14-G-2 【GCP Kubernetes ハンズオン】 GCP をさわりまくろう！スペシャリストに聞きまくろう！〜 QWIKLABS 大会 Kubernetes 編 〜&lt;/h2>
+&lt;h3 id="google-cloud-チームグーグルクラウドジャパン">Google Cloud チーム[グーグル・クラウド・ジャパン]&lt;/h3>
+&lt;ul>
+&lt;li>面白かった。けど疲れた。&lt;/li>
+&lt;/ul>
+&lt;h2 id="14-c-8-雲の中心で愛を叫ぶ-クラウド横断パネルディスカッション">14-C-8 雲の中心で愛を叫ぶ！ クラウド横断パネルディスカッション&lt;/h2>
+&lt;h3 id="濱田-孝治クラスメソッド松村-優大オルターブース高野-遼クラウドエース司会近藤-佑子翔泳社">濱田 孝治[クラスメソッド]/松村 優大[オルターブース]/高野 遼[クラウドエース]/【司会】近藤 佑子[翔泳社]&lt;/h3>
+&lt;ul>
+&lt;li>アメリカ１週間滞在でひとり50万くらい&lt;/li>
+&lt;li>業務における気付きについて
+&lt;ul>
+&lt;li>どんな案件が増えているか
+&lt;ul>
+&lt;li>AWS: 多種多様な顧客&lt;/li>
+&lt;li>AWS: コンテナ案件増えている
+&lt;ul>
+&lt;li>これからサービスを作ろうとするときに選ぶ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Azure: エンタープライズ系、モダナイぜーション案件&lt;/li>
+&lt;li>Azure: PaaS、サーバーレスの組み合わせが多い。ノーコードも。&lt;/li>
+&lt;li>GCP: DX。BigQueryを中心にしたデータ分析案件。&lt;/li>
+&lt;li>GCP: GSuiteとの連携が強い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>便利なところ
+&lt;ul>
+&lt;li>GCP: プロダクトが多くない、選択で悩まない&lt;/li>
+&lt;li>GCP: Googleがお手本を見せてくれる&lt;/li>
+&lt;li>Azure: 開発に特化したサービス。イベントドリブンな処理を作りやすい。&lt;/li>
+&lt;li>AWS: なんでもできる。選択肢が多い。&lt;/li>
+&lt;li>AWS: 開発者向けに寄ってきている（CDK）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>他のクラウドで羨ましいところ
+&lt;ul>
+&lt;li>Azure: AWSは利用者が活発（JAWS-UG）&lt;/li>
+&lt;li>Azure: GCPはFirebaseのような気軽に使えるサービス&lt;/li>
+&lt;li>AWS: JAWSは偉大&lt;/li>
+&lt;li>AWS: GCPは使おうとしている顧客がイケイケなイメージ&lt;/li>
+&lt;li>AWS: AzureはMS系のライセンスの扱いが楽（BYOL）&lt;/li>
+&lt;li>GCP: Oracleが使えるところ、シェアがたくさんある、情報がたくさんある、サポートもいい（らしい）&lt;/li>
+&lt;li>Azure: ドキュメントはたしかに多い。変な翻訳も。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>個人のキャリアや組織について
+&lt;ul>
+&lt;li>キャリアの変化、可能性
+&lt;ul>
+&lt;li>AWS: 自分の市場価値&lt;/li>
+&lt;li>Azure: アプリケーションの作り方が変わった&lt;/li>
+&lt;li>GCP: 最新の技術の周りには最新の問題が転がっている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>チームとして成果を出すにはどうしたらいいか
+&lt;ul>
+&lt;li>AWS: AWSの範囲が広いので、得意領域を持って組み合わせる。社内勉強会おすすめ。&lt;/li>
+&lt;li>Azure: AWSと同様。一人で全部わかるわけがない。アウトプット大事。&lt;/li>
+&lt;li>GCP: 機能分けの組織。自分の守備範囲を認識する。他のポジションのことも理解する。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>クラウドの学び方について
+&lt;ul>
+&lt;li>GCP: 教える側は魅力を伝える必要がある。学ぶ側は全部を学ぶ必要はないが、基本的なところは抑えておく必要がある。&lt;/li>
+&lt;li>GCP: 膨大なサービスは覚えない。ざっくり覚える。&lt;/li>
+&lt;li>Azure: 公式ドキュメントやサンプルドキュメント&lt;/li>
+&lt;li>Azure: 今はマイクロソフトラーンhttps://docs.microsoft.com/ja-jp/learn/&lt;/li>
+&lt;li>AWS: 低レイヤーや基礎ををないがしろにしない&lt;/li>
+&lt;li>AWS: 認定試験の勉強で思想が理解できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Developers Summit 2020 day1</title><link>https://umemak.github.io/blog/posts/2020/02/13_devsumi/</link><pubDate>Thu, 13 Feb 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/02/13_devsumi/</guid><description>&lt;p>&lt;a href="https://event.shoeisha.jp/devsumi/20200213">https://event.shoeisha.jp/devsumi/20200213&lt;/a>&lt;/p>
+&lt;h2 id="13-d-3-サーバーレスなpci-dss対応クレジットカード決済基盤システムを運用しながらみんなでわいわいdiyの精神で新しいモバイル決済サービス6gramを作っている話">13-D-3 サーバーレスなPCI DSS対応クレジットカード決済基盤システムを運用しながら、みんなでわいわいDIYの精神で、新しいモバイル決済サービス6gramを作っている話&lt;/h2>
+&lt;h3 id="田岡-文利ミクシィ">田岡 文利[ミクシィ]&lt;/h3>
+&lt;ul>
+&lt;li>PCI DSS
+&lt;ul>
+&lt;li>クレジットカード業界のセキュリティ基準&lt;/li>
+&lt;li>イシュア、決済代行業者は対応必須
+&lt;ul>
+&lt;li>カード情報を保存しないといけないので&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>エンドユーザは対象外&lt;/li>
+&lt;li>通信経路も対象
+&lt;ul>
+&lt;li>直接カード情報を取り扱わない（トークンなど）で回避可能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>12要件、約400項目&lt;/li>
+&lt;li>運用手順のドキュメントなど監査の対象になる&lt;/li>
+&lt;li>アカウント要件
+&lt;ul>
+&lt;li>パスワードが必須になっている&lt;/li>
+&lt;li>パスワードレスにしたいのに。。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>運用負荷を下げたい
+&lt;ul>
+&lt;li>インスタンスを使わない&lt;/li>
+&lt;li>コンテナをReadOnlyで使う
+&lt;ul>
+&lt;li>ログインできない＝IDパスワードが不要&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>DynamoDBを使用
+&lt;ul>
+&lt;li>RDBのID/パスワードからの開放&lt;/li>
+&lt;li>KMS, IAMで暗号化や権限管理ができる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>6gram
+&lt;ul>
+&lt;li>物理カードの重量（5g）＋1&lt;/li>
+&lt;li>満たす製品がない
+&lt;ul>
+&lt;li>なぜ
+&lt;ul>
+&lt;li>既製品はコンテナネイティブなものがない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>サービス間通信にSQSを採用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="13-f-4-若年層におけるプログラミング的思考の学びの場づくりと動機づけ">13-F-4 若年層におけるプログラミング的思考の学びの場づくりと動機づけ&lt;/h2>
+&lt;h3 id="鷲崎-弘宜早稲田大学齋藤-大輔早稲田大学坂本-一憲早稲田大学">鷲崎 弘宜[早稲田大学]/齋藤 大輔[早稲田大学]/坂本 一憲[早稲田大学]&lt;/h3>
+&lt;ul>
+&lt;li>プログラミング的思考&lt;/li>
+&lt;li>なぜ必要なのか
+&lt;ul>
+&lt;li>第４次産業革命
+&lt;ul>
+&lt;li>本質を捉えて論理的に思考し手順建てて世界を再定義する考え方と技能を&lt;/li>
+&lt;li>諸外国では始まっている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>プログラミング学習の意義
+&lt;ul>
+&lt;li>創造的思考、数学的思考、メタ認知に効果あり&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>プログラミング的思考
+&lt;ul>
+&lt;li>日常生活の問題解決にも有効&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>どのように養うか
+&lt;ul>
+&lt;li>知らない→知っている→使える→応用できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>プログラミング的思考の整理
+&lt;ul>
+&lt;li>現実の世界→モデルの世界
+&lt;ul>
+&lt;li>分解、一般化、抽象化&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>論理的推論
+&lt;ul>
+&lt;li>身近な話題で考える&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>地域におけるプログラミング学習の場の形成&lt;/li>
+&lt;li>活動テーマ：ものづくりと地域貢献
+&lt;ul>
+&lt;li>ルーブリック（Rubric）を用いた評価&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>課題
+&lt;ul>
+&lt;li>人、モノ、金&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>学びの動機づけ&lt;/li>
+&lt;li>学習効果＝教材の質×学習の量
+&lt;ul>
+&lt;li>適切な動機付けて、行動量を増やせる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>内発的動機づけ
+&lt;ul>
+&lt;li>行動自体のために行動したいと感じる意欲のこと&lt;/li>
+&lt;li>３大欲求
+&lt;ul>
+&lt;li>自立性、自己決定間：」選択肢をああ得る&lt;/li>
+&lt;li>有能勘・自己効力感：自身を与えるべき&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>報酬と動機づけの関係
+&lt;ul>
+&lt;li>統制的昨日、情報的昨日&lt;/li>
+&lt;li>２つの側面があり、使いどころに注意&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>内発的動機づけの低下（アンダーマイニング効果）
+&lt;ul>
+&lt;li>効果については論争中&lt;/li>
+&lt;li>良くない報酬の共通認識はある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>個性とやる気が出る刺激がある&lt;/li>
+&lt;/ul>
+&lt;h2 id="13-b-5-best-practices-in-implementing-container-image-promotion-pipelines--知っておくべきコンテナイメージプロモーションの方法">13-B-5 Best Practices In Implementing Container Image Promotion Pipelines -知っておくべきコンテナイメージ・プロモーションの方法&lt;/h2>
+&lt;h3 id="baruch-sadogurskyjfrog">Baruch Sadogursky[JFrog]&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://jfrog.com/shownote/developers-summit-2020/">https://jfrog.com/shownote/developers-summit-2020/&lt;/a>&lt;/li>
+&lt;li>開発と本番環境の切り替え
+&lt;ul>
+&lt;li>LABEL METADATA&lt;/li>
+&lt;li>DOCKER REPOSITORIES&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="13-e-6-なぜ技術力評価会の評価者はペアなのかー-8年半で378組の評価者ペアが835回評価した事例からみるペアの効果-ー">13-E-6 なぜ技術力評価会の評価者はペアなのか？ー 8年半で378組の評価者ペアが835回評価した事例からみるペアの効果 ー&lt;/h2>
+&lt;h3 id="小賀-昌法voyage-group">小賀 昌法[VOYAGE GROUP]&lt;/h3>
+&lt;ul>
+&lt;li>2011年以前は上長だけがする評価制度だった&lt;/li>
+&lt;li>現在はほぼすべてのエンジニアが評価に関わるように&lt;/li>
+&lt;li>エンジニア技術力評価の難しい理由
+&lt;ul>
+&lt;li>バイアス&lt;/li>
+&lt;li>技術の多様化
+&lt;ul>
+&lt;li>評価者が被評価者より詳しいとは限らない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>評価スキル向上機会の不足
+&lt;ul>
+&lt;li>1on1をやっても考え方を引き出すスキルやフィードバックのやりかた&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>同じ人が長く評価することでの方より&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>技術力評価会制度は効果が見られた&lt;/li>
+&lt;li>評価制度
+&lt;ul>
+&lt;li>誰がどのグレードかは社内に公開されている&lt;/li>
+&lt;li>上の等級に上がるには何が必要か&lt;/li>
+&lt;li>評価を通じて成長を促す&lt;/li>
+&lt;li>半年に１度実施&lt;/li>
+&lt;li>事業貢献×能力×CCFBの総合評価&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>報酬制度
+&lt;ul>
+&lt;li>報酬と評価の結びつき&lt;/li>
+&lt;li>年功序列や均等割なら評価はいらない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>技術力評価会
+&lt;ul>
+&lt;li>チームを超えた技術力評価&lt;/li>
+&lt;li>評価委員がいる&lt;/li>
+&lt;li>プレゼン30分＋質疑応答60分
+&lt;ul>
+&lt;li>プレゼンの技術で評価されないよう、質疑の時間を多くしている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>誰から評価されてるのかは対面なのでもちろんオープン&lt;/li>
+&lt;li>評価は数値ではなく文章で書く&lt;/li>
+&lt;li>評価結果も社内に公開している
+&lt;ul>
+&lt;li>８年で1050以上の蓄積&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>社外評価者&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ペアで評価することの効果
+&lt;ul>
+&lt;li>評価が難しい原因を解消&lt;/li>
+&lt;li>悪い点もある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="13-b-7-コンテナをシンプルに使おう--cloud-run-のすゝめ-2020-冬">13-B-7 コンテナをシンプルに使おう 〜 Cloud Run のすゝめ 2020 冬&lt;/h2>
+&lt;h3 id="篠原-一徳グーグルクラウドジャパン">篠原 一徳[グーグル・クラウド・ジャパン]&lt;/h3>
+&lt;ul>
+&lt;li>撮影禁止&lt;/li>
+&lt;li>開発者はK8sを直接触りたいのか？
+&lt;ul>
+&lt;li>コードを書きたいのではないか&lt;/li>
+&lt;li>k8sを使うには多数の手順が必要&lt;/li>
+&lt;li>簡単にするならサーバーレス
+&lt;ul>
+&lt;li>インフラ管理不要、古マネージドセキュリティ、使った分だけ支払い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cloud Run
+&lt;ul>
+&lt;li>Knativeベースのサーバーレスサービス&lt;/li>
+&lt;li>高速デプロイ
+&lt;ul>
+&lt;li>0スケールから数秒でURL付与まで&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>サーバーレスネイティブ&lt;/li>
+&lt;li>高いポータビリティ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>知っておいたほうが良いこと
+&lt;ul>
+&lt;li>リソースモデル
+&lt;ul>
+&lt;li>Project &amp;gt; Service &amp;gt; Revision &amp;gt; Container&lt;/li>
+&lt;li>Serviceごとにエンドポイントが発行される&lt;/li>
+&lt;li>デプロイごとにRevisionが生成される&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>コンテナに関する
+&lt;ul>
+&lt;li>タイムアウトデフォルト5分（最大15分）
+&lt;ul>
+&lt;li>長時間のバッチの利用には向かない
+&lt;ul>
+&lt;li>今後に期待&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>1vCPU、最大2vCPU
+&lt;ul>
+&lt;li>今後に期待&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>メモリ256MB、最大2GB&lt;/li>
+&lt;li>データの永続性なし
+&lt;ul>
+&lt;li>コンテナとともに消える&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>オートスケーリング
+&lt;ul>
+&lt;li>リクエスト数に応じてスケールする、最大1000&lt;/li>
+&lt;li>コンテナインスタンスが0になるまでの仕組みは非公開&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Concurrency
+&lt;ul>
+&lt;li>1コンテナインスタンスで同時に受けられるリクエスト数&lt;/li>
+&lt;li>最大80&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>課金時間
+&lt;ul>
+&lt;li>最初のリクエストが始まったところから最後のリクエストが終わったところまで&lt;/li>
+&lt;li>インスタンスの生存時間ではない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>実践的に使っていく
+&lt;ul>
+&lt;li>アクセス制御
+&lt;ul>
+&lt;li>IP制限はない&lt;/li>
+&lt;li>IAMで発行したトークンがヘッダに乗っていたら許可する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>GCPサービス関連系
+&lt;ul>
+&lt;li>サービスアカウント（アプリケーション用アカウント）を使う&lt;/li>
+&lt;li>デプロイ時にサービスアカウントを指定する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>3rdパーティサービスの利用
+&lt;ul>
+&lt;li>Secret Managerを使う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>DBとの接続
+&lt;ul>
+&lt;li>デプロイ時にDBのインスタンスIDのを指定すると、UNIX Socket経由でアクセスできる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>独自ドメインを使う
+&lt;ul>
+&lt;li>CNAMEを登録すれば独自ドメイン持ち込み可能&lt;/li>
+&lt;li>証明書はLetsEncrypt&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>トラフィックの制御
+&lt;ul>
+&lt;li>Update traffic昨日でBlue/Greenデプロイやカナリアリリースが可能&lt;/li>
+&lt;li>リビジョンを指定する
+&lt;ul>
+&lt;li>今日GA&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>コンテナインスタンスが増えすぎないようにする
+&lt;ul>
+&lt;li>Max instancesを指定する
+&lt;ul>
+&lt;li>DBコネクション枯渇対策&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cold Start対応
+&lt;ul>
+&lt;li>Minimum instancesで常時起動コンテナ数を指定できる
+&lt;ul>
+&lt;li>アルファ機能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ビルドデプロイの自動化
+&lt;ul>
+&lt;li>Cloud Buildを使う&lt;/li>
+&lt;li>kanikoを使うと、artifactのキャッシュをしてくれるのでおすすめ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="13-f-8-あのイベントの裏側が知れるカンファレンス運営者lt">13-F-8 あのイベントの裏側が知れる！？カンファレンス運営者LT&lt;/h2>
+&lt;h3 id="西馬-一郎backlog-world島根-義和jasst-tokyo岸川-孝明jaws-days高橋-慎一明日の開発カンファレンス谷本-心jjug-ccc細澤-あゆみxp祭り柏岡-秀男phpカンファレンス司会鍋島-英莉翔泳社">西馬 一郎[Backlog World]/島根 義和[JaSST Tokyo]/岸川 孝明[JAWS DAYS]/高橋 慎一[明日の開発カンファレンス]/谷本 心[JJUG CCC]/細澤 あゆみ[XP祭り]/柏岡 秀男[PHPカンファレンス]/【司会】鍋島 英莉[翔泳社]&lt;/h3>
+&lt;ul>
+&lt;li>Backlog World 2020でともに学びましょう&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>2/29 大崎&lt;/li>
+&lt;li>DevRelCon Tokyo、技術書典と同日&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>
+&lt;p>JaSST Tokyo実行委員のお仕事&lt;/p></description></item><item><title>NTT Tech Conference #4</title><link>https://umemak.github.io/blog/posts/2020/01/31_ntt_tech_conf_4/</link><pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/01/31_ntt_tech_conf_4/</guid><description>&lt;p>&lt;a href="https://ntt-techconf.connpass.com/event/161866/">https://ntt-techconf.connpass.com/event/161866/&lt;/a>&lt;/p>
+&lt;p>NTTグループのエンジニア有志が主催するカンファレンスイベントの4回目とのこと。
+初参加です。&lt;/p>
+&lt;h2 id="opening-keynote">Opening Keynote&lt;/h2>
+&lt;ul>
+&lt;li>参加者の半数がNTTグループ
+&lt;ul>
+&lt;li>NTTグループは919社もある&lt;/li>
+&lt;li>30万人いるのでグループと言ってもでかすぎる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>エンジニアの有志が主催しています&lt;/li>
+&lt;li>前回から1年半
+&lt;ul>
+&lt;li>退職エントリとか押しかけラグビーとか色々炎上していたので自粛していた&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="kubernetes基礎">Kubernetes基礎&lt;/h2>
+&lt;h3 id="吉村-翔太">吉村 翔太&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/yosshi_/kubernetesfalseji-chu">https://speakerdeck.com/yosshi_/kubernetesfalseji-chu&lt;/a>&lt;/li>
+&lt;li>基本的なリソースを理解する&lt;/li>
+&lt;li>全体像
+&lt;ul>
+&lt;li>masterのAPIサーバーを経由して動いている
+&lt;ul>
+&lt;li>状態はetcd&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>master&lt;/li>
+&lt;li>node
+&lt;ul>
+&lt;li>Container runtime&lt;/li>
+&lt;li>Kubeket&lt;/li>
+&lt;li>Kube-proxy&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>etcd&lt;/li>
+&lt;li>kubectl&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>MasterとControl Plane cmponentsのち外
+&lt;ul>
+&lt;li>Master + Kubelet + Kube-proxy = Control Plane&lt;/li>
+&lt;li>ドキュメントによって表現に揺れがある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>etcsに行かない例外もある
+&lt;ul>
+&lt;li>4パターン&lt;/li>
+&lt;li>/proxy, /exec, /attach, /logs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>マネージドで使うなら、kubectlとコンテナだけ使えれば良いことが多い
+&lt;ul>
+&lt;li>オンプレでやるなら全部理解しないと辛い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Workload
+&lt;ul>
+&lt;li>Pod
+&lt;ul>
+&lt;li>コンテナのデプロイの最小単位&lt;/li>
+&lt;li>複数コンテナをまとめたもの&lt;/li>
+&lt;li>メインのコンテナ＋サイドカーみたいな構成&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ReplicaSet
+&lt;ul>
+&lt;li>Podの数を維持するためのリソース&lt;/li>
+&lt;li>Podのラベルで認識する
+&lt;ul>
+&lt;li>ラベルの付け方に注意する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>selectorとtemplateのラベルは基本的に同じ。歴史的経緯で冗長になっている。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Deployment(deploy)
+&lt;ul>
+&lt;li>ReplicaSetを管理するリソース&lt;/li>
+&lt;li>RollingUpdateに使う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Configuration
+&lt;ul>
+&lt;li>Configmap
+&lt;ul>
+&lt;li>設定情報を保存するリソース&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Secret
+&lt;ul>
+&lt;li>opaque
+&lt;ul>
+&lt;li>使い方はConfigmapと同じ&lt;/li>
+&lt;li>エンコードされている&lt;/li>
+&lt;li>configmapと権限を分けて管理するのが良い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Discovery &amp;amp; LB
+&lt;ul>
+&lt;li>ClusterIP
+&lt;ul>
+&lt;li>クラスタ内のアクセスを保証する&lt;/li>
+&lt;li>これもラベルで宛先を認識する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>NodePort
+&lt;ul>
+&lt;li>クラスタ外からポート指定でアクセスする&lt;/li>
+&lt;li>ノード内に同じラベルのPodが複数あったら、どこに行くかはランダム&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Metadata
+&lt;ul>
+&lt;li>Namespace
+&lt;ul>
+&lt;li>1つのクラスタを仮想クラスタにわかる&lt;/li>
+&lt;li>障害の影響範囲でどう分けるか考える
+&lt;ul>
+&lt;li>開発環境ならNamespace、本番環境はクラスタとか&lt;/li>
+&lt;li>クラスタ分けると管理コストが上がる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1870件以上のカーネルの不具合修正に貢献した再現用プログラムを自動生成する試験自動化技術">1870件以上のカーネルの不具合修正に貢献した再現用プログラムを自動生成する試験自動化技術&lt;/h2>
+&lt;h3 id="藤井-秀行">藤井 秀行&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.slideshare.net/nttdata-tech/syzkaller-linux-kerneltestingnttdata">https://www.slideshare.net/nttdata-tech/syzkaller-linux-kerneltestingnttdata&lt;/a>&lt;/li>
+&lt;li>GoogleのDmitry Vykovが開発したsyzkaller（シスコーラー）
+&lt;ul>
+&lt;li>Go言語&lt;/li>
+&lt;li>Googleとしては非公式&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ファジング
+&lt;ul>
+&lt;li>未知の不具合や脆弱性の検出に適したテスト手法&lt;/li>
+&lt;li>Linuxのセキュリティ品質向上に貢献&lt;/li>
+&lt;li>リリース前にセキュリティ脆弱性が修正されるようになりCVEが現象してきている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ドキュメント調査
+&lt;ul>
+&lt;li>入力データの生成の仕組みが肝&lt;/li>
+&lt;li>ソースカバレッジも気にする&lt;/li>
+&lt;li>カーネルの入力インターフェースはシステムコール&lt;/li>
+&lt;li>syz_manager
+&lt;ul>
+&lt;li>仮想化ホスト上に存在するプロセス&lt;/li>
+&lt;li>syz-fuzzerに指示を行う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>workdir
+&lt;ul>
+&lt;li>入出力ファイルを置く&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>syz_fuzzer
+&lt;ul>
+&lt;li>試験環境内に存在するプロセス&lt;/li>
+&lt;li>syz_executorを生成&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>syz_eecutor
+&lt;ul>
+&lt;li>システムコールを送る&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>動作確認
+&lt;ul>
+&lt;li>20分くらいで見つかった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>試すなら私物PC、私物ネットワークでやる。絶対。&lt;/li>
+&lt;/ul>
+&lt;h2 id="coffee-break">Coffee Break&lt;/h2>
+&lt;ul>
+&lt;li>Showcaseで「技術系業務自動化のエンジン展示」の説明を聞きました。
+&lt;ul>
+&lt;li>TSVを入力として、コマンドを実行する&lt;/li>
+&lt;li>sshとかtelnetとかブラウザとか操作できる&lt;/li>
+&lt;li>これを横連携させて実行できるのは（開発開始した当時は）あまりなかった&lt;/li>
+&lt;li>OSSとして公開したいが、まだ調整中。&lt;/li>
+&lt;li>公開されたら試してみたいと思います。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="react-hooksとgraphqlで社内レガシーサービス巻き取ってみたらものすごくはかどった話">React HooksとGraphQLで社内レガシーサービス巻き取ってみたらものすごくはかどった話&lt;/h2>
+&lt;h3 id="奥井-寛樹">奥井 寛樹&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/hrk091/react-hookstographqldeshe-nei-regasisabisuwojuan-kiqu-tutemitaramofalsesugokuhakadotutahua-153983bf-84bd-4be7-83c4-c8fa826db79e">https://speakerdeck.com/hrk091/react-hookstographqldeshe-nei-regasisabisuwojuan-kiqu-tutemitaramofalsesugokuhakadotutahua-153983bf-84bd-4be7-83c4-c8fa826db79e&lt;/a>&lt;/li>
+&lt;li>フロントエンド＋BFFの話&lt;/li>
+&lt;li>うまく行った理由
+&lt;ul>
+&lt;li>フレームワークによる抽象化がうまく、ユースケースにフォーカスした開発ができた&lt;/li>
+&lt;li>GraphQLエコシステムが充実していた&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>React Hooks
+&lt;ul>
+&lt;li>React FCでStateを扱えるようにするフレームワーク&lt;/li>
+&lt;li>React lifecycle eventを意識しなくて良くなる&lt;/li>
+&lt;li>Context APIの使い勝手が向上&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>GraphQL
+&lt;ul>
+&lt;li>APIプロトコル&lt;/li>
+&lt;li>RESTより柔軟&lt;/li>
+&lt;li>クライアント側でレスポンスを定義できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Graphene
+&lt;ul>
+&lt;li>PythonのGraphQLフレームワーク&lt;/li>
+&lt;li>ORMモデル定義からAPIを自動生成してくれる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Apollo
+&lt;ul>
+&lt;li>GraphQLのライブラリ&lt;/li>
+&lt;li>バックエンドとフロントエンドクライアントを提供&lt;/li>
+&lt;li>Reactに標準対応している&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>漸近的型付け
+&lt;ul>
+&lt;li>動的型付け言語に後で型をつけること&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="海外講演を通じて得られた知見英語力α編">海外講演を通じて得られた知見(英語力＋α編)&lt;/h2>
+&lt;h3 id="神原-健一">神原 健一&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/korodroid/ntt-tech-conference-hai-wai-jiang-yan-wotong-zitede-raretazhi-jian-ying-yu-li-abian">https://speakerdeck.com/korodroid/ntt-tech-conference-hai-wai-jiang-yan-wotong-zitede-raretazhi-jian-ying-yu-li-abian&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/korodroid/items/bf029f7aad896731771a">https://qiita.com/korodroid/items/bf029f7aad896731771a&lt;/a>&lt;/li>
+&lt;li>英語を学ぶ目的を具体的に描く
+&lt;ul>
+&lt;li>海外カンファレンスで講演する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>skills
+&lt;ul>
+&lt;li>reading, listening, writing, speaking&lt;/li>
+&lt;li>自分のレベルの把握&lt;/li>
+&lt;li>どのスキルをどのくらいにしたいのか&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>先人に学ぶ
+&lt;ul>
+&lt;li>SlideShare, Speaker Deck&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>登壇→フィードバック→次回への反映のループ
+&lt;ul>
+&lt;li>習うより慣れろ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>頭の中にある考えをリアルタイムに英語で話す
+&lt;ul>
+&lt;li>Cheat Strategy
+&lt;ul>
+&lt;li>スライドのノートにセリフを全部書く&lt;/li>
+&lt;li>→会場を見ないで読むだけになってしまった。失敗。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>自身を持って自分の言葉で話すことが大事&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>tips for communications
+&lt;ul>
+&lt;li>自分から話しかける&lt;/li>
+&lt;li>お互いの作品を見せ合う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>英語の教材の選び方
+&lt;ul>
+&lt;li>（自分の目的とレベルに合わせて選ぶしか）ない&lt;/li>
+&lt;li>ノンネイティブ英語の練習
+&lt;ul>
+&lt;li>ノンネイティブスピーカーのセッション動画&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ネイティブ英語の練習
+&lt;ul>
+&lt;li>TOEIC公式問題集&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>英語の「音」の聞き分け
+&lt;ul>
+&lt;li>英語耳&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>オンライン英会話
+&lt;ul>
+&lt;li>体験レッスンやってみると良い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>英語を話す機会を増やす
+&lt;ul>
+&lt;li>面倒なことこそ、修行のチャンス&lt;/li>
+&lt;li>知識＜＜＜実践&lt;/li>
+&lt;li>ビジネスだけではなくプライベートでも&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="パワポをよくしただけなのにデザインの力で会社に貢献するチームの紹介">パワポをよくしただけなのに〜デザインの力で会社に貢献するチームの紹介&lt;/h2>
+&lt;h3 id="鈴木-雅貴">鈴木 雅貴&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.slideshare.net/suzukima/ss-226433621">https://www.slideshare.net/suzukima/ss-226433621&lt;/a>&lt;/li>
+&lt;li>2つのデザイン支援チームができてしまった
+&lt;ul>
+&lt;li>統合した&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>製品の価値・魅力向上&lt;/li>
+&lt;li>社外のデザイナーと比較して気軽に依頼できる&lt;/li>
+&lt;li>デザインサポーター制度&lt;/li>
+&lt;/ul>
+&lt;h2 id="アジャイル開発手法における監視システム開発効率化の取り組み">アジャイル開発手法における監視システム開発効率化の取り組み&lt;/h2>
+&lt;h3 id="石田-瑛一">石田 瑛一&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://drive.google.com/file/d/1imNXoqfQAbBGUDH1Y45fn1sVb1rgHjW6/view">https://drive.google.com/file/d/1imNXoqfQAbBGUDH1Y45fn1sVb1rgHjW6/view&lt;/a>&lt;/li>
+&lt;li>デプロイ作業の効率化が必要
+&lt;ul>
+&lt;li>手順書でやってた&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ansible、Gitlab CI/CD
+&lt;ul>
+&lt;li>安定するまで2ヶ月くらいかかった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="スタートアップチームで学んだエンジニアの心構え">スタートアップチームで学んだエンジニアの心構え&lt;/h2>
+&lt;h3 id="松木-久幸">松木 久幸&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/matsu0228/the-attitude-of-the-engineer-who-learned-from-the-start-up-team">https://speakerdeck.com/matsu0228/the-attitude-of-the-engineer-who-learned-from-the-start-up-team&lt;/a>&lt;/li>
+&lt;li>開発で一番難しいのは何を作るか決めること
+&lt;ul>
+&lt;li>詳細まで認識を合わせる&lt;/li>
+&lt;li>正解は誰にも判断できない
+&lt;ul>
+&lt;li>常に変化が求められる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>価値向上のために「発散」も必要&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>仕事を楽しむこと
+&lt;ul>
+&lt;li>メンバーが主体的になるためにも、承認欲求を満たすことが大切&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="nttデータのトップ技術者育成技統本塾のご紹介">NTTデータのトップ技術者育成！「技統本塾」のご紹介&lt;/h2>
+&lt;h3 id="小泉-鉄之祐">小泉 鉄之祐&lt;/h3>
+&lt;ul>
+&lt;li>技術革新統括本部&lt;/li>
+&lt;/ul>
+&lt;h2 id="amazon-eks上でのvnf開発奮闘記">Amazon EKS上でのVNF開発奮闘記&lt;/h2>
+&lt;h3 id="篠原-健太">篠原 健太&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/sinohara/amazon-eksshang-defalsevnfkai-fa-fen-dou-ji">https://speakerdeck.com/sinohara/amazon-eksshang-defalsevnfkai-fa-fen-dou-ji&lt;/a>&lt;/li>
+&lt;li>ネットワークの仮想化&lt;/li>
+&lt;li>閉域NW構築
+&lt;ul>
+&lt;li>AWSを閉域として構築できるか？&lt;/li>
+&lt;li>サブネットを分けて構築する&lt;/li>
+&lt;li>EKS v1.13から対応&lt;/li>
+&lt;li>マネージドのLBが外向きの通信に課題があったのでnginxを立てた&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="cisco-ルータのログを-stackdriver-に送って可視化してみた">Cisco ルータのログを Stackdriver に送って可視化してみた&lt;/h2>
+&lt;h3 id="田島-照久">田島 照久&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/tjmtrhs/cisco-rutafalseroguwo-stackdriver-nisong-tuteke-shi-hua-sitemita">https://speakerdeck.com/tjmtrhs/cisco-rutafalseroguwo-stackdriver-nisong-tuteke-shi-hua-sitemita&lt;/a>&lt;/li>
+&lt;li>ログ基盤を作りたいわけではなく、可視化したログを見たいだけ&lt;/li>
+&lt;li>stackdriverは外部のsyslogを直接受信できない
+&lt;ul>
+&lt;li>ルーターで処理すれば良い&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ciscoのルーターで、Pythonが動かせる機種がある&lt;/li>
+&lt;/ul>
+&lt;h2 id="closing-keynote">Closing Keynote&lt;/h2>
+&lt;ul>
+&lt;li>151/180人参加（速報値）&lt;/li>
+&lt;li>15人#1〜#4までに登壇した退職者&lt;/li>
+&lt;li>もっと面白いエンジニアになる&lt;/li>
+&lt;/ul></description></item><item><title>DOCOMO Open House 2020 day2</title><link>https://umemak.github.io/blog/posts/2020/01/24_docomo_openhouse/</link><pubDate>Fri, 24 Jan 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/01/24_docomo_openhouse/</guid><description>&lt;p>&lt;a href="http://docomo-rd-openhouse.jp/2020/">http://docomo-rd-openhouse.jp/2020/&lt;/a>&lt;/p>
+&lt;p>昨日に引き続き、来ました。
+昨日より人が多い印象。&lt;/p>
+&lt;h2 id="特別講演-5g時代の幕開けとサスティナブルな社会の実現">[特別講演] 5G時代の幕開けとサスティナブルな社会の実現&lt;/h2>
+&lt;h3 id="株nttドコモ-取締役常務執行役員-rdイノベーション本部長-中村-寛">(株)NTTドコモ 取締役常務執行役員 R&amp;amp;Dイノベーション本部長 中村 寛&lt;/h3>
+&lt;ul>
+&lt;li>18の未来&lt;/li>
+&lt;li>5G, AI, デバイスの進化&lt;/li>
+&lt;li>この先の10年の展望&lt;/li>
+&lt;li>5Gプレサービス
+&lt;ul>
+&lt;li>まだ端末が販売されていないので、プレという位置づけ
+&lt;ul>
+&lt;li>イベントなどではドコモが貸出している&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>春、商用スタート&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>通信基盤（1G〜2G）、生活基盤（2G〜4G）から社会基盤（5G）へ&lt;/li>
+&lt;li>5Gを軸としたパートナーとの共創
+&lt;ul>
+&lt;li>3200を超える企業、団体が参画&lt;/li>
+&lt;li>様々な業界&lt;/li>
+&lt;li>業界を超えた価値共創&lt;/li>
+&lt;li>事例
+&lt;ul>
+&lt;li>スポーツ/ライブ観戦&lt;/li>
+&lt;li>ゲーム/eスポーツ&lt;/li>
+&lt;li>観光&lt;/li>
+&lt;li>TV番組制作の作業効率化
+&lt;ul>
+&lt;li>ケーブル取り回し・敷設が不要になる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>工場内
+&lt;ul>
+&lt;li>多品種少量生産への対応
+&lt;ul>
+&lt;li>レイアウトフリー生産ライン&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>熟練工不足への対応
+&lt;ul>
+&lt;li>AI/IoTによるリアルタイムコーチング&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ネットワークの進化
+&lt;ul>
+&lt;li>トラフィックのスパイク&lt;/li>
+&lt;li>セキュリティ&lt;/li>
+&lt;li>いままではE2Eで最適化されたネットワーク&lt;/li>
+&lt;li>仮想化&lt;/li>
+&lt;li>可搬基地局&lt;/li>
+&lt;li>O-RAN, MEC, 5GC&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ドコモオープンイノベーションクラウド&lt;/li>
+&lt;li>6Gに向けたホワイトペーパーを公開（2020/1/22）&lt;/li>
+&lt;li>4Gと5Gの比較
+&lt;ul>
+&lt;li>5Gの特徴&lt;/li>
+&lt;li>4Gと5Gの連携
+&lt;ul>
+&lt;li>スムーズなマイグレーションができるよう設計されている&lt;/li>
+&lt;li>LTEからLTEアドバンスドへの移行のときもそうだった&lt;/li>
+&lt;li>4Gネットワークでもできることはある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>デバイスの進化
+&lt;ul>
+&lt;li>電話の進化（〜2G）、情報ツールの進化（〜4G）、ユーザー体験の進化（5G〜）&lt;/li>
+&lt;li>まだ発展の余地がある
+&lt;ul>
+&lt;li>操作の制約、画面サイズの制約&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>マイネットワーク構想
+&lt;ul>
+&lt;li>スマホのみでは不便なところをサポートするデバイス
+&lt;ul>
+&lt;li>スマートグラス、VR、フレキシブルディスプレイ&lt;/li>
+&lt;li>Magic Leap社と連携&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>AIの進化
+&lt;ul>
+&lt;li>環境が整った（第3次ブーム）&lt;/li>
+&lt;li>AIの意義
+&lt;ul>
+&lt;li>AIを個人に活かす
+&lt;ul>
+&lt;li>翻訳の高度化
+&lt;ul>
+&lt;li>Mirai Translator
+&lt;ul>
+&lt;li>2年前はTOEICで700点くらいを目指していた。現在は960点いける。
+&lt;ul>
+&lt;li>プロの翻訳家なみ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>話し言葉のリアルタイム翻訳
+&lt;ul>
+&lt;li>実用的なレベルになってきている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>AIを社会・産業に活かす
+&lt;ul>
+&lt;li>ネットワークの品質向上
+&lt;ul>
+&lt;li>最適なエリアの自動設計&lt;/li>
+&lt;li>サイレント故障の検知&lt;/li>
+&lt;li>ユーザー申告要因解析&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>AI会議室管理
+&lt;ul>
+&lt;li>利用データを解析して未来の利用を予測する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ドコモのAIの強み
+&lt;ul>
+&lt;li>活用ノウハウ、データサイエンティスト、ビッグデータ&lt;/li>
+&lt;li>KDD CUP 2019で世界一位&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>サステイナブルな社会の実現に向けて
+&lt;ul>
+&lt;li>サイバーとフィジカルの融合&lt;/li>
+&lt;li>実世界の人・モノ・コトを情報化し、未来を予測して、実世界を最適化&lt;/li>
+&lt;li>90年代のユビキタスコンピューティングの概念から&lt;/li>
+&lt;li>通信インフラやコンピューティング、AIなど環境が整って、実現の可能性が見えてきた&lt;/li>
+&lt;li>提供価値
+&lt;ul>
+&lt;li>交通
+&lt;ul>
+&lt;li>現在：スマホやカーナビで渋滞情報がわかる
+&lt;ul>
+&lt;li>最短ルートを示してくれるが、渋滞自体の解消はしてくれない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>未来：車両の走行状況や目的地、周辺道路状況などを情報化し、交通を制御
+&lt;ul>
+&lt;li>信号のコントロールも考えられる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>農業
+&lt;ul>
+&lt;li>現在：労働集約多々産業であり、従事者のノウハウで成立している
+&lt;ul>
+&lt;li>産業の効率化と後継者不足&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>未来：&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>融合の要諦（ようてい）
+&lt;ul>
+&lt;li>人モノコトの情報化：デバイス&lt;/li>
+&lt;li>データ取得と蓄積：AI&lt;/li>
+&lt;li>未来予測地の発見：AI&lt;/li>
+&lt;li>アクチュエイト：デバイス&lt;/li>
+&lt;li>のループを回す&lt;/li>
+&lt;li>AIとデバイスは5Gで接続&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="招待講演-ラグビーから学ぶ組織づくりと技術進化に伴う-スポーツの未来について">[招待講演] ラグビーから学ぶ組織づくりと技術進化に伴う スポーツの未来について&lt;/h2>
+&lt;h3 id="元ラグビー日本代表-神戸製鋼コベルコスティーラーズ-アンバサダー-大畑-大介">元ラグビー日本代表 神戸製鋼コベルコスティーラーズ アンバサダー 大畑 大介&lt;/h3>
+&lt;ul>
+&lt;li>今回の大会を振り返って
+&lt;ul>
+&lt;li>選手たちのハードワーク&lt;/li>
+&lt;li>明確な目標のイメージ&lt;/li>
+&lt;li>年間240日一緒に生活&lt;/li>
+&lt;li>一緒に過ごした時間が長い&lt;/li>
+&lt;li>それぞれの役割が適材適所に与えられた
+&lt;ul>
+&lt;li>個々ができることを同じベクトルを向いて全力で取り組む&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>アイルランド戦の前半最後スクラムで押し込んだ場面
+&lt;ul>
+&lt;li>軸になるものをしっかり作った&lt;/li>
+&lt;li>体格だけではなく、技術を高めた&lt;/li>
+&lt;li>足の向きなど細かいところまでこだわる&lt;/li>
+&lt;li>精神的に優位に立てた&lt;/li>
+&lt;li>精神論だけではない
+&lt;ul>
+&lt;li>データも活用&lt;/li>
+&lt;li>レフェリーの癖も分析して対策する
+&lt;ul>
+&lt;li>トップのレフェリーほど基準がブレない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>15人の個性をまとめ上げる
+&lt;ul>
+&lt;li>ジャッジを下す人がどこに向かっているのかを明確に示す&lt;/li>
+&lt;li>各自がどこにいてどこに向かっているのかを意識する&lt;/li>
+&lt;li>しっかりした方向性、目標&lt;/li>
+&lt;li>目標の道中での評価
+&lt;ul>
+&lt;li>適切に軌道修正も行う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>権限を預ける
+&lt;ul>
+&lt;li>個々人がそれぞれ考えて動く&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>30年くらい前の大学ラグビーとの比較
+&lt;ul>
+&lt;li>ラグビーは進化している
+&lt;ul>
+&lt;li>ルールも変わる
+&lt;ul>
+&lt;li>昔はトライは0点だった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>前に送るにはキックが手っ取り早いが、ボールが相手に渡ってしまう
+&lt;ul>
+&lt;li>キックの技術の向上&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ある程度行き着いた先に何があるかを考える&lt;/li>
+&lt;li>指導する立場でも自分が覚えた頃のことが通用しなくなる
+&lt;ul>
+&lt;li>押し付けでは伝わらない&lt;/li>
+&lt;li>自分の中で思い描き、伝える&lt;/li>
+&lt;li>トップの言葉の説得力&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>データ取りの方法
+&lt;ul>
+&lt;li>5G時代どうなる&lt;/li>
+&lt;li>GPSや心拍数の例&lt;/li>
+&lt;li>選手の負担が減る&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>観戦体験
+&lt;ul>
+&lt;li>試合会場で見るよりわかりやすい&lt;/li>
+&lt;li>臨場感は負ける&lt;/li>
+&lt;li>マルチアングル視聴
+&lt;ul>
+&lt;li>8系統&lt;/li>
+&lt;li>解説者には最適&lt;/li>
+&lt;li>それぞれが好きな場面を見れる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>スタッツの活用&lt;/li>
+&lt;li>レフェリーの技術向上&lt;/li>
+&lt;li>レフェリーカメラで技術伝承&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>スクラムの衝撃
+&lt;ul>
+&lt;li>スクラムの中も見れるようになる？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>個人の人気から競技の人気へ&lt;/li>
+&lt;li>サッカーとラグビー&lt;/li>
+&lt;li>ラグビーの良さ
+&lt;ul>
+&lt;li>自己犠牲のスポーツ&lt;/li>
+&lt;li>人間関係&lt;/li>
+&lt;li>チーム（組織）に対して不利益なことをしてはいけない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>2023フランスWC
+&lt;ul>
+&lt;li>自国アドバンテージのない中でどう戦うか&lt;/li>
+&lt;li>ランキング8以内に入れるかが重要
+&lt;ul>
+&lt;li>予選のグループ分けに影響する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="パートナー講演-5gevolution--6gパネルセッション5gの発展とその先の未来">[パートナー講演] 5GEvolution &amp;amp; 6Gパネルセッション：「5Gの発展とその先の未来」&lt;/h2>
+&lt;h3 id="株nttドコモ-執行役員5gイノベーション推進室長-中村-武宏-ericssonnokianvidia">(株)NTTドコモ 執行役員　5Gイノベーション推進室長 中村 武宏 Ericsson,Nokia,Nvidia&lt;/h3>
+&lt;ul>
+&lt;li>結構ゆっくり喋ってくれたので、比較的聞き取りやすい英語だったけれど、知らない単語が多くて理解できないところが多かった。&lt;/li>
+&lt;li>以下はスライドからのメモ。書き写すのが間に合わなくて足りないところ多数。&lt;/li>
+&lt;li>Dr.Erik Dahlman
+&lt;ul>
+&lt;li>6 pillars for 6G&lt;/li>
+&lt;li>Journey towards 6G
+&lt;ul>
+&lt;li>Connectivity everywhere&lt;/li>
+&lt;li>Joint communication and sensig&lt;/li>
+&lt;li>Zero-cost, zero-energy devices&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Some key technology components
+&lt;ul>
+&lt;li>Further spectrum extension
+&lt;ul>
+&lt;li>Entering the THz range&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>AI&lt;/li>
+&lt;li>New ways for connectivity
+&lt;ul>
+&lt;li>Evolved IAB, D2D, non-terrestrial components, &amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Dr.Amitava Ghosh
+&lt;ul>
+&lt;li>6G
+&lt;ul>
+&lt;li>RF Sensing 100 Gbits/sec @ short range, Gboos @ high speed&lt;/li>
+&lt;li>Industrial IoT optimezed&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Six questions
+&lt;ul>
+&lt;li>most important net technologies&lt;/li>
+&lt;li>primary use cases&lt;/li>
+&lt;li>most important KPIs&lt;/li>
+&lt;li>serve limitations of 5G&lt;/li>
+&lt;li>flexivility and scalabilyty&lt;/li>
+&lt;li>backwards compatible&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Mr.Masataka Osaki
+&lt;ul>
+&lt;li>3 REVOLUTIONS SHAPPENNING
+&lt;ul>
+&lt;li>IoT&lt;/li>
+&lt;li>5G&lt;/li>
+&lt;li>AI&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Questions
+&lt;ul>
+&lt;li>Typical use cases in 2020s and 2030s, respectively?&lt;/li>
+&lt;li>Definition of 6G&lt;/li>
+&lt;li>Key requirements for 6GG&lt;/li>
+&lt;li>Major technologies for 5G evolution and 6G&lt;/li>
+&lt;li>Role of AI for 5G evolution and 6G&lt;/li>
+&lt;li>Time schedule for 6G&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="オープンセミナー-無人販売機とドコモ会員基盤を使った購買データ分析について">[オープンセミナー] 無人販売機とドコモ会員基盤を使った購買データ分析について&lt;/h2>
+&lt;ul>
+&lt;li>無人システム販売のトレンド
+&lt;ul>
+&lt;li>RFIDから画像認識に&lt;/li>
+&lt;li>キャッシュレスが追い風に&lt;/li>
+&lt;li>店舗対象が激増したが、ほとんどが実験段階もしくは実装店舗&lt;/li>
+&lt;li>自販機が復権
+&lt;figure>&lt;img src="../IMG_20200124_121338.jpg">
+ &lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>無人販売の限界
+&lt;ul>
+&lt;li>日本の小売業界の諸問題
+&lt;ul>
+&lt;li>ロジスティック&lt;/li>
+&lt;li>年間商品点数の多さ&lt;/li>
+&lt;li>各種法規制など&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>システムだけではなく「運用をどう回すか」が重要&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ドコモは昔から自販機ビジネスをやっていた&lt;/li>
+&lt;li>社内で実証実験中
+&lt;figure>&lt;img src="../IMG_20200124_122002.jpg">
+ &lt;/figure>
+
+&lt;ul>
+&lt;li>専用アプリでQRコードを読み込んで認証＆自販機のドアロック解除&lt;/li>
+&lt;li>商品を取り出す&lt;/li>
+&lt;li>ドアを閉めると決済が走る&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>商用化に向けた検討
+&lt;ul>
+&lt;li>必要機能の洗い出し&lt;/li>
+&lt;li>運用上の課題抽出&lt;/li>
+&lt;li>データ分析手法の開発&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>購買データ分析の世代
+&lt;ul>
+&lt;li>伝票からPOS、個人IDへ&lt;/li>
+&lt;li>企業目線から消費者目線での分析に変化していっている&lt;/li>
+&lt;li>匿名ではあるが、実際に存在する人間の購買データが分析できる
+&lt;figure>&lt;img src="../IMG_20200124_122517.jpg">
+ &lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>プラットフォーム化がもたらすもの
+&lt;ul>
+&lt;li>顧客像&lt;/li>
+&lt;li>行動特性&lt;/li>
+&lt;li>異業種のデータ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>活用アイデア
+&lt;ul>
+&lt;li>業界をまたがったクラスタによる商品レコメンド&lt;/li>
+&lt;li>健康管理サービスとの連携&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="オープンセミナー-ivaintelligent-video-analyticsエッジaiプラットフォーム-iot-with-ai時代を支えるエコシステム構築に向けて">[オープンセミナー] IVA（Intelligent Video Analytics）エッジAIプラットフォーム 〜IoT with AI時代を支えるエコシステム構築に向けて〜&lt;/h2>
+&lt;ul>
+&lt;li>IoTの普及でセンサーやカメラなどのエッジデバイスから大量のデータが発生
+&lt;ul>
+&lt;li>データトラフィック予想、2022年には25EB/Month&lt;/li>
+&lt;li>クラウドだけで処理しきれないならばデータ生成場所（エッジ）で処理する
+&lt;figure>&lt;img src="../IMG_20200124_141251.jpg">
+ &lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>IoTにおいて映像解析がフィ津用となるユースケースは多い
+&lt;ul>
+&lt;li>セキュリティ
+&lt;ul>
+&lt;li>顔認証、人物検知、不信物検出&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>スマートシティ／ビルディング
+&lt;ul>
+&lt;li>人流計測、入隊管理、火災検知&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>交通
+&lt;ul>
+&lt;li>交通量計測、車種認識、ナンバープレート認識&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>建設
+&lt;ul>
+&lt;li>稼働監視、動線分析、危険検知&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>工場
+&lt;ul>
+&lt;li>製品検査、行動・動線分析、在庫監視&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>物流
+&lt;ul>
+&lt;li>車両検知、動線分析、倉庫監視&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>広告／マーケティング
+&lt;ul>
+&lt;li>人数計測、滞留検知、人物属性認識&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>小売
+&lt;ul>
+&lt;li>人数計測、顔認証、万引検知&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>AIソリューション導入の課題
+&lt;ul>
+&lt;li>利用者側
+&lt;ul>
+&lt;li>システム基板への高額な投資&lt;/li>
+&lt;li>AIソリューション選定の難しさ&lt;/li>
+&lt;li>運用・維持の煩雑さ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>AIアルゴリズムメーカー側
+&lt;ul>
+&lt;li>設定やチューニング作業の現場実施が困難&lt;/li>
+&lt;li>設置作業者と設定技術者がほとんどの場合異なるため、設置現場での共同作業は非現実的&lt;/li>
+&lt;li>設置後も微調整が必要&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>エッジAIプラットフォームでAI流通エコシステムを構築
+&lt;figure>&lt;img src="../IMG_20200124_141652_MP.jpg">
+ &lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="オープンセミナー-電池で10年動く省電力lte端末開発の取り組み">[オープンセミナー] 電池で10年動く！省電力LTE端末開発の取り組み&lt;/h2>
+&lt;ul>
+&lt;li>昨日と同じ内容でした&lt;/li>
+&lt;/ul>
+&lt;h2 id="オープンセミナー-ドコモオープンイノベーションクラウドのご紹介">[オープンセミナー] ドコモオープンイノベーションクラウドのご紹介&lt;/h2>
+&lt;ul>
+&lt;li>5G実現に向けたロードマップ
+&lt;ul>
+&lt;li>2019年9月20日：プレサービス開始&lt;/li>
+&lt;li>2020年春：商用サービス開始&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>DOCOMO 5G Open Partner Program
+&lt;ul>
+&lt;li>2018年2月：プログラム提供開始&lt;/li>
+&lt;li>約3200団体・企業が参加&lt;/li>
+&lt;li>263件の5Gトライアル実施&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ドコモオープンイノベーションクラウド
+&lt;ul>
+&lt;li>ドコモ網との直結により伝送遅延の低減を実現するMEC（Multi-access Edge Computing）
+&lt;ul>
+&lt;li>通信のリアルタイム性&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>閉域での提供
+&lt;ul>
+&lt;li>セキュリティ担保&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="会場散策">会場散策&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>オリンピックのトーチ
+&lt;figure>&lt;img src="../IMG_20200124_101917_MP.jpg">
+ &lt;/figure>
+&lt;/p></description></item><item><title>DOCOMO Open House 2020 day1</title><link>https://umemak.github.io/blog/posts/2020/01/23_docomo_openhouse/</link><pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/01/23_docomo_openhouse/</guid><description>&lt;p>&lt;a href="http://docomo-rd-openhouse.jp/2020/">http://docomo-rd-openhouse.jp/2020/&lt;/a>&lt;/p>
+&lt;p>まさかビッグサイトが2箇所あるとは知らず、東京ビッグサイト駅で降りてどこで開催されているかわからず、そしてここじゃないということに気づいた。
+&lt;figure>&lt;img src="../IMG_20200123_100822.jpg">
+&lt;/figure>
+
+シャトルバスが来る気配もなく、雨の中1キロ以上歩いて移動。
+そんなに離れているなら別の名前にしてほしかった。
+（後で調べたところ、青海展示棟はオリンピック対策で作った仮設の施設とのこと。）&lt;/p></description></item><item><title>freee Tech Night 「freeeにおけるモノリシック」</title><link>https://umemak.github.io/blog/posts/2020/01/21_freee_tech_night_5/</link><pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/01/21_freee_tech_night_5/</guid><description>&lt;p>&lt;a href="https://freee-tech-night.connpass.com/event/157012/">https://freee-tech-night.connpass.com/event/157012/&lt;/a>&lt;/p>
+&lt;h2 id="会計freeeのデプロイを10倍早くした話">会計freeeのデプロイを10倍早くした話&lt;/h2>
+&lt;h3 id="北川修平-shuheiktgw">北川修平 (shuheiktgw)&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;h2 id="会計freee">会計freee&lt;/h2>
+&lt;/li>
+&lt;li>Phusion Passenger
+&lt;ul>
+&lt;li>&lt;a href="https://www.phusionpassenger.com/">https://www.phusionpassenger.com/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Capistrano を使ったデプロイ
+&lt;ul>
+&lt;li>問題点
+&lt;ul>
+&lt;li>直列デプロイ
+&lt;ul>
+&lt;li>LBから１つづつ外してデプロイしている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>50分ちかくかかっている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>解決案
+&lt;ul>
+&lt;li>EKSへの移行&lt;/li>
+&lt;li>AutoScalingGroupを使ったBlue/Greenデプロイ
+&lt;ul>
+&lt;li>サーバー自体のプロビジョニングに４分ぐらいかかる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>アプリケーションサーバー（unicorn）によるホットデプロイ
+&lt;ul>
+&lt;li>これを選択&lt;/li>
+&lt;li>デプロイ・ロールバックの時間が短くて済む&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>アプリケーションサーバーの入れ替え
+&lt;ul>
+&lt;li>Phusion PassengerをUnicornにした&lt;/li>
+&lt;li>安全に入れ替えるには
+&lt;ul>
+&lt;li>影響範囲が大きい&lt;/li>
+&lt;li>プランBの確保
+&lt;ul>
+&lt;li>Blue/Greenを用意&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>変更対象を深く理解する
+&lt;ul>
+&lt;li>ソースコードリーディング&lt;/li>
+&lt;li>起動から陸セストをさばき始めるまでの流れ&lt;/li>
+&lt;li>USR2シグナルを受け取ったときの処理&lt;/li>
+&lt;li>各パラメータの使われ方と影響範囲&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>PreloadによるFileDDescriptorの共有
+&lt;ul>
+&lt;li>Linuxのfork処理の理解が必要&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>段階的リリース
+&lt;ul>
+&lt;li>テスト環境での負荷試験
+&lt;ul>
+&lt;li>「負荷試験コトハジメ」&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>他サービスでの先行リリース&lt;/li>
+&lt;li>本番環境でのカナリアリリース
+&lt;ul>
+&lt;li>2%程度&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Unicornへ移行した結果
+&lt;ul>
+&lt;li>25〜30分かかっていたのが2〜3分に短縮
+&lt;ul>
+&lt;li>デプロイ数の増加&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Redisまわりで一部問題があった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>FusionPassengerの有料版なら同じことできるが、サービス規模で試算したら高額だった&lt;/li>
+&lt;/ul>
+&lt;h2 id="データの構造から再検討するパフォーマンスチューニング">データの構造から再検討するパフォーマンスチューニング&lt;/h2>
+&lt;h3 id="久保卓也-tkuboma">久保卓也 (tkuboma)&lt;/h3>
+&lt;ul>
+&lt;li>会計freeeの中の話&lt;/li>
+&lt;li>監視
+&lt;ul>
+&lt;li>Mackrel&lt;/li>
+&lt;li>NewRelic&lt;/li>
+&lt;li>Monyog
+&lt;ul>
+&lt;li>DBリアルタイム監視に利用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Datadog&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Redashで見えるか
+&lt;ul>
+&lt;li>index効率、フルスキャンなど&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>DBパフォーマンス改善
+&lt;ul>
+&lt;li>indexでチューニング
+&lt;ul>
+&lt;li>explainで地道に&lt;/li>
+&lt;li>インデックス追加したり、使うようにしたり&lt;/li>
+&lt;li>ActiveRecordのscopeに注意&lt;/li>
+&lt;li>indexを無駄にはらない&lt;/li>
+&lt;li>検証は本番相当のデータで&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>クエリの変更でチューニング
+&lt;ul>
+&lt;li>対象データのrowが多すぎる
+&lt;ul>
+&lt;li>抽出条件の追加&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>クエリの結果が変わらないように注意
+&lt;ul>
+&lt;li>アプリケーション側で頑張る&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>データの持ちかたの見直し
+&lt;ul>
+&lt;li>idでなくstringでjoinしているテーブル&lt;/li>
+&lt;li>マスターデータとunionしている
+&lt;ul>
+&lt;li>マスターデータをコピーしてしまう&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>頻繁にマスターデータが更新されるテーブルだと使えない
+&lt;ul>
+&lt;li>設計でカバー&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>テーブル構成の見直し
+&lt;ul>
+&lt;li>大量データを都度集計している
+&lt;ul>
+&lt;li>集計テーブルを作成する
+&lt;ul>
+&lt;li>圧縮率＝削減行数&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ロック問題
+&lt;ul>
+&lt;li>別トランザクションにして非同期実行する
+&lt;ul>
+&lt;li>Kinesis streamを利用&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>集計テーブルのデータの切り方の設計重要&lt;/li>
+&lt;li>リアルタイム性の低下&lt;/li>
+&lt;li>導入までのリードタイムが結構かかる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>機能の見直し
+&lt;ul>
+&lt;li>必要以上に実行されていないか
+&lt;ul>
+&lt;li>Home画面とか&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ビジネスサイドとのコミュニケーション必要&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>slaveへ逃がす
+&lt;ul>
+&lt;li>レプリケーションのラグに注意&lt;/li>
+&lt;li>社内ライブラリを使用（OSSではない）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>N+1の解消
+&lt;ul>
+&lt;li>bullet&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Elasticsearch化&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="エンジニアがドメインロジックに集中するためのコアパッケージ整備">エンジニアがドメインロジックに集中するためのコアパッケージ整備&lt;/h2>
+&lt;h3 id="志賀誠-maco_tasu">志賀誠 (@Maco_Tasu)&lt;/h3>
+&lt;ul>
+&lt;li>コアパッケージ：各サービスで共通して使われるもの
+&lt;ul>
+&lt;li>ロガーやエラーとか&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>マイクロサービス化でgoを使うことが多い&lt;/li>
+&lt;li>マイクロサービス基盤にK8sを採用&lt;/li>
+&lt;li>マイクロサービス化で各チームでそれぞれ作り込んでいて横連携ができていなかった
+&lt;ul>
+&lt;li>サービス基盤&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>全マイクロサービスのコードを読んで機能を洗い出す
+&lt;ul>
+&lt;li>goらしい作りになっているか&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>デファクトとしてのパッケージ
+&lt;ul>
+&lt;li>強制するものではない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>拡張性
+&lt;ul>
+&lt;li>ダッグタイピング&lt;/li>
+&lt;li>go-cloud（CDK）を参考にした&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>かんたんに組み込める
+&lt;ul>
+&lt;li>依存関係&lt;/li>
+&lt;li>wire（DIツール）を使う
+&lt;ul>
+&lt;li>依存の依存も解決してくれるのが良い&lt;/li>
+&lt;li>&lt;a href="https://developers.freee.co.jp/entry/service-infra-and-wire">https://developers.freee.co.jp/entry/service-infra-and-wire&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>改善点
+&lt;ul>
+&lt;li>早めに提供して改善ループをまわす&lt;/li>
+&lt;li>使うことによる利点を伝える&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>claat
+&lt;ul>
+&lt;li>チュートリアル作成ツール&lt;/li>
+&lt;li>&lt;a href="https://github.com/googlecodelabs/tools/tree/master/claat">https://github.com/googlecodelabs/tools/tree/master/claat&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

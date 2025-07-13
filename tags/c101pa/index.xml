@@ -1,1 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C101PA on umemak</title><link>https://umemak.github.io/blog/tags/c101pa/</link><description>Recent content in C101PA on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/c101pa/index.xml" rel="self" type="application/rss+xml"/><item><title>C101PAでOracle Functionsを試す</title><link>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</link><pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</guid><description>OCHaCafe参加前に触っておこうと思い、その準備。 OCIインストール 手順は公式からコピペで。 $ bash -c &amp;#34;$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)&amp;#34; fatal error: Python.h: No such file or directoryエラーで落ちたので、python3-devパッケージをインストール。 $ sudo apt-get install python3-dev OCI再挑戦。先程作成したディレクトリを削除するか聞かれるので、削除(y)して継続</description></item><item><title>C101PA届いた</title><link>https://umemak.github.io/blog/posts/2019/06/29_chromebook_c101pa/</link><pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/06/29_chromebook_c101pa/</guid><description>起動直後はOSが古い→ChromeOSバージョンアップ実施 Googleアンケートアプリが対応していない C223NAも再インストールしたらインストールできなくなっていた。。 Kindleアプリインストールできた 全体的にC223NAに比べて遅い（知ってた） 今回は開発者モードにしないで普通にLinux有効化</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C101pa on umemak</title><link>https://umemak.github.io/blog/tags/c101pa/</link><description>Recent content in C101pa on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 31 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/c101pa/index.xml" rel="self" type="application/rss+xml"/><item><title>C101PAでOracle Functionsを試す</title><link>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</link><pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</guid><description>&lt;p>&lt;a href="https://ochacafe.connpass.com/event/147285/">OCHaCafe&lt;/a>参加前に触っておこうと思い、その準備。&lt;/p>
+&lt;h2 id="ociインストール">OCIインストール&lt;/h2>
+&lt;p>手順は&lt;a href="https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/cliinstall.htm">公式&lt;/a>からコピペで。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ bash -c &amp;#34;$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)&amp;#34;
+&lt;/code>&lt;/pre>&lt;p>&lt;code>fatal error: Python.h: No such file or directory&lt;/code>エラーで落ちたので、&lt;code>python3-dev&lt;/code>パッケージをインストール。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ sudo apt-get install python3-dev
+&lt;/code>&lt;/pre>&lt;p>OCI再挑戦。先程作成したディレクトリを削除するか聞かれるので、削除(y)して継続。
+ちなみにインストール先など入力は全部デフォルトで通した。
+今度は&lt;code>fatal error: ffi.h: No such file or directory&lt;/code>で落ちた。&lt;/p></description></item><item><title>C101PA届いた</title><link>https://umemak.github.io/blog/posts/2019/06/29_chromebook_c101pa/</link><pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/06/29_chromebook_c101pa/</guid><description>&lt;ul>
+&lt;li>
+&lt;p>起動直後はOSが古い→ChromeOSバージョンアップ実施&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Googleアンケートアプリが対応していない&lt;/p>
+&lt;ul>
+&lt;li>C223NAも再インストールしたらインストールできなくなっていた。。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Kindleアプリインストールできた&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>全体的にC223NAに比べて遅い（知ってた）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>今回は開発者モードにしないで普通にLinux有効化した&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>brewインストール&lt;/p></description></item></channel></rss>

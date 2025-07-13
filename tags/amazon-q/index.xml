@@ -1,1 +1,227 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>amazon Q on umemak</title><link>https://umemak.github.io/blog/tags/amazon-q/</link><description>Recent content in amazon Q on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 08 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/amazon-q/index.xml" rel="self" type="application/rss+xml"/><item><title>Amazon Q CLIでゲームを作成する</title><link>https://umemak.github.io/blog/posts/2025/06/08_amazon_q_cli/</link><pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/06/08_amazon_q_cli/</guid><description>Amazon Q CLI でゲームを作ろう Tシャツキャンペーンに乗っかってAmazon Q CLIを試してみた。 環境はWindows11でWSL2(Ubuntu)。 お題は、Ebitengineを使ったゲームを作ってもらうこと。 🤖 You are chatting with claude-3.7-sonnet &amp;gt; Ebitengineを使ったゲームを作って Ebitengineを使ったゲームを作りま</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Amazon Q on umemak</title><link>https://umemak.github.io/blog/tags/amazon-q/</link><description>Recent content in Amazon Q on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 08 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/amazon-q/index.xml" rel="self" type="application/rss+xml"/><item><title>Amazon Q CLIでゲームを作成する</title><link>https://umemak.github.io/blog/posts/2025/06/08_amazon_q_cli/</link><pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/06/08_amazon_q_cli/</guid><description>&lt;p>&lt;a href="https://aws.amazon.com/jp/blogs/news/build-games-with-amazon-q-cli-and-score-a-t-shirt/">Amazon Q CLI でゲームを作ろう Tシャツキャンペーン&lt;/a>に乗っかってAmazon Q CLIを試してみた。&lt;/p>
+&lt;p>環境はWindows11でWSL2(Ubuntu)。&lt;/p>
+&lt;p>お題は、&lt;a href="https://ebitengine.org/ja/">Ebitengine&lt;/a>を使ったゲームを作ってもらうこと。&lt;/p>
+&lt;pre tabindex="0">&lt;code>🤖 You are chatting with claude-3.7-sonnet
+
+&amp;gt; Ebitengineを使ったゲームを作って
+Ebitengineを使ったゲームを作りましょう。Ebitengineは、Goで書かれた2Dゲーム開発のためのシンプルなライブラリです。ま
+ずは基本的なゲームを作成してみましょう。
+
+まず、プロジェクトディレクトリを作成し、必要なパッケージをインストールします：
+
+
+🛠️ Using tool: execute_bash
+ ⋮
+ ● I will run the following shell command:
+mkdir -p ebiten-game &amp;amp;&amp;amp; cd ebiten-game &amp;amp;&amp;amp; go mod init ebiten-game
+ ⋮
+ ↳ Purpose: ゲームプロジェクトのディレクトリを作成し、Go moduleを初期化
+
+
+Allow this action? Use &amp;#39;t&amp;#39; to trust (always allow) this tool for the session. [y/n/t]:
+
+&amp;gt; t
+bash: line 1: go: command not found
+
+ ⋮
+ ● Completed in 0.103s
+すみません、Goがインストールされていないようです。まずはGoをインストールする必要があります。
+
+
+🛠️ Using tool: execute_bash (trusted)
+ ⋮
+ ● I will run the following shell command:
+which go || echo &amp;#34;Go is not installed&amp;#34;
+ ⋮
+ ↳ Purpose: Goがインストールされているか確認
+
+Go is not installed
+
+ ⋮
+ ● Completed in 0.110s
+Ebitengineを使ったゲームを作るには、まずGoをインストールする必要があります。Goをインストールした後、以下の手順でシ
+ンプルなゲームを作成できます。
+
+### Goのインストール方法
+
+Linuxでは、以下のコマンドでGoをインストールできます：
+
+bash
+# Ubuntuの場合
+sudo apt update
+sudo apt install golang-go
+
+# Fedoraの場合
+sudo dnf install golang
+
+# Arch Linuxの場合
+sudo pacman -S go
+
+
+### Goをインストールした後の手順
+
+1. プロジェクトディレクトリを作成し、Go moduleを初期化
+2. Ebitengineパッケージをインストール
+3. シンプルなゲームコードを作成
+
+### シンプルなゲームのコード例
+
+Goをインストールした後、以下のようなコードでシンプルなゲームを作成できます：
+
+go
+package main
+
+import (
+ &amp;#34;image/color&amp;#34;
+ &amp;#34;log&amp;#34;
+ &amp;#34;math/rand&amp;#34;
+
+ &amp;#34;github.com/hajimehoshi/ebiten/v2&amp;#34;
+ &amp;#34;github.com/hajimehoshi/ebiten/v2/ebitenutil&amp;#34;
+ &amp;#34;github.com/hajimehoshi/ebiten/v2/inpututil&amp;#34;
+)
+
+const (
+ screenWidth = 640
+ screenHeight = 480
+ playerSize = 20
+ enemySize = 15
+ enemyCount = 5
+)
+
+type Game struct {
+ playerX, playerY float64
+ enemies []enemy
+ score int
+}
+
+type enemy struct {
+ x, y float64
+ speedX, speedY float64
+}
+
+func (g *Game) Update() error {
+ // プレイヤーの移動
+ if ebiten.IsKeyPressed(ebiten.KeyUp) {
+ g.playerY -= 4
+ }
+ if ebiten.IsKeyPressed(ebiten.KeyDown) {
+ g.playerY += 4
+ }
+ if ebiten.IsKeyPressed(ebiten.KeyLeft) {
+ g.playerX -= 4
+ }
+ if ebiten.IsKeyPressed(ebiten.KeyRight) {
+ g.playerX += 4
+ }
+
+ // 画面端の処理
+ if g.playerX &amp;lt; 0 {
+ g.playerX = 0
+ }
+ if g.playerX &amp;gt; screenWidth-playerSize {
+ g.playerX = screenWidth - playerSize
+ }
+ if g.playerY &amp;lt; 0 {
+ g.playerY = 0
+ }
+ if g.playerY &amp;gt; screenHeight-playerSize {
+ g.playerY = screenHeight - playerSize
+ }
+
+ // 敵の移動
+ for i := range g.enemies {
+ g.enemies[i].x += g.enemies[i].speedX
+ g.enemies[i].y += g.enemies[i].speedY
+
+ // 画面端での反射
+ if g.enemies[i].x &amp;lt;= 0 || g.enemies[i].x &amp;gt;= screenWidth-enemySize {
+ g.enemies[i].speedX = -g.enemies[i].speedX
+ }
+ if g.enemies[i].y &amp;lt;= 0 || g.enemies[i].y &amp;gt;= screenHeight-enemySize {
+ g.enemies[i].speedY = -g.enemies[i].speedY
+ }
+
+ // 衝突判定
+ if g.playerX &amp;lt; g.enemies[i].x+enemySize &amp;amp;&amp;amp;
+ g.playerX+playerSize &amp;gt; g.enemies[i].x &amp;amp;&amp;amp;
+ g.playerY &amp;lt; g.enemies[i].y+enemySize &amp;amp;&amp;amp;
+ g.playerY+playerSize &amp;gt; g.enemies[i].y {
+ // 敵を新しい位置に
+ g.enemies[i].x = rand.Float64() * (screenWidth - enemySize)
+ g.enemies[i].y = rand.Float64() * (screenHeight - enemySize)
+ g.score++
+ }
+ }
+
+ // Rキーでリセット
+ if inpututil.IsKeyJustPressed(ebiten.KeyR) {
+ g.init()
+ }
+
+ return nil
+}
+
+func (g *Game) Draw(screen *ebiten.Image) {
+ // 背景
+ screen.Fill(color.RGBA{40, 40, 60, 255})
+
+ // プレイヤー
+ ebitenutil.DrawRect(screen, g.playerX, g.playerY, playerSize, playerSize, color.RGBA{0, 255, 0, 255})
+
+ // 敵
+ for _, e := range g.enemies {
+ ebitenutil.DrawRect(screen, e.x, e.y, enemySize, enemySize, color.RGBA{255, 0, 0, 255})
+ }
+
+ // スコア表示
+ ebitenutil.DebugPrint(screen, &amp;#34;Score: &amp;#34;+string(rune(&amp;#39;0&amp;#39;+g.score)))
+}
+
+func (g *Game) Layout(outsideWidth, outsideHeight int) (int, int) {
+ return screenWidth, screenHeight
+}
+
+func (g *Game) init() {
+ g.playerX = screenWidth / 2
+ g.playerY = screenHeight / 2
+ g.score = 0
+ g.enemies = make([]enemy, enemyCount)
+
+ for i := range g.enemies {
+ g.enemies[i] = enemy{
+ x: rand.Float64() * (screenWidth - enemySize),
+ y: rand.Float64() * (screenHeight - enemySize),
+ speedX: (rand.Float64()*2 - 1) * 2,
+ speedY: (rand.Float64()*2 - 1) * 2,
+ }
+ }
+}
+
+func main() {
+ ebiten.SetWindowSize(screenWidth, screenHeight)
+ ebiten.SetWindowTitle(&amp;#34;Simple Ebiten Game&amp;#34;)
+
+ game := &amp;amp;Game{}
+ game.init()
+
+ if err := ebiten.RunGame(game); err != nil {
+ log.Fatal(err)
+ }
+}
+
+
+このゲームは、緑色の四角（プレイヤー）を矢印キーで動かして、赤い四角（敵）に当たるとスコアが増えるシンプルなもので
+す。Rキーを押すとゲームをリセットできます。
+
+Goをインストールした後、以下のコマンドでEbitengineをインストールし、ゲームを実行できます：
+
+bash
+go get github.com/hajimehoshi/ebiten/v2
+go run main.go
+
+
+Goのインストールが完了したら、お知らせください。その後、詳細な手順でゲーム作成をサポートします。
+
+&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>goをインストールして再実行&lt;/p></description></item></channel></rss>

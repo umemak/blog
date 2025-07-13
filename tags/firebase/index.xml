@@ -1,1 +1,120 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>firebase on umemak</title><link>https://umemak.github.io/blog/tags/firebase/</link><description>Recent content in firebase on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 31 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/firebase/index.xml" rel="self" type="application/rss+xml"/><item><title>Firebase設定</title><link>https://umemak.github.io/blog/posts/2022/05/31_firebase_hosting/</link><pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/31_firebase_hosting/</guid><description>WebViewを使うとして、MDMMLのJS版を公開する場所をFirebase Hostingにした。 久しぶりにFirebase使ったらオプションが色々増えている気がする。 $ firebase init ######## #### ######## ######## ######## ### ###### ######## ## ## ## ## ## ## ## ## ## ## ## ###### ## ######## ###### ######## ######### ###### ###### ## ## ## ## ## ## ## ## ## ## ## ## #### ## ## ######## ######## ## ## ###### ######## You&amp;#39;re about to initialize a Firebase project in this directory: /home/umemak/workspace/mdmml_js ? Which Firebase</description></item><item><title>Firebase以外のBaaS</title><link>https://umemak.github.io/blog/posts/2022/05/15_baas/</link><pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/15_baas/</guid><description>Firebase以外のBaaSについて、年初に軽く調べていた。 その時はクラウドサービスを見ていたけれど、OSSのものも見てみた。 Parse Platform The Open Source Firebase Alternative | Supabase Open Source Backend - Kuzzle Backend Low-code backend to build modern apps | Back4App Parse Platformベース SDK JS Go Flutter Parse Platform o - o Supabase o - o Kuzzle Backend o o o SDK的にはKuzzleだけど、情報量で見るとSupabaseが有</description></item><item><title>Firebase用デプロイサーバーを作る</title><link>https://umemak.github.io/blog/posts/2020/06/11_deployserver/</link><pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/06/11_deployserver/</guid><description>SourceRepositoriesで管理して、CloudBuildでFirebase HostingにデプロイしているGatsbyプロジェクトを、SourceRepositoryとCloudBuildを使わずに実現してみる。 GiteaがCentOS6で動くようになったので、SourceReposit</description></item><item><title>Gitpodでfirebaseログインする方法</title><link>https://umemak.github.io/blog/posts/2020/04/08_gitpod_firebase_login/</link><pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/04/08_gitpod_firebase_login/</guid><description>何度もググるので。。 $ npm i -g firebase-tools $ firebase login --no-localhost 表示されるURLを別タブで開くと認証画面が表示されるので許可する。 許可するとコードが表示されるのでコピーしてコマンドラインに貼り付ける。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Firebase on umemak</title><link>https://umemak.github.io/blog/tags/firebase/</link><description>Recent content in Firebase on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 31 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/firebase/index.xml" rel="self" type="application/rss+xml"/><item><title>Firebase設定</title><link>https://umemak.github.io/blog/posts/2022/05/31_firebase_hosting/</link><pubDate>Tue, 31 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/31_firebase_hosting/</guid><description>&lt;p>WebViewを使うとして、MDMMLのJS版を公開する場所をFirebase Hostingにした。&lt;/p>
+&lt;p>久しぶりにFirebase使ったらオプションが色々増えている気がする。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ firebase init
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">######## #### ######## ######## ######## ### ###### ########&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">## ## ## ## ## ## ## ## ## ## ##&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">###### ## ######## ###### ######## ######### ###### ######&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">## ## ## ## ## ## ## ## ## ## ##&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">## #### ## ## ######## ######## ## ## ###### ########&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>You&lt;span style="color:#e6db74">&amp;#39;re about to initialize a Firebase project in this directory:
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74"> /home/umemak/workspace/mdmml_js
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">? Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your choices. Hostin
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">g: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys, Hosting: Set up GitHub Action deploys
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">=== Project Setup
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">First, let&amp;#39;&lt;/span>s associate this project directory with a Firebase project.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>You can create multiple project aliases by running firebase use --add, 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>but &lt;span style="color:#66d9ef">for&lt;/span> now we&lt;span style="color:#e6db74">&amp;#39;ll just set up a default project.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">? Please select an option: Use an existing project
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">? Select a default Firebase project for this directory: mdmml-285c0 (mdmml)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">i Using project mdmml-285c0 (mdmml)
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">=== Hosting Setup
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">Your public directory is the folder (relative to your project directory) that
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">will contain Hosting assets to be uploaded with firebase deploy. If you
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">have a build process for your assets, use your build&amp;#39;&lt;/span>s output directory.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>? What &lt;span style="color:#66d9ef">do&lt;/span> you want to use as your public directory? public
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>? Configure as a single-page app &lt;span style="color:#f92672">(&lt;/span>rewrite all urls to /index.html&lt;span style="color:#f92672">)&lt;/span>? No
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>? Set up automatic builds and deploys with GitHub? Yes
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>✔ Wrote public/404.html
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>✔ Wrote public/index.html
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>i Detected a .git folder at /home/umemak/workspace/mdmml_js
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>i Authorizing with GitHub to upload your service account to a GitHub repository&lt;span style="color:#e6db74">&amp;#39;s secrets store.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">Waiting for authentication...
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">✔ Success! Logged into GitHub as umemak
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">? For which GitHub repository would you like to set up a GitHub workflow? (format: user/repository) umemak/mdmml_js
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">✔ Created service account github-action-487458244 with Firebase Hosting admin permissions.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">✔ Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_MDMML_285C0.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">i You can manage your secrets at https://github.com/umemak/mdmml_js/settings/secrets.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">? Set up the workflow to run a build script before every deploy? Yes
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">? What script should be run before every deploy? npm ci &amp;amp;&amp;amp; npm run build
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">✔ Created workflow file /home/umemak/workspace/mdmml_js/.github/workflows/firebase-hosting-pull-request.yml
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">? Set up automatic deployment to your site&amp;#39;&lt;/span>s live channel when a PR is merged? Yes
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>? What is the name of the GitHub branch associated with your site&lt;span style="color:#960050;background-color:#1e0010">&amp;#39;&lt;/span>s live channel? main
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>✔ Created workflow file /home/umemak/workspace/mdmml_js/.github/workflows/firebase-hosting-merge.yml
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>i Action required: Visit this URL to revoke authorization &lt;span style="color:#66d9ef">for&lt;/span> the Firebase CLI GitHub OAuth App:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>i Action required: Push any new workflow file&lt;span style="color:#f92672">(&lt;/span>s&lt;span style="color:#f92672">)&lt;/span> to your repo
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>i Writing configuration info to firebase.json...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>i Writing project information to .firebaserc...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>✔ Firebase initialization complete!
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>GitHub Actionsとの連携も入れてみた。&lt;/p></description></item><item><title>Firebase以外のBaaS</title><link>https://umemak.github.io/blog/posts/2022/05/15_baas/</link><pubDate>Sun, 15 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/15_baas/</guid><description>&lt;p>Firebase以外のBaaSについて、年初に軽く調べていた。&lt;/p>
+&lt;p>その時はクラウドサービスを見ていたけれど、OSSのものも見てみた。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://parseplatform.org/">Parse Platform&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://supabase.com/">The Open Source Firebase Alternative | Supabase&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kuzzle.io/kuzzle-backend/">Open Source Backend - Kuzzle Backend&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.back4app.com/">Low-code backend to build modern apps | Back4App&lt;/a>
+&lt;ul>
+&lt;li>Parse Platformベース&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>SDK&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>&lt;/th>
+ &lt;th style="text-align: center">JS&lt;/th>
+ &lt;th style="text-align: center">Go&lt;/th>
+ &lt;th style="text-align: center">Flutter&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>Parse Platform&lt;/td>
+ &lt;td style="text-align: center">o&lt;/td>
+ &lt;td style="text-align: center">-&lt;/td>
+ &lt;td style="text-align: center">o&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Supabase&lt;/td>
+ &lt;td style="text-align: center">o&lt;/td>
+ &lt;td style="text-align: center">-&lt;/td>
+ &lt;td style="text-align: center">o&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>Kuzzle Backend&lt;/td>
+ &lt;td style="text-align: center">o&lt;/td>
+ &lt;td style="text-align: center">o&lt;/td>
+ &lt;td style="text-align: center">o&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>SDK的にはKuzzleだけど、情報量で見るとSupabaseが有利かな。&lt;/p></description></item><item><title>Firebase用デプロイサーバーを作る</title><link>https://umemak.github.io/blog/posts/2020/06/11_deployserver/</link><pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/06/11_deployserver/</guid><description>&lt;p>SourceRepositoriesで管理して、CloudBuildでFirebase HostingにデプロイしているGatsbyプロジェクトを、SourceRepositoryとCloudBuildを使わずに実現してみる。
+GiteaがCentOS6で動くようになったので、SourceRepository部分は置き換えられる。
+CloudBuildをWebhookでスクリプト呼び出してやろうとしたところ、CentOS6ではGatsbyのビルドができない（古すぎる。。）
+仕方ないので、ビルドサーバーを別で用意する。&lt;/p></description></item><item><title>Gitpodでfirebaseログインする方法</title><link>https://umemak.github.io/blog/posts/2020/04/08_gitpod_firebase_login/</link><pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/04/08_gitpod_firebase_login/</guid><description>&lt;p>何度もググるので。。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ npm i -g firebase-tools
+$ firebase login --no-localhost
+&lt;/code>&lt;/pre>&lt;p>表示されるURLを別タブで開くと認証画面が表示されるので許可する。
+許可するとコードが表示されるのでコピーしてコマンドラインに貼り付ける。&lt;/p></description></item></channel></rss>

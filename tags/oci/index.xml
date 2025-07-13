@@ -1,1 +1,122 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>oci on umemak</title><link>https://umemak.github.io/blog/tags/oci/</link><description>Recent content in oci on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 25 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/oci/index.xml" rel="self" type="application/rss+xml"/><item><title>OracleCloudにSSH</title><link>https://umemak.github.io/blog/posts/2022/12/25_oci_ssh/</link><pubDate>Sun, 25 Dec 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/12/25_oci_ssh/</guid><description>OracleCloudの無料インスタンスにSSHしようとしてできない。 Compute &amp;gt; Instances &amp;gt; Instance detailsでPublic IP addressとUsernameは確認できる。 Console connectionを開くと、Launch Cloud Shell connectionとCreate local connectionが選択できて、Cloud Shellのほう</description></item><item><title>OCHaCafe Premium#1：Oracle Cloudで考える高可用性アーキテクチャ</title><link>https://umemak.github.io/blog/posts/2019/11/29_ochacafe_premium_1/</link><pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/29_ochacafe_premium_1/</guid><description>https://ochacafe.connpass.com/event/152768/ 番外編の第１回。高可用性の話です。 きました pic.twitter.com/plY4jy7rsN &amp;mdash; umemak (@umemak8) November 29, 2019 18：30 受付開始 19：00 オープニング 19：10 セッション開始 https://speakerdeck.com/mmarukaw/oracleclouddekao-erugao-ke-yong-xing-akitekutiya データセンター電源障害の話から OCIはまだ日本に来てから日が浅いこともあり、大規模障害はまだない。 海外ではあった Design For Failure サーバーは落ちる前提で考える クラウドベンダーの保証はSLA</description></item><item><title>Oracle Cloudにインスタンス作成</title><link>https://umemak.github.io/blog/posts/2019/11/10_oracle_cloud/</link><pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/10_oracle_cloud/</guid><description>Oracle Cloudに登録してから、なかなか無料インスタンス作成できずにいたけれど、今日試したら作れた。 sshログインしようとして、Console Connections作ってそこに出たコマンドコピペして、ログインアカウントとパスワードがわからずに詰む。 インスタンス作成時に特に指定してなかったけど、opcが割</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Oci on umemak</title><link>https://umemak.github.io/blog/tags/oci/</link><description>Recent content in Oci on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 25 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/oci/index.xml" rel="self" type="application/rss+xml"/><item><title>OracleCloudにSSH</title><link>https://umemak.github.io/blog/posts/2022/12/25_oci_ssh/</link><pubDate>Sun, 25 Dec 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/12/25_oci_ssh/</guid><description>&lt;p>OracleCloudの無料インスタンスにSSHしようとしてできない。&lt;/p>
+&lt;p>&lt;code>Compute &amp;gt; Instances &amp;gt; Instance details&lt;/code>でPublic IP addressとUsernameは確認できる。&lt;/p>
+&lt;p>&lt;code>Console connection&lt;/code>を開くと、&lt;code>Launch Cloud Shell connection&lt;/code>と&lt;code>Create local connection&lt;/code>が選択できて、Cloud Shellのほうを選ぶとブラウザ上でログインシェルが表示される、ユーザー&lt;code>opc&lt;/code>で、パスワードがわからない。&lt;/p></description></item><item><title>OCHaCafe Premium#1：Oracle Cloudで考える高可用性アーキテクチャ</title><link>https://umemak.github.io/blog/posts/2019/11/29_ochacafe_premium_1/</link><pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/29_ochacafe_premium_1/</guid><description>&lt;p>&lt;a href="https://ochacafe.connpass.com/event/152768/">https://ochacafe.connpass.com/event/152768/&lt;/a>&lt;/p>
+&lt;p>番外編の第１回。高可用性の話です。&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">きました &lt;a href="https://t.co/plY4jy7rsN">pic.twitter.com/plY4jy7rsN&lt;/a>&lt;/p>&amp;mdash; umemak (@umemak8) &lt;a href="https://twitter.com/umemak8/status/1200347955196133377?ref_src=twsrc%5Etfw">November 29, 2019&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+
+
+&lt;h2 id="1830受付開始">18：30　受付開始　&lt;/h2>
+&lt;h2 id="1900オープニング">19：00　オープニング&lt;/h2>
+&lt;h2 id="1910セッション開始">19：10　セッション開始&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/mmarukaw/oracleclouddekao-erugao-ke-yong-xing-akitekutiya">https://speakerdeck.com/mmarukaw/oracleclouddekao-erugao-ke-yong-xing-akitekutiya&lt;/a>&lt;/li>
+&lt;li>データセンター電源障害の話から&lt;/li>
+&lt;li>OCIはまだ日本に来てから日が浅いこともあり、大規模障害はまだない。
+&lt;ul>
+&lt;li>海外ではあった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Design For Failure
+&lt;ul>
+&lt;li>サーバーは落ちる前提で考える&lt;/li>
+&lt;li>クラウドベンダーの保証はSLAの範囲内まで&lt;/li>
+&lt;li>アプリケーションの最終責任はユーザーが負う&lt;/li>
+&lt;li>高可用性のためのコストと複雑性を、軽減できるリスクに対してバランスを取る&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>高可用性とは
+&lt;ul>
+&lt;li>システムが継続して可動できる能力が高いこと&lt;/li>
+&lt;li>クラウドでもオンプレのときと考え方は同じ&lt;/li>
+&lt;li>クラウドの特性として高可用性を比較的低コストで実現できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>障害のレベル
+&lt;ul>
+&lt;li>機器障害
+&lt;ul>
+&lt;li>プロセスだったりハードウェアだったり&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>サイト障害
+&lt;ul>
+&lt;li>DCレベル&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>広域災害
+&lt;ul>
+&lt;li>地域まるごと&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>クラウドのリソースが備える特性を活かす
+&lt;ul>
+&lt;li>本質的に堅牢なOCIリソース
+&lt;ul>
+&lt;li>オブジェクトストレージ
+&lt;ul>
+&lt;li>耐障害性、安価、各種サービスとの連携&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ロードバランサー
+&lt;ul>
+&lt;li>トラフィックの高可用性&lt;/li>
+&lt;li>サイトレベルの耐障害性&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>OKE(K8s)
+&lt;ul>
+&lt;li>クラスタとノードプールの自己回復&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Exadata Cloud ServiceとAutonomous Database
+&lt;ul>
+&lt;li>Oracle Databaseの高可用性プラクティスが詰め込まれている&lt;/li>
+&lt;li>RACでスケール&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>OCI DNS
+&lt;ul>
+&lt;li>グローバルレベルの耐障害性&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ユーザーに寄る高可用性実装を支援する
+&lt;ul>
+&lt;li>リソース配置
+&lt;ul>
+&lt;li>リージョン&lt;/li>
+&lt;li>可用性ドメイン（AD）
+&lt;ul>
+&lt;li>データセンター&lt;/li>
+&lt;li>東京はまだ１つなので、AZ障害イコールリージョン障害&lt;/li>
+&lt;li>データセンター間の通信は低レーテンシー&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>フォルト・ドメイン
+&lt;ul>
+&lt;li>DC内のサーバラック群をグループ化したもの&lt;/li>
+&lt;li>仮想サーバーを別々の物理サーバーに配置したいときに有効&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>リソースの有効範囲
+&lt;ul>
+&lt;li>グローバル＞リージョン＞可用性ドメイン＞フォルト・ドメイン&lt;/li>
+&lt;li>リージョンレベルのリソース（VCN）でリージョンまたぎをしたいときはピアリングをする必要がある&lt;/li>
+&lt;li>リージョナルサブネットというのがある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="1943-10分休憩">19:43 10分休憩&lt;/h3>
+&lt;p>ビール投入&lt;/p></description></item><item><title>Oracle Cloudにインスタンス作成</title><link>https://umemak.github.io/blog/posts/2019/11/10_oracle_cloud/</link><pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/10_oracle_cloud/</guid><description>&lt;p>Oracle Cloudに登録してから、なかなか無料インスタンス作成できずにいたけれど、今日試したら作れた。&lt;/p>
+&lt;p>sshログインしようとして、&lt;code>Console Connections&lt;/code>作ってそこに出たコマンドコピペして、ログインアカウントとパスワードがわからずに詰む。&lt;/p>
+&lt;p>インスタンス作成時に特に指定してなかったけど、&lt;code>opc&lt;/code>が割り当てられている。&lt;/p></description></item></channel></rss>

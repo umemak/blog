@@ -1,1 +1,412 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kubernetes on umemak</title><link>https://umemak.github.io/blog/tags/kubernetes/</link><description>Recent content in kubernetes on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>Qwiklabsの続きをやる</title><link>https://umemak.github.io/blog/posts/2020/02/23_qwiklabs/</link><pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/02/23_qwiklabs/</guid><description>先日のデブサミのハンズオンで使ったアカウントに１ヶ月のサブスクリプションが付与されていたのを思い出して、途中になっていたKubernatesのクエストの続きを終わらせた。 Jenkinsを使ったCI/CDのやつ。 Jenkinsは昔使ったことあったけれど、最近はCI/CDのサービスが充実してきているので</description></item><item><title>Kubernetes Meetup Tokyo #26</title><link>https://umemak.github.io/blog/posts/2019/12/03_kubernetes_meetup_tokyo_26/</link><pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/12/03_kubernetes_meetup_tokyo_26/</guid><description>今回は 2019/11/18-21 で開催された KubeCon + CloudNativeCon North America 2019 の Recap 会だそうです。 どちらも参加していないのでどんな話が聞けるのか楽しみです。 https://k8sjp.connpass.com/event/155240/ きました pic.twitter.com/NkIGEmFehn &amp;mdash; umemak (@umemak8) December 3, 2019 18:15-19:15 受付開始 19:00-19:05 Opening (5min) 19:05-19:20 KubeCon + CloudNativeCon North America 2019 Overview Ian Lewis (@IanMLewis), Google ２つのイベントが同時開催だった 次回登壇したいヒトは明日までCFP受付中 12000人くらい。去年は8000人くらいだった。 女性11</description></item><item><title>Kubernetes Meetup Tokyo #25</title><link>https://umemak.github.io/blog/posts/2019/11/13_k8s_meetup_tokyo_25/</link><pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/13_k8s_meetup_tokyo_25/</guid><description>https://k8sjp.connpass.com/event/150873/ 何度か応募するも抽選に落ちて、初参加です。 ストレージ系の話が中心です。 18:30~19:00 受付開始 (19:30まで)、ソーシャル 19:00~19:05 Opening (5min) 19:05~19:35 入門、Kubernetes Persistent Volume (30min) 坂下 幸徳（Twitter: @ysakashita3, GitHub: ysakashita), ゼットラボ株式会社 ストレージの苦手意識を払拭する データプレーンとコントロールプレーン データ：格納と転送担当 コントロー</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubernetes on umemak</title><link>https://umemak.github.io/blog/tags/kubernetes/</link><description>Recent content in Kubernetes on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 23 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>Qwiklabsの続きをやる</title><link>https://umemak.github.io/blog/posts/2020/02/23_qwiklabs/</link><pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/02/23_qwiklabs/</guid><description>&lt;p>先日のデブサミのハンズオンで使ったアカウントに１ヶ月のサブスクリプションが付与されていたのを思い出して、途中になっていたKubernatesのクエストの続きを終わらせた。
+Jenkinsを使ったCI/CDのやつ。&lt;/p>
+&lt;p>Jenkinsは昔使ったことあったけれど、最近はCI/CDのサービスが充実してきているので自前で用意して使うことはなくなってきたなー、ということで久しぶりに触った。&lt;/p></description></item><item><title>Kubernetes Meetup Tokyo #26</title><link>https://umemak.github.io/blog/posts/2019/12/03_kubernetes_meetup_tokyo_26/</link><pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/12/03_kubernetes_meetup_tokyo_26/</guid><description>&lt;p>今回は 2019/11/18-21 で開催された KubeCon + CloudNativeCon North America 2019 の Recap 会だそうです。
+どちらも参加していないのでどんな話が聞けるのか楽しみです。&lt;/p>
+&lt;p>&lt;a href="https://k8sjp.connpass.com/event/155240/">https://k8sjp.connpass.com/event/155240/&lt;/a>&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">きました &lt;a href="https://t.co/NkIGEmFehn">pic.twitter.com/NkIGEmFehn&lt;/a>&lt;/p>&amp;mdash; umemak (@umemak8) &lt;a href="https://twitter.com/umemak8/status/1201797492385275905?ref_src=twsrc%5Etfw">December 3, 2019&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+
+
+&lt;h2 id="1815-1915受付開始">18:15-19:15	受付開始&lt;/h2>
+&lt;h2 id="1900-1905opening-5min">19:00-19:05	Opening (5min)&lt;/h2>
+&lt;h2 id="1905-1920kubecon--cloudnativecon-north-america-2019-overview">19:05-19:20	KubeCon + CloudNativeCon North America 2019 Overview&lt;/h2>
+&lt;h3 id="ian-lewis-ianmlewis-google">Ian Lewis (@IanMLewis), Google&lt;/h3>
+&lt;ul>
+&lt;li>２つのイベントが同時開催だった&lt;/li>
+&lt;li>次回登壇したいヒトは明日までCFP受付中&lt;/li>
+&lt;li>12000人くらい。去年は8000人くらいだった。&lt;/li>
+&lt;li>女性11%はDev系カンファレンスでは多い方&lt;/li>
+&lt;li>関連イベントたくさん（スライドに入り切らない）&lt;/li>
+&lt;li>CNCF End User Community
+&lt;ul>
+&lt;li>日本の企業もいくつかある（もっとある？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Kubernetes Project Update
+&lt;ul>
+&lt;li>1.16&lt;/li>
+&lt;li>Ephemeral Containers&lt;/li>
+&lt;li>毎月3000人以上がコントリビュートしている&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1920-1940your-path-to-production-ready-kubernetes-hosted-by-weaveworks">19:20-19:40	Your Path to Production Ready Kubernetes hosted by Weaveworks&lt;/h2>
+&lt;h3 id="土田-智大-dullest-楽天株式会社">土田 智大 (dullest), 楽天株式会社&lt;/h3>
+&lt;ul>
+&lt;li>Co-located eventのひとつ&lt;/li>
+&lt;li>Production Readyのために
+&lt;ul>
+&lt;li>Liveness/Readiness Probe&lt;/li>
+&lt;li>Configmap&lt;/li>
+&lt;li>FGraceful shutdown&lt;/li>
+&lt;li>Twelve-Factor App&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ハンズオン資料
+&lt;ul>
+&lt;li>&lt;a href="https://tinyurl.com/kubecon-2019-workshop">https://tinyurl.com/kubecon-2019-workshop&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.weave.works/product/cloud/">https://www.weave.works/product/cloud/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>curlでスクリプト叩くだけでデプロイできる&lt;/li>
+&lt;li>Gitのファイルをもとにする（GitOps）&lt;/li>
+&lt;li>Production Ready Checklist&lt;/li>
+&lt;/ul>
+&lt;h2 id="1940-2000keynote-seamless-customer-experience-at-walmart-stores-powered-by-kubernetesedge">19:40-20:00	Keynote: Seamless Customer Experience at Walmart Stores Powered by Kubernetes@Edge&lt;/h2>
+&lt;h3 id="junichi-yoshise-jyoshise-hewlett-packard-enterprise">Junichi Yoshise (@jyoshise), Hewlett Packard Enterprise&lt;/h3>
+&lt;ul>
+&lt;li>Walmartの決済の話&lt;/li>
+&lt;li>POSシステムをクラウド化した（４年前）&lt;/li>
+&lt;li>通信コスト削減のためにエッジに処理を一部移動させる&lt;/li>
+&lt;li>クラウドネイティブ化の動機
+&lt;ul>
+&lt;li>Dynamic deployment&lt;/li>
+&lt;li>Scalability&lt;/li>
+&lt;li>Resiliency&lt;/li>
+&lt;li>Observability&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>エッジコンピューティングの動機
+&lt;ul>
+&lt;li>Low latency&lt;/li>
+&lt;li>Massive data&lt;/li>
+&lt;li>Privacy security&lt;/li>
+&lt;li>Local autonomy&lt;/li>
+&lt;li>Devices&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>MEC(Mobile Edge Computing)&lt;/li>
+&lt;li>データの同期
+&lt;ul>
+&lt;li>Edgeとクラウドで整合性が取れていないといけない
+&lt;ul>
+&lt;li>商品の金額とか&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>物理的な制約
+&lt;ul>
+&lt;li>各店舗にラックマウントサーバーを設置している&lt;/li>
+&lt;li>基本的にEdge環境では、過酷な環境でメンテナンスフリーに近い形で稼働し続けなければならない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>K8sクラスタの更新
+&lt;ul>
+&lt;li>遠隔地のクラスタ自体のデプロイを集中管理する仕組みが必要&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>MECでは、端末は移動する前提&lt;/li>
+&lt;li>スマートじゃないデバイスへの対応
+&lt;ul>
+&lt;li>KubeEdge
+&lt;ul>
+&lt;li>Device Twin&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>アプリケーションのデプロイ
+&lt;ul>
+&lt;li>GitOpsが最適&lt;/li>
+&lt;li>WalmartはCDエンジンを自作
+&lt;ul>
+&lt;li>今ならArgo flexやTectonが使える？&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Security
+&lt;ul>
+&lt;li>Secret管理
+&lt;ul>
+&lt;li>Vaultから撮ってきたsecretをetcdに一時的に保存するoperationを自作&lt;/li>
+&lt;li>クラウド側のみだとネットワーク切れたら使えなくなってしまうので&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2000-2020running-apache-samza-on-kubernetes---weiqing-yang-linkedin-corporation">20:00-20:20	Running Apache Samza on Kubernetes - Weiqing Yang, LinkedIn Corporation&lt;/h2>
+&lt;h3 id="吉村翔太-yosshi_-ntt-communications">吉村翔太 (@yosshi_), NTT Communications&lt;/h3>
+&lt;ul>
+&lt;li>samza
+&lt;ul>
+&lt;li>もともとはLinkedinが作ったストリーミング処理OSS&lt;/li>
+&lt;li>似たものにSparkやFlinkがある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>最近のHadoopの動向
+&lt;ul>
+&lt;li>オンプレで使う場合はディストリビューションを使う。主なものは３つ&lt;/li>
+&lt;li>ClouderaとHortonworksが統合。2021年くらい？&lt;/li>
+&lt;li>ClouderaDataPlatform
+&lt;ul>
+&lt;li>AWSをサポート。AzureとGCPも近々&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>KafkaがHDFSなら、SamzaはMapReduceに当たる存在
+&lt;ul>
+&lt;li>KafkaもLinkedinが開発したOSS&lt;/li>
+&lt;li>Message queue, Message hub&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2025-2055懇親タイム-sponsored-by-yahoo-japan">20:25-20:55	懇親タイム sponsored by Yahoo! JAPAN&lt;/h2>
+&lt;h2 id="2055-2115how-yelp-moved-security-from-the-app-to-the-mesh-with-envoy-and-opa">20:55-21:15	How Yelp Moved Security From the App to the Mesh with Envoy and OPA&lt;/h2>
+&lt;h3 id="鳥居隆史-ttorii0609-dell-emc">鳥居隆史 (@ttorii0609), Dell EMC&lt;/h3>
+&lt;ul>
+&lt;li>Security
+&lt;ul>
+&lt;li>K8s is NOT secure by default
+&lt;ul>
+&lt;li>基本フルオープンなので、ザル。&lt;/li>
+&lt;li>9個のプラクティス全部やれ&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>K8sのセキュリティは今アツい&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Open Policy Agent(OPA)&lt;/li>
+&lt;li>mTLS&lt;/li>
+&lt;li>OPAを使うにあたっての課題
+&lt;ul>
+&lt;li>OPA Policy Managerを作った&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>セキュリティを考えるとサービスメッシュは必要&lt;/li>
+&lt;li>Scope Creep
+&lt;ul>
+&lt;li>要件がどんどん広がっていく様&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2115-2135the-release-team-shadow-program---mentoring-for-the-future---guinevere-saenger-github--lachlan-evenson-microsoft">21:15-21:35	The Release Team Shadow Program - Mentoring For the Future - Guinevere Saenger, GitHub &amp;amp; Lachlan Evenson, Microsoft&lt;/h2>
+&lt;h3 id="yang-li-idealhack-kubernetes-community">Yang Li (@idealhack), Kubernetes community&lt;/h3>
+&lt;ul>
+&lt;li>&lt;/li>
+&lt;/ul></description></item><item><title>Kubernetes Meetup Tokyo #25</title><link>https://umemak.github.io/blog/posts/2019/11/13_k8s_meetup_tokyo_25/</link><pubDate>Wed, 13 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/13_k8s_meetup_tokyo_25/</guid><description>&lt;p>&lt;a href="https://k8sjp.connpass.com/event/150873/">https://k8sjp.connpass.com/event/150873/&lt;/a>&lt;/p>
+&lt;p>何度か応募するも抽選に落ちて、初参加です。&lt;/p>
+&lt;p>ストレージ系の話が中心です。&lt;/p>
+&lt;h2 id="18301900受付開始-1930までソーシャル">18:30~19:00	受付開始 (19:30まで)、ソーシャル&lt;/h2>
+&lt;h2 id="19001905opening-5min">19:00~19:05	Opening (5min)&lt;/h2>
+&lt;h2 id="19051935入門kubernetes-persistent-volume-30min">19:05~19:35	入門、Kubernetes Persistent Volume (30min)&lt;/h2>
+&lt;h3 id="坂下-幸徳twitter-ysakashita3-github-ysakashita-ゼットラボ株式会社">坂下 幸徳（Twitter: @ysakashita3, GitHub: ysakashita), ゼットラボ株式会社&lt;/h3>
+&lt;ul>
+&lt;li>ストレージの苦手意識を払拭する&lt;/li>
+&lt;li>データプレーンとコントロールプレーン
+&lt;ul>
+&lt;li>データ：格納と転送担当&lt;/li>
+&lt;li>コントロール：管理担当&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ストレージの種別
+&lt;ul>
+&lt;li>ブロック：内蔵ドライブと同じRawデバイス：性能High：DBやOS&lt;/li>
+&lt;li>ファイル：ネットワークドライブ：性能Mid：ファイル共有&lt;/li>
+&lt;li>オブジェクト：オブジェクト単位でHostからはHTTPアクセス：性能Low：写真や動画格納&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Persistentとは
+&lt;ul>
+&lt;li>Ephemeralの対義語。&lt;/li>
+&lt;li>永続的&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ストレージのモデル
+&lt;ul>
+&lt;li>PersistentVolumeClaim, PersistentVolume, StorageClass&lt;/li>
+&lt;li>オブジェクトストレージ以外（オブジェクトストレージはそもそもHTTPでアクセスできるので）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>リソースの範囲と権限
+&lt;ul>
+&lt;li>SC, PVはすべてのNamesoaceで共通&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>pvc
+&lt;ul>
+&lt;li>Volumeの要求仕様を表すリソース&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ロックメカニズム
+&lt;ul>
+&lt;li>ブロック：LBAのため、ロックメカニズムを持っていない
+&lt;ul>
+&lt;li>複数ホストから同時に書き込まないようにする&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ファイル
+&lt;ul>
+&lt;li>ファイル単位でロック&lt;/li>
+&lt;li>複数ホストから読み書き可能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>pv
+&lt;ul>
+&lt;li>Volume を表すリソース&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>sc
+&lt;ul>
+&lt;li>ストレージプールを表すモデル&lt;/li>
+&lt;li>Provisionerがストレージ装置のAPIを呼び出す&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>CSI(Container Storage Interface)
+&lt;ul>
+&lt;li>コンテナオーケストレーション向けの標準仕様&lt;/li>
+&lt;li>K8s 1.13 で GA&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>StatefulSet(sts)
+&lt;ul>
+&lt;li>pv, pvcを便利かつ安全に使う&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Rolling Update（セルフヒーリングも同様）
+&lt;ul>
+&lt;li>podは再作成&lt;/li>
+&lt;li>pv, pscはそのまま&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>FAQ
+&lt;ul>
+&lt;li>ストレージは何を選んだら良いか
+&lt;ul>
+&lt;li>用途、データの価値による&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>CinderとA社どちらが良いか
+&lt;ul>
+&lt;li>比較対象が異なる&lt;/li>
+&lt;li>K8sやCSIがサポートしてないならCinderを挟むのがあり&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>DB用途
+&lt;ul>
+&lt;li>特別な理由がなければブロックストレージが良い&lt;/li>
+&lt;li>性能問題、ロックメカニズムの問題&lt;/li>
+&lt;li>ファイルストレージはSyncで書き込まれる保証がない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Deploymentでpv使ってもよいか
+&lt;ul>
+&lt;li>ストレージに優しくないのでStatefulSetがオススメ&lt;/li>
+&lt;li>RWXをサポートしていないストレージはsts一択&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="19352010kubernetesにおけるcsiについて-30min">19:35~20:10	KubernetesにおけるCSIについて (30min)&lt;/h2>
+&lt;h3 id="早川-大貴-twitter-bells17_-github-bells17-株式会社idcフロンティア">早川 大貴 (Twitter: bells17_, Github: bells17), 株式会社IDCフロンティア&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.google.com/presentation/d/1S0FcCAgZn11ZFbJfU2eUhOa--vONqrsd0waRvwoTBcE/edit">https://docs.google.com/presentation/d/1S0FcCAgZn11ZFbJfU2eUhOa--vONqrsd0waRvwoTBcE/edit&lt;/a>&lt;/li>
+&lt;li>CSI移行のモチベーション
+&lt;ul>
+&lt;li>ストレージプロバイダ
+&lt;ul>
+&lt;li>CSIプラグインを実装するだけで各種コンテナオーケストレーター(OC)に対応できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>K8s
+&lt;ul>
+&lt;li>ボリュームプラグインを本体から除外できる&lt;/li>
+&lt;li>バイナリサイズの削減など期待&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>機材トラブル&lt;/li>
+&lt;li>CSIで定義されている仕様
+&lt;ul>
+&lt;li>ドライバの通信方法や提供方法
+&lt;ul>
+&lt;li>コンテナイメージ形式で提供する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>提供する機能&lt;/li>
+&lt;li>gRPCのインターフェース&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>RPC service
+&lt;ul>
+&lt;li>Identity Service&lt;/li>
+&lt;li>Controller Service&lt;/li>
+&lt;li>Node Service&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>K8sとCSIの連携
+&lt;ul>
+&lt;li>Controller Plugin/Node Pluginをサイドカー的に使用する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="20102045how-to-develop-the-high-available-redis-database-application-on-kubernetes-en英語-30min">20:10~20:45	How to develop the high-available Redis database application on Kubernetes (en/英語) (30min)&lt;/h2>
+&lt;h3 id="ran-xu-github-fengzixu-twitter-haierdi0715">Ran Xu (Github: fengzixu Twitter: Haierdi0715)&lt;/h3>
+&lt;ul>
+&lt;li>Higily Reliable Data
+&lt;ul>
+&lt;li>backup&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>High Available Service
+&lt;ul>
+&lt;li>data link
+&lt;ul>
+&lt;li>LBで分散管理&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="20452110懇親タイム-sponsored-by-cyberagent">20:45~21:10	懇親タイム sponsored by CyberAgent&lt;/h2>
+&lt;h2 id="2110-2130lt大会-5min-x-5-">21:10-21:30	LT大会 (5min x 5)	-&lt;/h2>
+&lt;h3>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/ytaka23/kubernetes-meetup-tokyo-25th">https://speakerdeck.com/ytaka23/kubernetes-meetup-tokyo-25th&lt;/a>&lt;/li>
+&lt;li>Topology Spread Constraints
+&lt;ul>
+&lt;li>v1.16でα版&lt;/li>
+&lt;li>設定次第でデッドロックになる可能性も&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.slideshare.net/inajob/kubeweekly/inajob/kubeweekly">https://www.slideshare.net/inajob/kubeweekly/inajob/kubeweekly&lt;/a>&lt;/li>
+&lt;li>K8s情報のキャッチアップ
+&lt;ul>
+&lt;li>&lt;a href="https://kubeweekly.io">https://kubeweekly.io&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/int128/deploy-the-cluster-autoscaler-with-terraform-and-helmfile-monitor-with-prometheus">https://speakerdeck.com/int128/deploy-the-cluster-autoscaler-with-terraform-and-helmfile-monitor-with-prometheus&lt;/a>&lt;/li>
+&lt;li>Cluster Autoscalerのデプロイとモニタリング
+&lt;ul>
+&lt;li>Terraform, Prometheus&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3>&lt;/h3>
+&lt;ul>
+&lt;li>Rook（るーく）/ Ceph
+&lt;ul>
+&lt;li>Host-based と PVC-based&lt;/li>
+&lt;li>Nodeに特別なNodeが必要なくなる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3>&lt;/h3>
+&lt;ul>
+&lt;li>Kubespray&lt;/li>
+&lt;li>CentOSで動かなくてCoreOSにしたら動いた&lt;/li>
+&lt;li>マネージドサービスを使ったほうが楽&lt;/li>
+&lt;/ul></description></item></channel></rss>

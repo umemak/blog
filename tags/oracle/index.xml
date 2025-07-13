@@ -1,1 +1,218 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>oracle on umemak</title><link>https://umemak.github.io/blog/tags/oracle/</link><description>Recent content in oracle on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 27 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/oracle/index.xml" rel="self" type="application/rss+xml"/><item><title>AdminerのOracle対応</title><link>https://umemak.github.io/blog/posts/2022/07/27_adminer_oracle/</link><pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/07/27_adminer_oracle/</guid><description>昨日はとりあえず動くところまでできたので、Dockerfileを整えてみた。 https://github.com/umemak/docker-adminer/blob/master/4/Dockerfile イメージサイズ800MB弱。 もっとスリム化できないかな。</description></item><item><title>AdminerのOracle対応</title><link>https://umemak.github.io/blog/posts/2022/07/26_adminer_oracle/</link><pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/07/26_adminer_oracle/</guid><description>昨日の続き。 とりあえず接続してテーブル一覧作ったりテーブル作成したりできた。 Docker + Laravel + Oracleの開発環境の構築方法が参考になった。</description></item><item><title>AdminerのOracle対応</title><link>https://umemak.github.io/blog/posts/2022/07/25_adminer_oracle/</link><pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/07/25_adminer_oracle/</guid><description>Adminer - Database management in a single PHP fileのDockerイメージAdminer - Official Image | Docker Hubは、Oracle接続に必要なモジュールが入っていない。 PHP: インストール/設定 - Manualによると、Instant Client for Linux x86-64 (64-bit)のBasicと、oci8が必要らしい。 DockerfileはOfficial Imageの</description></item><item><title>OracleにGoで接続するイメージの軽量化</title><link>https://umemak.github.io/blog/posts/2022/06/30_oracle_docker_go/</link><pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/30_oracle_docker_go/</guid><description>go-oci8を使ったイメージの、oraclelinux8をベースイメージにしたやつが1.25GBにもなったので、もっと小さくならないか試してみた。 golang:1-bullseyeをベースにした場合、rpmが使えないのでOracleInstantClient関連のzipを展開する方法でやって、1.</description></item><item><title>OracleにGoで接続する3</title><link>https://umemak.github.io/blog/posts/2022/06/12_oracle_docker_go3/</link><pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/12_oracle_docker_go3/</guid><description>昨日は、mattn/go-oci8: Oracle driver for Go using database/sqlとsijms/go-ora: Pure go oracle clientを使ったサンプルをコンテナ上でgo runして動かしていた。 今日はgo buildでバイナリにして実行できるようにしてみる。 何もオプション付けずにビルドしたら、どちらも問題なし。 バイナリサ</description></item><item><title>OracleサーバーのDockerイメージ</title><link>https://umemak.github.io/blog/posts/2022/06/11_oracle_docker/</link><pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/11_oracle_docker/</guid><description>docker-images/OracleDatabase/SingleInstance at main · oracle/docker-imagesはクライアント側みたいにビルド済みイメージが用意されていないのかな、と思ったらOracle Container Registryにそれらしいものを見つけた。 Home &amp;gt; Database &amp;gt; express $ docker pull container-registry.oracle.com/database/express:latest サイズやばい $ docker images | grep ora oraclelinux 8 3bbe8a2c4b82 9 days ago 226MB oraclelinux 8-slim 1fcc1e6dda05 3 weeks ago 101MB container-registry.oracle.com/database/express latest e986fd612413 2 months ago 11.2GB $ docker run -d container-registry.oracle.com/database/express $ docker ps CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES</description></item><item><title>OracleにGoで接続する</title><link>https://umemak.github.io/blog/posts/2022/06/11_oracle_docker_go/</link><pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/11_oracle_docker_go/</guid><description>前の記事でsqlplusで接続できたので、Goのプログラムから接続してみる。 instantclientベースでGoをインストールするDockerfile作成 FROM ghcr.io/oracle/oraclelinux8-instantclient:21 RUN yum install -y wget tar RUN wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gz RUN rm -rf /usr/local/go &amp;amp;&amp;amp; tar -C /usr/local -xzf go1.18.3.linux-amd64.tar.gz ENV PATH=&amp;#34;${PATH}:/usr/local/go/bin&amp;#34; CMD [ &amp;#34;go&amp;#34;, &amp;#34;version&amp;#34; ] docker-composeもそれを使うように修正 version: &amp;#39;3&amp;#39; services: db: image: container-registry.oracle.com/database/express ports: - 1521:1521 environment: - ORACLE_PWD=OraclePwd cli: build: . image: oraclegocli tty: true</description></item><item><title>OracleにGoで接続する2</title><link>https://umemak.github.io/blog/posts/2022/06/11_oracle_docker_go2/</link><pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/11_oracle_docker_go2/</guid><description>mattn/go-oci8: Oracle driver for Go using database/sqlでやってみる。 sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 pkg-config: exec: &amp;#34;pkg-config&amp;#34;: executable file not found in $PATH sh-4.4# yum install -y pkgconfig sh-4.4# go run go-oci8/main.go # pkg-config --cflags -- oci8 Package oci8 was not found in the pkg-config search path. Perhaps you should add the directory containing `oci8.pc&amp;#39; to the PKG_CONFIG_PATH environment variable Package &amp;#39;oci8&amp;#39;, required by &amp;#39;virtual:world&amp;#39;, not found pkg-config: exit status 1 とりあえずmain.goと同じところにoci8.pcを作成。中身はExamples。 sh-4.4# export PKG_CONFIG_PATH=. sh-4.4# go run go-oci8/main.go # github.com/mattn/go-oci8 cgo: C compiler &amp;#34;gcc&amp;#34; not found: exec: &amp;#34;gcc&amp;#34;:</description></item><item><title>OracleのDockerイメージ</title><link>https://umemak.github.io/blog/posts/2022/06/08_oracle_docker/</link><pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/08_oracle_docker/</guid><description>oracle/docker-images: Official source for Docker configurations, images, and examples of Dockerfiles for Oracle products and projects にまとめられている。 サーバー側：docker-images/OracleDatabase at main · oracle/docker-images クライアント側：docker-images/OracleInstantClient at main · oracle/docker-images ベースイメージはOraclelinux - Official Image | Docker Hubが使われている（結構でかい）</description></item><item><title>OCHaCafe Premium#1：Oracle Cloudで考える高可用性アーキテクチャ</title><link>https://umemak.github.io/blog/posts/2019/11/29_ochacafe_premium_1/</link><pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/29_ochacafe_premium_1/</guid><description>https://ochacafe.connpass.com/event/152768/ 番外編の第１回。高可用性の話です。 きました pic.twitter.com/plY4jy7rsN &amp;mdash; umemak (@umemak8) November 29, 2019 18：30 受付開始 19：00 オープニング 19：10 セッション開始 https://speakerdeck.com/mmarukaw/oracleclouddekao-erugao-ke-yong-xing-akitekutiya データセンター電源障害の話から OCIはまだ日本に来てから日が浅いこともあり、大規模障害はまだない。 海外ではあった Design For Failure サーバーは落ちる前提で考える クラウドベンダーの保証はSLA</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Oracle on umemak</title><link>https://umemak.github.io/blog/tags/oracle/</link><description>Recent content in Oracle on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 27 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/oracle/index.xml" rel="self" type="application/rss+xml"/><item><title>AdminerのOracle対応</title><link>https://umemak.github.io/blog/posts/2022/07/27_adminer_oracle/</link><pubDate>Wed, 27 Jul 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/07/27_adminer_oracle/</guid><description>&lt;p>昨日はとりあえず動くところまでできたので、Dockerfileを整えてみた。&lt;/p>
+&lt;p>&lt;a href="https://github.com/umemak/docker-adminer/blob/master/4/Dockerfile">https://github.com/umemak/docker-adminer/blob/master/4/Dockerfile&lt;/a>&lt;/p>
+&lt;p>イメージサイズ800MB弱。
+もっとスリム化できないかな。&lt;/p></description></item><item><title>AdminerのOracle対応</title><link>https://umemak.github.io/blog/posts/2022/07/26_adminer_oracle/</link><pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/07/26_adminer_oracle/</guid><description>&lt;p>昨日の続き。
+とりあえず接続してテーブル一覧作ったりテーブル作成したりできた。&lt;/p>
+&lt;p>&lt;a href="https://zenn.dev/marushin/articles/d8c8760e978489">Docker + Laravel + Oracleの開発環境の構築方法&lt;/a>が参考になった。&lt;/p></description></item><item><title>AdminerのOracle対応</title><link>https://umemak.github.io/blog/posts/2022/07/25_adminer_oracle/</link><pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/07/25_adminer_oracle/</guid><description>&lt;p>&lt;a href="https://www.adminer.org/">Adminer - Database management in a single PHP file&lt;/a>のDockerイメージ&lt;a href="https://hub.docker.com/_/adminer/">Adminer - Official Image | Docker Hub&lt;/a>は、Oracle接続に必要なモジュールが入っていない。&lt;/p>
+&lt;p>&lt;a href="https://www.php.net/manual/ja/oci8.setup.php">PHP: インストール/設定 - Manual&lt;/a>によると、&lt;a href="https://www.oracle.com/database/technologies/instant-client/linux-x86-64-downloads.html">Instant Client for Linux x86-64 (64-bit)&lt;/a>のBasicと、oci8が必要らしい。&lt;/p>
+&lt;p>DockerfileはOfficial Imageの&lt;a href="https://github.com/TimWolla/docker-adminer">TimWolla/docker-adminer: Database management in a single PHP file&lt;/a>を参考に。&lt;/p></description></item><item><title>OracleにGoで接続するイメージの軽量化</title><link>https://umemak.github.io/blog/posts/2022/06/30_oracle_docker_go/</link><pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/30_oracle_docker_go/</guid><description>&lt;p>go-oci8を使ったイメージの、oraclelinux8をベースイメージにしたやつが&lt;code>1.25GB&lt;/code>にもなったので、もっと小さくならないか試してみた。&lt;/p>
+&lt;p>golang:1-bullseyeをベースにした場合、rpmが使えないのでOracleInstantClient関連のzipを展開する方法でやって、&lt;code>1.32GB&lt;/code>。増えてる。&lt;/p></description></item><item><title>OracleにGoで接続する3</title><link>https://umemak.github.io/blog/posts/2022/06/12_oracle_docker_go3/</link><pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/12_oracle_docker_go3/</guid><description>&lt;p>昨日は、&lt;a href="https://github.com/mattn/go-oci8">mattn/go-oci8: Oracle driver for Go using database/sql&lt;/a>と&lt;a href="https://github.com/sijms/go-ora">sijms/go-ora: Pure go oracle client&lt;/a>を使ったサンプルをコンテナ上で&lt;code>go run&lt;/code>して動かしていた。&lt;/p>
+&lt;p>今日は&lt;code>go build&lt;/code>でバイナリにして実行できるようにしてみる。&lt;/p>
+&lt;p>何もオプション付けずにビルドしたら、どちらも問題なし。&lt;/p>
+&lt;p>バイナリサイズを小さくしようと、&lt;code>-ldflags=&amp;quot;-s -w -extldflags \&amp;quot;-static\&amp;quot;&amp;quot;&lt;/code>をつけたところ、go-oraは大丈夫。go-oci8はNGだった。&lt;/p></description></item><item><title>OracleサーバーのDockerイメージ</title><link>https://umemak.github.io/blog/posts/2022/06/11_oracle_docker/</link><pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/11_oracle_docker/</guid><description>&lt;p>&lt;a href="https://github.com/oracle/docker-images/tree/main/OracleDatabase/SingleInstance">docker-images/OracleDatabase/SingleInstance at main · oracle/docker-images&lt;/a>はクライアント側みたいにビルド済みイメージが用意されていないのかな、と思ったらOracle Container Registryにそれらしいものを見つけた。&lt;/p>
+&lt;p>&lt;a href="https://container-registry.oracle.com/ords/f?p=113:10::::::">Home&lt;/a> &amp;gt; Database &amp;gt; express&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ docker pull container-registry.oracle.com/database/express:latest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>サイズやばい&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ docker images | grep ora
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>oraclelinux &lt;span style="color:#ae81ff">8&lt;/span> 3bbe8a2c4b82 &lt;span style="color:#ae81ff">9&lt;/span> days ago 226MB
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>oraclelinux 8-slim 1fcc1e6dda05 &lt;span style="color:#ae81ff">3&lt;/span> weeks ago 101MB
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>container-registry.oracle.com/database/express latest e986fd612413 &lt;span style="color:#ae81ff">2&lt;/span> months ago 11.2GB
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ docker run -d container-registry.oracle.com/database/express
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ docker ps
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>b9c64bc970d7 container-registry.oracle.com/database/express &lt;span style="color:#e6db74">&amp;#34;/bin/sh -c &amp;#39;exec &lt;/span>$O&lt;span style="color:#e6db74">…&amp;#34;&lt;/span> &lt;span style="color:#ae81ff">56&lt;/span> seconds ago Up &lt;span style="color:#ae81ff">55&lt;/span> seconds &lt;span style="color:#f92672">(&lt;/span>health: starting&lt;span style="color:#f92672">)&lt;/span> wizardly_dijkstra
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ docker ps
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>b9c64bc970d7 container-registry.oracle.com/database/express &lt;span style="color:#e6db74">&amp;#34;/bin/sh -c &amp;#39;exec &lt;/span>$O&lt;span style="color:#e6db74">…&amp;#34;&lt;/span> About a minute ago Up About a minute &lt;span style="color:#f92672">(&lt;/span>healthy&lt;span style="color:#f92672">)&lt;/span> wizardly_dijkstra
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Statusがhalthyになるまで1分くらいかかった。&lt;/p></description></item><item><title>OracleにGoで接続する</title><link>https://umemak.github.io/blog/posts/2022/06/11_oracle_docker_go/</link><pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/11_oracle_docker_go/</guid><description>&lt;p>&lt;a href="../11_oracle_docker">前の記事&lt;/a>でsqlplusで接続できたので、Goのプログラムから接続してみる。&lt;/p>
+&lt;p>instantclientベースでGoをインストールするDockerfile作成&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-dockerfile" data-lang="dockerfile">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">FROM&lt;/span>&lt;span style="color:#e6db74"> ghcr.io/oracle/oraclelinux8-instantclient:21&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">&lt;/span>&lt;span style="color:#66d9ef">RUN&lt;/span> yum install -y wget tar&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">&lt;/span>&lt;span style="color:#66d9ef">RUN&lt;/span> wget https://go.dev/dl/go1.18.3.linux-amd64.tar.gz&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">&lt;/span>&lt;span style="color:#66d9ef">RUN&lt;/span> rm -rf /usr/local/go &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> tar -C /usr/local -xzf go1.18.3.linux-amd64.tar.gz&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">&lt;/span>&lt;span style="color:#66d9ef">ENV&lt;/span> PATH&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>PATH&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">:/usr/local/go/bin&amp;#34;&lt;/span>&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">&lt;/span>&lt;span style="color:#66d9ef">CMD&lt;/span> [ &lt;span style="color:#e6db74">&amp;#34;go&amp;#34;&lt;/span>, &lt;span style="color:#e6db74">&amp;#34;version&amp;#34;&lt;/span> ]&lt;span style="color:#960050;background-color:#1e0010">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>docker-composeもそれを使うように修正&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">version&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;3&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">services&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">db&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">image&lt;/span>: &lt;span style="color:#ae81ff">container-registry.oracle.com/database/express&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">ports&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">1521&lt;/span>:&lt;span style="color:#ae81ff">1521&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">environment&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#ae81ff">ORACLE_PWD=OraclePwd&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">cli&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">build&lt;/span>: &lt;span style="color:#ae81ff">.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">image&lt;/span>: &lt;span style="color:#ae81ff">oraclegocli&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">tty&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">command&lt;/span>: &lt;span style="color:#ae81ff">bash&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;a href="https://raw.githubusercontent.com/sijms/go-ora/master/examples/hello_sql/main.go">sijms/go-oraのサンプル&lt;/a>ファイルを拝借。
+importの所はv2に修正。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>sh-4.4# vi main.go
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh-4.4# go mod tidy
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>go: finding module &lt;span style="color:#66d9ef">for&lt;/span> package github.com/sijms/go-ora/v2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>go: downloading github.com/sijms/go-ora/v2 v2.4.24
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>go: found github.com/sijms/go-ora/v2 in github.com/sijms/go-ora/v2 v2.4.24
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh-4.4# go run main.go oracle://system:OraclePwd@db:1521/XE
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Successfully connected.
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>接続はできているみたいだけど、SQLの実行結果が表示されない。。&lt;/p></description></item><item><title>OracleにGoで接続する2</title><link>https://umemak.github.io/blog/posts/2022/06/11_oracle_docker_go2/</link><pubDate>Sat, 11 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/11_oracle_docker_go2/</guid><description>&lt;p>&lt;a href="https://github.com/mattn/go-oci8">mattn/go-oci8: Oracle driver for Go using database/sql&lt;/a>でやってみる。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>sh-4.4# go run go-oci8/main.go 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># pkg-config --cflags -- oci8&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pkg-config: exec: &lt;span style="color:#e6db74">&amp;#34;pkg-config&amp;#34;&lt;/span>: executable file not found in $PATH
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh-4.4# yum install -y pkgconfig
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh-4.4# go run go-oci8/main.go 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># pkg-config --cflags -- oci8&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Package oci8 was not found in the pkg-config search path.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Perhaps you should add the directory containing &lt;span style="color:#e6db74">`&lt;/span>oci8.pc&lt;span style="color:#e6db74">&amp;#39;
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">to the PKG_CONFIG_PATH environment variable
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">Package &amp;#39;&lt;/span>oci8&lt;span style="color:#e6db74">&amp;#39;, required by &amp;#39;&lt;/span>virtual:world&lt;span style="color:#960050;background-color:#1e0010">&amp;#39;&lt;/span>, not found
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>pkg-config: exit status &lt;span style="color:#ae81ff">1&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>とりあえずmain.goと同じところにoci8.pcを作成。中身は&lt;a href="https://github.com/mattn/go-oci8#linux">Examples&lt;/a>。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>sh-4.4# export PKG_CONFIG_PATH&lt;span style="color:#f92672">=&lt;/span>.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh-4.4# go run go-oci8/main.go 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># github.com/mattn/go-oci8&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cgo: C compiler &lt;span style="color:#e6db74">&amp;#34;gcc&amp;#34;&lt;/span> not found: exec: &lt;span style="color:#e6db74">&amp;#34;gcc&amp;#34;&lt;/span>: executable file not found in $PATH
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh-4.4# yum install -y gcc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh-4.4# go run go-oci8/main.go 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># github.com/mattn/go-oci8&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>In file included from vendor/github.com/mattn/go-oci8/c_helpers.go:3:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>./oci8.go.h:1:10: fatal error: oci.h: No such file or directory
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">#include &amp;lt;oci.h&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ^~~~~~~
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>compilation terminated.
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sh-4.4# find / | grep oci.h
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>/usr/include/oracle/21/client64/oci.h
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>oci8.pcのincludedirを/usr/include/oracle/21/client64に変更。&lt;/p></description></item><item><title>OracleのDockerイメージ</title><link>https://umemak.github.io/blog/posts/2022/06/08_oracle_docker/</link><pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/06/08_oracle_docker/</guid><description>&lt;p>&lt;a href="https://github.com/oracle/docker-images">oracle/docker-images: Official source for Docker configurations, images, and examples of Dockerfiles for Oracle products and projects&lt;/a> にまとめられている。&lt;/p>
+&lt;p>サーバー側：&lt;a href="https://github.com/oracle/docker-images/tree/main/OracleDatabase">docker-images/OracleDatabase at main · oracle/docker-images&lt;/a>&lt;/p>
+&lt;p>クライアント側：&lt;a href="https://github.com/oracle/docker-images/tree/main/OracleInstantClient">docker-images/OracleInstantClient at main · oracle/docker-images&lt;/a>&lt;/p>
+&lt;p>ベースイメージは&lt;a href="https://hub.docker.com/_/oraclelinux">Oraclelinux - Official Image | Docker Hub&lt;/a>が使われている（結構でかい）。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ docker images | grep ora
+oraclelinux 8 3bbe8a2c4b82 6 days ago 226MB
+oraclelinux 8-slim 1fcc1e6dda05 3 weeks ago 101MB
+&lt;/code>&lt;/pre></description></item><item><title>OCHaCafe Premium#1：Oracle Cloudで考える高可用性アーキテクチャ</title><link>https://umemak.github.io/blog/posts/2019/11/29_ochacafe_premium_1/</link><pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/29_ochacafe_premium_1/</guid><description>&lt;p>&lt;a href="https://ochacafe.connpass.com/event/152768/">https://ochacafe.connpass.com/event/152768/&lt;/a>&lt;/p>
+&lt;p>番外編の第１回。高可用性の話です。&lt;/p>
+&lt;blockquote class="twitter-tweet">&lt;p lang="ja" dir="ltr">きました &lt;a href="https://t.co/plY4jy7rsN">pic.twitter.com/plY4jy7rsN&lt;/a>&lt;/p>&amp;mdash; umemak (@umemak8) &lt;a href="https://twitter.com/umemak8/status/1200347955196133377?ref_src=twsrc%5Etfw">November 29, 2019&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+
+
+&lt;h2 id="1830受付開始">18：30　受付開始　&lt;/h2>
+&lt;h2 id="1900オープニング">19：00　オープニング&lt;/h2>
+&lt;h2 id="1910セッション開始">19：10　セッション開始&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/mmarukaw/oracleclouddekao-erugao-ke-yong-xing-akitekutiya">https://speakerdeck.com/mmarukaw/oracleclouddekao-erugao-ke-yong-xing-akitekutiya&lt;/a>&lt;/li>
+&lt;li>データセンター電源障害の話から&lt;/li>
+&lt;li>OCIはまだ日本に来てから日が浅いこともあり、大規模障害はまだない。
+&lt;ul>
+&lt;li>海外ではあった&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Design For Failure
+&lt;ul>
+&lt;li>サーバーは落ちる前提で考える&lt;/li>
+&lt;li>クラウドベンダーの保証はSLAの範囲内まで&lt;/li>
+&lt;li>アプリケーションの最終責任はユーザーが負う&lt;/li>
+&lt;li>高可用性のためのコストと複雑性を、軽減できるリスクに対してバランスを取る&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>高可用性とは
+&lt;ul>
+&lt;li>システムが継続して可動できる能力が高いこと&lt;/li>
+&lt;li>クラウドでもオンプレのときと考え方は同じ&lt;/li>
+&lt;li>クラウドの特性として高可用性を比較的低コストで実現できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>障害のレベル
+&lt;ul>
+&lt;li>機器障害
+&lt;ul>
+&lt;li>プロセスだったりハードウェアだったり&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>サイト障害
+&lt;ul>
+&lt;li>DCレベル&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>広域災害
+&lt;ul>
+&lt;li>地域まるごと&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>クラウドのリソースが備える特性を活かす
+&lt;ul>
+&lt;li>本質的に堅牢なOCIリソース
+&lt;ul>
+&lt;li>オブジェクトストレージ
+&lt;ul>
+&lt;li>耐障害性、安価、各種サービスとの連携&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ロードバランサー
+&lt;ul>
+&lt;li>トラフィックの高可用性&lt;/li>
+&lt;li>サイトレベルの耐障害性&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>OKE(K8s)
+&lt;ul>
+&lt;li>クラスタとノードプールの自己回復&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Exadata Cloud ServiceとAutonomous Database
+&lt;ul>
+&lt;li>Oracle Databaseの高可用性プラクティスが詰め込まれている&lt;/li>
+&lt;li>RACでスケール&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>OCI DNS
+&lt;ul>
+&lt;li>グローバルレベルの耐障害性&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ユーザーに寄る高可用性実装を支援する
+&lt;ul>
+&lt;li>リソース配置
+&lt;ul>
+&lt;li>リージョン&lt;/li>
+&lt;li>可用性ドメイン（AD）
+&lt;ul>
+&lt;li>データセンター&lt;/li>
+&lt;li>東京はまだ１つなので、AZ障害イコールリージョン障害&lt;/li>
+&lt;li>データセンター間の通信は低レーテンシー&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>フォルト・ドメイン
+&lt;ul>
+&lt;li>DC内のサーバラック群をグループ化したもの&lt;/li>
+&lt;li>仮想サーバーを別々の物理サーバーに配置したいときに有効&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>リソースの有効範囲
+&lt;ul>
+&lt;li>グローバル＞リージョン＞可用性ドメイン＞フォルト・ドメイン&lt;/li>
+&lt;li>リージョンレベルのリソース（VCN）でリージョンまたぎをしたいときはピアリングをする必要がある&lt;/li>
+&lt;li>リージョナルサブネットというのがある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="1943-10分休憩">19:43 10分休憩&lt;/h3>
+&lt;p>ビール投入&lt;/p></description></item></channel></rss>

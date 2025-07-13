@@ -1,1 +1,59 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AdventCalendar2021 on umemak</title><link>https://umemak.github.io/blog/tags/adventcalendar2021/</link><description>Recent content in AdventCalendar2021 on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/adventcalendar2021/index.xml" rel="self" type="application/rss+xml"/><item><title>まとめ</title><link>https://umemak.github.io/blog/posts/2021/12/31_ac/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/31_ac/</guid><description>今日で1か月。よく続いた。 アプリは完成までたどり着かなかったけど、学びは得られた。 GraphQL理解すればまた評価変わるかもしれないけど、AmplifyよりFirebaseのほうがとっつきやすいと感じた。 自分の環境ではモックがまともに使えなかったのも痛い。モックが使えなくても、pushが速ければ気に</description></item><item><title>GraphQLでAND条件検索</title><link>https://umemak.github.io/blog/posts/2021/12/30_ac/</link><pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/30_ac/</guid><description>昨日の続き。 AND以外に、ORも同様のエラーでNGだった。 ANDやORを使わなければ想定通りのフィルタになるので、間違ってないと思うんだけど。 何度目かの詰み。</description></item><item><title>キャンセル処理入れる</title><link>https://umemak.github.io/blog/posts/2021/12/29_ac/</link><pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/29_ac/</guid><description>エントリー処理ができるようになったので、同じようなノリでキャンセル処理も実装する。 同じノリなのになぜかエラーが出る、と思ったらエントリーの方もエラーが出ていた。 Variable &amp;#39;id&amp;#39; has coerced Null value for NonNull type &amp;#39;ID!&amp;#39; eventIDとuserIDをキーに検索したいのに、idを指定しろと言われている。 getEventUserではなくlis</description></item><item><title>DB再作成</title><link>https://umemak.github.io/blog/posts/2021/12/28_ac/</link><pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/28_ac/</guid><description>データがある状態でデータ構造の変更をかけたせいか、挙動が怪しくなったので一度DynamoDBのテーブルを削除した。 その後、amplify update api、apmlify pushを実行。 したらAppSyncのupdateでエラー終了してしまった。 amplify deleteで丸ごと削除してからamplify pushしたらN</description></item><item><title>データ構造再考</title><link>https://umemak.github.io/blog/posts/2021/12/27_ac/</link><pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/27_ac/</guid><description>リレーション張ろうとするからややこしくなるのであって、IDだけ持たせればとりあえずやりたいことは実現できるのでは？</description></item><item><title>ここまでのまとめ</title><link>https://umemak.github.io/blog/posts/2021/12/26_ac/</link><pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/26_ac/</guid><description>やったこと Amplifyのチュートリアル Codespacesでの開発 VSCode+WSLでの開発 VSCode+EC2での開発 VSCode+RaspberryPi4での開発 わかったこと AmplifyはFirebaseみたいなもの Vueはわかりやすい データベースはGraphQLわからないとつらい クラウド</description></item><item><title>EC2で開発</title><link>https://umemak.github.io/blog/posts/2021/12/25_ac/</link><pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/25_ac/</guid><description>Surface Go2 で厳しいので、EC2インスタンス立ててやってみる。 とりあえず無料枠のt2.microでAmazonLinux。 gitが入ってなかったのでインストール。 $ sudo yum update $ sudo yum install git $ git --version git version 2.32.0 npmも入っていなかった。 チュートリアル: Amazon EC2 インスタンスでの Node.js のセットアップ - AWS SDK for JavaScript $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash $ . ~/.nvm/nvm.sh $ nvm install node $</description></item><item><title>Raspberry pi 4でやってみる</title><link>https://umemak.github.io/blog/posts/2021/12/25_ac2/</link><pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/25_ac2/</guid><description>寝る前にEC2で試してダメで、起きたらラズパイがあること思い出したので、ラズパイでも試してみる。 久しぶりの起動だし、OSクリーンインストールからやったら結構時間かかる。こんなにかかったっけ。 毎日のようにAmplify設定やっているとだいぶ慣れてくる。 JavaはWSLのときのコマンドで入れる。 add-apt-repository コマン</description></item><item><title>ユーザーテーブルにデータ登録する</title><link>https://umemak.github.io/blog/posts/2021/12/24_ac/</link><pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/24_ac/</guid><description>イベントにエントリーするときにユーザーテーブルとイベントテーブルの関連付けするので、それぞれのテーブルにデータがないといけない。 イベントテーブルの作成と編集はできるようになっているので、ユーザーテーブルにデータ登録するところを作る。 サインインのタイミングで登録できれば良いのだけれど、とりあえずログイ</description></item><item><title>壊れたファイルを取り戻す</title><link>https://umemak.github.io/blog/posts/2021/12/23_ac/</link><pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/23_ac/</guid><description>最初に試したチュートリアルもCodespaceでやってたのを思い出して、まだ残っていたのでaws-exporter.jsを持ってくることができた。 で、aws_appsync_graphqlEndpoint はAWSコンソールから確認できるだろう、と見に行ったら、バックエンドの設定をもってくるっぽいコマ</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AdventCalendar2021 on umemak</title><link>https://umemak.github.io/blog/tags/adventcalendar2021/</link><description>Recent content in AdventCalendar2021 on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 31 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/adventcalendar2021/index.xml" rel="self" type="application/rss+xml"/><item><title>まとめ</title><link>https://umemak.github.io/blog/posts/2021/12/31_ac/</link><pubDate>Fri, 31 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/31_ac/</guid><description>&lt;p>今日で1か月。よく続いた。&lt;/p>
+&lt;p>アプリは完成までたどり着かなかったけど、学びは得られた。&lt;/p>
+&lt;p>GraphQL理解すればまた評価変わるかもしれないけど、AmplifyよりFirebaseのほうがとっつきやすいと感じた。&lt;/p>
+&lt;p>自分の環境ではモックがまともに使えなかったのも痛い。モックが使えなくても、pushが速ければ気にならなかったかもだけど。&lt;/p></description></item><item><title>GraphQLでAND条件検索</title><link>https://umemak.github.io/blog/posts/2021/12/30_ac/</link><pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/30_ac/</guid><description>&lt;p>昨日の続き。&lt;/p>
+&lt;p>AND以外に、ORも同様のエラーでNGだった。
+ANDやORを使わなければ想定通りのフィルタになるので、間違ってないと思うんだけど。&lt;/p>
+&lt;p>何度目かの詰み。&lt;/p></description></item><item><title>キャンセル処理入れる</title><link>https://umemak.github.io/blog/posts/2021/12/29_ac/</link><pubDate>Wed, 29 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/29_ac/</guid><description>&lt;p>エントリー処理ができるようになったので、同じようなノリでキャンセル処理も実装する。&lt;/p>
+&lt;p>同じノリなのになぜかエラーが出る、と思ったらエントリーの方もエラーが出ていた。&lt;/p>
+&lt;pre tabindex="0">&lt;code>Variable &amp;#39;id&amp;#39; has coerced Null value for NonNull type &amp;#39;ID!&amp;#39;
+&lt;/code>&lt;/pre>&lt;p>eventIDとuserIDをキーに検索したいのに、idを指定しろと言われている。
+getEventUserではなくlistEventUserにfilter指定したらいけそう。
+&lt;a href="https://docs.amplify.aws/lib/graphqlapi/query-data/q/platform/js/#compound-filters">API (GraphQL) - Fetch data - JavaScript - AWS Amplify Docs&lt;/a>
+と思ったけどand指定したらなんかエラー。。&lt;/p></description></item><item><title>DB再作成</title><link>https://umemak.github.io/blog/posts/2021/12/28_ac/</link><pubDate>Tue, 28 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/28_ac/</guid><description>&lt;p>データがある状態でデータ構造の変更をかけたせいか、挙動が怪しくなったので一度DynamoDBのテーブルを削除した。&lt;/p>
+&lt;p>その後、&lt;code>amplify update api&lt;/code>、&lt;code>apmlify push&lt;/code>を実行。
+したらAppSyncのupdateでエラー終了してしまった。&lt;/p>
+&lt;p>&lt;code>amplify delete&lt;/code>で丸ごと削除してから&lt;code>amplify push&lt;/code>したら&lt;code>No Amplify backend project files detected within this folder.&lt;/code>になった。&lt;/p></description></item><item><title>データ構造再考</title><link>https://umemak.github.io/blog/posts/2021/12/27_ac/</link><pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/27_ac/</guid><description>&lt;p>リレーション張ろうとするからややこしくなるのであって、IDだけ持たせればとりあえずやりたいことは実現できるのでは？&lt;/p></description></item><item><title>ここまでのまとめ</title><link>https://umemak.github.io/blog/posts/2021/12/26_ac/</link><pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/26_ac/</guid><description>&lt;h2 id="やったこと">やったこと&lt;/h2>
+&lt;ul>
+&lt;li>Amplifyのチュートリアル&lt;/li>
+&lt;li>Codespacesでの開発&lt;/li>
+&lt;li>VSCode+WSLでの開発&lt;/li>
+&lt;li>VSCode+EC2での開発&lt;/li>
+&lt;li>VSCode+RaspberryPi4での開発&lt;/li>
+&lt;/ul>
+&lt;h2 id="わかったこと">わかったこと&lt;/h2>
+&lt;ul>
+&lt;li>AmplifyはFirebaseみたいなもの&lt;/li>
+&lt;li>Vueはわかりやすい&lt;/li>
+&lt;li>データベースはGraphQLわからないとつらい&lt;/li>
+&lt;li>クラウド環境でAmplify mockを使うのは難しい&lt;/li>
+&lt;li>ラズパイ（32bit）ではAmplify mockを使えない&lt;/li>
+&lt;li>Surface Go 2ではこのレベルの開発作業は厳しい&lt;/li>
+&lt;li>クラウドに開発環境を移行するにはまだ壁がある&lt;/li>
+&lt;/ul>
+&lt;h2 id="つぎにやること">つぎにやること&lt;/h2>
+&lt;ul>
+&lt;li>強いPCが欲しい&lt;/li>
+&lt;li>GraphQLを理解する&lt;/li>
+&lt;/ul></description></item><item><title>EC2で開発</title><link>https://umemak.github.io/blog/posts/2021/12/25_ac/</link><pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/25_ac/</guid><description>&lt;p>Surface Go2 で厳しいので、EC2インスタンス立ててやってみる。
+とりあえず無料枠のt2.microでAmazonLinux。&lt;/p>
+&lt;p>gitが入ってなかったのでインストール。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ sudo yum update
+$ sudo yum install git
+$ git --version
+git version 2.32.0
+&lt;/code>&lt;/pre>&lt;p>npmも入っていなかった。
+&lt;a href="https://docs.aws.amazon.com/ja_jp/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html">チュートリアル: Amazon EC2 インスタンスでの Node.js のセットアップ - AWS SDK for JavaScript&lt;/a>&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+$ . ~/.nvm/nvm.sh
+$ nvm install node
+$ npm -v
+8.3.0
+&lt;/code>&lt;/pre>&lt;p>作ったソースダウンロードしてきてAmplifyのセットアップ。&lt;/p></description></item><item><title>Raspberry pi 4でやってみる</title><link>https://umemak.github.io/blog/posts/2021/12/25_ac2/</link><pubDate>Sat, 25 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/25_ac2/</guid><description>&lt;p>寝る前にEC2で試してダメで、起きたらラズパイがあること思い出したので、ラズパイでも試してみる。&lt;/p>
+&lt;p>久しぶりの起動だし、OSクリーンインストールからやったら結構時間かかる。こんなにかかったっけ。&lt;/p>
+&lt;p>毎日のようにAmplify設定やっているとだいぶ慣れてくる。
+JavaはWSLのときのコマンドで入れる。&lt;/p>
+&lt;p>&lt;code>add-apt-repository コマンドが見つかりません&lt;/code>エラーが出たので、インストールする。&lt;/p></description></item><item><title>ユーザーテーブルにデータ登録する</title><link>https://umemak.github.io/blog/posts/2021/12/24_ac/</link><pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/24_ac/</guid><description>&lt;p>イベントにエントリーするときにユーザーテーブルとイベントテーブルの関連付けするので、それぞれのテーブルにデータがないといけない。&lt;/p>
+&lt;p>イベントテーブルの作成と編集はできるようになっているので、ユーザーテーブルにデータ登録するところを作る。&lt;/p>
+&lt;p>サインインのタイミングで登録できれば良いのだけれど、とりあえずログイン時にテーブルチェックして、なければ登録するようにする。&lt;/p></description></item><item><title>壊れたファイルを取り戻す</title><link>https://umemak.github.io/blog/posts/2021/12/23_ac/</link><pubDate>Thu, 23 Dec 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/12/23_ac/</guid><description>&lt;p>最初に試したチュートリアルもCodespaceでやってたのを思い出して、まだ残っていたのでaws-exporter.jsを持ってくることができた。&lt;/p>
+&lt;p>で、aws_appsync_graphqlEndpoint はAWSコンソールから確認できるだろう、と見に行ったら、バックエンドの設定をもってくるっぽいコマンドが。&lt;/p></description></item></channel></rss>

@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>webpack on umemak</title><link>https://umemak.github.io/blog/tags/webpack/</link><description>Recent content in webpack on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 02 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/webpack/index.xml" rel="self" type="application/rss+xml"/><item><title>webpackで構築</title><link>https://umemak.github.io/blog/posts/2022/05/02_webpack/</link><pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/02_webpack/</guid><description>昨日は、TypeScript環境構築に手間をかけたくないという想いでParcelを試してみたところ、エラーで途方に暮れていた。 今日は、古き良きwebpackを試した。 参考にしたページはこちら 最新版TypeScript+webpack 5の環境構築まとめ(React, Vue.js, Three.jsのサンプル付き) -</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Webpack on umemak</title><link>https://umemak.github.io/blog/tags/webpack/</link><description>Recent content in Webpack on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 02 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/webpack/index.xml" rel="self" type="application/rss+xml"/><item><title>webpackで構築</title><link>https://umemak.github.io/blog/posts/2022/05/02_webpack/</link><pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/02_webpack/</guid><description>&lt;p>昨日は、TypeScript環境構築に手間をかけたくないという想いでParcelを試してみたところ、エラーで途方に暮れていた。&lt;/p>
+&lt;p>今日は、古き良きwebpackを試した。&lt;/p>
+&lt;p>参考にしたページはこちら&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://ics.media/entry/16329/#webpack-ts">最新版TypeScript+webpack 5の環境構築まとめ(React, Vue.js, Three.jsのサンプル付き) - ICS MEDIA&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ npm init -y
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ npm i -D webpack webpack-cli typescript ts-loader
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ code package.json
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ code tsconfig.json
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ code webpack.config.js
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ code src/main.ts
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ npm run build
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt; mdmml_js@1.0.0 build /home/umemak/workspace/mdmml_js
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;gt; webpack
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>asset main.js 1.2 KiB &lt;span style="color:#f92672">[&lt;/span>emitted&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">(&lt;/span>name: main&lt;span style="color:#f92672">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>./src/main.ts &lt;span style="color:#ae81ff">14&lt;/span> bytes &lt;span style="color:#f92672">[&lt;/span>built&lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">[&lt;/span>code generated&lt;span style="color:#f92672">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>webpack 5.72.0 compiled successfully in &lt;span style="color:#ae81ff">1126&lt;/span> ms
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>できた。
+楽をしようとしてかえって遠回りになった経験だった。&lt;/p></description></item></channel></rss>

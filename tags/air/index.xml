@@ -1,1 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>air on umemak</title><link>https://umemak.github.io/blog/tags/air/</link><description>Recent content in air on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/air/index.xml" rel="self" type="application/rss+xml"/><item><title>airのオプション</title><link>https://umemak.github.io/blog/posts/2022/08/03_go_air/</link><pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/08/03_go_air/</guid><description>cosmtrek/air: ☁️ Live reload for Go appsで、コマンドラインでオプション指定できるみたいだけど、思ったように動かないな・・という内容で書こうとして見直してたら、beta featureってちゃんと書いてあるし。 エラーになったり、完全に動かないわけではなく、build.cmdとか指定が効いてたので気づかなかった。 モノレポで</description></item><item><title>Airを試す</title><link>https://umemak.github.io/blog/posts/2022/07/10_air/</link><pubDate>Sun, 10 Jul 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/07/10_air/</guid><description>HTMLとかコード修正したときに手動で再起動するのが面倒なので、ホットリロードツールを導入してみた。 cosmtrek/air: ☁️ Live reload for Go apps $ go install github.com/cosmtrek/air@latest $ air init $ air __ _ ___ / /\ | | | |_) /_/--\ |_| |_| \_ , built with Go mkdir /home/umemak/workspace/eventsite_go/tmp watching . watching cmd watching cmd/eventsite watching db watching db/sql watching model watching model/user !exclude tmp watching web watching web/template building... no Go files in /home/umemak/workspace/eventsite_go failed to build, error: exit status 1 ^Ccleaning... see you again~ デフォルトだと、cmdの下のmain.goを見つけてく</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Air on umemak</title><link>https://umemak.github.io/blog/tags/air/</link><description>Recent content in Air on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 03 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/air/index.xml" rel="self" type="application/rss+xml"/><item><title>airのオプション</title><link>https://umemak.github.io/blog/posts/2022/08/03_go_air/</link><pubDate>Wed, 03 Aug 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/08/03_go_air/</guid><description>&lt;p>&lt;a href="https://github.com/cosmtrek/air">cosmtrek/air: ☁️ Live reload for Go apps&lt;/a>で、コマンドラインでオプション指定できるみたいだけど、思ったように動かないな・・という内容で書こうとして見直してたら、&lt;code>beta feature&lt;/code>ってちゃんと書いてあるし。&lt;/p>
+&lt;p>エラーになったり、完全に動かないわけではなく、&lt;code>build.cmd&lt;/code>とか指定が効いてたので気づかなかった。&lt;/p>
+&lt;p>モノレポで使うときに、共通の部分は&lt;code>.air.toml&lt;/code>に書いておいて、異なるところだけコマンドラインで指定できるとうれしい。&lt;/p></description></item><item><title>Airを試す</title><link>https://umemak.github.io/blog/posts/2022/07/10_air/</link><pubDate>Sun, 10 Jul 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/07/10_air/</guid><description>&lt;p>HTMLとかコード修正したときに手動で再起動するのが面倒なので、ホットリロードツールを導入してみた。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/cosmtrek/air">cosmtrek/air: ☁️ Live reload for Go apps&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ go install github.com/cosmtrek/air@latest
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ air init
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ air
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> __ _ ___ 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> / /&lt;span style="color:#ae81ff">\ &lt;/span> | | | |_&lt;span style="color:#f92672">)&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>/_/--&lt;span style="color:#ae81ff">\ &lt;/span>|_| |_| &lt;span style="color:#ae81ff">\_&lt;/span> , built with Go 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>mkdir /home/umemak/workspace/eventsite_go/tmp
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>watching .
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>watching cmd
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>watching cmd/eventsite
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>watching db
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>watching db/sql
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>watching model
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>watching model/user
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>!exclude tmp
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>watching web
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>watching web/template
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>building...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>no Go files in /home/umemak/workspace/eventsite_go
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>failed to build, error: exit status &lt;span style="color:#ae81ff">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>^Ccleaning...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>see you again~
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>デフォルトだと、cmdの下のmain.goを見つけてくれない？&lt;/p></description></item></channel></rss>

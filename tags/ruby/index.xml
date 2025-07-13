@@ -1,1 +1,122 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ruby on umemak</title><link>https://umemak.github.io/blog/tags/ruby/</link><description>Recent content in ruby on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 09 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/ruby/index.xml" rel="self" type="application/rss+xml"/><item><title>Bump loofah from 2.2.3 to 2.3.1</title><link>https://umemak.github.io/blog/posts/2019/11/09_update_gems/</link><pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/09_update_gems/</guid><description>GitHubからgem更新を促すメールがきた。 今回からdependabotがやってくれるようになったらしく、すでにPullReqが作成されていた（すごい）。 Gemfile.lockの差分確認して問題なければマージして終わり。これは便利だ。</description></item><item><title>ruby gem のアップデート</title><link>https://umemak.github.io/blog/posts/2019/08/21_update_gems/</link><pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/08/21_update_gems/</guid><description>Githubから脆弱性の通知が来たので、nokogiriを1.10.4以上に、actionviewを5.1.6.2以上にバージョンアップ対応する。 作業環境はC223NAのdocker。 $ docker run -it -v `pwd`:/usr/src/work ruby bash # cd /usr/src/work # bundle update nokogiri # bundle list nokogiri /usr/local/bundle/gems/nokogiri-1.10.4 最初nokogiriの通知しか出てなかったのに、更新してpushしたらもうい</description></item><item><title>Rackアップデート</title><link>https://umemak.github.io/blog/posts/2018/11/16_udpate_rack/</link><pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2018/11/16_udpate_rack/</guid><description>またGitHubからメール。 今回は別件で作ってあったCloud9があったのでC223NA使ってそこで作業。 Dockerが入っていたので、前回の手順ほぼそのままで行けた。 git config --global user.name と user.email は変更しないと EC2 Default User で更新されてしまう。 ブラウザだけで作業完結できる＆ローカルPCのスペック関係ないので便利。</description></item><item><title>loofahアップデート</title><link>https://umemak.github.io/blog/posts/2018/11/03_update_loofah/</link><pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2018/11/03_update_loofah/</guid><description>GitHubからメールきた Known moderate severity security vulnerability detected in loofah &amp;lt; 2.2.3 defined in Gemfile.lock. Gemfile.lock update suggested: loofah ~&amp;gt; 2.2.3. 作ったときのCloud9環境は削除してしまったので、Macローカルで更新する。 対象リポジトリをclone。 $ git clone https://github.com/umemak/sample_app.git bundle installで更新 $ bundle install Fetching gem metadata from https://rubygems.org/......... activesupport-5.1.6 requires ruby version &amp;gt;= 2.2.2, which is incompatible with the current version, ruby2.1.9p490 できない dockerで $ docker run -it -v `pwd`:/home/k ruby bash root@bf0de34089b9:/# cd /home/k root@bf0de34089b9:/home/k# bundle install Fetching gem metadata</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ruby on umemak</title><link>https://umemak.github.io/blog/tags/ruby/</link><description>Recent content in Ruby on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 09 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/ruby/index.xml" rel="self" type="application/rss+xml"/><item><title>Bump loofah from 2.2.3 to 2.3.1</title><link>https://umemak.github.io/blog/posts/2019/11/09_update_gems/</link><pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/09_update_gems/</guid><description>&lt;p>GitHubからgem更新を促すメールがきた。&lt;/p>
+&lt;p>今回からdependabotがやってくれるようになったらしく、すでにPullReqが作成されていた（すごい）。&lt;/p>
+&lt;p>Gemfile.lockの差分確認して問題なければマージして終わり。これは便利だ。&lt;/p></description></item><item><title>ruby gem のアップデート</title><link>https://umemak.github.io/blog/posts/2019/08/21_update_gems/</link><pubDate>Wed, 21 Aug 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/08/21_update_gems/</guid><description>&lt;ul>
+&lt;li>Githubから脆弱性の通知が来たので、nokogiriを&lt;code>1.10.4&lt;/code>以上に、actionviewを&lt;code>5.1.6.2&lt;/code>以上にバージョンアップ対応する。&lt;/li>
+&lt;li>作業環境はC223NAのdocker。&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ docker run -it -v `pwd`:/usr/src/work ruby bash
+# cd /usr/src/work
+# bundle update nokogiri
+# bundle list nokogiri
+/usr/local/bundle/gems/nokogiri-1.10.4
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>最初nokogiriの通知しか出てなかったのに、更新してpushしたらもういっこうあるでってactionview出てきた。。&lt;/li>
+&lt;li>actionview は、&lt;code>bundle update actionview&lt;/code>では更新されず、&lt;code>bundle update&lt;/code>で全部上げるようにしたら上がった。&lt;/li>
+&lt;/ul></description></item><item><title>Rackアップデート</title><link>https://umemak.github.io/blog/posts/2018/11/16_udpate_rack/</link><pubDate>Fri, 16 Nov 2018 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2018/11/16_udpate_rack/</guid><description>&lt;ul>
+&lt;li>
+&lt;p>またGitHubからメール。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>今回は別件で作ってあったCloud9があったのでC223NA使ってそこで作業。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Dockerが入っていたので、前回の手順ほぼそのままで行けた。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>git config --global user.name&lt;/code> と &lt;code>user.email&lt;/code> は変更しないと &lt;code>EC2 Default User&lt;/code> で更新されてしまう。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>ブラウザだけで作業完結できる＆ローカルPCのスペック関係ないので便利。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>loofahアップデート</title><link>https://umemak.github.io/blog/posts/2018/11/03_update_loofah/</link><pubDate>Sat, 03 Nov 2018 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2018/11/03_update_loofah/</guid><description>&lt;ul>
+&lt;li>
+&lt;p>GitHubからメールきた&lt;/p>
+&lt;pre tabindex="0">&lt;code>Known moderate severity security vulnerability detected in loofah &amp;lt; 2.2.3 defined in Gemfile.lock.
+Gemfile.lock update suggested: loofah ~&amp;gt; 2.2.3.
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>作ったときのCloud9環境は削除してしまったので、Macローカルで更新する。&lt;/p>
+&lt;ul>
+&lt;li>対象リポジトリをclone。
+&lt;pre tabindex="0">&lt;code>$ git clone https://github.com/umemak/sample_app.git
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>bundle installで更新
+&lt;pre tabindex="0">&lt;code>$ bundle install
+
+Fetching gem metadata from https://rubygems.org/.........
+
+activesupport-5.1.6 requires ruby version &amp;gt;= 2.2.2, which is incompatible with the current version, ruby2.1.9p490
+&lt;/code>&lt;/pre>できない&lt;/li>
+&lt;li>dockerで
+&lt;pre tabindex="0">&lt;code>$ docker run -it -v `pwd`:/home/k ruby bash
+
+root@bf0de34089b9:/# cd /home/k
+
+root@bf0de34089b9:/home/k# bundle install
+
+Fetching gem metadata from https://rubygems.org/.........
+
+（中略）
+
+Bundle complete! 21 Gemfile dependencies, 82 gems now installed.
+
+Bundled gems are installed into `/usr/local/bundle`
+
+root@bf0de34089b9:/home/k# grep loofah Gemfile.lock
+
+    loofah (2.2.2)
+
+      loofah (~&amp;gt; 2.2, &amp;gt;= 2.2.2)
+&lt;/code>&lt;/pre>あがってない&lt;/li>
+&lt;li>updateじゃないとだめらしい
+&lt;pre tabindex="0">&lt;code>root@bf0de34089b9:/home/k# bundle update
+
+Fetching gem metadata from https://rubygems.org/.........
+
+Fetching gem metadata from https://rubygems.org/.
+
+Resolving dependencies...
+
+Using rake 12.3.1
+
+（中略）
+
+Using web-console 3.5.1
+
+Bundle updated!
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>確認
+&lt;pre tabindex="0">&lt;code>root@bf0de34089b9:/home/k# grep loofah Gemfile.lock
+
+    loofah (2.2.3)
+
+      loofah (~&amp;gt; 2.2, &amp;gt;= 2.2.2)
+&lt;/code>&lt;/pre>OK。&lt;/li>
+&lt;li>DockerからexitしてGitHub更新。
+&lt;pre tabindex="0">&lt;code>$ git commit -am &amp;#34;update loofah&amp;#34;
+
+[master 4d2d9c3] update loofah
+
+2 files changed, 6 insertions(+), 3 deletions(-)
+
+$ git push origin HEAD
+
+Counting objects: 4, done.
+
+Delta compression using up to 8 threads.
+
+Compressing objects: 100% (4/4), done.
+
+Writing objects: 100% (4/4), 423 bytes | 423.00 KiB/s, done.
+
+Total 4 (delta 3), reused 0 (delta 0)
+
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+
+To https://github.com/umemak/sample_app.git
+
+   61a32a4..4d2d9c3  HEAD -&amp;gt; master
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

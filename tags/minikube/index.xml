@@ -1,1 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>minikube on umemak</title><link>https://umemak.github.io/blog/tags/minikube/</link><description>Recent content in minikube on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 17 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/minikube/index.xml" rel="self" type="application/rss+xml"/><item><title>WindowsのminikubeでMySQLを動かす</title><link>https://umemak.github.io/blog/posts/2021/04/17_minikube_mysql/</link><pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/04/17_minikube_mysql/</guid><description>MacでやったらMySQLの起動時にエラーで落ちてしまったので、Windowsでどうなるか試す。 基本的には公式のドキュメントを参照。 https://kubernetes.io/ja/docs/tasks/run-application/run-single-instance-stateful-application/ munikubeインストール winget install minikube minikube起動 minikube start $ kubectl get nodes NAME STATUS ROLES AGE VERSION minikube Ready control-plane,master 73s v1.20.2 マニフェストファイル作成 mysql.yaml デプロイ $ kubectl apply -f mysql.yaml service/mysql created deployment.apps/mysql created persistentvolumeclaim/mysql-pv-claim created persistentvolume/mysql-pv-volume created $ kubectl get pods -l app=mysql NAME READY STATUS RESTARTS</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minikube on umemak</title><link>https://umemak.github.io/blog/tags/minikube/</link><description>Recent content in Minikube on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 17 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/minikube/index.xml" rel="self" type="application/rss+xml"/><item><title>WindowsのminikubeでMySQLを動かす</title><link>https://umemak.github.io/blog/posts/2021/04/17_minikube_mysql/</link><pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/04/17_minikube_mysql/</guid><description>&lt;p>MacでやったらMySQLの起動時にエラーで落ちてしまったので、Windowsでどうなるか試す。&lt;/p>
+&lt;p>基本的には公式のドキュメントを参照。
+&lt;a href="https://kubernetes.io/ja/docs/tasks/run-application/run-single-instance-stateful-application/">https://kubernetes.io/ja/docs/tasks/run-application/run-single-instance-stateful-application/&lt;/a>&lt;/p>
+&lt;h2 id="munikubeインストール">munikubeインストール&lt;/h2>
+&lt;pre tabindex="0">&lt;code>winget install minikube
+&lt;/code>&lt;/pre>&lt;h2 id="minikube起動">minikube起動&lt;/h2>
+&lt;pre tabindex="0">&lt;code>minikube start
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>$ kubectl get nodes
+NAME STATUS ROLES AGE VERSION
+minikube Ready control-plane,master 73s v1.20.2
+&lt;/code>&lt;/pre>&lt;h2 id="マニフェストファイル作成">マニフェストファイル作成&lt;/h2>
+&lt;p>&lt;a href="https://github.com/umemak/blog/blob/master/content/posts/2021/04/mysql.yaml">mysql.yaml&lt;/a>&lt;/p>
+&lt;h2 id="デプロイ">デプロイ&lt;/h2>
+&lt;pre tabindex="0">&lt;code>$ kubectl apply -f mysql.yaml 
+service/mysql created
+deployment.apps/mysql created
+persistentvolumeclaim/mysql-pv-claim created
+persistentvolume/mysql-pv-volume created
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>$ kubectl get pods -l app=mysql
+NAME READY STATUS RESTARTS AGE
+mysql-68579b78bb-qcqww 1/1 Running 0 5m33s
+&lt;/code>&lt;/pre>&lt;p>動いてるねぇ。。&lt;/p>
+&lt;h2 id="後片付け">後片付け&lt;/h2>
+&lt;pre tabindex="0">&lt;code>$ kubectl.exe delete -f mysql.yaml
+service &amp;#34;mysql&amp;#34; deleted
+deployment.apps &amp;#34;mysql&amp;#34; deleted
+persistentvolumeclaim &amp;#34;mysql-pv-claim&amp;#34; deleted
+persistentvolume &amp;#34;mysql-pv-volume&amp;#34; deleted
+$ minikube stop
+&lt;/code>&lt;/pre>&lt;p>Macのほう、MySQLのコマンドライン色々指定したのがまずかったのかなぁ。&lt;/p></description></item></channel></rss>

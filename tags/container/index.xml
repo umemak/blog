@@ -1,1 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>container on umemak</title><link>https://umemak.github.io/blog/tags/container/</link><description>Recent content in container on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/container/index.xml" rel="self" type="application/rss+xml"/><item><title>JAWS-UG コンテナ支部 #15</title><link>https://umemak.github.io/blog/posts/2019/08/29_jawsug_ct_15/</link><pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/08/29_jawsug_ct_15/</guid><description>https://jawsug-container.connpass.com/event/143245/ AWS コンテナサービスアップデート トリ / Amazon Web Services Japan コンテナロードマップは what’s new に載ってない トランキングENIと通常のENIの違いは「ほとんど」ない EKS 名称変更が一番シェアされたツイート mazon ECSの開発環境を動的に管理するツールを作ってみました プログラミングヤクザ / サイバーエージェント devxx環境の</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Container on umemak</title><link>https://umemak.github.io/blog/tags/container/</link><description>Recent content in Container on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/container/index.xml" rel="self" type="application/rss+xml"/><item><title>JAWS-UG コンテナ支部 #15</title><link>https://umemak.github.io/blog/posts/2019/08/29_jawsug_ct_15/</link><pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/08/29_jawsug_ct_15/</guid><description>&lt;p>&lt;a href="https://jawsug-container.connpass.com/event/143245/">https://jawsug-container.connpass.com/event/143245/&lt;/a>&lt;/p>
+&lt;h2 id="aws-コンテナサービスアップデートトリ--amazon-web-services-japan">AWS コンテナサービスアップデート	トリ / Amazon Web Services Japan&lt;/h2>
+&lt;ul>
+&lt;li>コンテナロードマップは what’s new に載ってない&lt;/li>
+&lt;li>トランキングENIと通常のENIの違いは「ほとんど」ない&lt;/li>
+&lt;li>EKS 名称変更が一番シェアされたツイート&lt;/li>
+&lt;/ul>
+&lt;h2 id="mazon-ecsの開発環境を動的に管理するツールを作ってみましたプログラミングヤクザ--サイバーエージェント">mazon ECSの開発環境を動的に管理するツールを作ってみました	プログラミングヤクザ / サイバーエージェント&lt;/h2>
+&lt;ul>
+&lt;li>devxx環境の自動化&lt;/li>
+&lt;li>作るのに時間がかかるALBを共有化する&lt;/li>
+&lt;li>PRと環境が対になる
+&lt;ul>
+&lt;li>create PR すると create ENV&lt;/li>
+&lt;li>close PR すると delete ENV&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>dev00 は reference として使う&lt;/li>
+&lt;li>github.com/baikonur-oss/docs で公開しました&lt;/li>
+&lt;/ul>
+&lt;h2 id="fargate運用物語--本当にコンテナで幸せになりますか-曽根-壮大--オミカレ">Fargate運用物語 ～ 本当にコンテナで幸せになりますか？ ～	曽根 壮大 / オミカレ&lt;/h2>
+&lt;ul>
+&lt;li>EC2で困ってないならEC2で良い&lt;/li>
+&lt;li>冪等性を担保するAnsibleは難しい
+　- 頻繁に変更があるならコンテナのほうが向いている&lt;/li>
+&lt;li>サイドカー増やしたくなったらEC2でいいんじゃないか&lt;/li>
+&lt;li>解決したい問題のスコープ大事&lt;/li>
+&lt;/ul>
+&lt;h2 id="how-fast-can-your-fargate-scalepahud-hsieh--amazon-web-services">How Fast can your Fargate Scale?	Pahud Hsieh / Amazon Web Services&lt;/h2>
+&lt;ul>
+&lt;li>スケールアップの検知を早くする（１〜３分→10秒以下）&lt;/li>
+&lt;li>StepFunctionでstausをcorrectする（3秒ごと）&lt;/li>
+&lt;/ul></description></item></channel></rss>

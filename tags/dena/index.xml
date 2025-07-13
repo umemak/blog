@@ -1,1 +1,132 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DeNA on umemak</title><link>https://umemak.github.io/blog/tags/dena/</link><description>Recent content in DeNA on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/dena/index.xml" rel="self" type="application/rss+xml"/><item><title>DeNA.go #3</title><link>https://umemak.github.io/blog/posts/2019/11/01_denago_3/</link><pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/01_denago_3/</guid><description>https://dena.connpass.com/event/150676/ 19:25 - 19:30 会場説明 @imoty DeNA TechCon 2020やります 19:30 - 19:50 20分枠 @suhirotaka / [Go活用事例]安全運転支援サービスを支える運用サイト / オートモーティブ事業本部スマートドライビング部システム開発グループ https://speakerdeck.com/suhirotaka/gohuo-yong-shi-li-an-quan-yun-zhuan-zhi-yuan-sabisuwozhi-eru-yun-yong-guan-li-sisutemu goで何を作っているか DRIVE CHART AIはPython Railsも使っている 運用管理のWEBシステム 管理画面をGoで作った理由 2年</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DeNA on umemak</title><link>https://umemak.github.io/blog/tags/dena/</link><description>Recent content in DeNA on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/dena/index.xml" rel="self" type="application/rss+xml"/><item><title>DeNA.go #3</title><link>https://umemak.github.io/blog/posts/2019/11/01_denago_3/</link><pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/01_denago_3/</guid><description>&lt;p>&lt;a href="https://dena.connpass.com/event/150676/">https://dena.connpass.com/event/150676/&lt;/a>&lt;/p>
+&lt;h2 id="1925---1930会場説明-imoty">19:25 - 19:30	会場説明 @imoty&lt;/h2>
+&lt;ul>
+&lt;li>DeNA TechCon 2020やります
+&lt;figure class="center">&lt;img src="../photo_1573016664419.jpg" width="640">
+ &lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1930---195020分枠-suhirotaka--go活用事例安全運転支援サービスを支える運用サイト--オートモーティブ事業本部スマートドライビング部システム開発グループ">19:30 - 19:50	20分枠 @suhirotaka / [Go活用事例]安全運転支援サービスを支える運用サイト / オートモーティブ事業本部スマートドライビング部システム開発グループ&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/suhirotaka/gohuo-yong-shi-li-an-quan-yun-zhuan-zhi-yuan-sabisuwozhi-eru-yun-yong-guan-li-sisutemu">https://speakerdeck.com/suhirotaka/gohuo-yong-shi-li-an-quan-yun-zhuan-zhi-yuan-sabisuwozhi-eru-yun-yong-guan-li-sisutemu&lt;/a>&lt;/li>
+&lt;li>goで何を作っているか
+&lt;ul>
+&lt;li>DRIVE CHART&lt;/li>
+&lt;li>AIはPython&lt;/li>
+&lt;li>Railsも使っている&lt;/li>
+&lt;li>運用管理のWEBシステム&lt;/li>
+&lt;li>管理画面をGoで作った理由
+&lt;ul>
+&lt;li>2年間の実証実験&lt;/li>
+&lt;li>実証実験時は、スピード重視でRails&lt;/li>
+&lt;li>本サービスは、パフォーマンス重視でGo
+&lt;ul>
+&lt;li>サーバーが減らせるコストメリット&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>順次goにリプレイス中&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ライブラリ
+&lt;ul>
+&lt;li>フレームワーク
+&lt;ul>
+&lt;li>フルスタック・MVC
+&lt;ul>
+&lt;li>Beego を採用&lt;/li>
+&lt;li>Revel 開発停滞気味&lt;/li>
+&lt;li>Iris 運営に問題ありそう&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Beego
+&lt;ul>
+&lt;li>中国で人気がある&lt;/li>
+&lt;li>フルスタック&lt;/li>
+&lt;li>bee というCLIツールがある（Railsっぽい）&lt;/li>
+&lt;li>若干使い勝手に気持ち悪いところがある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Railsとの共存
+&lt;ul>
+&lt;li>DB周りの定義の共通化&lt;/li>
+&lt;li>暗号化周りの共通化
+&lt;ul>
+&lt;li>鍵の管理が面倒
+&lt;ul>
+&lt;li>更新タイミングを合わせるとか&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ユーティリティ機能の共通化
+&lt;ul>
+&lt;li>メール送信・通知システムなどどちら側に実装するか&lt;/li>
+&lt;li>寄せるとサービス感の通信が発生する&lt;/li>
+&lt;li>両方に実装するとそれはそれで問題がある&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="1950---203040分枠-karupanerura--webシステムのパフォーマンスとgo-ゲームエンターテインメント事業本部ゲーム事業部publish統括部共通基盤部アライアンスシステムグループ">19:50 - 20:30	40分枠 @karupanerura / WebシステムのパフォーマンスとGo/ ゲーム・エンターテインメント事業本部ゲーム事業部Publish統括部共通基盤部アライアンスシステムグループ&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://speakerdeck.com/karupanerura/websisutemufalsehahuomansutogo">https://speakerdeck.com/karupanerura/websisutemufalsehahuomansutogo&lt;/a>&lt;/li>
+&lt;li>Wabシステムにおける本当のGoの強み&lt;/li>
+&lt;li>問題としっかり向き合う&lt;/li>
+&lt;li>Webシステムにおけるパフォーマンスを定義する
+&lt;ul>
+&lt;li>単位時間あたりの処理するリクエスト&lt;/li>
+&lt;li>リクエスト単位で消費するリソース&lt;/li>
+&lt;li>パフォーマンス低下要因を排除すれば、向上できる&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>具体例で考える
+&lt;ul>
+&lt;li>サマーインターンシップでのお題
+&lt;ul>
+&lt;li>チャットアプリをいい感じにする&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>c4.large 10台まで使用可&lt;/li>
+&lt;li>発言が多くなるとどうなるか
+&lt;ul>
+&lt;li>DBのINSERTが詰まる（ロック競合）
+&lt;ul>
+&lt;li>複数発言を1回でinsertできるようにする&lt;/li>
+&lt;li>バッファリングするワーカースレッド（ゴルーチン）を作って一定件数or一致機関でフラッシュする&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>同時接続数が多くなると取得が多くなる
+&lt;ul>
+&lt;li>差分だけ取得したい
+&lt;ul>
+&lt;li>Server Sent Events
+&lt;ul>
+&lt;li>WebSocketより扱いが簡単&lt;/li>
+&lt;li>サーバーとクライアントでコネクションを貼り続ける&lt;/li>
+&lt;li>サーバーからクライアントにデータをpushできる（一方通行）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>まとめ
+&lt;ul>
+&lt;li>Goにしただけでは速くならない。リソースを効率よく使う&lt;/li>
+&lt;li>便利なパッケージを活用する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="2030---2130懇親会">20:30 - 21:30	懇親会&lt;/h2>
+&lt;h2 id="2130--完全撤収">21:30 -	完全撤収&lt;/h2></description></item></channel></rss>

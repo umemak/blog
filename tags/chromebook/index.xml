@@ -1,1 +1,160 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>chromebook on umemak</title><link>https://umemak.github.io/blog/tags/chromebook/</link><description>Recent content in chromebook on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 21 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/chromebook/index.xml" rel="self" type="application/rss+xml"/><item><title>Chromebook調査</title><link>https://umemak.github.io/blog/posts/2023/01/21_chromebook/</link><pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2023/01/21_chromebook/</guid><description>Inspiron13のあと何にするか。Windowsはスリープからの復帰が遅いので、そういえばChromebookは速かったな、と。 Chromebookといえどどうせなら第12世代以降のCoreプロセッサ搭載機で画面比は16:10でと絞り込むと ASUS Store（エイスース ストア） - ASUS Chromebook Flip CX5 (CX5601FBA-MC0042) ThinkPad C14 Chromebook Gen 1 (</description></item><item><title>Duetを使ってみる</title><link>https://umemak.github.io/blog/posts/2020/05/25_duet_display/</link><pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/05/25_duet_display/</guid><description>https://ja.duetdisplay.com/ Google Playの300円クーポンが有効期限間近だったので買ってみた。 spacedeskでも特に不便なくつかえていたのだけれど、有料アプリも試してみたかった。 環境はSurface Go2がホストでChromebook C101PA（Androidアプリ）がモニタでWiFi接続。 モバイルモニタの接続で使ってい</description></item><item><title>Chromebookで画像編集</title><link>https://umemak.github.io/blog/posts/2019/11/06_chromebook_imageedit/</link><pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/06_chromebook_imageedit/</guid><description>イベントの写真をブログに載せるのに、スマホのそのままだとサイズでかすぎるし、トリミングやリサイズもしたいときにどうすれば良いのか定まっていなかった。 とりあえずこれで行けそうな方法が見つかったのでメモ。 やりたいこと 画像のリサイズ、トリミング Googleフォトにアップした画像を選択したい 編集した画像はG</description></item><item><title>C101PAでOracle Functionsを試す</title><link>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</link><pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</guid><description>OCHaCafe参加前に触っておこうと思い、その準備。 OCIインストール 手順は公式からコピペで。 $ bash -c &amp;#34;$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)&amp;#34; fatal error: Python.h: No such file or directoryエラーで落ちたので、python3-devパッケージをインストール。 $ sudo apt-get install python3-dev OCI再挑戦。先程作成したディレクトリを削除するか聞かれるので、削除(y)して継続</description></item><item><title>ASUS CT101PA到着</title><link>https://umemak.github.io/blog/posts/2019/10/05_ct101pa/</link><pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/05_ct101pa/</guid><description>ビックカメラのポイント20%セールで。ポチったあとにアマゾンで19%オフやってておいおいって思った。 これでクラムシェルとコンバーチブルとタブレットのChromebookが揃って、充電器が足りなくなってきたので（本体付属のはごつすぎる・・）、 もらったポイントで買い足そうかなと。</description></item><item><title>Chromebook(C101PA)にVSCodeをインストールする２</title><link>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/</link><pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/</guid><description>昨日は空き容量が足りなくなってあきらめたので、今回は何もない状態からやってみる。 インストールしながら空き容量をチェック Linuxを再インストールした直後 $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 5.5G 1.3G 3.9G 25% / VSCodeのインストールしてdebファイル削除したあと $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 5.5G 1.8G 3.4G 34% / mozcインストール後 $ df -h</description></item><item><title>ChromeBook(C223NA)にVSCodeをインストールする</title><link>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode3/</link><pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode3/</guid><description>C101PAで一通りできたのでインテルCPUの機種でもやってみる インストール開始 $ df -h Filesystem Size Used Avail Use% Mounted on /dev/vdb 18G 1.2G 15G 8% / 広い aptの設定追加はしていない golang-1.11 が見つからなかったので設定追加した VSCodeのパッケージファイルは公式から取得 fonts-notoまでインストール終わった時点での消費 $ df -h Filesystem Size Used Avail Use% Mounted</description></item><item><title>Chromebook(C101PA)にVSCodeをインストールする</title><link>https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/</link><pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/</guid><description>https://qiita.com/kukita/items/b673bf6eba2cc91fc545 こちらの記事を見ながら試してみた。 mozcの辺りでストレージの空きが足りなくなって断念。 先にGoとかRubyとかDocker入れてたしそのせいか。</description></item><item><title>Chromebookにdockerインストール</title><link>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</link><pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</guid><description>環境 C101PA 手順 公式の手順に従う $ sudo apt-get update $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ gnupg2 \ software-properties-common -y $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - $ sudo apt-key fingerprint 0EBFCD88 $ sudo add-apt-repository \ &amp;#34;deb [arch=arm64] https://download.docker.com/linux/debian \ $(lsb_release -cs) \ stable&amp;#34; $ sudo apt-get update $ sudo apt-get install docker-ce docker-ce-cli containerd.io -y $ sudo docker run hello-world できた。</description></item><item><title>Chromebookにgoの最新版をインストール</title><link>https://umemak.github.io/blog/posts/2019/07/17_chromebook_golang/</link><pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/07/17_chromebook_golang/</guid><description>apt-get だと最新版が入らないので、1.13に備えて最新版をインストールする手順を確認しておく。 C101PAのOP1はARM系CPUなのでarm64用のファイルを使用する。 C223NAはintel入ってるのでx86-64でいけるはず。 環境 C101PA Linux(ベータ) 手順 https://github.com/golang/go/wiki/ChromeOS を参考に進める https://golang.org/dl/ から go1.12.7.linux-arm64.tar.gz をダウンロード $ wget wget</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Chromebook on umemak</title><link>https://umemak.github.io/blog/tags/chromebook/</link><description>Recent content in Chromebook on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 21 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/chromebook/index.xml" rel="self" type="application/rss+xml"/><item><title>Chromebook調査</title><link>https://umemak.github.io/blog/posts/2023/01/21_chromebook/</link><pubDate>Sat, 21 Jan 2023 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2023/01/21_chromebook/</guid><description>&lt;p>Inspiron13のあと何にするか。Windowsはスリープからの復帰が遅いので、そういえばChromebookは速かったな、と。&lt;/p>
+&lt;p>Chromebookといえどどうせなら第12世代以降のCoreプロセッサ搭載機で画面比は16:10でと絞り込むと&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://jp.store.asus.com/store/asusjp/ja_JP/pd/productID.5653242200">ASUS Store（エイスース ストア） - ASUS Chromebook Flip CX5 (CX5601FBA-MC0042)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.lenovo.com/jp/ja/p/laptops/thinkpad/thinkpad-c-series/thinkpad-c14-chromebook-enterprise-(14-inch-intel)/len101t0022">ThinkPad C14 Chromebook Gen 1 (第12世代インテル) | パワフルな14型Chromebook | レノボ・ ジャパン&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.acer.com/jp-ja/chromebooks/acer-chromebook-spin-714-cp714-1wn">Acer Chromebook Spin 714（CP714-1WN） | 2-in-1 高性能 Evo Chromebook | Acer 日本&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jp.ext.hp.com/prod/notebooks/business/elite_dragonfly_chromebook_enterprise/">HP Elite Dragonfly Chromebook Enterprise | 日本HP&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.itmedia.co.jp/pcuser/articles/2301/04/news053.html">HPが個人向けDragonflyやChromebookの新モデルを複数発表！　ビジネス向けDragonflyは第13世代Coreを採用：CES 2023 - ITmedia PC USER&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>こんなところで。
+イマイチパッとしない。&lt;/p></description></item><item><title>Duetを使ってみる</title><link>https://umemak.github.io/blog/posts/2020/05/25_duet_display/</link><pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/05/25_duet_display/</guid><description>&lt;p>&lt;a href="https://ja.duetdisplay.com/">https://ja.duetdisplay.com/&lt;/a>&lt;/p>
+&lt;p>Google Playの300円クーポンが有効期限間近だったので買ってみた。
+&lt;a href="https://spacedesk.net/">spacedesk&lt;/a>でも特に不便なくつかえていたのだけれど、有料アプリも試してみたかった。&lt;/p>
+&lt;p>環境はSurface Go2がホストでChromebook C101PA（Androidアプリ）がモニタでWiFi接続。
+モバイルモニタの接続で使っていたUSB-Cケーブルで接続したけれど認識されず。&lt;/p>
+&lt;p>duetの設定は30FPSの省エネモード。それでもブロックノイズになったり描画の遅延が起こったり。
+spacedeskは気になるような遅延やノイズはなかった。&lt;/p></description></item><item><title>Chromebookで画像編集</title><link>https://umemak.github.io/blog/posts/2019/11/06_chromebook_imageedit/</link><pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/11/06_chromebook_imageedit/</guid><description>&lt;p>イベントの写真をブログに載せるのに、スマホのそのままだとサイズでかすぎるし、トリミングやリサイズもしたいときにどうすれば良いのか定まっていなかった。&lt;/p>
+&lt;p>とりあえずこれで行けそうな方法が見つかったのでメモ。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>やりたいこと&lt;/p>
+&lt;ul>
+&lt;li>画像のリサイズ、トリミング&lt;/li>
+&lt;li>Googleフォトにアップした画像を選択したい&lt;/li>
+&lt;li>編集した画像はGithubにアップロードする&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>試したこと&lt;/p></description></item><item><title>C101PAでOracle Functionsを試す</title><link>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</link><pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/31_c101p_cli/</guid><description>&lt;p>&lt;a href="https://ochacafe.connpass.com/event/147285/">OCHaCafe&lt;/a>参加前に触っておこうと思い、その準備。&lt;/p>
+&lt;h2 id="ociインストール">OCIインストール&lt;/h2>
+&lt;p>手順は&lt;a href="https://docs.cloud.oracle.com/iaas/Content/API/SDKDocs/cliinstall.htm">公式&lt;/a>からコピペで。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ bash -c &amp;#34;$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)&amp;#34;
+&lt;/code>&lt;/pre>&lt;p>&lt;code>fatal error: Python.h: No such file or directory&lt;/code>エラーで落ちたので、&lt;code>python3-dev&lt;/code>パッケージをインストール。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ sudo apt-get install python3-dev
+&lt;/code>&lt;/pre>&lt;p>OCI再挑戦。先程作成したディレクトリを削除するか聞かれるので、削除(y)して継続。
+ちなみにインストール先など入力は全部デフォルトで通した。
+今度は&lt;code>fatal error: ffi.h: No such file or directory&lt;/code>で落ちた。&lt;/p></description></item><item><title>ASUS CT101PA到着</title><link>https://umemak.github.io/blog/posts/2019/10/05_ct101pa/</link><pubDate>Fri, 04 Oct 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/10/05_ct101pa/</guid><description>&lt;p>ビックカメラのポイント20%セールで。ポチったあとにアマゾンで19%オフやってておいおいって思った。&lt;/p>
+&lt;p>これでクラムシェルとコンバーチブルとタブレットのChromebookが揃って、充電器が足りなくなってきたので（本体付属のはごつすぎる・・）、
+もらったポイントで買い足そうかなと。&lt;/p></description></item><item><title>Chromebook(C101PA)にVSCodeをインストールする２</title><link>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/</link><pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode2/</guid><description>&lt;p>昨日は空き容量が足りなくなってあきらめたので、今回は何もない状態からやってみる。&lt;/p>
+&lt;h2 id="インストールしながら空き容量をチェック">インストールしながら空き容量をチェック&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Linuxを再インストールした直後&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ df -h
+Filesystem Size Used Avail Use% Mounted on
+/dev/vdb 5.5G 1.3G 3.9G 25% /
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>VSCodeのインストールしてdebファイル削除したあと&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ df -h
+Filesystem Size Used Avail Use% Mounted on
+/dev/vdb 5.5G 1.8G 3.4G 34% /
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>mozcインストール後&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ df -h
+Filesystem Size Used Avail Use% Mounted on
+/dev/vdb 5.5G 2.1G 3.1G 42% /
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>
+&lt;p>fonts-notoインストール後&lt;/p></description></item><item><title>ChromeBook(C223NA)にVSCodeをインストールする</title><link>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode3/</link><pubDate>Tue, 30 Jul 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/07/30_chromebook_vscode3/</guid><description>&lt;p>C101PAで一通りできたのでインテルCPUの機種でもやってみる&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>インストール開始&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ df -h
+Filesystem Size Used Avail Use% Mounted on
+/dev/vdb 18G 1.2G 15G 8% /
+&lt;/code>&lt;/pre>&lt;p>広い&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>aptの設定追加はしていない&lt;/p>
+&lt;ul>
+&lt;li>golang-1.11 が見つからなかったので設定追加した&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>VSCodeのパッケージファイルは公式から取得&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>fonts-notoまでインストール終わった時点での消費&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ df -h
+Filesystem Size Used Avail Use% Mounted on
+/dev/vdb 18G 1.7G 15G 11% /
+&lt;/code>&lt;/pre>&lt;p>C101PAのときより消費が少ない&lt;/p></description></item><item><title>Chromebook(C101PA)にVSCodeをインストールする</title><link>https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/</link><pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/07/29_chromebook_vscode/</guid><description>&lt;p>&lt;a href="https://qiita.com/kukita/items/b673bf6eba2cc91fc545">https://qiita.com/kukita/items/b673bf6eba2cc91fc545&lt;/a> こちらの記事を見ながら試してみた。&lt;/p>
+&lt;p>mozcの辺りでストレージの空きが足りなくなって断念。&lt;/p>
+&lt;p>先にGoとかRubyとかDocker入れてたしそのせいか。&lt;/p></description></item><item><title>Chromebookにdockerインストール</title><link>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</link><pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/07/21_chromebook_docker/</guid><description>&lt;h2 id="環境">環境&lt;/h2>
+&lt;ul>
+&lt;li>C101PA&lt;/li>
+&lt;/ul>
+&lt;h2 id="手順">手順&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-repository">公式の手順&lt;/a>に従う
+&lt;pre tabindex="0">&lt;code>$ sudo apt-get update
+$ sudo apt-get install \
+ apt-transport-https \
+ ca-certificates \
+ curl \
+ gnupg2 \
+ software-properties-common -y
+$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+$ sudo apt-key fingerprint 0EBFCD88
+$ sudo add-apt-repository \
+ &amp;#34;deb [arch=arm64] https://download.docker.com/linux/debian \
+ $(lsb_release -cs) \
+ stable&amp;#34;
+$ sudo apt-get update
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+$ sudo docker run hello-world
+&lt;/code>&lt;/pre>できた。&lt;/li>
+&lt;/ul></description></item><item><title>Chromebookにgoの最新版をインストール</title><link>https://umemak.github.io/blog/posts/2019/07/17_chromebook_golang/</link><pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2019/07/17_chromebook_golang/</guid><description>&lt;ul>
+&lt;li>apt-get だと最新版が入らないので、1.13に備えて最新版をインストールする手順を確認しておく。&lt;/li>
+&lt;li>C101PAのOP1はARM系CPUなのでarm64用のファイルを使用する。&lt;/li>
+&lt;li>C223NAはintel入ってるのでx86-64でいけるはず。&lt;/li>
+&lt;/ul>
+&lt;h2 id="環境">環境&lt;/h2>
+&lt;ul>
+&lt;li>C101PA&lt;/li>
+&lt;li>Linux(ベータ)&lt;/li>
+&lt;/ul>
+&lt;h2 id="手順">手順&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/golang/go/wiki/ChromeOS">https://github.com/golang/go/wiki/ChromeOS&lt;/a> を参考に進める&lt;/li>
+&lt;li>&lt;a href="https://golang.org/dl/">https://golang.org/dl/&lt;/a> から go1.12.7.linux-arm64.tar.gz をダウンロード
+&lt;pre tabindex="0">&lt;code>$ wget wget https://dl.google.com/go/go1.12.7.linux-arm64.tar.gz
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>チェックサム確認
+&lt;pre tabindex="0">&lt;code>$ sha256sum go1.12.7.linux-arm64.tar.gz 
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>ファイル展開
+&lt;pre tabindex="0">&lt;code>$ sudo tar xpvf go1.12.7.linux-arm64.tar.gz -C /usr/local
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>バージョン確認
+&lt;pre tabindex="0">&lt;code>$ /usr/local/go/bin/go version
+go version go1.12.7 linux/arm64
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>ワークスペース作成
+&lt;pre tabindex="0">&lt;code>$ sudo mkdir /usr/local/go/work
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>パス設定
+&lt;pre tabindex="0">&lt;code>$ export GOPATH=&amp;#34;/usr/local/go/work&amp;#34;
+$ export PATH=&amp;#34;${PATH}:/usr/local/go/bin:${GOPATH}/bin&amp;#34;
+&lt;/code>&lt;/pre>一応、&lt;code>~/.bash_profile&lt;/code>にも同等の内容を記載しておく&lt;/li>
+&lt;li>動作確認
+&lt;ul>
+&lt;li>ファイル作成
+&lt;pre tabindex="0">&lt;code>$ sudo vim /usr/local/go/src/hello.go
+&lt;/code>&lt;/pre>&lt;/li>
+&lt;li>ビルド
+&lt;pre tabindex="0">&lt;code>$ go install hello
+ can&amp;#39;t load package: package hello: cannot find package &amp;#34;hello&amp;#34; in any of:
+ /usr/local/go/src/hello (from $GOROOT)
+ /usr/local/go/work/src/hello (from $GOPATH)
+&lt;/code>&lt;/pre>エラー。。。&lt;/li>
+&lt;li>run
+&lt;pre tabindex="0">&lt;code>$ go run /usr/local/go/src/hello.go 
+Hello, Chrome OS!
+&lt;/code>&lt;/pre>とりあえず実行できたから良しとしておく。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

@@ -1,1 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>gitea on umemak</title><link>https://umemak.github.io/blog/tags/gitea/</link><description>Recent content in gitea on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 21 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/gitea/index.xml" rel="self" type="application/rss+xml"/><item><title>GiteaからGitHubへの移行</title><link>https://umemak.github.io/blog/posts/2022/11/21_gitea_to_github/</link><pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/21_gitea_to_github/</guid><description>GiteaのリポジトリをGitHubに移行してみる。 Giteaのほうは、バックアップのzipがある状態。 zipを展開して、リポジトリ（.git拡張子のディレクトリ）をgit cloneでローカルリポジトリとして取り込む。 移行先のGitHubリポジトリを作成して、git remote set-url originでリモートリポジト</description></item><item><title>Gitea移行</title><link>https://umemak.github.io/blog/posts/2022/09/06_gitea/</link><pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/09/06_gitea/</guid><description>Giteaをセルフホスティングで動かしていて、古いCentOSからUbuntuに移行してみた。 基本的にはUsage: Backup and Restore - Docsにあるようにbackupしてrestoreなんだけど、もとのバージョンが低いせいか、Wikiが空なのとIssueが表示されない問題が。。 Issueは版行指定でURL直打</description></item><item><title>Firebase用デプロイサーバーを作る</title><link>https://umemak.github.io/blog/posts/2020/06/11_deployserver/</link><pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/06/11_deployserver/</guid><description>SourceRepositoriesで管理して、CloudBuildでFirebase HostingにデプロイしているGatsbyプロジェクトを、SourceRepositoryとCloudBuildを使わずに実現してみる。 GiteaがCentOS6で動くようになったので、SourceReposit</description></item><item><title>GiteaのデータベースをPostgreSQLにする</title><link>https://umemak.github.io/blog/posts/2020/06/08_gitea_pgsql/</link><pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/06/08_gitea_pgsql/</guid><description>OSはCentOS6です。 https://qiita.com/hatayan1126/items/9b0d3be9c7ecdc207642 を参考に進めます。 この記事では9.6をインストールしていますが、せっかくなので最新の12を入れてみます。 PostgreSQLのインストール $ sudo su # yum install https://download.postgresql.org/pub/repos/yum/reporpms/EL-6-x86_64/pgdg-redhat-repo-latest.noarch.rpm # yum update # yum install postgresql12-server # rpm -qa | grep postgres postgresql12-12.3-1PGDG.rhel6.x86_64 postgresql12-libs-12.3-1PGDG.rhel6.x86_64 postgresql12-server-12.3-1PGDG.rhel6.x86_64 # service postgresql-12 initdb # cp /var/lib/pgsql/12/data/pg_hba.conf{,.bk} # vim /var/lib/pgsql/12/data/pg_hba.conf # diff /var/lib/pgsql/12/data/pg_hba.conf{.bk,} 80c80 &amp;lt; local all all peer --- &amp;gt; local all all trust 82c82 &amp;lt; host all all 127.0.0.1/32 ident --- &amp;gt; host all all 127.0.0.1/32 trust # service postgresql-12 start #</description></item><item><title>続・CentOS6にgiteaをインストールする</title><link>https://umemak.github.io/blog/posts/2020/06/08_gitea2/</link><pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/06/08_gitea2/</guid><description>先日の続き。 CentOS6だと、ビルド済みバイナリは依存物のバージョンが合わず、自前ビルドはメモリが足りず。 古いGiteaのビルド済みバイナリなら動くが、やっぱり最新版使いたいし、ちょっとした機能追加もしたい。 そこで、バイナリ1本にまとめる方法をやめた（TAGS=&amp;quot;bindata&amp;quot</description></item><item><title>CentOS6にgiteaをインストールする（未完）</title><link>https://umemak.github.io/blog/posts/2020/06/05_gitea/</link><pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/06/05_gitea/</guid><description>WikiはGitHubにも付いているのを思い出して、単独のWikiではなくGitHubクローンを試してみる。 GitLabとか重量系は最初からあきらめて、Goで書かれたシングルバイナリの軽量OSS、Giteaで挑戦。 VMはいつものGCP無料枠のやつ。 OSはCentOS6でディスクは30GB。 MySQL</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gitea on umemak</title><link>https://umemak.github.io/blog/tags/gitea/</link><description>Recent content in Gitea on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 21 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/gitea/index.xml" rel="self" type="application/rss+xml"/><item><title>GiteaからGitHubへの移行</title><link>https://umemak.github.io/blog/posts/2022/11/21_gitea_to_github/</link><pubDate>Mon, 21 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/21_gitea_to_github/</guid><description>&lt;p>&lt;a href="https://gitea.io/en-us/">Gitea&lt;/a>のリポジトリをGitHubに移行してみる。&lt;/p>
+&lt;p>Giteaのほうは、バックアップのzipがある状態。&lt;/p>
+&lt;p>zipを展開して、リポジトリ（.git拡張子のディレクトリ）を&lt;code>git clone&lt;/code>でローカルリポジトリとして取り込む。&lt;/p>
+&lt;p>移行先のGitHubリポジトリを作成して、&lt;code>git remote set-url origin&lt;/code>でリモートリポジトリとして設定する。&lt;/p>
+&lt;p>&lt;code>git push origin HEAD&lt;/code>でGitHubにアップ。&lt;/p>
+&lt;p>ファイルやコミット履歴はこれで移行できたが、IssueなどはGiteaのDBで管理しているので、この手順では移行できなかった。&lt;/p></description></item><item><title>Gitea移行</title><link>https://umemak.github.io/blog/posts/2022/09/06_gitea/</link><pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/09/06_gitea/</guid><description>&lt;p>&lt;a href="https://gitea.io/en-us/">Gitea&lt;/a>をセルフホスティングで動かしていて、古いCentOSからUbuntuに移行してみた。&lt;/p>
+&lt;p>基本的には&lt;a href="https://docs.gitea.io/en-us/backup-and-restore/">Usage: Backup and Restore - Docs&lt;/a>にあるようにbackupしてrestoreなんだけど、もとのバージョンが低いせいか、Wikiが空なのとIssueが表示されない問題が。。&lt;/p>
+&lt;p>Issueは版行指定でURL直打ちすれば見れるので、データとしてはリストアできているっぽい。&lt;/p>
+&lt;p>Wikiはちょっとよくわからない。&lt;/p>
+&lt;p>時間があればもうちょっと深堀してみたい。&lt;/p></description></item><item><title>Firebase用デプロイサーバーを作る</title><link>https://umemak.github.io/blog/posts/2020/06/11_deployserver/</link><pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/06/11_deployserver/</guid><description>&lt;p>SourceRepositoriesで管理して、CloudBuildでFirebase HostingにデプロイしているGatsbyプロジェクトを、SourceRepositoryとCloudBuildを使わずに実現してみる。
+GiteaがCentOS6で動くようになったので、SourceRepository部分は置き換えられる。
+CloudBuildをWebhookでスクリプト呼び出してやろうとしたところ、CentOS6ではGatsbyのビルドができない（古すぎる。。）
+仕方ないので、ビルドサーバーを別で用意する。&lt;/p></description></item><item><title>GiteaのデータベースをPostgreSQLにする</title><link>https://umemak.github.io/blog/posts/2020/06/08_gitea_pgsql/</link><pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/06/08_gitea_pgsql/</guid><description>&lt;p>OSはCentOS6です。&lt;/p>
+&lt;p>&lt;a href="https://qiita.com/hatayan1126/items/9b0d3be9c7ecdc207642">https://qiita.com/hatayan1126/items/9b0d3be9c7ecdc207642&lt;/a> を参考に進めます。
+この記事では9.6をインストールしていますが、せっかくなので最新の12を入れてみます。&lt;/p>
+&lt;h2 id="postgresqlのインストール">PostgreSQLのインストール&lt;/h2>
+&lt;pre tabindex="0">&lt;code>$ sudo su
+# yum install https://download.postgresql.org/pub/repos/yum/reporpms/EL-6-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+# yum update
+# yum install postgresql12-server
+# rpm -qa | grep postgres
+postgresql12-12.3-1PGDG.rhel6.x86_64
+postgresql12-libs-12.3-1PGDG.rhel6.x86_64
+postgresql12-server-12.3-1PGDG.rhel6.x86_64
+# service postgresql-12 initdb
+# cp /var/lib/pgsql/12/data/pg_hba.conf{,.bk}
+# vim /var/lib/pgsql/12/data/pg_hba.conf
+# diff /var/lib/pgsql/12/data/pg_hba.conf{.bk,}
+80c80
+&amp;lt; local all all peer
+---
+&amp;gt; local all all trust
+82c82
+&amp;lt; host all all 127.0.0.1/32 ident
+---
+&amp;gt; host all all 127.0.0.1/32 trust
+
+# service postgresql-12 start
+# chkconfig postgresql-12 --list
+postgresql-12 0:off 1:off 2:off 3:off 4:off 5:off 6:off
+# chkconfig postgresql-12 on
+# chkconfig postgresql-12 --list
+postgresql-12 0:off 1:off 2:on 3:on 4:on 5:on 6:off
+&lt;/code>&lt;/pre>&lt;h2 id="gitea用設定">Gitea用設定&lt;/h2>
+&lt;p>&lt;a href="https://docs.gitea.io/en-us/database-prep/#postgresql">https://docs.gitea.io/en-us/database-prep/#postgresql&lt;/a> の通り&lt;/p></description></item><item><title>続・CentOS6にgiteaをインストールする</title><link>https://umemak.github.io/blog/posts/2020/06/08_gitea2/</link><pubDate>Mon, 08 Jun 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/06/08_gitea2/</guid><description>&lt;p>先日の続き。&lt;/p>
+&lt;p>CentOS6だと、ビルド済みバイナリは依存物のバージョンが合わず、自前ビルドはメモリが足りず。
+古いGiteaのビルド済みバイナリなら動くが、やっぱり最新版使いたいし、ちょっとした機能追加もしたい。&lt;/p>
+&lt;p>そこで、バイナリ1本にまとめる方法をやめた（&lt;code>TAGS=&amp;quot;bindata&amp;quot;&lt;/code>を使わない）ところ、ビルドが通った。
+ただ、おそらく開発環境向けの手順のため、設定ファイルなどがバイナリと同じ階層からたどれるところにある前提になっている。
+ビルド時に&lt;code>LDFLAG&lt;/code>環境変数を設定することで、書き換えることができる。&lt;/p></description></item><item><title>CentOS6にgiteaをインストールする（未完）</title><link>https://umemak.github.io/blog/posts/2020/06/05_gitea/</link><pubDate>Fri, 05 Jun 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/06/05_gitea/</guid><description>&lt;p>WikiはGitHubにも付いているのを思い出して、単独のWikiではなくGitHubクローンを試してみる。
+GitLabとか重量系は最初からあきらめて、Goで書かれたシングルバイナリの軽量OSS、Giteaで挑戦。&lt;/p>
+&lt;p>VMはいつものGCP無料枠のやつ。
+OSはCentOS6でディスクは30GB。&lt;/p>
+&lt;h2 id="mysqlのインストール">MySQLのインストール&lt;/h2>
+&lt;p>デフォルトだと5.1系しか入らないので、5.6系を &lt;a href="https://qiita.com/Esfahan/items/83200c64de8d826677b5">https://qiita.com/Esfahan/items/83200c64de8d826677b5&lt;/a> を参考に入れる。&lt;/p></description></item></channel></rss>

@@ -1,1 +1,127 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>windows on umemak</title><link>https://umemak.github.io/blog/tags/windows/</link><description>Recent content in windows on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 12 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>Shotcut</title><link>https://umemak.github.io/blog/posts/2022/04/12_shotcut/</link><pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/12_shotcut/</guid><description>OBSで収録した動画にテロップつけたいと思って、Shotcut - Home をインストールした。 Windows11のフォトアプリでも動画編集できるらしいのだけれど、アプリが落ちまくって使い物にならなかった。。</description></item><item><title>XSplit VCam</title><link>https://umemak.github.io/blog/posts/2022/04/11_xsplit_vcam/</link><pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/11_xsplit_vcam/</guid><description>XSplit VCam: OBSでバーチャルグリーンバックを手に入れよう | XSplit を試してみた。 OBSで合成するのに、Zoomで背景緑にしてウィンドウキャプチャしていたけど、もっと簡単に導入できた。 無料版だとロゴが入るので、課金するかは検討中。年に2回程度しか使わない予定なので、だったら少しくらい面倒でもZoomで良い気もする</description></item><item><title>WindowsのminikubeでMySQLを動かす</title><link>https://umemak.github.io/blog/posts/2021/04/17_minikube_mysql/</link><pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/04/17_minikube_mysql/</guid><description>MacでやったらMySQLの起動時にエラーで落ちてしまったので、Windowsでどうなるか試す。 基本的には公式のドキュメントを参照。 https://kubernetes.io/ja/docs/tasks/run-application/run-single-instance-stateful-application/ munikubeインストール winget install minikube minikube起動 minikube start $ kubectl get nodes NAME STATUS ROLES AGE VERSION minikube Ready control-plane,master 73s v1.20.2 マニフェストファイル作成 mysql.yaml デプロイ $ kubectl apply -f mysql.yaml service/mysql created deployment.apps/mysql created persistentvolumeclaim/mysql-pv-claim created persistentvolume/mysql-pv-volume created $ kubectl get pods -l app=mysql NAME READY STATUS RESTARTS</description></item><item><title>Duetを使ってみる</title><link>https://umemak.github.io/blog/posts/2020/05/25_duet_display/</link><pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/05/25_duet_display/</guid><description>https://ja.duetdisplay.com/ Google Playの300円クーポンが有効期限間近だったので買ってみた。 spacedeskでも特に不便なくつかえていたのだけれど、有料アプリも試してみたかった。 環境はSurface Go2がホストでChromebook C101PA（Androidアプリ）がモニタでWiFi接続。 モバイルモニタの接続で使ってい</description></item><item><title>Windows10の設定</title><link>https://umemak.github.io/blog/posts/2020/03/30_win10setup/</link><pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/03/30_win10setup/</guid><description>Chromebookでの作業に限界が見えたので、WindowsPCを調達しました。 自分で買うのは初めてのDell。 OSはWindows10 Homeで、これも初めて使う。 以下やったこと Chromeインストール McAfeeプラグイン削除 React Developer Toolsインストール トラックパッドの設定変更 スクロール方向を逆</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Windows on umemak</title><link>https://umemak.github.io/blog/tags/windows/</link><description>Recent content in Windows on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 12 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/windows/index.xml" rel="self" type="application/rss+xml"/><item><title>Shotcut</title><link>https://umemak.github.io/blog/posts/2022/04/12_shotcut/</link><pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/12_shotcut/</guid><description>&lt;p>OBSで収録した動画にテロップつけたいと思って、&lt;a href="https://shotcut.org/">Shotcut - Home&lt;/a> をインストールした。&lt;/p>
+&lt;p>Windows11のフォトアプリでも動画編集できるらしいのだけれど、アプリが落ちまくって使い物にならなかった。。&lt;/p></description></item><item><title>XSplit VCam</title><link>https://umemak.github.io/blog/posts/2022/04/11_xsplit_vcam/</link><pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/11_xsplit_vcam/</guid><description>&lt;p>&lt;a href="https://www.xsplit.com/ja/partners/obs">XSplit VCam: OBSでバーチャルグリーンバックを手に入れよう | XSplit&lt;/a> を試してみた。&lt;/p>
+&lt;p>OBSで合成するのに、Zoomで背景緑にしてウィンドウキャプチャしていたけど、もっと簡単に導入できた。&lt;/p>
+&lt;p>無料版だとロゴが入るので、課金するかは検討中。年に2回程度しか使わない予定なので、だったら少しくらい面倒でもZoomで良い気もする。。&lt;/p></description></item><item><title>WindowsのminikubeでMySQLを動かす</title><link>https://umemak.github.io/blog/posts/2021/04/17_minikube_mysql/</link><pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2021/04/17_minikube_mysql/</guid><description>&lt;p>MacでやったらMySQLの起動時にエラーで落ちてしまったので、Windowsでどうなるか試す。&lt;/p>
+&lt;p>基本的には公式のドキュメントを参照。
+&lt;a href="https://kubernetes.io/ja/docs/tasks/run-application/run-single-instance-stateful-application/">https://kubernetes.io/ja/docs/tasks/run-application/run-single-instance-stateful-application/&lt;/a>&lt;/p>
+&lt;h2 id="munikubeインストール">munikubeインストール&lt;/h2>
+&lt;pre tabindex="0">&lt;code>winget install minikube
+&lt;/code>&lt;/pre>&lt;h2 id="minikube起動">minikube起動&lt;/h2>
+&lt;pre tabindex="0">&lt;code>minikube start
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>$ kubectl get nodes
+NAME STATUS ROLES AGE VERSION
+minikube Ready control-plane,master 73s v1.20.2
+&lt;/code>&lt;/pre>&lt;h2 id="マニフェストファイル作成">マニフェストファイル作成&lt;/h2>
+&lt;p>&lt;a href="https://github.com/umemak/blog/blob/master/content/posts/2021/04/mysql.yaml">mysql.yaml&lt;/a>&lt;/p>
+&lt;h2 id="デプロイ">デプロイ&lt;/h2>
+&lt;pre tabindex="0">&lt;code>$ kubectl apply -f mysql.yaml 
+service/mysql created
+deployment.apps/mysql created
+persistentvolumeclaim/mysql-pv-claim created
+persistentvolume/mysql-pv-volume created
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>$ kubectl get pods -l app=mysql
+NAME READY STATUS RESTARTS AGE
+mysql-68579b78bb-qcqww 1/1 Running 0 5m33s
+&lt;/code>&lt;/pre>&lt;p>動いてるねぇ。。&lt;/p>
+&lt;h2 id="後片付け">後片付け&lt;/h2>
+&lt;pre tabindex="0">&lt;code>$ kubectl.exe delete -f mysql.yaml
+service &amp;#34;mysql&amp;#34; deleted
+deployment.apps &amp;#34;mysql&amp;#34; deleted
+persistentvolumeclaim &amp;#34;mysql-pv-claim&amp;#34; deleted
+persistentvolume &amp;#34;mysql-pv-volume&amp;#34; deleted
+$ minikube stop
+&lt;/code>&lt;/pre>&lt;p>Macのほう、MySQLのコマンドライン色々指定したのがまずかったのかなぁ。&lt;/p></description></item><item><title>Duetを使ってみる</title><link>https://umemak.github.io/blog/posts/2020/05/25_duet_display/</link><pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/05/25_duet_display/</guid><description>&lt;p>&lt;a href="https://ja.duetdisplay.com/">https://ja.duetdisplay.com/&lt;/a>&lt;/p>
+&lt;p>Google Playの300円クーポンが有効期限間近だったので買ってみた。
+&lt;a href="https://spacedesk.net/">spacedesk&lt;/a>でも特に不便なくつかえていたのだけれど、有料アプリも試してみたかった。&lt;/p>
+&lt;p>環境はSurface Go2がホストでChromebook C101PA（Androidアプリ）がモニタでWiFi接続。
+モバイルモニタの接続で使っていたUSB-Cケーブルで接続したけれど認識されず。&lt;/p>
+&lt;p>duetの設定は30FPSの省エネモード。それでもブロックノイズになったり描画の遅延が起こったり。
+spacedeskは気になるような遅延やノイズはなかった。&lt;/p></description></item><item><title>Windows10の設定</title><link>https://umemak.github.io/blog/posts/2020/03/30_win10setup/</link><pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/03/30_win10setup/</guid><description>&lt;p>Chromebookでの作業に限界が見えたので、WindowsPCを調達しました。
+自分で買うのは初めてのDell。&lt;/p>
+&lt;p>OSはWindows10 Homeで、これも初めて使う。&lt;/p>
+&lt;p>以下やったこと&lt;/p>
+&lt;ul>
+&lt;li>Chromeインストール
+&lt;ul>
+&lt;li>McAfeeプラグイン削除&lt;/li>
+&lt;li>React Developer Toolsインストール&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>トラックパッドの設定変更
+&lt;ul>
+&lt;li>スクロール方向を逆に&lt;/li>
+&lt;li>タップでクリックをオフに&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>キーボードの設定変更
+&lt;ul>
+&lt;li>表示間隔を最短に&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>画面倍率の設定変更
+&lt;ul>
+&lt;li>150%を125%に&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>IMEの設定変更
+&lt;ul>
+&lt;li>IME入力モード切替の通知をオフに&lt;/li>
+&lt;li>「無変換」キーをIMEオフに割り当て&lt;/li>
+&lt;li>「変換」キーをIMEオンに割り当て&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Gitインストール
+&lt;ul>
+&lt;li>CRLFの設定をfalseにした以外はデフォルトで&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>VSCodeインストール&lt;/li>
+&lt;li>VSCode設定変更
+&lt;ul>
+&lt;li>Telemetry系をオフに&lt;/li>
+&lt;li>デフォルトのターミナルをgitbashに&lt;/li>
+&lt;li>&lt;code>workbench.editor.enablePreview&lt;/code>をfalseに&lt;/li>
+&lt;li>Auto Saveを有効に&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>node.jsインストール
+&lt;ul>
+&lt;li>&lt;code>Tools for Native Modules&lt;/code>のページのチェックをオンに&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>yarnインストール
+&lt;ul>
+&lt;li>PowerShellを管理者権限で起動して、&lt;code>choco install yarn&lt;/code>&lt;/li>
+&lt;li>chocoコマンドは、node.jsインストール時に入る&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>VSCodeプラグイン
+&lt;ul>
+&lt;li>Debugger for Chrome&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>cross-envインストール
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/kentcdodds/cross-env#readme">https://github.com/kentcdodds/cross-env#readme&lt;/a>&lt;/li>
+&lt;li>package.jsonで環境変数を設定するときに、OSの違いを吸収してくれる&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/riversun/items/d45b26f4a7aad6e51b69">https://qiita.com/riversun/items/d45b26f4a7aad6e51b69&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>NODE_OPTIONS='--inspect'&lt;/code>をつけると、&lt;code>Starting inspector on 127.0.0.1:9229 failed: address already in use&lt;/code>が出続ける
+&lt;ul>
+&lt;li>最新のNext.jsの不具合らしい&lt;/li>
+&lt;li>&lt;a href="https://github.com/zeit/next.js/issues/11030">https://github.com/zeit/next.js/issues/11030&lt;/a>&lt;/li>
+&lt;li>&lt;code>yarn upgrade next@9.2.0&lt;/code>でダウングレードしてみる
+&lt;ul>
+&lt;li>表示頻度は下がったが、まだ出る&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>spacedeskのインストール
+&lt;ul>
+&lt;li>モバイルディスプレイ代わりにCT100PA（Chromebookタブレット）を使ってみる&lt;/li>
+&lt;li>HTML5版だとタッチ反応しなかったけれど、Andriodアプリ版だとタッチ反応する&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

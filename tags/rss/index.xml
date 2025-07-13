@@ -1,1 +1,120 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>rss on umemak</title><link>https://umemak.github.io/blog/tags/rss/</link><description>Recent content in rss on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 21 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/rss/index.xml" rel="self" type="application/rss+xml"/><item><title>rss_filter</title><link>https://umemak.github.io/blog/posts/2022/12/21_rss_filter/</link><pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/12/21_rss_filter/</guid><description>Inoreaderの有料プランが切れて、広告が表示されるようになり、重複フィルターが無効化され、ルールによる自動既読が効かなくなった。 広告はまあそんなに目障りではないので問題なし。 ルールの代わりに、Cloud Functions経由するときに除外するようにしたので、これも問題なし。 重複フィルターが代替</description></item><item><title>encoding/xml</title><link>https://umemak.github.io/blog/posts/2022/11/23_rss_filter/</link><pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/23_rss_filter/</guid><description>encoding/xmlを使って複数RSS読み込んでマージして出力するのはできたけど、読み込むRSSの形式によってencoding/xmlでは読めないものが出てきた。 やっぱりmmcdole/gofeed: Parse RSS, Atom and JSON feeds in Goとか形式の違いを吸収してくれるライブラリを利用したほうが良さそう。 作ってみてわ</description></item><item><title>RSSフィルタ2</title><link>https://umemak.github.io/blog/posts/2022/11/20_rss_filter/</link><pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/20_rss_filter/</guid><description>Lambdaで動かそうと思っていたけど、Cloud Functionsにデプロイしてみた。 設定周りをDB管理したいと思ったら、それFirebaseで良いのでは？という気持ちになってきた。 FirebaseとGoの組み合わせは今までやったことない気がするので、この機会に試してみようと思ったけど、Fireb</description></item><item><title>RSSフィルタ</title><link>https://umemak.github.io/blog/posts/2022/11/19_rss_filter/</link><pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/19_rss_filter/</guid><description>mmcdole/gofeed: Parse RSS, Atom and JSON feeds in Goを使ったら、RSSの読み込みが超簡単にできた。 が、不要なエントリを削除してまたRSSとして出力しようとしたときに、手段が用意されていなさそう。 なので、encoding/xmlを使って作るのが良さそう。 Goのencoding/xmlの使い方について雑に紹介 Go言語 - XMLを読んで特</description></item><item><title>RSSクローラー</title><link>https://umemak.github.io/blog/posts/2022/11/16_rss_crawler/</link><pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/16_rss_crawler/</guid><description>RSSリーダーはInoreaderをProプランで使っているのだけれど、そろそろ年払いの更新時期で、最近ちょっと下がったとはいえまだドルが高いので思案中。 そもそもProプランにしてるのは、ルールとフィルターが使いたいからで、それさえ自前で実現できれば、広告付きFreeプランでも問題ない（はず）。 とい</description></item><item><title>RSS棚卸し</title><link>https://umemak.github.io/blog/posts/2020/02/29_rss/</link><pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/02/29_rss/</guid><description>RSSリーダーをNewsifyからInoreaderに移行するにあたって、無料プランだと150件までしか登録できないので、更新されていないものなど削除して棚下ろす。 Inoreaderに移行する理由は、NewsifyのAndroidアプリが存在しないため。 日本のニュース ITmedia 総合記事一覧 ビジネス+IT 最新</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RSS on umemak</title><link>https://umemak.github.io/blog/tags/rss/</link><description>Recent content in RSS on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 21 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/rss/index.xml" rel="self" type="application/rss+xml"/><item><title>rss_filter</title><link>https://umemak.github.io/blog/posts/2022/12/21_rss_filter/</link><pubDate>Wed, 21 Dec 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/12/21_rss_filter/</guid><description>&lt;p>Inoreaderの有料プランが切れて、広告が表示されるようになり、重複フィルターが無効化され、ルールによる自動既読が効かなくなった。&lt;/p>
+&lt;p>広告はまあそんなに目障りではないので問題なし。&lt;/p>
+&lt;p>ルールの代わりに、Cloud Functions経由するときに除外するようにしたので、これも問題なし。&lt;/p>
+&lt;p>重複フィルターが代替できていないのを何とかするためには、Cloud Functions側で一旦キャッシュする仕組みがないとダメか。&lt;/p></description></item><item><title>encoding/xml</title><link>https://umemak.github.io/blog/posts/2022/11/23_rss_filter/</link><pubDate>Wed, 23 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/23_rss_filter/</guid><description>&lt;p>&lt;code>encoding/xml&lt;/code>を使って複数RSS読み込んでマージして出力するのはできたけど、読み込むRSSの形式によって&lt;code>encoding/xml&lt;/code>では読めないものが出てきた。&lt;/p>
+&lt;p>やっぱり&lt;a href="https://github.com/mmcdole/gofeed">mmcdole/gofeed: Parse RSS, Atom and JSON feeds in Go&lt;/a>とか形式の違いを吸収してくれるライブラリを利用したほうが良さそう。&lt;/p>
+&lt;p>作ってみてわかることもある。&lt;/p></description></item><item><title>RSSフィルタ2</title><link>https://umemak.github.io/blog/posts/2022/11/20_rss_filter/</link><pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/20_rss_filter/</guid><description>&lt;p>Lambdaで動かそうと思っていたけど、Cloud Functionsにデプロイしてみた。&lt;/p>
+&lt;p>設定周りをDB管理したいと思ったら、それFirebaseで良いのでは？という気持ちになってきた。&lt;/p>
+&lt;p>FirebaseとGoの組み合わせは今までやったことない気がするので、この機会に試してみようと思ったけど、FirebaseのFunctionsってNodeしか対応してない・・？&lt;/p></description></item><item><title>RSSフィルタ</title><link>https://umemak.github.io/blog/posts/2022/11/19_rss_filter/</link><pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/19_rss_filter/</guid><description>&lt;p>&lt;a href="https://github.com/mmcdole/gofeed">mmcdole/gofeed: Parse RSS, Atom and JSON feeds in Go&lt;/a>を使ったら、RSSの読み込みが超簡単にできた。&lt;/p>
+&lt;p>が、不要なエントリを削除してまたRSSとして出力しようとしたときに、手段が用意されていなさそう。&lt;/p>
+&lt;p>なので、&lt;code>encoding/xml&lt;/code>を使って作るのが良さそう。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://zenn.dev/nnabeyang/scraps/a1429f7f1214e9">Goのencoding/xmlの使い方について雑に紹介&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.y-yuki.net/entry/2017/07/02/120000">Go言語 - XMLを読んで特定の要素を削って出力 - 覚えたら書く&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>この辺りが参考になりそう。&lt;/p></description></item><item><title>RSSクローラー</title><link>https://umemak.github.io/blog/posts/2022/11/16_rss_crawler/</link><pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/16_rss_crawler/</guid><description>&lt;p>RSSリーダーは&lt;a href="https://www.inoreader.com/">Inoreader&lt;/a>をProプランで使っているのだけれど、そろそろ年払いの更新時期で、最近ちょっと下がったとはいえまだドルが高いので思案中。&lt;/p>
+&lt;p>そもそもProプランにしてるのは、ルールとフィルターが使いたいからで、それさえ自前で実現できれば、広告付きFreeプランでも問題ない（はず）。&lt;/p>
+&lt;p>ということでRSSクローラーを作ってみようかと。&lt;/p>
+&lt;p>その前にちょっと検索してみた結果をメモ&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/minhhungit/github-action-rss-crawler">minhhungit/github-action-rss-crawler: Rss 100% auto crawling using Github Action&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/cacaoMath/items/2dfd6edc51e14cf9054b">今更ながらGithub Actionsを用いてRSSフィードを自動取得・メール送信を実現する - Qiita&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://qiita.com/yamadashy/items/0130e3e569b0832bc51f">企業のテックブログの更新をまとめたRSSフィードを作りました！（GitHub Actions） - Qiita&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://paiza.hatenablog.com/entry/2021/07/07/150000">簡単すぎる！GitHubを自分だけのRSSリーダーに変える「osmos:feed」を使ってみた！ - paiza開発日誌&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zenn.dev/kinkinbeer135ml/articles/968c7f8a5f0767">【Node.js】Qiita/Zennの投稿をGitHubのProfileに自動反映する。（半分ポエム）&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="https://www.to-r.net/media/note-rss/">note の RSS でクライアントから記事一覧を取得する方法【Cloud Functions for Firebase】 - to-R Media&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>RSS棚卸し</title><link>https://umemak.github.io/blog/posts/2020/02/29_rss/</link><pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/02/29_rss/</guid><description>&lt;p>RSSリーダーをNewsifyからInoreaderに移行するにあたって、無料プランだと150件までしか登録できないので、更新されていないものなど削除して棚下ろす。&lt;/p>
+&lt;p>Inoreaderに移行する理由は、NewsifyのAndroidアプリが存在しないため。&lt;/p>
+&lt;h2 id="日本のニュース">日本のニュース&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://rss.itmedia.co.jp/rss/2.0/itmedia_all.xml">ITmedia 総合記事一覧&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.sbbit.jp/index1.rss">ビジネス+IT 最新記事&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://feed.japan.zdnet.com/rss/news/index.rdf">ZDNet Japan 最新情報　総合&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jp.techcrunch.com/feed/">TechCrunch Japan&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.publickey1.jp/atom.xml">Publickey&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://feed.japan.cnet.com/rss/index.rdf">CNET Japan 最新情報　総合&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://thinkit.co.jp/rss.xml">Think IT（シンクイット）&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://codezine.jp/rss/new/20/index.xml">CodeZine:新着一覧&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://rss.itmedia.co.jp/rss/1.0/ait.xml">＠IT 全フォーラム 最新記事一覧&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://feed.infoq.com/jp">InfoQ&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="software-engineering">Software Engineering&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="http://feeds.feedburner.com/blogspot/Dcni">Google Developers Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://news.ycombinator.com/rss">Hacker News&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://feeds.feedburner.com/blogspot/hsDu">Android Developers Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.reddit.com/r/programming/.rss">reddit:programming&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.reddit.com/r/technology/.rss">reddit:Technology&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://rubyweekly.com/rss">Ruby Weekly&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="tech-news">Tech News&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="http://lifehacker.com/rss">Lifehacker&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.theverge.com/rss/index.xml">The Verge&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.engadget.com/rss.xml">Engadget&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="gcp">gcp&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://cloudblog.withgoogle.com/ja/products/gcp/rss/">Google Cloud Platform&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://googledevjp.blogspot.com/feeds/posts/default">Google Developer Japan Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cloudplatform.googleblog.com/feeds/posts/default?alt=rss">Google Cloud Platform&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://feeds.feedburner.com/GoogleCloudPlatformJapanBlog">Google Cloud Platform Japan 公式ブログ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cloudblog.withgoogle.com/rss/">Cloud Blog&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="azure">azure&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://azure.microsoft.com/en-us/blog/feed/">Microsoft Azure Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://azure.microsoft.com/en-us/updates/feed/">Azure service updates&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://azure.microsoft.com/en-us/blog/topics/announcements/feed/">Microsoft Azure Blog &amp;gt; Announcements&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://azureinfohub.azurewebsites.net/Feed?serviceTitle=Azure">Azure InfoHub RSS - Azure&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="aws">aws&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://aws.amazon.com/about-aws/whats-new/recent/feed/">aws blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/database/feed/">AWS Database Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/feeds/videos.xml?user=AmazonWebServices">Amazon Web Services&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://d3gih7jbfe3jlq.cloudfront.net/aws-podcast.rss">AWS Podcast&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/feeds/videos.xml?user=AmazonWebServicesJP">Amazon Web Services Japan 公式&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/feeds/videos.xml?user=AWSwebinars">AWS Online Tech Talks&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://alas.aws.amazon.com/alas.rss">Amazon Linux Security Center&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/enterprise-strategy/feed/?_=5597">AWS Cloud Enterprise Strategy Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/aws/feed/">AWS News Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/architecture/feed/">AWS Architecture Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/apn/feed/">AWS Partner Network (APN) Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/awsmarketplace/feed/">AWS Marketplace&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/big-data/feed/">AWS Big Data Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/compute/feed/">AWS Compute Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/developer/feed/">AWS Developer Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/devops/feed/">AWS DevOps Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/gametech/feed/">Amazon Game Tech Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/iot/feed/">The Internet of Things on AWS – Official Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/machine-learning/feed/">AWS Machine Learning Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/mt/feed/">AWS Management &amp;amp; Governance Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/media/feed/">AWS Media Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/messaging-and-targeting/feed/">AWS Messaging &amp;amp; Targeting Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/mobile/feed/">AWS Mobile Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/networking-and-content-delivery/feed/">Networking &amp;amp; Content Delivery&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/opensource/feed/9">AWS Open Source Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/publicsector/feed/">AWS Government, Education, &amp;amp; Nonprofits Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/awsforsap/feed/">AWS for SAP&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/security/feed/">AWS Security Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/blogs/startups/feed/">AWS Startups Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://aws.amazon.com/jp/blogs/news/feed/">Amazon Web Services ブログ&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="企業blog">企業blog&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://dev.classmethod.jp/feed/">Developers.IO&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.asial.co.jp/rss">アシアルブログ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://research.sakura.ad.jp/feed/">さくらインターネット研究所&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://tech.mercari.com/feed">Mercari Engineering Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://moneyforward.com/engineers_blog/feed/">Engineers&amp;rsquo; Blog&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://future-architect.github.io/atom.xml">Future Tech Blog - フューチャーアーキテクト&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://buildersbox.corp-sansan.com/feed">sansan builders box&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://techracho.bpsinc.jp/feed/atom">TechRacho&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.m3tech.blog/feed">エムスリーテックブログ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://techlife.cookpad.com/feed">クックパッド開発者ブログ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://techblog.yahoo.co.jp/index.xml">Yahoo! JAPAN Tech Blog&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

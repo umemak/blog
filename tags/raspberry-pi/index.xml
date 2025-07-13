@@ -1,1 +1,187 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>raspberry-pi on umemak</title><link>https://umemak.github.io/blog/tags/raspberry-pi/</link><description>Recent content in raspberry-pi on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml"/><item><title>ラズパイでDockerでMySQL</title><link>https://umemak.github.io/blog/posts/2022/12/10_raspberry_pi_vscode/</link><pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/12/10_raspberry_pi_vscode/</guid><description>GitHub Codespacesが使えるようになるのを待つ間、ラズパイで何とかならないか試してみた。 VS Codeからリモート接続して、Dockerインストールするところまでは順調だったけれど、docker compose upしたところでエラー。 MySQLのコンテナイメージが提供されていないようだ。 意外だった。 mysql Tags | Docker Hubに</description></item><item><title>ラズパイをルーターにする2</title><link>https://umemak.github.io/blog/posts/2022/11/10_raspi_router/</link><pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/10_raspi_router/</guid><description>SSIDが見つからない件。 linux - Raspberry Pi 4 hostapd hotspot not visible - Super Userの回答を参考に、 sudo systemctl stop dhcpcd.service sudo systemctl restart hostapd.service sudo systemctl start dhcpcd.service したらいけた。 /etc/dhcpcd.confにdenyinterfaces wlan0を追記するのは効き目なかった。 スピードテストの結果 経由 ダウンロード アップロード レイテンシ 無線LANルーター 88.2Mbps 78.4Mbps 79ms ラズパ</description></item><item><title>ラズパイをルーターにする</title><link>https://umemak.github.io/blog/posts/2022/11/09_raspi_router/</link><pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/09_raspi_router/</guid><description>PCは昨日買ってきたLANケーブルでインターネット接続は解決した。 Pixel4も同じ現象だった。 LANケーブルつないだらいけるのか、LANポート付きUSB-HUBを試してみたけれど、ダメだった。 なので、ラズパイを無線LANルーターにしてみることにした。 やり方はググったらいくつか出てきた。 ラズパイを無</description></item><item><title>Kuzzle Admin Consoleをラズパイ4に入れてみる</title><link>https://umemak.github.io/blog/posts/2022/05/17_kuzzle_raspi/</link><pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/17_kuzzle_raspi/</guid><description>https://github.com/kuzzleio/kuzzle-admin-console#local-build をやってみる $ git clone https://github.com/kuzzleio/kuzzle-admin-console $ cd kuzzle-admin-console $ npm install npm ERR! command sh -c node-gyp rebuild npm ERR! gyp info it worked if it ends with ok npm ERR! gyp info using node-gyp@3.8.0 npm ERR! gyp info using node@17.3.0 | linux | arm npm ERR! gyp ERR! configure error npm ERR! gyp ERR! stack Error: Command failed: /usr/bin/python -c import sys; print &amp;#34;%s.%s.%s&amp;#34; % sys.version_info[:3]; npm ERR! gyp ERR! stack File &amp;#34;&amp;lt;string&amp;gt;&amp;#34;, line 1 npm ERR! gyp ERR! stack import sys; print &amp;#34;%s.%s.%s&amp;#34; % sys.version_info[:3]; npm ERR! gyp ERR! stack ^ npm ERR! gyp ERR! stack SyntaxError: invalid syntax ダメか。。</description></item><item><title>Raspberry pi4 で expo を動かす</title><link>https://umemak.github.io/blog/posts/2020/07/22_raspi_expo/</link><pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/07/22_raspi_expo/</guid><description>WSLでいろいろ試してみたものの、ポート関連のエラーで動かないので、Raspberry piで試してみた。 Rubyインストール Homebrewインストールしようとしたときに、Rubyがないエラーで先に進まなくなってしまったので先にインストールしておく。 rbenvを使ってみる。 途中でパッケージが足りない</description></item><item><title>ラズパイでdroidcam</title><link>https://umemak.github.io/blog/posts/2020/05/01_droidcam/</link><pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/05/01_droidcam/</guid><description>ラズパイにWebカメラ付けてみたくても売っていないので、Android端末をカメラ化する。 Android端末側にはアプリをインストールしておく。 ラズパイ側。公式ページにはLinux用のインストール方法が用意されているが、 http://www.dev47apps.com/droidcam/linuxx/ Note: 32-bit binaries are no longer provided, you’ll need to compile the client from source. この条件に該当するのでソースからインス</description></item><item><title>はじめてのrpi-update</title><link>https://umemak.github.io/blog/posts/2020/04/27_rpi_update/</link><pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/04/27_rpi_update/</guid><description>snapを導入してみたところ、実行時にエラーが出る。 $ hello-world ERROR: ld.so: object &amp;#39;/usr/lib/arm-linux-gnueabihf/libarmmem-${PLATFORM}.so&amp;#39; from /etc/ld.so.preload cannot be preloaded (cannot open shared object file): ignored. Hello World! 実行自体はできているっぽいんだけど、気になるのでググったらrpi-updateを実行すると解消するかもしれないということで、やってみた。 ############################################################# WARNING: &amp;#39;rpi-update&amp;#39; updates to pre-releases of the linux kernel tree and Videocore firmware. &amp;#39;rpi-update&amp;#39; should only be used if there is a specific reason to do so - for example, a request by a Raspberry Pi</description></item><item><title>ラズパイ4にUbuntu20.04を入れる</title><link>https://umemak.github.io/blog/posts/2020/04/24_raspi_ubuntu/</link><pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/04/24_raspi_ubuntu/</guid><description>Ubuntuの新しいLTS版が出たので、ラズパイで動かしてみた。 実は先日、18.04＋kubuntuを入れてみたところ、動作が重くてちょっと実用にはならないなと思っていたところ。 20.04になってもしかしたら軽くなっているかもと期待して試した。 結果、kubuntuのGUIが起動しなくて公平な比較がで</description></item><item><title>ラズパイでbox86を試す</title><link>https://umemak.github.io/blog/posts/2020/04/23_box86/</link><pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/04/23_box86/</guid><description>ラズパイはARM系のCPUなので、INTEL系のCPU用にビルドされたバイナリはそのままでは動きません。 そこでエミュレーターを使ってみます。 今回使ってみたのは、 https://github.com/ptitSeb/box86 です。 ラズパイ4用のビルド方法が書いてあるので、その通りにして https://github.com/ptitSeb/box86/blob/master/COMPILE.md 途中、cmake がインストールされてないエラーが出たので、aptでインスト</description></item><item><title>ラズパイ4導入</title><link>https://umemak.github.io/blog/posts/2020/04/17_raspi/</link><pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/04/17_raspi/</guid><description>以前から興味があったラズパイについに手を出しました。 4Bの4GB版。 さっそくSDカードにOSを入れて、と思ったらChromebookでできない。 https://www.raspberrypi.org/downloads/ のRaspberry Pi Imager for Ubuntuを入れて、起動はするもののSDカードを認識してくれないので書き込み先が指定できず。 開発者モードにすればいけるのかもし</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Raspberry-Pi on umemak</title><link>https://umemak.github.io/blog/tags/raspberry-pi/</link><description>Recent content in Raspberry-Pi on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 10 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml"/><item><title>ラズパイでDockerでMySQL</title><link>https://umemak.github.io/blog/posts/2022/12/10_raspberry_pi_vscode/</link><pubDate>Sat, 10 Dec 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/12/10_raspberry_pi_vscode/</guid><description>&lt;p>GitHub Codespacesが使えるようになるのを待つ間、ラズパイで何とかならないか試してみた。&lt;/p>
+&lt;p>VS Codeからリモート接続して、Dockerインストールするところまでは順調だったけれど、docker compose upしたところでエラー。&lt;/p>
+&lt;p>MySQLのコンテナイメージが提供されていないようだ。
+意外だった。&lt;/p>
+&lt;p>&lt;a href="https://registry.hub.docker.com/_/mysql/tags">mysql Tags | Docker Hub&lt;/a>には&lt;code>linux/arm64/v8&lt;/code>があるけれど、ラズパイは&lt;code>v7&lt;/code>らしい。&lt;/p></description></item><item><title>ラズパイをルーターにする2</title><link>https://umemak.github.io/blog/posts/2022/11/10_raspi_router/</link><pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/10_raspi_router/</guid><description>&lt;p>SSIDが見つからない件。&lt;/p>
+&lt;p>&lt;a href="https://superuser.com/questions/1503862/raspberry-pi-4-hostapd-hotspot-not-visible">linux - Raspberry Pi 4 hostapd hotspot not visible - Super User&lt;/a>の回答を参考に、&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>sudo systemctl stop dhcpcd.service
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo systemctl restart hostapd.service
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo systemctl start dhcpcd.service
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>したらいけた。&lt;/p>
+&lt;p>&lt;code>/etc/dhcpcd.conf&lt;/code>に&lt;code>denyinterfaces wlan0&lt;/code>を追記するのは効き目なかった。&lt;/p>
+&lt;p>スピードテストの結果&lt;/p>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th>経由&lt;/th>
+ &lt;th style="text-align: right">ダウンロード&lt;/th>
+ &lt;th style="text-align: right">アップロード&lt;/th>
+ &lt;th style="text-align: right">レイテンシ&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td>無線LANルーター&lt;/td>
+ &lt;td style="text-align: right">88.2Mbps&lt;/td>
+ &lt;td style="text-align: right">78.4Mbps&lt;/td>
+ &lt;td style="text-align: right">79ms&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ラズパイ2.4G&lt;/td>
+ &lt;td style="text-align: right">32.0Mbps&lt;/td>
+ &lt;td style="text-align: right">27.7Mbps&lt;/td>
+ &lt;td style="text-align: right">5ms&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>ラズパイ5G&lt;/td>
+ &lt;td style="text-align: right">54.1Mbps&lt;/td>
+ &lt;td style="text-align: right">59.5Mbps&lt;/td>
+ &lt;td style="text-align: right">5ms&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td>有線&lt;/td>
+ &lt;td style="text-align: right">91.6Mbps&lt;/td>
+ &lt;td style="text-align: right">60.4Mbps&lt;/td>
+ &lt;td style="text-align: right">4ms&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>専用機にはかなわないか。。&lt;/p></description></item><item><title>ラズパイをルーターにする</title><link>https://umemak.github.io/blog/posts/2022/11/09_raspi_router/</link><pubDate>Wed, 09 Nov 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/11/09_raspi_router/</guid><description>&lt;p>PCは昨日買ってきたLANケーブルでインターネット接続は解決した。&lt;/p>
+&lt;p>Pixel4も同じ現象だった。&lt;/p>
+&lt;p>LANケーブルつないだらいけるのか、LANポート付きUSB-HUBを試してみたけれど、ダメだった。&lt;/p>
+&lt;p>なので、ラズパイを無線LANルーターにしてみることにした。&lt;/p>
+&lt;p>やり方はググったらいくつか出てきた。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.itmedia.co.jp/news/articles/2008/14/news042.html">ラズパイを無線LANルーター化する ～アクセスポイント編～：名刺サイズの超小型PC「ラズパイ」で遊ぶ（第24回）（1/2 ページ） - ITmedia NEWS&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://it-syoya-engineer.com/raspberry-pi-router/">Raspberry Piで無線LANルーター（AP）を作る&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kassyjp.ninja-web.net/ras/jessie/bridge.htm">ex2.RaspberryPiを無線LANアクセスポイント化する - RaspberryPiで各種サーバー作り！ - ある阪大生の物置小屋&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.mikan-tech.net/entry/raspi-ap-sta-router">Raspberry Pi WiFiアクセスポイント&amp;amp;ルーター化 - みかんのゆるふわ技術ブログ&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.raspberrypi.com/documentation/computers/configuration.html#setting-up-a-routed-wireless-access-point">Raspberry Pi Documentation - Configuration&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>ルーター用にするOSもあるみたいだけど、イメージ作るの面倒なのでいったんパス。&lt;/p></description></item><item><title>Kuzzle Admin Consoleをラズパイ4に入れてみる</title><link>https://umemak.github.io/blog/posts/2022/05/17_kuzzle_raspi/</link><pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/05/17_kuzzle_raspi/</guid><description>&lt;p>&lt;a href="https://github.com/kuzzleio/kuzzle-admin-console#local-build">https://github.com/kuzzleio/kuzzle-admin-console#local-build&lt;/a> をやってみる&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ git clone https://github.com/kuzzleio/kuzzle-admin-console
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ cd kuzzle-admin-console
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ npm install
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm ERR! command sh -c node-gyp rebuild
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm ERR! gyp info it worked &lt;span style="color:#66d9ef">if&lt;/span> it ends with ok
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm ERR! gyp info using node-gyp@3.8.0
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm ERR! gyp info using node@17.3.0 | linux | arm
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm ERR! gyp ERR! configure error 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm ERR! gyp ERR! stack Error: Command failed: /usr/bin/python -c import sys; print &lt;span style="color:#e6db74">&amp;#34;%s.%s.%s&amp;#34;&lt;/span> % sys.version_info&lt;span style="color:#f92672">[&lt;/span>:3&lt;span style="color:#f92672">]&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm ERR! gyp ERR! stack File &lt;span style="color:#e6db74">&amp;#34;&amp;lt;string&amp;gt;&amp;#34;&lt;/span>, line &lt;span style="color:#ae81ff">1&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm ERR! gyp ERR! stack import sys; print &lt;span style="color:#e6db74">&amp;#34;%s.%s.%s&amp;#34;&lt;/span> % sys.version_info&lt;span style="color:#f92672">[&lt;/span>:3&lt;span style="color:#f92672">]&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm ERR! gyp ERR! stack ^
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>npm ERR! gyp ERR! stack SyntaxError: invalid syntax
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>ダメか。。&lt;/p></description></item><item><title>Raspberry pi4 で expo を動かす</title><link>https://umemak.github.io/blog/posts/2020/07/22_raspi_expo/</link><pubDate>Wed, 22 Jul 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/07/22_raspi_expo/</guid><description>&lt;p>WSLでいろいろ試してみたものの、ポート関連のエラーで動かないので、Raspberry piで試してみた。&lt;/p>
+&lt;h2 id="rubyインストール">Rubyインストール&lt;/h2>
+&lt;ul>
+&lt;li>Homebrewインストールしようとしたときに、Rubyがないエラーで先に進まなくなってしまったので先にインストールしておく。&lt;/li>
+&lt;li>&lt;code>rbenv&lt;/code>を使ってみる。&lt;/li>
+&lt;li>途中でパッケージが足りないエラーが出るので、&lt;code>libssl-dev&lt;/code>と&lt;code>libreadline-dev&lt;/code>を入れる。&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ sudo apt-get install -y libssl-dev libreadline-dev
+$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+$ echo &amp;#39;export PATH=&amp;#34;$HOME/.rbenv/bin:$PATH&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
+$ echo &amp;#39;eval &amp;#34;$(rbenv init -)&amp;#34;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc
+$ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+$ rbenv rehash
+$ rbenv install --list
+$ rbenv install 2.6.6
+$ rbenv global 2.6.6
+$ rbenv rehash
+$ ruby --version
+ruby 2.6.6p146 (2020-03-31 revision 67876) [aarch64-linux]
+&lt;/code>&lt;/pre>&lt;h2 id="homebrewインストール">Homebrewインストール&lt;/h2>
+&lt;ul>
+&lt;li>手順は先日&lt;a href="../20_wsl_brew">WSLにインストール&lt;/a>したときと同様。&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&amp;#34;
+$ sudo apt-get install build-essential
+$ echo &amp;#39;eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)&amp;#39; &amp;gt;&amp;gt; /home/pi/.profile
+$ eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+$ brew --version
+Homebrew 2.4.8
+Homebrew/linuxbrew-core (git revision 39fddf7; last commit 2020-07-21)
+&lt;/code>&lt;/pre>&lt;h2 id="nodebrewインストール">Nodebrewインストール&lt;/h2>
+&lt;ul>
+&lt;li>これも先日と同様。&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ brew install nodebrew
+$ mkdir -p ~/.nodebrew/src
+$ nodebrew install stable
+$ nodebrew ls
+$ nodebrew use v14.6.0
+$ vi ~/.profile
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+$ source ~/.profile
+$ node -v
+v14.6.0
+&lt;/code>&lt;/pre>&lt;h2 id="expoインストール">Expoインストール&lt;/h2>
+&lt;ul>
+&lt;li>グローバルに&lt;code>expo-cli&lt;/code>をインストールしないで、init後にaddしている。&lt;/li>
+&lt;li>テンプレートは&lt;code>tabs (TypeScript)&lt;/code>を選択した。&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>$ cd workspace/
+$ npx expo-cli init expotest
+$ cd expotest/
+$ npm install --save-dev expo-cli
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>&lt;code>npm start&lt;/code>後、しばらくすると以下のエラーが出るので、上限を上げる。&lt;/li>
+&lt;/ul>
+&lt;pre tabindex="0">&lt;code>Error: ENOSPC: System limit for number of file watchers reached, watch &amp;#39;/home/pi/workspace/expotest/node_modules/metro/node_modules/string-width/node_modules/ansi-regex&amp;#39;
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>$ cat /proc/sys/fs/inotify/max_user_watches
+8192
+$ sudo su
+# echo fs.inotify.max_user_watches= 65536 | tee -a /etc/sysctl.conf
+fs.inotify.max_user_watches= 65536
+# cat /proc/sys/fs/inotify/max_user_watches
+8192
+# sysctl -p
+fs.inotify.max_user_watches = 65536
+# cat /proc/sys/fs/inotify/max_user_watches
+65536
+# exit
+&lt;/code>&lt;/pre>&lt;h2 id="expo起動">Expo起動&lt;/h2>
+&lt;pre tabindex="0">&lt;code>$ npm start
+&lt;/code>&lt;/pre>&lt;ul>
+&lt;li>表示されたQRコードを、iOSやAndroidのアプリで開くと表示される。&lt;/li>
+&lt;li>初回はJavaScriptのビルドが走る（アプリの画面下部に進捗が表示される）。&lt;/li>
+&lt;li>それ以降はソースを変更するとほぼリアルタイムで反映される。&lt;/li>
+&lt;/ul></description></item><item><title>ラズパイでdroidcam</title><link>https://umemak.github.io/blog/posts/2020/05/01_droidcam/</link><pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/05/01_droidcam/</guid><description>&lt;p>ラズパイにWebカメラ付けてみたくても売っていないので、Android端末をカメラ化する。&lt;/p>
+&lt;p>Android端末側にはアプリをインストールしておく。&lt;/p>
+&lt;p>ラズパイ側。公式ページにはLinux用のインストール方法が用意されているが、
+&lt;a href="http://www.dev47apps.com/droidcam/linuxx/">http://www.dev47apps.com/droidcam/linuxx/&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>Note: 32-bit binaries are no longer provided, you’ll need to compile the client from source.&lt;/p>&lt;/blockquote>
+&lt;p>この条件に該当するのでソースからインストールする。&lt;/p></description></item><item><title>はじめてのrpi-update</title><link>https://umemak.github.io/blog/posts/2020/04/27_rpi_update/</link><pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/04/27_rpi_update/</guid><description>&lt;p>snapを導入してみたところ、実行時にエラーが出る。&lt;/p>
+&lt;pre tabindex="0">&lt;code>$ hello-world
+ERROR: ld.so: object &amp;#39;/usr/lib/arm-linux-gnueabihf/libarmmem-${PLATFORM}.so&amp;#39; from /etc/ld.so.preload cannot be preloaded (cannot open shared object file): ignored.
+Hello World!
+&lt;/code>&lt;/pre>&lt;p>実行自体はできているっぽいんだけど、気になるのでググったら&lt;code>rpi-update&lt;/code>を実行すると解消するかもしれないということで、やってみた。&lt;/p>
+&lt;pre tabindex="0">&lt;code>#############################################################
+WARNING: &amp;#39;rpi-update&amp;#39; updates to pre-releases of the linux 
+kernel tree and Videocore firmware.
+
+&amp;#39;rpi-update&amp;#39; should only be used if there is a specific 
+reason to do so - for example, a request by a Raspberry Pi 
+engineer.
+
+DO NOT use &amp;#39;rpi-update&amp;#39; as part of a regular update process.
+
+##############################################################
+Would you like to proceed? (y/N)
+&lt;/code>&lt;/pre>&lt;p>こんな警告出る。まあそんなに気軽にやるものではないよね、&lt;code>Y&lt;/code>&lt;/p></description></item><item><title>ラズパイ4にUbuntu20.04を入れる</title><link>https://umemak.github.io/blog/posts/2020/04/24_raspi_ubuntu/</link><pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/04/24_raspi_ubuntu/</guid><description>&lt;p>Ubuntuの新しいLTS版が出たので、ラズパイで動かしてみた。&lt;/p>
+&lt;p>実は先日、18.04＋kubuntuを入れてみたところ、動作が重くてちょっと実用にはならないなと思っていたところ。&lt;/p>
+&lt;p>20.04になってもしかしたら軽くなっているかもと期待して試した。&lt;/p>
+&lt;p>結果、kubuntuのGUIが起動しなくて公平な比較ができず。&lt;/p>
+&lt;p>ただ、kubuntuの代わりにgnomeでGUI起動したところ、ストレスなく操作することができたので、もしかしたらkubuntuが重量級だっただけかもしれない。&lt;/p></description></item><item><title>ラズパイでbox86を試す</title><link>https://umemak.github.io/blog/posts/2020/04/23_box86/</link><pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/04/23_box86/</guid><description>&lt;p>ラズパイはARM系のCPUなので、INTEL系のCPU用にビルドされたバイナリはそのままでは動きません。&lt;/p>
+&lt;p>そこでエミュレーターを使ってみます。&lt;/p>
+&lt;p>今回使ってみたのは、 &lt;a href="https://github.com/ptitSeb/box86">https://github.com/ptitSeb/box86&lt;/a> です。&lt;/p>
+&lt;p>ラズパイ4用のビルド方法が書いてあるので、その通りにして
+&lt;a href="https://github.com/ptitSeb/box86/blob/master/COMPILE.md">https://github.com/ptitSeb/box86/blob/master/COMPILE.md&lt;/a>&lt;/p>
+&lt;p>途中、cmake がインストールされてないエラーが出たので、aptでインストールしています。&lt;/p></description></item><item><title>ラズパイ4導入</title><link>https://umemak.github.io/blog/posts/2020/04/17_raspi/</link><pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/04/17_raspi/</guid><description>&lt;p>以前から興味があったラズパイについに手を出しました。
+4Bの4GB版。&lt;/p>
+&lt;p>さっそくSDカードにOSを入れて、と思ったらChromebookでできない。
+&lt;a href="https://www.raspberrypi.org/downloads/">https://www.raspberrypi.org/downloads/&lt;/a> の&lt;code>Raspberry Pi Imager for Ubuntu&lt;/code>を入れて、起動はするもののSDカードを認識してくれないので書き込み先が指定できず。&lt;/p>
+&lt;p>開発者モードにすればいけるのかもしれないけれど、いったん諦めてWindows10で。
+あっさり認識してOS入りSDカード作成完了。&lt;/p></description></item></channel></rss>

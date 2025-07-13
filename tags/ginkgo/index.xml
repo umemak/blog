@@ -1,1 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ginkgo on umemak</title><link>https://umemak.github.io/blog/tags/ginkgo/</link><description>Recent content in ginkgo on umemak</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 26 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/ginkgo/index.xml" rel="self" type="application/rss+xml"/><item><title>ginkgoの特殊機能とは？</title><link>https://umemak.github.io/blog/posts/2022/04/26_ginkgo/</link><pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/26_ginkgo/</guid><description>昨日の調べもので出てきた、 Ginkgo has several capabilities that can only be accessed via ginkgo. （Ginkgoには、ginkgoを経由してしかアクセスできない機能がいくつかあります。） そのいくつかの機能を知りたい。 https://onsi.github.io/ginkgo/#ginkgo-cli-overview には、コマンドライン引数について書かれているが、むしろginkgoでサポートしていないものがあるという記述なので、思っていたのとは違</description></item><item><title>ginkgoとgo test</title><link>https://umemak.github.io/blog/posts/2022/04/25_ginkgo/</link><pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/25_ginkgo/</guid><description>GinkgoのV1とV2のテストケースが混在しているときに、V2のCLIでV1用のコードをテストしようとすると、ginkgo.timeoutが定義されてい内的なエラーになってしまう（うろ覚え）。 importをv2にすれば多分良いのだけれど、そうしなくても、テストの実行をgo testに任せれば、imp</description></item><item><title>Ginkgoわかった</title><link>https://umemak.github.io/blog/posts/2022/04/21_ginkgo/</link><pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/21_ginkgo/</guid><description>Ginkgoわからん - umemak の続編。 Itが上から順番に実行されない問題、V2で導入されたOrderedを使えば解決できそう。 https://onsi.github.io/ginkgo/#ordered-containers</description></item><item><title>Ginkgoわからん</title><link>https://umemak.github.io/blog/posts/2022/02/18_ginkgo/</link><pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/02/18_ginkgo/</guid><description>MDMMLじゃない話。 https://onsi.github.io/ginkgo/ でテストを、 Describe(){ Context(){ // 準備 It(){ Expect() } // 次の準備 It(){ Expect() } // 後片付け } } みたいな感じで書いていたら、思った通りの動きにならなくてハマった。 どうやら、Contextの中は上から順番に実行されるのではなく、 Describe(){ Context(){ // 準備 // 次の準備 // 後片付け It(){ Expect() } It(){ Expect() } } } となるらしい。 やりたい順番で実行したければ</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ginkgo on umemak</title><link>https://umemak.github.io/blog/tags/ginkgo/</link><description>Recent content in Ginkgo on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 26 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/ginkgo/index.xml" rel="self" type="application/rss+xml"/><item><title>ginkgoの特殊機能とは？</title><link>https://umemak.github.io/blog/posts/2022/04/26_ginkgo/</link><pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/26_ginkgo/</guid><description>&lt;p>昨日の調べもので出てきた、&lt;/p>
+&lt;blockquote>
+&lt;p>Ginkgo has several capabilities that can only be accessed via ginkgo.&lt;/p>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>（Ginkgoには、ginkgoを経由してしかアクセスできない機能がいくつかあります。）&lt;/p>&lt;/blockquote>
+&lt;p>そのいくつかの機能を知りたい。&lt;/p>
+&lt;p>&lt;a href="https://onsi.github.io/ginkgo/#ginkgo-cli-overview">https://onsi.github.io/ginkgo/#ginkgo-cli-overview&lt;/a> には、コマンドライン引数について書かれているが、むしろginkgoでサポートしていないものがあるという記述なので、思っていたのとは違う感じ。&lt;/p></description></item><item><title>ginkgoとgo test</title><link>https://umemak.github.io/blog/posts/2022/04/25_ginkgo/</link><pubDate>Mon, 25 Apr 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/25_ginkgo/</guid><description>&lt;p>GinkgoのV1とV2のテストケースが混在しているときに、V2のCLIでV1用のコードをテストしようとすると、ginkgo.timeoutが定義されてい内的なエラーになってしまう（うろ覚え）。&lt;/p>
+&lt;p>importをv2にすれば多分良いのだけれど、そうしなくても、テストの実行をgo testに任せれば、importで指定しているバージョンで実行してくれる気がする。&lt;/p></description></item><item><title>Ginkgoわかった</title><link>https://umemak.github.io/blog/posts/2022/04/21_ginkgo/</link><pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/04/21_ginkgo/</guid><description>&lt;p>&lt;a href="https://umemak.github.io/blog/posts/2022/02/18_ginkgo/">Ginkgoわからん - umemak&lt;/a> の続編。&lt;/p>
+&lt;p>Itが上から順番に実行されない問題、V2で導入された&lt;code>Ordered&lt;/code>を使えば解決できそう。&lt;/p>
+&lt;p>&lt;a href="https://onsi.github.io/ginkgo/#ordered-containers">https://onsi.github.io/ginkgo/#ordered-containers&lt;/a>&lt;/p></description></item><item><title>Ginkgoわからん</title><link>https://umemak.github.io/blog/posts/2022/02/18_ginkgo/</link><pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2022/02/18_ginkgo/</guid><description>&lt;p>MDMMLじゃない話。&lt;/p>
+&lt;p>&lt;a href="https://onsi.github.io/ginkgo/">https://onsi.github.io/ginkgo/&lt;/a> でテストを、&lt;/p>
+&lt;pre tabindex="0">&lt;code>Describe(){
+ Context(){
+ // 準備
+ It(){
+ Expect()
+ }
+ // 次の準備
+ It(){
+ Expect()
+ }
+ // 後片付け
+ }
+}
+&lt;/code>&lt;/pre>&lt;p>みたいな感じで書いていたら、思った通りの動きにならなくてハマった。&lt;/p>
+&lt;p>どうやら、Contextの中は上から順番に実行されるのではなく、&lt;/p>
+&lt;pre tabindex="0">&lt;code>Describe(){
+ Context(){
+ // 準備
+ // 次の準備
+ // 後片付け
+ It(){
+ Expect()
+ }
+ It(){
+ Expect()
+ }
+ }
+}
+&lt;/code>&lt;/pre>&lt;p>となるらしい。&lt;/p>
+&lt;p>やりたい順番で実行したければ、&lt;/p>
+&lt;pre tabindex="0">&lt;code>Describe(){
+ It(){
+ // 準備
+ Expect()
+ // 次の準備
+ Expect()
+ // 後片付け
+ }
+}
+&lt;/code>&lt;/pre>&lt;p>ってやらないといけないのかなぁ。&lt;/p></description></item></channel></rss>
