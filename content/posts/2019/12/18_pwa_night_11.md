@@ -9,7 +9,7 @@ thumbnail: "https://connpass-tokyo.s3.amazonaws.com/thumbs/34/de/34ded8d0597173d
 
 https://pwanight.connpass.com/event/156622/
 
-{{<tweet 1207242239287521280>}}
+{{< x user="umemak8" id="1207242239287521280" >}}
 
 ### 19:00	開場
 

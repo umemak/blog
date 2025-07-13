@@ -10,7 +10,7 @@ thumbnail: https://connpass-tokyo.s3.amazonaws.com/thumbs/0b/e2/0be2c1c5921491c2
 
 https://k8sjp.connpass.com/event/155240/
 
-{{<tweet 1201797492385275905>}}
+{{< x user="umemak8" id="1201797492385275905" >}}
 
 ## 18:15-19:15	受付開始
 

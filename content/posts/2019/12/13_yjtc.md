@@ -7,7 +7,7 @@ thumbnail: "https://s.yimg.jp/images/techconf/2019_shibuya/images/top-img.png"
 
 https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cpt_m=web&amp;cpt_s=passmarket
 
-{{<tweet 1205334852607721473>}}
+{{< x user="umemak8" id="1205334852607721473" >}}
 
 3年連続３回目の参加。
 毎年会場が変わって、今年は渋谷です。表参道駅から歩きましたが。。
@@ -37,7 +37,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
   - 自分ごと、オープン化、チャレンジ
   - 仮想化、CIのチャレンジが成功したのは、潜在的にエンジニアがいたから
 * テクノロジーのモダナイゼーション
-  - {{<tweet 1205343504395718657>}}
+  - {{< x user="umemak8" id="1205343504395718657" >}}
   - 方針は作るが、やり方はみんなで考える
   - 一人で全部やると、スピードが出せない
   - ZLAB設立
@@ -47,7 +47,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
   - 負債が増える習慣を変える
   - なぜ取り組んでいるのか繰り返し伝え続ける
   - エンジニア・デザイナー以外のメンバーにも伝える
-  - {{<tweet 1205345044082749441>}}
+  - {{< x user="umemak8" id="1205345044082749441" >}}
   - ルールをシンプルにし、ドキュメントを残す文化にする
   - 117あったガイドラインを精査・作成して30までに集約
   - 負債が増えにくい開発手法を選択する
@@ -77,7 +77,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
   - 稼働サービスの多様化
     - サポート領域の拡大
 * 直面した課題
-  - {{<tweet 1205353733237829632>}}
+  - {{< x user="umemak8" id="1205353733237829632" >}}
   - K8sの知見
     - 有効的な使い方がわからない
     - 社内セミナーを定期的に開催
@@ -103,7 +103,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
     - K8s環境ではヒトの手がかかる
     - sysdigの導入
 * まとめと今後
-  - {{<tweet 1205358874498220033>}}
+  - {{< x user="umemak8" id="1205358874498220033" >}}
 
 ## ヤフオク!における出品時タイトル推薦機能の裏側 14:45-15:15
 ### 土井 賢治 テクノロジーグループ サイエンス統括本部 サイエンス2本部
@@ -120,7 +120,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
   - 分類学習
     - 出品カテゴリを画像の見た目に基づいてマッピングしたラベルを使用
   - それぞれの手法を検証
-    - {{<tweet 1205366570223955968>}}
+    - {{< x user="umemak8" id="1205366570223955968" >}}
   - 分類学習のほうが良い結果が得られた
 * CNN学習時の工夫
   - 33000カテゴリを1300までマッピングして減らしている
@@ -135,7 +135,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
     - https://github.com/yahoojapan/NGT
 * 類似画像検索基盤
   - 商品のメタデータ保存には全社Cassandraクラスタを使っている
-  - {{<tweet 1205369006212861952>}}
+  - {{< x user="umemak8" id="1205369006212861952" >}}
   - カテゴリも使って絞り込み
   - 定型文（美品、送料無料など）をメタデータからは除去
 * 今後の展開
@@ -160,20 +160,20 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
     - {{<figure src="https://image.slidesharecdn.com/a-3-191212031634/95/yjtc19-in-shibuya-a3-yjtc-43-638.jpg?cb=1576218600">}}
     - すでにKBにあるデータをWeb上のデータで補完する
 * まとめ
-  - {{<tweet 1205380614137888768>}}
+  - {{< x user="umemak8" id="1205380614137888768" >}}
 
 ## クロスユースプラットフォーム ～ 秒間10万リクエスト・レスポンスタイム100ms以下を実現するシステムについて ～ 16:15-16:45
 ### 大島 圭貴 コマースカンパニー 事業推進室 コマースマーケティング本部
 * https://www.slideshare.net/techblogyahoo/10100ms-yjtc19-in-shibuya-a4-yjtc-204740653
 * クロスユースプラットフォームとは
-  - {{<tweet 1205386821930082304>}}
+  - {{< x user="umemak8" id="1205386821930082304" >}}
   - サービスをまたいで表示されるコンテンツ
   - 10万rps
   - PCFでGoでリクエストを受けている
 * ２年前は3000rpsの要件だった
 * PCFはクラスタ及びインスタンス数をスケーリング
 * Cassandraはノード数を増やして対応
-* {{<tweet 1205388303299563520>}}
+* {{< x user="umemak8" id="1205388303299563520" >}}
 * ２年前はレイテンシー要件は200msだった
 * 複数のデータを個別に取得していて、ボトルネックになっていた
   - ルールとコンテンツデータを結合して１回で取得するようにした
@@ -216,7 +216,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
     - 下がるとそもそもランキング会のものは配信されずデ　ータも取れなくなっていく
   - 提案法
     - 一度ランキングした結果に対して、バイアスをかけて再度抽出する
-    - {{<tweet 1205404428326469637>}}
+    - {{< x user="umemak8" id="1205404428326469637" >}}
     - 効果あり
 * データの偏りを補正するには、データの発生プロセスを理解することが大事
 
@@ -224,7 +224,7 @@ https://techconference.yahoo.co.jp/2019_shibuya/?cpt_n=2019_shibuya_promo&amp;cp
 ### 松田 悠吾 ／ 三宅 晃暉　コマースカンパニー ヤフオク!統括本部 フリマ推進本部
 * https://www.slideshare.net/techblogyahoo/ctoc-6paypay-yjtc19-in-shibuya-a6-yjtc-204740829
 * バックエンドの機能はヤフオクの流用ではなく、ほぼスクラッチで開発した
-  - {{<tweet 1205409757810397185>}}
+  - {{< x user="umemak8" id="1205409757810397185" >}}
 * Kotlin+SpringFW
 * コンポーネントを独立させることで、役割が明確になる
 * ヤフオクとの連携
