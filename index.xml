@@ -1,7 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>umemak</title><link>https://umemak.github.io/blog/</link><description>Recent content on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Surface go 2にChromeOSをインストールする</title><link>https://umemak.github.io/blog/posts/2025/07/13_surfacego2_chromeos/</link><pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/13_surfacego2_chromeos/</guid><description>&lt;p>Surface go 2の動作が重いしバッテリーの持ちがカンファレンス1日持たなくなってきたので、なんとかしたいと思い、ChromeOS Flexを試してみた。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>umemak</title><link>https://umemak.github.io/blog/</link><description>Recent content on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Developers Summit 2025 Summer Day1</title><link>https://umemak.github.io/blog/posts/2025/07/17_devsumi/</link><pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/17_devsumi/</guid><description>&lt;p>久しぶりに参加のDevelopers Summitは、開発生産性カンファレンスと同じ会場。ちょっと狭いけど駅から近いのが良い。
+&lt;a href="https://event.shoeisha.jp/devsumi/20250717">https://event.shoeisha.jp/devsumi/20250717&lt;/a>&lt;/p>
+&lt;p>参加証印刷してなかったから早めに行ったら早く着きすぎた。&lt;/p>
+&lt;p>開発生産性カンファレンスの時も思ったけど、ホール内の空調が効きすぎて寒い。&lt;/p>
+&lt;h2 id="仕組みから学ぶllmエージェント開発の勘所基礎理解と実践開発手法">仕組みから学ぶLLMエージェント開発の勘所──基礎理解と実践開発手法&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>AIエージェントはソフトウェア技術者を置き換える？&lt;/p></description></item><item><title>Surface go 2にChromeOSをインストールする</title><link>https://umemak.github.io/blog/posts/2025/07/13_surfacego2_chromeos/</link><pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/13_surfacego2_chromeos/</guid><description>&lt;p>Surface go 2の動作が重いしバッテリーの持ちがカンファレンス1日持たなくなってきたので、なんとかしたいと思い、ChromeOS Flexを試してみた。&lt;/p>
 &lt;p>&lt;a href="https://support.google.com/chromeosflex/answer/11541904?hl=ja">ChromeOS Flex インストール ガイド&lt;/a>に沿って実行したらとくに問題なく完了できた。&lt;/p>
 &lt;p>USBからのブートは、Windowsの設定で変更できた。&lt;/p>
-&lt;p>Linux入れて、VS Code入れて、npm入れて、Claude Code入れるところまでやってVS Codeの日本語フォントが明朝なのが気になってUDEV Gothicを入れたけど反映されず。&lt;/p></description></item><item><title>開発生産性Conference 2025 Day2</title><link>https://umemak.github.io/blog/posts/2025/07/04_dev-productivity-con/</link><pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/04_dev-productivity-con/</guid><description>&lt;p>開発生産性カンファレンス2025の2日目の聴講メモです。&lt;/p>
+&lt;p>Linux入れて、VS Code入れて、npm入れて、Claude Code入れるところまでやってVS Codeの日本語フォントが明朝なのが気になってUDEV Gothicを入れたけど反映されず。
+→&lt;code>/usr/local/share/fonts/&lt;/code>にttfファイルを置いたら反映された。&lt;/p></description></item><item><title>開発生産性Conference 2025 Day2</title><link>https://umemak.github.io/blog/posts/2025/07/04_dev-productivity-con/</link><pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/04_dev-productivity-con/</guid><description>&lt;p>開発生産性カンファレンス2025の2日目の聴講メモです。&lt;/p>
 &lt;p>受付は並ばずできて、昨日の混雑はKent Beckのせいだったようです。&lt;/p>
 &lt;h2 id="開発生産性向上の探求devopsの進化普遍的な原則そして生成aiがもたらす変革">開発生産性向上の探求：DevOpsの進化、普遍的な原則、そして生成AIがもたらす変革&lt;/h2>
 &lt;p>Gene Kim&lt;/p>
@@ -423,6 +431,4 @@ $ next dev
 
  ✓ Ready in 9.1s
  ○ Compiling / ...
-&lt;/code>&lt;/pre>&lt;p>で終了して、終了できない枠だけのターミナルが起動した。&lt;/p></description></item><item><title>英語学習</title><link>https://umemak.github.io/blog/posts/2024/01/14_english/</link><pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2024/01/14_english/</guid><description>&lt;p>&lt;a href="https://www.amazon.co.jp/dp/B00INUXZ8S">ITエンジニアのゼロから始める英語勉強法（日経BP Next ICT選書） | 牛尾剛 | 英語 | Kindleストア | Amazon&lt;/a>を読んだ。&lt;/p>
-&lt;p>書籍では、学習用のCDを買ってひたすら聞きこむところから始めるのだけれど、おすすめの教材のAmazon評価がいまいちなので、別の教材がないか考えた。&lt;/p>
-&lt;p>あとで答え合わせをするために、文字起こしがあることを条件にすると、AWSのPodcastがそうだったのを思い出した。&lt;/p></description></item></channel></rss>
+&lt;/code>&lt;/pre>&lt;p>で終了して、終了できない枠だけのターミナルが起動した。&lt;/p></description></item></channel></rss>
