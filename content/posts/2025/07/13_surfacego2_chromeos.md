@@ -12,6 +12,7 @@ Surface go 2の動作が重いしバッテリーの持ちがカンファレン�
 USBからのブートは、Windowsの設定で変更できた。
 
 Linux入れて、VS Code入れて、npm入れて、Claude Code入れるところまでやってVS Codeの日本語フォントが明朝なのが気になってUDEV Gothicを入れたけど反映されず。
+→`/usr/local/share/fonts/`にttfファイルを置いたら反映された。
 
 あとVS CodeのターミナルでコピペのキーボードショートカットがShiftも押さないとダメなのが気になる（エディタではShiftいらない）。
 →VS Codeではなく、ターミナルの設定で変更できた
