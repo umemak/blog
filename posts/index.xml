@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on umemak</title><link>https://umemak.github.io/blog/posts/</link><description>Recent content in Posts on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Developers Summit 2025 Summer Day1</title><link>https://umemak.github.io/blog/posts/2025/07/17_devsumi/</link><pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/17_devsumi/</guid><description>&lt;p>久しぶりに参加のDevelopers Summitは、開発生産性カンファレンスと同じ会場。ちょっと狭いけど駅から近いのが良い。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on umemak</title><link>https://umemak.github.io/blog/posts/</link><description>Recent content in Posts on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 18 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Developers Summit 2025 Summer Day2</title><link>https://umemak.github.io/blog/posts/2025/07/18_devsumi/</link><pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/18_devsumi/</guid><description>&lt;p>二日目は昨日のパスが使えるので、受付は一瞬。&lt;/p>
+&lt;p>空調は昨日より効きすぎてなかったけど寒い瞬間はあった。&lt;/p>
+&lt;h2 id="aiによるエンジニア総プレイングマネージャー時代の思考法emプロダクト開発アジャイル開発の交差点">AIによるエンジニア総プレイングマネージャー時代の思考法～EM×プロダクト開発×アジャイル開発の交差点～&lt;/h2>
+&lt;p>AIエージェントを前提とした時代に開発を進めるうえで重要なマネジメントの視点と技術を知り明日からスキルを伸ばせるようにする&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>仕事のスピードを上げるためのマネジメントスキル&lt;/p>
+&lt;ul>
+&lt;li>コードとドキュメントを同じリポジトリで管理する
+&lt;ul>
+&lt;li>AIがスプリントの計画から管理まで実施&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>開発サイクルが短くなる
+&lt;ul>
+&lt;li>1日スプリントが基本になっていく&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>より小さなチーム、多くのチームへ
+&lt;ul>
+&lt;li>6人x2チームが（1〜3人+AI）x5チームに
+&lt;ul>
+&lt;li>人間の人数は変わっていない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>マネジメントする人間がボトルネックになっていく&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>協働のためのマネジメントスキル&lt;/p></description></item><item><title>Developers Summit 2025 Summer Day1</title><link>https://umemak.github.io/blog/posts/2025/07/17_devsumi/</link><pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/17_devsumi/</guid><description>&lt;p>久しぶりに参加のDevelopers Summitは、開発生産性カンファレンスと同じ会場。ちょっと狭いけど駅から近いのが良い。
 &lt;a href="https://event.shoeisha.jp/devsumi/20250717">https://event.shoeisha.jp/devsumi/20250717&lt;/a>&lt;/p>
 &lt;p>参加証印刷してなかったから早めに行ったら早く着きすぎた。&lt;/p>
 &lt;p>開発生産性カンファレンスの時も思ったけど、ホール内の空調が効きすぎて寒い。&lt;/p>
@@ -26,6 +57,7 @@
 &lt;/ul>
 &lt;h2 id="開発生産性ではなく事業の投資対効果に向き合う事業生産性へ">「開発生産性」ではなく、事業の投資対効果に向き合う「事業生産性」へ&lt;/h2>
 &lt;p>山口拓弥&lt;/p>
+&lt;p>&lt;a href="https://speakerdeck.com/onecareer_tech/from-development-productivity-to-business-productivity-that-focuses-on-business-return-on-investment">https://speakerdeck.com/onecareer_tech/from-development-productivity-to-business-productivity-that-focuses-on-business-return-on-investment&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>生産性の本質&lt;/p>
@@ -412,23 +444,4 @@ PHP Conferenceは初参加です。&lt;/p>
 最近、Cloudflare気になっていたので良い機会。&lt;/p>
 &lt;p>設定手順も&lt;a href="https://github.com/remotely-save/remotely-save/blob/master/docs/remote_services/s3_cloudflare_r2/README.md">remotely-save/docs/remote_services/s3_cloudflare_r2/README.md&lt;/a>の通りで問題なかった。&lt;/p>
 &lt;p>ただ、E2E encryptionを設定したら、iPhone8やiPad air4には重すぎたようで同期が完了しないことがしばしば。
-暗号化しなければ常識的な時間で同期できる。&lt;/p></description></item><item><title>Windowsでbunを試す</title><link>https://umemak.github.io/blog/posts/2024/04/03_bun/</link><pubDate>Wed, 03 Apr 2024 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2024/04/03_bun/</guid><description>&lt;p>&lt;a href="https://bun.sh/">Bun — A fast all-in-one JavaScript runtime&lt;/a>&lt;/p>
-&lt;p>v1.1でWindowsにも対応したということなので、Surface go 2で試してみた。&lt;/p>
-&lt;pre tabindex="0">&lt;code>$ bun create next-app
-√ What is your project named? ... bun-next-app
-√ Would you like to use TypeScript? ... No / Yes
-√ Would you like to use ESLint? ... No / Yes
-√ Would you like to use Tailwind CSS? ... No / Yes
-√ Would you like to use `src/` directory? ... No / Yes
-√ Would you like to use App Router? (recommended) ... No / Yes
-√ Would you like to customize the default import alias (@/*)? ... No / Yes
-√ What import alias would you like configured? ... @/*
-&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>$ cd bun-next-app/
-$ bun --bun run dev
-$ next dev
- ▲ Next.js 14.1.4
- - Local: http://localhost:3000
-
- ✓ Ready in 9.1s
- ○ Compiling / ...
-&lt;/code>&lt;/pre>&lt;p>で終了して、終了できない枠だけのターミナルが起動した。&lt;/p></description></item></channel></rss>
+暗号化しなければ常識的な時間で同期できる。&lt;/p></description></item></channel></rss>

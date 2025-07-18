@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Event on umemak</title><link>https://umemak.github.io/blog/tags/event/</link><description>Recent content in Event on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 17 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/event/index.xml" rel="self" type="application/rss+xml"/><item><title>Developers Summit 2025 Summer Day1</title><link>https://umemak.github.io/blog/posts/2025/07/17_devsumi/</link><pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/17_devsumi/</guid><description>&lt;p>久しぶりに参加のDevelopers Summitは、開発生産性カンファレンスと同じ会場。ちょっと狭いけど駅から近いのが良い。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Event on umemak</title><link>https://umemak.github.io/blog/tags/event/</link><description>Recent content in Event on umemak</description><generator>Hugo</generator><language>ja-jp</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 18 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://umemak.github.io/blog/tags/event/index.xml" rel="self" type="application/rss+xml"/><item><title>Developers Summit 2025 Summer Day2</title><link>https://umemak.github.io/blog/posts/2025/07/18_devsumi/</link><pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/18_devsumi/</guid><description>&lt;p>二日目は昨日のパスが使えるので、受付は一瞬。&lt;/p>
+&lt;p>空調は昨日より効きすぎてなかったけど寒い瞬間はあった。&lt;/p>
+&lt;h2 id="aiによるエンジニア総プレイングマネージャー時代の思考法emプロダクト開発アジャイル開発の交差点">AIによるエンジニア総プレイングマネージャー時代の思考法～EM×プロダクト開発×アジャイル開発の交差点～&lt;/h2>
+&lt;p>AIエージェントを前提とした時代に開発を進めるうえで重要なマネジメントの視点と技術を知り明日からスキルを伸ばせるようにする&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>仕事のスピードを上げるためのマネジメントスキル&lt;/p>
+&lt;ul>
+&lt;li>コードとドキュメントを同じリポジトリで管理する
+&lt;ul>
+&lt;li>AIがスプリントの計画から管理まで実施&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>開発サイクルが短くなる
+&lt;ul>
+&lt;li>1日スプリントが基本になっていく&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>より小さなチーム、多くのチームへ
+&lt;ul>
+&lt;li>6人x2チームが（1〜3人+AI）x5チームに
+&lt;ul>
+&lt;li>人間の人数は変わっていない&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>マネジメントする人間がボトルネックになっていく&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>協働のためのマネジメントスキル&lt;/p></description></item><item><title>Developers Summit 2025 Summer Day1</title><link>https://umemak.github.io/blog/posts/2025/07/17_devsumi/</link><pubDate>Thu, 17 Jul 2025 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2025/07/17_devsumi/</guid><description>&lt;p>久しぶりに参加のDevelopers Summitは、開発生産性カンファレンスと同じ会場。ちょっと狭いけど駅から近いのが良い。
 &lt;a href="https://event.shoeisha.jp/devsumi/20250717">https://event.shoeisha.jp/devsumi/20250717&lt;/a>&lt;/p>
 &lt;p>参加証印刷してなかったから早めに行ったら早く着きすぎた。&lt;/p>
 &lt;p>開発生産性カンファレンスの時も思ったけど、ホール内の空調が効きすぎて寒い。&lt;/p>
@@ -22,6 +53,7 @@
 &lt;/ul>
 &lt;h2 id="開発生産性ではなく事業の投資対効果に向き合う事業生産性へ">「開発生産性」ではなく、事業の投資対効果に向き合う「事業生産性」へ&lt;/h2>
 &lt;p>山口拓弥&lt;/p>
+&lt;p>&lt;a href="https://speakerdeck.com/onecareer_tech/from-development-productivity-to-business-productivity-that-focuses-on-business-return-on-investment">https://speakerdeck.com/onecareer_tech/from-development-productivity-to-business-productivity-that-focuses-on-business-return-on-investment&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>生産性の本質&lt;/p>
@@ -1919,11 +1951,4 @@ PHP Conferenceは初参加です。&lt;/p>
 &lt;p>オリンピックのトーチ
 &lt;figure>&lt;img src="../IMG_20200124_101917_MP.jpg">
  &lt;/figure>
-&lt;/p></description></item><item><title>DOCOMO Open House 2020 day1</title><link>https://umemak.github.io/blog/posts/2020/01/23_docomo_openhouse/</link><pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate><guid>https://umemak.github.io/blog/posts/2020/01/23_docomo_openhouse/</guid><description>&lt;p>&lt;a href="http://docomo-rd-openhouse.jp/2020/">http://docomo-rd-openhouse.jp/2020/&lt;/a>&lt;/p>
-&lt;p>まさかビッグサイトが2箇所あるとは知らず、東京ビッグサイト駅で降りてどこで開催されているかわからず、そしてここじゃないということに気づいた。
-&lt;figure>&lt;img src="../IMG_20200123_100822.jpg">
-&lt;/figure>
-
-シャトルバスが来る気配もなく、雨の中1キロ以上歩いて移動。
-そんなに離れているなら別の名前にしてほしかった。
-（後で調べたところ、青海展示棟はオリンピック対策で作った仮設の施設とのこと。）&lt;/p></description></item></channel></rss>
+&lt;/p></description></item></channel></rss>
