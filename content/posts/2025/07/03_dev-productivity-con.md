@@ -133,6 +133,8 @@ Kent Beck
 
 石垣雅人
 
+<https://speakerdeck.com/i35_267/wu-yi-wei-nakai-fa-sheng-chan-xing-noyi-lun-karaba-kechu-sutamenoyu-zhao-jian-zhi-toojin-toai>
+
 - 開発生産性という重圧
   - 小手先の指標
     - 数値を目標とするとハックする、ぐっとハートの法則
@@ -167,6 +169,8 @@ Kent Beck
 ## ソフトウェアエンジニアリングの人類史 〜AI エージェント時代の知識創造企業〜
 
 広木大地
+
+<https://hirokidaichi.github.io/presentation/prod.html>
 
 - これから私たちの働き方、仕事はどうなるのか
 

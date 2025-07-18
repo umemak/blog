@@ -22,6 +22,8 @@ Gene Kim
 
 山口拓弥
 
+<https://speakerdeck.com/onecareer_tech/from-development-productivity-to-business-productivity-that-focuses-on-business-return-on-investment>
+
 - 生産性の本質
   - レベル1：チーム
   - レベル2：組織
@@ -55,6 +57,8 @@ Gene Kim
 ## fukabori.fm出張版: 売上高617億円と高稼働率を陰で支えた社内ツール開発のあれこれ話
 
 森川知雄、岩瀬義昌
+
+<https://speakerdeck.com/shift_evolve/20250704-iwase-and-morikawa>
 
 - 要員のアサインについて
   - HAMAT: HYPER ASSIGN MANAGEMENT TOOL
@@ -97,6 +101,8 @@ Gene Kim
 
 木下陽介、三木洋司
 
+<https://speakerdeck.com/miki0529/devnoqu-zu-mitolian-xi-niyoruzu-zhi-ding-zhao-noapuroti>
+
 - AI活用の遅れ＝企業のリスクととらえる
 - 安心して使える環境を整える
   - どんな情報を入れていいのかいけないのかガイドライン策定
@@ -131,6 +137,8 @@ Gene Kim
 ## 新メンバーも今日から大活躍！SREが支えるスケールし続ける組織のオンボーディング
 
 本間匡晃
+
+<https://speakerdeck.com/honmarkhunt/xin-menhamojin-ri-karada-huo-yue-srekazhi-erusukerusisok-keruzu-zhi-noonhoteinku>
 
 - よくある課題
   - 情報格差
@@ -219,6 +227,8 @@ Gene Kim
 ## AI時代のソフトウェア開発を考える
 
 和田卓人
+
+<https://speakerdeck.com/twada/agentic-software-engineering-findy-2025-07-edition>
 
 - Vibe Coding
   - ノリでコーディング
