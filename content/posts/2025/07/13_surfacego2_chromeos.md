@@ -17,4 +17,7 @@ Linux入れて、VS Code入れて、npm入れて、Claude Code入れるところ
 あとVS CodeのターミナルでコピペのキーボードショートカットがShiftも押さないとダメなのが気になる（エディタではShiftいらない）。
 →VS Codeではなく、ターミナルの設定で変更できた
 
+ターミナルで日本語確定すると二重に入力される
+→`GTK_IM_MODULE`、`QT_IM_MODULE`、`XMODIFIERS`環境変数をunsetで解消する、がVS Codeで日本語入力ができなくなる
+
 動作は軽くなったので、しばらくこれでやってみようと思う。
